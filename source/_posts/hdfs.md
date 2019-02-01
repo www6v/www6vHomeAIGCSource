@@ -4,10 +4,13 @@ date: 2018-06-07 10:29:55
 tags:
   - 大数据
   - HDFS
+  - 可用性
+categories: 
+  - 大数据    
 ---
 　                      
 HDFS NameNode是可靠和高效的, 简单的架构使HDFS能够在上千个节点可靠的存放生产级的数据. 但是, HDFS NameNode也是一个集群中的单点(SPOF). 开源社区也提供了几个HA的解决方案.
- 
+<!-- more -->    
  
 HDFS Namenode 宕机后启动时构建状态的两个相对长的阶段包括:　 I. 加载fsimage,并回放editlog.    II. datanode块的汇报, blockMap的构建. HDFS Namenode HA主要是指Ediglog的HA,  不包括FSImage
  

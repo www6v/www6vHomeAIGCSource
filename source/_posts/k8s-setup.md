@@ -5,6 +5,8 @@ tags:
   - 中间件
   - 分布式
   - Kubernetes
+categories: 
+- 云计算  
 ---
 
 1. 禁用swap

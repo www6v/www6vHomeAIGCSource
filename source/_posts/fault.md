@@ -6,6 +6,8 @@ tags:
   - 稳定性
   - 故障排查
   - 故障
+categories: 
+  - 可用性  
 ---
 
 ![故障模型](http://www6v.github.io/www6vHome/fault/fault.jpg)
