@@ -5,9 +5,14 @@ tags:
   - CQRS
   - 读写分离
   - 应用架构
+categories: 
+  - 架构
+  - 设计    
 ---
  
-CQRS全称是指Command Query ResponsibilitySeparation.CQRS的核心是一个简单的概念, 使用一个模型来读信息, 使用另一个模型来更新信息. 它是CQS原理在各个软件领域中的应用而产生的一种模式. CQRS把整个系统分成两个部分: 命令部分和查询部分. Command部分关注更新,  Query部分关注读取. 
+CQRS全称是指Command Query ResponsibilitySeparation.CQRS的核心是一个简单的概念, 使用一个模型来读信息, 使用另一个模型来更新信息. 它是CQS原理在各个软件领域中的应用而产生的一种模式. CQRS把整个系统分成两个部分: 命令部分和查询部分. Command部分关注更新,  Query部分关注读取.
+
+<!--more--> 
  
 其实你可能早就接触过CQRS相关的概念,熟悉数据库的读者不会对索引陌生.
 Query部分:如果数据表有索引,  读数据表更加的快速.
@@ -173,19 +178,13 @@ CQS中的分离(S)粒度,小到对象状态的setter和getter方法, 大到子�
 CQRS在复杂性管理和提高系统伸缩性有着独特的优势。
  
 ## 参考:
-1. clarified CQRS
-http://wenku.baidu.com/view/002c419851e79b896802265e.html 
-2. CQRS
-http://martinfowler.com/bliki/CQRS.html 
-3. CQRS Documents by Greg Young
-http://wenku.baidu.com/view/6aaa6c0690c69ec3d5bb751e.html 
-4.  NoSQL架构实践（一）——以NoSQL为辅
-http://www.infoq.com/cn/news/2011/02/nosql-architecture-practice/ 
+1. [clarified CQRS](http://wenku.baidu.com/view/002c419851e79b896802265e.html)
+2. [CQRS](http://martinfowler.com/bliki/CQRS.html) 
+3. [CQRS Documents by Greg Young](http://wenku.baidu.com/view/6aaa6c0690c69ec3d5bb751e.html)  
+4. [NoSQL架构实践（一）——以NoSQL为辅](http://www.infoq.com/cn/news/2011/02/nosql-architecture-practice/) 
 5. DDD -- domain driven design (共享内存)  --  Even Eric 
-6. Rethinking architecture with CQRS
-http://oojdon.iteye.com/blog/903203 
-7. Twitter架构图(cache篇)
-http://timyang.net/architecture/twitter-cache-architecture/ 
+6. [Rethinking architecture with CQRS](http://oojdon.iteye.com/blog/903203)  
+7. [Twitter架构图(cache篇)](http://timyang.net/architecture/twitter-cache-architecture/) 
 8.  Event Sourcing -- Martin fowler
  
  

@@ -10,14 +10,14 @@ categories:
   - 可用性  
 ---
 
-![故障模型](http://www6v.github.io/www6vHome/fault/fault.jpg)
+![故障模型](https://cloud.mail.126.com/dfs/service/fault.jpg?op=thumbFile&uid=www6v@126.com&account=www6v@126.com&file=eyJzIjoiZnM6Y2xvdWRzdG9yYWdlLm1haWwuMTI2OjM4MDAwMDYxMjAzIiwic2YiOiI0ODU2OTEyNjQ5Nzc6MzgwMDAwNjEyMDMiLCJpIjo5MDY2NTcyODgyNzAzNDU5LCJjcyI6eyJ0IjoxLCJ2IjoiZjE2NmM2YmMxYmNhOGVmNDYzYWNmYTEzNDJhOTdiMGEifSwic3oiOjMzOTQ2OCwiY3QiOjE1NDkwMTE1ODE2OTZ9&size=1500x1500 "故障模型")
 
 ## 参考：
 
-大纲
+### 大纲
 5. 超全总结 | 阿里如何应对电商故障？神秘演练细节曝光  阿里巴巴  周洋
 
-Application & Data
+### Application & Data
 1. 不正当使用HashMap导致cpu 100%的问题追究 王宏江
 2. [一个由正则表达式引发的血案](http://www.cnblogs.com/study-everyday/p/7426862.html) 
 3. [GC总结](http://www6v.github.io/www6vHome/gc.html) 
@@ -33,7 +33,7 @@ Application & Data
 15. [Hystrix实现和容错模式](http://www6v.github.io/www6vHome/Hystrix.html)
 16. [稳定性总结](http://www6v.github.io/www6vHome/stability.html)
 
-Runtime & Middleware & OS
+### Runtime & Middleware & OS
 6. [热点 Key 问题的发现与解决](https://help.aliyun.com/document_detail/67252.html)
 
-Virtualization & Storage & Networking
+### Virtualization & Storage & Networking

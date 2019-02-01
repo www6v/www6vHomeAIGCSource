@@ -5,10 +5,15 @@ tags:
   - 应用架构
   - SQL
   - DDD
+categories: 
+  - 架构
+  - 领域建模   
 ---
                                    
 在企业应用中， 业务逻辑是复杂和庞杂的。 这些业务逻辑应该是被显示， 还是被隐藏， 这是一种选择。 在工作流中， 业务逻辑被从模块中剥离出来， 形成上层的粗粒度的业务流程。 在模块内部， 业务逻辑应该放在内存中， 还是在SQL中， 这也是一种选择。
- 
+
+<!--more-->
+
 拨开项目的DAO层， 你可能会看到大量的SQL字符串， 业务逻辑就隐藏在这里。在有的项目你会看到hibernate之类的ORM框架， PO对象作为一种承载业务逻辑的机制。
  
 大量复杂的SQL拼接， 在SQL中放入业务逻辑与企业应用架构的分层原则相违背。OO的本质是抽象和分离， 各司其责。 领域逻辑更符合OO的精神。
@@ -38,7 +43,7 @@ Domain Logic要求对framework有好的把握， 一定的驾驭能力， 问题
  
  
 ## 参考：
-http://martinfowler.com/articles/dblogic.html    Domain Logic and SQL
+[Domain Logic and SQL](http://martinfowler.com/articles/dblogic.html)    
 
 
 

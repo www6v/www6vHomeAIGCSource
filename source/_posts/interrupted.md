@@ -6,6 +6,9 @@ tags:
   - 中间件
   - NIO
   - 故障排查 
+categories:
+  - 可用性 
+  - 故障    
 ---
 
 ## 背景：
@@ -24,6 +27,7 @@ at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
 at java.io.DataInputStream.read(DataInputStream.java:132)
 at com.ycache.danga.MemCached.SockIOPool$SockIO.readLine(SockIOPool.java:2023)
 ```
+<!-- more -->
 
 ![](http://www6v.github.io/www6vHome/interrupt/interrupted_clip_image001.png )
 
