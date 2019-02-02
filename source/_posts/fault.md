@@ -9,8 +9,9 @@ tags:
 categories: 
   - 可用性  
 ---
+{% asset_img fault.jpg 故障模型 %}
 
-![故障模型](https://cloud.mail.126.com/dfs/service/fault.jpg?op=thumbFile&uid=www6v@126.com&account=www6v@126.com&file=eyJzIjoiZnM6Y2xvdWRzdG9yYWdlLm1haWwuMTI2OjM4MDAwMDYxMjAzIiwic2YiOiI0ODU2OTEyNjQ5Nzc6MzgwMDAwNjEyMDMiLCJpIjo5MDY2NTcyODgyNzAzNDU5LCJjcyI6eyJ0IjoxLCJ2IjoiZjE2NmM2YmMxYmNhOGVmNDYzYWNmYTEzNDJhOTdiMGEifSwic3oiOjMzOTQ2OCwiY3QiOjE1NDkwMTE1ODE2OTZ9&size=1500x1500 "故障模型")
+<!-- more -->
 
 ## 参考：
 

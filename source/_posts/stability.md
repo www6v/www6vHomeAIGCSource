@@ -11,7 +11,7 @@ tags:
   - 故障
 ---
 
-![稳定性总结](https://cloud.mail.126.com/dfs/service/stability.jpg?op=thumbFile&uid=www6v@126.com&account=www6v@126.com&file=eyJzIjoiZnM6Y2xvdWRzdG9yYWdlLm1haWwuMTI2OjM4MDAwMDYxMjAzIiwic2YiOiI0ODU2OTEyNjMyNzY6MzgwMDAwNjEyMDMiLCJpIjo5MTg0MjIwNjI2ODg5Mjc1LCJjcyI6eyJ0IjoxLCJ2IjoiYzFjNTk0NmVkMTg4NmEwZmZiZTFiNWNmM2YzMmRhZmYifSwic3oiOjIyODgyOCwiY3QiOjE1NDkwMTU4MzYwNzV9&size=1500x1500 "稳定性总结")
+{% asset_img  stability.jpg  稳定性总结 %}
 
 ## 参考：
 

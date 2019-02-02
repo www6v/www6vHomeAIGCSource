@@ -8,7 +8,8 @@ tags:
   - gc
 ---
 
-![性能调优](https://cloud.mail.126.com/dfs/service/optimize%20.jpg?op=thumbFile&uid=www6v@126.com&account=www6v@126.com&file=eyJzIjoiZnM6Y2xvdWRzdG9yYWdlLm1haWwuMTI2OjM4MDAwMDYxMjAzIiwic2YiOiI0ODU2OTEyNjMyNjE6MzgwMDAwNjEyMDMiLCJpIjo5MDY2NTcyODgyNzAzNDY3LCJjcyI6eyJ0IjoxLCJ2IjoiNTJiZTYzNjgxOTMwMzAzZDMzY2ZiZGJjOTg2MGRmYTYifSwic3oiOjkxOTEwLCJjdCI6MTU0OTAxNTEwMTk2NX0&size=1500x1500 "性能调优")
+{% asset_img  optimize.jpg  性能调优 %}
+
 
 ## 参考：
 

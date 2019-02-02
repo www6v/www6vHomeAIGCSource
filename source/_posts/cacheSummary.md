@@ -8,7 +8,7 @@ tags:
   - 一致性
 ---
 
-![cache总结](https://cloud.mail.126.com/dfs/service/cacheSummary.jpg?op=thumbFile&uid=www6v@126.com&account=www6v@126.com&file=eyJzIjoiZnM6Y2xvdWRzdG9yYWdlLm1haWwuMTI2OjM4MDAwMDYxMjAzIiwic2YiOiI0ODU2OTEyNjMxNzM6MzgwMDAwNjEyMDMiLCJpIjo4OTU1NTIyMjA4Mjg3Nzg5LCJjcyI6eyJ0IjoxLCJ2IjoiNTI4MmEyY2E0NTJmN2E0YTdiODk0MzVlZTI0ZGE0ZDYifSwic3oiOjM5MDU2MiwiY3QiOjE1NDkwMTQzMTI3MjZ9&size=1500x1500 "cache总结")
+{% asset_img cacheSummary.jpg  cache总结 %}
 
 ## 参考:
 
