@@ -5,9 +5,12 @@ tags:
   - Java基础
   - 多线程
   - 并发
+categories: 
+  - Java基础
+  - 多线程  
 ---
 
-![Java多线程总结](http://www6v.github.io/www6vHome/thread/thread.jpg "Java多线程总结")
+{% asset_img  thread.jpg  Java多线程总结 %}
 
 ## 参考：
 

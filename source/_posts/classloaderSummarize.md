@@ -5,9 +5,12 @@ tags:
   - Java基础
   - jvm
   - classloader
+categories: 
+  - Java基础
+  - classloader    
 ---
 
-![Classloader总结](http://www6v.github.io/www6vHome/classloaderSummarize/Classloader.jpg "Classloader总结")
+{% asset_img  Classloader.jpg  Classloader总结 %}
 
 ## 参考:
 

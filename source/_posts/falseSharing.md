@@ -2,6 +2,9 @@
 title: 伪共享 falseSharing
 date: 2014-03-05 11:14:20
 tags: Java基础
+categories: 
+  - Java基础
+  - 伪共享 
 ---
 
 ## 一. 应用
@@ -9,6 +12,8 @@ tags: Java基础
 1. jdk8 LongAdder的Cell类
 
 2. Disruptor
+
+<!-- more -->
 
 ## 二. 伪共享测试代码
 ```
@@ -103,8 +108,7 @@ public final class FalseSharing
 
 ## 参考：
 
-1. LongAdder类学习小结
-https://yq.aliyun.com/articles/68190?spm=5176.8067842.tagmain.150.yoI2AF
+1. [LongAdder类学习小结](https://yq.aliyun.com/articles/68190?spm=5176.8067842.tagmain.150.yoI2AF)
 
-2. 剖析Disruptor:为什么会这么快？（二）神奇的缓存行填充
-http://ifeve.com/disruptor-cacheline-padding/
+2. [剖析Disruptor:为什么会这么快？（二）神奇的缓存行填充](http://ifeve.com/disruptor-cacheline-padding/)
+

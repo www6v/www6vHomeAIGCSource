@@ -4,9 +4,12 @@ date: 2014-06-02 12:24:27
 tags:
   - Java基础
   - 多线程
+categories: 
+  - Java基础
+  - 多线程   
 ---
 
-![多线程中的volatile和CAS](http://www6v.github.io/www6vHome/volatile&CAS/volatile&CAS.jpg "多线程中的volatile和CAS")
+{% asset_img  volatile-CAS.jpg  多线程中的volatile和CAS %}
 
 ## 参考:
 1. Java 理论与实践: 正确使用 Volatile 变量

@@ -5,9 +5,14 @@ tags:
   - Java基础
   - gc
   - jvm
+categories: 
+  - Java基础
+  - gc      
 ---
 
-![垃圾收集GC总结](http://www6v.github.io/www6vHome/gc/gc.jpg "垃圾收集GC总结")
+{% asset_img  gc.jpg  垃圾收集GC总结 %}
+
+<!-- more -->
 
 ## 参考：
 

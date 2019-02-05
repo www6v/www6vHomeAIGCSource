@@ -5,9 +5,13 @@ tags:
   - Java基础
   - 调研
   - classloader
+categories: 
+  - Java基础
+  - classloader   
 ---
 
 ## 一. 这次针对共享jar目录对tomcat classloader调研，大概有以下两种解决方案。
+<!-- more -->
 
 ## 二. Tomcat6.x+ 向前兼容性 和 Delegate“开关”
 
@@ -179,13 +183,12 @@ total = 35      8395    52687048            N/A         alive=7, dead=28        
 ![图7](http://www6v.github.io/www6vHome/tomcatClassloader/tomcatClassloader_clip_image004.jpg "图7")
 
 ## 参考： 
-1. http://tomcat.apache.org/tomcat-6.0-doc/config/loader.html ?The Loader Component
-2. http://tomcat.apache.org/tomcat-7.0-doc/config/context.html? The Context Container
-3. http://agapple.iteye.com/blog/826661 ?
-主流web容器(jetty,tomcat,jboss)的classloader机制对比和相关问题分析 
-4. http://blog.csdn.net/fjslovejhl/article/details/21328347? Tomcat源码分析之ClassLoader部分的设计详细分析 tomcat8.0
-5. http://www.blogjava.net/heavensay/archive/2012/11/07/389685.html? class卸载、热替换和Tomcat的热部署的分析 
-6. http://dncsoft.iteye.com/blog/336871? 应用Tomcat的WebappClassLoader加载指定目录的jar文件 
+1. [The Loader Component](http://tomcat.apache.org/tomcat-6.0-doc/config/loader.html)
+2. [The Context Container](http://tomcat.apache.org/tomcat-7.0-doc/config/context.html)
+3. [主流web容器(jetty,tomcat,jboss)的classloader机制对比和相关问题分析](http://agapple.iteye.com/blog/826661)
+4. [Tomcat源码分析之ClassLoader部分的设计详细分析 tomcat8.0](http://blog.csdn.net/fjslovejhl/article/details/21328347) 
+5. [class卸载、热替换和Tomcat的热部署的分析](http://www.blogjava.net/heavensay/archive/2012/11/07/389685.html)  
+6. [应用Tomcat的WebappClassLoader加载指定目录的jar文件](http://dncsoft.iteye.com/blog/336871)  
 7. tomcat6.0和7.0的源代码
 
  

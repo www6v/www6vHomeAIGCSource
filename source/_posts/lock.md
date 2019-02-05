@@ -4,9 +4,12 @@ date: 2014-05-27 12:20:45
 tags:
   - Java基础
   - 多线程
+categories: 
+  - Java基础
+  - 多线程    
 ---
 
-![多线程中的锁](http://www6v.github.io/www6vHome/lock/lock.jpg "多线程中的锁")
+{% asset_img  lock.jpg  多线程中的锁 %}
 
 ## 参考：
 

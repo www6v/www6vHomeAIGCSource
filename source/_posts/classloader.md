@@ -5,6 +5,9 @@ tags:
   - 故障
   - 问题排查
   - classloader
+categories: 
+  - 故障
+  - classloader     
 ---
 
 ## 一. 背景
@@ -12,6 +15,8 @@ tags:
 同一段代码在服务框架的服务端和客户端里重用, 客户端里classloader能load到资源文件, 但是服务端代码部署在tomcat容器里, classloader不能load到资源文件.
 
 看来代码有个bug.直接上代码:
+
+<!-- more -->
 
 ## 二.代码
 

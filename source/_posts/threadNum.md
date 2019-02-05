@@ -4,9 +4,12 @@ date: 2014-07-02 12:35:36
 tags: 
   - Java基础
   - 多线程
+categories: 
+  - Java基础
+  - 多线程   
 ---
 
-![线程池最佳线程数](http://www6v.github.io/www6vHome/threadNum/threadNum.jpg "线程池最佳线程数")
+{% asset_img  threadNum.jpg  线程池最佳线程数 %}
 
 ## 参考:
 

@@ -2,9 +2,12 @@
 title: Java内存模型
 date: 2014-01-03 22:14:27
 tags: Java基础
+categories: 
+  - Java基础
+  - 内存模型
 ---
 
-![Java内存模型](http://www6v.github.io/www6vHome/memoryModel/memoryModel.jpg "Java内存模型")
+{% asset_img  memoryModel.jpg  Java内存模型 %}
 
 ## 参考:
 

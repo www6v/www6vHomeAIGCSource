@@ -5,6 +5,9 @@ tags:
   - Java基础
   - 并发
   - 多线程
+categories: 
+  - Java基础
+  - 多线程  
 ---
 
-![Java多线程中的取消和关闭](http://www6v.github.io/www6vHome/cancelAndShutdown/cancelAndShutdown.jpg "Java多线程中的取消和关闭")
+{% asset_img  cancelAndShutdown.jpg  Java多线程中的取消和关闭 %}
