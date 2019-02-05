@@ -5,9 +5,12 @@ tags:
   - spring
   - 事务
   - transaction
+categories: 
+  - spring 
+  - 事务  
 ---
 
-![Spring事务](http://www6v.github.io/www6vHome/springTransaction/springTransaction.jpg "Spring事务")
+{% asset_img  springTransaction.jpg  Spring事务 %}
 
 ## 参考:
 

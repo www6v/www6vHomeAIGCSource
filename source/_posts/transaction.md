@@ -5,9 +5,11 @@ tags:
   - 基础
   - 事务
   - transaction
+categories: 
+  - 事务     
 ---
 
-![本地事务总结](http://www6v.github.io/www6vHome/transaction/transaction.jpg "本地事务总结")
+{% asset_img  transaction.jpg  本地事务总结 %}
 
 ## 参考:
 1. 拨开云雾见天日：剖析单机事务原理 CHEN川

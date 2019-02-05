@@ -5,9 +5,12 @@ tags:
   - 基础
   - 中间件
   - 文件
+categories: 
+  - 文件IO   
 ---
 
-![文件IO总结](http://www6v.github.io/www6vHome/fileIO/fileIO.jpg "文件IO总结")
+{% asset_img fileIO.jpg 文件IO总结 %}
+
 
 ## 参考：
 

@@ -6,6 +6,9 @@ tags:
   - 中间件
   - 网络
   - Netty
+categories: 
+  - 服务化
+  - Netty   
 ---
 
 京东JSF中的服务提供者的server可以使用两种EventLoop， 默认为false，所以使用NioEventLoop，如下图所示。
@@ -17,6 +20,8 @@ Netty4.0.17 提供了默认采用ET工作模式的EpollEventLoop。NioEventLoop�
 ![](http://www6v.github.io/www6vHome/nettyEpollEventLoop/twoType.JPG)
 
 **epoll使用一组函数来完成任务，而不是像select/poll使用单个函数。**
+
+<!-- more -->
 
 ### 1. epoll通过epoll_create创建一个用于epoll轮询的描述符，对应于图1中的 epollFd。
 

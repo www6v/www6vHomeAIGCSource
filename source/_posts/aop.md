@@ -3,10 +3,13 @@ title: AOP总结
 date: 2014-11-21 14:25:58
 tags:
   - Java基础
-  - aop
+  - AOP
+categories:
+  - Java基础 
+  - AOP    
 ---
 
-![AOP总结](http://www6v.github.io/www6vHome/aop/aop.jpg "AOP总结")
+{% asset_img  aop.jpg  AOP总结 %}
 
 ## 参考:
 

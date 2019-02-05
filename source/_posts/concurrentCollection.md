@@ -5,9 +5,12 @@ tags:
   - Java基础
   - 并发集合
   - concurrentCollection
+categories:
+  - Java基础 
+  - 并发容器    
 ---
 
-![Java并发容器总结](http://www6v.github.io/www6vHome/concurrentCollection/concurrentCollection.jpg "Java并发容器总结")
+{% asset_img  concurrentCollection.jpg  Java并发容器总结 %}
 
 ## 参考:
 

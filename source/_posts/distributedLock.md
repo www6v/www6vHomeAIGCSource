@@ -5,9 +5,12 @@ tags:
   - 分布式
   - 中间件
   - 锁
+categories: 
+  - 锁
+  - 分布式锁  
 ---
 
-![分布式锁](http://www6v.github.io/www6vHome/distributedLock/distributedLock.jpg "分布式锁")
+{% asset_img distributedLock.jpg 分布式锁 %}
 
 ## 参考：
 

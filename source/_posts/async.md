@@ -6,9 +6,12 @@ tags:
   - 服务化
   - 异步
   - 性能
+categories: 
+  - 服务化
+  - 异步化   
 ---
 
-![服务异步化总结](http://www6v.github.io/www6vHome/async/%E6%9C%8D%E5%8A%A1%E5%BC%82%E6%AD%A5%E5%8C%96.jpg "服务异步化总结")
+{% asset_img  async.jpg  服务异步化总结 %}
 
 ## 参考:
 

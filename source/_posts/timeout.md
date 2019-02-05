@@ -6,9 +6,12 @@ tags:
   - 分布式
   - 服务化
   - 超时
+categories: 
+  - 服务化
+  - 超时   
 ---
 
-![超时总结](http://www6v.github.io/www6vHome/timeout/timeout.jpg "超时总结")
+{% asset_img  timeout.jpg  超时总结 %}
 
 ## 参考:
 

@@ -4,9 +4,12 @@ date: 2016-02-09 18:19:56
 tags:
   - 分布式
   - 一致性
+categories: 
+  - 分布式
+  - 一致性    
 ---
 
-![分布式一致性总结](http://www6v.github.io/www6vHome/consistent/consistent.jpg "分布式一致性总结")
+{% asset_img  consistent.jpg  分布式一致性总结 %}
 
 ## 参考：
 

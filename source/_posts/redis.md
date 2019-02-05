@@ -6,9 +6,12 @@ tags:
   - 中间件
   - 存储
   - Redis
+categories: 
+  - 存储
+  - Redis    
 ---
 
-![Redis 总结](http://www6v.github.io/www6vHome/redis/redis.jpg "Redis 总结")
+{% asset_img redis.jpg Redis 总结 %}
 
 ## 参考:
 

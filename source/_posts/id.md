@@ -4,9 +4,12 @@ date: 2016-08-15 06:28:23
 tags:
   - 中间件
   - 分布式  
+categories: 
+  - 分布式
+  - id生成    
 ---
 
-![分布式id生成](http://www6v.github.io/www6vHome/id/id.jpg "分布式id生成")
+{% asset_img  id.jpg  分布式id生成 %}
 
 ## 参考：
 

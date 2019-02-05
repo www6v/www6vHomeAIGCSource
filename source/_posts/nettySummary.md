@@ -7,9 +7,14 @@ tags:
   - 网络
   - 多线程
   - Netty
+categories: 
+  - 服务化
+  - Netty    
 ---
 
-![Netty总结](http://www6v.github.io/www6vHome/nettySummary/nettySummary.jpg "Netty总结")
+{% asset_img  nettySummary.jpg  Netty总结 %}
+
+<!-- more -->
 
 ## 参考 :
 

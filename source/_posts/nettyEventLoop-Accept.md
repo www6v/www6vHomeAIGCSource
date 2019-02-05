@@ -6,9 +6,12 @@ tags:
   - 中间件
   - 网络
   - Netty
+categories: 
+  - 服务化
+  - Netty  
 ---
 
-![Netty中NioEventLoop的accept过程](http://www6v.github.io/www6vHome/nettyEventLoop_Accept/nettyEventLoop_accept.jpg "Netty中NioEventLoop的accept过程")
+{% asset_img  nettyEventLoop-Accept.jpg  Netty中NioEventLoop的accept过程 %}
 
 ## 参考:
 

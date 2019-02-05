@@ -5,9 +5,12 @@ tags:
   - 中间件
   - 分布式
   - 消息系统
+categories: 
+  - 消息系统
+  - 可靠性   
 ---
 
-![消息可靠性总结](http://www6v.github.io/www6vHome/reliabilityOfMsg/reliabilityOfMsg.jpg "消息可靠性总结")
+{% asset_img  reliabilityOfMsg.jpg  消息可靠性总结 %}
 
 
 

@@ -5,10 +5,13 @@ tags:
   - 中间件
   - 分布式  
   - 稳定性
-  - 可用性    
+  - 可用性
+categories: 
+  - 可用性
+  - 容错        
 ---
 
-![Hystrix实现和容错模式](http://www6v.github.io/www6vHome/Hystrix/Hystrix.jpg "Hystrix实现和容错模式")
+{% asset_img  Hystrix.jpg  Hystrix实现和容错模式 %}
 
 ## 参考：
 

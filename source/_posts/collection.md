@@ -5,9 +5,12 @@ tags:
   - Java基础
   - 集合
   - collection
+categories:
+  - Java基础 
+  - 集合      
 ---
 
-![Java集合总结](http://www6v.github.io/www6vHome/collection/collection.jpg "Java集合总结")
+{% asset_img  collection.jpg  Java集合总结 %}
 
 ## 参考：
 

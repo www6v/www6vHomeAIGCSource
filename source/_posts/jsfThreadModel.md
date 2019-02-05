@@ -6,11 +6,16 @@ tags:
  - 中间件
  - 服务框架 
  - 多线程
+categories: 
+  - 服务化
+  - 京东JSF  
 ---
 
 JSF是京东基础架构组的服务化中间件产品，全名是Jingdong Service Framework（中文名：杰夫）。
 
 JSF整体是依据netty来构建的，本文从代码层面简单介绍一下JSF服务端的线程模型。
+
+<!-- more -->
 
 ### 1.JSF的服务端线程模型整体上是 boss线程池 + worker线程池 + 业务线程池。boss线程池和worker线程池称为Reactor线程池。
 

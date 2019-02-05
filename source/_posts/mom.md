@@ -5,9 +5,12 @@ tags:
   - 中间件
   - 分布式
   - 消息系统
+categories: 
+  - 消息系统
+  - 特性  
 ---
 
-![消息中间件总结](http://www6v.github.io/www6vHome/MOM/mom.jpg "消息中间件总结")
+{% asset_img  mom.jpg  消息中间件总结 %}
 
 
 ## 参考：

@@ -6,9 +6,12 @@ tags:
   - 分布式
   - 消息系统
   - 可用性  
+categories: 
+  - 消息系统
+  - Kafka    
 ---
 
-![Kafka 可靠性总结](http://www6v.github.io/www6vHome/kafka-reliability/Kafka-Reliability.jpg "Kafka 可靠性总结")
+{% asset_img  Kafka-Reliability.jpg  Kafka 可靠性总结 %}
 
 ## 参考:
 

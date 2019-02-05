@@ -4,10 +4,15 @@ date: 2015-04-25 14:59:29
 tags: 
   - 基础
   - 网络
-  - tcp
+  - TCP
+categories: 
+  - 网络
+  - TCP   
 ---
 
-![TCP总结](http://www6v.github.io/www6vHome/tcp/tcp.jpg "TCP总结")
+{% asset_img  tcp.jpg  TCP总结 %}
+
+<!-- more -->
 
 ## 参考:
 

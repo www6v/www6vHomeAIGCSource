@@ -5,9 +5,12 @@ tags:
   - 分布式
   - 中间件
   - 一致性
+categories: 
+  - 一致性  
+  - 幂等 
 ---
 
-![幂等](http://www6v.github.io/www6vHome/idempotent/idempotent.jpg "幂等")
+{% asset_img idempotent.jpg 幂等 %}
 
 ## 参考：
 

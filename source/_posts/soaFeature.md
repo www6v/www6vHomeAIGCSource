@@ -6,7 +6,10 @@ tags:
   - 中间件
   - 服务框架
   - 服务治理
+categories: 
+  - 服务化
+  - 功能    
 ---
 
-![分布式服务框架功能](http://www6v.github.io/www6vHome/soaFeature/soaFeature.jpg "分布式服务框架功能")
+{% asset_img  soaFeature.jpg  分布式服务框架功能 %}
 

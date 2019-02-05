@@ -6,9 +6,11 @@ tags:
   - 中间件
   - 调度
   - 消息
+categories: 
+  - 定时调度       
 ---
 
-![定时调度和延迟消息](http://www6v.github.io/www6vHome/timedTask/timedTask.jpg "定时调度和延迟消息")
+{% asset_img timedTask.jpg 定时调度和延迟消息 %}
 
 ## 参考：
 

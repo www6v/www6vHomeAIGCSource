@@ -6,7 +6,10 @@ tags:
   - 中间件
   - 一致性
   - 可用性
+categories: 
+  - 一致性  
+  - Split Brain   
 ---
 
-![Split Brain](http://www6v.github.io/www6vHome/splitBrain/splitBrain.jpg "Split Brain")
+{% asset_img splitBrain.jpg Split Brain %}
 

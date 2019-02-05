@@ -6,9 +6,12 @@ tags:
   - 分布式  
   - 稳定性
   - 可用性  
+categories: 
+  - 稳定性
+  - 限流  
 ---
 
-![限流总结](http://www6v.github.io/www6vHome/ratelimit/ratelimit.jpg "限流总结")
+{% asset_img  ratelimit.jpg  限流总结 %}
 
 ## 参考：
 

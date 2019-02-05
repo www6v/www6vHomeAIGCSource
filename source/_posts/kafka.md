@@ -6,9 +6,12 @@ tags:
   - 分布式
   - 消息系统
   - kafka
+categories: 
+  - 消息系统
+  - Kafka   
 ---
 
-![Kafka总结](http://www6v.github.io/www6vHome/kafka/kafka.jpg "Kafka总结")
+{% asset_img  kafka.jpg  Kafka总结 %}
 
 ## 参考:
 
