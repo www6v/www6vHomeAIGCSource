@@ -8,7 +8,7 @@ categories:
   - 设计  
 ---
 
-1. 复杂度 简化本质复杂度，消除偶发复杂性. 
+##### 1. 复杂度 简化本质复杂度，消除偶发复杂性. 
    有三个问题可能会产生偶发复杂度。
       第一个：由于日程或其他外部压力而导致临时大量削减代码。
       第二个是复制。
@@ -24,26 +24,31 @@ categories:
 3. Happy path & Sad path 代码执行路径： happy path 和 sad path分离。 
    测试用例： happy path用例。 sad path用例， 使用@Exception（Junit4）， fail（JUnit3）。
 
-4. 奥卡姆剃刀原理 : 如果对于一个现象有好几种解释, 那么最简单的解释往往是最正确的.
+##### 4. 奥卡姆剃刀原理 : 如果对于一个现象有好几种解释, 那么最简单的解释往往是最正确的.
 
 5. 笛米特法则 : 只和最亲密的朋友讲话(talk only to your immediate friends). 任何对象都不需要知道与之交互的对象的任何细节.
 
 6. MongoDB设计哲学 : Databases are specializing – the “one size fits all” approach no longer applies.
 
-7. Little's Law 应用 ： 线程池中多线程个数的确定。
+##### 7. 排队理论 
+##### Little's 定律 -> 应用 ： 线程池中多线程个数的确定。
 
-8. 康威定律：  organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations
+##### 8. 康威定律：  organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations
    衍生: 
    1).DDD context
    2).微服务模块划分
 
 9. SOLID
 
-10. CAP
+##### 10. CAP
 
-11. BASE
+##### 11. BASE
 
 12. “KISS”原则 - Keep it simple and stupid
     衍生: 
       Rob Pike -  Simplicity is Complicated 
+
+##### 13. Amdahl定律, 通用扩展定律(Universal Scalability Law, USL)
+
+
 
