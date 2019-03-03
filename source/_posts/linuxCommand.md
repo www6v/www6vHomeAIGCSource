@@ -114,5 +114,6 @@ java    12921 root   30u     IPv4          286953901      0t0       TCP *:18090 
 ## 参考:
 [超全整理！Linux性能分析工具汇总合集](https://mp.weixin.qq.com/s/yhSJF6Il6iJamYCosVgXYQ)
 [60,000毫秒内对Linux的性能诊断](https://www.oschina.net/translate/linux-performance-analysis-in-60s?print)
+[28个UNIX/LINUX的命令行神器](https://coolshell.cn/articles/7829.html)
 
 
