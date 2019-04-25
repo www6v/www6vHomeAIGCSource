@@ -14,3 +14,4 @@ tags:
 [BaaS后端即服务 - 中台篇](https://yq.aliyun.com/articles/8523)
 [BaaS云架构核心模式之Serverless架构 - 用服务代替服务器(Martin Fowler)](https://yq.aliyun.com/articles/57221)
 [Serverless Architectures](https://martinfowler.com/articles/serverless.html)
+《企业IT架构转型之道(阿里巴巴中台战略思想与架构实战)》 钟华
