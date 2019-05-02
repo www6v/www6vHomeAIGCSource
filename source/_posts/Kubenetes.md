@@ -8,7 +8,7 @@ categories:
 ---
 
 {% asset_img   Kubenetes.jpg  Kubenetes  %}
-{% asset_img   k8s&springCloud.jpg  Kubenetes&SpringCloud  %}
+{% asset_img   k8s&springCloud.png  Kubenetes&SpringCloud  %}
 
 
 ## 参考:
