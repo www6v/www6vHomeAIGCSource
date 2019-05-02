@@ -5,11 +5,13 @@ tags:
   - 云原生
   - 微服务
 categories:
-  - 设计
+  - 设计 
 ---
 
 
-{% asset_img  12factor.jpg  十二要 %}
+{% asset_img  12factor.jpg  十二要素 %}
+{% asset_img  12-factor-app.png  十二要素 %}
+
 
 ## 参考:
 
