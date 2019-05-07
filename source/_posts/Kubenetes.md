@@ -19,3 +19,4 @@ categories:
 2. [资源对象](https://feisky.xyz/kubernetes-handbook/concepts/)
 3. [Kubernetes架构](https://jimmysong.io/kubernetes-handbook/concepts/)
 4. [如何在 Kubernetes 中对无状态应用进行分批发布](https://www.infoq.cn/article/oyjoCIZBpxw*dI21AXPI)
+5. [calico网络原理及与flannel对比](https://blog.csdn.net/hxpjava1/article/details/79566192)
