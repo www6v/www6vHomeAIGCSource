@@ -7,7 +7,9 @@ categories:
   - 云原生
 ---
 
+{% asset_img   KubenetesResource.jpg  Kubenetes资源  %} 
 {% asset_img   Kubenetes.jpg  Kubenetes  %}
+
 {% asset_img   k8s&springCloud.png  Kubenetes&SpringCloud  %}
 {% asset_img   kubernetes-high-level-component-archtecture.jpg  kubernetes-high-level-component-archtecture  %}
 
