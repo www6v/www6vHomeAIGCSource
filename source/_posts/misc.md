@@ -17,38 +17,46 @@ categories:
 
 <!-- more -->   
 
-2. 开闭原则 
+##### 2. 开闭原则 
    1).对于扩展是开放的（Open for extension）。 
    2).对于修改是关闭的（Closed for modification）。
 
-3. Happy path & Sad path 代码执行路径： happy path 和 sad path分离。 
+##### 3. Happy path & Sad path 代码执行路径： happy path 和 sad path分离。 
    测试用例： happy path用例。 sad path用例， 使用@Exception（Junit4）， fail（JUnit3）。
 
-##### 4. 奥卡姆剃刀原理 : 如果对于一个现象有好几种解释, 那么最简单的解释往往是最正确的.
+##### 4. 奥卡姆剃刀原理 
+         如果对于一个现象有好几种解释, 那么最简单的解释往往是最正确的.
 
-5. 笛米特法则 : 只和最亲密的朋友讲话(talk only to your immediate friends). 任何对象都不需要知道与之交互的对象的任何细节.
+##### 5. 笛米特法则 
+         只和最亲密的朋友讲话(talk only to your immediate friends). 任何对象都不需要知道与之交互的对象的任何细节.
 
-6. MongoDB设计哲学 : Databases are specializing – the “one size fits all” approach no longer applies.
+##### 6. MongoDB设计哲学 
+         Databases are specializing – the “one size fits all” approach no longer applies.
 
 ##### 7. 排队理论 
-##### Little's 定律 -> 应用 ： 线程池中多线程个数的确定。
+         Little's 定律 -> 应用 ： 线程池中多线程个数的确定。
 
-##### 8. 康威定律：  organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations
-   衍生: 
-   1).DDD context
-   2).微服务模块划分
+##### 8. 康威定律  
+         organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations
 
-9. SOLID
+      衍生: 
+         1).DDD context
+         2).微服务模块划分
 
-##### 10. CAP
+##### 9. SOLID
 
-##### 11. BASE
+##### 10. CAP/BASE
 
-12. “KISS”原则 - Keep it simple and stupid
-    衍生: 
-      Rob Pike -  Simplicity is Complicated 
+##### 11. “KISS”原则 - Keep it simple and stupid
+      衍生: 
+         Rob Pike -  Simplicity is Complicated 
 
-##### 13. Amdahl定律, 通用扩展定律(Universal Scalability Law, USL)
+##### 12. Amdahl定律, 通用扩展定律(Universal Scalability Law, USL)
 
+
+
+## 参考：
+
+1. [对开发人员有用的定律、理论、原则和模式](https://github.com/www6v/hacker-laws-zh)
 
 
