@@ -15,12 +15,12 @@ categories:
 两层调度调度器|	动态资源集|	悲观锁|	增量囤积|	严格公正
 共享状态|	全局|	乐观锁|	调度器策略|	优先级抢占
 
-常见调度器的比较
+表1. 常见调度器的比较
 
 
 {% asset_img   k8sScheduler.jpg  k8s调度器  %} 
 
-{% asset_img   schedulerAbstract.jpg  调度系统泛型  %} 
+{% asset_img   schedulerAbstract.JPG  调度系统泛型  %} 
 
 
 ## 参考:
