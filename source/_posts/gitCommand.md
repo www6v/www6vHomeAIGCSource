@@ -4,7 +4,7 @@ date: 2019-05-04 21:59:54
 tags:
   - git
 categories: 
-  - 命令  
+  - DevOps 
 ---
 
 1. git提交到远程分支

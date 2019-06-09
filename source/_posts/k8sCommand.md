@@ -2,9 +2,9 @@
 title: k8s 命令
 date: 2019-06-09 10:28:33
 tags:
-  - k8s
-categories: 
-  - k8s
+  - Kubenetes
+categories:
+  - 云原生
 ---
    
 1. watch 状态
