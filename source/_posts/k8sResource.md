@@ -1,5 +1,5 @@
 ---
-title: k8sResource
+title: Kubenetes资源
 date: 2019-06-09 17:13:52
 tags:
   - Kubenetes
@@ -8,7 +8,10 @@ categories:
 ---
 
 
-{% asset_img   k8sResourcee.jpg  Kubenetes资源  %} 
+{% asset_img   k8sResource.jpg  Kubenetes资源  %} 
+
+<!-- more -->
+
 {% asset_img   k8sService.jpg  Kubenetes服务  %} 
 {% asset_img   k8sStatus.jpg  Kubenetes状态  %} 
 
