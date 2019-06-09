@@ -8,6 +8,13 @@ categories:
 ---
 
 
+{% asset_img   k8sScheduler.jpg  k8s调度器  %} 
+
+<!-- more -->
+
+{% asset_img   schedulerAbstract.JPG  调度系统泛型  %} 
+
+
 类型|	资源选择|	排他性|	分配粒度|	集群策略
 -|-|-|-|-
 中央调度器|	全局|	无，时序|	全局策略|	严格的优先级(抢占式) 
@@ -17,9 +24,8 @@ categories:
 表1. 常见调度器的比较
 
 
-{% asset_img   k8sScheduler.jpg  k8s调度器  %} 
 
-{% asset_img   schedulerAbstract.JPG  调度系统泛型  %} 
+
 
 
 ## 参考:

@@ -10,6 +10,8 @@ categories:
 {% asset_img   KubenetesResource.jpg  Kubenetes资源  %} 
 {% asset_img   Kubenetes.jpg  Kubenetes  %}
 
+<!-- more -->
+
 {% asset_img   k8s&springCloud.png  Kubenetes&SpringCloud  %}
 {% asset_img   kubernetes-high-level-component-archtecture.jpg  kubernetes-high-level-component-archtecture  %}
 
