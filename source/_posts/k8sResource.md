@@ -22,3 +22,5 @@ categories:
 3. [如何在 Kubernetes 中对无状态应用进行分批发布](https://www.infoq.cn/article/oyjoCIZBpxw*dI21AXPI)
 4. [面向 Kubernetes 编程： Kubernetes 是下一代操作系统](https://mp.weixin.qq.com/s/E5-agHtMvW_X7znVJDkTKA)
 5. [awesome-operators](https://github.com/www6v/awesome-operators)
+6. [课时4 理解 Pod 和容器设计模式](https://edu.aliyun.com/lesson_1651_13079?spm=5176.254948.1334973.10.2c12cad2AHzzTw#_13079)
+7. [课时3 Kubernetes 核心概念](https://edu.aliyun.com/lesson_1651_13078?spm=5176.254948.1334973.8.2c12cad2AHzzTw#_13078)
