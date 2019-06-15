@@ -38,6 +38,18 @@ kubectl get pods kubia-cjrqd -o yaml | less   ## 可以看 status， 可以看 O
 kubectl get pods --watch
 ```
 
+5. Deployment 回滚
+```
+kubectl rollout undo deployment/deployment-nginx
+kubectl rollout undo deployment.v1.apps/deployment-nginx  --to-revision=2
+```
+
+6. edit 命令
+'''
+kubectl edit pods kubia-cjrqd
+kubectl edit deployment  nginx-deployment
+'''
+
 
 
 
