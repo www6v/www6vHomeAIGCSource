@@ -24,7 +24,7 @@ kubectl describe pods
 kubectl describe deployment
 ```
 
-3. 
+3. 一些命令
 ```
 kubectl get rc -o wide
 kubectl logs kubia-cjrqd
@@ -45,10 +45,10 @@ kubectl rollout undo deployment.v1.apps/deployment-nginx  --to-revision=2
 ```
 
 6. edit 命令
-'''
+```
 kubectl edit pods kubia-cjrqd
 kubectl edit deployment  nginx-deployment
-'''
+```
 
 
 
