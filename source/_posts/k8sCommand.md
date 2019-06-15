@@ -7,12 +7,7 @@ categories:
   - 云原生
 ---
    
-1. watch 状态
-```
-kubectl get pods --watch
-```
-
-2. kubectl get 资源名  -> 简单描述
+1. kubectl get 资源名  -> 简单描述
 
 ```
 kubectl get rc
@@ -21,12 +16,26 @@ kubectl get deployment
 ```
 
 
-3. kubectl describe 资源名  -> 详细信息
+2. kubectl describe 资源名  -> 详细信息
 
 ```
 kubectl describe rc
 kubectl describe pods
 kubectl describe deployment
+```
+
+3. 
+```
+kubectl get rc -o wide
+kubectl logs kubia-cjrqd
+kubectl get pods --show-labels
+kubectl get rs  -o yaml| less  ## 可以看 status， annotations
+kubectl get pods kubia-cjrqd -o yaml | less   ## 可以看 status， 可以看 OwnerReference
+```
+
+4. watch 状态
+```
+kubectl get pods --watch
 ```
 
 
