@@ -1,0 +1,24 @@
+---
+title: RocketMQ
+date: 2019-06-18 14:39:50
+tags:
+  - 中间件
+  - 分布式
+  - 消息系统
+  - RocketMQ
+categories: 
+  - 消息系统
+  - RocketMQ   
+---
+
+{% asset_img  rocketMQ.jpg  RocketMQ %}
+
+## 参考:
+
+1. [Apache RocketMQ背后的设计思路与最佳实践](https://yq.aliyun.com/articles/71889?spm=5176.100239.blogcont55626.10.FWVVKw)
+2. [十分钟入门RocketMQ 尘央](https://yq.aliyun.com/articles/66101?spm=5176.100239.blogcont55634.18.ODias7)
+3. [RocketMQ 关键特性](https://yq.aliyun.com/articles/66110?spm=a2c4e.11155435.0.0.2cb97b3fBOIG8W)
+4. [《RocketMq》二、存储篇](https://blog.csdn.net/xxxxxx91116/article/details/50333161)
+5. [分布式消息队列RocketMQ与Kafka架构上的巨大差异之2 -- CommitLog与ConsumeQueue](https://blog.csdn.net/gh670011677/article/details/75095469)
+
+
