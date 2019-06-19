@@ -1,5 +1,5 @@
 ---
-title: 中台
+title: 中台战略
 date: 2019-05-02 00:29:04
 tags:
   - 中间件
@@ -9,7 +9,7 @@ categories:
   - 限流  
 ---
 
-{% asset_img  middleStage.jpg  中台 %}
+{% asset_img  middleStage.jpg  中台战略 %}
 
 ## 参考：
 
