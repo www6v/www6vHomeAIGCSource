@@ -4,9 +4,11 @@ date: 2016-02-09 18:19:56
 tags:
   - 分布式
   - 一致性
+  - 事务
 categories: 
   - 分布式
   - 一致性    
+  - 事务
 ---
 
 {% asset_img  consistent.jpg  分布式一致性总结 %}
@@ -22,3 +24,7 @@ categories:
 7. 分布式事务之TCC服务设计和实现注意事项 绍辉
 8. ENode 1.0 - Saga的思想与实现 汤雪华
 9. https://github.com/www6v/tcc-transaction
+10. [AT Mode](https://github.com/seata/seata/wiki/AT-Mode)
+11. [Manual Transaction 模式](https://github.com/seata/seata/wiki/MT-Mode)
+12. [更开放的分布式事务 | Fescar 品牌升级，更名为 Seata](https://mp.weixin.qq.com/s/S0touTyVWfolEqgFaAjLxg)
+13. [关于开源分布式事务中间件Fescar，我们总结了开发者关心的13个问题](https://mp.weixin.qq.com/s/XTCZEZdmToWrETbR1GtR4g)
