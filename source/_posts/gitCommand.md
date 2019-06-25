@@ -38,4 +38,6 @@ git checkout -b dev
 
 1. [Git 分支 - 分支的新建与合并](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)
 2. [Git 基础图解、分支图解、全面教程、常用命令](https://www.cnblogs.com/cheneasternsun/p/5952830.html)
+3. [git使用小记---比较](https://www.jianshu.com/p/776916f74a41)
+4. [一篇极好的Git 总结](https://www.liangzl.com/get-article-detail-31025.html)
 
