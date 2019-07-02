@@ -33,6 +33,8 @@ $ kubectl get svc -n istio-system
 $ kubectl get pods -n istio-system
 ```
 
+<!-- more -->
+
 二.  Bookinfo例子
 
 ```
@@ -54,10 +56,11 @@ $ export INGRESS_HOST=$(kubectl -n istio-system get service istio-ingressgateway
 $ export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].port}')
 $ export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
 $ curl -s http://${GATEWAY_URL}/productpage | grep -o "<title>.*</title>"
+```
 
 访问应用 浏览器中打开应用程序页面
-http://${GATEWAY_URL}/productpage
-```
+{% asset_img  getService.JPG  istio-ingressgateway的EXTERNAL-IP %}
+{% asset_img  browserCheck.JPG  浏览器中打开应用程序页面  %}
 
 ## 参考:
 
