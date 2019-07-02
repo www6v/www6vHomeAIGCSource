@@ -37,6 +37,12 @@ Istio 的核心组件安装
 $ helm template install/kubernetes/helm/istio --name istio --namespace istio-system | kubectl apply -f -
 ```
 
+```
+验证
+$ kubectl get svc -n istio-system
+$ kubectl get pods -n istio-system
+```
+
 二.  Bookinfo例子
 
 ```
