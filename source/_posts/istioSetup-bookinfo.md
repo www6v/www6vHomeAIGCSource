@@ -13,6 +13,7 @@ categories:
 ```
 资源准备
 wget https://github.com/istio/istio/releases/download/1.1.1/istio-1.1.1-linux.tar.gz
+tar xvf istio-1.1.1-linux.tar.gz
 ```
   
 ```
