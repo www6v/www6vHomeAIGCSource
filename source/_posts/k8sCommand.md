@@ -32,6 +32,8 @@ kubectl logs kubia-cjrqd
 kubectl get pods --show-labels
 kubectl get rs  -o yaml| less  ## 可以看 status， annotations
 kubectl get pods kubia-cjrqd -o yaml | less   ## 可以看 status， 可以看 OwnerReference
+
+kubectl -n default get all   ## 可以看所有资源  
 ```
 
 4. watch 状态
