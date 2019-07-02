@@ -9,29 +9,30 @@ categories:
 ---
 
 一. istio安装
-资源准备 
+ 
 ```
+资源准备
 wget https://github.com/istio/istio/releases/download/1.1.1/istio-1.1.1-linux.tar.gz
 ```
-
-建立namespace  
+  
 ```
+建立namespace
 $ kubectl create namespace istio-system
 ```
 
-Istio CRD安装
 ```
+Istio CRD安装
 $ helm template install/kubernetes/helm/istio-init --name istio-init --namespace istio-system | kubectl apply -f -
 ```
 
-CRD验证
 ```
+CRD验证
 $ kubectl get crds | grep 'istio.io\|certmanager.k8s.io' | wc -l
 53
 ```
 
-Istio 的核心组件安装
 ```
+Istio 的核心组件安装
 $ helm template install/kubernetes/helm/istio --name istio --namespace istio-system | kubectl apply -f -
 ```
 
