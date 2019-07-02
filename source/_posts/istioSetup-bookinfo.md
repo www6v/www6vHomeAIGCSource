@@ -14,30 +14,20 @@ categories:
 资源准备
 wget https://github.com/istio/istio/releases/download/1.1.1/istio-1.1.1-linux.tar.gz
 tar xvf istio-1.1.1-linux.tar.gz
-```
-  
-```
+
 建立namespace
 $ kubectl create namespace istio-system
-```
 
-```
 Istio CRD安装
 $ helm template install/kubernetes/helm/istio-init --name istio-init --namespace istio-system | kubectl apply -f -
-```
 
-```
 CRD验证
 $ kubectl get crds | grep 'istio.io\|certmanager.k8s.io' | wc -l
 53
-```
 
-```
 Istio 的核心组件安装
 $ helm template install/kubernetes/helm/istio --name istio --namespace istio-system | kubectl apply -f -
-```
 
-```
 验证
 $ kubectl get svc -n istio-system
 $ kubectl get pods -n istio-system
@@ -56,7 +46,9 @@ $ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
 
 验证gateway 
 $ kubectl get gateway
+```
 
+```
 访问应用
 $ export INGRESS_HOST=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 $ export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].port}')
