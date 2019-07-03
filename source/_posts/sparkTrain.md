@@ -1,6 +1,6 @@
 ---
-title: sparkTrain
-date: 2019-07-03 17:02:52
+title: Spark公司内部培训
+date: 2019-03-10 17:02:52
 tags:
  - 大数据
 categories: 
@@ -9,4 +9,4 @@ categories:
 
 ---
 
-[Spark公司内部培训]()
+[Spark公司内部培训](https://www6v.github.io/www6vHomeHexo/2019/07/03/sparkTrain.pptx)
