@@ -53,10 +53,14 @@ categories:
 
 ##### 12. Amdahl定律, 通用扩展定律(Universal Scalability Law, USL)
 
+##### 13. Rule of least power（够用就好）的原则。
+
+      这个原则是由 WWW 发明者 Tim Berners-Lee 提出的，它被广泛用于指导各种 W3C 标准制定
 
 
 ## 参考：
 
 1. [对开发人员有用的定律、理论、原则和模式](https://github.com/www6v/hacker-laws-zh)
+2. [滴滴杜欢：大型微服务框架设计实践](https://mp.weixin.qq.com/s/HSzqIC1pOdq8H12gCvYgRA)
 
 
