@@ -56,6 +56,14 @@ kubectl edit pods kubia-cjrqd
 kubectl edit deployment  nginx-deployment
 ```
 
+7. istio相关
 
+```
+kubectl get  ValidatingWebhookConfiguration  -o yaml
+
+kubectl exec productpage-v1-8579d7b797-dhj7z   -c istio-proxy  -- ps -ef
+kubectl exec productpage-v1-8579d7b797-dhj7z   -c istio-proxy curl http://127.0.0.1:15000/help
+kubectl exec productpage-v1-8579d7b797-dhj7z   -c istio-proxy --  netstat -ln
+```
 
 
