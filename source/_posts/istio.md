@@ -10,10 +10,13 @@ categories:
 ---
 
 {% asset_img  istio.jpg  istio %}
+
+<!-- more -->
+
 {% asset_img  istio-component.jpg  istio组件  %}
 {% asset_img  traffic-managment-components.png  Pilot流量管理  %}
 
-<!-- more -->
+
 
 ## 参考:
 1. [Istio流量管理实现机制深度解析](https://zhaohuabing.com/post/2018-09-25-istio-traffic-management-impl-intro/)
