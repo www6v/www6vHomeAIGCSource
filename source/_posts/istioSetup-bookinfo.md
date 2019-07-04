@@ -1,5 +1,5 @@
 ---
-title: istio安装 + bookinfo例子
+title: istio安装 + Bookinfo示例
 date: 2019-07-02 15:24:50
 tags:
   - 分布式
@@ -35,8 +35,8 @@ $ kubectl get pods -n istio-system
 
 <!-- more -->
 
-二.  Bookinfo例子
-
+二.  Bookinfo示例
+1. Bookinfo应用
 ```
 手动注入
 $ kubectl apply -f <(istioctl kube-inject -f samples/bookinfo/platform/kube/bookinfo.yaml)
@@ -61,6 +61,16 @@ $ curl -s http://${GATEWAY_URL}/productpage | grep -o "<title>.*</title>"
 访问应用 浏览器中打开应用程序页面
 {% asset_img  getService.JPG  istio-ingressgateway的EXTERNAL-IP %}
 {% asset_img  browserCheck.JPG  浏览器中打开应用程序页面  %}
+
+2. Bookinfo应用  基于版本的路由
+```
+在目标规则中定义好可用的版本，命名为 subsets
+$ kubectl apply -f samples/bookinfo/networking/destination-rule-all.yaml
+
+应用缺省目标规则
+$ kubectl apply -f samples/bookinfo/networking/virtual-service-all-v1.yaml
+$ kubectl delete -f samples/bookinfo/networking/virtual-service-all-v1.yaml
+```
 
 ## 参考:
 
