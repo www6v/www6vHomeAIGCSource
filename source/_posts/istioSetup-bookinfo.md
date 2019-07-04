@@ -36,6 +36,7 @@ $ kubectl get pods -n istio-system
 <!-- more -->
 
 二.  Bookinfo示例
+
 1. Bookinfo应用
 ```
 手动注入
