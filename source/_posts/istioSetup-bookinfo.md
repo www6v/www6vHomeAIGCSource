@@ -67,11 +67,18 @@ $ curl -s http://${GATEWAY_URL}/productpage | grep -o "<title>.*</title>"
 在目标规则中定义好可用的版本，命名为 subsets
 $ kubectl apply -f samples/bookinfo/networking/destination-rule-all.yaml
 
-应用缺省目标规则
+基于版本的路由: virtual service 将所有流量路由到每个微服务的 v1 版本
 $ kubectl apply -f samples/bookinfo/networking/virtual-service-all-v1.yaml
 $ kubectl delete -f samples/bookinfo/networking/virtual-service-all-v1.yaml
 ```
 
+3. Bookinfo应用  基于用户身份的路由
+```
+基于用户身份的路由: 来自名为 Jason 的用户的所有流量将被路由到服务 reviews:v2
+$ kubectl apply -f samples/bookinfo/networking/virtual-service-reviews-test-v2.yaml
+
+$ kubectl delete -f samples/bookinfo/networking/virtual-service-reviews-test-v2.yaml
+```
 ## 参考:
 
 1. [使用 Helm 进行安装](https://istio.io/zh/docs/setup/kubernetes/install/helm/)
