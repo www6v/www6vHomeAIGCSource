@@ -42,7 +42,6 @@ $ kubectl get pods -n istio-system
 #手动注入
 $ kubectl apply -f <(istioctl kube-inject -f samples/bookinfo/platform/kube/bookinfo.yaml)
 ```
-
 ```
 #安装gateway
 $ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
@@ -50,7 +49,6 @@ $ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
 #验证gateway 
 $ kubectl get gateway
 ```
-
 ```
 #访问应用
 $ export INGRESS_HOST=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
