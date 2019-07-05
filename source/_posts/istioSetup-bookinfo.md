@@ -84,6 +84,19 @@ $ kubectl delete -f samples/bookinfo/networking/virtual-service-reviews-test-v2.
 ### 3. 遥测
 
 #### 收集指标和日志
+
+```
+helm template install/kubernetes/helm/istio --name istio --namespace istio-system \
+--set prometheus.enabled=true \
+--set prometheus.ingress.enabled=true \
+--set prometheus.service.nodePort.enabled=true \
+--set prometheus.service.nodePort.port=32090  \
+> ./001-my-istio.yaml
+
+
+kubectl apply -f 001-my-istio.yaml
+```
+
 ```
 kubectl apply -f new_telemetry.yaml
 
