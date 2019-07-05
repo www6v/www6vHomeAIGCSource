@@ -81,7 +81,8 @@ $ kubectl delete -f samples/bookinfo/networking/virtual-service-reviews-test-v2.
 ## 参考:
 
 1. [使用 Helm 进行安装](https://istio.io/zh/docs/setup/kubernetes/install/helm/)
-2. [Bookinfo Application](https://istio.io/docs/examples/bookinfo/#confirm-the-app-is-accessible-from-outside-the-cluster)
-3. [Istio及Bookinfo示例程序安装试用笔记](https://zhaohuabing.com/2017/11/04/istio-install_and_example/)
+2. [Istio及Bookinfo示例程序安装试用笔记](https://zhaohuabing.com/2017/11/04/istio-install_and_example/)
+3. [Bookinfo Application](https://istio.io/docs/examples/bookinfo/#confirm-the-app-is-accessible-from-outside-the-cluster)
+4. [配置请求路由](https://preliminary.istio.io/zh/docs/tasks/traffic-management/request-routing/)
 
 
