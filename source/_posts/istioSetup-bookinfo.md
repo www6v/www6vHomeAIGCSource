@@ -97,7 +97,7 @@ curl http://$GATEWAY_URL/productpage
 
 打开Prometheus界面并查询 istio_double_request_count 的值
 {% asset_img  prom1.JPG   Prometheus查询  %}
-{% asset_img  prom1.JPG   Prometheus查询  %}
+{% asset_img  prom2.JPG   Prometheus查询  %}
 
 ## 参考:
 
