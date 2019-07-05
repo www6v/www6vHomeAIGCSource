@@ -92,7 +92,7 @@ curl http://$GATEWAY_URL/productpage
 ```
 
 注意: 外网访问不了, 需要在uk8s集群上做NAT路由到Prometheus服务所在的Node
-{% asset_img  prom-NAT-transfer.png   Prometheus服务的NAT  %}
+{% asset_img  prom-NAT-transfer.png  Prometheus服务的NAT %}
 
 
 打开Prometheus界面并查询 istio_double_request_count 的值
