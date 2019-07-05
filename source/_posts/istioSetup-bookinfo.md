@@ -8,7 +8,7 @@ categories:
   - serviceMesh   
 ---
 
-一. istio安装
+## 一. istio安装
  
 ```
 #资源准备
@@ -35,9 +35,9 @@ $ kubectl get pods -n istio-system
 
 <!-- more -->
 
-二.  Bookinfo示例
+## 二.  Bookinfo示例
 
-1. Bookinfo应用
+### 1. Bookinfo应用
 ```
 #手动注入
 $ kubectl apply -f <(istioctl kube-inject -f samples/bookinfo/platform/kube/bookinfo.yaml)
@@ -61,9 +61,9 @@ $ curl -s http://${GATEWAY_URL}/productpage | grep -o "<title>.*</title>"
 {% asset_img  getService.JPG  istio-ingressgateway的EXTERNAL-IP %}
 {% asset_img  browserCheck.JPG  浏览器中打开应用程序页面  %}
 
-2. 路由 
+### 2. 路由 
 
-基于版本的路由
+#### 基于版本的路由
 ```
 #在目标规则中定义好可用的版本，命名为 subsets
 $ kubectl apply -f samples/bookinfo/networking/destination-rule-all.yaml
@@ -73,7 +73,7 @@ $ kubectl apply -f samples/bookinfo/networking/virtual-service-all-v1.yaml
 $ kubectl delete -f samples/bookinfo/networking/virtual-service-all-v1.yaml
 ```
 
-基于用户身份的路由
+#### 基于用户身份的路由
 ```
 #基于用户身份的路由: 来自名为 Jason 的用户的所有流量将被路由到服务 reviews:v2
 $ kubectl apply -f samples/bookinfo/networking/virtual-service-reviews-test-v2.yaml
@@ -83,7 +83,7 @@ $ kubectl delete -f samples/bookinfo/networking/virtual-service-reviews-test-v2.
 
 3. 遥测
 
-收集指标和日志
+#### 收集指标和日志
 ```
 kubectl apply -f new_telemetry.yaml
 
