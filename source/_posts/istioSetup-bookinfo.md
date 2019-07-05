@@ -81,7 +81,7 @@ $ kubectl apply -f samples/bookinfo/networking/virtual-service-reviews-test-v2.y
 $ kubectl delete -f samples/bookinfo/networking/virtual-service-reviews-test-v2.yaml
 ```
 
-3. 遥测
+### 3. 遥测
 
 #### 收集指标和日志
 ```
