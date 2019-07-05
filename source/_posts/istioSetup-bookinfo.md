@@ -85,7 +85,6 @@ $ kubectl delete -f samples/bookinfo/networking/virtual-service-reviews-test-v2.
 
 收集指标和日志
 ```
-[new_telemetry.yaml]()
 kubectl apply -f new_telemetry.yaml
 
 #向示例应用发送流量
