@@ -92,6 +92,8 @@ curl http://$GATEWAY_URL/productpage
 ```
 
 注意: 外网访问不了, 需要在uk8s集群上做NAT路由到Prometheus服务所在的Node
+
+{% asset_img  prom-node.JPG  Prometheus所在的Node %}
 {% asset_img  prom-NAT-transfer.JPG  Prometheus服务的NAT %}
 
 
