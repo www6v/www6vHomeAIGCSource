@@ -27,3 +27,4 @@ categories:
 3. [腾讯云容器团队内部Istio专题分享](https://mp.weixin.qq.com/s/NjMncH84uEl_PywOFFMlFA)
 4. [Istio 庖丁解牛三：galley](https://mp.weixin.qq.com/s/BMVCeiA2aqASbLqyhPomWA)
 5. [Istio 知识图谱](https://github.com/servicemesher/istio-knowledge-map)
+6. [Istio1.1新特性之限制服务可见性]（http://www.servicemesher.com/blog/istio-service-visibility/）
