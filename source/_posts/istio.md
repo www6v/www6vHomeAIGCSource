@@ -17,8 +17,7 @@ categories:
 {% asset_img  traffic-managment-components.png  Pilot流量管理  %}
 
 {% asset_img  istio-knowledge-map.png   Istio知识图谱 %}
-
-
+{% asset_img  istio-route.jpg  Envoy Sidecar 代理的路由转发  %}
 
 
 ## 参考:
@@ -28,3 +27,5 @@ categories:
 4. [Istio 庖丁解牛三：galley](https://mp.weixin.qq.com/s/BMVCeiA2aqASbLqyhPomWA)
 5. [Istio 知识图谱](https://github.com/servicemesher/istio-knowledge-map)
 6. [Istio1.1新特性之限制服务可见性]（http://www.servicemesher.com/blog/istio-service-visibility/）
+7. [理解 Istio Service Mesh 中 Envoy 代理 Sidecar 注入及流量劫持](https://jimmysong.io/posts/envoy-sidecar-injection-in-istio-service-mesh-deep-dive/)
+8. [理解 Istio Service Mesh 中 Envoy Sidecar 代理的路由转发](http://www.servicemesher.com/blog/envoy-sidecar-routing-of-istio-service-mesh-deep-dive/)
