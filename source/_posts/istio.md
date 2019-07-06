@@ -16,6 +16,9 @@ categories:
 {% asset_img  istio-component.jpg  istio组件  %}
 {% asset_img  traffic-managment-components.png  Pilot流量管理  %}
 
+{% asset_img  istio-knowledge-map.png   Istio知识图谱 %}
+
+
 
 
 ## 参考:
@@ -23,4 +26,4 @@ categories:
 2. [Istio 庖丁解牛1：组件概览](https://mp.weixin.qq.com/s/VwqxrZsVmn4a5PcVckaLxA)
 3. [腾讯云容器团队内部Istio专题分享](https://mp.weixin.qq.com/s/NjMncH84uEl_PywOFFMlFA)
 4. [Istio 庖丁解牛三：galley](https://mp.weixin.qq.com/s/BMVCeiA2aqASbLqyhPomWA)
-
+5. [Istio 知识图谱](https://github.com/servicemesher/istio-knowledge-map)
