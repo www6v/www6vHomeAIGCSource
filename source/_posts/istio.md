@@ -20,19 +20,19 @@ categories:
 {% asset_img  istio-route.jpg  Envoy Sidecar 代理的路由转发  %}
 
 
-特性 | spring Cloud组件 | istio 组件 | 
-:-: | :-: | :-: | 
-Resilience & Fault Tolerance | Hystrix |   Envoy  超时、重试和熔断器 |  
-Distributed Tracing |  Sleuth | Mixer | 
-Centralized Metrics | Servo/Hystrix Metrics | Mixer |
-Centralized Logging | Blitz4j | Mixer |
-API Gateway | Gateway/Zuul | Ingress/Egress |  
-Load Balancing | OpenFeign/Ribbon  | Pilot + Envoy |
-Service Discovery | Eureka  | Pilot |
-Routing | Zuul | Pilot | 
-Service-to-service calls |  | Pilot | 
-Configuration Management | Config/Consul/Zk/Eureka | Calley | 
-故障注入| 无 | iptables | 
+特性 | spring Cloud组件 | istio 组件 
+:-: | :-: | :-: 
+Resilience & Fault Tolerance | Hystrix |   Envoy  超时、重试和熔断器 
+Distributed Tracing |  Sleuth | Mixer 
+Centralized Metrics | Servo/Hystrix Metrics | Mixer
+Centralized Logging | Blitz4j | Mixer
+API Gateway | Gateway/Zuul | Ingress/Egress
+Load Balancing | OpenFeign/Ribbon  | Pilot + Envoy
+Service Discovery | Eureka  | Pilot
+Routing | Zuul | Pilot
+Service-to-service calls |  | Pilot
+Configuration Management | Config/Consul/Zk/Eureka | Calley
+故障注入| 无 | iptables
 
 
 
