@@ -24,8 +24,8 @@ categories:
 :-: | :-: | :-: | 
 Resilience & Fault Tolerance | Hystrix |   Envoy  超时、重试和熔断器 |  
 Distributed Tracing |  Sleuth | Mixer | 
-Centralized Metrics | Hystrix Metrics | Mixer |
-Centralized Logging |  | Mixer |
+Centralized Metrics | Servo/Hystrix Metrics | Mixer |
+Centralized Logging | Blitz4j | Mixer |
 API Gateway | Gateway/Zuul | Ingress/Egress |  
 Load Balancing | OpenFeign/Ribbon  | Pilot + Envoy |
 Service Discovery | Eureka  | Pilot |
