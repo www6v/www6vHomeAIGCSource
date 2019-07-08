@@ -114,6 +114,19 @@ curl http://$GATEWAY_URL/productpage
 {% asset_img  prom1.JPG   Prometheus查询  %}
 {% asset_img  prom2.JPG   Prometheus查询  %}
 
+4. 熔断 【参考6】
+
+```
+#结果验证
+[root@10-25-3-55 istio-1.1.1]# kubectl exec -it $FORTIO_POD  -c istio-proxy  -- sh -c 'curl localhost:15000/stats' | grep httpbin | grep           pending
+cluster.outbound|8000||httpbin.default.svc.cluster.local.circuit_breakers.default.rq_pending_open: 0
+cluster.outbound|8000||httpbin.default.svc.cluster.local.circuit_breakers.high.rq_pending_open: 0
+cluster.outbound|8000||httpbin.default.svc.cluster.local.upstream_rq_pending_active: 0
+cluster.outbound|8000||httpbin.default.svc.cluster.local.upstream_rq_pending_failure_eject: 0
+cluster.outbound|8000||httpbin.default.svc.cluster.local.upstream_rq_pending_overflow: 109
+cluster.outbound|8000||httpbin.default.svc.cluster.local.upstream_rq_pending_total: 172
+```
+
 ## 参考:
 
 1. [使用 Helm 进行安装](https://istio.io/zh/docs/setup/kubernetes/install/helm/)
@@ -121,5 +134,7 @@ curl http://$GATEWAY_URL/productpage
 3. [Bookinfo Application](https://istio.io/docs/examples/bookinfo/#confirm-the-app-is-accessible-from-outside-the-cluster)
 4. [配置请求路由](https://preliminary.istio.io/zh/docs/tasks/traffic-management/request-routing/)
 5. [收集指标和日志](https://preliminary.istio.io/zh/docs/tasks/telemetry/metrics/collecting-metrics/)
+
+6. [熔断](https://preliminary.istio.io/zh/docs/tasks/traffic-management/circuit-breaking/) done
 
 

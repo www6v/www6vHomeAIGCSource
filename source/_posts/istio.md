@@ -53,3 +53,4 @@ Configuration Management | Config/Consul/Zk/Eureka | Calley
 12. [流量转移](https://preliminary.istio.io/zh/docs/tasks/traffic-management/traffic-shifting/) done
 13. [TCP 流量转移](https://preliminary.istio.io/zh/docs/tasks/traffic-management/tcp-traffic-shifting/) done ,验证有点问题
 14. [设置请求超时](https://preliminary.istio.io/zh/docs/tasks/traffic-management/request-timeouts/) done
+15. [熔断](https://preliminary.istio.io/zh/docs/tasks/traffic-management/circuit-breaking/) done
