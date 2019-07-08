@@ -47,3 +47,9 @@ Configuration Management | Config/Consul/Zk/Eureka | Calley
 8. [理解 Istio Service Mesh 中 Envoy Sidecar 代理的路由转发](http://www.servicemesher.com/blog/envoy-sidecar-routing-of-istio-service-mesh-deep-dive/)
 9. [流量管理](https://preliminary.istio.io/zh/docs/concepts/traffic-management)
 10. [Spring Cloud](https://spring.io/projects/spring-cloud)
+
+
+11. [配置请求路由](https://preliminary.istio.io/zh/docs/tasks/traffic-management/request-routing/) done
+12. [流量转移](https://preliminary.istio.io/zh/docs/tasks/traffic-management/traffic-shifting/) done
+13. [TCP 流量转移](https://preliminary.istio.io/zh/docs/tasks/traffic-management/tcp-traffic-shifting/) done ,验证有点问题
+14. [设置请求超时](https://preliminary.istio.io/zh/docs/tasks/traffic-management/request-timeouts/) done
