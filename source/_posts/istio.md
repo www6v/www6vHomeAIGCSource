@@ -20,7 +20,7 @@ categories:
 {% asset_img  istio-route.jpg  Envoy Sidecar 代理的路由转发  %}
 
 
-特性 | spring Cloud组件 | istio 组件 
+特性 | spring Cloud组件（Chassis模式） | istio 组件（SideCar模式）
 :-: | :-: | :-: 
 Resilience & Fault Tolerance | Hystrix |   Envoy  超时、重试和熔断器 
 Distributed Tracing |  Sleuth | Mixer 
@@ -54,3 +54,5 @@ Configuration Management | Config/Consul/Zk/Eureka | Calley
 13. [TCP 流量转移](https://preliminary.istio.io/zh/docs/tasks/traffic-management/tcp-traffic-shifting/) done ,验证有点问题
 14. [设置请求超时](https://preliminary.istio.io/zh/docs/tasks/traffic-management/request-timeouts/) done
 15. [熔断](https://preliminary.istio.io/zh/docs/tasks/traffic-management/circuit-breaking/) done
+
+16. [一个商用级Service Mesh服务的设计之道](http://www.servicemesher.com/blog/the-desigin-patterns-for-a-commercial-service-mesh/)
