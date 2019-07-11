@@ -66,4 +66,13 @@ kubectl exec productpage-v1-8579d7b797-dhj7z   -c istio-proxy curl http://127.0.
 kubectl exec productpage-v1-8579d7b797-dhj7z   -c istio-proxy --  netstat -ln
 ```
 
+```
+Envoy的配置
+kubectl -n default exec ratings-v1-85858fc49f-89zd5  -c istio-proxy curl http://localhost:15000/config_dump > dump-rating.json
+```
+
+## 参考:
+1. [Istio 的数据平面 Envoy Proxy 配置详解](https://www.servicemesher.com/blog/envoy-proxy-config-deep-dive/)
+
+
 
