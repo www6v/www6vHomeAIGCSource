@@ -30,8 +30,8 @@ Centralized Metrics | Servo/Hystrix Metrics | Mixer
 Centralized Logging | Blitz4j | Mixer
 API Gateway | Gateway/Zuul | Ingress/Egress
 Load Balancing | OpenFeign/Ribbon  | Pilot + Envoy
-Service Discovery | Eureka  | Pilot
-Routing | Zuul | Pilot
+Service Discovery | Eureka  | Pilot + Envoy xDS
+Routing | Zuul | Pilot + Envoy xDS
 Service-to-service calls |  | Pilot
 Configuration Management | Config/Consul/Zk/Eureka | Calley
 故障注入| 无 | iptables
