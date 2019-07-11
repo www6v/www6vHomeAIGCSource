@@ -19,6 +19,8 @@ categories:
 {% asset_img  istio-knowledge-map.png   Istio知识图谱 %}
 {% asset_img  istio-route.jpg  Envoy Sidecar 代理的路由转发  %}
 
+{% asset_img  envoy-proxy-arch.jpg  Envoy代理的架构  %}
+
 
 特性 | spring Cloud组件（Chassis模式） | istio 组件（SideCar模式）
 :-: | :-: | :-: 
