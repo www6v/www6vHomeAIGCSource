@@ -106,4 +106,5 @@ kubectl -n default exec ratings-v1-85858fc49f-89zd5  -c istio-proxy curl http://
 
 ## 参考:
 1. [Istio 的数据平面 Envoy Proxy 配置详解](https://www.servicemesher.com/blog/envoy-proxy-config-deep-dive/)
+2. [《云原生服务网格Istio：原理、实践、架构与源码解析》](https://item.jd.com/12538407.html) 
 
