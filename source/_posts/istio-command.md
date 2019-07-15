@@ -25,35 +25,7 @@ $ istioctl proxy-config bootstrap ratings-v1-85858fc49f-89zd5
 			"clusters": [{
                    ...
 			}, 
-			{
-				"name": "xds-grpc",
-				"type": "STRICT_DNS",
-				"connectTimeout": "10s",
-				"hosts": [{
-					"socketAddress": {
-						"address": "istio-pilot.istio-system",
-						"portValue": 15010
-					}
-				}],
-				"circuitBreakers": {
-					"thresholds": [{
-						"maxConnections": 100000,
-						"maxPendingRequests": 100000,
-						"maxRequests": 100000
-					}, {
-						"priority": "HIGH",
-						"maxConnections": 100000,
-						"maxPendingRequests": 100000,
-						"maxRequests": 100000
-					}]
-				},
-				"http2ProtocolOptions": {},
-				"upstreamConnectionOptions": {
-					"tcpKeepalive": {
-						"keepaliveTime": 300
-					}
-				}
-			}, ...]
+			... , ...]
 		},
 		"dynamicResources": {
 			"ldsConfig": {
