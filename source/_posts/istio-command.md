@@ -10,9 +10,8 @@ categories:
 
 
 ## 常用命令
-1. 
+1. Envoy的启动信息
 ```
-# Envoy的启动信息
 $ istioctl proxy-config bootstrap ratings-v1-85858fc49f-89zd5
 {
 	"bootstrap": {
@@ -81,16 +80,15 @@ $ istioctl proxy-config bootstrap ratings-v1-85858fc49f-89zd5
 }
 ```
 
-2. 
+2. xDS
 ```
-# xDS
 istioctl proxy-config cluster ratings-v1-85858fc49f-89zd5
 istioctl proxy-config endpoint reviews-v1-6db46f6486-q7nth
 istioctl proxy-config listener  reviews-v1-6db46f6486-q7nth
 istioctl proxy-config route  reviews-v1-6db46f6486-q7nth
 ```
 
-3. 
+3. 其他
 
 ```
 kubectl get  ValidatingWebhookConfiguration  -o yaml
@@ -106,5 +104,5 @@ kubectl -n default exec ratings-v1-85858fc49f-89zd5  -c istio-proxy curl http://
 
 ## 参考:
 1. [Istio 的数据平面 Envoy Proxy 配置详解](https://www.servicemesher.com/blog/envoy-proxy-config-deep-dive/)
-2. [《云原生服务网格Istio：原理、实践、架构与源码解析》](https://item.jd.com/12538407.html) 
+2. [《云原生服务网格Istio：原理、实践、架构与源码解析》 实践篇](https://item.jd.com/12538407.html) 
 
