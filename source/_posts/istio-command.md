@@ -54,24 +54,28 @@ $ istioctl proxy-config bootstrap ratings-v1-85858fc49f-89zd5
 
 2. xDS
 ```
-istioctl proxy-config cluster ratings-v1-85858fc49f-89zd5
-istioctl proxy-config endpoint reviews-v1-6db46f6486-q7nth
-istioctl proxy-config listener  reviews-v1-6db46f6486-q7nth
-istioctl proxy-config route  reviews-v1-6db46f6486-q7nth
+$ istioctl proxy-config cluster ratings-v1-85858fc49f-89zd5
+$ istioctl proxy-config endpoint reviews-v1-6db46f6486-q7nth
+$ istioctl proxy-config listener  reviews-v1-6db46f6486-q7nth
+$ istioctl proxy-config route  reviews-v1-6db46f6486-q7nth
 ```
 
 3. 其他
 
 ```
-kubectl get  ValidatingWebhookConfiguration  -o yaml
+$ kubectl get  ValidatingWebhookConfiguration  -o yaml
 
-kubectl exec productpage-v1-8579d7b797-dhj7z   -c istio-proxy  -- ps -ef
-kubectl exec productpage-v1-8579d7b797-dhj7z   -c istio-proxy curl http://127.0.0.1:15000/help
-kubectl exec productpage-v1-8579d7b797-dhj7z   -c istio-proxy --  netstat -ln
+#   kubectl exec  Pod名字  -c  容器名字  -- ps -ef
+$ kubectl exec productpage-v1-8579d7b797-dhj7z   -c istio-proxy  -- ps -ef
+/usr/local/bin/pilot-agent 
+/usr/local/bin/envoy 
+
+$ kubectl exec productpage-v1-8579d7b797-dhj7z   -c istio-proxy curl http://127.0.0.1:15000/help
+$ kubectl exec productpage-v1-8579d7b797-dhj7z   -c istio-proxy --  netstat -ln
 ```
 ```
 Envoy的配置
-kubectl -n default exec ratings-v1-85858fc49f-89zd5  -c istio-proxy curl http://localhost:15000/config_dump > dump-rating.json
+$ kubectl -n default exec ratings-v1-85858fc49f-89zd5  -c istio-proxy curl http://localhost:15000/config_dump > dump-rating.json
 ```
 
 ## 参考:
