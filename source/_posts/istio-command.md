@@ -65,7 +65,7 @@ $ istioctl proxy-config route  reviews-v1-6db46f6486-q7nth
 ```
 $ kubectl get  ValidatingWebhookConfiguration  -o yaml
 
-#   kubectl exec  Pod名字  -c  容器名字  -- ps -ef
+#   kubectl exec  Pod名字  -c  容器名字  -- 执行的命令
 $ kubectl exec productpage-v1-8579d7b797-dhj7z   -c istio-proxy  -- ps -ef
 /usr/local/bin/pilot-agent 
 /usr/local/bin/envoy 
