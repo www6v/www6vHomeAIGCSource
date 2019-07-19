@@ -17,7 +17,7 @@ State | RDD |  keyed State(Value, List, Map)&& operator State(List)
 API | DataFrame，DataSet | Table, DataStream + DataSet    
 Time |  | Event Time,Ingestion Time, Processing Time
 Windows | Sliding  | Tumbling, Sliding , Session
-可靠 | linage， master checkpoint|  Savepoint，External Checkpoint
+可靠性 | linage， master checkpoint|  Savepoint，External Checkpoint
 
 
 ## 参考:
