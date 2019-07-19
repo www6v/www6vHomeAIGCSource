@@ -15,7 +15,7 @@ categories:
 State | RDD |  keyed State(Value, List, Map)&& operator State(List)
 算子 | Transformation, Action |  Source, Transform, Sink 
 API | DataFrame，DataSet | Table, DataStream + DataSet    
-Time |  | Event Time,Ingestion Time, Processing Time
+Time | 无 | Event Time,Ingestion Time, Processing Time
 Windows | Sliding  | Tumbling, Sliding , Session
 可靠性 | linage， master checkpoint|  Savepoint，External Checkpoint
 
