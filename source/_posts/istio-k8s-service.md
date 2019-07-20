@@ -18,4 +18,5 @@ categories:
 路由|   | VirtualService
 负载均衡 | | DestinationRule
 熔断&监控检查 | 探针 |  DestinationRule
+灰度| 两个Deployment | VirtualService
 多集群 | Federation  | 多控制面<br>集群感知单控制面(Split Horizon EDS)        
