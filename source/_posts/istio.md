@@ -25,7 +25,7 @@ categories:
 
 特性 | spring Cloud组件（Chassis模式） | istio 组件（SideCar模式）
 :-: | :-: | :-: 
-Resilience & Fault Tolerance | Hystrix |   Envoy  超时、重试和熔断器 
+Resilience & Fault Tolerance | Hystrix <br> 白盒,代码有侵入<br>熔断 <br>隔离仓 |   Envoy  <br>黑盒， 代码无侵入<br> 异常点检查（逐出，重试）<br>连接池 
 Distributed Tracing |  Sleuth | Mixer 
 Centralized Metrics | Servo/Hystrix Metrics | Mixer
 Centralized Logging | Blitz4j | Mixer
@@ -66,5 +66,5 @@ Examples 11-15
 19. [Service Mesh——后 Kubernetes 时代的微服务](http://www.servicemesher.com/blog/service-mesh-the-microservices-in-post-kubernetes-era/)
 20. [Istio 安装](https://jimmysong.io/istio-handbook/setup/istio-installation.html)
 
-21. [《云原生服务网格Istio：原理、实践、架构与源码解析》](https://item.jd.com/12538407.html)
+21. [《云原生服务网格Istio：原理、实践、架构与源码解析》](https://item.jd.com/12538407.html) 3.1.2节
 22. [Istio Sidecar 注入过程解密](https://preliminary.istio.io/zh/blog/2019/data-plane-setup/)
