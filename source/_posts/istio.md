@@ -29,7 +29,7 @@ Resilience & Fault Tolerance | Hystrix <br> 白盒,代码有侵入<br>熔断 <br
 Distributed Tracing |  Sleuth | Mixer 
 Centralized Metrics | Servo/Hystrix Metrics | Mixer
 Centralized Logging | Blitz4j | Mixer
-API Gateway | Gateway/Zuul | Ingress/Egress
+API Gateway | Gateway/Zuul | Gateway
 Load Balancing | OpenFeign/Ribbon  | Pilot + Envoy
 Service Discovery | Eureka  | Pilot + Envoy xDS
 Routing | Zuul | Pilot + Envoy xDS
