@@ -14,12 +14,12 @@ categories:
 
 <!-- more -->
 
-{% asset_img  istio-component.jpg  istio组件  %}
-{% asset_img  traffic-managment-components.png  Pilot流量管理  %}
-
 {% asset_img  istio-knowledge-map.png   Istio知识图谱 %}
-{% asset_img  istio-route.jpg  Envoy Sidecar 代理的路由转发  %}
 
+{% asset_img  istio-component.jpg  istio组件  %}
+
+{% asset_img  traffic-managment-components.png  Pilot流量管理  %}
+{% asset_img  istio-route.jpg  Envoy Sidecar 代理的路由转发  %}
 {% asset_img  envoy-proxy-arch.jpg  Envoy代理的架构  %}
 
 
