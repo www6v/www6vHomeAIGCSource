@@ -10,6 +10,7 @@ categories:
 ---
 
 {% asset_img  istio.jpg  istio %}
+{% asset_img  istio-control-data.jpg  istio控制面和数据面 %}
 
 <!-- more -->
 
