@@ -41,5 +41,5 @@ git checkout -b dev
 3. [git使用小记---比较](https://www.jianshu.com/p/776916f74a41)
 4. [一篇极好的Git 总结](https://www.liangzl.com/get-article-detail-31025.html)
 5. [Git 删除具体某个提交commit的方法](https://www.jianshu.com/p/2fd2467c27bb)
-6. [提交git,文件大于100M 限制的解决措施](https://blog.csdn.net/weixin_34198881/article/details/87037174)
+
 
