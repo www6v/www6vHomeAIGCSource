@@ -2,13 +2,11 @@
 title: zookeeper未通知到服务客户端的异常排查
 date: 2017-07-28 22:56:02
 tags:
-  - 分布式
-  - 中间件
   - zookeeper
   - 故障排查  
 categories:
-  - 可用性 
-  - 故障    
+  - 故障排查  
+  - Zookeeper   
 ---
  
 

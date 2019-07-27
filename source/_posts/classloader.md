@@ -5,8 +5,8 @@ tags:
   - 故障排查  
   - classloader
 categories: 
-  - 可用性
-  - 故障排查    
+  - 故障排查  
+  - classloader  
 ---
 
 ## 一. 背景

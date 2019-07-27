@@ -2,12 +2,11 @@
 title: 线上不能下单问题排查
 date: 2017-09-25 23:17:16
 tags:
-  - 分布式
   - 故障排查 
   - mybatis
 categories:
-  - 可用性 
-  - 故障    
+  - 故障排查  
+  - mybatis
 ---
  
 
