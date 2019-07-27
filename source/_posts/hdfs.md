@@ -6,7 +6,8 @@ tags:
   - HDFS
   - 可用性
 categories: 
-  - 大数据    
+  - 大数据  
+  - HDFS    
 ---
 　                      
 HDFS NameNode是可靠和高效的, 简单的架构使HDFS能够在上千个节点可靠的存放生产级的数据. 但是, HDFS NameNode也是一个集群中的单点(SPOF). 开源社区也提供了几个HA的解决方案.
