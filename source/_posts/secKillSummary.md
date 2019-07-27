@@ -2,10 +2,10 @@
 title: 秒杀系统总结
 date: 2018-05-21 10:27:51
 tags:
-  - 高并发
-  - 秒杀
+  - 秒杀系统
 categories: 
-  - 架构设计   
+  - 架构
+  - 秒杀系统   
 ---
 
 {% asset_img secKillSummary.jpg  秒杀系统总结 %}

@@ -1,13 +1,12 @@
 ---
-title: Classloader相关的问题
+title: Classloader相关的故障排查
 date: 2014-09-06 14:22:17
 tags: 
-  - 故障
-  - 问题排查
+  - 故障排查  
   - classloader
 categories: 
-  - 故障
-  - classloader     
+  - 可用性
+  - 故障排查    
 ---
 
 ## 一. 背景

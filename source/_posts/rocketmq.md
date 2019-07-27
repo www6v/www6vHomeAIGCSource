@@ -6,6 +6,7 @@ tags:
   - RocketMQ
 categories:
   - 分布式 
+  - 中间件
   - 消息系统
   - RocketMQ   
 ---
