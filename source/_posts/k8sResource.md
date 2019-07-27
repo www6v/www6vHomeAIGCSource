@@ -5,6 +5,7 @@ tags:
   - Kubenetes
 categories:
   - 云原生
+  - Kubernetes  
 ---
 
 

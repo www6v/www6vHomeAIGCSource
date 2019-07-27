@@ -5,7 +5,7 @@ tags:
   - Kubernetes
 categories: 
   - 云原生
-  - Kubernetes 
+  - Kubernetes
 ---
 
 1. 禁用swap
