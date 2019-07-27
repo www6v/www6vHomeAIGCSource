@@ -12,9 +12,9 @@ categories:
 特性 | spark | flink
 :-: | :-: | :-: 
 本质 |  batch |  event 
-State | RDD |  keyed State(Value, List, Map) <br> operator State(List)
+State | RDD |  Keyed State(Value, List, Map) <br> Operator State(List)
 算子 | Transformation<br> Action |  Source<br> Transform<br> Sink 
-API | DataFrame<br> DataSet | Table<br> DataStream + DataSet    
+API | SparkSQL， DataFrame， DataSet<br> Spark Streaming <br> | Table<br> DataStream <br> DataSet    
 Time | 无 | Event Time<br> Ingestion Time<br> Processing Time
 Windows | Sliding  | Tumbling<br> Sliding <br> Session
 可靠性 | linage<br> master checkpoint|  Savepoint<br>External Checkpoint
