@@ -6,7 +6,8 @@ tags:
   - spark  
 categories: 
   - 大数据
-  - 流计算    
+  - 流式计算
+  - 对比总结    
 ---
 
 

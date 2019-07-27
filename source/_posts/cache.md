@@ -3,9 +3,9 @@ title: 缓存机制
 date: 2017-12-07 09:58:48
 tags:
   - cache
-  - 分布式
   - 中间件
-categories: 
+categories:
+  - 分布式 
   - 缓存    
 ---
                                
