@@ -23,7 +23,7 @@ categories:
 5. Netty之有效规避内存泄漏   江南白衣
 6. 周期性Full GC的异常排查   weiplex
 7. 一个大对象引起的血案，GC的踩坑实录   何锦彬
-8. 生产环境下持久带满导致FullGC，如何跟踪 https://hllvm-group.iteye.com/group/topic/28379
+8. [生产环境下持久带满导致FullGC，如何跟踪](https://hllvm-group.iteye.com/group/topic/28379) 
 9. 又是一个程序员粗心的代码引起频繁FullGC的案例 微信公众号里的
 10. JVM初探- 使用堆外内存减少Full GC 菜鸟-翡青
 11. 我遇到tomcat 7 full gc频繁的问题 auzll
