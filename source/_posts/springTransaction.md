@@ -6,7 +6,8 @@ tags:
   - 事务
   - transaction
 categories: 
-  - spring 
+  - 分布式
+  - 一致性
   - 事务  
 ---
 
