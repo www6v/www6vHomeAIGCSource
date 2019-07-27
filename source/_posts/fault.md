@@ -3,11 +3,11 @@ title: 故障模型
 date: 2018-10-27 14:39:20
 tags:
   - 可用性
-  - 稳定性
-  - 故障排查
   - 故障
-categories: 
-  - 可用性  
+categories:
+  - 分布式 
+  - 稳定性
+  - 故障模型
 ---
 {% asset_img fault.jpg 故障模型 %}
 

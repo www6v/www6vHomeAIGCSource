@@ -2,11 +2,11 @@
 title: 中台战略
 date: 2019-05-02 00:29:04
 tags:
-  - 中间件
-  - 分布式  
-categories: 
   - 稳定性
-  - 限流  
+  - 中台战略
+categories: 
+  - 架构
+  - 中台战略 
 ---
 
 {% asset_img  middleStage.jpg  中台战略 %}
