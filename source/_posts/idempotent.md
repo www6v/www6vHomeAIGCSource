@@ -2,10 +2,9 @@
 title: 幂等
 date: 2017-03-21 22:20:32
 tags:
-  - 分布式
-  - 中间件
   - 一致性
-categories: 
+categories:
+  - 分布式 
   - 一致性  
   - 幂等 
 ---

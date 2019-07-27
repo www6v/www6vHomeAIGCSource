@@ -5,6 +5,7 @@ tags:
   - flink
   - spark  
 categories: 
+  - 大数据
   - 流计算    
 ---
 

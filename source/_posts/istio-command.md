@@ -2,9 +2,9 @@
 title: istio常用命令
 date: 2019-07-15 11:18:30
 tags:
-  - 分布式
   - istio
 categories: 
+  - 云原生
   - serviceMesh   
 ---
 

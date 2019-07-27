@@ -2,11 +2,10 @@
 title: RocketMQ
 date: 2019-06-18 14:39:50
 tags:
-  - 中间件
-  - 分布式
   - 消息系统
   - RocketMQ
-categories: 
+categories:
+  - 分布式 
   - 消息系统
   - RocketMQ   
 ---

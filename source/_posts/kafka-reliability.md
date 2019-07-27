@@ -2,11 +2,11 @@
 title: Kafka 可靠性总结
 date: 2016-07-05 06:20:57
 tags:
-  - 中间件
-  - 分布式
-  - 消息系统
+  - kafka
   - 可用性  
-categories: 
+categories:
+  - 分布式 
+  - 中间件
   - 消息系统
   - Kafka    
 ---

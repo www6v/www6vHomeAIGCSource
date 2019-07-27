@@ -2,11 +2,10 @@
 title: Kafka消费者总结
 date: 2016-06-25 18:46:27
 tags:
-  - 中间件
-  - 分布式
-  - 消息系统
   - kafka  
-categories: 
+categories:
+  - 分布式
+  - 中间件 
   - 消息系统
   - Kafka   
 ---

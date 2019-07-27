@@ -2,11 +2,10 @@
 title: Kubernetes集群搭建
 date: 2019-01-17 12:23:58
 tags:
-  - 中间件
-  - 分布式
   - Kubernetes
 categories: 
-- 云计算  
+  - 云原生
+  - Kubernetes 
 ---
 
 1. 禁用swap

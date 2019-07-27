@@ -2,10 +2,9 @@
 title: Zookeeper的分布式一致性协议Zab
 date: 2015-11-29 12:06:43
 tags:
-  - 分布式
-  - 中间件
   - Zookeeper
-categories: 
+categories:
+  - 分布式 
   - 中间件
   - Zookeeper 
 ---

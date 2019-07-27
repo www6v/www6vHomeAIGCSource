@@ -2,11 +2,10 @@
 title: Kafka总结
 date: 2016-05-11 18:41:01
 tags:
-  - 中间件
-  - 分布式
-  - 消息系统
   - kafka
-categories: 
+categories:
+  - 分布式
+  - 中间件 
   - 消息系统
   - Kafka   
 ---

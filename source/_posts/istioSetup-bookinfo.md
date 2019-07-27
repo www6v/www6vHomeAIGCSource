@@ -5,6 +5,7 @@ tags:
   - 分布式
   - istio
 categories: 
+  - 云原生
   - serviceMesh   
 ---
 

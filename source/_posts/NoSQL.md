@@ -5,7 +5,8 @@ tags:
   - Nosql
   - 一致性
   - 事务
-categories: 
+categories:
+  - 存储 
   - Nosql  
 ---
                                                                             
