@@ -2,10 +2,9 @@
 title: 文件IO总结
 date: 2017-04-23 22:29:52
 tags:
-  - 基础
-  - 中间件
   - 文件
-categories: 
+categories:
+  - 存储 
   - 文件IO   
 ---
 

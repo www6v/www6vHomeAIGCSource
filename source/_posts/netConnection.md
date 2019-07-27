@@ -1,10 +1,11 @@
 ---
-title: 网路互通
+title: IDC网路互通
 date: 2019-05-15 05:42:14
 tags: 
   - 互通
 categories: 
-  - 网路  
+  - 网络
+  - 网络互通  
 ---
 
 

@@ -7,7 +7,7 @@ tags:
   - 应用架构
 categories: 
   - 架构
-  - 设计    
+  - CQRS    
 ---
  
 CQRS全称是指Command Query ResponsibilitySeparation.CQRS的核心是一个简单的概念, 使用一个模型来读信息, 使用另一个模型来更新信息. 它是CQS原理在各个软件领域中的应用而产生的一种模式. CQRS把整个系统分成两个部分: 命令部分和查询部分. Command部分关注更新,  Query部分关注读取.
