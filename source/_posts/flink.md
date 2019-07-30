@@ -16,4 +16,5 @@ categories:
 1. [Flink架构及其工作原理](https://www.cnblogs.com/code2one/p/10123112.html)
 2. <<Flink原理、实战与性能优化>>  张利兵
 3. [Flink使用Broadcast State实现流处理配置实时更新](http://ju.outofmemory.cn/entry/371335)
+4. [Apache Flink状态管理和容错机制介绍](https://www.iteblog.com/archives/2417.html)
 
