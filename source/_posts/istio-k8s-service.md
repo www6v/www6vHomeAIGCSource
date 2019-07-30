@@ -18,6 +18,6 @@ categories:
 出口 |  Egress | ServiceEntry
 路由|   | VirtualService
 负载均衡 | | DestinationRule
-熔断&监控检查 | 探针 |  DestinationRule
-灰度| 两个Deployment | VirtualService
+熔断&监控检查 | 容器：存活探针<br>服务：就绪探针 |  DestinationRule
+灰度| Deployment:滚动升级<br>最佳实践：两个Deployment | VirtualService
 多集群 | Federation  | 多控制面<br>集群感知单控制面(Split Horizon EDS)        
