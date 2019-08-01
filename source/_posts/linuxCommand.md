@@ -133,6 +133,12 @@ systemctl status firewalld.service
 systemctl list-unit-files --type=service
 ```
 
+2. 
+```
+# 进程有访问了哪些文件句柄
+lsof -p 11825
+```
+
 ## 参考:
 1. [超全整理！Linux性能分析工具汇总合集](https://mp.weixin.qq.com/s/yhSJF6Il6iJamYCosVgXYQ)
 2. [60,000毫秒内对Linux的性能诊断](https://www.oschina.net/translate/linux-performance-analysis-in-60s?print)
