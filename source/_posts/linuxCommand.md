@@ -110,10 +110,21 @@ java    12921 root   30u     IPv4          286953901      0t0       TCP *:18090 
 ... ...
 ```
 
+## 四. 其他
+1. systemctl： 负责控制systemd系统和服务管理器 
+```
+#检查单元或服务是否正在运行
+systemctl status firewalld.service
+```
+```
+#列出所有服务
+systemctl list-unit-files --type=service
+```
 
 ## 参考:
-[超全整理！Linux性能分析工具汇总合集](https://mp.weixin.qq.com/s/yhSJF6Il6iJamYCosVgXYQ)
-[60,000毫秒内对Linux的性能诊断](https://www.oschina.net/translate/linux-performance-analysis-in-60s?print)
-[28个UNIX/LINUX的命令行神器](https://coolshell.cn/articles/7829.html)
+1. [超全整理！Linux性能分析工具汇总合集](https://mp.weixin.qq.com/s/yhSJF6Il6iJamYCosVgXYQ)
+2. [60,000毫秒内对Linux的性能诊断](https://www.oschina.net/translate/linux-performance-analysis-in-60s?print)
+3. [28个UNIX/LINUX的命令行神器](https://coolshell.cn/articles/7829.html)
+4. [systemctl 命令详解及使用教程](https://linux265.com/news/3385.html)
 
 
