@@ -15,8 +15,20 @@ tags:
 
 1. uptime  : 系统平均负载
 ```
+ # 0.25 ->  1分钟负载 
+ # 0.22 ->  5分钟负载
+ # 0.23 ->  15分钟负载
  23:02:19 up 285 days, 11:37,  1 user,  load average: 0.25, 0.22, 0.23
 ```
+
+平均负载: 单位时间内，系统处于可运行状态和不可中断状态的平均进程数，也就是单位时间内的活跃进程数。
+
+```
+# 如果cpu个数是4， 则平均负载4是合理的。
+[root@10-23-25-248]$grep 'model name' /proc/cpuinfo | wc -l
+4
+```
+
 2. dmesg | tail : 系统信息  导致性能问题的错误
 ```
 [9927609.690053] ffmpeg invoked oom-killer: gfp_mask=0x201da, order=0, oom_score_adj=0
