@@ -29,6 +29,10 @@ tags:
 4
 ```
 
+CPU 密集型进程，使用大量 CPU 会导致平均负载升高，此时这两者是一致的；
+I/O 密集型进程，等待 I/O 也会导致平均负载升高，但 CPU 使用率不一定很高；
+大量等待 CPU 的进程调度也会导致平均负载升高，此时的CPU使用率也会比较高。
+
 2. dmesg | tail : 系统信息  导致性能问题的错误
 ```
 [9927609.690053] ffmpeg invoked oom-killer: gfp_mask=0x201da, order=0, oom_score_adj=0
