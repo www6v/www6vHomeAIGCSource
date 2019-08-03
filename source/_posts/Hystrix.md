@@ -3,8 +3,6 @@ title: Hystrix实现和容错模式
 date: 2016-10-07 06:40:26
 tags:
   - 中间件
- 
-  - 可用性
   - 可用性
 categories: 
   - 分布式

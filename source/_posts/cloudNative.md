@@ -4,7 +4,9 @@ date: 2019-05-02 12:47:15
 tags:
   - 云原生
 categories:
+  - 分布式
   - 云原生
+  - 总结
 ---
 
 {% asset_img   cloudNative.jpg  云原生  %}

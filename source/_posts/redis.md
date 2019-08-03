@@ -2,11 +2,11 @@
 title: Redis 总结
 date: 2016-11-12 23:29:16
 tags:
-  - 分布式
   - 中间件
   - 存储
   - Redis
 categories: 
+  - 分布式
   - 存储
   - Redis    
 ---
