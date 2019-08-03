@@ -6,6 +6,7 @@ tags:
   - 分布式  
 categories: 
   - 分布式
+  - 一致性
   - id生成    
 ---
 
