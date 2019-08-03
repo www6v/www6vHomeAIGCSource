@@ -7,6 +7,7 @@ categories:
   - 分布式 
   - 一致性  
   - 幂等 
+  - 总结
 ---
 
 {% asset_img idempotent.jpg 幂等 %}

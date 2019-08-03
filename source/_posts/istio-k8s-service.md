@@ -1,10 +1,10 @@
- ---
-title: istio-k8s-springcloud中服务的比对
+---
+title: istio K8s Springcloud中服务的比对
 date: 2019-07-20 07:46:52
-tags:
+tags: 
   - k8s
   - istio
-categories: 
+categories:  
   - 分布式
   - 云原生
   - serviceMesh  
@@ -32,10 +32,9 @@ categories:
 特性 | spring Cloud-服务治理<br>（Chassis模式） | spring Cloud alibaba-Paas全栈| istio组件-流量管理<br>（SideCar模式）
 :-: | :-: | :-: 
 治理-Resilience & Fault Tolerance | Hystrix <br> 白盒,代码有侵入<br>熔断（有半开状态） <br>隔离仓 | sentinel  | Envoy<br>黑盒，代码无侵入<br> 异常点检查（逐出，重试）（无半开状态）<br>连接池 
-
 监控-Distributed Tracing          | Sleuth | zipkin | Mixer 
 监控-Centralized Metrics          | Servo/Hystrix Metrics | | Mixer
-监控-Centralized Logging          | Blitz4j | | Mixer
+监控-Centralized Logging          | Blitz4j | x | Mixer
 流量管理-API Gateway              | Gateway/Zuul | gateway | Gateway
 流量管理-Load Balancing           | OpenFeign/Ribbon  | dubbo | Pilot + Envoy
 治理-Service Discovery           | Eureka  |dubbo| Pilot + Envoy xDS
@@ -43,8 +42,8 @@ categories:
 治理-Service-to-service calls    |   |dubbo|Pilot
 治理-Configuration Management    | Config/Consul/Zk/Eureka |Nacos| Calley
 流量管理-故障注入                 | 无 |  | iptables
-流量管理-灰度发布                 | Nepxion Discovery等 非原生|| 原生支持
-流量管理-异地容灾                 | | |  集群感知
+流量管理-灰度发布                 | Nepxion Discovery等 非原生| | 原生支持
+流量管理-异地容灾                 | x | x |  集群感知
 
 <!-- more -->
 

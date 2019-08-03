@@ -7,6 +7,7 @@ tags:
 categories: 
   - 分布式
   - 一致性
+  - 幂等  
   - id生成    
 ---
 
