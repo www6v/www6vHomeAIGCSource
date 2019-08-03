@@ -37,8 +37,8 @@ categories:
 监控-Centralized Metrics          | Servo/Hystrix Metrics | | Mixer
 监控-Centralized Logging          | Blitz4j | | Mixer
 流量管理-API Gateway              | Gateway/Zuul | gateway | Gateway
-流量管理-Load Balancing           | OpenFeign/Ribbon  | | Pilot + Envoy
-治理-Service Discovery           | Eureka  |Nacos| Pilot + Envoy xDS
+流量管理-Load Balancing           | OpenFeign/Ribbon  | dubbo | Pilot + Envoy
+治理-Service Discovery           | Eureka  |dubbo| Pilot + Envoy xDS
 治理-Routing                     | Zuul | dubbo| Pilot + Envoy xDS
 治理-Service-to-service calls    |   |dubbo|Pilot
 治理-Configuration Management    | Config/Consul/Zk/Eureka |Nacos| Calley
@@ -53,5 +53,6 @@ categories:
 
 ## 参考:
 1. 分布式系统的技术栈 左耳听风
+2. [厉害了，Spring Cloud Alibaba 发布 GA 版本！](https://blog.csdn.net/zl1zl2zl3/article/details/89790643)
 
 
