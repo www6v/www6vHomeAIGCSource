@@ -29,7 +29,7 @@ categories:
 
 
 
-特性 | spring Cloud-服务治理<br>（Chassis模式） | spring Cloud alibaba-服务治理| istio组件-流量管理<br>（SideCar模式）
+特性 | spring Cloud-服务治理<br>（Chassis模式） | spring Cloud alibaba-Paas全栈| istio组件-流量管理<br>（SideCar模式）
 :-: | :-: | :-: 
 治理-Resilience & Fault Tolerance | Hystrix <br> 白盒,代码有侵入<br>熔断（有半开状态） <br>隔离仓 | sentinel  | Envoy<br>黑盒，代码无侵入<br> 异常点检查（逐出，重试）（无半开状态）<br>连接池 
 

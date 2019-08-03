@@ -6,10 +6,12 @@ tags:
 categories:
   - 分布式
   - 架构  
-  - Xaas
+  - xaas
 ---
 
 {% asset_img  xaas.jpg Xaas %}
+
+{% asset_img  paas.jpg paas %}
 
 ## 参考:
 1. [BaaS后端即服务 - 通往中台架构之路](https://yq.aliyun.com/articles/2918)
@@ -20,3 +22,4 @@ categories:
 6. [Serverless Architectures](https://martinfowler.com/articles/serverless.html)
 7. 《企业IT架构转型之道(阿里巴巴中台战略思想与架构实战)》 钟华
 8. 洞悉PaaS平台的本质  左耳听风
+
