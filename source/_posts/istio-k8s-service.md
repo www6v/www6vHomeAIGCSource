@@ -11,7 +11,7 @@ categories:
 ---
 
 
-特性 | k8s | istio
+特性 | k8s-服务编排,资源调度 | istio
 :-: | :-: | :-: 
 服务发现 |  DNS（CoreDNS）<br> apiserver + kube-proxy |  <br>Pilot + Envoy
 定义 |  Service<br> Deployment<br> Endpoint | Service<br> 服务版本 <br> 服务实例
@@ -26,7 +26,7 @@ categories:
 
 
 
-特性 | spring Cloud组件（Chassis模式） | istio 组件（SideCar模式）
+特性 | spring Cloud组件-服务治理（Chassis模式） | istio组件-流量管理（SideCar模式）
 :-: | :-: | :-: 
 Resilience & Fault Tolerance | Hystrix <br> 白盒,代码有侵入<br>熔断（有半开状态） <br>隔离仓 |   Envoy  <br>黑盒， 代码无侵入<br> 异常点检查（逐出，重试）（无半开状态）<br>连接池 
 Distributed Tracing |  Sleuth | Mixer 
@@ -41,7 +41,7 @@ Configuration Management | Config/Consul/Zk/Eureka | Calley
 故障注入| 无 | iptables
 灰度发布| Nepxion Discovery等 非原生| 原生支持
 
-
+<!-- more -->
 
 {% asset_img   k8s&springCloud.png  Kubenetes&SpringCloud  %}
 
