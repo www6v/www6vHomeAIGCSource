@@ -6,6 +6,7 @@ tags:
   - 读写分离
   - 应用架构
 categories: 
+  - 分布式
   - 架构
   - CQRS    
 ---

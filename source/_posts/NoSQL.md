@@ -6,6 +6,7 @@ tags:
   - 一致性
   - 事务
 categories:
+  - 分布式
   - 存储 
   - Nosql  
 ---
