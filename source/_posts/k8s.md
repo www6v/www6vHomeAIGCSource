@@ -13,9 +13,9 @@ categories:
 
 <!-- more -->
 
-{% asset_img   k8s&springCloud.png  Kubenetes&SpringCloud  %}
 {% asset_img   kubernetes-high-level-component-archtecture.jpg  kubernetes-high-level-component-archtecture  %}
 
+{% asset_img   k8s-tech.jpg  k8s技能图谱  %}
 
 
 ## 参考:

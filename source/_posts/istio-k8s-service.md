@@ -20,8 +20,10 @@ categories:
 服务路由|   | VirtualService
 熔断&监控检查 | 容器：存活探针<br>服务：就绪探针 |  DestinationRule
 负载均衡 | | DestinationRule
+编排<br>故障迁移，自愈<br>伸缩 | 原生| 基于k8s 
 灰度| Deployment:滚动升级<br>最佳实践：两个Deployment | VirtualService
-多集群 | Federation  | 1. 多控制面<br> 2.集群感知单控制面(Split Horizon EDS)    
+多集群 | Federation  | 1. 多控制面<br> 2.集群感知单控制面(Split Horizon EDS) 
+
 
 
 
@@ -44,5 +46,9 @@ Configuration Management | Config/Consul/Zk/Eureka | Calley
 <!-- more -->
 
 {% asset_img   k8s&springCloud.png  Kubenetes&SpringCloud  %}
+
+
+## 参考:
+1. 分布式系统的技术栈 左耳听风
 
 
