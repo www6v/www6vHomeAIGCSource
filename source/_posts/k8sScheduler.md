@@ -4,6 +4,7 @@ date: 2019-06-09 12:27:44
 tags:
   - Kubenetes
 categories:
+  - 分布式 
   - 云原生
   - Kubernetes  
 ---

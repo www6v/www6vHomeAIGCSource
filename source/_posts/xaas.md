@@ -6,6 +6,7 @@ tags:
 categories:
   - 分布式
   - 架构  
+  - Xaas
 ---
 
 {% asset_img  xaas.jpg Xaas %}

@@ -1,13 +1,13 @@
 ---
 title: Netty EpollEventLoop
 date: 2015-10-03 18:11:10
-tags:
-  - 分布式
+tags:  
   - 中间件
   - 网络
   - Netty
-categories: 
-  - 服务化
+categories:
+  - 分布式 
+  - 服务治理
   - Netty   
 ---
 

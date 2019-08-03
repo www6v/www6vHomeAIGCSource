@@ -2,13 +2,13 @@
 title: 京东服务框架JSF服务提供者线程模型
 date: 2015-07-09 17:14:28
 tags:
- - 分布式
  - 中间件
  - 服务框架 
  - 多线程
 categories: 
-  - 服务化
-  - 京东JSF  
+  - 分布式
+  - 服务治理
+  - 案例-京东JSF  
 ---
 
 JSF是京东基础架构组的服务化中间件产品，全名是Jingdong Service Framework（中文名：杰夫）。

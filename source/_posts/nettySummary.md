@@ -2,13 +2,12 @@
 title: Netty总结
 date: 2015-08-23 17:56:48
 tags:
-  - 分布式
   - 中间件
   - 网络
-  - 多线程
   - Netty
-categories: 
-  - 服务化
+categories:
+  - 分布式 
+  - 服务治理
   - Netty    
 ---
 

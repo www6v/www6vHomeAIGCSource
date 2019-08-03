@@ -3,7 +3,8 @@ title: Kubernetes集群搭建
 date: 2019-01-17 12:23:58
 tags:
   - Kubernetes
-categories: 
+categories:
+  - 分布式 
   - 云原生
   - Kubernetes
 ---
