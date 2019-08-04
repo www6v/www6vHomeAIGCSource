@@ -12,6 +12,7 @@ categories:
 
 
 {% asset_img   docker-network.jpg  docker网络  %}
+<!-- more -->
 
 {% asset_img   docker-bridge.jpg  图1.docker的bridge网桥  %}
 
