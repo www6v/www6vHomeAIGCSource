@@ -11,3 +11,9 @@ categories:
 ---
 
 {% asset_img   docker.jpg   docker总结  %}
+
+
+参考
+
+1. 《深入剖析Kubernetes - 05  白话容器基础（一）：从进程说开去》 张磊
+2. 《深入剖析Kubernetes - 06  白话容器基础（二）：隔离与限制》 张磊
