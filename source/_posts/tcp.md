@@ -25,7 +25,4 @@ categories:
 7. TCP的三次握手以及重置(Reset) 赵帅强
 8. 【剖析 | SOFARPC 框架】系列之连接管理与心跳剖析 SOFARPCLab
 9. 蚂蚁金服通信框架SOFABolt解析 | 编解码机制 SOFABoltLab水寒
-10. [TCP 的那些事儿（下）](https://coolshell.cn/articles/11609.html)
-11. [（四）：网络性能排查之TCP重传与重复ACK](https://www.kancloud.cn/digest/wireshark/62473)
-
 
