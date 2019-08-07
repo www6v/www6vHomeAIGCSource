@@ -15,6 +15,9 @@ categories:
 <!-- more -->
 
 {% asset_img   tcp-Congestion.jpg  TCP拥塞控制 %}
+{% asset_img   fast-transmittion.jpg  快速重传 %}
+
+
 
 
 ## 参考:
