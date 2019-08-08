@@ -3,7 +3,9 @@ title: linux命令工具和性能分析
 date: 2018-12-26 23:23:18
 tags:
   - linux
+categories:
   - 性能
+  - linux    
 ---
 
 ## 一. Linux observability tools | Linux 性能观测工具
@@ -143,7 +145,8 @@ systemctl list-unit-files --type=service
 lsof -p 11825
 ```
 
-## 参考:
+## 参考：
+
 1. [超全整理！Linux性能分析工具汇总合集](https://mp.weixin.qq.com/s/yhSJF6Il6iJamYCosVgXYQ)
 2. [60,000毫秒内对Linux的性能诊断](https://www.oschina.net/translate/linux-performance-analysis-in-60s?print)
 3. [28个UNIX/LINUX的命令行神器](https://coolshell.cn/articles/7829.html)

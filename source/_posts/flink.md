@@ -4,7 +4,8 @@ date: 2019-07-29 22:22:52
 tags:
   - flink
 categories: 
-  - 大数据  
+  - 大数据 
+  - 流式计算 
   - flink   
 ---
 
