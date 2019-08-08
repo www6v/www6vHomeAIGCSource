@@ -13,7 +13,7 @@ categories:
 
 {% asset_img   cpu.jpg  cpu  %} 
 {% asset_img   memory.jpg  memory  %} 
-{% asset_img   io.jpg  io  %} 
+{% asset_img   io.JPG  io  %} 
 
 
 Buffer是对磁盘数据的缓存，而Cache是文件数据的缓存，它们既会用在读请求中，也会
