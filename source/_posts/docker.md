@@ -14,7 +14,7 @@ categories:
 
 <!-- more -->
 
-{% asset_img   docker-overview.jpg   docker全景图  %}
+{% asset_img   docker-overview.JPG   docker全景图  %}
 
 
 ```
