@@ -8,8 +8,9 @@ categories:
   - linux  
 ---
 
-<!-- more -->
+linux性能优化
 
+<!-- more -->
 
 {% asset_img   cpu.jpg  cpu  %} 
 {% asset_img   memory.jpg  memory  %} 
