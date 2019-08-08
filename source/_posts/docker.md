@@ -12,6 +12,11 @@ categories:
 
 {% asset_img   docker.jpg   docker总结  %}
 
+<!-- more -->
+
+{% asset_img   docker-overview.jpg   docker全景图  %}
+
+
 ```
 [root@10-25-152-177 ~]# docker inspect --format '{{ .State.Pid }}' 23dfea495611
 23777
@@ -32,3 +37,5 @@ lrwxrwxrwx 1 1337 1337 0 Aug  8 16:05 uts -> uts:[4026533008]
 2. 《深入剖析Kubernetes - 06  白话容器基础（二）：隔离与限制》 张磊
 3. 《深入剖析Kubernetes - 07  白话容器基础（三）：深入理解容器镜像》 张磊
 4. 《深入剖析Kubernetes - 08  白话容器基础（四）：重新认识Docker容器》 张磊
+
+截图工具
