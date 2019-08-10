@@ -15,25 +15,25 @@ categories:
 
 ## 二. 快速性能诊断(快速体检)
 
-1. uptime  : 系统平均负载
+1. 系统平均负载
 ```
- # 0.25 ->  1分钟负载 
- # 0.22 ->  5分钟负载
- # 0.23 ->  15分钟负载
+ # 0.25- 1分钟负载 ， 0.22-5分钟负载， 0.23-15分钟负载
+ [root@10-25-3-55 /]# uptime
  23:02:19 up 285 days, 11:37,  1 user,  load average: 0.25, 0.22, 0.23
-```
 
-平均负载: 单位时间内，系统处于可运行状态和不可中断状态的平均进程数，也就是单位时间内的活跃进程数。
-
-```
 # 如果cpu个数是4， 则平均负载4是合理的。
 [root@10-23-25-248]$grep 'model name' /proc/cpuinfo | wc -l
 4
 ```
 
-CPU 密集型进程，使用大量 CPU 会导致平均负载升高，此时这两者是一致的；
-I/O 密集型进程，等待 I/O 也会导致平均负载升高，但 CPU 使用率不一定很高；
-大量等待 CPU 的进程调度也会导致平均负载升高，此时的CPU使用率也会比较高。
++ 平均负载: 
+  单位时间内，系统处于可运行状态和不可中断状态的平均进程数，也就是单位时间内的活跃进程数。
+
+
++ 场景
+  CPU 密集型进程，使用大量 CPU 会导致平均负载升高，此时这两者是一致的；
+  I/O 密集型进程，等待 I/O 也会导致平均负载升高，但 CPU 使用率不一定很高；
+  大量等待 CPU 的进程调度也会导致平均负载升高，此时的CPU使用率也会比较高。
 
 2. dmesg | tail : 系统信息  导致性能问题的错误
 ```
@@ -118,7 +118,7 @@ root     12921 24298  0  2018 ?        01:06:37 java -jar services/onlinetrainin
 ```
 
 2. 知道进程名，找占用的端口号 
-```
+``` 
 root@iZuf6jcjzd6wfh2fhp6315Z:~# ps aux | grep java
 root     12921  0.0  3.7 21046096 2305228 ?    Sl    2018  66:37 java -jar services/onlinetraining-service.jar
 
@@ -133,16 +133,28 @@ java    12921 root   30u     IPv4          286953901      0t0       TCP *:18090 
 ```
 #检查单元或服务是否正在运行
 systemctl status firewalld.service
-```
-```
 #列出所有服务
 systemctl list-unit-files --type=service
 ```
 
-2. 
+2. 进程有访问了哪些文件句柄
 ```
-# 进程有访问了哪些文件句柄
 lsof -p 11825
+```
+
+3. 查看连接你服务器 top10 用户端的 IP 地址：
+```
+netstat -nat | awk '{print $5}' | awk -F ':' '{print $1}' | sort | uniq -c | sort -rn | head -n 10
+```
+
+4.  alias
+```
+alias nis="npm install --save "
+alias install='sudo apt get install'
+alias update='sudo apt-get update; sudo apt-get upgrade'
+alias ..="cd .."
+alias ...="cd ..; cd .."
+alias sock5='ssh -D 8080 -q -C -N -f user@your.server'
 ```
 
 ## 参考：
@@ -151,5 +163,8 @@ lsof -p 11825
 2. [60,000毫秒内对Linux的性能诊断](https://www.oschina.net/translate/linux-performance-analysis-in-60s?print)
 3. [28个UNIX/LINUX的命令行神器](https://coolshell.cn/articles/7829.html)
 4. [systemctl 命令详解及使用教程](https://linux265.com/news/3385.html)
+5. [打造高效的工作环境 – Shell 篇](https://coolshell.cn/articles/19219.html)
+
+
 
 
