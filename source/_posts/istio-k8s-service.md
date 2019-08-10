@@ -47,7 +47,16 @@ categories:
 
 <!-- more -->
 
-{% asset_img   k8s&springCloud.png  Kubenetes&SpringCloud  %}
+<div style="width:200px; height:500px;">
+  {% asset_img   k8s&springCloud.png  Kubenetes&SpringCloud  %}
+</div>
+
+ {% asset_img   springcloudWithK8s.jpg  springcloudWithK8s %}
+
+ {% asset_img   spring-k8s.jpg  SpringCloud&Kubenetes %}
+
+ 
+
 
 
 ## 参考:
