@@ -47,18 +47,14 @@ categories:
 
 <!-- more -->
 
-<div style="width:200px; height:500px;">
-  {% asset_img   k8s&springCloud.png  Kubenetes&SpringCloud  %}
-</div>
-
- {% asset_img   springcloudWithK8s.jpg  springcloudWithK8s %}
-
  {% asset_img   spring-k8s.jpg  SpringCloud&Kubenetes %}
 
+<div style="width:70%; height:70%;">
+  {% asset_img   springcloudWithK8s.jpg  springcloudWithK8s %}
+</div>
+
+
  
-
-
-
 ## 参考:
 1. 分布式系统的技术栈 左耳听风
 2. [厉害了，Spring Cloud Alibaba 发布 GA 版本！](https://blog.csdn.net/zl1zl2zl3/article/details/89790643)

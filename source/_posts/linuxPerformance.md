@@ -8,8 +8,6 @@ categories:
   - linux  
 ---
 
-linux性能优化
-
 <!-- more -->
 
 {% asset_img   cpu.jpg  cpu  %} 
