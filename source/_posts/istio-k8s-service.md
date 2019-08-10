@@ -62,5 +62,4 @@ categories:
 ## 参考:
 1. 分布式系统的技术栈 左耳听风
 2. [厉害了，Spring Cloud Alibaba 发布 GA 版本！](https://blog.csdn.net/zl1zl2zl3/article/details/89790643)
-
-
+3. [一篇囊括微服务服务拆分的一切：前提，时机，方法，规范，选型](https://www.cnblogs.com/popsuper1982/p/9634578.html)
