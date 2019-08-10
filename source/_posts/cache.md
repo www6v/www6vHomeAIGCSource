@@ -148,13 +148,15 @@ Memcache 通过客户端cas命令实现乐观锁。 Jboss在3.0实现了mvcc。 
  
  
  
-## Reference :
-1. NoSQL架构实践（三）——以NoSQL为缓存 http://www.infoq.com/cn/news/2011/03/nosql-architecture-practice-3
-2. 大型网站架构系列之五,缓存策略设计概要 http://wenku.baidu.com/view/018e3f2d7375a417866f8fbc.html?
-3. Memcache mutex设计模式 http://timyang.net/programming/memcache-mutex/?
-4. 深入理解JBoss Cache3.0——Naga http://superleo.iteye.com/blog/265823?
-5. 极端事务处理模式：Write-behind缓存 http://www.infoq.com/cn/articles/write-behind-caching?
-6. Memcache mutex设计模式 http://timyang.net/programming/memcache-mutex/?
-7. 多版本并发控制(MVCC)在分布式系统中的应用 http://coolshell.cn/articles/6790.html
+## Reference:
+1. [NoSQL架构实践（三）——以NoSQL为缓存](http://www.infoq.com/cn/news/2011/03/nosql-architecture-practice-3) 
+2. [大型网站架构系列之五,缓存策略设计概要](http://wenku.baidu.com/view/018e3f2d7375a417866f8fbc.html?)
+3. [Memcache mutex设计模式](http://timyang.net/programming/memcache-mutex/?) 
+4. [深入理解JBoss Cache3.0——Naga](http://superleo.iteye.com/blog/265823?) 
+5. [极端事务处理模式：Write-behind缓存](http://www.infoq.com/cn/articles/write-behind-caching?) 
+6. [Memcache mutex设计模式](http://timyang.net/programming/memcache-mutex/?) 
+7. [多版本并发控制(MVCC)在分布式系统中的应用](http://coolshell.cn/articles/6790.html) 
+
+
 
 

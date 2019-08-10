@@ -1,5 +1,5 @@
 ---
-title: k8s 命令
+title: Kubernetes命令
 date: 2019-06-09 10:28:33
 tags:
   - Kubenetes

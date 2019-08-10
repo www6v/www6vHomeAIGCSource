@@ -19,3 +19,4 @@ tags:
 5. 移动选购线缓存实践 赵思奇
 6. 《亿级流量网站架构核心技术》 第9章 张开涛
 7. cache 58沈剑
+8. [缓存更新的套路](https://coolshell.cn/articles/17416.html)
