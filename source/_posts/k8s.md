@@ -18,7 +18,7 @@ categories:
 {% asset_img   k8s-tech.jpg  k8s技能图谱  %}
 
 
-||控制器|
+|控制器||
 |:---:|:---:|
 |Replication Controller<br> ReplicaSet<br> Deployment|无状态| 
 |StatefulSet<br> PersistentVolumeController|有状态| 
