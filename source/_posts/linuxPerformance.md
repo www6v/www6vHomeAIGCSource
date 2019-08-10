@@ -10,7 +10,11 @@ categories:
 
 <!-- more -->
 
+
+<div style="width:70%; height:70%;">
 {% asset_img   cpu.jpg  cpu  %} 
+</div>
+
 {% asset_img   memory.jpg  memory  %} 
 {% asset_img   io.JPG  io  %} 
 

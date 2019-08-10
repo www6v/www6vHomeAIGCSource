@@ -7,12 +7,18 @@ categories:
   - DevOps 
 ---
 
+<!-- more -->
+
+<div style="width:70%; height:70%;">
 {% asset_img  gitOverview.png   git  %}
+</div>
+
+<div style="width:70%; height:70%;">
 {% asset_img  gitOverview1.png   git  %}
+</div>
 
 ### stage == index 
 
-<!-- more -->
 
 1. git提交到远程分支
 ```
