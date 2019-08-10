@@ -8,8 +8,9 @@ categories:
   - linux  
 ---
 
-<!-- more -->
+<p hidden>linux性能优化</p>
 
+<!-- more -->
 
 <div style="width:70%; height:70%;">
 {% asset_img   cpu.jpg  cpu  %} 
