@@ -160,13 +160,13 @@ Quorum-based journaling: 要求数据不能丢失, 并且对延迟要求不高�
  
  
 ## 参考:
-1. https://issues.apache.org/jira/browse/HDFS-1623   ( High Availability Framework for HDFS NN) 
-2. http://www.docin.com/p-532877866.html   (  海量存储系列1-15 ) 
-3. http://www.infoq.com/cn/articles/hadoop-2-0-namenode-ha-federation-practice-zh (  Hadoop 2.0 NameNode HA和Federation实践 ) 
-4. http://yanbohappy.sinaapp.com/?p=205 (基于QJM/Qurom Journal Manager/Paxos的HDFS HA原理及代码分析) 
-5. http://www.tuicool.com/articles/EZnE7v (Quorum-based Journaling in CDH4.1) 
-6. http://www.infoq.com/cn/news/2012/08/facebook-avatarnode  (Facebook如何使用Avartarnode提升HDFS可靠性)
-7. http://www.itinit.net/thread-2468-1-1.html   (hadoop HA使用Quorum Journal的设计) 
-8. http://blog.nosqlfan.com/html/4139.html  (NoSQL数据库的分布式算法)
+1. [ High Availability Framework for HDFS NN](https://issues.apache.org/jira/browse/HDFS-1623)  
+2. [海量存储系列1-15](http://www.docin.com/p-532877866.html) 
+3. [Hadoop 2.0 NameNode HA和Federation实践](http://www.infoq.com/cn/articles/hadoop-2-0-namenode-ha-federation-practice-zh) 
+4. [基于QJM/Qurom Journal Manager/Paxos的HDFS HA原理及代码分析](http://yanbohappy.sinaapp.com/?p=205) 
+5. [Quorum-based Journaling in CDH4.1](http://www.tuicool.com/articles/EZnE7v) 
+6. [Facebook如何使用Avartarnode提升HDFS可靠性](http://www.infoq.com/cn/news/2012/08/facebook-avatarnode)
+7. [hadoop HA使用Quorum Journal的设计](http://www.itinit.net/thread-2468-1-1.html) 
+8. [http://blog.nosqlfan.com/html/4139.html](NoSQL数据库的分布式算法)
  
 

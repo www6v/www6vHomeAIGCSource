@@ -40,7 +40,7 @@ categories:
  
 ## 服务端缓存
   
-   缓存服务端常用的有memcache。 Nosql的解决方案有Redies，Redies在作为cache时往往配置为无持久化的形式 。两者数据模型都是key-value的。 Redies比老牌的memcache能提供更好的性能， 更快的速度。 Memcache 没有自建的replicaion 机制, 可靠性需要在客户端以双写支持。 Redies可以看成自带持久化机制的Write-back缓存，在write-behind缓存中，数据的读取和更新通过缓存进行，与write-through缓存不同，更新的数据并不会立即持久化。相反，在缓存中一旦进行更新操作，缓存就会跟踪脏记录列表，并定期将当前的脏记录集刷新到外部存储中， 在Redies中这种机制叫做AOF。 r
+   缓存服务端常用的有memcache。 Nosql的解决方案有Redies，Redies在作为cache时往往配置为无持久化的形式 。两者数据模型都是key-value的。 Redies比老牌的memcache能提供更好的性能， 更快的速度。 Memcache 没有自建的replicaion 机制, 可靠性需要在客户端以双写支持。 Redies可以看成自带持久化机制的Write-back缓存，在write-behind缓存中，数据的读取和更新通过缓存进行，与write-through缓存不同，更新的数据并不会立即持久化。相反，在缓存中一旦进行更新操作，缓存就会跟踪脏记录列表，并定期将当前的脏记录集刷新到外部存储中， 在Redies中这种机制叫做AOF。 
  
  
   
@@ -78,7 +78,7 @@ POJO 缓存则采用比较复杂的机制——利用字节码编织来内省（
 ## 缓存与一致性
  
   缓存多副本之间的同步：
-  可分为replication和invalidaiton机制。 Replication机制表示一旦有数据的更新， 其余副本都会同步复制一份更新后的数据。Replication机制复制时slave会对master节点有拖累， 这时可以考虑采取invalidation机制。 Invalidation机制在jboss cache里已有实现, 一旦有更新， 广播消息， 失效所有其他的副本，让其重新去获得该值。 可通过这种方式缓存大对象以减少在实例中复制对象的代价。根据用户在一定时间段内上网地点固定不变的规律，用户始终都是访问同一个机房， 针对主节点的本地缓存在有更新时可以异步发invalidation消息，副本节点可以慢慢的再加载回这个大对象， 这样可以提高用户响应度。这种方式也可用在边缘缓存中。对于无法分组的数据， 比如在某时间段的用户认证数据需要保证副本同步，最好的方式是清除相应的副本， 让它在下次使用时初始化。 r
+  可分为replication和invalidaiton机制。 Replication机制表示一旦有数据的更新， 其余副本都会同步复制一份更新后的数据。Replication机制复制时slave会对master节点有拖累， 这时可以考虑采取invalidation机制。 Invalidation机制在jboss cache里已有实现, 一旦有更新， 广播消息， 失效所有其他的副本，让其重新去获得该值。 可通过这种方式缓存大对象以减少在实例中复制对象的代价。根据用户在一定时间段内上网地点固定不变的规律，用户始终都是访问同一个机房， 针对主节点的本地缓存在有更新时可以异步发invalidation消息，副本节点可以慢慢的再加载回这个大对象， 这样可以提高用户响应度。这种方式也可用在边缘缓存中。对于无法分组的数据， 比如在某时间段的用户认证数据需要保证副本同步，最好的方式是清除相应的副本， 让它在下次使用时初始化。 
   
  
 ## 缓存与数据库的数据同步
@@ -120,33 +120,30 @@ POJO 缓存则采用比较复杂的机制——利用字节码编织来内省（
 MVCC是后验性的，读不阻塞写，写也不阻塞读，等到提交的时候才检验是否有冲突，由于没有锁，所以读写不会相互阻塞，从而大大提升了并发性能。修改过的副本带着版本号元数据， 多个副本在合并时， 根据版本检测冲突， 并合并数据。
  
 Memcache 通过客户端cas命令实现乐观锁。 Jboss在3.0实现了mvcc。 MVCC 提供了非阻塞 (non-blocking) 读操作 ( 它并不会去阻塞 wirter threads) ，在避免死锁的同时也提供了更高级的并发机制。它采用了 fail-fast 机制，如果写操作得到了一个 write lock ，那么它们也是依次进行，不允许重叠。
- 
- 
-   缓存：
-   Read-through  读贯穿
-   Write-trrough  写贯穿
-   Write-behind
- 
-  
+   
 ## Redies作为缓存的最佳实践
    1. 对于全局公用的，构建成本比较低的数据， 可以采用一致性hash， 无复制， 无持久化的方案。 如果缓存crash了，可以快速重新构建。
    2. 对于与用户相关的， 一致性要求比较低的， 构建成本较低的， 可以采用多对一的复制方式，多个小容量的节点复制到同一个大容量的节点， 但不提供持久化， 提供较高的可用性。
    3. 对于与用户相关的，一致性要求比较高的， 构建成本比较高，但存储占用量不高的场景下， 需要持久化， 并且一对一的复制方式， 提供最高的可用性。
  
  
-案例： Twitter缓存体系
- Twitter: 
-逻辑缓存    －  page cache    api
-           － fragment cache    1. 原始数据的冗余 2. 结构上的冗余
- 
-数据源cache － vector cache
-           － Row cache
- 
-  Page， fragment － 全局与局部的分离， api， 业务逻辑
-  Vector, row cache – 索引与内容的分离
-  Google gfs cache
- 
- 
+> **案例： Twitter缓存体系**
+  Twitter: 
+     逻辑缓存  
+        －  page cache    api
+        － fragment cache    1. 原始数据的冗余 2. 结构上的冗余
+     数据源cache 
+        － vector cache
+        － Row cache 
++ Page， fragment － 全局与局部的分离， api， 业务逻辑
++ Vector, row cache – 索引与内容的分离
++ Google gfs cache
+
+
+> **缓存类型：**
+   Read-through  读贯穿
+   Write-trrough  写贯穿
+   Write-behind
  
 ## Reference:
 1. [NoSQL架构实践（三）——以NoSQL为缓存](http://www.infoq.com/cn/news/2011/03/nosql-architecture-practice-3) 
