@@ -7,6 +7,7 @@ tags:
   - 性能优化
 categories: 
   - 性能  
+  - 总结
 ---
 
 {% asset_img performance.jpg 性能优化总结 %}

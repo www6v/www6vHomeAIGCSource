@@ -66,8 +66,8 @@ Native.epollCtlAdd把epollFd和 eventFd做了关联。epoll与select/poll不同�
 
 ## 参考：
 
-1. https://github.com/netty/netty/wiki/Native-transports Netty
+1. [Netty  Native-transports](https://github.com/netty/netty/wiki/Native-transports) 
 2. netty-all-4.0.33.Final 源代码 EpollEventLoop
-3. http://blog.csdn.net/turkeyzhou/article/details/8504554
-4. http://www.cnblogs.com/wiessharling/p/4106295.html
-5. http://www.cnblogs.com/Anker/p/3265058.html
+3. [select,poll,epoll的归纳总结区分](http://blog.csdn.net/turkeyzhou/article/details/8504554)
+4. [select poll epoll三者之间的比较](http://www.cnblogs.com/wiessharling/p/4106295.html)
+5. [select、poll、epoll之间的区别总结[整理]](http://www.cnblogs.com/Anker/p/3265058.html)

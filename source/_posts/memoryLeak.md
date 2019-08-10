@@ -62,7 +62,7 @@ II. 使用try-with-resources语句（Java SE7新特性）
 1. <<实战Java虚拟机——JVM故障诊断与性能优化>> 
 7.2.2节中有关JDK6.0里String.substring()可能引发的内存泄漏
 
-2，<< Effective.Java.中文版 - 第二版>> - 第六条 消除过期的对象引用
+2. << Effective.Java.中文版 - 第二版>> - 第六条 消除过期的对象引用
 如果一个类自己管理内存，程序员就要警惕内存泄漏问题。
 
 3. 大量static字段引起的内存泄漏
