@@ -18,11 +18,15 @@ categories:
 {% asset_img   k8s-tech.jpg  k8s技能图谱  %}
 
 
-|控制器||
+|控制器|类型|
 |:---:|:---:|
 |Replication Controller<br> ReplicaSet<br> Deployment|无状态| 
 |StatefulSet<br> PersistentVolumeController|有状态| 
 | Servcie【1】<br>Namespace | x |
+
+
+{% asset_img   k8s-controller.JPG   控制器模型  %}
+
 
 ## 参考:
 
@@ -35,4 +39,4 @@ categories:
 7. [课时3 Kubernetes 核心概念](https://edu.aliyun.com/lesson_1651_13078?spm=5176.254948.1334973.8.2c12cad2AHzzTw#_13078)
 8. [课时5 应用编排与管理：核心原理](https://edu.aliyun.com/lesson_1651_13080?spm=5176.254948.1334973.12.2c12cad2AHzzTw#_13080)
 9. [课时6 应用编排与管理： Deployment](https://edu.aliyun.com/lesson_1651_13081?spm=5176.10731542.0.0.e7a120beywNIVX#_13081)
-10. [深入剖析Kubernetes - 16  编排其实很简单：谈谈“控制器”模型 张磊]()
+10. <<深入剖析Kubernetes - 16  编排其实很简单：谈谈“控制器”模型>> 张磊
