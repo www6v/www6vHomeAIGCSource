@@ -9,9 +9,11 @@ categories:
   - Kubernetes  
 ---
 
-{% asset_img   Kubenetes.jpg  Kubenetes  %}
+{% asset_img   kubenetes-arch.jpg  Kubenetes架构  %}
 
 <!-- more -->
+
+{% asset_img   Kubenetes.jpg  Kubenetes总结  %}
 
 {% asset_img   kubernetes-high-level-component-archtecture.jpg  kubernetes-high-level-component-archtecture  %}
 
