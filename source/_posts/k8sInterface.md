@@ -16,6 +16,9 @@ categories:
 
 {% asset_img   k8s-interface.JPG  Kubenetes开放接口 %}
 
+{% asset_img   flannel-udp.JPG  flannel-udp模式 %}
+{% asset_img   flannel-vxlan.JPG  flannel-vxlan模式 %}
+
 
 ## 参考:
 
@@ -26,4 +29,8 @@ categories:
 5. [calico网络原理及与flannel对比](https://blog.csdn.net/hxpjava1/article/details/79566192)
 6. [Kubernetes CNI网络最强对比：Flannel、Calico、Canal和Weave](https://mp.weixin.qq.com/s/GQc8XPV4MaCWiTcN2wVzbw)
 7. <<深入剖析Kubernetes - 09  从容器到容器云：谈谈Kubernetes的本质>> 张磊
+8. <<趣谈网络协议 - 30容器网络之Flannel：每人一亩三分地>> 刘超
+9. <<趣谈网络协议 - 31容器网络之Calico：为高效说出善意的谎言>> 刘超
+10. <<深入剖析Kubernetes - 33  深入解析容器跨主机网络>> 张磊
+11. <<深入剖析Kubernetes -34  Kubernetes网络模型与CNI网络插件>>  张磊
 
