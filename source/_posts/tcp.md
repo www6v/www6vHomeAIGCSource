@@ -14,6 +14,11 @@ categories:
 
 <!-- more -->
 
+{% asset_img  tcp-hello.jpg  TCP三次握手 %}
+{% asset_img  tcp-byte.jpg  TCP四次挥手 %}
+
+
+
 ## 参考:
 
 1. java socket参数详解:TcpNoDelay huang_xw
