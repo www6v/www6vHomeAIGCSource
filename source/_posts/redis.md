@@ -23,5 +23,6 @@ categories:
 6. Redis 深度历险：核心原理与应用实践 | 原理 8：有备无患 —— 主从同步| 钱文品
 7. Redis 深度历险：核心原理与应用实践 | 原理 3：未雨绸缪 —— 持久化| 钱文品
 8. Redlock：Redis分布式锁最牛逼的实现 阿飞的博客
+9. [美团针对Redis Rehash机制的探索和实践](https://www.cnblogs.com/meituantech/p/9376472.html)
 
 
