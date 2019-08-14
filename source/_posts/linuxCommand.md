@@ -157,6 +157,24 @@ alias ...="cd ..; cd .."
 alias sock5='ssh -D 8080 -q -C -N -f user@your.server'
 ```
 
+5.  rtt  网络延迟
+```
+[root@10-25-3-55 ~]# hping3 -c 3 -S -p 80 baidu.com
+HPING baidu.com (eth0 39.156.69.79): S set, 40 headers + 0 data bytes
+len=40 ip=39.156.69.79 ttl=43 id=22691 sport=80 flags=SA seq=0 win=8192 rtt=31.9 ms
+len=40 ip=39.156.69.79 ttl=43 id=19208 sport=80 flags=SA seq=1 win=8192 rtt=33.0 ms
+len=40 ip=39.156.69.79 ttl=43 id=2359 sport=80 flags=SA seq=2 win=8192 rtt=36.0 ms
+
+[root@10-25-3-55 ~]# traceroute  --tcp -p 80 -n  baidu.com
+traceroute to baidu.com (220.181.38.148), 30 hops max, 60 byte packets
+```
+
+6. xxx to root
+```
+# Ubuntu
+sudo su root
+```
+
 ## 参考：
 
 1. [超全整理！Linux性能分析工具汇总合集](https://mp.weixin.qq.com/s/yhSJF6Il6iJamYCosVgXYQ)
