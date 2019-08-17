@@ -68,7 +68,10 @@ class Solution {
 3. 快指针，慢指针
 + 删除链表倒数第n个结点 ->  快指针先于慢指针走若干步 
 > 剑指 题15 
-+ 链表中环的检测 ->  快指针是慢指针的两倍
++ 链表中环的检测 ->  
+  1. 硬解 
+  2. 没走一步，把节点的地址存在set中，走下一步的时候查找地址是否已经在set中
+  3. 快指针是慢指针的两倍， 最后快指针和慢指针相遇
 + 求链表的中间结点 -> 快指针是慢指针的两倍
 
 
@@ -101,6 +104,8 @@ class Solution {
 2. 某一个id访问了系统多次，怎么做限流
 3. 数组的两分搜索
 
+六. Master Thereom  主定律
+{% asset_img  masterTheorem.JPG  主定律在常用算法中的应用 %}
 
 ## 参考:
 1. [【LeetCode题解】21_合并两个有序链表](https://www.cnblogs.com/xugenpeng/p/9850372.html)
@@ -113,4 +118,5 @@ class Solution {
 8. [LVS集群之十种调度算法及负载均衡——理论](http://blog.csdn.net/scape1989/article/details/21085659)
 9. [每个程序员都应该收藏的算法复杂度速查表](http://www.codeceo.com/article/algorithm-complexity-table.html) good
 10. [从头到尾彻底解析Hash表算法](https://yq.aliyun.com/articles/38838)
-
+11. [算法面试通关40讲 - 03.如何计算算法的复杂度]()
+12. [算法面试通关40讲 - 06.面试题：反转一个单链表&判断链表是否有环]()
