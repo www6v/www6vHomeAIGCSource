@@ -1,5 +1,5 @@
 ---
-title: Https总结
+title: HTTPS总结
 date: 2019-08-14 15:00:23
 tags: 
   - https
@@ -16,7 +16,7 @@ categories:
 
 <div style="width: 70%; height: 70%">
 {% asset_img  https.jpg   %}
-{% asset_img  https1.jpg  Https总结 %}
+{% asset_img  https1.jpg  HTTPS总结 %}
 </div>
 
 

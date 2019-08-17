@@ -10,6 +10,10 @@ categories:
 
 <p hidden></p>
 <!-- more -->
+
+
+{% asset_img  algorithm.jpg  算法和数据结构总结 %}
+
 一. 链表
 1. 单链表的反转
 +  使用3个指针遍历单链表，逐个链接点进行反转。 复杂
