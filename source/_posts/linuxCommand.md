@@ -182,6 +182,7 @@ sudo su root
 3. [28个UNIX/LINUX的命令行神器](https://coolshell.cn/articles/7829.html)
 4. [systemctl 命令详解及使用教程](https://linux265.com/news/3385.html)
 5. [打造高效的工作环境 – Shell 篇](https://coolshell.cn/articles/19219.html)
+6. [Linux 命令搜索](https://wangchujiang.com/linux-command/)  good
 
 
 
