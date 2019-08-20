@@ -101,6 +101,9 @@ class Solution {
 ## 五. 其他
 1. 最小响应时间的算法
 > 有的task 执行时间长，有的task 执行时间短， 如何设计一个负载均衡策略
+
+  + 参考17
+  + Nginx的负载均衡算法: fair （第三方）按后端服务器的响应时间来分配请求，响应时间短的优先分配。 
 2. 某一个id访问了系统多次，怎么做限流
    > 参考16 : leecode 239  Array + sliding window maximum
      解： 
@@ -137,3 +140,5 @@ class Solution {
 14. [big O](https://www.bigocheatsheet.com/) good
 15. [算法面试通关40讲 - 10.理论讲解：优先队列]() 覃超
 16. [算法面试通关40讲 - 12.面试题：返回滑动窗口中的最大值]() 覃超
+17. [QPS比Nginx提升60%，阿里Tengine负载均衡算法揭秘](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651017589&idx=2&sn=32a472b8e805666b197505f1acc9af83&chksm=bdbea9268ac92030342933d37ecb1b9754b5d1d6e5a2935c331098669b3f4a44909e628532dd&scene=27#wechat_redirect)
+
