@@ -9,7 +9,9 @@ categories:
   - 稳定性
   - 故障模型
 ---
-{% asset_img fault.jpg 故障模型 %}
+
+{% asset_img fault.jpg 故障模型1 %}
+{% asset_img fault2.jpg 故障模型2 %}
 
 <!-- more -->
 
@@ -38,3 +40,4 @@ categories:
 6. [热点 Key 问题的发现与解决](https://help.aliyun.com/document_detail/67252.html)
 
 ### Virtualization & Storage & Networking
+1. [Kubernetes 网络疑难杂症排查分享](https://tencentcloudcontainerteam.github.io/2019/08/12/troubleshooting-with-kubernetes-network/) 
