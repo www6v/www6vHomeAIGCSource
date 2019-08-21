@@ -20,3 +20,5 @@ categories:
 3. 苏宁 11.11：如何基于异步化打造会员任务平台？ 陈思
 4. Web服务请求异步化介绍（概念篇） 放翁（文初）
 5. Java中的纤程库 - Quasar 鸟窝
+6. [The introduction to Reactive Programming](https://github.com/benjycui/introrx-chinese-edition?utm_source=tuicool&utm_medium=referral)
+7. [全面异步化：淘宝反应式架构升级探索](https://mp.weixin.qq.com/s/Cfg-7MzabvPOLWrrlTVXzA)
