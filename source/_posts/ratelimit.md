@@ -21,3 +21,4 @@ categories:
 5. Redis 深度历险：核心原理与应用实践 应用 6：断尾求生 —— 简单限流 钱文品
 6. Redis 深度历险：核心原理与应用实践 应用 7：一毛不拔 —— 漏斗限流 钱文品
 7. Guava RateLimiter源码解析 manerfan
+8. [淘宝应用柔性架构的探索](https://mp.weixin.qq.com/s/RM3ffBCJqoQ2JMPKHgmv0Q)
