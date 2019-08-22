@@ -121,7 +121,7 @@ class Solution {
 {% asset_img  arraySortAlg.JPG  图3.数组排序算法 %}
 {% asset_img  big-o-cheat-sheet-poster.png  图4.big O %}
 {% asset_img  heap.JPG  图5.堆实现 %}
-
+堆实现： Binary， Binomial， Fibonacci， Strict Fibonacci（性能好，用的比较多）
 
 
 ## 参考:
