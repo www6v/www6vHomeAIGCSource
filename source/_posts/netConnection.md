@@ -1,5 +1,5 @@
 ---
-title: IDC网路互通
+title: IDC网络互通
 date: 2019-05-15 05:42:14
 tags: 
   - 互通
@@ -10,7 +10,7 @@ categories:
 ---
 
 
-{% asset_img netConnection.jpg 网路互通 %}
+{% asset_img netConnection.jpg  IDC网络互通 %}
 
 ## 参考：
 
