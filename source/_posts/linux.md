@@ -1,20 +1,27 @@
 ---
-title: linux
+title: Linux总结
 date: 2019-08-22 15:46:10
 tags:
+  - Linux
+categories:
+  - 基础
+  - 算法
 ---
 
 <p hidden></p>
 <!-- more -->
 
-<div style="width: 70%; height: 70%">
-{% asset_img   kenel.png   内核体系结构 %}
+
+<div style="text-align: center;">
+
+![内核体系结构](https://user-images.githubusercontent.com/5608425/63564514-e5f0ae00-c597-11e9-9d32-985d0771c207.png) 内核体系结构
+
+![系统调用](https://user-images.githubusercontent.com/5608425/63564517-e721db00-c597-11e9-86eb-2e5d502a2c52.jpg)  系统调用
+
+![进程执行](https://user-images.githubusercontent.com/5608425/63564515-e6894480-c597-11e9-90c2-eba751ad0c08.jpg) 进程执行
+
+![文件的数据结构](https://user-images.githubusercontent.com/5608425/63564376-6e228380-c597-11e9-8e74-97768f54c984.jpg)   文件的数据结构
 </div>
-
-{% asset_img   syscall.jpg    系统调用  %}
-{% asset_img   process-exec.jpg    进程执行  %}
-{% asset_img   data-structure-in-file.jpg   文件的数据结构 %}
-
 
 一. 内核初始化
 + Systemd 1号进程在用户态将运行一个用户进程, 1号进程和子进程形成一棵进程树。

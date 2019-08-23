@@ -1,0 +1,9 @@
+
+
+<div style="width: 70%; height: 70%">
+{% asset_img   kenel.png   内核体系结构 %}
+</div>
+
+{% asset_img   syscall.jpg    系统调用  %}
+{% asset_img   process-exec.jpg    进程执行  %} 
+{% asset_img   data-structure-in-file.jpg   文件的数据结构 %}
