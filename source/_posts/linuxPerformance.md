@@ -1,5 +1,5 @@
 ---
-title: linux性能优化
+title: Linux性能优化
 date: 2019-08-08 19:43:38
 tags:
   - linux
@@ -20,8 +20,7 @@ categories:
 {% asset_img   io.JPG  io  %} 
 
 
-Buffer是对磁盘数据的缓存，而Cache是文件数据的缓存，它们既会用在读请求中，也会
-用在写请求中。
+> Buffer是对磁盘数据的缓存，而Cache是文件数据的缓存，它们既会用在读请求中，也会用在写请求中。
 
 ## 参考：
 
