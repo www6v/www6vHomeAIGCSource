@@ -4,24 +4,23 @@ date: 2019-08-24 12:47:32
 tags:
   - 文件
   - 存储
-categories: 
-  - 分布式
+categories:
+  - 总结 
   - 存储
-  - 总结
+top: true    
 ---
 
 <p hidden></p>
 <!-- more -->
 
-一. Linux
-+ Linux文件系统   
+## 一. Linux文件系统   
 
 系统 | 组件 | 缓存
 -|-|-
 虚拟文件系统 |  dentry， inode(索引文件) | page cache
 块设备 | dev | buffer
 
-二. 应用层
+## 二. 应用层
 
 
  总结 | 知识点   
