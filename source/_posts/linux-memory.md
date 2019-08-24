@@ -4,8 +4,8 @@ date: 2019-08-23 15:38:18
 tags:
   - linux
 categories:
-  - 性能
-  - linux   
+  - linux  
+  - 内存管理 
 ---
 
 <p hidden></p>

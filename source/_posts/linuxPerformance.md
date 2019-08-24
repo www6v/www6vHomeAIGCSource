@@ -4,8 +4,8 @@ date: 2019-08-08 19:43:38
 tags:
   - linux
 categories:
-  - 性能
-  - linux  
+  - linux
+  - 性能优化  
 ---
 
 <p hidden>linux性能优化</p>

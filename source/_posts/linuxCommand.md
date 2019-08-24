@@ -4,8 +4,8 @@ date: 2018-12-26 23:23:18
 tags:
   - linux
 categories:
-  - 性能
-  - linux    
+  - linux 
+  - 性能分析  
 ---
 
 ## 一. Linux observability tools | Linux 性能观测工具
