@@ -70,7 +70,7 @@ class Solution {
 3. 快指针，慢指针
 + 删除链表倒数第n个结点 ->  快指针先于慢指针走若干步 
 > 剑指 题15 
-+ 链表中环的检测 ->  
++ 链表中环的检测 
   1. 硬解 
   2. 每走一步，把节点的地址存在set中，走下一步的时候查找地址是否已经在set中
   3. 快指针是慢指针的两倍， 最后快指针和慢指针相遇
@@ -97,14 +97,20 @@ class Solution {
 ## 三. 栈,队列
 1. 两个栈实现一个队列
 > 指南 P5
+> leetcode 232
+
 2. 包含min函数的栈
 > 剑指 21题 , 指南 P1
 
 ## 四. 字符串
 1.  一个字符串中， 要找到其中最长的字符串，并且没有重复字符。
+
 2. 字符串转换为整数
+> 剑指 50题
+> [leetcode 8](https://blog.csdn.net/u010651249/article/details/85709554)
+> [leetcode 8](https://github.com/grandyang/leetcode/issues/8)
 3. 字符串中第一个只出现一次的字符，如何优化算法使得遍历次数更少
-《剑指offer》 第35题目
+> 剑指 35题
 
 ## 五. 其他
 1. 最小响应时间的算法
@@ -113,13 +119,16 @@ class Solution {
   + 参考17， 
   + 参考19， 参考20   基于概率  响应时间短的概率越大， 响应时间是正态分布的
   + Nginx的负载均衡算法-参考18: fair （第三方）按后端服务器的响应时间来分配请求，响应时间短的优先分配。 
+
 2. 某一个id访问了系统多次，怎么做限流
    > 参考16 : leecode 239  Array + sliding window maximum
      解： 
-        +  优先级队列 大顶堆  O(n * logk)
-        +  queue deque  O(n*1)
-3. 数组的两分搜索
+       + 优先级队列 大顶堆  O(n * logk)
+       + queue deque  O(n*1)
 
+3. 数组的两分搜索
+   > [LeetCode 540. Single Element in a Sorted Array](https://github.com/grandyang/leetcode/issues/540)
+   
 ## 六. Master Thereom  主定律
 {% asset_img  masterTheorem.JPG  图1.主定律在常用算法中的应用 %}
 
