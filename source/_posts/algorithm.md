@@ -84,6 +84,7 @@ class Solution {
 
 2. 公共祖先 
 > 剑指 50题 ，指南 P153 
+> 参考21 LeetCode 235,236. 递归，非递归
 
 3. 二叉树的深度
 > 剑指 39题
@@ -93,6 +94,7 @@ class Solution {
 5. 二叉树中和为某一值的路径
 > 剑指 25题
 > LeetCode 112: 路径总和. 用栈来存路径
+
 
 ## 三. 栈,队列
 1. 两个栈实现一个队列
@@ -109,6 +111,7 @@ class Solution {
 > 剑指 50题
 > [leetcode 8](https://blog.csdn.net/u010651249/article/details/85709554)
 > [leetcode 8](https://github.com/grandyang/leetcode/issues/8)
+
 3. 字符串中第一个只出现一次的字符，如何优化算法使得遍历次数更少
 > 剑指 35题
 
@@ -135,6 +138,15 @@ class Solution {
 ## 七. 算法和数据结构总结
 
 {% asset_img  dataStructureOperation.JPG  图2.数据结构操作 %}
+
+> 二叉搜索树：
+左子树上所有结点的值均小于它的根结点的值； 
+右子树上所有结点的值均大于它的根结点的值； 
+它的左、右子树也分别为二叉搜索树。
+
+> 最差时间复杂度的二叉搜索树是O(n)，退化成链表
+所以提出了平衡二叉搜索树， 最差时间复杂度是O(logn)
+
 {% asset_img  arraySortAlg.JPG  图3.数组排序算法 %}
 {% asset_img  big-o-cheat-sheet-poster.png  图4.big O %}
 {% asset_img  heap.JPG  图5.堆实现 %}
@@ -162,3 +174,4 @@ class Solution {
 18. [nginx fair负载均衡算法](https://github.com/gnosek/nginx-upstream-fair)
 19. [超级负载均衡](https://blog.csdn.net/iteye_14001/article/details/82098361)  来源于以前百度的blog
 20. [极客时间 - 程序员的数据基础课 19,20,21]
+21. [算法面试通关40讲 - 19.面试题：二叉树&二叉搜索树的最近公共祖先]() 覃超
