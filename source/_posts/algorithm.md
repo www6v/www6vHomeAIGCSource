@@ -33,6 +33,7 @@ public static Node reverseList(Node node) {
 }
 ```
 > 参考2， 剑指 题16 
+> [LeetCode206：反转链表](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC206%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.md)
 
 2. 合并两个有序链表
 
@@ -64,6 +65,7 @@ class Solution {
 }
 ```
 > 参考1
+> [LeetCode21:合并两个有序链表](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC21%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8.md)
 
 3. 快指针，慢指针
 + 删除链表倒数第n个结点 ->  快指针先于慢指针走若干步 
@@ -78,13 +80,19 @@ class Solution {
 ## 二. 二叉树
 1. 中序遍历   非递归算法
 > 指南 P88
+> [LeetCode 94：二叉树的中序遍历](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC94%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86.md)
+
 2. 公共祖先 
 > 剑指 50题 ，指南 P153 
+
 3. 二叉树的深度
 > 剑指 39题
+
 4. 二叉树的最大距离（即相距最远的两个叶子节点）。
+
 5. 二叉树中和为某一值的路径
 > 剑指 25题
+> LeetCode 112: 路径总和. 用栈来存路径
 
 ## 三. 栈,队列
 1. 两个栈实现一个队列
