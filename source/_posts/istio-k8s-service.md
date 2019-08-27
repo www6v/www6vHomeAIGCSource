@@ -1,5 +1,5 @@
 ---
-title: istio、K8s和Springcloud中服务的比对
+title: Istio、Kubenetes和Spring Cloud中服务的比对     
 date: 2019-07-20 07:46:52
 tags: 
   - k8s
