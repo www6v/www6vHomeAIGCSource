@@ -38,15 +38,10 @@ categories:
 
 ## 参考:
 
-3.  [数据结构与算法之美 - 07链表（下）：如何轻松写出正确的链表代码？]() 王争
-
-7.  [算法大牛的git](https://github.com/julycoding/The-Art-Of-Programming-By-July)
-
-9.  [每个程序员都应该收藏的算法复杂度速查表](http://www.codeceo.com/article/algorithm-complexity-table.html) good
-
-10.  [从头到尾彻底解析Hash表算法](https://yq.aliyun.com/articles/38838)
-
-14.  [big O](https://www.bigocheatsheet.com/) good
+1.  [算法大牛的git](https://github.com/julycoding/The-Art-Of-Programming-By-July)
+2.  [每个程序员都应该收藏的算法复杂度速查表](http://www.codeceo.com/article/algorithm-complexity-table.html) good
+3.  [从头到尾彻底解析Hash表算法](https://yq.aliyun.com/articles/38838)
+4.  [big O](https://www.bigocheatsheet.com/) good
 
 
 
