@@ -4,9 +4,8 @@ date: 2019-08-23 17:07:05
 tags:
   - network
 categories:
-  - 分布式
+  - 总结  
   - 网络
-  - 总结
 top: true  
 ---
 

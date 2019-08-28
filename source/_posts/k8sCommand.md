@@ -51,12 +51,14 @@ kubectl rollout undo deployment/deployment-nginx
 kubectl rollout undo deployment.v1.apps/deployment-nginx  --to-revision=2
 ```
 
-6. edit 命令
+6. edit 命令: 直接修改k8s里的API对象
 
 ```
 kubectl edit pods kubia-cjrqd
 kubectl edit deployment  nginx-deployment
 ```
+
+
 
 
 
