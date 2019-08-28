@@ -22,18 +22,30 @@ categories:
 
 {% asset_img  dataStructureOperation.JPG  图2.数据结构操作 %}
 
-> #### 二叉搜索树：
-左子树上所有结点的值均小于它的根结点的值； 
-右子树上所有结点的值均大于它的根结点的值； 
-它的左、右子树也分别为二叉搜索树。
+> #### 线性表: 
+       Array, Stack, Queue, Singly-Linked List, Doubly-Linked List
 
-> 最差时间复杂度的二叉搜索树是O(n)，退化成链表
-所以提出了平衡二叉搜索树， 最差时间复杂度是O(logn)
+> #### Skip List && Binary Search Tree: 
+       + Average && Worst 相同
+       + Redis的SortedSet用Skip List实现
+
+> #### 二叉搜索树:
+       + 左子树上所有结点的值均小于它的根结点的值； 
+         右子树上所有结点的值均大于它的根结点的值； 
+         它的左、右子树也分别为二叉搜索树。
+       + 最差时间复杂度的二叉搜索树是O(n)，退化成链表;
+         所以提出了平衡二叉搜索树， 最差时间复杂度是O(logn)。
+         平衡二叉搜索树: Red-Black Tree, Splay Tree, AVL Tree
+
+> #### B-tree:
+       多路搜索树，并不是二叉的
 
 {% asset_img  arraySortAlg.JPG  图3.数组排序算法 %}
 {% asset_img  big-o-cheat-sheet-poster.png  图4.big O %}
 {% asset_img  heap.JPG  图5.堆实现 %}
-堆实现： Binary， Binomial， Fibonacci， Strict Fibonacci（性能好，用的比较多）
+
+> #### 堆实现:
+Binary， Binomial， Fibonacci， Strict Fibonacci（性能好，用的比较多）
 
 
 ## 参考:
