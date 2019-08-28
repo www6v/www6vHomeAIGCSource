@@ -40,6 +40,13 @@ git stash pop
 git checkout -b dev
 ```
 
+4. 强制覆盖本地文件
+```
+git fetch --all
+git reset --hard origin/master
+git reset --hard origin/<branch_name>
+```
+
 ## 参考:
 
 1. [Git 分支 - 分支的新建与合并](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)
@@ -47,5 +54,6 @@ git checkout -b dev
 3. [git使用小记---比较](https://www.jianshu.com/p/776916f74a41)
 4. [一篇极好的Git 总结](https://www.liangzl.com/get-article-detail-31025.html)
 5. [Git 删除具体某个提交commit的方法](https://www.jianshu.com/p/2fd2467c27bb)
+6. [“git pull”如何强制覆盖本地文件？](https://vimsky.com/article/3679.html)
 
 
