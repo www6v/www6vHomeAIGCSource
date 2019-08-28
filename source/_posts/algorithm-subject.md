@@ -115,6 +115,15 @@ class Solution {
 > 剑指 25题
 > LeetCode 112: 路径总和. 用栈来存路径
 
+#### 6. LeetCode 102  二叉树的层序遍历
+> 参考 19
+ [LeetCode 102](https://github.com/grandyang/leetcode/issues/102)
+ [LeetCode102](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC102%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86.md)
+ 解1： BFS  队列辅助 
+ 解2： DFS 
+
+#### 7. LeetCode 104 Maximum Depth of Binary Tree
+
 
 ## 四. 字符串
 #### 1.  一个字符串中， 要找到其中最长的字符串，并且没有重复字符。
@@ -147,6 +156,15 @@ class Solution {
 #### 4. 递归模板  recursion
 {% asset_img  recursion.jpg  递归模板 %}
 
+#### 5. 求众数
+>  [LeetCode第169号问题：求众数](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC169%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E6%B1%82%E4%BC%97%E6%95%B0.md)
+   [LeetCode 169. Majority Element](https://github.com/grandyang/leetcode/issues/169)
+   剑指 29题， 参考18
+   解1： map O(N) 
+   解2：sort O（n logn）
+   解3: 摩尔投票法  特殊高效算法
+
+
 ## 参考:
 
 1. [【LeetCode题解】21_合并两个有序链表](https://www.cnblogs.com/xugenpeng/p/9850372.html)
@@ -166,3 +184,5 @@ class Solution {
 15.  [超级负载均衡](https://blog.csdn.net/iteye_14001/article/details/82098361)  来源于以前百度的blog
 16.  [极客时间 - 程序员的数据基础课 19,20,21]
 17.  [算法面试通关40讲 - 19.面试题：二叉树&二叉搜索树的最近公共祖先]() 覃超
+18.  [算法面试通关40讲 - 23.面试题：求众数]()  覃超
+19.  [算法面试通关40讲 - 28.面试题：二叉树层次遍历])()  覃超
