@@ -21,7 +21,7 @@ top: true
 
 ## 二. 跨网段，vpc
 + Docker网络
-+ Kubenetes开放接口
++ Kubernetes开放接口   
 + IDC网络互通
 
 ## 三. 应用层

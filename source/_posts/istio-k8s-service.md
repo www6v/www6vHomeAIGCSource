@@ -1,5 +1,5 @@
 ---
-title: Istio、Kubenetes和Spring Cloud中服务的比对     
+title: Istio、Kubernetes和Spring Cloud中服务的比对     
 date: 2019-07-20 07:46:52
 tags: 
   - k8s
@@ -50,10 +50,10 @@ categories:
 
 -----
 
-{% asset_img   spring-k8s.jpg  SpringCloud&Kubenetes %}
+{% asset_img   spring-k8s.jpg  SpringCloud .vs Kubernetes %}
 
 
-{% asset_img   springcloudWithK8s.jpg  springcloudWithK8s %}
+{% asset_img   springcloudWithK8s.jpg  SpringCloud With Kubernetes %}
 
 <div style="width:70%; height:70%;">  
 </div>

@@ -1,5 +1,5 @@
 ---
-title: Kubenetes调度器
+title: Kubernetes调度器
 date: 2019-06-09 12:27:44
 tags:
   - Kubenetes

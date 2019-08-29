@@ -1,5 +1,5 @@
 ---
-title: Kubenetes资源
+title: Kubernetes资源
 date: 2019-06-09 17:13:52
 tags:
   - Kubenetes
