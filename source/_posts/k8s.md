@@ -15,10 +15,12 @@ categories:
 
 {% asset_img   Kubenetes.jpg  Kubenetes总结  %}
 
-{% asset_img   kubernetes-high-level-component-archtecture.jpg  kubernetes-high-level-component-archtecture  %}
+<div style="text-align: center;">
+![kubernetes-high-level-component-archtecture](https://user-images.githubusercontent.com/5608425/63923811-c535c600-ca79-11e9-8057-2b6264b39d80.jpg) kubernetes-high-level-component-archtecture
 
-{% asset_img   k8s-tech.jpg  k8s技能图谱  %}
 
+![k8s技能图谱](https://user-images.githubusercontent.com/5608425/63923539-4f315f00-ca79-11e9-900a-22b66a75922c.jpg)  k8s技能图谱
+</div>
 
 |控制器|类型|
 |:---:|:---:|
@@ -26,8 +28,9 @@ categories:
 |StatefulSet<br> PersistentVolumeController|有状态| 
 | Servcie【1】<br>Namespace | x |
 
-
-{% asset_img   k8s-controller.JPG   控制器模型  %}
+<div style="text-align: center;">
+![控制器模型](https://user-images.githubusercontent.com/5608425/63924251-85bba980-ca7a-11e9-8a3a-4cf852dfe86c.JPG)  控制器模型
+</div>
 
 
 ## 参考:
