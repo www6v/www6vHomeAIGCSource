@@ -122,8 +122,10 @@ class Solution {
  解1： BFS  队列辅助 
  解2： DFS 
 
-#### 7. LeetCode 104 Maximum Depth of Binary Tree
-
+#### 7. LeetCode 104 二叉树的最小/最大深度
+> [LeetCode 104](https://github.com/grandyang/leetcode/issues/104)  
+   BFS： 第一个达到的叶子节点是最小深度， 最后一个达到的叶子节点是最大深度。
+   DFS递归。
 
 ## 四. 字符串
 #### 1.  一个字符串中， 要找到其中最长的字符串，并且没有重复字符。
