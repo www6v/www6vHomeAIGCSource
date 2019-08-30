@@ -129,6 +129,8 @@ class Solution {
 
 ## 四. 字符串
 #### 1.  一个字符串中， 要找到其中最长的字符串，并且没有重复字符。
+> [Leetcode 3](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC3%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2.md)
+  [LeetCode 3](https://github.com/grandyang/leetcode/issues/3)
 
 #### 2. 字符串转换为整数
 > 剑指 50题
@@ -187,4 +189,4 @@ class Solution {
 16.  [极客时间 - 程序员的数据基础课 19,20,21]
 17.  [算法面试通关40讲 - 19.面试题：二叉树&二叉搜索树的最近公共祖先]() 覃超
 18.  [算法面试通关40讲 - 23.面试题：求众数]()  覃超
-19.  [算法面试通关40讲 - 28.面试题：二叉树层次遍历])()  覃超
+19.  [算法面试通关40讲 - 28.面试题：二叉树层次遍历]()  覃超
