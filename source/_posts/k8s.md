@@ -22,11 +22,13 @@ categories:
 ![k8s技能图谱](https://user-images.githubusercontent.com/5608425/63923539-4f315f00-ca79-11e9-900a-22b66a75922c.jpg)  k8s技能图谱
 </div>
 
-|控制器|类型|
-|:---:|:---:|
-|Replication Controller<br> ReplicaSet<br> Deployment|无状态| 
-|StatefulSet<br> PersistentVolumeController|有状态| 
-| Servcie【1】<br>Namespace | x |
+
+|控制器|说明|类型|
+|:---:|:---:|:---:|
+|Replication Controller<br> ReplicaSet<br> Deployment|不建议使用<br> 建议使用<br> |无状态| 
+|StatefulSet<br> PersistentVolumeController|<br>绑定PVC、PV|有状态| 
+| Servcie【1】<br>Namespace | x | x |
+
 
 <div style="text-align: center;">
 ![控制器模型](https://user-images.githubusercontent.com/5608425/63924251-85bba980-ca7a-11e9-8a3a-4cf852dfe86c.JPG)  控制器模型
