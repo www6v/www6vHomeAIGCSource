@@ -14,6 +14,12 @@ categories:
 
 {% asset_img   k8sStorage.jpg  Kubernetes存储  %}
 
+<div style="text-align: center;">
+![relationship](https://user-images.githubusercontent.com/5608425/64247540-aafc5c00-cf41-11e9-83af-64199e79ded7.JPG)
+Kubernetes存储
+</div>
+
+> 只有同属于一个 StorageClass 的PV 和 PVC，才可以绑定在一起
 
 ## 参考:
 
