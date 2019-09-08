@@ -140,6 +140,9 @@ class Solution {
 #### 3. 字符串中第一个只出现一次的字符，如何优化算法使得遍历次数更少
 > 剑指 35题
 
+#### 4. KMP子串查找算法
+
+
 ## 五. 其他
 #### 1. 最小响应时间的算法
 > 有的task 执行时间长，有的task 执行时间短， 如何设计一个负载均衡策略
@@ -168,6 +171,25 @@ class Solution {
    解2：sort O（n logn）
    解3: 摩尔投票法  特殊高效算法
 
+#### 6. LRU cache
+   参考20  双向链表实现
+   [Redis内存淘汰机制](https://my.oschina.net/andylucc/blog/741965)  allkeys-lru
+   [Cache replacement policies](https://en.wikipedia.org/wiki/Cache_replacement_policies)
+   [简单LRU算法实现缓存](http://dennis-zane.iteye.com/blog/128278)
+
+
+#### 7. 布隆过滤器
+> +有误判率
+  +难以删除 
+  应用： [Guava  Bloomfilter](https://github.com/google/guava/blob/master/guava/src/com/google/common/hash/BloomFilter.java)
+       Mapredue bloomfilter
+       [Google Guava之BloomFilter源码分析及基于Redis的重构](http://www.fullstackyang.com/bu-long-guo-lu-qi-google-guavalei-ku-yuan-ma-fen-xi-ji-ji-yu-redis-bitmapsde-zhong-gou/)
+
+
+
+## 六. 线性规划
+[背包问题研究与应用](http://dongxicheng.org/structure/knapsack-problems/)
+[算法面试通关40讲  - 动态规划]()  覃超
 
 ## 参考:
 
@@ -180,11 +202,11 @@ class Solution {
 7.  [LVS集群之十种调度算法及负载均衡——理论](http://blog.csdn.net/scape1989/article/details/21085659)
 ---
      算法面试通关40讲  覃超
-8.  [03.如何计算算法的复杂度]()  覃超
-9.  [06.面试题：反转一个单链表&判断链表是否有环]()  覃超
-10.  [07.理论讲解：堆栈&队列]() 覃超
-11.  [10.理论讲解：优先队列]() 覃超
-12.  [12.面试题：返回滑动窗口中的最大值]() 覃超
+8.  [03.如何计算算法的复杂度]()  
+9.  [06.面试题：反转一个单链表&判断链表是否有环]()  
+10.  [07.理论讲解：堆栈&队列]() 
+11.  [10.理论讲解：优先队列]() 
+12.  [12.面试题：返回滑动窗口中的最大值]() 
 ---
 13.  [QPS比Nginx提升60%，阿里Tengine负载均衡算法揭秘](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651017589&idx=2&sn=32a472b8e805666b197505f1acc9af83&chksm=bdbea9268ac92030342933d37ecb1b9754b5d1d6e5a2935c331098669b3f4a44909e628532dd&scene=27#wechat_redirect)
 14.  [nginx fair负载均衡算法](https://github.com/gnosek/nginx-upstream-fair)
@@ -192,6 +214,8 @@ class Solution {
 16.  [极客时间 - 程序员的数据基础课 19,20,21]
 ---
      算法面试通关40讲  覃超
-17.  [19.面试题：二叉树&二叉搜索树的最近公共祖先]() 覃超
-18.  [23.面试题：求众数]()  覃超
-19.  [28.面试题：二叉树层次遍历]()  覃超
+17.  [19.面试题：二叉树&二叉搜索树的最近公共祖先]() 
+18.  [23.面试题：求众数]()  
+19.  [28.面试题：二叉树层次遍历]() 
+20.  [55.理论讲解： LRU Cache]() LRU， LFU
+
