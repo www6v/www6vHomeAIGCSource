@@ -175,15 +175,27 @@ traceroute to baidu.com (220.181.38.148), 30 hops max, 60 byte packets
 sudo su root
 ```
 
+7.  查看inode详情
+```
+[root@172-16-244-142]$df -i
+Filesystem       Inodes  IUsed    IFree IUse% Mounted on
+devtmpfs         485574    346   485228    1% /dev
+tmpfs            488560      1   488559    1% /dev/shm
+tmpfs            488560    500   488060    1% /run
+tmpfs            488560     17   488543    1% /sys/fs/cgroup
+/dev/vda1      10485248 195694 10289554    2% /
+tmpfs            488560      1   488559    1% /run/user/0
+```
+
 ## 参考：
 
 1. [超全整理！Linux性能分析工具汇总合集](https://mp.weixin.qq.com/s/yhSJF6Il6iJamYCosVgXYQ)
 2. [60,000毫秒内对Linux的性能诊断](https://www.oschina.net/translate/linux-performance-analysis-in-60s?print)
 3. [28个UNIX/LINUX的命令行神器](https://coolshell.cn/articles/7829.html)
 4. [systemctl 命令详解及使用教程](https://linux265.com/news/3385.html)
-5. [打造高效的工作环境 – Shell 篇](https://coolshell.cn/articles/19219.html)
+5. [打造高效的工作环境 – Shell 篇](https://coolshell.cn/articles/19219.html)  good
 6. [Linux 命令搜索](https://wangchujiang.com/linux-command/)  good
-
+7. [Linux实例磁盘空间满和inode满的问题排查方法](https://help.aliyun.com/knowledge_detail/42531.html?spm=5176.11065259.1996646101.searchclickresult.4f0c88c9FG1Wbp#h2-u5904u7406u529Eu6CD53)
 
 
 
