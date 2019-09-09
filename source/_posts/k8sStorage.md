@@ -25,3 +25,4 @@ Kubernetes存储
 
 1. [《Kubenetes in Action》七牛容器云团队](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)
 2. <<深入剖析Kubernetes - 28  PV、PVC、StorageClass，这些到底在说啥？>> 张磊
+3. <<深入剖析Kubernetes - 29  PV、PVC体系是不是多此一举？从本地持久化卷谈起>> 张磊
