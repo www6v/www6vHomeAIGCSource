@@ -14,6 +14,8 @@ categories:
 一. 总结
 {% asset_img   raft.jpg  raft协议 %}
 
+<!-- more -->
+
 二. raft-分区脑裂
 
 <div style="text-align: center;">
