@@ -14,9 +14,13 @@ categories:
 {% asset_img   docker-network.jpg  docker网络  %}
 <!-- more -->
 
-{% asset_img   docker-bridge.jpg  图1.docker的bridge网桥  %}
+<div style="text-align: center;">
+![docker-bridge](https://user-images.githubusercontent.com/5608425/64622453-f4edb200-d419-11e9-9083-2af25a99b289.JPG)
+图1.docker的bridge网桥
 
-{% asset_img   docker-overlay-gre.jpg  图2.docker基于GRE的overlay  %}
+![docker-overlay-gre](https://user-images.githubusercontent.com/5608425/64622455-f5864880-d419-11e9-8f24-c983a2bbed3b.JPG)
+图2.docker基于GRE的overlay
+</div>
 
 ## 参考:
 1. 《Docker+容器与容器云》第4章 浙江大学SEL实验室

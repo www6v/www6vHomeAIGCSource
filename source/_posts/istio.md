@@ -18,13 +18,19 @@ categories:
 {% asset_img  istio-data.jpg  istio数据面 %}
 
 
-{% asset_img  istio-knowledge-map.png   Istio知识图谱 %}
-{% asset_img  istio-component.jpg  istio组件  %}
-{% asset_img  traffic-managment-components.png  Pilot流量管理  %}
-{% asset_img  istio-route.jpg  Envoy Sidecar 代理的路由转发  %}
-{% asset_img  envoy-proxy-arch.jpg  Envoy代理的架构  %}
+<div style="text-align: center;">
 
+<img width="1722" alt="istio-knowledge-map" src="https://user-images.githubusercontent.com/5608425/64623497-a4775400-d41b-11e9-84a5-6e75d708ad0d.png">  Istio知识图谱
 
+![istio组件](https://user-images.githubusercontent.com/5608425/64623495-a3debd80-d41b-11e9-9599-c8c25a7153b9.jpg)   istio组件
+
+![Pilot流量管理](https://user-images.githubusercontent.com/5608425/64623501-a5a88100-d41b-11e9-9262-8414adb5831a.png)  Pilot流量管理
+
+![Envoy Sidecar 代理的路由转发](https://user-images.githubusercontent.com/5608425/64623499-a50fea80-d41b-11e9-9524-6d834fd45d88.jpg)  Envoy Sidecar 代理的路由转发
+
+![Envoy代理的架构](https://user-images.githubusercontent.com/5608425/64623492-a3462700-d41b-11e9-8e2b-6fc0b05d8c5d.jpg)  Envoy代理的架构
+
+</div>
 
 ## 参考:
 1. [Istio流量管理实现机制深度解析](https://zhaohuabing.com/post/2018-09-25-istio-traffic-management-impl-intro/)

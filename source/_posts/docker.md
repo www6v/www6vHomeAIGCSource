@@ -13,9 +13,10 @@ categories:
 {% asset_img   docker.jpg   docker总结  %}
 
 <!-- more -->
-
-{% asset_img   docker-overview.JPG   docker全景图  %}
-
+<div style="text-align: center;">
+![docker-overview](https://user-images.githubusercontent.com/5608425/64622251-99232900-d419-11e9-8f56-4f88831828ad.JPG)  
+docker全景图
+</div>
 
 ```
 [root@10-25-152-177 ~]# docker inspect --format '{{ .State.Pid }}' 23dfea495611

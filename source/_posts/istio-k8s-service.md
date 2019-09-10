@@ -50,15 +50,12 @@ categories:
 
 -----
 
-{% asset_img   spring-k8s.jpg  SpringCloud .vs Kubernetes %}
+<div style="text-align: center;">
+![SpringCloud With Kubernetes](https://user-images.githubusercontent.com/5608425/64624730-aa6e3480-d41d-11e9-84eb-2278bdb952e1.jpg)  SpringCloud With Kubernetes
 
-
-{% asset_img   springcloudWithK8s.jpg  SpringCloud With Kubernetes %}
-
-<div style="width:70%; height:70%;">  
+![SpringCloud .vs Kubernetes](https://user-images.githubusercontent.com/5608425/64624734-ab06cb00-d41d-11e9-8ceb-ed1b5436eec7.jpg)
+SpringCloud .vs Kubernetes
 </div>
-
-
  
 ## 参考:
 1. 分布式系统的技术栈 左耳听风

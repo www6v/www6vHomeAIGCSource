@@ -11,10 +11,11 @@ categories:
 
 <!-- more -->
 
-<div style="width:70%; height:70%;">
-{% asset_img  gitOverview.png   git  %}
+<div style="width:70%; height:70%; text-align: center;">
 
-{% asset_img  gitOverview1.png   git  %}
+![git](https://user-images.githubusercontent.com/5608425/64622936-b4daff00-d41a-11e9-9587-6d72df96498d.png)   git
+![git](https://user-images.githubusercontent.com/5608425/64622939-b4daff00-d41a-11e9-8978-8aea5e666237.png)  git
+
 </div>
 
 ### stage == index 
