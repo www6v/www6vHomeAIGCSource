@@ -31,7 +31,6 @@ tags:
 5. [NoSQL 架构实践（一）——以 NoSQL 为辅](https://www.infoq.cn/article/2011/02/nosql-architecture-practice/)
 6. [计算机体系结构与程序性能](http://blog.zhaojie.me/2009/01/system-architecture-and-program-performance.html)   Locality, False Sharing
 7. [架构腐化之谜](https://www.infoq.cn/article/cjz-architecture-corruption/)
-8. [用消息队列和消息应用状态表来消除分布式事务](http://wangyuanzju.blog.163.com/blog/static/1302920086424341932)  事务 一致性
 9. [阿里巴巴中文站架构设计实践]()  delicious有笔记
 10. [可伸缩性最佳实践：来自 eBay 的经验](https://www.infoq.cn/article/ebay-scalability-best-practices/)
 11. [用Twitter的cursor方式进行Web数据分页](https://timyang.net/web/pagination/)
@@ -44,3 +43,16 @@ tags:
 
 
 
+-----
+## 分布式
+
+1. [海量存储系列1-15](http://www.docin.com/p-532877866.html)  good
+2. [KAFKA分布式消息系统](http://blog.chinaunix.net/uid-20196318-id-2420884.html)
+3. [Ketama一致性Hash算法(含Java代码)](https://www.iteye.com/topic/684087)
+
+---
+
+## mysql
+1. [百度分布式数据库](https://wenku.baidu.com/view/9daa2b8102d276a200292e9c.html)
+2. [MySQL](http://imysql.cn/?q=node/96)  blog
+3. [Friendfeed的MySQL key/value存储](https://timyang.net/data/friendfeed-mysql-schema-less/)  

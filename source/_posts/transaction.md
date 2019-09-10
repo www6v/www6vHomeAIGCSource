@@ -15,7 +15,7 @@ categories:
 
 ## 参考:
 1. 拨开云雾见天日：剖析单机事务原理 CHEN川
-2. 多版本并发控制(MVCC)在分布式系统中的应用 Todd
+2. [多版本并发控制(MVCC)在分布式系统中的应用](https://coolshell.cn/articles/6790.html) Todd
 3. 阿里云分布式缓存OCS与DB之间的数据一致性 杨成虎
 4. [乐观锁和 MVCC 的区别？  二楼 三楼](https://www.zhihu.com/question/27876575)
 5. [mysql可重复读和幻读实例  CWeeYii](https://blog.csdn.net/cweeyii/article/details/70991230)

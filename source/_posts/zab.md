@@ -14,3 +14,4 @@ categories:
 ## 参考:
 
 1. 《PAXOS到ZOOKEEPER分布式一致性原理与实践》 第4章 倪超
+2. [分布式服务框架 Zookeeper — 管理分布式环境中的数据](https://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/)
