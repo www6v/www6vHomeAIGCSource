@@ -10,7 +10,7 @@ categories:
   - 故障模型
 ---
 
-{% asset_img fault.jpg 故障模型1 %}
+{% asset_img fault1.jpg 故障模型1 %}
 {% asset_img fault2.jpg 故障模型2 %}
 
 <!-- more -->
@@ -29,7 +29,7 @@ categories:
 8. [vjtools](https://github.com/vipshop/vjtools) 
 9. [useful-scripts](https://github.com/oldratlee/useful-scripts) 
 10. 如何排查Java内存泄露(内附各种排查工具介绍) 不闻
-11. 生产环境下持久带满导致FullGC，如何跟踪 https://hllvm-group.iteye.com/group/topic/28379
+11. [生产环境下持久带满导致FullGC，如何跟踪](https://hllvm-group.iteye.com/group/topic/28379) 
 12. [性能调优](http://www6v.github.io/www6vHome/optimize.html)
 13. 听阿里巴巴JVM工程师为你分析常见Java故障案例  陆传胜
 14. [从一个故障说说Java的三个BlockingQueue  阿里毕玄](http://hellojava.info/?p=464)
@@ -41,3 +41,5 @@ categories:
 
 ### Virtualization & Storage & Networking
 1. [Kubernetes 网络疑难杂症排查分享](https://tencentcloudcontainerteam.github.io/2019/08/12/troubleshooting-with-kubernetes-network/) 
+2. [kubernetes 最佳实践：处理容器数据磁盘被写满](https://tencentcloudcontainerteam.github.io/2019/06/08/kubernetes-best-practice-handle-disk-full/)
+3. [百度大规模战略性混部系统演进](https://www.infoq.cn/article/aEut*ZAIffp0q4MSKDSg)
