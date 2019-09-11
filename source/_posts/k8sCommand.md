@@ -58,6 +58,37 @@ kubectl edit pods kubia-cjrqd
 kubectl edit deployment  nginx-deployment
 ```
 
+7.  docker 磁盘使用情况
+``` 
+docker system df -v
+
++Images space usage:
+
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE                SHARED SIZE         UNIQUE SIZE         CONTAINERS
+<none>              <none>              818d02f0fd5f        4 days ago          121.8MB             121.7MB             41.83kB             2
+maven               3-jdk-8-alpine      7445f83cd169        4 months ago        121.7MB             121.7MB             0B                  0
+
++Containers space usage:
+
+CONTAINER ID        IMAGE               COMMAND                  LOCAL VOLUMES       SIZE                CREATED             STATUS                  NAMES
+79bf1498857f        818d02f0fd5f        "/bin/sh -c 'mvn pac…"   0                   460B                4 days ago          Exited (1) 4 days ago   elegant_ramanujan
+e6fcce289871        818d02f0fd5f        "/bin/sh -c 'mvn pac…"   0                   460B                4 days ago          Exited (1) 4 days ago   sleepy_lichterman
+
++Local Volumes space usage:
+
+VOLUME NAME         LINKS               SIZE
+
++Build cache usage: 0B
+
+CACHE ID            CACHE TYPE          SIZE                CREATED             LAST USED           USAGE               SHARED
+
+```
+
+
+## 参考: 
+1. [kubernetes 最佳实践：处理容器数据磁盘被写满](https://tencentcloudcontainerteam.github.io/2019/06/08/kubernetes-best-practice-handle-disk-full/)
+
+
 
 
 
