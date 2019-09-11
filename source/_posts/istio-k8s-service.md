@@ -31,7 +31,7 @@ categories:
 -----
 
 特性 | spring Cloud-服务治理<br>（Chassis模式） | spring Cloud alibaba-Paas全栈| istio组件-流量管理<br>（SideCar模式）
-:-: | :-: | :-: 
+:-: | :-: | :-: | :-:
 治理-Resilience & Fault Tolerance | Hystrix <br> 白盒,代码有侵入<br>熔断（有半开状态） <br>隔离仓 | sentinel  | Envoy<br>黑盒，代码无侵入<br> 异常点检查（逐出，重试）（无半开状态）<br>连接池 
 监控-Distributed Tracing          | Sleuth/zipkin | zipkin | Mixer 
 监控-Centralized Metrics          | Spectator/Atlas | | Mixer
@@ -46,6 +46,19 @@ categories:
 **流量管理-灰度发布**                 | Nepxion Discovery等 非原生| | 原生支持
 **流量管理-异地容灾**                 | x | x |  集群感知
 
+-----
+
+   |Istio Gateway	|阿里云Ingress Controller	|NGINX Ingress Controller
+:-: | :-: | :-: | :-:	
+根据HTTP Header选择路由规则	|支持	|仅支持单个Header，不支持多个Header组合	|不支持
+Header规则支持正则表达式	|支持	|支持	|不支持
+服务之间设置权重拆分流量	|支持	|支持	|不支持
+Header和权重规则组合使用	|支持	|支持	|不支持
+路由规则检查	|支持	|不支持	|不支持
+路由规则粒度	|service下的不同pod	|service	|service
+支持的协议	|HTTP1.1/HTTP2/gRPC/TCP<br>/Websockets/MongoDB	|HTTP1.1/HTTP2/gRPC<br>/TCP/Websockets	|HTTP1.1/HTTP2/gRPC<br>/TCP/Websockets
+
+
 <!-- more -->
 
 -----
@@ -58,6 +71,7 @@ SpringCloud .vs Kubernetes
 </div>
  
 ## 参考:
-1. 分布式系统的技术栈 左耳听风
+1. 《分布式系统的技术栈》 左耳听风
 2. [厉害了，Spring Cloud Alibaba 发布 GA 版本！](https://blog.csdn.net/zl1zl2zl3/article/details/89790643)
 3. [一篇囊括微服务服务拆分的一切：前提，时机，方法，规范，选型](https://www.cnblogs.com/popsuper1982/p/9634578.html)
+4. [Istio Gateway与Kubernetes Ingress Controller对比](https://yq.aliyun.com/articles/636511)  灰度例子

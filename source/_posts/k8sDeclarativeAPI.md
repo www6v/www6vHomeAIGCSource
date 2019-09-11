@@ -60,3 +60,4 @@ $ tree
 3. 《深入剖析Kubernetes  - 25  深入解析声明式API（二）：编写自定义控制器》  张磊
 4. [Kubernetes 准入控制 Admission Controller 介绍](https://juejin.im/post/5ba3547ae51d450e425ec6a5)
 5. [CRD 代码示例](https://github.com/resouer/k8s-controller-custom-resource)
+6. [k8s自定义controller三部曲之一:创建CRD（Custom Resource Definition）](https://blog.csdn.net/boling_cavalry/article/details/88917818) 一、二、三
