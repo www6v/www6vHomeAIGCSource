@@ -84,6 +84,12 @@ CACHE ID            CACHE TYPE          SIZE                CREATED             
 
 ```
 
+8. k8s node 不可调度/可调度
+```
+kubectl drain 10.23.210.145        // 不可调度
+kubectl uncordon 10.23.210.145     // 可调度
+```
+
 
 ## 参考: 
 1. [kubernetes 最佳实践：处理容器数据磁盘被写满](https://tencentcloudcontainerteam.github.io/2019/06/08/kubernetes-best-practice-handle-disk-full/)
