@@ -14,6 +14,7 @@ categories:
 
 <!-- more -->
 
+{% asset_img   k8sDeployment.jpg  Kubenetes服务部署  %} 
 {% asset_img   k8sService.jpg  Kubenetes服务  %} 
 {% asset_img   k8sStatus.jpg  Kubenetes状态  %} 
 
@@ -29,3 +30,4 @@ categories:
 8. [课时5 应用编排与管理：核心原理](https://edu.aliyun.com/lesson_1651_13080?spm=5176.254948.1334973.12.2c12cad2AHzzTw#_13080)
 9. [课时6 应用编排与管理： Deployment](https://edu.aliyun.com/lesson_1651_13081?spm=5176.10731542.0.0.e7a120beywNIVX#_13081). 
 10. [深入剖析Kubernetes - 18  深入理解StatefulSet（一）：拓扑状态]()  张磊
+11. [kubernetes 最佳实践：优雅热更新](https://tencentcloudcontainerteam.github.io/2019/05/08/kubernetes-best-practice-grace-update/)  陈鹏
