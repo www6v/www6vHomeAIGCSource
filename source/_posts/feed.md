@@ -4,6 +4,8 @@ date: 2019-09-13 19:35:02
 tags:
   - feed
 categories:
+  - 分布式
+  - 架构
   - feed 
 ---
 

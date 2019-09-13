@@ -56,5 +56,6 @@ git reset --hard origin/<branch_name>
 4. [一篇极好的Git 总结](https://www.liangzl.com/get-article-detail-31025.html)
 5. [Git 删除具体某个提交commit的方法](https://www.jianshu.com/p/2fd2467c27bb)
 6. [“git pull”如何强制覆盖本地文件？](https://vimsky.com/article/3679.html)
+7. [关于git提示“warning: LF will be replaced by CRLF”终极解答](https://www.jianshu.com/p/450cd21b36a4)
 
 
