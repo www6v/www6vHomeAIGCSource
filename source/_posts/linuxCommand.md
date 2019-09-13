@@ -187,6 +187,9 @@ tmpfs            488560     17   488543    1% /sys/fs/cgroup
 tmpfs            488560      1   488559    1% /run/user/0
 ```
 
+五. oh-my-zsh安装
+参考 8,9
+
 ## 参考：
 
 1. [超全整理！Linux性能分析工具汇总合集](https://mp.weixin.qq.com/s/yhSJF6Il6iJamYCosVgXYQ)
@@ -196,6 +199,8 @@ tmpfs            488560      1   488559    1% /run/user/0
 5. [打造高效的工作环境 – Shell 篇](https://coolshell.cn/articles/19219.html)  good
 6. [Linux 命令搜索](https://wangchujiang.com/linux-command/)  good
 7. [Linux实例磁盘空间满和inode满的问题排查方法](https://help.aliyun.com/knowledge_detail/42531.html?spm=5176.11065259.1996646101.searchclickresult.4f0c88c9FG1Wbp#h2-u5904u7406u529Eu6CD53)
+8. [Installing ZSH](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
+9. [极客工具之 oh-my-zsh](https://imroc.io/posts/geek/oh-my-zsh/)
 
 
 
