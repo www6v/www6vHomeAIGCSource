@@ -33,7 +33,7 @@ categories:
 1. Netty源代码
 2. netty系列之netty高性能之道 李林锋
 3. 《Netty权威指南》 第15章 李林锋
-4. 对于 Netty ByteBuf 的零拷贝(Zero Copy) 的理解 xys1228
+4. [对于 Netty ByteBuf 的零拷贝(Zero Copy) 的理解](https://www.cnblogs.com/xys1228/p/6088805.html)  xys1228
 5. jvm堆外直接内存实现高性能接入层 天空的蜗牛
 
 ### Plain NIO
