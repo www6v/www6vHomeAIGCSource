@@ -8,6 +8,7 @@ categories:
   - zero-copy
 ---
 
+<p></p>
 <!-- more -->
 
 > 零拷贝就是一种避免 CPU 将数据从一块存储拷贝到另外一块存储的技术
@@ -43,3 +44,6 @@ mmap
 7. [Kafka Zero-Copy 使用分析](https://blog.csdn.net/allwefantasy/article/details/50663533)  transferTo()
 8. [linux零拷贝原理，RocketMQ＆Kafka使用对比](https://cloud.tencent.com/developer/news/333695)
 9. [RocketMQ入门（上）](http://www.uml.org.cn/zjjs/201504011.asp)
+
+
+10. [Linux内存管理](../../../../2019/08/23/linux-memory/) self
