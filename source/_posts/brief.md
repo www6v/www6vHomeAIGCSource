@@ -13,37 +13,37 @@ top: true
 
 ## 一. 网络总结
 ###  Linux网络
-+ iptables总结
-+ TCP流控和拥塞控制
-+ TCP总结
-+ Socket总结
++ [iptables总结](../../../../2019/08/19/iptables/)
++ [TCP流控和拥塞控制](../../../../2019/08/07/tcpUdpControlCongestion/)
++ [TCP总结](../../../../2015/04/25/tcp/)
++ [Socket总结](../../../../2019/08/25/linux-socket/)
 
 
 ### 跨网段，vpc
-+ Docker网络
-+ Kubernetes开放接口   
-+ IDC网络互通
++ [Docker网络](../../../../2019/08/04/docker-network/)
++ [Kubernetes开放接口](../../../../2019/08/11/k8sInterface/)   
++ [IDC网络互通](../../../../2019/05/15/netConnection/)
 
 ### 应用层
-+ Netty总结
-+ Netty EpollEventLoop
-+ Netty中NioEventLoop的accept过程
-+ HTTPS总结
++ [Netty总结](../../../../2015/08/23/nettySummary/)
++ [Netty EpollEventLoop](../../../../2015/10/03/nettyEpollEventLoop/)
++ [Netty中NioEventLoop的accept过程](../../../../2015/09/06/nettyEventLoop-Accept/)
++ [HTTPS总结](../../../../2019/08/14/https/)
 
 
-## 二. 网络总结
+## 二. 内存总结
 ### Linux 
-+ Linux内存管理    
++ [Linux内存管理](../../../../2019/08/23/linux-memory/)   
 
 ### 应用层
-+ Java内存模型
++ [Java内存模型](../../../../2014/01/03/memoryModel/)
 + golang内存分配
 [图解Go语言内存分配](https://mp.weixin.qq.com/s/7bTGxhl7RXBmw5bxaR7Cnw)
 [图解 Go 内存分配器](https://www.infoq.cn/article/IEhRLwmmIM7-11RYaLHR)
 
 
 ## 三. 文件和存储
-### Linux文件系统   
+###  [Linux文件系统](../../../../2019/08/24/linux-file/)   
 
 系统 | 组件 | 缓存
 -|-|-
@@ -54,8 +54,8 @@ top: true
 
  总结 | 知识点   
  -|-
- NoSQL知识点     |  1. Key-Value 键值对 <br>2. “列族”（column families）数据库<br>3. 文档数据库<br> 4.图式数据库 
- 文件IO总结      |  mmap，NIO(FileChannel)
- Redis总结       | AOF，RDB 
- Kafka总结       | Partition的Segment中的index文件，data文件 
- RocketMQ总结    | CommitLog， ComsumeQueue， 索引文件 
+ [NoSQL知识点](../../../../2018/07/19/NoSQL/)   |  1. Key-Value 键值对 <br>2. “列族”（column families）数据库<br>3. 文档数据库<br> 4.图式数据库 
+ [文件IO总结](../../../../2017/04/23/fileIO/)    |  mmap，NIO(FileChannel)
+ [Redis总结](../../../../2016/11/12/redis/)     | AOF，RDB 
+ [Kafka总结](../../../../2016/05/11/kafka/)     | Partition的Segment中的index文件，data文件 
+ [RocketMQ总结](../../../../2019/06/18/rocketmq/)   | CommitLog， ComsumeQueue， 索引文件 
