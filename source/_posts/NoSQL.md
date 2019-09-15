@@ -98,7 +98,7 @@ CAP理论中适当放宽一致性。 并兼顾一致性， 响应时间，可用
  
 ## 参考：
 1.  [NoSQL数据库的分布式算法](http://blog.nosqlfan.com/html/4139.html)     
-2.  [NoSQL 数据建模技术](http://coolshell.cn/articles/7270.html)      
+2.  [NoSQL 数据建模技术](http://coolshell.cn/articles/7270.html)   good    
 3.  [分布式系统的数据结构](http://www.nosqlnotes.net/archives/134)      
 4.  [优雅的Bitcask](http://blog.nosqlfan.com/html/955.html)      
 5.  [分布式事务](http://www.nosqlnotes.net/archives/62)       
