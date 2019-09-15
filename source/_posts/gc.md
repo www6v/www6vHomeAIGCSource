@@ -2,11 +2,10 @@
 title: 垃圾收集GC总结
 date: 2014-07-16 14:05:43
 tags:
-  - Java基础
   - gc
-  - jvm
 categories: 
   - Java基础
+  - 内存
   - gc      
 ---
 

@@ -1,9 +1,11 @@
 ---
 title: Java内存模型
 date: 2014-01-03 22:14:27
-tags: Java基础
+tags: 
+  - 内存
 categories: 
   - Java基础
+  - 内存
   - 内存模型
 ---
 

@@ -12,6 +12,10 @@ categories:
 <!-- more -->
 
 ## 一. 概念
+<div style="text-align: center;">
+![FalseSharing](https://user-images.githubusercontent.com/5608425/64919353-6c399200-d7dc-11e9-8506-50583042d91a.png)
+伪共享 FalseSharing
+</div>
 
 ## 二. 应用
 
