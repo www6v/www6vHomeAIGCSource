@@ -4,18 +4,23 @@ date: 2014-03-05 11:14:20
 tags: Java基础
 categories: 
   - Java基础
+  - 内存
   - 伪共享 
 ---
 
-## 一. 应用
+<p></p>
+<!-- more -->
+
+## 一. 概念
+
+## 二. 应用
 
 1. jdk8 LongAdder的Cell类
 
 2. Disruptor
 
-<!-- more -->
 
-## 二. 伪共享测试代码
+## 三. 伪共享测试代码
 ```
 package test;
 
