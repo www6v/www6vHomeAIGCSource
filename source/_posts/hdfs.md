@@ -2,11 +2,11 @@
 title: HDFS NameNode HA 解决方案
 date: 2018-06-07 10:29:55
 tags:
-  - 大数据
   - HDFS
   - 可用性
 categories: 
-  - 大数据  
+  - 大数据 
+  - 存储 
   - HDFS    
 ---
 　                      
