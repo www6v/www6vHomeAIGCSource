@@ -187,7 +187,14 @@ tmpfs            488560     17   488543    1% /sys/fs/cgroup
 tmpfs            488560      1   488559    1% /run/user/0
 ```
 
-五. oh-my-zsh安装
+8.  杀xxx进程 
+```
+# 杀tomat
+ps -ef | grep tomcat| awk '{print "kill -9 " $2}' | sh
+ps -ef | grep tomcat|grep -v grep | awk '{print "kill -9 " $2}' | sh
+```
+
+## 五. oh-my-zsh安装
 参考 8,9
 
 ## 参考：

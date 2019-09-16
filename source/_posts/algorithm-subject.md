@@ -31,8 +31,9 @@ public static Node reverseList(Node node) {
   return pre;
 }
 ```
-> 参考2， 剑指 题16 
-> [LeetCode206：反转链表](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC206%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.md)
+> 剑指 题16 
+> [理解单链表的反转(java实现)](https://www.cnblogs.com/keeya/p/9218352.html) 
+[LeetCode206：反转链表](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC206%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.md)
 
 #### 2. 合并两个有序链表
 
@@ -63,8 +64,8 @@ class Solution {
     }
 }
 ```
-> 参考1
-> [LeetCode21:合并两个有序链表](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC21%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8.md)
+> [LeetCode题解21_合并两个有序链表](https://www.cnblogs.com/xugenpeng/p/9850372.html)
+  [LeetCode21:合并两个有序链表](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC21%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8.md)
 
 #### 3. 快指针，慢指针
 + 删除链表倒数第n个结点 ->  快指针先于慢指针走若干步 
@@ -147,9 +148,10 @@ class Solution {
 #### 1. 最小响应时间的算法
 > 有的task 执行时间长，有的task 执行时间短， 如何设计一个负载均衡策略
 
-  + 参考13， 
-  + 参考15， 参考16   基于概率  响应时间短的概率越大， 响应时间是正态分布的
-  + Nginx的负载均衡算法-参考14: fair （第三方）按后端服务器的响应时间来分配请求，响应时间短的优先分配。 
+  + [QPS比Nginx提升60%，阿里Tengine负载均衡算法揭秘](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651017589&idx=2&sn=32a472b8e805666b197505f1acc9af83&chksm=bdbea9268ac92030342933d37ecb1b9754b5d1d6e5a2935c331098669b3f4a44909e628532dd&scene=27#wechat_redirect) 
+  + [超级负载均衡](https://blog.csdn.net/iteye_14001/article/details/82098361)  来源于以前百度的blog 
+  + [极客时间 - 程序员的数据基础课 19,20,21]  基于概率  响应时间短的概率越大， 响应时间是正态分布的
+  + [nginx fair负载均衡算法](https://github.com/gnosek/nginx-upstream-fair)  按后端服务器的响应时间来分配请求，响应时间短的优先分配。 
 
 #### 2. 某一个id访问了系统多次，怎么做限流
    > 参考12 : leecode 239  Array + sliding window maximum
@@ -193,8 +195,6 @@ class Solution {
 
 ## 参考:
 
-1. [【LeetCode题解】21_合并两个有序链表](https://www.cnblogs.com/xugenpeng/p/9850372.html)
-2. [理解单链表的反转(java实现)](https://www.cnblogs.com/keeya/p/9218352.html)
 3.  [数据结构与算法之美 - 07链表（下）：如何轻松写出正确的链表代码？]() 王争
 4. [面试精选：链表问题集锦](http://wuchong.me/blog/2014/03/25/interview-link-questions/) good
 5. 《剑指 offer》
@@ -208,14 +208,10 @@ class Solution {
 11.  [10.理论讲解：优先队列]() 
 12.  [12.面试题：返回滑动窗口中的最大值]() 
 ---
-13.  [QPS比Nginx提升60%，阿里Tengine负载均衡算法揭秘](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651017589&idx=2&sn=32a472b8e805666b197505f1acc9af83&chksm=bdbea9268ac92030342933d37ecb1b9754b5d1d6e5a2935c331098669b3f4a44909e628532dd&scene=27#wechat_redirect)
-14.  [nginx fair负载均衡算法](https://github.com/gnosek/nginx-upstream-fair)
-15.  [超级负载均衡](https://blog.csdn.net/iteye_14001/article/details/82098361)  来源于以前百度的blog
-16.  [极客时间 - 程序员的数据基础课 19,20,21]
+
 ---
      算法面试通关40讲  覃超
 17.  [19.面试题：二叉树&二叉搜索树的最近公共祖先]() 
 18.  [23.面试题：求众数]()  
 19.  [28.面试题：二叉树层次遍历]() 
 20.  [55.理论讲解： LRU Cache]() LRU， LFU
-

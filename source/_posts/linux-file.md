@@ -26,9 +26,13 @@ categories:
 
 ![读写中的buffer， cache](https://user-images.githubusercontent.com/5608425/63632527-2a4c7e80-c66a-11e9-9d41-c80e88d88318.jpg)   读写中的buffer,cache
 
+![clipboard](https://user-images.githubusercontent.com/5608425/64937814-58e6ff00-d88e-11e9-9cb4-dbe52fa27264.png)
+The Linux Storage Stack Diagram
+
 </div>
 
 ## 参考：
 1. [趣谈Linux操作系统 - 29-虚拟文件系统：文件多了就需要档案管理系统]()   刘超
 2. [趣谈Linux操作系统 - 28-硬盘文件系统：如何最合理地组织档案库的文档]()   刘超
 3. [趣谈Linux操作系统 - 30-文件缓存：常用文档应该放在触手可得的地方]()  刘超
+4. [The Linux Storage Stack Diagram](https://www.thomas-krenn.com/de/wikiDE/images/e/e0/Linux-storage-stack-diagram_v4.10.png) mmap， directIO， Page Cache
