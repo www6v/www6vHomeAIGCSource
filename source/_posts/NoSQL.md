@@ -35,11 +35,11 @@ B+树对应的存储引擎是Merge-Dump存储引擎。 Eg. Hbase, Cassandra.
 写后读一致性。
 读后读一致性。
 #####  II．写一致性
-原子写：一次写入操作只能是单独的原子性的赋值。
-冲突预防：
+**原子写**：一次写入操作只能是单独的原子性的赋值。
+**冲突预防**：
 分布式锁或是 PAXOS（悲观锁）。
 避免分布式的并发写操作，将对特定数据项的所有写操作路由到单个节点上（可以是全局主节点或者分区主节点）。Eg Hbase region  server，MongoDB，大部分关系数据库。
-冲突检测：
+**冲突检测**：
     CAS （Compare And Set）模式, 检测并发更新的冲突，选择回滚其中一个版本，或是维持两个版本并交由客户端解决。 Eg.  Dynamo Vector Lock(向量时钟), memcache CAS, SVN.
  
 ![](http://pic.yupoo.com/iammutex/Cr4HWbaZ/Js1Ke.png ) 
@@ -64,13 +64,13 @@ B+树对应的存储引擎是Merge-Dump存储引擎。 Eg. Hbase, Cassandra.
 ACID保证
 （C 一致性）（I 隔离性）：
     主要有以下几种实现方式
-1.  依托锁来实现的。  
+1. 依托锁来实现的。  
 分类：读写锁， 排他锁。
 4个隔离级别和锁的粒度有关。
-2.  copy-on-write（MVCC）   
+2. copy-on-write（MVCC）   
 读写之间互不影响，写不阻塞读， 读不阻塞写， 效率高。
 实现了隔离级别中用的最多的第二，第三级别。
-3． 队列  
+3. 队列  
  
 ##### II. 分布式事务    
 1.   常规实现
@@ -81,20 +81,29 @@ ACID保证
         分布式锁： 分布式导致高延迟， 并且加锁解锁多次交互。
 2.  避免分布式锁的实现
 CAP理论中适当放宽一致性。 并兼顾一致性， 响应时间，可用性。
-参考实现
+
+> 参考实现
   [用消息队列和消息应用状态表来消除分布式事务](http://wangyuanzju.blog.163.com/blog/static/1302920086424341932)  事务 一致性
   <<海量存储系列之六>>
  
 ## 5. 动态还是静态的数据结构
-   关系数据库模型： 动态更新的B+树， 写数据时，需要更新B+树。 读写依赖， 实现复杂， 有性能上限。
-   Nosql：动态数据和静态数据分离， MemTable(动态) + SSTable（静态）。牺牲读， 提升写性能。
+关系数据库模型： 
+   动态更新的B+树， 写数据时，需要更新B+树。 读写依赖， 实现复杂， 有性能上限。
+
+Nosql：
+   动态数据和静态数据分离， MemTable(动态) + SSTable（静态）。牺牲读， 提升写性能。  
+   MemTable: Write-back Cache, 随机IO写变成顺序IO写，降低大量的写操作对于存储系统的压力
  
 ## 6. 索引和join
-  关系数据库索引：单机索引
-  NoSQL索引：系统层面， 全局索引。
-  关系数据库Join： 存储引擎层面支持join。
-  NoSQL Join：一般根据应用来决定join的实现。 
-参考实现  <<Hbase二级索引>>
+索引
++ 关系数据库：单机索引
++ NoSQL索引：系统层面， 全局索引。
+
+Join
++ 关系数据库Join： 存储引擎层面支持join。
++ NoSQL Join：一般根据应用来决定join的实现。
+
+> 参考实现  <<Hbase二级索引>>
  
 ## 参考：
 1.  [NoSQL数据库的分布式算法](http://blog.nosqlfan.com/html/4139.html)     
@@ -103,7 +112,8 @@ CAP理论中适当放宽一致性。 并兼顾一致性， 响应时间，可用
 4.  [优雅的Bitcask](http://blog.nosqlfan.com/html/955.html)      
 5.  [分布式事务](http://www.nosqlnotes.net/archives/62)       
 6.  [SQL到NOSQL的思维转变](http://www.nosqlnotes.net/archives/140)      
-7.  [HBase二级索引与Join](http://hi.baidu.com/learsu/item/c03e6db9ac8ea2a6ebba934c)   
+7.  [HBase二级索引与Join](https://www.oschina.net/question/12_32573)   
+
   
  
 
