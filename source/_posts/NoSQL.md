@@ -42,7 +42,7 @@ B+树对应的存储引擎是Merge-Dump存储引擎。 Eg. Hbase, Cassandra.
 **冲突检测**：
     CAS （Compare And Set）模式, 检测并发更新的冲突，选择回滚其中一个版本，或是维持两个版本并交由客户端解决。 Eg.  Dynamo Vector Lock(向量时钟), memcache CAS, SVN.
  
-![](http://pic.yupoo.com/iammutex/Cr4HWbaZ/Js1Ke.png ) 
+![一致性](http://pic.yupoo.com/iammutex/Cr4HWbaZ/Js1Ke.png) 
 
 #####  (A-H)  一致性由弱到强
 1.  一次性读写 （A），（B），（C）, （D）
@@ -58,7 +58,10 @@ B+树对应的存储引擎是Merge-Dump存储引擎。 Eg. Hbase, Cassandra.
 3. （G）(H)
 （G 主从）主从异步复制  Eg. Mysql  replication
 (H PAXOS) 使用两阶段提交协议  Eg.  Oracle DBLink
- 
+
+##### 举例: Cassandra一致性
+![Cassandra一致性](https://user-images.githubusercontent.com/5608425/64945268-c2710880-d8a2-11e9-8ace-dfe3dca32995.png)
+
 ## 4. 事务
 #####  I. 单机事务       
 ACID保证
@@ -112,7 +115,8 @@ Join
 4.  [优雅的Bitcask](http://blog.nosqlfan.com/html/955.html)      
 5.  [分布式事务](http://www.nosqlnotes.net/archives/62)       
 6.  [SQL到NOSQL的思维转变](http://www.nosqlnotes.net/archives/140)      
-7.  [HBase二级索引与Join](https://www.oschina.net/question/12_32573)   
+7.  [HBase二级索引与Join](https://www.oschina.net/question/12_32573)  
+8.  [cassandra框架模型之二——存储机制 CommitLog MemTable SSTable](https://www.cnblogs.com/bonelee/p/6278154.html)  一致性
 
   
  
