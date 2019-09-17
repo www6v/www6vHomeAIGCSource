@@ -12,6 +12,13 @@ categories:
 <p hideen></p>
 <!-- more -->
 
+{% asset_img   feed.jpg  Feed总结  %}
+
+<div style="text-align: center;">
+![timeline读扩散/写扩散混合](https://user-images.githubusercontent.com/5608425/65009396-16312f80-d93f-11e9-9f1f-5beb374034d2.png)
+timeline读扩散/写扩散混合
+</div>
+
 ## 参考:
 
 1. [feed流拉取，读扩散，究竟是啥？](https://mp.weixin.qq.com/s/HC9Ucdfih24jXY6lCAv40g)
