@@ -14,10 +14,11 @@ categories:
 
 <!-- more -->
 
-{% asset_img   k8s-interface.JPG  Kubenetes开放接口 %}
-
-{% asset_img   flannel-udp.JPG  flannel-udp模式 %}
-{% asset_img   flannel-vxlan.JPG  flannel-vxlan模式 %}
+<div style="text-align: center;">
+![k8s-interface](https://user-images.githubusercontent.com/5608425/65022324-51455a00-d963-11e9-9338-26675af8d3b7.JPG)  Kubenetes开放接口
+![flannel-udp](https://user-images.githubusercontent.com/5608425/65022322-50acc380-d963-11e9-8476-5e5ab22c8b4c.JPG)  flannel-udp模式
+![flannel-vxlan](https://user-images.githubusercontent.com/5608425/65022323-51455a00-d963-11e9-9442-d4f1b84ecce5.JPG)  flannel-vxlan模式
+</div>
 
 
 ## 参考:

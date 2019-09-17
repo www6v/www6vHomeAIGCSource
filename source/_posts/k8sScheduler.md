@@ -14,7 +14,10 @@ categories:
 
 <!-- more -->
 
-{% asset_img   schedulerAbstract.JPG  调度系统泛型  %} 
+<div style="text-align: center;">
+![调度系统泛型](https://user-images.githubusercontent.com/5608425/65023010-96b65700-d964-11e9-9acd-7cc8edbbde85.JPG)
+调度系统泛型
+</div>
 
 
 类型|	资源选择|	排他性|	分配粒度|	集群策略
@@ -24,11 +27,6 @@ categories:
 共享状态|	全局|	乐观锁|	调度器策略|	优先级抢占
 
 表1. 常见调度器的比较
-
-
-
-
-
 
 ## 参考:
 
