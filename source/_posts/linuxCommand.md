@@ -9,7 +9,11 @@ categories:
 ---
 
 ## 一. Linux observability tools | Linux 性能观测工具
-{% asset_img   linux_observe_tools.jpg  Linux性能观测工具  %}
+
+<div style="text-align: center;">
+![linux_observe_tools](https://user-images.githubusercontent.com/5608425/65083384-fe0eee00-d9da-11e9-9b5f-c3361a273b67.jpg)
+Linux性能观测工具
+</div>
 
 <!-- more -->
 

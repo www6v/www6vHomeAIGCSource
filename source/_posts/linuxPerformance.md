@@ -12,12 +12,19 @@ categories:
 
 <!-- more -->
 
-<div style="width:70%; height:70%;">
-{% asset_img   cpu.jpg  cpu  %} 
+<div style="width:70%; height:70%; text-align: center;">
+![cpu](https://user-images.githubusercontent.com/5608425/65083664-b6d52d00-d9db-11e9-918c-2a99c5708189.jpg)
+cpu
 </div>
 
-{% asset_img   memory.jpg  memory  %} 
-{% asset_img   io.JPG  io  %} 
+<div style="text-align: center;">
+![memory](https://user-images.githubusercontent.com/5608425/65083667-b76dc380-d9db-11e9-8e74-3e80c8692fa8.jpg)
+memory
+
+
+![io](https://user-images.githubusercontent.com/5608425/65083666-b6d52d00-d9db-11e9-9b57-e6a9f74235be.JPG)
+io
+</div>
 
 
 > Buffer是对磁盘数据的缓存，而Cache是文件数据的缓存，它们既会用在读请求中，也会用在写请求中。
