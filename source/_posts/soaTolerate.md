@@ -11,6 +11,9 @@ categories:
   - 容错   
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  soaTolerate.jpg  分布式服务框架容错机制 %}
 
 

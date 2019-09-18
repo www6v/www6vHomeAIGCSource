@@ -12,5 +12,8 @@ categories:
   - 功能    
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  soaFeature.jpg  分布式服务框架功能 %}
 

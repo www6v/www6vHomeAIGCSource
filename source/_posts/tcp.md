@@ -15,13 +15,15 @@ categories:
 
 <!-- more -->
 
-{% asset_img  tcp-hello.jpg 图1.TCP三次握手 %}
-{% asset_img  tcp-byte.jpg  图2.TCP四次挥手 %}
+<div style="text-align: center;">
+![图1.TCP三次握手](https://user-images.githubusercontent.com/5608425/65186269-e2b7e780-da9b-11e9-926f-ea186bb3282a.jpg)   
+图1.TCP三次握手
 
+![图2.TCP四次挥手](https://user-images.githubusercontent.com/5608425/65186267-e21f5100-da9b-11e9-9f92-3fcab8f30679.jpg)   
+图2.TCP四次挥手
 
-{% asset_img  tcp-sync-queue-and-accept-queue.jpg  图3.全/半连接队列  %}
-
-
+![tcp-sync-queue-and-accept-queue](https://user-images.githubusercontent.com/5608425/65186270-e3507e00-da9b-11e9-8419-bab1f09e35eb.jpg)  图3.全/半连接队列
+</div>
 
 ## 参考:
 

@@ -9,9 +9,16 @@ categories:
   - xaas
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  xaas.jpg Xaas %}
 
-{% asset_img  paas.jpg paas %}
+
+<div style="text-align: center;">
+![Paas](https://user-images.githubusercontent.com/5608425/65187017-8a81e500-da9d-11e9-80f6-93654e689404.JPG)
+Paas
+</div>
 
 ## 参考:
 1. [BaaS后端即服务 - 通往中台架构之路](https://yq.aliyun.com/articles/2918)
