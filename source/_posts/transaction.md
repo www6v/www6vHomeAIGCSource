@@ -1,5 +1,5 @@
 ---
-title: 本地事务总结
+title: Mysql事务总结
 date: 2015-02-21 14:44:33
 tags:
   - 基础

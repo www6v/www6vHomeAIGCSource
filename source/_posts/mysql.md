@@ -37,6 +37,10 @@ categories:
   复合索引不符合最左匹配原则 |
  or | index a <br>  a=3 or c=6 or d=9
 
+<div style="text-align: center;">
+![innodb-myisam-index](https://user-images.githubusercontent.com/5608425/65374438-66501f00-dcbc-11e9-8609-2da27df96809.png)
+Innodb和MyISAM中的聚集索引和非聚集索引(二级索引)
+</div>
 
 ## 二. redo log 和 undo log
 ```
@@ -53,9 +57,26 @@ categories:
   事务提交
 ```
 
+## 三. MyISAM 和 InnoDB
+
+  描述  | MyISAM  |  InnoDB 
+  :-: | :-: | :-: 
+  行锁(并发高，会死锁)| × | √ (默认支持)<br>Record lock: 锁记录<br>Gap lock: 锁范围，不锁记录<br>Next-key lock： 锁范围+锁记录
+  表锁(并发低，不会死锁)| √ |  √
+事务和崩溃恢复| × |  √
+外键| × |  √
+MVCC| × |  √ <br> 在READ COMMITTED 和 REPEATABLE READ时有效 
+
+> innodb对于行的查询使用next-key lock
+  Next-locking keying、Gap锁为了解决Phantom Problem幻读问题
+  当查询的索引含有唯一属性时(单条记录)，将next-key lock降级为record key
+
+
 ## 参考:
 
 1. 《深入浅出MySQL：数据库开发、优化与管理维护》 
 2. [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
 3. [理解MySQL——索引与优化](https://www.cnblogs.com/hustcat/archive/2009/10/28/1591648.html)
-4. [本地事务总结](../../../../2015/02/21/transaction/) self
+4. [Mysql事务总结](../../../../2015/02/21/transaction/) self
+5. [剖析Mysql的InnoDB索引](https://blog.csdn.net/voidccc/article/details/40077329)  good
+6. [可能是全网最好的MySQL重要知识点](https://mp.weixin.qq.com/s/M1dLLuePpdM9vA3F1uJGyw)
