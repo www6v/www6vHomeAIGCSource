@@ -49,6 +49,7 @@ tags:
 1. [海量存储系列1-15](http://www.docin.com/p-532877866.html)  good
 2. [KAFKA分布式消息系统](http://blog.chinaunix.net/uid-20196318-id-2420884.html)
 3. [Ketama一致性Hash算法(含Java代码)](https://www.iteye.com/topic/684087)
+4. [CAP 理论十二年回顾："规则"变了](https://www.infoq.cn/article/cap-twelve-years-later-how-the-rules-have-changed/) good
 
 ---
 
@@ -56,3 +57,18 @@ tags:
 1. [百度分布式数据库](https://wenku.baidu.com/view/9daa2b8102d276a200292e9c.html)
 2. [MySQL](http://imysql.cn/?q=node/96)  blog
 3. [Friendfeed的MySQL key/value存储](https://timyang.net/data/friendfeed-mysql-schema-less/)  
+
+---
+
+## NoSQL
+1. [NoSQL生态系统](https://www.cnblogs.com/zhenjing/archive/2012/04/09/noSQL.html) 中文
+2. [The NoSQL Ecosystem](http://www.aosabook.org/en/nosql.html)  英文
+3. [SQL到NOSQL的思维转变](https://blog.csdn.net/lskyne/article/details/8930772)  已打印
+4. [nosql-database](http://nosql-database.org/)  nosql集合
+5. [How Google Serves Data from Multiple Datacenters](http://highscalability.com/blog/2009/8/24/how-google-serves-data-from-multiple-datacenters.html)
+6. [为什么使用 Redis 及其产品定位](https://www.infoq.cn/article/tq-why-choose-redis/)
+7. [解读 NoSQL 技术代表之作 Dynamo](https://www.infoq.cn/article/nosql-dynamo/)
+8. [NoSQL 架构实践（一）——以 NoSQL 为辅](https://www.infoq.cn/article/2011/02/nosql-architecture-practice/)
+9. [NoSQL 架构实践（三）——以 NoSQL 为缓存](https://www.infoq.cn/article/2011/03/nosql-architecture-practice-3/)
+10. [海量数据存储之动态Schema的传说](https://www.iteye.com/blog/forchenyun-1018324)
+
