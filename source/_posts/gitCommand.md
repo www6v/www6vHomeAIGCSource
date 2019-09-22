@@ -4,7 +4,7 @@ date: 2019-05-04 21:59:54
 tags:
   - git
 categories: 
-  - DevOps 
+  - git 
 ---
 
 <p hidden>有用的Git命令</p>

@@ -26,7 +26,6 @@ tags:
 ## 架构设计
 1. [构建高并发高可用的电商平台架构实践](http://www.doc88.com/p-3176763983077.html)
 2. [应用架构设计“防火”经验分享](https://blog.csdn.net/cenwenchu79/article/details/4488374)   岑文初(淘宝花名：放翁)
-3. [系统中的故障场景建模](https://www.infoq.cn/article/system_failure_modeling/)
 4. [2010《架构师接龙》合集](https://wenku.baidu.com/view/fc8afe28647d27284b735104.html)
 5. [NoSQL 架构实践（一）——以 NoSQL 为辅](https://www.infoq.cn/article/2011/02/nosql-architecture-practice/)
 6. [计算机体系结构与程序性能](http://blog.zhaojie.me/2009/01/system-architecture-and-program-performance.html)   Locality, False Sharing
