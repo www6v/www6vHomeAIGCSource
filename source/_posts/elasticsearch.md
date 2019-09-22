@@ -17,6 +17,9 @@ categories:
 elastic geoip
 </div>
 
+## 参考
+1. [Elasticsearch 数据写入原理](https://mp.weixin.qq.com/s/BSjA_TBuapPHrE4COCp9VA)
+
 
 
 
