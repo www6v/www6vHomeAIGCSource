@@ -11,6 +11,9 @@ categories:
   - 事务     
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  transaction.jpg  本地事务总结 %}
 
 ## 参考:

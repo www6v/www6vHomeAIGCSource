@@ -11,6 +11,9 @@ categories:
   - id生成    
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  id.jpg  分布式id生成 %}
 
 ## 参考：

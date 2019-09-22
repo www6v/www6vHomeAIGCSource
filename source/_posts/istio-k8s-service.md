@@ -10,6 +10,8 @@ categories:
   - serviceMesh  
 ---
 
+<p></p>
+<!-- more -->
 
 特性 | k8s-服务编排,资源调度 | istio-流量管理
 :-: | :-: | :-: 
@@ -58,8 +60,6 @@ Header和权重规则组合使用	|支持	|支持	|不支持
 路由规则粒度	|service下的不同pod	|service	|service
 支持的协议	|HTTP1.1/HTTP2/gRPC/TCP<br>/Websockets/MongoDB	|HTTP1.1/HTTP2/gRPC<br>/TCP/Websockets	|HTTP1.1/HTTP2/gRPC<br>/TCP/Websockets
 
-
-<!-- more -->
 
 -----
 

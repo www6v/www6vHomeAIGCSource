@@ -1,12 +1,18 @@
 ---
-title: cache总结
+title: 缓存总结
 date: 2018-01-21 09:59:17
 tags:
   - cache
-  - 分布式
+  - 一致性  
+  - 中间件
+categories:
+  - 分布式 
   - 中间件  
-  - 一致性
+  - 缓存   
 ---
+
+<p></p>
+<!-- more -->  
 
 {% asset_img cacheSummary.jpg  cache总结 %}
 

@@ -11,6 +11,9 @@ categories:
   - 事务
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  consistent.jpg  分布式一致性总结 %}
 
 ## 参考：

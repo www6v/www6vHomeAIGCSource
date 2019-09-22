@@ -10,6 +10,9 @@ categories:
   - 特性  
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  mom.jpg  消息中间件总结 %}
 
 

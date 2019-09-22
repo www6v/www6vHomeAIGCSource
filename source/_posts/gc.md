@@ -9,9 +9,11 @@ categories:
   - gc      
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  gc.jpg  垃圾收集GC总结 %}
 
-<!-- more -->
 
 ## 参考：
 
