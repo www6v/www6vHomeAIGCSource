@@ -63,13 +63,23 @@ Innodb和MyISAM中的聚集索引和非聚集索引(二级索引)
   :-: | :-: | :-: 
   行锁(并发高，会死锁)| × | √ (默认支持)<br>Record lock: 锁记录<br>Gap lock: 锁范围，不锁记录<br>Next-key lock： 锁范围+锁记录
   表锁(并发低，不会死锁)| √ |  √
-事务和崩溃恢复| × |  √
-外键| × |  √
-MVCC| × |  √ <br> 在READ COMMITTED 和 REPEATABLE READ时有效 
+  事务和崩溃恢复| × |  √
+  外键| × |  √
+  MVCC| × |  √ <br> 在READ COMMITTED 和 REPEATABLE READ时有效 
 
 > innodb对于行的查询使用next-key lock
   Next-locking keying、Gap锁为了解决Phantom Problem幻读问题
   当查询的索引含有唯一属性时(单条记录)，将next-key lock降级为record key
+
+
+## 四. 事务隔离级别
+
+隔离级别| 脏读|  不可重复读<br>（重点是修改）| 幻影读<br>（重点是新增或者删除）
+:-: | :-: | :-: | :-:
+READ-UNCOMMITTED|  √| √| √
+READ-COMMITTED|  ×| √| √
+REPEATABLE-READ<br>（**InnoDB默认支持**）| ×| ×| √
+SERIALIZABLE|  ×| ×| ×
 
 
 ## 参考:
