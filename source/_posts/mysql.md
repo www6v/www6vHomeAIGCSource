@@ -80,3 +80,6 @@ MVCC| × |  √ <br> 在READ COMMITTED 和 REPEATABLE READ时有效
 4. [Mysql事务总结](../../../../2015/02/21/transaction/) self
 5. [剖析Mysql的InnoDB索引](https://blog.csdn.net/voidccc/article/details/40077329)  good
 6. [可能是全网最好的MySQL重要知识点](https://mp.weixin.qq.com/s/M1dLLuePpdM9vA3F1uJGyw)
+7. [MySQL索引原理及慢查询优化](http://www.admin10000.com/document/6228.html)  good 美团 未 
+8. [业界难题-“跨库分页”的四种方案](https://mp.weixin.qq.com/s/h99sXP4mvVFsJw6Oh3aU5A)  58沈剑  未
+
