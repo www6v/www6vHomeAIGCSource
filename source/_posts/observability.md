@@ -16,3 +16,4 @@ tags:
 4. [Dapper，大规模分布式系统的跟踪系统](http://bigbully.github.io/Dapper-translation/)  论文
 5. [如何检测 Web 服务请求丢失问题](https://mp.weixin.qq.com/s/QA_BTF1D3GJJ7_nYQ6oAzQ) 应用： Nginx tracing + Tomcat tracing
 6. [容器日志采集利器Log-Pilot](https://yq.aliyun.com/articles/674327)  阿里开源的Log-Pilot
+7. [剖析 | SOFARPC 框架之 SOFARPC 链路追踪剖析](https://www.sofastack.tech/blog/sofa-rpc-link-tracking/) 未

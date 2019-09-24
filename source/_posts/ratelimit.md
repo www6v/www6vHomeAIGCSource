@@ -22,3 +22,5 @@ categories:
 6. Redis 深度历险：核心原理与应用实践 应用 7：一毛不拔 —— 漏斗限流 钱文品
 7. Guava RateLimiter源码解析 manerfan
 8. [淘宝应用柔性架构的探索](https://mp.weixin.qq.com/s/RM3ffBCJqoQ2JMPKHgmv0Q) 自适应负载调节
+9. [流控降级最佳实践](https://github.com/www6v/StabilityGuide/blob/master/docs/prevention/resilience/%E6%B5%81%E6%8E%A7%E9%99%8D%E7%BA%A7%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.md)  阿里 未
+10. [常用限流降级组件对比](https://github.com/alibaba/Sentinel/wiki/%E5%B8%B8%E7%94%A8%E9%99%90%E6%B5%81%E9%99%8D%E7%BA%A7%E7%BB%84%E4%BB%B6%E5%AF%B9%E6%AF%94) Sentinel vs. Hystrix  未 
