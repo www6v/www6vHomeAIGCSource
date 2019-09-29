@@ -101,13 +101,10 @@ Average:           lo      4.86      4.86      0.71      0.71      0.00      0.0
 Average:      docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
 ```
 9. sar -n TCP,ETCP 1 :  TCP指标 
-```
-11:16:13 PM  active/s passive/s    iseg/s    oseg/s
-11:16:14 PM      3.00      2.00     36.00     36.00
 
-11:16:13 PM  atmptf/s  estres/s retrans/s isegerr/s   orsts/s
-11:16:14 PM      0.00      0.00      0.00      0.00      0.00
-```
+![sar-tcp](https://user-images.githubusercontent.com/5608425/65831070-f5c28700-e2e7-11e9-9fe7-51ccdf43451b.png)
+
+
 10. top ： 变化的负载的汇总
 
 ## 三. 进程与网络
