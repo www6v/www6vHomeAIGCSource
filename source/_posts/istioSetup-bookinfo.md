@@ -35,6 +35,11 @@ $ kubectl get svc -n istio-system
 $ kubectl get pods -n istio-system
 ```
 
+```
+# 如果以上安装有问题, 可一键安装istio
+kubectl apply -f install/kubernetes/istio-demo.yaml
+```
+
 <!-- more -->
 
 ## 二.  Bookinfo示例
@@ -136,7 +141,7 @@ cluster.outbound|8000||httpbin.default.svc.cluster.local.upstream_rq_pending_tot
 3. [Bookinfo Application](https://istio.io/docs/examples/bookinfo/#confirm-the-app-is-accessible-from-outside-the-cluster)
 4. [配置请求路由](https://preliminary.istio.io/zh/docs/tasks/traffic-management/request-routing/)
 5. [收集指标和日志](https://preliminary.istio.io/zh/docs/tasks/telemetry/metrics/collecting-metrics/)
-
 6. [熔断](https://preliminary.istio.io/zh/docs/tasks/traffic-management/circuit-breaking/) done
+7. [Quick Start Evaluation Install](https://istio.io/docs/setup/install/kubernetes/) istio快速安装  未
 
 
