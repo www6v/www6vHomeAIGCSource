@@ -24,5 +24,10 @@ categories:
 1. [IBM开源微讲堂 - Knative](https://live.bilibili.com/21285133)  Knative系列视频课程
 2. [Knative培训课程 - 第一课讲义](https://github.com/dWChina/ibm-opentech-ma/blob/master/knative/knative01.pdf) ibm
 
+---
+
+Knative安装
+1. [Install on a Kubernetes cluster](https://knative.dev/docs/install/knative-with-any-k8s/?spm=a2c4e.10696291.0.0.7d8719a434fv2C)
+
 
 
