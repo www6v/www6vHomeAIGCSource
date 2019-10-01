@@ -19,15 +19,22 @@ categories:
 3. [研发运维效率提升100%，机器成本下降50%，阿里巴巴在 Serverless 计算领域的探索](https://mp.weixin.qq.com/s/Gj_qPPTn6KN065qUu6e-mw)  阿里 1. 提高启动时间 2. 混合部署
 
 ---
-
+ibm Knative课程
 [Knative课程主页](https://developer.ibm.com/cn/os-academy-knative/)
 1. [IBM开源微讲堂 - Knative](https://live.bilibili.com/21285133)  Knative系列视频课程
 2. [Knative培训课程 - 第一课讲义](https://github.com/dWChina/ibm-opentech-ma/blob/master/knative/knative01.pdf) ibm
 
 ---
+阿里牛秋霖（冬岛） Knative教程 
+[Knative 系列文章目录](https://yq.aliyun.com/articles/719274)  冬岛
+[Knative 初体验：Serving Hello World](https://yq.aliyun.com/articles/712252?spm=a2c4e.11153940.0.0.22b048fe1pIjdr)  做过
+[Knative 初体验：Eventing Hello World](https://yq.aliyun.com/articles/705438?spm=a2c4e.11153940.0.0.22b048fe1pIjdr) 做过
 
+---
 Knative安装
 1. [Install on a Kubernetes cluster](https://knative.dev/docs/install/knative-with-any-k8s/?spm=a2c4e.10696291.0.0.7d8719a434fv2C)
+
+
 
 
 
