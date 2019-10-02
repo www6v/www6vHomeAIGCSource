@@ -14,7 +14,12 @@ categories:
 <p></p>
 <!-- more -->
 
+
 {% asset_img  consistent.jpg  分布式一致性总结 %}
+
+
+
+## 一. 一致性
 
 <div style="text-align: center;">
 ![consistent-relationship](https://user-images.githubusercontent.com/5608425/65506192-989c8f00-defd-11e9-8ce4-df9b2bd8a96f.jpg)
@@ -34,11 +39,38 @@ categories:
 弱一致性|||Eg : Backups（备份）
 
 
-	
-
 > 线性一致性【1】： 又叫原子一致性，一个操作对于系统的其他部分是不可中断的	
 	  
 	
+## 二. 柔性事务 最终一致性
+
+模式 |  流程 | 流程细节 
+:-:|:-:|:-:
+EBay模式【2】 |  **正向流程**<br> [本地事务+幂等业务接口+half消息] | 消息状态<br> 1. 初始化：消息为待处理状态<br> 2. 业务成功：消息为待发送状态<br>3. 业务失败：消息删除 
+ |    **反向流程**（异常流程，补偿流程） | 中间件询问业务执行结果，更新消息状态 
+TCC【4】|1.主流程控制整个事务 2.分流程提供Confirm和Cancel方法。| Try:  阶段1的业务执行  Confirm: 阶段2的业务执行  Cancel: 回滚Try阶段执行的业务流程和数据
+Saga 1PC (一阶段)| 基于补偿的消息驱动的用于解决long-running process业务。 |  a  
+补偿 | 状态查询（成功or失败）+补偿| 定时校验异常 + 补偿
+
+
+模式 | 工程 | 事务seata/Fescar
+:-:|:-:|:-:
+EBay模式【2】|  Eg:  阿里Notify | XA, RocketMQ事务消息
+TCC【4】| Eg: 支付宝DTS【3】 |蚂蚁 XTS(内部)/DTX(蚂蚁金融云) 【3】 <br>**入侵性**<br>  TCC【4】 FMT
+两阶段 |  | 阿里 TXC(内部)/GTS(阿里云) <br>**非入侵性** <br>AT 基于 支持本地 ACID 事务 的 "关系型数据库" <br> MT 支持把"自定义"的分支事务纳入到全局事务的管理中
+ 
+
+## 三. 柔性事务 - 消息
+
+![mq-normal](https://user-images.githubusercontent.com/5608425/66023796-d2d0e680-e524-11e9-8748-1a26f3d0f157.JPG)
+![mq-reverse](https://user-images.githubusercontent.com/5608425/66023797-d2d0e680-e524-11e9-85e6-f845863fe4a8.JPG)
+
+<style>
+table th:first-of-type {
+  width: 100px;
+}
+</style>
+
 
 ## 参考：
 
