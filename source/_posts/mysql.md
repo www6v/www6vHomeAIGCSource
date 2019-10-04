@@ -82,6 +82,17 @@ REPEATABLE-READ<br>（**InnoDB默认支持**）| ×| ×| √
 SERIALIZABLE|  ×| ×| ×
 
 
+## 五. MySQL主从复制原理
+
+<div style="text-align: center;">
+![master-slave](https://user-images.githubusercontent.com/5608425/66110430-58be6180-e5f9-11e9-9272-da2f69e51b1c.jpg)
+MySQL主从复制
+</div>
+
+> + MySQL master 将数据变更写入二进制日志( binary log, 其中记录叫做二进制日志事件binary log events，可以通过 show binlog events 进行查看)
++ MySQL slave 将 master 的 binary log events 拷贝到它的中继日志(relay log)
++ MySQL slave 重放 relay log 中事件，将数据变更反映它自己的数据
+
 ## 参考:
 
 1. 《深入浅出MySQL：数据库开发、优化与管理维护》 
@@ -92,4 +103,5 @@ SERIALIZABLE|  ×| ×| ×
 6. [可能是全网最好的MySQL重要知识点](https://mp.weixin.qq.com/s/M1dLLuePpdM9vA3F1uJGyw)
 7. [MySQL索引原理及慢查询优化](http://www.admin10000.com/document/6228.html)  good 美团 未 
 8. [业界难题-“跨库分页”的四种方案](https://mp.weixin.qq.com/s/h99sXP4mvVFsJw6Oh3aU5A)  58沈剑  未
+9. [ali canal](https://github.com/alibaba/canal)
 
