@@ -46,7 +46,7 @@ categories:
 
 模式 |  流程 | 流程细节 
 :-:|:-:|:-:
-EBay模式【2】 |  **正向流程**<br> [本地事务+幂等业务接口+half消息] | 消息状态<br> 1. 初始化：消息为待处理状态<br> 2. 业务成功：消息为待发送状态<br>3. 业务失败：消息删除 
+EBay模式【2】【参考8】 |  **正向流程**<br> [本地事务+幂等业务接口+half消息] | 消息状态<br> 1. 初始化：消息为待处理状态<br> 2. 业务成功：消息为待发送状态<br>3. 业务失败：消息删除 
  |    **反向流程**（异常流程，补偿流程） | 中间件询问业务执行结果，更新消息状态 
 TCC【4】|1.主流程控制整个事务 2.分流程提供Confirm和Cancel方法。| Try:  阶段1的业务执行  Confirm: 阶段2的业务执行  Cancel: 回滚Try阶段执行的业务流程和数据
 Saga 1PC (一阶段)| 基于补偿的消息驱动的用于解决long-running process业务。 |  a  
@@ -55,7 +55,7 @@ Saga 1PC (一阶段)| 基于补偿的消息驱动的用于解决long-running pro
 
 模式 | 工程 | 事务seata/Fescar
 :-:|:-:|:-:
-EBay模式【2】|  Eg:  阿里Notify | XA, RocketMQ事务消息
+EBay模式【2】【参考8】|  Eg:  阿里Notify | XA, RocketMQ事务消息
 TCC【4】| Eg: 支付宝DTS【3】 |蚂蚁 XTS(内部)/DTX(蚂蚁金融云) 【3】 <br>**入侵性**<br>  TCC【4】 FMT
 两阶段 |  | 阿里 TXC(内部)/GTS(阿里云) <br>**非入侵性** <br>AT 基于 支持本地 ACID 事务 的 "关系型数据库" <br> MT 支持把"自定义"的分支事务纳入到全局事务的管理中
  
@@ -82,13 +82,14 @@ table th:first-of-type {
 5. 线性一致性(Linearizability)是并发控制的基础 陈东明
 6. ENode 1.0 - Saga的思想与实现 汤雪华
 7. 《大数据日知录：架构与算法》 张俊林
+8. [Base: An Acid Alternative](https://queue.acm.org/detail.cfm?id=1394128)  Ebay模式  good
 
 
 ### Fescar && TCC
 1. 分布式事务之TCC事务 梁钟霖
 2. 分布式事务之TCC服务设计和实现注意事项 绍辉
 3. https://github.com/www6v/tcc-transaction
-4. [AT Mode](https://github.com/seata/seata/wiki/AT-Mode)
+4. [AT Mode](https://github.com/seata/seata/wiki/AT-Mode)  Fescar
 5. [Manual Transaction 模式](https://github.com/seata/seata/wiki/MT-Mode)
 6. [更开放的分布式事务 | Fescar 品牌升级，更名为 Seata](https://mp.weixin.qq.com/s/S0touTyVWfolEqgFaAjLxg)
 7. [关于开源分布式事务中间件Fescar，我们总结了开发者关心的13个问题](https://mp.weixin.qq.com/s/XTCZEZdmToWrETbR1GtR4g)
