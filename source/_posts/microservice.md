@@ -67,7 +67,7 @@ categories:
 </div>    
     
 
-## 三. The Scale Cube
+## 三. The Scale Cube 可伸缩性
 [The Scale Cube](https://akfpartners.com/techblog/2008/05/08/splitting-applications-or-services-for-scale/)
 
 
@@ -79,10 +79,17 @@ categories:
     Y-Axis: Servcie
     Z-Axis: Data Sharding
 
-## 四. 微服务要付出的代价
+## 四. 微服务的优势和代价
 
 [MicroservicePremium](https://martinfowler.com/bliki/MicroservicePremium.html) Martin Fowler. 
+
+<div style="text-align: center;">
+![productivity](https://user-images.githubusercontent.com/5608425/66262608-af54b700-e816-11e9-9e16-3b95d76e14e2.png)
 生产率和复杂度之间的关系。
+</div>
+
+> 在不复杂的系统中， 更适合monolithic的应用。
+  复杂度增长时， 微服务的生产率能持续保持，在生产率方面是可伸缩的。
 
 ## 五. 原则
 + 去中心化
