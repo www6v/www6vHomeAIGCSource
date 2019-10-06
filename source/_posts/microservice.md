@@ -64,9 +64,11 @@ categories:
    ![micro-service-architecture-comms](https://user-images.githubusercontent.com/5608425/66257280-8528d800-e7c9-11e9-95f4-bfe436d9d283.png)
    </div>
 
-### 5. 服务部署
+### 5. 服务部署和发布
 
-部署模式
+[微服务部署：蓝绿部署、滚动部署、灰度发布、金丝雀发布](https://my.oschina.net/xiaominmin/blog/3070053)
+
++ 部署模式
 + Single Service per Host  
 + Multiple Services per Host patterns
 
@@ -75,6 +77,8 @@ categories:
 
 ### 7. 可观察性
    [鹰眼跟踪、限流降级，EDAS的微服务解决之道](https://yq.aliyun.com/articles/60994?spm=5176.100239.blogcont61320.29.6SwFH6)
+   [可观察性](../../../../2019/08/31/observability/) self
+
    <div style="text-align: center;">
    ![apm-fault](https://user-images.githubusercontent.com/5608425/66256533-43942f00-e7c1-11e9-8fe8-80565025c792.png)
    APM 故障
@@ -82,6 +86,11 @@ categories:
    APM 稳定性
    </div>
 
+### 8. 服务划分和组合
+
+> 微服务不是指"微小"的服务, 而是如何"拆分"服务,然后"组合"服务.
+
+DDD 领域驱动设计, 上下文划分
   
 ## 二. 微服务设计模式 
 <div style="text-align: center;">
@@ -105,7 +114,7 @@ categories:
 ## 四. 微服务的优势和代价
 
 [MicroservicePremium](https://martinfowler.com/bliki/MicroservicePremium.html) Martin Fowler. 
-[微服务架构——不是免费的午餐](https://www.phodal.com/blog/microservices-is-not-a-free-lunch/)
+
 
 <div style="text-align: center;">
 ![productivity](https://user-images.githubusercontent.com/5608425/66262608-af54b700-e816-11e9-9e16-3b95d76e14e2.png)
@@ -118,15 +127,19 @@ categories:
 ## 五. 原则和缺点（挑战）
 
 
-原则|优点|缺点（挑战）
-:-:|:-:|:-:
-**分布式**服务组成的系统； 去中心化| 可用性高|多服务运维难度
-按照业务而不是技术来划分组织| 服务独立无依赖 |系统部署依赖
-做有生命的**产品**而不是项目| 技术栈灵活|
-Smart endpoints and dumb pipes（我的理解是强服务个体和弱通信）；可组合的服务|独立按需扩展|服务间通信成本
-自动化运维（**DevOps**） | | 系统集成测试
-**容错**| 可用性高 | 性能监控; 数据一致性
-快速**演化**| 开发简单 |重复工作; 系统集成测试
+[微服务架构——不是免费的午餐](https://www.phodal.com/blog/microservices-is-not-a-free-lunch/) 
+[有关微服务架构的争论：更简单还是更复杂？](http://www.infoq.com/cn/news/2014/05/micro-server-architecture-debate) 
+
+
+原则 |优点 |缺点 |挑战
+:-: |:-: |:-: |:-:
+**分布式**服务组成的系统； 去中心化| 可用性高|多服务运维难度 | 分布式系统的复杂性
+按照业务而不是技术来划分组织| 服务独立无依赖 |系统部署依赖| 事务、异步、测试面临挑战
+做有生命的**产品**而不是项目| 技术栈灵活||  运营开销
+Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合的服务|独立按需扩展|服务间通信成本 | 隐式接口[接口变更成本]
+自动化运维（**DevOps**） | | 系统集成测试 | DevOps 要求
+**容错**| 可用性高 |  数据一致性 | 性能监控; 分布式系统的复杂性
+快速**演化**| 开发简单 |重复工作  | 系统集成测试 
  
 
 
@@ -138,6 +151,8 @@ Smart endpoints and dumb pipes（我的理解是强服务个体和弱通信）�
 5. [一致性](../../../2016/02/09/consistent/)  self
 6. [微服务：分解应用以实现可部署性和可扩展性](http://www.infoq.com/cn/articles/microservices-intro)  Chris Richardson
 7. [《Linux/Unix设计思想》随笔 ——Linux/Unix哲学概述](https://www.cnblogs.com/suter/p/3401952.html)  未
+8. [微服务学习资料汇总](https://www.infoq.cn/article/2014/07/microservice-learning-resources/)  good
+9. [微服务架构技术栈选型手册](https://www.infoq.cn/article/micro-service-technology-stack/?utm_source=infoq&utm_medium=popular_widget&utm_campaign=popular_content_list&utm_content=homepage) 未
 
 
 

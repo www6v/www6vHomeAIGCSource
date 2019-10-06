@@ -9,6 +9,15 @@ tags:
 
 ![metric-tracing-logging](https://user-images.githubusercontent.com/5608425/64059064-216a2880-cbe7-11e9-9ee7-141334d93959.png)
 
+
+模式| 产品/框架
+:-:|:-:|:-:
+Log aggregation| AWS Cloud Watch
+Application metrics| Prometheus、AWS Cloud Watch
+Distributed tracing| Open Tracing ，Zipkin ，Jaeger，skywalking（无侵入）
+Exception tracking| Open Tracing ，Zipkin ，Jaeger，skywalking（无侵入）
+
+
 ## 参考:
 1. [Metrics, tracing 和 logging 的关系](https://wu-sheng.github.io/me/articles/metrics-tracing-and-logging)
 2. [OpenTracing语义标准](https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md)
@@ -17,3 +26,4 @@ tags:
 5. [如何检测 Web 服务请求丢失问题](https://mp.weixin.qq.com/s/QA_BTF1D3GJJ7_nYQ6oAzQ) 应用： Nginx tracing + Tomcat tracing
 6. [容器日志采集利器Log-Pilot](https://yq.aliyun.com/articles/674327)  阿里开源的Log-Pilot
 7. [剖析 | SOFARPC 框架之 SOFARPC 链路追踪剖析](https://www.sofastack.tech/blog/sofa-rpc-link-tracking/) 未
+8. [Pattern: Microservice Architecture](https://microservices.io/patterns/microservices.html)
