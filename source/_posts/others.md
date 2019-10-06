@@ -71,3 +71,14 @@ tags:
 9. [NoSQL 架构实践（三）——以 NoSQL 为缓存](https://www.infoq.cn/article/2011/03/nosql-architecture-practice-3/)
 10. [海量数据存储之动态Schema的传说](https://www.iteye.com/blog/forchenyun-1018324)
 
+## Kafka
+1. [Kafka 设计解析（二）：Kafka High Availability （上）](https://www.infoq.cn/article/kafka-analysis-part-2/)
+2. [FAQ](https://cwiki.apache.org/confluence/display/KAFKA/FAQ#FAQ-Whydoesmyconsumernevergetanydata?)
+3. [Kafka深度解析，众人推荐，精彩好文！](https://www.tuicool.com/articles/QJvu2e)  Jason Guo
+4. [分布式发布订阅消息系统 Kafka 架构设计](https://www.oschina.net/translate/kafka-design?cmp&p=1)
+5. [Paper Rush-3:Apache Kafka](http://www.seflerzhou.net/post-47.html)  阿里  周遥（玄胤）
+6. [apache kafka系列之在zookeeper中存储结构](https://blog.csdn.net/lizhitao/article/details/23744675?utm_source=tuicool)
+7. [Kafka 设计解析（四）：Kafka Consumer 解析](https://www.infoq.cn/article/kafka-analysis-part-4/)
+8. [Kafka设计思想](https://wenku.baidu.com/view/b96ff230a32d7375a4178051.html)
+9. [apache kafka技术分享系列(目录索引)](https://blog.csdn.net/lizhitao/article/details/39499283)
+
