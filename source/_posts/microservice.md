@@ -142,6 +142,16 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 快速**演化**| 开发简单 |重复工作  | 系统集成测试 
  
 
+## 五. SOA、微服务、云原生演进
+
+关注点  |SOA  |微服务 |云原生
+:-:|:-:|:-:|:-:
+研发过程| CMM/RUP | Agile| Agile 
+交付流程| 手工/自动化 | DevOps,DevSecOps| GitOps/AIOps/NoOps
+服务通信| Web Service（WSDL，Soap）| REST/私有RPC协议（Dubbo）|REST/gRPC,Envoy xDS协议等开放协议
+服务治理| ESB        | 微服务/API网管（SpringCloud） | 服务网格（istio， Linked）
+应用运行环境| 物理机/虚拟机|虚拟机/容器 | Kubernete（操作系统）+ Serverless（Knative）
+基础设施| IDC | 公有云/私有云 | 无边界的云（多云/混合云、 云+边+端）    
 
 ## 参考:
 1. [Introduction to Microservices](https://www.nginx.com/blog/introduction-to-microservices/)  英文  
@@ -153,6 +163,7 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 7. [《Linux/Unix设计思想》随笔 ——Linux/Unix哲学概述](https://www.cnblogs.com/suter/p/3401952.html)  未
 8. [微服务学习资料汇总](https://www.infoq.cn/article/2014/07/microservice-learning-resources/)  good
 9. [微服务架构技术栈选型手册](https://www.infoq.cn/article/micro-service-technology-stack/?utm_source=infoq&utm_medium=popular_widget&utm_campaign=popular_content_list&utm_content=homepage) 未
+10. [从 SOA 到微服务，企业分布式应用架构在云原生时代如何重塑？](https://mp.weixin.qq.com/s/zl0Z-bCoLDFGD8GFYh68CQ) 阿里 易立 good
 
 
 
