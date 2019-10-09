@@ -8,12 +8,14 @@ tags:
 categories:
   - 分布式 
   - 服务治理
-  - 容错   
+  - 容错  
 ---
 
 <p></p>
 <!-- more -->
 
 {% asset_img  soaTolerate.jpg  分布式服务框架容错机制 %}
+
+**关键词**： 容错, 降级, 隔离, 超时, 重试
 
 
