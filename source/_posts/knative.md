@@ -12,17 +12,7 @@ categories:
 <p></p>
 <!-- more -->
 
-Serverless = Baas + Faas
-
 ## 参考:
-
-1. [让业务感知不到服务器的存在——基于弹性计算的无服务器化实践](https://cloud.tencent.com/developer/article/1158774)  腾讯
-2. [对Serverless架构的一点体验和思考](https://yq.aliyun.com/articles/160370?spm=5176.8067842.tagmain.56.9Vk1fX) 阿里
-3. [研发运维效率提升100%，机器成本下降50%，阿里巴巴在 Serverless 计算领域的探索](https://mp.weixin.qq.com/s/Gj_qPPTn6KN065qUu6e-mw)  阿里 
-   I. 提高启动时间 II. 混合部署
-4. [云计算中的Xaas](../../../../2019/02/07/xaas/) self
-
----
 ##### ibm Knative课程
 + [Knative课程主页](https://developer.ibm.com/cn/os-academy-knative/)
 + [IBM开源微讲堂 - Knative](https://live.bilibili.com/21285133)  Knative系列视频课程
