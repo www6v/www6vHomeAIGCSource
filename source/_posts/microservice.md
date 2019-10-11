@@ -147,11 +147,11 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 关注点  |SOA  |微服务 |云原生
 :-:|:-:|:-:|:-:
 研发过程| CMM/RUP | Agile| Agile 
-交付流程| 手工/自动化 | DevOps,DevSecOps| GitOps/AIOps/NoOps
+交付流程| 手工/自动化 | DevOps<br>DevSecOps| GitOps<br>AIOps<br>NoOps(Serverless)
 服务通信| Web Service（WSDL，Soap）| REST/私有RPC协议（Dubbo）|REST/gRPC,Envoy xDS， MSI协议等开放协议
 功能扩展性-filter| x| AOP filter<br> Dubbo filter chain<br>   WEB filter/lisnter | Envoy filter
 功能扩展性-微内核| x| Dubbo SPI | K8s CRD, Operator 
-服务治理| ESB        | 微服务/API网管（SpringCloud），去中心化 | 服务网格（istio， Linked） 分布式
+服务治理| ESB        | 微服务/API网关（SpringCloud），去中心化 | 服务网格（istio， Linked） 分布式
 应用运行环境| 物理机/虚拟机|虚拟机/容器 | Kubernete（操作系统）+ Serverless（Knative）
 基础设施| IDC | 公有云/私有云 | 无边界的云（多云/混合云、 云+边+端）
 总结|重  | 轻, 快速   | 开放、融合  
