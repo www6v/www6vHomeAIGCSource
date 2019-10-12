@@ -81,6 +81,18 @@ IoT物联网;
 更小的资源占用率， 更短的运行时间更易于混合部署。[3][5]
 
 
+## 五. 产品
+1. Serverless
+AWS Lambda
+Google Cloud Functions
+阿里 Function Compute
+Azure Funcions
+
+2. Serverless Container[6]
+AWS Fargate
+Azure ACI
+华为CCI 
+
 ## 参考:
 
 1. [让业务感知不到服务器的存在——基于弹性计算的无服务器化实践](https://cloud.tencent.com/developer/article/1158774)  腾讯 未
@@ -89,3 +101,4 @@ IoT物联网;
    I. 提高启动时间 II. 混合部署
 4. [云计算中的Xaas](../../../../2019/02/07/xaas/) self
 5. [无服务计算的未来和挑战: A Berkeley View on Serverless Computing](https://mp.weixin.qq.com/s/7qJUzf8xrGihPPLsvwPEig) good
+6. [当我们在聊Serverless时你应该知道这些](https://yq.aliyun.com/articles/574222)  阿里 竹涧 
