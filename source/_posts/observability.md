@@ -27,3 +27,4 @@ Exception tracking| Open Tracing ，Zipkin ，Jaeger，skywalking（无侵入）
 6. [容器日志采集利器Log-Pilot](https://yq.aliyun.com/articles/674327)  阿里开源的Log-Pilot
 7. [剖析 | SOFARPC 框架之 SOFARPC 链路追踪剖析](https://www.sofastack.tech/blog/sofa-rpc-link-tracking/) 未
 8. [Pattern: Microservice Architecture](https://microservices.io/patterns/microservices.html)
+9. [ 日志：每个软件工程师都应该知道的有关实时数据的统一概念](https://github.com/oldratlee/translations/blob/master/log-what-every-software-engineer-should-know-about-real-time-datas-unifying/README.md)  论文翻译 good 未

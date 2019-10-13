@@ -27,37 +27,37 @@ categories:
 
 一致性[上到下，强到弱]|协议|特性|举例
 :-:|:-:|:-:|:-:
-强一致性|R+W>N[ReadQurum-WriteQurum]||Eg :Dynamo 三副本，定制灵活
-       |2阶段,3阶段【1】| 延迟大，吞吐低。全局锁资源|Eg : JTA(XA)
-       |paxos【1】|难理解，延迟大，吞吐中等，全局锁资源|Eg :分布式锁系统Chubby			
-顺序一直性| |类似多线程程序执行顺序的模型| 	Eg: Zookeeper的读 <br>1.两个主流程，三个阶段 <br> 2.Zab（Qurum）:2f+1个节点，允许f个节点失败
-因果一致性|时钟向量 Vector clock ||Eg : 微信朋友圈的评论
-最终一致性|反熵||Eg : Cassandra， BT(Bit-Torrent)
-         |raft|相对Paxos简单。主从，三个阶段|Eg : etcd
-         |Master-Slave|延迟低，吞吐高<br>主动推送/被动拉取|Eg : Mysql 
-         |Master-Master|延迟低，吞吐高|Eg : Mysql	
-弱一致性|||Eg : Backups（备份）
+强一致性|R+W>N[ReadQurum-WriteQurum]| 可定制 |Dynamo 三副本，定制灵活
+强一致性|2阶段,3阶段 #1| 延迟大，吞吐低。全局锁资源| JTA(XA)
+强一致性|paxos #1|难理解，延迟大，吞吐中等，全局锁资源|分布式锁系统Chubby			
+顺序一直性| |类似多线程程序执行顺序的模型| Zookeeper的读 <br>1.两个主流程，三个阶段 <br> 2.Zab（Qurum）:2f+1个节点，允许f个节点失败
+因果一致性|时钟向量Vector clock[11][12] || 微信朋友圈的评论, Dynamo
+最终一致性|反熵,gossip[9] |  | Cassandra， BT(Bit-Torrent)
+最终一致性|raft[10]   | 相对Paxos简单。主从，三个阶段   | etcd
+最终一致性|Master-Slave   |延迟低，吞吐高<br>主动推送/被动拉取  | Mysql 
+最终一致性|Master-Master  |延迟低，吞吐高                      | Mysql	
+弱一致性||| Backups（备份）
 
 
-> 线性一致性【1】： 又叫原子一致性，一个操作对于系统的其他部分是不可中断的	
+> 线性一致性  #1： 又叫原子一致性，一个操作对于系统的其他部分是不可中断的	
 	  
 	
 ## 二. 柔性事务 最终一致性
 
 模式 |  流程 | 流程细节 
 :-:|:-:|:-:
-EBay模式【2】【参考8】 |  **正向流程**<br> [本地事务+幂等业务接口+half消息] | 消息状态<br> 1. 初始化：消息为待处理状态<br> 2. 业务成功：消息为待发送状态<br>3. 业务失败：消息删除 
+EBay模式 #2【8】 |  **正向流程**<br> [本地事务+幂等业务接口+half消息] | 消息状态<br> 1. 初始化：消息为待处理状态<br> 2. 业务成功：消息为待发送状态<br>3. 业务失败：消息删除 
  |    **反向流程**（异常流程，补偿流程） | 中间件询问业务执行结果，更新消息状态 
-TCC【4】|1.主流程控制整个事务 2.分流程提供Confirm和Cancel方法。| Try:  阶段1的业务执行  Confirm: 阶段2的业务执行  Cancel: 回滚Try阶段执行的业务流程和数据
+TCC #4|1.主流程控制整个事务 2.分流程提供Confirm和Cancel方法。| Try:  阶段1的业务执行  Confirm: 阶段2的业务执行  Cancel: 回滚Try阶段执行的业务流程和数据
 Saga 1PC (一阶段)| 基于补偿的消息驱动的用于解决long-running process业务。 |  a  
 补偿 | 状态查询（成功or失败）+补偿| 定时校验异常 + 补偿
 
 
 模式 | 工程 | 事务seata/Fescar
 :-:|:-:|:-:
-EBay模式【2】【参考8】|  Eg:  阿里Notify | XA, RocketMQ事务消息
-TCC【4】| Eg: 支付宝DTS【3】 |蚂蚁 XTS(内部)/DTX(蚂蚁金融云) 【3】 <br>**入侵性**<br>  TCC【4】 FMT
-两阶段 |  | 阿里 TXC(内部)/GTS(阿里云) <br>**非入侵性** <br>AT 基于 支持本地 ACID 事务 的 "关系型数据库" <br> MT 支持把"自定义"的分支事务纳入到全局事务的管理中
+EBay模式 #2【8】|  Eg:  阿里Notify | XA, RocketMQ事务消息
+TCC #4| Eg: 支付宝DTS #3 |蚂蚁 XTS(内部)/DTX(蚂蚁金融云) #3 <br>**入侵性**<br>  TCC #4 FMT
+两阶段 |  | 阿里 TXC(内部)/GTS(阿里云) <br>**非入侵性** <br>AT[4] 基于 支持本地 ACID 事务 的 "关系型数据库" <br> MT[5] 支持把"自定义"的分支事务纳入到全局事务的管理中
  
 
 ## 三. 柔性事务 - 消息
@@ -83,7 +83,10 @@ table th:first-of-type {
 6. ENode 1.0 - Saga的思想与实现 汤雪华
 7. 《大数据日知录：架构与算法》 张俊林
 8. [Base: An Acid Alternative](https://queue.acm.org/detail.cfm?id=1394128)  Ebay模式  good
-
+9. [gossip-visualization](https://rrmoelker.github.io/gossip-visualization/)  gossip 
+10. [raft](../../../../2019/06/21/raft/) self  
+11. [Dynamo: Amazon’s Highly Available Key-value Store](http://bnrg.eecs.berkeley.edu/~randy/Courses/CS294.F07/Dynamo.pdf) paper 未
+12. [Why Vector Clocks Are Hard](https://riak.com/posts/technical/why-vector-clocks-are-hard/) 未
 
 ### Fescar && TCC
 1. 分布式事务之TCC事务 梁钟霖
