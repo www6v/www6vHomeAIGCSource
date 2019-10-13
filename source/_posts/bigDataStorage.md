@@ -27,11 +27,12 @@ categories:
  高速缓存 | 低延迟Key-Value随机查询	 | 复杂结果集数据，或者是需要通过内存高速交换的数据。	 | Redis | [Key-Value](../../../../2016/11/12/redis/)
  搜索引擎	|多字段联合条件过滤，全文检索| 面向搜索查询的数据	 |  Elasticsearch | [逆向索引](../../../../2019/08/02/elasticsearch/)
  非结构化	| 读取单个数据文件，或者是大批量扫描文件集	 | 图片和视频数据，数据库归档数据	 | OSS，HDFS | [块、对象、文件](../../../../2019/10/08/storage/) 
- 结构化	| 单行随机访问，或者是大批量范围扫描| 1.作为关系数据库的补充，存储历史归档数据。<br>2.非关系模型数据，例如时序、日志等。	 | HBase，Cassandra，<br>Tablestore | + [面向列<br>Ordered Key-Value(列族)<br> 索引 LSM-tree](../../../../2018/07/19/NoSQL/)
+ 结构化	| 单行随机访问，或者是大批量范围扫描| 1.作为关系数据库的补充，存储历史归档数据。<br>2.非关系模型数据，例如时序、日志等。	 | HBase，Cassandra，<br>Tablestore | + [面向列<br>Ordered Key-Value(列族)<br> 索引 LSM-tree](../../../../2018/07/19/NoSQL/)[3][4]
 
 
 
- 参考：
-
- 1. [数据中台之结构化大数据存储设计](https://yq.aliyun.com/articles/715254?spm=a2c4e.11155435.0.0.2eba5b6e3DhL3A)
- 2. [NoSQL知识点](../../../../2018/07/19/NoSQL/)
+## 参考:
+1. [数据中台之结构化大数据存储设计](https://yq.aliyun.com/articles/715254?spm=a2c4e.11155435.0.0.2eba5b6e3DhL3A)
+2. [NoSQL知识点](../../../../2018/07/19/NoSQL/)
+3. [日志结构的合并树 The Log-Structured Merge-Tree](https://www.cnblogs.com/siegfang/archive/2013/01/12/lsm-tree.html)
+4. [【Paper笔记】The Log structured Merge-Tree（LSM-Tree）](https://kernelmaker.github.io/lsm-tree)
