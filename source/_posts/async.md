@@ -13,6 +13,16 @@ categories:
 
 {% asset_img  async.jpg  服务异步化总结 %}
 
+
+并行范式   |  系统/语言  
+:-:|:-:|:-:
+线程和锁| Java
+函数式(Future，Promise）| Java8 Streaming API, lambda表达式<br> Spark/Flink 算子<br> Clojure reducer
+分离标识和状态| Clojure
+Actor| Scala Actor, Akka 
+CSP| Golang协程, Kotlin协程 
+
+
 ## 参考:
 
 1. [google Guava包的ListenableFuture解析](http://ifeve.com/google-guava-listenablefuture/) 罗立树 
