@@ -67,7 +67,7 @@ IoT物联网;
 
 ### 4.1 加快函数运行环境的创建
 1. AWS Lambda 中使用的方法是维护一个热的 VM 实例池[5]
-2. 阿里 应用容器启动加速[3]
+2. 阿里Cloud Service Engine(CSE) 内部产品， 应用容器启动加速[3]
 <div style="text-align: center; width: 80%; height: 80%"> 
    ![ali-serverless-optimiaze](https://user-images.githubusercontent.com/5608425/66549078-18b92a80-eb75-11e9-9c23-f86a1e711934.jpg)
 </div>
@@ -76,6 +76,9 @@ IoT物联网;
 + L2: 磁盘快照： 容器持久化到磁盘
     时间消耗主要是数据的网络传输时间+内存拷贝时间。
 + L3: 完全冷启动
+3. 阿里云  函数计算的预留实例[11]
+   预留实例的执行环境是长驻的，彻底消除冷启动对业务的影响
+4. [9]
 
 ### 4.2 混合部署
 更小的资源占用率， 更短的运行时间更易于混合部署。[3][5]
@@ -85,7 +88,7 @@ IoT物联网;
 1. Serverless
 AWS Lambda
 Google Cloud Functions
-阿里 Function Compute 2.0
+阿里 Function Compute 2.0[10]
 Azure Funcions
 
 2. Serverless Container[6]
@@ -98,7 +101,13 @@ Azure ACI
 Knative
 [Serverless 应用服务(蚂蚁金服)](https://tech.antfin.com/products/SAS)[7] ，SAS , 兼容标准Knative， toB不toC
 Serverless 应用引擎（阿里云）
+EDAS Serverless[12] Rpc产品
 
+4. 开源产品
+kubeless
+Fission
+OpenFaaS
+Apache OpenWhisk(IBM)
 
 ## 参考:
 
@@ -113,3 +122,7 @@ Serverless 应用引擎（阿里云）
 8. [Serverless 与容器决战在即？有了弹性伸缩就不一样了](https://yq.aliyun.com/articles/717318)  阿里 莫源 未
 9. [分享 KubeCon 2019 （上海）关于 Serverless 及 Knative 相关演讲会议](https://yq.aliyun.com/articles/706537)
    加速：无服务器平台中的冷启动优化; Knative Serving 内部介绍
+10. [函数计算 2.0 重磅发布，Serverless Computing 开启新篇章](https://yq.aliyun.com/articles/719694)
+    开发工具 fun，vscode插件
+11. [预留实例简介](https://help.aliyun.com/document_detail/138103.html)
+12. [0基础快速入门运维-EDAS Serverless(FAAS) 产品评测](https://yq.aliyun.com/articles/683675)
