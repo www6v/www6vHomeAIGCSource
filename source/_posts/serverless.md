@@ -35,7 +35,7 @@ Serverless
 serverless和serverful的对比
 </div>
 
-+ serverless
+### serverless
 1. 事件驱动的
 2. **计算与存储解耦**
    状态存储在外部（Baas） 
@@ -62,12 +62,14 @@ serverless和serverful的对比
   运行批量数据，来生成数据报表(大数据)
 + 定制事件
   用户注册时发邮件验证邮箱地址
+ 
 
 ### 流量突发场景
 + 短周期内的**流量峰值**
   外卖企业的用餐时期负载高峰，
   安防行业的负载高峰是夜间
-+ 大数据处理  
+
+### 大数据处理   
 
 ## 四. 挑战和优化
 
@@ -91,22 +93,21 @@ serverless和serverful的对比
 
 
 ## 五. 产品
-1. Serverless , Function as a Service
+1. Serverless , Function as a Service(Faas)
 AWS Lambda
 Google Cloud Functions
 阿里 Function Compute 2.0[10]
 Azure Funcions
 
-2. Serverless Container[6] , Container as a Service
+2. Serverless Container[6] , Container as a Service(Caas)
 AWS Fargate
 Azure ACI
 华为CCI 
 阿里 Serverless Kubernetes、本身是Kubernetes集群
 容器服务 ACS[13]
-Knative 
 
 
-3. 面向应用的 Serverless 服务
+3. 面向应用的 Serverless 服务, Paas
 [Serverless 应用服务(蚂蚁金服)](https://tech.antfin.com/products/SAS)[7] ，SAS , 兼容标准Knative， toB不toC
 Serverless 应用引擎（阿里云）
 EDAS Serverless[12] Rpc产品
@@ -116,23 +117,44 @@ kubeless
 Fission
 OpenFaaS
 Apache OpenWhisk(IBM)
+**Knative** = Faas + Caas
+
+<div style="text-align: center; width: 80%; height: 80%">
+![caas-faas](https://user-images.githubusercontent.com/5608425/66989009-1d8e5900-f0f6-11e9-9902-2efb75d27da7.png)
+</div>
+
+## 六. Concern
+
+<div style="text-align: center; width: 70%; height: 70%">
+![concerns-serverless3](https://user-images.githubusercontent.com/5608425/66986650-de5e0900-f0f1-11e9-819a-911d21d9d0ba.jpg)
+</div>
+
++ Best Practice[14][1]
++ Tool[10]
++ StartUp Latency[3][9][11]
++ knowledge[4][5][6][15]
++ vender lock-in [12][13]
+
 
 ## 参考:
 
 1. [让业务感知不到服务器的存在——基于弹性计算的无服务器化实践](https://cloud.tencent.com/developer/article/1158774)  腾讯 未
 2. [对Serverless架构的一点体验和思考](https://yq.aliyun.com/articles/160370?spm=5176.8067842.tagmain.56.9Vk1fX) 阿里 未
 3. [研发运维效率提升100%，机器成本下降50%，阿里巴巴在 Serverless 计算领域的探索](https://mp.weixin.qq.com/s/Gj_qPPTn6KN065qUu6e-mw)  阿里 
-   I. 提高启动时间 II. 混合部署
+   I. 提高启动时间 II. 混合部署  优化
+   [CSE：阿里在线应用如何演进成Serverless架构](https://yq.aliyun.com/articles/702070)
 4. [云计算中的Xaas](../../../../2019/02/07/xaas/) self
 5. [无服务计算的未来和挑战: A Berkeley View on Serverless Computing](https://mp.weixin.qq.com/s/7qJUzf8xrGihPPLsvwPEig) good
-6. [当我们在聊Serverless时你应该知道这些](https://yq.aliyun.com/articles/574222)  阿里 竹涧 
-7. [Serverless 落地挑战与蚂蚁金服实践](https://yq.aliyun.com/articles/713292)
+6. [当我们在聊Serverless时你应该知道这些](https://yq.aliyun.com/articles/574222)  阿里 竹涧， 场景 产品 架构
+7. [Serverless 落地挑战与蚂蚁金服实践](https://yq.aliyun.com/articles/713292) 产品
 8. [Serverless 与容器决战在即？有了弹性伸缩就不一样了](https://yq.aliyun.com/articles/717318)  阿里 莫源 未
 9. [分享 KubeCon 2019 （上海）关于 Serverless 及 Knative 相关演讲会议](https://yq.aliyun.com/articles/706537)
    加速：无服务器平台中的冷启动优化; Knative Serving 内部介绍
 10. [函数计算 2.0 重磅发布，Serverless Computing 开启新篇章](https://yq.aliyun.com/articles/719694)
     开发工具 fun，vscode插件
-11. [预留实例简介](https://help.aliyun.com/document_detail/138103.html)
+11. [预留实例简介](https://help.aliyun.com/document_detail/138103.html)  优化
 12. [0基础快速入门运维-EDAS Serverless(FAAS) 产品评测](https://yq.aliyun.com/articles/683675)
-13. [大道至简 - 基于Docker的Serverless探索之旅](https://yq.aliyun.com/articles/59483)
-14. [Serverless下日志采集、存储、分析实践](https://yq.aliyun.com/articles/656329)
+13. [大道至简 - 基于Docker的Serverless探索之旅](https://yq.aliyun.com/articles/59483) 产品
+14. [Serverless下日志采集、存储、分析实践](https://yq.aliyun.com/articles/656329)   最佳实践
+15. [阿里云函数计算 - 事件驱动的serverless计算平台](https://yq.aliyun.com/articles/60966) 
+16. [15+文章详细讲述Serverless：开启函数计算时代！（含PDF下载）](https://yq.aliyun.com/articles/78172)
