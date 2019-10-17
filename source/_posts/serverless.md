@@ -52,16 +52,22 @@ serverless和serverful的对比
 ## 三. 使用的场景
 
 ### 事件驱动以及响应式架构
-IoT物联网;      
-视频转码;
-抽取数据  ETL 大数据;
-人脸识别;
-**固定时间触发**计算资源利用低的业务;
++ IoT物联网,低频请求;      
++ 视频转码;
++ 定制图片;
++ 抽取数据  ETL 大数据;
++ 人脸识别;
++ **固定时间触发**计算资源利用低的业务;
+  夜间或者服务空闲时间来处理繁忙时候的交易数据(大数据)
+  运行批量数据，来生成数据报表(大数据)
++ 定制事件
+  用户注册时发邮件验证邮箱地址
 
 ### 流量突发场景
-短周期内的**流量峰值**
-外卖企业的用餐时期负载高峰，
-安防行业的负载高峰是夜间
++ 短周期内的**流量峰值**
+  外卖企业的用餐时期负载高峰，
+  安防行业的负载高峰是夜间
++ 大数据处理  
 
 ## 四. 挑战和优化
 
@@ -85,20 +91,22 @@ IoT物联网;
 
 
 ## 五. 产品
-1. Serverless
+1. Serverless , Function as a Service
 AWS Lambda
 Google Cloud Functions
 阿里 Function Compute 2.0[10]
 Azure Funcions
 
-2. Serverless Container[6]
+2. Serverless Container[6] , Container as a Service
 AWS Fargate
 Azure ACI
 华为CCI 
 阿里 Serverless Kubernetes、本身是Kubernetes集群
+容器服务 ACS[13]
+Knative 
+
 
 3. 面向应用的 Serverless 服务
-Knative
 [Serverless 应用服务(蚂蚁金服)](https://tech.antfin.com/products/SAS)[7] ，SAS , 兼容标准Knative， toB不toC
 Serverless 应用引擎（阿里云）
 EDAS Serverless[12] Rpc产品
@@ -126,3 +134,5 @@ Apache OpenWhisk(IBM)
     开发工具 fun，vscode插件
 11. [预留实例简介](https://help.aliyun.com/document_detail/138103.html)
 12. [0基础快速入门运维-EDAS Serverless(FAAS) 产品评测](https://yq.aliyun.com/articles/683675)
+13. [大道至简 - 基于Docker的Serverless探索之旅](https://yq.aliyun.com/articles/59483)
+14. [Serverless下日志采集、存储、分析实践](https://yq.aliyun.com/articles/656329)
