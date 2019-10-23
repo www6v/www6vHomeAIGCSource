@@ -23,4 +23,4 @@ categories:
 3. 《从Paxos到Zookeeper分布式一致性原理与实践》 倪超 6.1.7节
 4. [How to do distributed locking](http://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html) Martin Kleppmann  未
 5. [SOFAJRaft-RheaKV 分布式锁实现剖析 | SOFAJRaft 实现原理](https://mp.weixin.qq.com/s/ahcbgxWVVmRwrH9Y4-gXBA)   SOFALab 米麒麟 未
-6. [Redis 总结](../../../2016/11/12/redis/) self
+6. [Redis 总结](../../../../2016/11/12/redis/) self
