@@ -20,6 +20,9 @@ categories:
 
 {% asset_img redis.jpg Redis 总结 %}
 
+{% asset_img redis-lock.jpg redis分布式锁 %}
+
+
  | 原子性  |    一致性 | 隔离性  | 持久性
  :-: | :-:     | :-:      | :-:     | :-: 
  redis |一定的原子性，但不支持回滚   | × | √  | 通过一定策略可以保证持久性

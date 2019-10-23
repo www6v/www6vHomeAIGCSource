@@ -93,11 +93,20 @@ categories:
 DDD 领域驱动设计, 上下文划分
   
 ## 二. 微服务设计模式 
+### 2.1 微服务设计模式
 <div style="text-align: center;">
 ![PatternsRelatedToMicroservices](https://user-images.githubusercontent.com/5608425/66229516-8ea43880-e714-11e9-8f56-0a70cc695882.jpg)
 微服务设计模式    
 </div>    
     
+### 2.2 sidecar [11]
+分离业务逻辑与路由，流控，熔断，幂等，服务发现，鉴权等控制组件。
+
+适用场景：
+老系统改造扩展，Sidebar 进程与服务进程部署在同一个节点；
+多语言混合分布式系统扩展；
+
+Eg. k8s pod中日志采集sidecar
 
 ## 三. The Scale Cube 可伸缩性
 [The Scale Cube](https://akfpartners.com/techblog/2008/05/08/splitting-applications-or-services-for-scale/)
@@ -151,7 +160,7 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 服务通信| Web Service（WSDL，Soap）| REST/私有RPC协议（Dubbo）|REST/gRPC,Envoy xDS， MSI协议等开放协议
 功能扩展性-filter| x| AOP filter<br> Dubbo filter chain<br>   WEB filter/lisnter | Envoy filter
 功能扩展性-微内核| x| Dubbo SPI | K8s CRD, Operator 
-服务治理| ESB        | 微服务/API网关（SpringCloud），去中心化 | 服务网格（istio， Linked） 分布式
+服务治理| ESB        | 微服务/API网关（SpringCloud），去中心化, sidecar | 服务网格（ [istio](../../../../2019/07/02/istio/) ， Linked） 分布式
 应用运行环境| 物理机/虚拟机|虚拟机/容器 | Kubernete（操作系统）+ Serverless（Knative）
 基础设施| IDC | 公有云/私有云 | 无边界的云（多云/混合云、 云+边+端）
 总结|重  | 轻, 快速   | 开放、融合  
@@ -169,6 +178,7 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 8. [微服务学习资料汇总](https://www.infoq.cn/article/2014/07/microservice-learning-resources/)  good
 9. [微服务架构技术栈选型手册](https://www.infoq.cn/article/micro-service-technology-stack/?utm_source=infoq&utm_medium=popular_widget&utm_campaign=popular_content_list&utm_content=homepage) 未
 10. [从 SOA 到微服务，企业分布式应用架构在云原生时代如何重塑？](https://mp.weixin.qq.com/s/zl0Z-bCoLDFGD8GFYh68CQ) 阿里 易立 good
+11. [云原生时代，分布式系统设计必备知识图谱（内含22个知识点）](https://mp.weixin.qq.com/s?__biz=MzUzNzYxNjAzMg==&mid=2247486600&idx=1&sn=0ad92a1fe535f141fe2e8c87ffbd1229&chksm=fae50747cd928e51c05c41d2cc206069babbe9dfdba5957c52ac6e77cb754192169bb6b3e898&scene=0&xtrack=1#rd) 杨泽强（竹涧） good
 
 
 
