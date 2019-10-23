@@ -48,6 +48,9 @@ categories:
 ## 三. 数组排序算法 O(n)
 {% asset_img  arraySortAlg.JPG  图3.数组排序算法 %}
 
+
+**稳定排序**:有两个排序关键字的时候，稳定排序可以让第一个关键字排序的结果服务于第二个关键字排序中数值相等的那些数. [5][7]
+
 ## 四 =  二 +  三
 <div style="text-align: center;">
 ![图4.BigO总结](https://user-images.githubusercontent.com/5608425/64620785-19945a80-d417-11e9-97bf-5af847bdbd5a.png)
@@ -74,6 +77,7 @@ Binary， Binomial， Fibonacci， Strict Fibonacci（性能好，用的比较�
 4.  [big O](https://www.bigocheatsheet.com/) good
 5.  [董的博客 - 算法之排序算法](http://dongxicheng.org/structure/sort/)   稳定排序，原地排序
 6.  [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)  good
+7.  [五分钟小知识：为什么要分稳定排序和非稳定排序？](https://mp.weixin.qq.com/s/UuMzvp3hoqRx5j4slvpPUw)
 
 
 
