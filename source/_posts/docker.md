@@ -40,6 +40,24 @@ lrwxrwxrwx 1 1337 1337 0 Aug  8 16:05 user -> user:[4026531837]
 lrwxrwxrwx 1 1337 1337 0 Aug  8 16:05 uts -> uts:[4026533008]
 ```
 
+## 三. docker run的背后 [6]
+```
+ $ docker run -i -t ubuntu /bin/bash
+```
+
+When you run this command, the following happens (assuming you are using the default registry configuration):
+
+1. If you do not have the ubuntu image locally, Docker pulls it from your configured registry, as though you had run docker pull ubuntu manually.
+
+2. **Docker creates a new container, as though you had run a docker container create command manually.**
+
+3. **Docker allocates a read-write filesystem to the container, as its final layer. This allows a running container to create or modify files and directories in its local filesystem.**
+
+4. Docker creates a network interface to connect the container to the default network, since you did not specify any networking options. This includes assigning an IP address to the container. By default, containers can connect to external networks using the host machine’s network connection.
+
+5. Docker starts the container and executes /bin/bash. Because the container is running interactively and attached to your terminal (due to the -i and -t flags), you can provide input using your keyboard while the output is logged to your terminal.
+
+6. When you type exit to terminate the /bin/bash command, the container stops but is not removed. You can start it again or remove it.
 
 
 ## 参考: 
@@ -49,3 +67,4 @@ lrwxrwxrwx 1 1337 1337 0 Aug  8 16:05 uts -> uts:[4026533008]
 3. 《深入剖析Kubernetes - 07  白话容器基础（三）：深入理解容器镜像》 张磊
 4. 《深入剖析Kubernetes - 08  白话容器基础（四）：重新认识Docker容器》 张磊
 5. [kubernetes 最佳实践：处理容器数据磁盘被写满](https://tencentcloudcontainerteam.github.io/2019/06/08/kubernetes-best-practice-handle-disk-full/)
+6. [Docker overview](https://docs.docker.com/engine/docker-overview/)
