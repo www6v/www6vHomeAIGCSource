@@ -10,5 +10,14 @@ categories:
   - Split Brain   
 ---
 
+**关键词**: 脑裂, fence, Quorums , epoch
+
 {% asset_img splitBrain.jpg Split Brain %}
+
+
+kafka脑裂现象: 存在多个controller
+
+raft脑裂
+
+
 
