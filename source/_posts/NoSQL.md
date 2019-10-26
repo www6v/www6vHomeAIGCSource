@@ -109,7 +109,9 @@ Join
 > 参考实现  <<Hbase二级索引>>
  
 ## 参考：
-1.  [NoSQL数据库的分布式算法](http://blog.nosqlfan.com/html/4139.html)     
+1.  [NoSQL数据库的分布式算法](https://my.oschina.net/juliashine/blog/88173)   论文 good 
+    [NoSQL数据库的分布式算法](https://blog.csdn.net/wxliu1989/article/details/38415933)
+    [DISTRIBUTED ALGORITHMS IN NOSQL DATABASES](https://highlyscalable.wordpress.com/2012/09/18/distributed-algorithms-in-nosql-databases/) 原文
 2.  [NoSQL 数据建模技术](http://coolshell.cn/articles/7270.html)   good    
 3.  [分布式系统的数据结构](http://www.nosqlnotes.net/archives/134)      
 4.  [优雅的Bitcask](http://blog.nosqlfan.com/html/955.html)      
@@ -118,6 +120,8 @@ Join
 7.  [HBase二级索引与Join](https://www.oschina.net/question/12_32573)  
 8.  [cassandra框架模型之二——存储机制 CommitLog MemTable SSTable](https://www.cnblogs.com/bonelee/p/6278154.html)  一致性
 
+### Paper
+朱涛, 郭进伟, 周欢, 周烜, 周傲英. 分布式数据库中一致性与可用性的关系[J]. 软件学报, 2018, 29(1): 131-149.http://www.jos.org.cn/1000-9825/5433.htm
   
  
 
