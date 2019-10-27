@@ -67,7 +67,7 @@ categories:
 
 可定制的一致性|协议|特性|举例
 :-:|:-:|:-:|:-:
-可定制的一致性|R+W>N[ReadQurum-WriteQurum]| 可定制 | [Dynamo, Cassandra](../../../2018/07/19/NoSQL/)  定制灵活
+可定制的一致性|R+W>N[ReadQurum-WriteQurum]| 可定制 | [Dynamo, Cassandra](../../../../2018/07/19/NoSQL/)  定制灵活
 	
 ## 二. 柔性事务 最终一致性
 
@@ -115,6 +115,7 @@ table th:first-of-type {
 state machine replication && primary-copy
 </div>
 
+> 复制状态机(state machine replication): 多个节点上，从相同的初始状态开始，执行相同的一串命令，产生相同的最终状态
 > zk 是 primary-copy的； mysql是primary-copy， slave relay log
 
 
