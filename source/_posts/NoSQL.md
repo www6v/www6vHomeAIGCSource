@@ -1,5 +1,5 @@
 ---
-title: NoSQL知识点
+title: NoSQL总结
 date: 2018-07-19 10:30:36
 tags:
   - Nosql
@@ -10,12 +10,15 @@ categories:
   - 存储 
   - Nosql  
 ---
-                                                                            
+
+<p></p>
+<!-- more -->
+
 ## 1. NoSQL数据结构
 大规模数据时，工程实践中常见的数据结构一般有两种：哈希表与平衡树
 **平衡树:** B树, 同时适应磁盘和内存.  复杂度为O(logN).
 **哈希表:** Hash数据结构可以高效地执行根据主键的插入、删除以及查找操作. 但不支持范围查询功能，不支持快照。复杂度为O(N)。
-<!-- more -->   
+   
  
 **存储引擎：**
 哈希表对应的存储引擎是随机读取存储引擎. 一致性Hash分 桶，每个桶内使用Log-Structured Hash Table存储数据。 Eg. Bitcask
@@ -107,7 +110,9 @@ Join
 + NoSQL Join：一般根据应用来决定join的实现。
 
 > 参考实现  <<Hbase二级索引>>
- 
+
+
+
 ## 参考：
 1.  [NoSQL数据库的分布式算法](https://my.oschina.net/juliashine/blog/88173)   论文 good 
     [NoSQL数据库的分布式算法](https://blog.csdn.net/wxliu1989/article/details/38415933)
@@ -120,8 +125,6 @@ Join
 7.  [HBase二级索引与Join](https://www.oschina.net/question/12_32573)  
 8.  [cassandra框架模型之二——存储机制 CommitLog MemTable SSTable](https://www.cnblogs.com/bonelee/p/6278154.html)  一致性
 
-### Paper
-朱涛, 郭进伟, 周欢, 周烜, 周傲英. 分布式数据库中一致性与可用性的关系[J]. 软件学报, 2018, 29(1): 131-149.http://www.jos.org.cn/1000-9825/5433.htm
   
  
 
