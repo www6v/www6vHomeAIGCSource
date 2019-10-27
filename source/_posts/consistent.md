@@ -31,8 +31,8 @@ categories:
 强一致性|2阶段,3阶段 #1| 延迟大，吞吐低。全局锁资源| JTA(XA)
 强一致性|paxos #1|难理解，延迟大，吞吐中等，全局锁资源|分布式锁系统Chubby			
 顺序一直性| |类似多线程程序执行顺序的模型| Zookeeper的读 <br>1.两个主流程，三个阶段 <br> 2.Zab（Qurum）:2f+1个节点，允许f个节点失败
-最终一致性(因果一致性)|时钟向量Vector clock[11][12] || 微信朋友圈的评论, Dynamo
-最终一致性|反熵,gossip[9] |  | Cassandra， BT(Bit-Torrent)
+最终一致性(因果一致性)|时钟向量Vector clock[11][12] 图1 || 微信朋友圈的评论, Dynamo
+最终一致性（反熵）|,gossip[9] |  | Cassandra， BT(Bit-Torrent)
 最终一致性|raft[10]   | 相对Paxos简单。主从，三个阶段   | etcd
 最终一致性|Master-Slave   |延迟低，吞吐高<br>主动推送/被动拉取  | Mysql 
 最终一致性|Master-Master  |延迟低，吞吐高                      | Mysql	
@@ -70,6 +70,25 @@ table th:first-of-type {
   width: 100px;
 }
 </style>
+
+## 四. 时钟
+
+<div style="text-align: center;">
+![vectorClock](https://user-images.githubusercontent.com/5608425/67629891-be300600-f8b8-11e9-931c-e0fa265f2f78.jpg)
+图1. 向量时钟 vector-clock
+
+![logicClock](https://user-images.githubusercontent.com/5608425/67629944-a9a03d80-f8b9-11e9-820e-7bbf4fccea20.jpg)
+图2. 逻辑时钟 logic-clock
+</div>
+
+## 五.  state machine && primary-copy
+
+<div style="text-align: center;">
+![state-machine-primary-back](https://user-images.githubusercontent.com/5608425/67629999-09e3af00-f8bb-11e9-88fb-10142745bfdd.png)
+state machine replication && primary-copy
+</div>
+
+> zk 是 primary-copy的； mysql是primary-copy， slave relay log
 
 
 ## 参考：
