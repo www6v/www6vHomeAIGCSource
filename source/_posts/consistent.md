@@ -31,7 +31,7 @@ categories:
 强一致性|2阶段,3阶段 #1| 延迟大，吞吐低。全局锁资源| JTA(XA)
 强一致性|paxos #1|难理解，延迟大，吞吐中等，全局锁资源|分布式锁系统Chubby			
 顺序一直性| |类似多线程程序执行顺序的模型| Zookeeper的读 <br>1.两个主流程，三个阶段 <br> 2.Zab（Qurum）:2f+1个节点，允许f个节点失败
-因果一致性|时钟向量Vector clock[11][12] || 微信朋友圈的评论, Dynamo
+最终一致性(因果一致性)|时钟向量Vector clock[11][12] || 微信朋友圈的评论, Dynamo
 最终一致性|反熵,gossip[9] |  | Cassandra， BT(Bit-Torrent)
 最终一致性|raft[10]   | 相对Paxos简单。主从，三个阶段   | etcd
 最终一致性|Master-Slave   |延迟低，吞吐高<br>主动推送/被动拉取  | Mysql 
