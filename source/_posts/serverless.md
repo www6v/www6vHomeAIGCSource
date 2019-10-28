@@ -51,6 +51,8 @@ serverless和serverful的对比
 
 ## 三. 使用的场景
 
+[Serverless应用场景](https://help.aliyun.com/document_detail/65565.html) 阿里云文档 未
+
 ### 事件驱动以及响应式架构
 + IoT物联网,低频请求;      
 + 视频转码;
