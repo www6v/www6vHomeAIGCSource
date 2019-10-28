@@ -33,6 +33,6 @@ categories:
 
 ## 参考:
 1. [数据中台之结构化大数据存储设计](https://yq.aliyun.com/articles/715254?spm=a2c4e.11155435.0.0.2eba5b6e3DhL3A)
-2. [NoSQL知识点](../../../../2018/07/19/NoSQL/)
+2. [NoSQL总结](../../../../2018/07/19/NoSQL/) self
 3. [日志结构的合并树 The Log-Structured Merge-Tree](https://www.cnblogs.com/siegfang/archive/2013/01/12/lsm-tree.html)
 4. [【Paper笔记】The Log structured Merge-Tree（LSM-Tree）](https://kernelmaker.github.io/lsm-tree)

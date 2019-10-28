@@ -55,7 +55,7 @@ top: true
 
  总结 | 知识点   
  -|-
- [NoSQL知识点](../../../../2018/07/19/NoSQL/)   |  1. Key-Value 键值对 <br>2. “列族”（column families）数据库<br>3. 文档数据库<br> 4.图式数据库 
+ [NoSQL总结](../../../../2018/07/19/NoSQL/)   |  1. Key-Value 键值对 <br>2. “列族”（column families）数据库<br>3. 文档数据库<br> 4.图式数据库 
  [文件IO总结](../../../../2017/04/23/fileIO/)    |  mmap，NIO(FileChannel)
  [Redis总结](../../../../2016/11/12/redis/)     | AOF，RDB 
  [Kafka总结](../../../../2016/05/11/kafka/)     | Partition的Segment中的index文件，data文件 
