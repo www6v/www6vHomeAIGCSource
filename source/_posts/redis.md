@@ -42,24 +42,21 @@ mysql  |√       |√    |√    | √
 《Redis 深度历险：核心原理与应用实践》 钱文品
 1. 原理 4：雷厉风行 —— 管道
 2. 原理 5：同舟共济 —— 事务
-3. 
-4. 
-5. 原理 8：有备无患 —— 主从同步
-6. 原理 3：未雨绸缪 —— 持久化
+3. 原理 8：有备无患 —— 主从同步
+4. 原理 3：未雨绸缪 —— 持久化
 
 ---
-
-7. 《Redis实战》 黄健宏 3.7 ,4.4, 6.2
-8. 
-9. [美团针对Redis Rehash机制的探索和实践](https://www.cnblogs.com/meituantech/p/9376472.html)
-10. [Redis 数据结构和对象系统，记住这 12 张图就够啦！](https://mp.weixin.qq.com/s/fO0yoHGqtFH5lpu6688h2w)
-11. [七问Redis，才知道我与技术大牛的差距在哪里 ](https://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650780240&idx=1&sn=49fb636a97a3c21fec7d2e2b59bea09f&chksm=f3f907c5c48e8ed3aec22d5c9b227e08916da9c4318524b435335340dc9852b314dd8f3abf8b&scene=0&xtrack=1#rd)
-12. [Mysql事务总结](../../../../2015/02/21/transaction/) self
+5. 《Redis实战》 黄健宏 3.7 ,4.4, 6.2
+6. [Redis 数据结构和对象系统，记住这 12 张图就够啦！](https://mp.weixin.qq.com/s/fO0yoHGqtFH5lpu6688h2w)
+7. [七问Redis，才知道我与技术大牛的差距在哪里 ](https://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650780240&idx=1&sn=49fb636a97a3c21fec7d2e2b59bea09f&chksm=f3f907c5c48e8ed3aec22d5c9b227e08916da9c4318524b435335340dc9852b314dd8f3abf8b&scene=0&xtrack=1#rd) good
+8. [Mysql事务总结](../../../../2015/02/21/transaction/) self
+9. [美团针对Redis Rehash机制的探索和实践](https://www.cnblogs.com/meituantech/p/9376472.html) good
 
 ---
 
 ### 回收策略
 
-13. [Redis内存回收机制，把我整懵了...](http://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655826994&idx=2&sn=c7efe2b7cdd350f1b3c6fb72cc8c1cd7&chksm=bd74f9e58a0370f3fdbe7c81365b73eafcfc77c4856ce865d43ab8502e677a6100ef7a24d193&scene=0&xtrack=1#rd)
-14. [Kafka日志清理之Log Deletion](https://blog.csdn.net/u013256816/article/details/80418297)
+10. [Redis内存回收机制，把我整懵了...](http://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655826994&idx=2&sn=c7efe2b7cdd350f1b3c6fb72cc8c1cd7&chksm=bd74f9e58a0370f3fdbe7c81365b73eafcfc77c4856ce865d43ab8502e677a6100ef7a24d193&scene=0&xtrack=1#rd)
+11. [Kafka日志清理之Log Deletion](https://blog.csdn.net/u013256816/article/details/80418297)
+
 
