@@ -21,7 +21,7 @@ categories:
 1. 排它性
 2. 超时释放锁
 3. 高可用，锁集群容错
-4. 可重入锁, 避免死锁
+4. 可重入锁, 避免死锁[8][9]
 5. 乐观锁， 悲观锁
 
 ## 参考：
@@ -34,6 +34,12 @@ categories:
 6. [Redis 总结](../../../../2016/11/12/redis/) self
 7. [分布式服务总结 分布式锁](https://www.jianshu.com/p/31e85a18a9e7)  未
    通过栅栏(fencing)使得锁更安全, fencing token, 乐观锁
+8. [Redis实现分布式锁，以及可重入锁思路](https://www.jianshu.com/p/1c5c1a592088)   
+   唯一id I. uuid  II. 分布式线程中标识唯一线程：MAC地址 + jvm进程ID + 线程ID 
+9. [分布式锁（一）基于Zookeeper实现可重入分布式锁](https://blog.csdn.net/u013278314/article/details/82715716)   
+
+
+
 
 
 
