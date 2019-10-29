@@ -9,9 +9,11 @@ categories:
   - Kubernetes  
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img   kubenetes-arch.jpg  Kubenetes架构  %}
 
-<!-- more -->
 
 {% asset_img   Kubenetes.jpg  Kubenetes总结  %}
 
@@ -34,6 +36,10 @@ categories:
 ![控制器模型](https://user-images.githubusercontent.com/5608425/63924251-85bba980-ca7a-11e9-8a3a-4cf852dfe86c.JPG)  控制器模型
 </div>
 
+
+补遗:
+1. kube-proxy
+   网络配置
 
 ## 参考:
 

@@ -9,14 +9,17 @@ categories:
   - Kubernetes  
 ---
 
+<p></p>
+<!-- more -->
 
 {% asset_img   k8sResource.jpg  Kubenetes资源  %} 
-
-<!-- more -->
 
 {% asset_img   k8sDeployment.jpg  Kubenetes服务部署  %} 
 {% asset_img   k8sService.jpg  Kubenetes服务  %} 
 {% asset_img   k8sStatus.jpg  Kubenetes状态  %} 
+
+补遗:
+1. Service中的ClusterIP是VIP, 虚拟IP
 
 ## 参考:
 
