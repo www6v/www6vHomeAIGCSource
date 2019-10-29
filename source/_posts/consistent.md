@@ -115,8 +115,18 @@ table th:first-of-type {
 state machine replication && primary-copy
 </div>
 
-> 复制状态机(state machine replication): 多个节点上，从相同的初始状态开始，执行相同的一串命令，产生相同的最终状态
-> zk 是 primary-copy的； mysql是primary-copy， slave relay log
+> **复制状态机(state machine replication)**: 多个节点上，从相同的初始状态开始，执行相同的一串命令，产生相同的最终状态
+  状态机 + 命令 -> 重放
+
++ **state machine replication**例子
+  mysql主从复制 slave relay log, **基于sql语句的复制**[9]; 
+  redis AOF 
+
++ **primary-copy**例子:
+  zookeeper的主从复制;  
+  mysql主从复制 slave relay log, **基于行的复制**[9]; 
+  redis RDB 快照;
+  
 
 
 ## 参考：
@@ -130,6 +140,7 @@ state machine replication && primary-copy
 6. ENode 1.0 - Saga的思想与实现 汤雪华
 7. 《大数据日知录：架构与算法》 张俊林
 8. [Base: An Acid Alternative](https://queue.acm.org/detail.cfm?id=1394128)  Ebay模式  good
+9. [mysql](../../../../2019/09/10/mysql/) self
  
 ### Fescar && TCC
 1. 分布式事务之TCC事务 梁钟霖
