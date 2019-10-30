@@ -39,10 +39,21 @@ categories:
 16. [稳定性总结](../../../../2017/05/09/stability/)  self
 
 ### Runtime & Middleware & OS
-1. [热点 Key 问题的发现与解决](https://help.aliyun.com/document_detail/67252.html)
+1. [热点 Key 问题的发现与解决](https://help.aliyun.com/document_detail/67252.html) 阿里 文档
+
+> 通常的解决方案主要集中在对**客户端**和**Server端**进行相应的改造。 
+  I. 服务端本地缓存.
+  II. 服务端分布式缓存。
+
+> 阿里云方案 (整体看是用中间件 负载均衡 水平扩展)   
+  I. 读写分离方案解决热读
+     写 热备; 读 存储水平扩展
+  II. 热点数据解决方案
+     该方案通过主动**发现热点**并对其进行**存储**来解决热点Key的问题。
+
 2. [UCloud高可用数据库UDB主从复制延时的解决](https://www.admin5.com/article/20190404/902952.shtml)
 
 ### Virtualization & Storage & Networking
-1. [Kubernetes 网络疑难杂症排查分享](https://tencentcloudcontainerteam.github.io/2019/08/12/troubleshooting-with-kubernetes-network/) 
-2. [kubernetes 最佳实践：处理容器数据磁盘被写满](https://tencentcloudcontainerteam.github.io/2019/06/08/kubernetes-best-practice-handle-disk-full/)
+1. [Kubernetes 网络疑难杂症排查分享](https://tencentcloudcontainerteam.github.io/2019/08/12/troubleshooting-with-kubernetes-network/)  腾讯云 good
+2. [kubernetes 最佳实践：处理容器数据磁盘被写满](https://tencentcloudcontainerteam.github.io/2019/06/08/kubernetes-best-practice-handle-disk-full/) 腾讯云
 3. [百度大规模战略性混部系统演进](https://www.infoq.cn/article/aEut*ZAIffp0q4MSKDSg)

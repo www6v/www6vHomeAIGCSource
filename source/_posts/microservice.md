@@ -22,7 +22,7 @@ categories:
    [使用 API 网关构建微服务](https://www.infoq.cn/article/construct-micro-service-using-api-gateway/)
 
 ### 2. 服务容错,
-   + 重试机制
+   + 超时重试机制[self 1][self 2]
    + 限流
    + 熔断机制
    + 隔离
@@ -180,6 +180,9 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 10. [从 SOA 到微服务，企业分布式应用架构在云原生时代如何重塑？](https://mp.weixin.qq.com/s/zl0Z-bCoLDFGD8GFYh68CQ) 阿里 易立 good
 11. [云原生时代，分布式系统设计必备知识图谱（内含22个知识点）](https://mp.weixin.qq.com/s?__biz=MzUzNzYxNjAzMg==&mid=2247486600&idx=1&sn=0ad92a1fe535f141fe2e8c87ffbd1229&chksm=fae50747cd928e51c05c41d2cc206069babbe9dfdba5957c52ac6e77cb754192169bb6b3e898&scene=0&xtrack=1#rd) 杨泽强（竹涧） good
 
+## self
+1. [分布式服务框架容错机制](../../../../2015/06/17/soaTolerate/) self
+2. [超时和重试总结](../../../../2016/01/17/timeout/) self
 
 
 
