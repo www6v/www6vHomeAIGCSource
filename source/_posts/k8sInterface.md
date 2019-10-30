@@ -9,10 +9,11 @@ categories:
   - Kubernetes  
 ---
 
+<p></p>
+<!-- more -->
 
 {% asset_img   k8sInterface.jpg  Kubenetes开放接口  %}
 
-<!-- more -->
 
 <div style="text-align: center;">
 ![k8s-interface](https://user-images.githubusercontent.com/5608425/65022324-51455a00-d963-11e9-9338-26675af8d3b7.JPG)  Kubenetes开放接口
