@@ -20,10 +20,10 @@ categories:
 
 基础: 网桥
 
-### 2.1 同一个Node中的Pod之间的一次通信
+### 2.1 同节点pod通信  
+通过**网桥**通信
 
-
-### 2.2 不同Node中的Pod之间通信
+### 2.2 不同节点中的Pod通信
 CNI规范 
 Flannel
 Calico
