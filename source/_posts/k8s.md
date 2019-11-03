@@ -51,3 +51,5 @@ categories:
 8. [第5 章 ： 应用编排与管理：核心原理](https://edu.aliyun.com/lesson_1651_13080?spm=5176.254948.1334973.12.2c12cad2AHzzTw#_13080)
 9. [第6 章 ： 应用编排与管理： Deployment](https://edu.aliyun.com/lesson_1651_13081?spm=5176.10731542.0.0.e7a120beywNIVX#_13081)
 10. <<深入剖析Kubernetes - 16  编排其实很简单：谈谈“控制器”模型>> 张磊
+11. [第8 章 ： 应用配置管理](https://edu.aliyun.com/lesson_1651_17058#_17058) 未
+    
