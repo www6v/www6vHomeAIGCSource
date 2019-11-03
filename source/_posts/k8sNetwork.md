@@ -58,3 +58,6 @@ userspace 代理模式
 ## 参考:
 
 1. [深入理解 Kubernetes之：Service](https://www.kubernetes.org.cn/5992.html) good
+2. [第13 章 ： Kubernetes网络概念及策略控制](https://edu.aliyun.com/lesson_1651_13087#_13087) CNCF × Alibaba 云原生技术公开课
+
+
