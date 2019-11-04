@@ -1,5 +1,5 @@
 ---
-title: Kubernetes Workloads
+title: Kubernetes资源对象
 date: 2019-06-09 17:13:52
 tags:
   - Kubenetes
