@@ -21,6 +21,26 @@ Kubernetes服务发现架构
 
 {% asset_img   k8sService.jpg  Kubernetes服务  %} 
 
+### 1.1 通过DNS发现服务
+> 每个Service对象相关的DNS记录有两个：
+{SVCNAME}.{NAMESPACE}.{CLUSTER_DOMAIN}
+{SVCNAME}.{NAMESPACE}.svc.{CLUSTER_DOMAIN}
+
+```
+root@kubia-9nvx7:/# cat /etc/resolv.conf
+nameserver 172.17.0.2
+search default.svc.cluster.local svc.cluster.local cluster.local
+options ndots:5
+```
+
+```
+（1）拥有ClusterIP的Service资源，要具有以下类型的资源记录
+A记录：<service>.<ns>.svc.<zone>. <ttl>  IN  A  <cluster-ip>
+（2）Headless类型的Service资源，要具有以下类型的资源记录
+A记录：<service>.<ns>.svc.<zone>. <ttl> IN A <endpoint-ip>
+（3）ExternalName类型的Service资源，要具有CNAME类型的资源记录
+CNAME记录：<service>.<ns>.svc.<zone>. <ttl> IN CNAME <extname>.
+```
 
 补遗:
 1. Service中的ClusterIP是VIP, 虚拟IP
@@ -49,3 +69,4 @@ userspace 代理模式
 1. [深入理解 Kubernetes之：Service](https://www.kubernetes.org.cn/5992.html) good
 2. [第14 章 ： Kubernetes Services](https://edu.aliyun.com/lesson_1651_17064#_17064) 
 3. [《Kubenetes in Action》](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)  七牛容器云团队
+4. [Kubernetes中的服务发现机制与方式](https://mp.weixin.qq.com/s/3THiWFt52tZckFGxg3Cx-g) 马永亮 
