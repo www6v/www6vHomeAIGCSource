@@ -35,10 +35,6 @@ categories:
 </div>
 
 
-补遗:
-1. kube-proxy
-   网络配置
-
 ## 参考:
 
 1. [《Kubenetes in Action》](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)  七牛容器云团队
