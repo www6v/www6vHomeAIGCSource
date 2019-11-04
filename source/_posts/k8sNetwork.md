@@ -54,8 +54,6 @@ categories:
 
 ## 参考:
 1. [第13 章 ： Kubernetes网络概念及策略控制](https://edu.aliyun.com/lesson_1651_13087#_13087) CNCF × Alibaba 云原生技术公开课
-
-
 5. [calico网络原理及与flannel对比](https://blog.csdn.net/hxpjava1/article/details/79566192)
 6. [Kubernetes CNI网络最强对比：Flannel、Calico、Canal和Weave](https://mp.weixin.qq.com/s/GQc8XPV4MaCWiTcN2wVzbw)
 8. <<趣谈网络协议 - 30容器网络之Flannel：每人一亩三分地>> 刘超

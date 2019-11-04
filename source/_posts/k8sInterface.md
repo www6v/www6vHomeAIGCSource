@@ -30,6 +30,7 @@ categories:
 
 ## self 
 1. [Kubernetes网络](../../../../2019/08/23/k8sNetwork/)
+2. [Kubernetes存储](../../../../2019/09/01/k8sStorage/)
 
 
 
