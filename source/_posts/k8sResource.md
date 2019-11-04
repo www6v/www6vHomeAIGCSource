@@ -1,5 +1,5 @@
 ---
-title: Kubernetes资源
+title: Kubernetes Workloads
 date: 2019-06-09 17:13:52
 tags:
   - Kubenetes
@@ -12,10 +12,11 @@ categories:
 <p></p>
 <!-- more -->
 
-{% asset_img   k8sResource.jpg  Kubenetes资源  %} 
+{% asset_img   k8sResource.jpg  Kubenetes workloads  %} 
 
 {% asset_img   k8sDeployment.jpg  Kubenetes服务部署  %} 
-{% asset_img   k8sService.jpg  Kubenetes服务  %} 
+
+
 {% asset_img   k8sStatus.jpg  Kubenetes状态  %} 
 
 补遗:
