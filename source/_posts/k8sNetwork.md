@@ -25,7 +25,7 @@ categories:
 ### 2.1 同节点pod通信  
 通过**网桥**通信
 
-<div style="height: 80%; width: 80%; text-align: center;">
+<div style="text-align: center; width:60%; height: 60%">
 ![pod-to-pod-in-node](https://user-images.githubusercontent.com/5608425/68114098-31c4b980-ff30-11e9-9dbd-163452ec51bc.jpg)
 图2. 同节点pod通信
 </div>
@@ -33,8 +33,8 @@ categories:
 ### 2.2 不同节点中的Pod通信（跨主机网络通讯）
 参考 图1
 
-**CNI规范** 
-1. Flannel
+
+1. **CNI实现**  Flannel
 
 <div style="text-align: center;">
 ![flannel-udp](https://user-images.githubusercontent.com/5608425/65022322-50acc380-d963-11e9-8476-5e5ab22c8b4c.JPG)  
@@ -44,7 +44,7 @@ categories:
 图4. flannel-vxlan模式
 </div>
 
-2. Calico
+2. **CNI实现**  Calico
 
 ## 三. Pod与Service之间的网络
 参考[self 1]
@@ -52,13 +52,23 @@ categories:
 
 ## 四. Internet与Service之间的网络
 ### 4.1 Service到Internet 
-    iptables执行源NAT( SNAT )
+iptables执行源NAT( SNAT )
 
 ### 4.2 Internet到Service
-    I. NodePort  四层
-    II. Service LoadBalancer  四层
-    III. Ingress Controller  七层
+1. NodePort  四层
 
+<div style="text-align: center; width:60%; height: 60%">
+![node-port](https://user-images.githubusercontent.com/5608425/68234082-7d17be80-003b-11ea-891f-90a9e174bbc8.png)
+</div>
+
+2. Service LoadBalancer  四层
+
+3. Ingress Controller  七层
+
+<div style="text-align: center; width:60%; height: 60%">
+![ingress-1](https://user-images.githubusercontent.com/5608425/68234079-7c7f2800-003b-11ea-8ada-2c034db8b25a.png)
+![ingress-2](https://user-images.githubusercontent.com/5608425/68234081-7c7f2800-003b-11ea-804c-1c5d87164d06.png)   
+</div>
 
 ## 参考:
 1. [第13 章 ： Kubernetes网络概念及策略控制](https://edu.aliyun.com/lesson_1651_13087#_13087) CNCF × Alibaba 云原生技术公开课
