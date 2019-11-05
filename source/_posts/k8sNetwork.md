@@ -34,7 +34,7 @@ categories:
 参考 图1
 
 
-1. **CNI实现**  Flannel
+1. **CNI插件**  Flannel
 
 <div style="text-align: center;">
 ![flannel-udp](https://user-images.githubusercontent.com/5608425/65022322-50acc380-d963-11e9-8476-5e5ab22c8b4c.JPG)  
@@ -44,7 +44,7 @@ categories:
 图4. flannel-vxlan模式
 </div>
 
-2. **CNI实现**  Calico
+2. **CNI插件**  Calico
 
 ## 三. Pod与Service之间的网络
 参考[self 1]
