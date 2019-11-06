@@ -108,6 +108,10 @@ iptables执行源NAT( SNAT )
 
 2. Service LoadBalancer  四层
 
+<div style="text-align: center; width:60%; height: 60%">
+![loadbalancer](https://user-images.githubusercontent.com/5608425/68290997-e216f700-00c3-11ea-82d3-b5e3f4c565a1.jpg)
+</div>
+
 3. Ingress Controller  七层
 
 <div style="text-align: center; width:60%; height: 60%">
