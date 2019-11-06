@@ -32,14 +32,15 @@ categories:
 
 ### 2.2 不同节点中的Pod通信（跨主机网络通讯）
 
-1. **CNI插件  Flannel**
+### 2.2.1  Overlay (Flannel)
+1. **Flannel**
 
 <div style="text-align: center;">
 ![flannel-udp](https://user-images.githubusercontent.com/5608425/65022322-50acc380-d963-11e9-8476-5e5ab22c8b4c.JPG)  
 图3. flannel-UDP模式
 </div>
 
-**flannel-UDP模式**
+**flannel-UDP模式(三层overlay)**
 原理： 
     fannelId进程封装/解开虚拟网卡docker0,fannel0的数据;
     三层的overlay网络;
@@ -53,7 +54,11 @@ categories:
 图4. flannel-vxlan模式
 </div>
 
-**flannel-vxlan模式**
+**flannel-vxlan模式(两层虚拟网络)**
+
+> VXLAN 的覆盖网络的设计思想是：在现有的三层网络之上，“覆盖”一层虚拟的、由内核 VXLAN
+模块负责维护的二层网络，使得连接在这个 VXLAN 二层网络上的“主机”（虚拟机或者容器都可
+以）之间，可以像在同一个局域网（LAN）里那样自由通信
 
 组件： 
     VTEP（VXLAN Tunnel End Point）设备; fannel.1; 
@@ -69,16 +74,18 @@ categories:
   flannel-UDP模式和flannel-vxlan模式都可以称作"隧道"机制；
   都是是overlay的。   
 
-2. **CNI插件  Calico**
+### 2.2.2 纯3层网络方案
+1. **Flannel host-gw**
 
+2. **Calico**
 原理:  
   基于iptable/linux kernel包转发;
   根据iptables规则进行路由转发;
-  非overlay
-
+  非overlay;
 组件:
-  路由规则; iptables的配置组件Felix  
+  路由规则; iptables的配置组件Felix;  
   路由广播组件BGP Speaker;  
+  
 
 3. **Host Network模式**
 容器的网络和宿主机的网络打平，在同一层;
@@ -123,6 +130,7 @@ iptables执行源NAT( SNAT )
 《32  浅谈容器网络》
 《33  深入解析容器跨主机网络》 
 《34  Kubernetes网络模型与CNI网络插件》 
+《35  解读Kubernetes三层网络方案》
  
 
 

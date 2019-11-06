@@ -62,9 +62,13 @@ When you run this command, the following happens (assuming you are using the def
 
 ## 参考: 
 
-1. 《深入剖析Kubernetes - 05  白话容器基础（一）：从进程说开去》 张磊
-2. 《深入剖析Kubernetes - 06  白话容器基础（二）：隔离与限制》 张磊
-3. 《深入剖析Kubernetes - 07  白话容器基础（三）：深入理解容器镜像》 张磊
-4. 《深入剖析Kubernetes - 08  白话容器基础（四）：重新认识Docker容器》 张磊
-5. [kubernetes 最佳实践：处理容器数据磁盘被写满](https://tencentcloudcontainerteam.github.io/2019/06/08/kubernetes-best-practice-handle-disk-full/)
+深入剖析Kubernetes  张磊
+1. 《05  白话容器基础（一）：从进程说开去》 
+2. 《06  白话容器基础（二）：隔离与限制》 张磊
+3. 《07  白话容器基础（三）：深入理解容器镜像》
+4. 《08  白话容器基础（四）：重新认识Docker容器》
+
+----
+
+5. [kubernetes 最佳实践：处理容器数据磁盘被写满](https://tencentcloudcontainerteam.github.io/2019/06/08/kubernetes-best-practice-handle-disk-full/)  腾讯容器团队
 6. [Docker overview](https://docs.docker.com/engine/docker-overview/)
