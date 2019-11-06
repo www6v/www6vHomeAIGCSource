@@ -31,20 +31,41 @@ categories:
 </div>
 
 ### 2.2 不同节点中的Pod通信（跨主机网络通讯）
-参考 图1
-
 
 1. **CNI插件**  Flannel
 
 <div style="text-align: center;">
 ![flannel-udp](https://user-images.githubusercontent.com/5608425/65022322-50acc380-d963-11e9-8476-5e5ab22c8b4c.JPG)  
-图3. flannel-udp模式
+图3. flannel-UDP模式
+</div>
 
+  **flannel-UDP模式**
+  原理： fannelId服务封装/解开虚拟网卡docker0,fannel0的数据
+  组件： TUN设备，3层 ; fannel0
+  劣势:  有用户态和内核态切换 ; 性能差， 已弃用 
+
+<div style="text-align: center;">
 ![flannel-vxlan](https://user-images.githubusercontent.com/5608425/65022323-51455a00-d963-11e9-9442-d4f1b84ecce5.JPG)  
 图4. flannel-vxlan模式
 </div>
 
+  **flannel-vxlan模式**
+  组件： VTEP（VXLAN Tunnel End Point）设备; fannel.1; 
+        组成一个虚拟的两层网络
+  优势： 减少了用户态和内核态切换， 主流的网络容器方案。
+
+**总结**:  flannel-UDP模式和flannel-vxlan模式都可以称作"隧道"机制；
+       都是是overlay的。   
+
 2. **CNI插件**  Calico
+
+原理:  
+  基于iptable/linux kernel包转发;
+  根据iptables规则进行路由转发;
+
+组件:
+  路由规则; iptables的配置组件Felix  
+  路由广播组件BGP Speaker;       
 
 ## 三. Pod与Service之间的网络
 参考[self 1]
@@ -83,5 +104,8 @@ iptables执行源NAT( SNAT )
 
 ### self
 1. [Kubernetes服务](../../../../2019/11/04/k8sService/)
+
+
+
 
 
