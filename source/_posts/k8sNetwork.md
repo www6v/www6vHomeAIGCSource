@@ -41,13 +41,13 @@ categories:
 </div>
 
 **flannel-UDP模式(三层overlay)**
-原理： 
++ 原理： 
     fannelId进程封装/解开虚拟网卡docker0,fannel0的数据;
     三层的overlay网络;
 
-组件： TUN设备是**3层**的虚拟网络设备 ; fannel0
++ 组件： TUN设备是**3层**的虚拟网络设备 ; fannel0
 
-劣势:  三次用户态和内核态切换 ; 性能差， 已弃用 
++ 劣势:  三次用户态和内核态切换 ; 性能差， 已弃用 
 
 <div style="text-align: center;">
 ![flannel-vxlan](https://user-images.githubusercontent.com/5608425/65022323-51455a00-d963-11e9-9442-d4f1b84ecce5.JPG)  
@@ -56,33 +56,49 @@ categories:
 
 **flannel-vxlan模式(两层虚拟网络)**
 
-> VXLAN 的覆盖网络的设计思想是：在现有的三层网络之上，“覆盖”一层虚拟的、由内核 VXLAN
++ VXLAN 的覆盖网络的设计思想是：在现有的三层网络之上，“覆盖”一层虚拟的、由内核 VXLAN
 模块负责维护的二层网络，使得连接在这个 VXLAN 二层网络上的“主机”（虚拟机或者容器都可
 以）之间，可以像在同一个局域网（LAN）里那样自由通信
 
-组件： 
++ 组件： 
     VTEP（VXLAN Tunnel End Point）设备; fannel.1; 
     组成一个虚拟的**两层**网络
 
-优势： 
++ 优势： 
     进行封装和解封装的对象，是二层数据帧（Ethernet frame）;
     而且这个工作的执行流程，全部是在内核里完成的（因为VXLAN本身就是内核中的一个模块）;
     主流的网络容器方案。
    
 
-**总结**:  
-  flannel-UDP模式和flannel-vxlan模式都可以称作"隧道"机制；
-  都是是overlay的。   
-
 ### 2.2.2 纯3层网络方案
-1. **Flannel host-gw**
+1. **Flannel host-gw模式**
++ host-gw 模式工作原理：
+  其实就是将每个 Flannel 子网（Flannel Subnet，比如：10.244.1.0/24）的“下一跳”，设置成了该子网对应的宿主机的 IP 地址。
+  也就是说，这台“主机”（Host）会充当这条容器通信路径里的“网关”（Gateway）。这也正是“host-gw”的含义。
+
++ 核心
+路由规则：
+<目的容器 IP 地址段> via <网关的 IP 地址> dev eth0
+```
+$ ip route
+...
+10.244.1.0/24 via 10.168.0.3 dev eth0
+```
+
++ 优势： 
+根据实际的测试，host-gw 的性能损失大约在 10% 左右，而其他所有基于 VXLAN“隧道”机制的网络方案，性能损失都在 20%~30% 左右。
 
 2. **Calico**
-原理:  
++ 原理:  
   基于iptable/linux kernel包转发;
   根据iptables规则进行路由转发;
-  非overlay;
-组件:
+  非overlay, Calico 没有使用 CNI 的网桥模式;
+
++ 核心
+路由规则：
+<目的容器 IP 地址段> via <网关的 IP 地址> dev eth0
+
++ 组件:
   路由规则; iptables的配置组件Felix;  
   路由广播组件BGP Speaker;  
   
@@ -90,6 +106,11 @@ categories:
 3. **Host Network模式**
 容器的网络和宿主机的网络打平，在同一层;
 underlay方案;
+
+### 2.2.3 总结:  
++ flannel-UDP模式和flannel-vxlan模式都可以称作"隧道"机制；都是是overlay的。
++ 普适性最强 flannel-VxLan
++ 2层可直连  Calico / Flannel host-gw
 
 ## 三. Pod与Service之间的网络
 
