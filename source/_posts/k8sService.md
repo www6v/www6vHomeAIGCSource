@@ -24,7 +24,26 @@ Kubernetes服务发现架构
 + ClusterIP 模式的 Service: **稳定的 IP 地址**，即 VIP.  ClusterIP是VIP, 虚拟IP.    
 + Headless Service: **稳定的 DNS 名字**, 名字是通过 Pod 名字和 Service 名字拼接出来.  
 
-### 1.1 通过DNS发现服务
+### 1.1  服务对外暴露方式
+
+1. NodePort  四层
+<div style="text-align: center; width:60%; height: 60%">
+![node-port](https://user-images.githubusercontent.com/5608425/68234082-7d17be80-003b-11ea-891f-90a9e174bbc8.png)
+</div>
+
+2. Service LoadBalancer  四层
+<div style="text-align: center; width:60%; height: 60%">
+![loadbalancer](https://user-images.githubusercontent.com/5608425/68290997-e216f700-00c3-11ea-82d3-b5e3f4c565a1.jpg)
+</div>
+
+3. Ingress Controller  七层
+<div style="text-align: center; width:60%; height: 60%">
+![ingress-1](https://user-images.githubusercontent.com/5608425/68234079-7c7f2800-003b-11ea-8ada-2c034db8b25a.png)
+![ingress-2](https://user-images.githubusercontent.com/5608425/68234081-7c7f2800-003b-11ea-804c-1c5d87164d06.png)   
+</div>
+
+
+### 1.2 通过DNS发现服务
 > 每个Service对象相关的DNS记录有两个：
 {SVCNAME}.{NAMESPACE}.{CLUSTER_DOMAIN}
 {SVCNAME}.{NAMESPACE}.svc.{CLUSTER_DOMAIN}
@@ -39,13 +58,15 @@ options ndots:5
 ```
 （1）拥有ClusterIP的Service资源，要具有以下类型的资源记录
 A记录：<service>.<ns>.svc.<zone>. <ttl>  IN  A  <cluster-ip>
+
 （2）Headless类型的Service资源，要具有以下类型的资源记录
 A记录：<service>.<ns>.svc.<zone>. <ttl> IN A <endpoint-ip>
+
 （3）ExternalName类型的Service资源，要具有CNAME类型的资源记录
 CNAME记录：<service>.<ns>.svc.<zone>. <ttl> IN CNAME <extname>.
 ```
 
-### 1.2 ClusterIP模式的yaml配置
+### 1.3 ClusterIP模式的yaml配置
 Service（接口声明） + Deployment（ endpoint 接口实现）
 
 
