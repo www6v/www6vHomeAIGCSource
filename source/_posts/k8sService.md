@@ -42,6 +42,10 @@ Kubernetes服务发现架构
 ![ingress-2](https://user-images.githubusercontent.com/5608425/68234081-7c7f2800-003b-11ea-804c-1c5d87164d06.png)   
 </div>
 
++ Ingress 服务: 全局的、为了代理不同后端 Service 而设置的负载均衡服务.
++ Ingress 对象，其实就是 Kubernetes 项目对“反向代理”的一种抽象。
++ Ingress Controller: Nginx、HAProxy、Envoy、Traefik
+
 
 ### 1.2 通过DNS发现服务
 > 每个Service对象相关的DNS记录有两个：
