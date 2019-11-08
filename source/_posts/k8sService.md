@@ -31,7 +31,7 @@ Kubernetes服务发现架构
 ![node-port](https://user-images.githubusercontent.com/5608425/68234082-7d17be80-003b-11ea-891f-90a9e174bbc8.png)
 </div>
 
-一定要对流出的包做 SNAT操作
++ 一定要对流出的包做 SNAT操作[2][6]
 
 ```
            client
@@ -43,6 +43,20 @@ Kubernetes服务发现架构
    | |    --->
    v |
  endpoint
+```
+
++ 获取真实客户端IP, 设置Service 的 spec.externalTrafficPolicy 字段设置为 local，[2][6]
+
+```
+    client
+    ^ / \
+   / /   \
+  / v     X
+node 1   node 2
+  ^ |
+  | |
+  | v
+endpoint
 ```
 
 2. Service LoadBalancer  四层
@@ -139,11 +153,12 @@ userspace 代理模式
 3. [《Kubenetes in Action》](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)  七牛容器云团队
 4. [Kubernetes中的服务发现机制与方式](https://mp.weixin.qq.com/s/3THiWFt52tZckFGxg3Cx-g) 马永亮 
 6. [从 K8S 的 Cloud Provider 到 CCM 的演进之路](https://mp.weixin.qq.com/s/a_540yJ1EGVroJ9TpvYtPw)  毛宏斌 百度
+7. [获取真实客户端IP](https://docs.ucloud.cn/compute/uk8s/service/getresourceip)
 
 -----
 
 《深入剖析Kubernetes》  张磊
 1. [《37  找到容器不容易：Service、DNS与服务发现》]() 
 2. [《38  从外界连通Service与Service调试“三板斧”》]()
-2. [《39  谈谈Service与Ingress》]()
+3. [《39  谈谈Service与Ingress》]()
 
