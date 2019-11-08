@@ -31,12 +31,32 @@ Kubernetes服务发现架构
 ![node-port](https://user-images.githubusercontent.com/5608425/68234082-7d17be80-003b-11ea-891f-90a9e174bbc8.png)
 </div>
 
+一定要对流出的包做 SNAT操作
+
+```
+           client
+             \ ^
+              \ \
+               v \
+   node 1 <--- node 2
+   | ^    SNAT
+   | |    --->
+   v |
+ endpoint
+```
+
 2. Service LoadBalancer  四层
 <div style="text-align: center; width:60%; height: 60%">
 ![loadbalancer](https://user-images.githubusercontent.com/5608425/68290997-e216f700-00c3-11ea-82d3-b5e3f4c565a1.jpg)
 </div>
 
-3. Ingress Controller  七层
+**LoadBalancer**类型的Service被提交后，Kubernetes就会调用**CloudProvider**[5]在公有云上为你创建一个负载均衡服务，并且把被代理的 Pod 的 IP地址配置给负载均衡服务做后端.
+
+3. ExternalName
+ExternalName 类型的 Service，其实是在 kubedns里为你添加了一条 CNAME 记录.
+1.7 之后支持的一个新特性.
+
+4. Ingress Controller  七层
 <div style="text-align: center; width:60%; height: 60%">
 ![ingress-1](https://user-images.githubusercontent.com/5608425/68234079-7c7f2800-003b-11ea-8ada-2c034db8b25a.png)
 ![ingress-2](https://user-images.githubusercontent.com/5608425/68234081-7c7f2800-003b-11ea-804c-1c5d87164d06.png)   
@@ -118,4 +138,12 @@ userspace 代理模式
 2. [第14 章 ： Kubernetes Services](https://edu.aliyun.com/lesson_1651_17064#_17064)  阿里
 3. [《Kubenetes in Action》](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)  七牛容器云团队
 4. [Kubernetes中的服务发现机制与方式](https://mp.weixin.qq.com/s/3THiWFt52tZckFGxg3Cx-g) 马永亮 
-5. [《深入剖析Kubernetes - 37  找到容器不容易：Service、DNS与服务发现》]() 张磊
+6. [从 K8S 的 Cloud Provider 到 CCM 的演进之路](https://mp.weixin.qq.com/s/a_540yJ1EGVroJ9TpvYtPw)  毛宏斌 百度
+
+-----
+
+《深入剖析Kubernetes》  张磊
+1. [《37  找到容器不容易：Service、DNS与服务发现》]() 
+2. [《38  从外界连通Service与Service调试“三板斧”》]()
+2. [《39  谈谈Service与Ingress》]()
+
