@@ -9,14 +9,14 @@ categories:
   - Kubernetes
 ---
 
-<p></p>
+{% asset_img   statefulSet.jpg     StatefulSet  %}
+
 <!-- more -->
 
-{% asset_img   statefulSet.jpg     StatefulSet  %}
 
 ## 源码分析
 
-##  1. StatefulSet资源定义
+## 1. StatefulSet资源定义
 
 ```
 staging/src/k8s.io/api/apps/v1beta2/types.go
@@ -236,7 +236,7 @@ for target := len(condemned) - 1; target >= 0; target-- {
 }
 ```
 
-3. Statefulset的控制流程
+## 3. Statefulset的控制流程
 
 经过上面代码级别的细节说明，下面大致梳理一下 StatefulSet Controller的控制流程。具体如下:
 
