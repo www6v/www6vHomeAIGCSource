@@ -9,7 +9,8 @@ categories:
   - Kubernetes
 ---
 
-
+<p></p>
+<!-- more -->
 
 {% asset_img   statefulSet.jpg     StatefulSet  %}
 
