@@ -18,6 +18,7 @@ categories:
 
 ## 1. StatefulSet资源定义
 
+### 1.1 StatefulSet定义
 ```
 staging/src/k8s.io/api/apps/v1beta2/types.go
 
@@ -30,6 +31,7 @@ type StatefulSet struct {
 
 ```
 
+### 1.2 StatefulSetspec定义
 ```
 #1
 staging/src/k8s.io/api/apps/v1beta2/types.go
@@ -41,17 +43,18 @@ type StatefulSetspec struct {
   /// Pod创建或者删除
   Selector *metav1.LabelSelector
   Template v1.PodTemplateSpec
-  VolumeClaimTemplates []v1.PersistentVolumeClaim  # 存储状态
+  VolumeClaimTemplates []v1.PersistentVolumeClaim  # 存储状态【2】
   ServiceName string
   PodManagementPolicy PodManagementPolicyType      # 2.2节 
 
   /// Pod升级和回滚
-  UpdateStrategy StatefulSetUpdateStrategy
+  UpdateStrategy StatefulSetUpdateStrategy         # 2.4节
   RevisionHistoryLimit *int32
 }
 
 ```
 
+### 1.3 StatefulSetStatus定义
 ```
 #2
 staging/src/k8s.io/api/apps/v1beta2/types.go
@@ -70,10 +73,8 @@ type StatefulSetStatus struct {
 ```
 
 
-
+### 1.4 StatefulSet例子
 ```
-##  StatefulSet例子
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -127,7 +128,7 @@ spec:                    ## 对应StatefulSetspec
 
 前提: 应用的各实例启动需要遵循一定的**顺序**， 顺序需要唯一的**标识和编号**. 
 
-### 2.1 Pod固定身份标识（编号） -> 拓扑状态
+### 2.1 Pod固定身份标识（编号） -> 拓扑状态【1】
 
 + 名称维度
 
@@ -183,7 +184,7 @@ pod的名字和pvc的名字一一对应。
 
 根据`StatefulSetSpec.PodManagementPolicy`的设置，Pod创建分为`OrderedReady`和 `Parallel`两种模式。
 
-`OrderedReady模式`: 按索引号0 ~ replicas-1的顺序，前序Pod创建成功后，才会接下来创建下一个Pod。
+`OrderedReady模式`: 按索引号`0 ~ replicas-1`的顺序，前序Pod创建成功后，才会接下来创建下一个Pod。
 `Parallel模式`:并发创建各个Pod。
 
 而对于Pod**删除**，用户直接删除StatefulSet的Pod是无效的，因为 StatefulSet马上就会重建。
@@ -236,17 +237,60 @@ for target := len(condemned) - 1; target >= 0; target-- {
 }
 ```
 
+### 2.4 Pod的升级
+
+Pod升级策略由`Spec.Update.Strategy`字段指定，目前支持`OnDelete`和`RollingUpdate`两种模式。
+
+##### 2.4.1 OnDelete 模式
+`Spec.UpdateStrategy.Type=OnDelete`: `Spec.Template`更新后，需要用户手动删除旧Pod，然后StatefulSet Controller会利用新的`Spec.Template`创建新Pod。代码中处理如下:
+```
+if set.Spec.UpdateStrategy.Type == apps.OnDeleteStatefulSetStrategyType {
+    return &status, nil
+}
+```
+当升级策略为OnDelete时，执行直接返回，等待用户手动删除pod。
+
+##### 2.4.2 RollingUpdate 模式
+
+`Spec.UpdateStrategy.Type=RollingUpdate`: `Spec.Template`更新后，StatefulSet Controller会从最大索引号开始逐个升级Pod。即先删除pod，然后等到删除的pod被创建好后再进行下一个索引号的Pod升级。
+
+RollingUpdate模式的Pod升级，可以只升级部分Pod。新旧Pod分水岭的索引号由`Spec.UpdateStrategy.RollingUpdate.Partition`指定。其中`[0 ~ partition-1]`索引号的Pod为旧版本，而`[partition ~ replicas-1]`索引号的Pod为新版本。当然如果 `partition > Spec.Replicas`，则不会升级任何Pod。
+
+RollingUpdate模式的代码如下(下面主要为删除旧Pod)
+```
+updateMin := 0
+if set.Spec.UpdateStrategy.RollingUpdate != nil {
+    updateMin = int(*set.Spec.UpdateStrategy.RollingUpdate.Partition)
+}
+
+// 从最大索引号开始执行Pod升级处理(此处为旧Pod删除)
+for target := len(replicas) - 1; target >= updateMin; target-- {
+    // 如果pod为旧版本并且不在被删除状态，则执行Pod删除
+    if getPodRevision(replicas[target]) != updateRevision.Name && !isTerminating(replicas[target]) {
+        err := ssc.podControl.DeleteStatefulPod(set, replicas[target])
+        status.CurrentReplicas--
+        return &status, err // 直接退出,等待被删除Pod被创建
+    }
+
+    // 等待到被删除pod创建且ready，才进行下一个pod的升级。否则就退出for循环
+    if !isHealthy(replicas[target]) {
+        return &status, nil
+    }
+}
+```
+
+
 ## 3. Statefulset的控制流程
 
 经过上面代码级别的细节说明，下面大致梳理一下 StatefulSet Controller的控制流程。具体如下:
 
-+ 获取 StatefulSet: 由key从set.Lister(本地缓存)中获取到需要处理的 StatefulSet实例
-+ 获取 Statefulset所有Pod: 由StatefulSet.Spec.Selector从 pod.Lister(本地缓存)中过滤所有符合条件的Pod(且podName和 set.Name匹配)
++ 获取 StatefulSet: 由key从`set.Lister`(本地缓存)中获取到需要处理的 StatefulSet实例
++ 获取 Statefulset所有Pod: 由`StatefulSet.Spec.Selector`从 pod.Lister(本地缓存)中过滤所有符合条件的Pod(且podName和 set.Name匹配) （1.2节）
 + 获取当前版本和升级版本的 Controller Revision: 如果升级版本的 Controller Revision不存在，就新创建一个。(StatefulSet创建时，当前版本和升级版本相同。当前升级完成后,他们也相同)
-+ 从0 ~ Spec.Replicas-1逐个索引，创建StatefulSet Pod
-+ 所有pod创建完成后，进入扩缩容逻辑处理(如果需要扩缩容操作的话)  
-+ 扩缩容操作完成后，进入Pod升级逻辑(如果需要Pod升级操作的话)
-+ 更新 StatefulSet的 Status
++ 从`0 ~ Spec.Replicas-1`逐个索引，创建StatefulSet Pod。 (2.2节)
++ 所有pod创建完成后，进入扩缩容逻辑处理(如果需要扩缩容操作的话)  （2.3节）
++ 扩缩容操作完成后，进入Pod升级逻辑(如果需要Pod升级操作的话) （2.4节）
++ 更新 StatefulSet的 Status （1.3节）
 
 
 ## 参考:
