@@ -77,6 +77,8 @@ Ingress | kind: Ingress | External | L7/HTTP-based smart routing mechanism
 
 ### 1. 控制器模式
 
+[sample-controller 官方控制器的例子](https://github.com/kubernetes/sample-controller) git
+
 ### 2. Operator
 
 {% asset_img   operator.jpg  Operator  %} 
