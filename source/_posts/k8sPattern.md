@@ -93,7 +93,7 @@ Ingress | kind: Ingress | External | L7/HTTP-based smart routing mechanism
 + HPA
 + CA
 
-##### 概念
+##### 资源模型概念
 + QoS
 + requests, limits
 
