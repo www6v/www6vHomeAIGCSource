@@ -2,6 +2,11 @@
 title: Kubenetes资源模型和自动伸缩
 date: 2019-11-14 10:23:19
 tags:
+  - Kubenetes
+categories:
+  - 分布式 
+  - 云原生
+  - Kubernetes 
 ---
 
 <p></p>

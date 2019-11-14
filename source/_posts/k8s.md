@@ -54,8 +54,7 @@ CNCF × Alibaba 云原生技术公开课
    Deployment控制器; ReplicaSet控制器
 5. [第8 章 ： 应用配置管理](https://edu.aliyun.com/lesson_1651_17058#_17058)  ppt 未
     [从零开始入门 K8s | 如何实现应用配置管理？](https://mp.weixin.qq.com/s/8r-_Ekje__GVHsKLfJ-66A)  ppt+文字 未
-    ConfigMap; Secret; ServiceAccount;  Resources; SecurityContext;  InitContainers; 
-
+    ConfigMap 可变配置; Secret 敏感信息; ServiceAccount 身份认证;  Resources; SecurityContext 安全管控;  InitContainers; 
 ---
 
 
