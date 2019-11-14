@@ -33,6 +33,8 @@ categories:
 ## 二. 行为模式
 
 ### 1. Batch Job
+
+参考:
 [kube-batch](https://github.com/kubernetes-sigs/kube-batch)   git
 A batch scheduler of kubernetes for high performance workload, e.g. AI/ML, BigData, HPC  
 
@@ -45,6 +47,8 @@ A batch scheduler of kubernetes for high performance workload, e.g. AI/ML, BigDa
    replicas>1  + 分布式锁
 
 ### 3.Stateful Service
+
+参考:
 [Kubernetes资源对象 - StatefulSet](../../../../2019/11/11/k8sStatefulSet/) self
 
 ### 4.Service Discovery
@@ -60,7 +64,7 @@ NodePort | type: NodePort | External | Preferred for non-HTTP traffic
 LoadBalancer | type: LoadBalancer | External | Requires supporting cloud infrastructure
 Ingress | kind: Ingress | External | L7/HTTP-based smart routing mechanism
 
-
+参考:
 [Kubernetes服务](../../../../2019/11/04/k8sService/) self
 
 ## 三. 结构模式
@@ -77,14 +81,18 @@ Ingress | kind: Ingress | External | L7/HTTP-based smart routing mechanism
 
 ### 1. 控制器模式
 
+参考:
 [sample-controller 官方控制器的例子](https://github.com/kubernetes/sample-controller) git
+[kubebuilder](https://github.com/kubernetes-sigs/kubebuilder) git
 
 ### 2. Operator
 
 {% asset_img   operator.jpg  Operator  %} 
 
- [面向 Kubernetes 编程： Kubernetes 是下一代操作系统](https://mp.weixin.qq.com/s/E5-agHtMvW_X7znVJDkTKA)
- [awesome-operators](https://github.com/www6v/awesome-operators)   github 
+参考:
+[面向 Kubernetes 编程： Kubernetes 是下一代操作系统](https://mp.weixin.qq.com/s/E5-agHtMvW_X7znVJDkTKA)
+[awesome-operators](https://github.com/www6v/awesome-operators)   github 
+[operator-sdk](https://github.com/operator-framework/operator-sdk)  github
 
 ### 3. Elastic Scale
 
@@ -97,6 +105,7 @@ Ingress | kind: Ingress | External | L7/HTTP-based smart routing mechanism
 + QoS
 + requests, limits
 
+参考:
 [Kubenetes资源模型和自动伸缩](../../../../2019/11/14/k8sResouceModel/) self
 
 ## 参考

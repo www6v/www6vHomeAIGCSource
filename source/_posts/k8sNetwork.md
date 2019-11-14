@@ -137,6 +137,10 @@ iptables执行源NAT( SNAT )
 
 [Kubernetes服务](../../../../2019/11/04/k8sService/)
 
+## 五. 网络隔离 多租户
+NetworkPolicy
+
+
 ## 参考:
 1. [第13 章 ： Kubernetes网络概念及策略控制](https://edu.aliyun.com/lesson_1651_13087#_13087) CNCF × Alibaba 云原生技术公开课
 2. [calico网络原理及与flannel对比](https://blog.csdn.net/hxpjava1/article/details/79566192)
