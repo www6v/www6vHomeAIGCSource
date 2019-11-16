@@ -34,8 +34,9 @@ Proxy client requests to individual servers.
 
 ##### Metrics Server
 **metric-server是扩展的apiserver.**
+**Metrics Server**: metric-aggregator, 聚合metric。
+**Metrics Server** 是集群级别的资源利用率数据的**聚合器（ aggregator ）**。Metrics Server 通过Kubernetes 聚合器（ **kube-aggregator**）**注册**到主API Server 之上，而后基于kubelet 的Summary API 收集每个节点上的指标数据，并将它们存储于内存中然后以指标API 格式提供。
 
-Metrics Server 是集群级别的资源利用率数据的**聚合器（ aggregator ）**。Metrics Server 通过Kubernetes 聚合器（ **kube-aggregator**）**注册**到主API Server 之上，而后基于kubelet 的Summary API 收集每个节点上的指标数据，并将它们存储于内存中然后以指标API 格式提供。
 
 
 ##### metric api
