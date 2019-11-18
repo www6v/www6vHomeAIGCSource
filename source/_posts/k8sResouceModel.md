@@ -1,5 +1,5 @@
 ---
-title: Kubenetes资源模型和自动伸缩
+title: Kubenetes资源模型
 date: 2019-11-14 10:23:19
 tags:
   - Kubenetes
@@ -12,9 +12,9 @@ categories:
 <p></p>
 <!-- more -->
 
-关键词: 自动伸缩, 资源模型, 资源管理
+关键词: 资源模型, 资源管理
 
-{% asset_img   k8sResouceModel.jpg   Kubenetes资源模型和自动伸缩  %}
+{% asset_img   k8sResouceModel.jpg   Kubenetes资源模型  %}
 
 ## 一. 资源模型
 ### 1.1 

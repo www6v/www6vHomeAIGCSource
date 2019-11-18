@@ -106,7 +106,8 @@ Ingress | kind: Ingress | External | L7/HTTP-based smart routing mechanism
 + requests, limits
 
 参考:
-[Kubenetes资源模型和自动伸缩](../../../../2019/11/14/k8sResouceModel/) self
+[Kubenetes资源模型](../../../../2019/11/14/k8sResouceModel/) self
+[Kubernetes自动伸缩和HPA](../../../../2019/11/16/k8sAutoScale/)  self
 
 ## 参考
 1. [《Kubernetes Patterns - Reusable Elements for Designing Cloud-Native Applications》]()  Bilgin Ibryam@RedHat, Roland Huß@RedHat
