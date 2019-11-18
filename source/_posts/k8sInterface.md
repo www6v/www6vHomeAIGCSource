@@ -12,13 +12,23 @@ categories:
 <p></p>
 <!-- more -->
 
+## 一. 开放接口
 {% asset_img   k8sInterface.jpg  Kubenetes开放接口  %}
 
 
 <div style="text-align: center;">
-![k8s-interface](https://user-images.githubusercontent.com/5608425/65022324-51455a00-d963-11e9-9338-26675af8d3b7.JPG)  Kubenetes开放接口
+![k8s-interface](https://user-images.githubusercontent.com/5608425/65022324-51455a00-d963-11e9-9338-26675af8d3b7.JPG)  
+Kubenetes开放接口
 </div>
 
+## 二. CRI
+<div style="text-align: center;">
+![cni-arc-1](https://user-images.githubusercontent.com/5608425/69023129-a7cd2400-09f8-11ea-9c90-762d04360012.jpg)
+CRI架构
+
+![cni-arch](https://user-images.githubusercontent.com/5608425/69022893-c67eeb00-09f7-11ea-9203-fd96b90dfbef.jpg)
+CRI架构
+</div>
 
 ## 参考:
 
