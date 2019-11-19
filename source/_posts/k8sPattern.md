@@ -90,9 +90,11 @@ Ingress | kind: Ingress | External | L7/HTTP-based smart routing mechanism
 {% asset_img   operator.jpg  Operator  %} 
 
 参考:
+[深入剖析Kubernetes - 27  聪明的微创新：Operator工作原理解读]() 张磊
 [面向 Kubernetes 编程： Kubernetes 是下一代操作系统](https://mp.weixin.qq.com/s/E5-agHtMvW_X7znVJDkTKA)
 [awesome-operators](https://github.com/www6v/awesome-operators)   github 
 [operator-sdk](https://github.com/operator-framework/operator-sdk)  github
+
 
 ### 3. Elastic Scale
 
