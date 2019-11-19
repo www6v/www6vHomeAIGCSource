@@ -17,6 +17,16 @@ Application metrics| Prometheus、AWS Cloud Watch
 Distributed tracing| Open Tracing ，Zipkin ，Jaeger，skywalking（无侵入）
 Exception tracking| Open Tracing ，Zipkin ，Jaeger，skywalking（无侵入）
 
+## 监控指标和原则
+### USE 原则 -> 面向"资源监控指标"
+1. 利用率（Utilization），资源被有效利用起来提供服务的平均时间占比；
+2. 饱和度（Saturation），资源拥挤的程度，比如工作队列的长度；
+3. 错误率（Errors），错误的数量。
+
+### RED 原则 ->  面向"服务监控指标"
+1. 每秒请求数量（Rate）；
+2. 每秒错误数量（Errors）；
+3. 服务响应时间（Duration）。
 
 ## 参考:
 1. [Metrics, tracing 和 logging 的关系](https://wu-sheng.github.io/me/articles/metrics-tracing-and-logging)
@@ -24,7 +34,7 @@ Exception tracking| Open Tracing ，Zipkin ，Jaeger，skywalking（无侵入）
 3. [日志：每个软件工程师都应该知道的有关实时数据的统一概念](https://github.com/oldratlee/translations/blob/master/log-what-every-software-engineer-should-know-about-real-time-datas-unifying/README.md)  论文翻译 good 未
 4. [容器日志采集利器Log-Pilot](https://yq.aliyun.com/articles/674327)  阿里开源的Log-Pilot 容器日志采集模式
 5. [Pattern: Microservice Architecture](https://microservices.io/patterns/microservices.html)
-
+6. [深入剖析Kubernetes - 48 | Prometheus、Metrics Server与Kubernetes监控体系]() 张磊
 
 ### tracing
 1. [OpenTracing语义标准](https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md)
