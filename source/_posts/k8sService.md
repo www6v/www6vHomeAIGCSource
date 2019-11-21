@@ -154,6 +154,7 @@ userspace 代理模式
 4. [Kubernetes中的服务发现机制与方式](https://mp.weixin.qq.com/s/3THiWFt52tZckFGxg3Cx-g) 马永亮 
 6. [从 K8S 的 Cloud Provider 到 CCM 的演进之路](https://mp.weixin.qq.com/s/a_540yJ1EGVroJ9TpvYtPw)  毛宏斌 百度
 7. [获取真实客户端IP](https://docs.ucloud.cn/compute/uk8s/service/getresourceip)
+8. [华为云在 K8S 大规模场景下的 Service 性能优化实践](https://mp.weixin.qq.com/s?__biz=MzU1OTAzNzc5MQ==&mid=2247485610&idx=1&sn=e092e55c848af62368835d530c57da15&chksm=fc1c249acb6bad8c940c587e59e0dc63ba4863c7063f0a0e322dcbd6ad5f610cd2ad1b4ba87d&scene=21#wechat_redirect) 未
 
 -----
 
