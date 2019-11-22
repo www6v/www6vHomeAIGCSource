@@ -39,8 +39,14 @@ Envoy proxy的架构 [18]
 ## 三. xDS协议
 {% asset_img  istioXDS.jpg  istio-xDS %}
 
+<div style="text-align: center; width: 50%; height: 50%">
+![xds](https://user-images.githubusercontent.com/5608425/69417029-dded0980-0d52-11ea-96a1-4c14e08aadf8.jpg)
+</div>
+
 参考:
 17. [xDS 协议解析](https://jimmysong.io/istio-handbook/concepts/envoy-xds-protocol.html)  宋净超  引
+1. [Istio流量管理实现机制深度解析](https://zhaohuabing.com/post/2018-09-25-istio-traffic-management-impl-intro/)  赵化冰
+2. [Service Mesh——后 Kubernetes 时代的微服务](https://www.servicemesher.com/blog/service-mesh-the-microservices-in-post-kubernetes-era/)
 
 
 

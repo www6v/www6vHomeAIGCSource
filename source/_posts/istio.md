@@ -24,6 +24,12 @@ categories:
 [Istio 庖丁解牛三：galley](https://mp.weixin.qq.com/s/BMVCeiA2aqASbLqyhPomWA)  腾讯云 钟华
 [Istio1.1新特性之限制服务可见性](http://www.servicemesher.com/blog/istio-service-visibility/)  敖小剑 引
 
++ mixer的三大功能：
+前置条件检查。 
+配额管理。 
+遥测报告。 
+
+
 ##  istio组件
 <div style="text-align: center;">
 
