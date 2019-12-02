@@ -36,8 +36,11 @@ Envoy proxy的架构 [18]
 18. [Istio 的数据平面 Envoy Proxy 配置详解](https://www.servicemesher.com/blog/envoy-proxy-config-deep-dive/)  宋净超 引
 1. [Istio流量管理实现机制深度解析](https://zhaohuabing.com/post/2018-09-25-istio-traffic-management-impl-intro/)  赵化冰
 
-## 三. xDS协议
+## 三. 数据面标准API/xDS协议
 {% asset_img  istioXDS.jpg  istio-xDS %}
+
+> xDS是一类发现服务的总称，包含LDS，RDS，CDS，EDS以及 SDS。
+> XDS服务接口的最终一致性: 遵循 make before break 模型
 
 <div style="text-align: center; width: 50%; height: 50%">
 ![xds](https://user-images.githubusercontent.com/5608425/69417029-dded0980-0d52-11ea-96a1-4c14e08aadf8.jpg)
