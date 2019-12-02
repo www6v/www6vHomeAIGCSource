@@ -39,6 +39,7 @@ Envoy proxy的架构 [18]
 ## 三. 数据面标准API/xDS协议
 {% asset_img  istioXDS.jpg  istio-xDS %}
 
+> pilot和envoy之间的接口
 > xDS是一类发现服务的总称，包含LDS，RDS，CDS，EDS以及 SDS。
 > XDS服务接口的最终一致性: 遵循 make before break 模型
 
