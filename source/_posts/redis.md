@@ -22,15 +22,19 @@ categories:
 
 
 ## 一. redis集群
-1. sentinel
+### 1. sentinel
    master-slave异步复制, 所以会丢消息
    参数: 
    min-slaves-to-write 1   // 至少有一个slave复制
    min-slaves-max-lag 10   // slave节点最大10s的延迟
 
-2. redis cluster
-   去中心化的
-   所有数据划分为16384个slots，每个节点负责其中一部分slots。
+#### 2. redis cluster
+去中心化的;
+所有数据划分为16384个slots，每个节点负责其中一部分slots;
+
+**Gossip**协议
+集群节点采用 Gossip 协议来广播自己的状态以及自己对整个集群认知的改变;
+可能下线 (PFAIL-Possibly Fail) && 确定下线 (Fail)
 
 ## 二. 事务
  | 原子性  |    一致性 | 隔离性  | 持久性
@@ -57,6 +61,7 @@ mysql  |√       |√    |√    | √
 3. 原理 8：有备无患 —— 主从同步
 4. 原理 3：未雨绸缪 —— 持久化
 5. 集群 1：李代桃僵 —— Sentinel
+6. 集群 3：众志成城 —— Cluster
 
 ---
 5. 《Redis实战》 黄健宏 3.7 ,4.4, 6.2
