@@ -29,8 +29,8 @@ categories:
    min-slaves-max-lag 10   // slave节点最大10s的延迟
 
 2. redis cluster
-   + 去中心化的
-   + 所有数据划分为16384个slots，每个节点负责其中一部分slots。
+   去中心化的
+   所有数据划分为16384个slots，每个节点负责其中一部分slots。
 
 ## 二. 事务
  | 原子性  |    一致性 | 隔离性  | 持久性
