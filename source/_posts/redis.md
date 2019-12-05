@@ -24,11 +24,17 @@ categories:
 ## 一. redis集群
 ### 1. sentinel
    master-slave异步复制, 所以会丢消息
+
+```   
    参数: 
-   min-slaves-to-write 1   // 至少有一个slave复制
-   min-slaves-max-lag 10   // slave节点最大10s的延迟
+   # 至少有一个slave复制
+   min-slaves-to-write 1   
+   # slave节点最大10s的延迟
+   min-slaves-max-lag 10   
+```
 
 #### 2. redis cluster
+**整体架构**
 去中心化的;
 所有数据划分为16384个slots，每个节点负责其中一部分slots;
 
@@ -36,6 +42,15 @@ categories:
 集群节点采用 Gossip 协议来广播自己的状态以及自己对整个集群认知的改变;
 可能下线 (PFAIL-Possibly Fail) && 确定下线 (Fail)
 
+**slot迁移**
+在迁移过程中，客户端访问的流程会有很大的变化。
+迁移是会影响服务效率的，同样的指令在正常情况下一个 ttl 就能完成，而在迁移中得 3 个 ttl 才能搞定。
+
+**网络抖动**
+```
+# 表示当某个节点持续 timeout 的时间失联时，才可以认定该节点出现故障
+cluster-node-timeout 
+```
 ## 二. 事务
  | 原子性  |    一致性 | 隔离性  | 持久性
  :-: | :-:     | :-:      | :-:     | :-: 
