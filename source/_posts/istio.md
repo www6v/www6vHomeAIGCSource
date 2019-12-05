@@ -15,20 +15,25 @@ categories:
 ## 一. istio特性
 {% asset_img  istio.jpg  istio %}
 
+性能优化:
+1.精简层：  sofa-mosn 在sidercar里做很多mixer的事情
+2.优化层：  Cilium： 优化sider的网络
+
+参考:
 20. [Istio 安装](https://jimmysong.io/istio-handbook/setup/istio-installation.html)  引
 23. [Istio 庖丁解牛五：多集群网格实现分析](https://mp.weixin.qq.com/s/fSklull_8OfpdCtdwbXx9A)  腾讯云 钟华 引
 
 ## 二. istio控制面
 {% asset_img  istio-control.jpg  istio控制面 %}
 
-[Istio 庖丁解牛三：galley](https://mp.weixin.qq.com/s/BMVCeiA2aqASbLqyhPomWA)  腾讯云 钟华
-[Istio1.1新特性之限制服务可见性](http://www.servicemesher.com/blog/istio-service-visibility/)  敖小剑 引
-
 + mixer的三大功能：
 前置条件检查。 
 配额管理。 
 遥测报告。 
 
+参考:
+[Istio 庖丁解牛三：galley](https://mp.weixin.qq.com/s/BMVCeiA2aqASbLqyhPomWA)  腾讯云 钟华
+[Istio1.1新特性之限制服务可见性](http://www.servicemesher.com/blog/istio-service-visibility/)  敖小剑 引
 
 ## 三. istio组件
 <div style="text-align: center;">
@@ -57,6 +62,7 @@ Envoy启动过程和配置
 
 > Envoy 配置热更新: 配置的动态变更，而不需要重启 Envoy.
 
+参考:
 [Istio 庖丁解牛1：组件概览](https://mp.weixin.qq.com/s/VwqxrZsVmn4a5PcVckaLxA)  腾讯云 钟华
 [istio数据面](../../../../2019/11/21/istioDataplane/) self
 

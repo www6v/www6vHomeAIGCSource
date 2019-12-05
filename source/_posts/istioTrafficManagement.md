@@ -15,6 +15,7 @@ categories:
 ## 一. 流量管理
 {% asset_img  istio-traffic-manage.jpg  istio流量管理  %}
 
+### 1.1 组件
 <div style="text-align: center;">
 ![Pilot流量管理](https://user-images.githubusercontent.com/5608425/64623501-a5a88100-d41b-11e9-9262-8414adb5831a.png)  
 Pilot Design Overview (来自 [Istio old_pilot_repo](https://github.com/istio/old_pilot_repo/blob/master/doc/design.md))
@@ -31,11 +32,19 @@ Envoy
 
 [Istio 庖丁解牛1：组件概览](https://mp.weixin.qq.com/s/VwqxrZsVmn4a5PcVckaLxA)  腾讯云 钟华
 
+### 1.2 流量管理模型
+VirtualService： 定义了一系列针对指定服务的流量路由规则
+DestinationRule
+ServiceEntry： 外部服务定义
+Gateway：  描述了一个负载均衡器，用于承载网格边缘的进入和发出连接。
+EnvoyFilter： 描述了针对代理服务的过滤器，用来定制由 Istio Pilot 生成的代理配置.
+
 ## 二. 灰度发布
 {% asset_img  istio-gray.jpg  istio灰度发布  %}
 
 ## 参考:
 1. [Istio流量管理实现机制深度解析](https://zhaohuabing.com/post/2018-09-25-istio-traffic-management-impl-intro/)  赵化冰
+2. [腾讯云容器团队内部Istio专题分享](https://mp.weixin.qq.com/s/NjMncH84uEl_PywOFFMlFA) 腾讯云 钟华
 
 ---
 官方Examples 0-5  G
