@@ -21,15 +21,27 @@ categories:
 {% asset_img redis.jpg Redis 总结 %}
 
 
+## 一. redis集群
+1. sentinel
+   master-slave异步复制, 所以会丢消息
+   参数: 
+   min-slaves-to-write 1   // 至少有一个slave复制
+   min-slaves-max-lag 10   // slave节点最大10s的延迟
+
+2. redis cluster
+   + 去中心化的
+   + 所有数据划分为16384个slots，每个节点负责其中一部分slots。
+
+## 二. 事务
  | 原子性  |    一致性 | 隔离性  | 持久性
  :-: | :-:     | :-:      | :-:     | :-: 
- redis |一定的原子性，但不支持回滚   | × | √  | 通过一定策略可以保证持久性
+redis |一定的原子性，但不支持回滚   | × | √  | 通过一定策略可以保证持久性
        |没有进行回滚，不具备原子性.<br>操作之后写AOF日志|aof可以保证，但从应用层看没有回滚和原子性，所以并不能保证一致性| 单线程天然隔离|纯内存(×)<br>RDB Bgsave(√) <br> RDB 异步执行(×)
 mysql  |√       |√    |√    | √
        |undo log|锁   |锁    | redo log
 
 
-
+## 三. 回收策略
  回收策略       | redis   | kafka    
  :-:     | :-:     | :-:       
  基于时间 | 过期删除策略 <br>1. 定时删除 <br>2. 惰性删除 <br>3.定期删除  | ![kafka-time]  
@@ -44,6 +56,7 @@ mysql  |√       |√    |√    | √
 2. 原理 5：同舟共济 —— 事务
 3. 原理 8：有备无患 —— 主从同步
 4. 原理 3：未雨绸缪 —— 持久化
+5. 集群 1：李代桃僵 —— Sentinel
 
 ---
 5. 《Redis实战》 黄健宏 3.7 ,4.4, 6.2
