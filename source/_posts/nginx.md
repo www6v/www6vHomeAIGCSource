@@ -2,7 +2,7 @@
 title: Nginx和Tomcat总结
 date: 2019-08-22 02:17:53
 tags:
-  - 算法
+  - Nginx
 categories:
   - 分布式
   - 中间件
