@@ -13,6 +13,9 @@ categories:
 **关键词**: 脑裂, fence, Quorums , epoch
 
 
+**脑裂**： 类似 CAP中的P
+**Partition tolerance(分区容错性)**: 网络分区发生时，一致性和可用性两难全
+
 ## 一. 通用解决方案
 1. Quorums
 2. Redundant communications，冗余通信的方式
