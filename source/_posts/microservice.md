@@ -12,6 +12,10 @@ categories:
 <p hidden></p>
 <!-- more -->
 
+## 微服务 定义
+
+In short, the microservice architectural style [1] is an approach to developing a single application as a suite of **small services**, **each running in its own process** and **communicating with lightweight mechanisms**, often an HTTP resource API. These services are built around business capabilities and **independently deployable** by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.   --  [Martin Fowler]
+
 ## 一. 微服务相关的问题
 ### 1. API网关
    + 灰度发布、
@@ -142,10 +146,10 @@ Eg. k8s pod中日志采集sidecar
 
 原则 |优点 |缺点 |挑战
 :-: |:-: |:-: |:-:
-**分布式**服务组成的系统； 去中心化| 可用性高|多服务运维难度 | 分布式系统的复杂性
+**分布式**服务组成的系统； 去中心化| 可用性高|多服务运维难度 | 分布式系统的复杂性（容错，延迟，分布式事务）
 按照业务而不是技术来划分组织| 服务独立无依赖 |系统部署依赖| 事务、异步、测试面临挑战
 做有生命的**产品**而不是项目| 技术栈灵活||  运营开销
-Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合的服务|独立按需扩展|服务间通信成本 | 隐式接口[接口变更成本]
+Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合的服务|独立按需扩展和伸缩|服务间通信成本 | 隐式接口[接口变更成本]
 自动化运维（**DevOps**） | | 系统集成测试 | DevOps 要求
 **容错**| 可用性高 |  数据一致性 | 性能监控; 分布式系统的复杂性
 快速**演化**| 开发简单 |重复工作  | 系统集成测试 
