@@ -31,3 +31,19 @@ Actuator（Runtime）
 直接内嵌的Tomcat， Jetty或者Undertow;
 提供生产级特性;
 
+约定优于配置(Convention Over Configuration) CoC
+
+
+
+## Starter Dependency
+```
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.0.RELEASE</version>
+</parent>
+
+<!-- spring cloud的依赖-->
+<dependencyManagement>
+</dependencyManagement>
+```

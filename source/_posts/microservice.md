@@ -60,9 +60,9 @@ In short, the microservice architectural style [1] is an approach to developing 
   RPC（Dubbo）
 
 + 异步消息
-  Kafka, 
-  Notify, 
-  MetaQ
+  Kafka, RabbitMQ, Notify
+  AMQP, MQTT, STOMP
+  
 
    <div style="text-align: center;">
    ![micro-service-architecture-comms](https://user-images.githubusercontent.com/5608425/66257280-8528d800-e7c9-11e9-95f4-bfe436d9d283.png)
@@ -94,7 +94,8 @@ In short, the microservice architectural style [1] is an approach to developing 
 
 > 微服务不是指"微小"的服务, 而是如何"拆分"服务,然后"组合"服务.
 
-DDD 领域驱动设计, 上下文划分
++ DDD 领域驱动设计, 上下文划分（context）
++ 康威定律
   
 ## 二. 微服务设计模式 
 ### 2.1 微服务设计模式
