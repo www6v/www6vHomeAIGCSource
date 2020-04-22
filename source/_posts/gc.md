@@ -15,10 +15,16 @@ categories:
 {% asset_img  gc.jpg  垃圾收集GC总结 %}
 
 
+
+### 并发标记算法
+1. CMS： 三色标记算法 + 增量更新（Incremental update）
+2. G1： 三色标记算法 + STAB（snapshot-at-the-beginning）
+[Java虚拟机 ----三色标记与G1垃圾回收器](https://blog.csdn.net/qq_36697880/article/details/105206385)
+
 ## 参考：
 
 1. 源码分析：Java对象的内存分配   iceAeterna
-2. 深入理解Java虚拟机（第2版） 第3章   周志明
+2. 《深入理解Java虚拟机（第2版）》 第3章   周志明
 3. 深入理解GC ——MinorGC\MajorGC\FullGC   张硕的博客
 4. 触发JVM进行Full GC的情况及应对策略   yexx
 5. Netty之有效规避内存泄漏   江南白衣

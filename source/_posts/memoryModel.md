@@ -19,3 +19,4 @@ categories:
 4. java自定义classloader引发的思考 editice
 5. 《深入理解java虚拟机》 第二章 周志明
 6. 浅谈Java String内幕 占小狼
+7. [JMM和底层实现原理](https://www.jianshu.com/p/8a58d8335270)  王侦 未
