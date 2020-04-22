@@ -65,6 +65,14 @@ Innodb和MyISAM中的聚集索引和非聚集索引(二级索引)
 所以，从性能和存储空间方面考量，自增主键往往是更合理的选择。
 
 
+**覆盖索引**
+如果执行的语句是select ID from T where k between 3 and 5，这时只需要查ID的值，而ID的值
+已经在k索引树上了，因此可以直接提供查询结果，不需要回表。也就是说，在这个查询里面，
+索引k已经“覆盖了”我们的查询需求，我们称为覆盖索引.
+
+覆盖索引可以减少树的搜索次数，显著提升查询性能，所以使用覆盖索引是一个常用的性能优化手段.
+
+
 ## 二. redo log 和 undo log
 ```
   事务开始.
@@ -127,4 +135,6 @@ MySQL主从复制
 7. [MySQL索引原理及慢查询优化](http://www.admin10000.com/document/6228.html)  good 美团 未 
 8. [业界难题-“跨库分页”的四种方案](https://mp.weixin.qq.com/s/h99sXP4mvVFsJw6Oh3aU5A)  58沈剑  未
 9. [ali canal](https://github.com/alibaba/canal)
+10. 《MySQL实战45讲》 深入浅出索引（上）  丁奇
+10. 《MySQL实战45讲》 深入浅出索引（下）  丁奇
 
