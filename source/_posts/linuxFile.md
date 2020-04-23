@@ -11,6 +11,8 @@ categories:
 <p hidden></p>
 <!-- more -->
 
+关键字: 虚拟文件系统,  pagecache, inode, 硬链接, 软链接
+
 <div style="text-align: center;">
 
 ![Linux文件系统](https://user-images.githubusercontent.com/5608425/63632440-9fb74f80-c668-11e9-9b71-6538f4d86b9b.jpg)  Linux文件系统
