@@ -96,7 +96,16 @@ In short, the microservice architectural style [1] is an approach to developing 
 
 + DDD 领域驱动设计, 上下文划分（context）
 + 康威定律
-  
+
+### 8. 服务分层
+### 上层: 聚合服务（适配服务， 边界服务）
+    比如：pc和mobile服务对商品服务返回内容的裁剪。
+          聚合商品服务和目录服务的内容。   
+
+### 下层: 基础服务（核心领域服务， 公共服务）
+    比如：电商的商品服务， 目录服务， 订单服务
+
+
 ## 二. 微服务设计模式 
 ### 2.1 微服务设计模式
 <div style="text-align: center;">
