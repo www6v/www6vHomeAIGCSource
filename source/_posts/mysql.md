@@ -73,6 +73,18 @@ Innodb和MyISAM中的聚集索引和非聚集索引(二级索引)
 覆盖索引可以减少树的搜索次数，显著提升查询性能，所以使用覆盖索引是一个常用的性能优化手段.
 
 
+**复合索引的数据结构**  **最左前缀原则**
+```
+create table people {
+  last_name,
+  first_name,
+  dob,
+  gender,
+  key(last_name, first_name, dob)
+}
+```
+{% asset_img compositeIndex.JPG 复合索引的数据结构 %}
+
 ## 二. redo log 和 undo log
 ```
   事务开始.
