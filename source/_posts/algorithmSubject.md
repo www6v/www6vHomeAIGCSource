@@ -10,8 +10,19 @@ categories:
 
 <p hidden></p>
 <!-- more -->
+ 
 
 ## 一. 线性表 
+
+### 数组
+#### 1. Top K问题 : 数组中最小的 k 个数    
+方法一： 堆， 时间复杂度 O(n log k)
+方法二： 快排变形， （平均）时间复杂度 O(n)
+
+[数组中最小的 k 个数：Top K 问题的两种经典解法](https://mp.weixin.qq.com/s/rSr-dttis3Ubtbv892aOtg)
+
+#### 2. 数组的两分搜索
+   > [LeetCode 540. Single Element in a Sorted Array](https://github.com/grandyang/leetcode/issues/540)
 
 ### 链表
 #### 1. 单链表的反转
@@ -75,7 +86,7 @@ class Solution {
   2. 每走一步，把节点的地址存在set中，走下一步的时候查找地址是否已经在set中
   3. 快指针是慢指针的两倍， 最后快指针和慢指针相遇
 + 求链表的中间结点 -> 快指针是慢指针的两倍
-
+[LeetCode 例题精讲 | 05 双指针×链表问题：快慢指针](https://mp.weixin.qq.com/s/Jdbr_-UACicLU_Akn4czSw)
   
 ###  栈,队列
 #### 1. 两个栈实现一个队列
@@ -159,8 +170,6 @@ class Solution {
        + 优先级队列 大顶堆  O(n * logk)
        + queue deque  O(n*1)
 
-#### 3. 数组的两分搜索
-   > [LeetCode 540. Single Element in a Sorted Array](https://github.com/grandyang/leetcode/issues/540)
 
 #### 4. 递归模板  recursion
 {% asset_img  recursion.jpg  递归模板 %}
@@ -187,6 +196,8 @@ class Solution {
        Mapredue bloomfilter
        [Google Guava之BloomFilter源码分析及基于Redis的重构](http://www.fullstackyang.com/bu-long-guo-lu-qi-google-guavalei-ku-yuan-ma-fen-xi-ji-ji-yu-redis-bitmapsde-zhong-gou/)
 
+#### 8. 如何在海量数据中判断某个数据是否存在
+> 布隆过滤器
 
 
 ## 六. 线性规划

@@ -170,7 +170,7 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 关注点  |SOA  |微服务 |云原生
 :-:|:-:|:-:|:-:
 研发过程| CMM/RUP | Agile| Agile 
-交付流程| 手工/自动化 | DevOps<br>DevSecOps| GitOps<br>AIOps<br>NoOps(Serverless)
+交付流程| 手工/自动化 | DevOps<br>DevSecOps| GitOps[12]<br>AIOps<br>NoOps(Serverless)
 服务通信| Web Service（WSDL，Soap）| REST/私有RPC协议（Dubbo）|REST/gRPC,Envoy xDS， MSI协议等开放协议
 功能扩展性-filter| x| AOP filter<br> Dubbo filter chain<br>   WEB filter/lisnter | Envoy filter
 功能扩展性-微内核| x| Dubbo SPI | K8s CRD, Operator 
@@ -193,6 +193,7 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 9. [微服务架构技术栈选型手册](https://www.infoq.cn/article/micro-service-technology-stack/?utm_source=infoq&utm_medium=popular_widget&utm_campaign=popular_content_list&utm_content=homepage) 未
 10. [从 SOA 到微服务，企业分布式应用架构在云原生时代如何重塑？](https://mp.weixin.qq.com/s/zl0Z-bCoLDFGD8GFYh68CQ) 阿里 易立 good
 11. [云原生时代，分布式系统设计必备知识图谱（内含22个知识点）](https://mp.weixin.qq.com/s?__biz=MzUzNzYxNjAzMg==&mid=2247486600&idx=1&sn=0ad92a1fe535f141fe2e8c87ffbd1229&chksm=fae50747cd928e51c05c41d2cc206069babbe9dfdba5957c52ac6e77cb754192169bb6b3e898&scene=0&xtrack=1#rd) 杨泽强（竹涧） good
+12. [使用托管服务网格实现应用在多集群中的 GitOps 全自动化渐进式发布](https://www.servicemesher.com/blog/202003-gitops-progressive-delivery-with-asm/)  郝树伟 阿里云容器服务
 
 ## self
 1. [分布式服务框架容错机制](../../../../2015/06/17/soaTolerate/) self

@@ -11,7 +11,17 @@ categories:
 ---
 
 ## 一. istio安装
- 
+
+
+ 有以下几种方式安装Istio：
++ 使用install/kubernetes文件夹中的istio-demo.yaml进行安装；
++ 使用Helm template渲染出Istio的YAML安装文件进行安装；
++ 使用Helm和Tiller方式进行安装。
+
+对于生产环境下或大规模的应用，推荐使用 Helm和 Tiller 方式安装 Istio，这样可以灵活控制Istio的
+所有配置项，方便管理各个组件。
+
++ 第二种方式安装
 ```
 #资源准备
 wget https://github.com/istio/istio/releases/download/1.1.1/istio-1.1.1-linux.tar.gz
@@ -35,6 +45,7 @@ $ kubectl get svc -n istio-system
 $ kubectl get pods -n istio-system
 ```
 
++ 第一种方式安装
 ```
 # 如果以上安装有问题, 可一键安装istio
 kubectl apply -f install/kubernetes/istio-demo.yaml
@@ -143,5 +154,6 @@ cluster.outbound|8000||httpbin.default.svc.cluster.local.upstream_rq_pending_tot
 5. [收集指标和日志](https://preliminary.istio.io/zh/docs/tasks/telemetry/metrics/collecting-metrics/)
 6. [熔断](https://preliminary.istio.io/zh/docs/tasks/traffic-management/circuit-breaking/) done
 7. [Quick Start Evaluation Install](https://istio.io/docs/setup/install/kubernetes/) istio快速安装  未
+8. 《云原生服务网格Istio：原理、实践、架构与源码解析》  张超盟，章鑫，徐中虎，徐飞
 
 

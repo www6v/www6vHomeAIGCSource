@@ -85,10 +85,13 @@ Saga 1PC (一阶段)| 基于补偿的消息驱动的用于解决long-running pro
 EBay模式 #2 [8]|  Eg:  阿里Notify | XA, RocketMQ事务消息
 TCC #4| Eg: 支付宝DTS #3 |蚂蚁 XTS(内部)/DTX(蚂蚁金融云) #3 <br>**入侵性**<br>  TCC #4 FMT
 两阶段 |  | 阿里 TXC(内部)/GTS(阿里云) <br>**非入侵性** <br>[AT Mode][AT Mode] 基于 支持本地 ACID 事务 的 "关系型数据库" <br>[MT Mode][MT Mode] 支持把"自定义"的分支事务纳入到全局事务的管理中
+
+{% asset_img  saga.jpg  saga流程 %}
  
 
-## 三. 柔性事务 - 消息
+## 三. 柔性事务
 
+1. 基于事务消息的分布式事务
 ![mq-normal](https://user-images.githubusercontent.com/5608425/66023796-d2d0e680-e524-11e9-8748-1a26f3d0f157.JPG)
 ![mq-reverse](https://user-images.githubusercontent.com/5608425/66023797-d2d0e680-e524-11e9-85e6-f845863fe4a8.JPG)
 
@@ -97,6 +100,12 @@ table th:first-of-type {
   width: 100px;
 }
 </style>
+
+{% asset_img  mqTransaction.jpg  基于事务消息的分布式事务 %}
+
+2. 基于本地消息的分布式事务
+
+{% asset_img  localBaseTransaction.jpg  基于本地消息的分布式事务 %}
 
 ## 四. 时钟
 
@@ -141,8 +150,9 @@ state machine replication && primary-copy
 7. 《大数据日知录：架构与算法》 张俊林
 8. [Base: An Acid Alternative](https://queue.acm.org/detail.cfm?id=1394128)  Ebay模式  good
 9. [mysql](../../../../2019/09/10/mysql/) self
+10. [如何选择分布式事务解决方案？](https://mp.weixin.qq.com/s/2AL3uJ5BG2X3Y2Vxg0XqnQ)   道苏
  
-### Fescar && TCC
+### Seata && TCC
 1. 分布式事务之TCC事务 梁钟霖
 2. 分布式事务之TCC服务设计和实现注意事项 绍辉
 3. https://github.com/www6v/tcc-transaction

@@ -24,12 +24,14 @@ categories:
 23. [Istio 庖丁解牛五：多集群网格实现分析](https://mp.weixin.qq.com/s/fSklull_8OfpdCtdwbXx9A)  腾讯云 钟华 引
 
 ## 二. istio控制面
-{% asset_img  istio-control.jpg  istio控制面 %}
+{% asset_img  istio-control.jpg  istio控制面（1.1-1.4） %}
 
 + mixer的三大功能：
 前置条件检查。 
 配额管理。 
 遥测报告。 
+
+优化： 默认关闭mixer。 1.5之后mixer被移除。
 
 参考:
 [Istio 庖丁解牛三：galley](https://mp.weixin.qq.com/s/BMVCeiA2aqASbLqyhPomWA)  腾讯云 钟华
@@ -40,7 +42,7 @@ categories:
 <div style="text-align: center;">
 
 ![istio组件](https://user-images.githubusercontent.com/5608425/64623495-a3debd80-d41b-11e9-9599-c8c25a7153b9.jpg)  
-istio组件[2]
+istio1.1组件[2]
 </div>
 
 ##### 3.1 数据面
@@ -66,6 +68,15 @@ Envoy启动过程和配置
 参考:
 [Istio 庖丁解牛1：组件概览](https://mp.weixin.qq.com/s/VwqxrZsVmn4a5PcVckaLxA)  腾讯云 钟华
 [istio数据面](../../../../2019/11/21/istioDataplane/) self
+
+## 四. istio架构演进
+
+从 1.5 开始，把控制平面的所有组件组合并成一个单体结构叫 istiod。
+1.5 Simplify
+
+{% asset_img  istio-old-arch.png  istio架构（1.1-1.4） %} 
+{% asset_img  istio1.5-arch.jpeg  istio架构（1.5） %}
+
 
 ## 参考:
 1. [腾讯云容器团队内部Istio专题分享](https://mp.weixin.qq.com/s/NjMncH84uEl_PywOFFMlFA) 腾讯云 钟华

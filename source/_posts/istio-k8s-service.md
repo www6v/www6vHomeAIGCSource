@@ -75,3 +75,6 @@ SpringCloud .vs Kubernetes
 2. [厉害了，Spring Cloud Alibaba 发布 GA 版本！](https://blog.csdn.net/zl1zl2zl3/article/details/89790643)
 3. [一篇囊括微服务服务拆分的一切：前提，时机，方法，规范，选型](https://www.cnblogs.com/popsuper1982/p/9634578.html)
 4. [Istio Gateway与Kubernetes Ingress Controller对比](https://yq.aliyun.com/articles/636511)  灰度例子
+5. [Service Mesh 高可用在企业级生产中的实践](https://www.servicemesher.com/blog/baidu-service-mesh-ha-practice/)  百度 罗广明 未
+    Service Mesh与Spring Cloud的结合
+	
