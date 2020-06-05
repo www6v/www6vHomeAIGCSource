@@ -79,6 +79,32 @@ mysql  |√       |√    |√    | √
  其他 | x  | ![kafka-offset]  
 
 
+## 四. hash和scan命令
++ redis hash的结构：一维数组+二维链表（和java的hashmap结构一样）
+
+
++ redis rehash: 渐进式rehash
+Java rehash： 一次性将旧数组下挂接的元素全部转移到新数组下面
+ 
+
++ scan命令：
+zset -> zscan
+hash -> hscan
+set -> sscan
+key of hash -> scan
+SCAN：命令用于迭代 数据库键。
+SSCAN：命令用于迭代 set 中的元素。
+HSCAN：命令用于迭代 hash 中的键值对。
+ZSCAN：命令用于迭代  zset 中的元素（包括元素成员和元素分值）。
+
++ 大key在数据迁移、扩容、删除时会有卡顿。 
+解决方案： 用scan扫描大key， --bigkeys参数
+
+
+## 五. IO模型和性能
++ 非阻塞IO： read， write时不阻塞
++ 事件轮询和多路复用
+
 
 ## 参考:
 《Redis 深度历险：核心原理与应用实践》 钱文品
@@ -88,6 +114,8 @@ mysql  |√       |√    |√    | √
 4. 原理 3：未雨绸缪 —— 持久化
 5. 集群 1：李代桃僵 —— Sentinel
 6. 集群 3：众志成城 —— Cluster
+7. 大海捞针 ——— scan
+8. 鞭辟入里 ——— 线程IO模型
 
 ---
 5. 《Redis实战》 黄健宏 3.7 ,4.4, 6.2
