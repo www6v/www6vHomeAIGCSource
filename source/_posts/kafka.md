@@ -23,9 +23,17 @@ categories:
 :-:|:-:|:-:
 kafka|Controller leader| 依赖zk选主
 |Partition leader | 
-|Consumer的选举| 消费组内的消费者选举出一个消费组的leader
+|Consumer leader的选举| 消费组内的消费者选举出一个消费组的leader
 zookeeper| zk自身的选主 | Zab协议
  | 其他系统依赖zk选主| Eg.  kafka
+
+
+### Partition
+1. 首领 leader ， 首领副本
+2. 跟随者 follower， 跟随者副本
+3. 首选首领
+
+
 
 ## 参考:
 
