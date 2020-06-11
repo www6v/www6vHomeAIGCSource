@@ -11,6 +11,9 @@ categories:
   - Kafka    
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  Kafka-Reliability.jpg  Kafka 可靠性总结 %}
 
 

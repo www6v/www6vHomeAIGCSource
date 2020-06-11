@@ -10,7 +10,13 @@ categories:
   - Kafka   
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  kafka-consumer.jpg  Kafka消费者总结 %}
+
+{% asset_img  lag.png  Kafka lag %}
+
 
 ### 消费者
 1. 批量消费
@@ -19,11 +25,11 @@ categories:
 
 ## 参考:
 
-1. Kafka设计解析（四）：Kafka Consumer解析 郭俊
+1. [Kafka设计解析（四）- Kafka Consumer设计解析](http://www.jasongj.com/2015/08/09/KafkaColumn4/) 郭俊
 2. [Kafka分区分配策略（1）——RangeAssignor](https://blog.csdn.net/u013256816/article/details/81123600) 朱小厮
 3. [Kafka分区分配策略（2）——RoundRobinAssignor和StickyAssignor](https://blog.csdn.net/u013256816/article/details/81123625) 朱小厮
-4. Kafka分区分配策略（3）——自定义分区分配策略 朱小厮
-5. Kafka的Lag计算误区及正确实现 朱小厮
+4. [Kafka分区分配策略（3）——自定义分区分配策略](https://blog.csdn.net/u013256816/article/details/81123858) 朱小厮
+5. [Kafka的Lag计算误区及正确实现](https://blog.csdn.net/u013256816/article/details/79955578) 朱小厮
 6. 《kafka权威指南》 薛命灯 第3，4 ，5章
 7. Kafka Consumer机制优化-保证每条消息至少消费一次 幽灵之使
 
