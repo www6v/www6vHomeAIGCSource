@@ -39,7 +39,7 @@ categories:
 + 领域建模方法论：
   UML用例分析、 UML用例分析法
   四色建模法
-  事件风暴
+  [事件风暴](https://www.eventstorming.com/)
 
 ## 落地
 + 基于DDD应用架构的核心：
@@ -54,9 +54,10 @@ categories:
 
 
 ## 参考：
-1. 《DDD（Domain Driven Design)的精髓》  直播+ppt  阿里  张建飞
+1. 《DDD（Domain Driven Design)的精髓》  直播+ppt  阿里张建飞  钉钉2020.05.21视频
 2. 《领域驱动设计精粹》 未 
 3. 《实现领域驱动设计》 未
 4. 《领域专用语言实战》 未
+5.  [事件风暴和领域建模在阿里巴巴的落地实践](https://developer.aliyun.com/live/2874)  未
 
 
