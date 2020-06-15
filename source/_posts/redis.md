@@ -103,8 +103,23 @@ ZSCAN：命令用于迭代  zset 中的元素（包括元素成员和元素分�
 
 ## 五. IO模型和性能
 + 非阻塞IO： read， write时不阻塞
-+ 事件轮询和多路复用
++ 事件轮询和多路复用[8]
 
++ redis性能
+最低配置: 4GB， 2核， 链接数2w， QPS 16w
+
++ redis性能高的原因
+1. 高效的数据结构
+2. 多路复用IO模型
+3. 事件机制
+总结:Reactor + 队列 [10]
+
+> 大体上可以说 Redis 的工作模式是，reactor 模式配合一个队列，用一个 serverAccept 线程来处理建立请求的链接，
+并且通过 IO 多路复用模型，让内核来监听这些 socket，一旦某些 socket 的读写事件准备就绪后就对应的事件压入队列中，
+然后 worker 工作，由文件事件分派器从中获取事件交于对应的处理器去执行，当某个事件执行完成后文件事件分派器才会从队列中获取下一个事件进行处理。
+可以类比在 netty 中，我们一般会设置 bossGroup 和 workerGroup 默认情况下 bossGroup 为 1，workerGroup = 2 * cpu 数量，
+这样可以由多个线程来处理读写就绪的事件，但是其中不能有比较耗时的操作如果有的话需要将其放入线程池中，不然会降低其吐吞量。
+在 Redis 中我们可以看做这二者的值都是 1。
 
 ## 参考:
 《Redis 深度历险：核心原理与应用实践》 钱文品
@@ -123,6 +138,7 @@ ZSCAN：命令用于迭代  zset 中的元素（包括元素成员和元素分�
 7. [七问Redis，才知道我与技术大牛的差距在哪里 ](https://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650780240&idx=1&sn=49fb636a97a3c21fec7d2e2b59bea09f&chksm=f3f907c5c48e8ed3aec22d5c9b227e08916da9c4318524b435335340dc9852b314dd8f3abf8b&scene=0&xtrack=1#rd) good
 8. [Mysql事务总结](../../../../2015/02/21/transaction/) self
 9. [美团针对Redis Rehash机制的探索和实践](https://www.cnblogs.com/meituantech/p/9376472.html) good
+10. [为什么 Redis 单线程能达到百万+QPS？](https://mp.weixin.qq.com/s/QrvUl6Ul9DxYoRZwSsMQZw) good
 
 ---
 
