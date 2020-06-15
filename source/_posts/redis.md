@@ -78,6 +78,7 @@ mysql  |√       |√    |√    | √
  基于大小 | 内存淘汰策略 <br>1. noeviction <br>2.lru <br>3. random <br>4. ttl  | ![kafka-size]
  其他 | x  | ![kafka-offset]  
 
++ 近似LRU算法[11]
 
 ## 四. hash和scan命令
 + redis hash的结构：一维数组+二维链表（和java的hashmap结构一样）
@@ -139,6 +140,7 @@ ZSCAN：命令用于迭代  zset 中的元素（包括元素成员和元素分�
 8. [Mysql事务总结](../../../../2015/02/21/transaction/) self
 9. [美团针对Redis Rehash机制的探索和实践](https://www.cnblogs.com/meituantech/p/9376472.html) good
 10. [为什么 Redis 单线程能达到百万+QPS？](https://mp.weixin.qq.com/s/QrvUl6Ul9DxYoRZwSsMQZw) good
+11. [经典面试题：Redis 内存满了怎么办？](https://mp.weixin.qq.com/s/gkkjJu04sS2qtRdd-yB5DQ)
 
 ---
 
