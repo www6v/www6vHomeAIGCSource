@@ -24,16 +24,20 @@ tomcat组件
 1. 共享内存 Slab
    分页 4K， 8K， 16K
 
+
 二. Nginx反向代理
 + 类型
-1. hash 
-2. robin
+1. round-robin是基础 
+2. ip-hash -> real-ip
+3. hash -> 自定义可以hash的参数
 3. least-connection
 
+
 + 可扩展立方体
-1. X-axis 基于round-robin或者least-connected算法分发请求
-2. Y-axis 基于URL对功能进行分发
-3. Z-axis 将用户IP地址或者其他信息映射到某个特定的服务或者集群
+1. X-axis 基于round-robin或者least-connected算法分发请求 -> 相对简单
+2. Y-axis 基于URL对功能进行分发。 -> 相对复杂
+3. Z-axis 将用户IP地址或者其他信息映射到某个特定的服务或者集群 -> 相对简单
+
 
 + 多种协议反向代理
 1. tcp udp 透传
