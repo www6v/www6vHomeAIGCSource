@@ -20,6 +20,26 @@ Nginx总结
 tomcat组件
 </div>
 
+一. Nginx架构
+1. 共享内存 Slab
+   分页 4K， 8K， 16K
+
+二. Nginx反向代理
++ 类型
+1. hash 
+2. robin
+3. least-connection
+
++ 可扩展立方体
+1. X-axis 基于round-robin或者least-connected算法分发请求
+2. Y-axis 基于URL对功能进行分发
+3. Z-axis 将用户IP地址或者其他信息映射到某个特定的服务或者集群
+
++ 多种协议反向代理
+1. tcp udp 透传
+2. http -> memcached , scgi, fastcgi, uwsgi, grpc, http, websocket
+
+
 ## 参考:
 
 1. [深入Nginx 思维导图](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651010416&idx=4&sn=dfa07f0e065d273b028e662e87e780ff&chksm=bdbecd238ac9443511c4e7eadf9e59cc9139fac25c52b44f7a93787b940826c5f61f06e10224&scene=27#wechat_redirect)
