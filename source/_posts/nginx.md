@@ -27,10 +27,14 @@ tomcat组件
 
 二. Nginx反向代理
 + 类型
-1. round-robin是基础 
-2. ip-hash -> real-ip
-3. hash -> 自定义可以hash的参数
-3. least-connection
+1. 带权重的round-robin算法是基础 
+2. + hash负载均衡算法
+   ip-hash算法 -> real-ip
+   hash算法 -> 自定义可以hash的参数（比如?userName）
+   + 问题: 如果有upstream的机器宕机， hash算法还会路由到这台机器
+   + 解决方案：使用一致性hash(consistent),hash 环
+3. least-connection， 如果所有节点的connection都一致，
+   会退化成为round-robin算法。
 
 
 + 可扩展立方体
@@ -43,6 +47,8 @@ tomcat组件
 1. tcp udp 透传
 2. http -> memcached , scgi, fastcgi, uwsgi, grpc, http, websocket
 
++  反向代理流程
+修改发送到upstream机器的请求的nginx指令。
 
 ## 参考:
 
