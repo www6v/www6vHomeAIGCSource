@@ -19,3 +19,11 @@ categories:
 
 ## 参考:
 1. [Istio 知识图谱](https://github.com/servicemesher/istio-knowledge-map)
+2. [Istio V1.0 系列-开源技术 * IBM 微讲堂](https://developer.ibm.com/cn/os-academy-istio/)  video 未
+   [IBM Istio系列开源技术微讲堂](https://istio.cn/t/topic/19) video 未
+2. [Istio v1.6 系列-开源技术 * IBM 微讲堂](https://developer.ibm.com/cn/os-academy-istio-2020/) video 未
+
+
+
+
+
