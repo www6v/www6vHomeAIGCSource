@@ -31,7 +31,7 @@ categories:
 ![控制器模型](https://user-images.githubusercontent.com/5608425/63924251-85bba980-ca7a-11e9-8a3a-4cf852dfe86c.JPG)  控制器模型
 </div>
 
-## 二. Kubernetes产品形态
+## 三. Kubernetes产品形态
 1. 托管集群（ 阿里 ACK ）
 2. serverless Kubernetes （阿里 ASK， ECI）
 3. service mesh（阿里 ASM）
@@ -41,6 +41,8 @@ categories:
 {% asset_img   product.jpg  Kubernetes产品形态  %}
 
 
+## 四.  Kubernetes高可用方案
+[8][9]
 
 ## 参考:
 
@@ -51,6 +53,9 @@ categories:
 5. [K8S 从懵圈到熟练：读懂此文，集群节点不下线](https://mp.weixin.qq.com/s/xmVHqTZblQsAxdaSjWjn1Q) 阿里
 6. <<深入剖析Kubernetes - 16  编排其实很简单：谈谈“控制器”模型>> 张磊  
 7. [Serverless Kubernetes：理想，现实与未来](https://mp.weixin.qq.com/s/o_dPKP_6dL92Q4jiG4097A)  易立、张维
+8. [Options for Highly Available topology](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology/)
+9. [Creating Highly Available clusters with kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/)
+
 ---
 
 CNCF × Alibaba 云原生技术公开课

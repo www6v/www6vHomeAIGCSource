@@ -27,6 +27,8 @@ CloneSet, Advanced StatefulSet, OpenKuise
 
 7. [阿里云核心技术竞争力第二期](https://edu.csdn.net/course/play/29034/407143?spm=1002.2009.3001.4024) 未
 
+8. [云原生应用白皮书 - 定义云原生应用标准](https://jimmysong.io/guide-to-cloud-native-app/)
+
 + Serverless
 [Serverless 工程化落地与实践](https://yq.aliyun.com/articles/744370)  video 未 
 [云原生之Serverless互联网实践专场](https://www.bilibili.com/video/av925967133) video 未  3个分享 钉钉2020.05.26有相同的视频
