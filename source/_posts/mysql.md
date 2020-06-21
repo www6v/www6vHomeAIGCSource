@@ -1,5 +1,5 @@
 ---
-title: Mysql
+title: Mysql总结
 date: 2019-09-10 16:02:39
 tags:
   - mysql
