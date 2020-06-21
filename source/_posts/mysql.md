@@ -85,22 +85,9 @@ create table people {
 ```
 {% asset_img compositeIndex.JPG 复合索引的数据结构 %}
 
-## 二. redo log 和 undo log
-```
-  事务开始.
-      记录A=1到undo log.
-      修改A=3.
-      记录A=3到redo log.( 先写内存， 后同步到磁盘中)
 
-      记录B=2到undo log.
-      修改B=4.
-      记录B=4到redo log.( 先写内存， 后同步到磁盘中)
 
-      将redo log写入磁盘。
-  事务提交
-```
-
-## 三. MyISAM 和 InnoDB
+## 二. MyISAM 和 InnoDB
 
   描述  | MyISAM  |  InnoDB 
   :-: | :-: | :-: 
@@ -115,7 +102,7 @@ create table people {
   当查询的索引含有唯一属性时(单条记录)，将next-key lock降级为record key
 
 
-## 四. 事务隔离级别
+## 三. 事务隔离级别
 
 隔离级别| 脏读|  不可重复读<br>（重点是修改）| 幻影读<br>（重点是新增或者删除）
 :-: | :-: | :-: | :-:
@@ -125,18 +112,7 @@ REPEATABLE-READ<br>（**InnoDB默认支持**）| ×| ×| √
 SERIALIZABLE|  ×| ×| ×
 
 
-## 五. MySQL主从复制原理
-
-<div style="text-align: center;">
-![master-slave](https://user-images.githubusercontent.com/5608425/66110430-58be6180-e5f9-11e9-9272-da2f69e51b1c.jpg)
-MySQL主从复制
-</div>
-
-> + MySQL master 将数据变更写入二进制日志( binary log, 其中记录叫做二进制日志事件binary log events，可以通过 show binlog events 进行查看)
-+ MySQL slave 将 master 的 binary log events 拷贝到它的中继日志(relay log)
-+ MySQL slave 重放 relay log 中事件，将数据变更反映它自己的数据
-
-## 六. 锁
+## 四. 锁
 1. 行锁， 锁优化
 在InnoDB事务中，**行锁**是在需要的时候才加上的，但并不是不需要了就立刻释
 放，而是要等到事务结束时才释放。这个就是**两阶段锁协议**。
