@@ -1,5 +1,5 @@
 ---
-title: Mysql的高可用和高可用
+title: Mysql的高可靠和高可用
 date: 2020-06-21 18:14:49
 tags:
   - mysql
