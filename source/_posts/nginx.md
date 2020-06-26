@@ -20,12 +20,12 @@ Nginx总结
 tomcat组件
 </div>
 
-一. Nginx架构
+## 一. Nginx架构
 1. 共享内存 Slab
    分页 4K， 8K， 16K
 
 
-二. Nginx反向代理
+## 二. Nginx反向代理
 + 类型
 1. 带权重的round-robin算法是基础 
 2. + hash负载均衡算法

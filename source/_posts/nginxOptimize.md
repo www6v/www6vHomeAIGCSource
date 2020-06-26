@@ -50,7 +50,7 @@ gzip_vary on;
 
 ###  worker 
 <code>
-worker_connections  16384;  ///    一个worker有16384/2=8,192‬个链接 .
+worker_connections  16384;  ///    一个worker有 16384/2=8192 ‬个链接 .
                                    两个事件， 一个读事件， 一个写事件。 
                                    越多的connections对应更多的内存消耗。
 Default: worker_connections 512;                                 
@@ -63,6 +63,30 @@ Default: 	connection_pool_size 256|512
 Default: 	request_pool_size 4k;
 </code>
 
+<code>
+worker_processes  设置worker进程的数量
+</code>
+
+
+### 减少进程间切换
+程间切换： cpu从一个进程或线程切换到另一个进程或线程。
+
++ 主动切换和被动切换
++ 减少主动切换
++ 被动切换：时间片耗尽。 
+减少被动切换： **增大进程优先级**
+Nice 静态优先级: -20 -- 19
+Priority 动态优先级： 0-139
+
+### 提升CPU缓存命中率
++ **绑定worker到指定cpu**
+L1,L2(cpu独享) 
+L3（共享的）
+<code>
+worker_cpu_affinity cpumask ...;
+worker_cpu_affinity auto [cpumask];
+</code>
+
 ### lua 分配的内存（暂时没有使用）
 <code>
 lua_shared_dict configuration_data 5M;
@@ -71,12 +95,16 @@ lua_shared_dict certificate_data 16M;
 </code>
 
 
-### http的keeplive（一个tcp的链接，上面有多个http的请求）  非tcp keeplive 
+### http的keeplive  长链接（一个tcp的链接，上面有多个http的请求）  非tcp keeplive 
 <code>
 keepalive_disable;  /// 没有设置
 keepalive_timeout  75s; // 默认值
 keepalive_requests 100; // 默认值  一个tcp请求中可发100个http请求
 </code>
+
+
+
+
 
 ### 二. 测试用例
 URL：logsearch.sh.pre.urtc.com.cn
