@@ -1,5 +1,5 @@
 ---
-title: istio流量管理
+title: Istio流量管理
 date: 2019-11-21 15:59:53
 tags:
   - istio
@@ -33,11 +33,38 @@ Envoy
 [Istio 庖丁解牛1：组件概览](https://mp.weixin.qq.com/s/VwqxrZsVmn4a5PcVckaLxA)  腾讯云 钟华
 
 ### 1.2 流量管理模型
-VirtualService： 定义了一系列针对指定服务的流量路由规则
-DestinationRule
-ServiceEntry： 外部服务定义
-Gateway：  描述了一个负载均衡器，用于承载网格边缘的进入和发出连接。
-EnvoyFilter： 描述了针对代理服务的过滤器，用来定制由 Istio Pilot 生成的代理配置.
+
+
++ VirtualService 
+定义了一系列针对指定服务的流量**路由规则**; 
+将流量路由到给定目标地址;
+通常和目标规则（DestinationRule）成对出现;
+
++ DestinationRule
+定义虚拟服务路由**目标地址**的**真实地址**，即**子集（subset）**；
+设置**负载均衡方式**： round robin（默认），随机，权重，最少请求数；
+
++ ServiceEntry 
+**外部服务**定义: 把外部服务注册到网格中；
+功能：
+为外部服务转发请求；
+添加超时重试等策略；
+扩展网格；
+
++ Gateway  
+描述了一个负载均衡器，用于承载网格边缘的进入和发出连接。
+
++ EnvoyFilter 
+描述了针对代理服务的过滤器，用来定制由 Istio Pilot 生成的代理配置.
+
++ Sidecar
+调整Envoy代理接管的端口和协议；
+限制Envoy代理可访问的服务；
+
++ 总结：
+管理内部流量：VirtualService + DestinationRule
+管理外部流量：Gateway
+管理服务：ServiceEntry
 
 ## 二. 灰度发布
 {% asset_img  istio-gray.jpg  istio灰度发布  %}
@@ -45,6 +72,7 @@ EnvoyFilter： 描述了针对代理服务的过滤器，用来定制由 Istio P
 ## 参考:
 1. [Istio流量管理实现机制深度解析](https://zhaohuabing.com/post/2018-09-25-istio-traffic-management-impl-intro/)  赵化冰
 2. [腾讯云容器团队内部Istio专题分享](https://mp.weixin.qq.com/s/NjMncH84uEl_PywOFFMlFA) 腾讯云 钟华
+3. [极客时间 《Service Mesh实战 - 核心功能之流量控制：Istio是如何实现流量控制功能的？》](https://time.geekbang.org/course/intro/100049401) 马若飞
 
 ---
 官方Examples 0-5  G
