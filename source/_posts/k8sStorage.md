@@ -18,15 +18,25 @@ categories:
 ### 1.1
 ![Kubernetes存储的绑定流程](https://user-images.githubusercontent.com/5608425/68108028-9593b600-ff21-11e9-8623-5c719772317e.jpg)
 
-**流程**:
-1. create
-2. attach
-3. mount
+**三个阶段：**
+第一个**create**阶段，主要是创建存储；
+第二个**attach**阶段，就是将那块存储挂载到 node 上面(通常为将存储load到node的/dev下面)；
+第三个**mount**阶段，将对应的存储进一步挂载到 pod 可以使用的路径。
 
-### 1.2
+
+## 二. Static Provisioning && Dynamic Provisioning
+
+### 2.1 Static Provisioning
+
+{% asset_img  static-provision.PNG Static Provisioning %}
+
+### 2.2 Dynamic Provisioning
+
+{% asset_img  dynamic-provision.PNG  Dynamic Provisioning %}
+
 <div style="text-align: center;">
 ![relationship](https://user-images.githubusercontent.com/5608425/64247540-aafc5c00-cf41-11e9-83af-64199e79ded7.JPG)
-Kubernetes pvc 动态绑定流程
+**Kubernetes pvc 动态绑定流程**
 </div>
 
 > 只有同属于一个 StorageClass 的PV 和 PVC，才可以绑定在一起
