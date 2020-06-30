@@ -13,8 +13,9 @@ categories:
 <p></p>
 <!-- more -->
 
-{% asset_img  mom.jpg  消息中间件总结 %}
+{% asset_img  mom1.jpg  消息中间件总结 %}
 
+{% asset_img  mom2.jpg  消息中间件总结 %}
 
 ## 参考：
 
