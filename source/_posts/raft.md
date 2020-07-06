@@ -11,10 +11,14 @@ categories:
   - raft
 ---
 
+
+<p></p>
+<!-- more -->
+
 一. 总结
 {% asset_img   raft.jpg  raft协议 %}
 
-<!-- more -->
+Raft： leader + term + peers
 
 二. raft-分区脑裂
 
