@@ -1,5 +1,5 @@
 ---
-title: flink
+title: Flink
 date: 2019-07-29 22:22:52
 tags:
   - flink
@@ -9,8 +9,14 @@ categories:
   - flink   
 ---
 
+<p></p>
+<!-- more -->
+
+## 一. 总结
 {% asset_img   flink.jpg  flink  %} 
 
+## 二. Flink on Kubernetes 
+[Flink on Kubernetes](https://github.com/www6v/dev-ops/tree/master/yaml-prod/flink)  Flink官方的方案
 
 ## 参考：
 
