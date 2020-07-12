@@ -10,4 +10,4 @@ categories:
 
 ---
 
-[Spark公司内部培训](https://www6v.github.io/www6vHomeHexo/2019/07/03/sparkTrain/sparkTrain.pptx)
+[Spark公司内部培训](https://www6v.github.io/www6vHomeHexo/2019/03/10/sparkTrain/sparkTrain.pptx)
