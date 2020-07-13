@@ -32,8 +32,8 @@ categories:
 {% asset_img  spark-task-num(kafka-partition增加到10后).JPG  图二.优化后,kafka的partition增加到10后，spark的task数为10 %}
 
 
-### 3. MapReduce、Spark代码优化。
-[Spark公司内部培训](/2019/03/10/sparkTrain/)
+### 3. MapReduce、Spark代码优化
+[Spark公司内部培训](../../../../2019/03/10/sparkTrain/)
 
 ### 4. SQL语句优化
 典型的就是Hive的**MapJoin**语法，如果join的一张表比较小，比如只有几MB，那么就可以用MapJoin进行连接，Hive会将这张小表当作Cache数据全部加载到所有的Map任务中，在Map阶段完成join操作，无需shuffle。
