@@ -45,6 +45,8 @@ categories:
 2. 《Spark大数据处理：技术、应用与性能优化》 高彦杰
 3. 《Spark大数据处理技术》 夏俊鸾,黄洁,程浩等
 4. [Spark中foreachRDD、foreachPartition和foreach解读](https://blog.csdn.net/Scapel/article/details/84030362)
+5. [从0开始学大数据 - Spark的性能优化案例分析（上）]()  李智慧
+6. [从0开始学大数据 - Spark的性能优化案例分析（下）]()  李智慧
 
 
 
