@@ -38,10 +38,13 @@ categories:
 ### 4. SQL语句优化
 典型的就是Hive的**MapJoin**语法，如果join的一张表比较小，比如只有几MB，那么就可以用MapJoin进行连接，Hive会将这张小表当作Cache数据全部加载到所有的Map任务中，在Map阶段完成join操作，无需shuffle。
 
+### 5. 操作系统配置优化
+> 当transparent huge pages打开的时候，sys态CPU消耗就会增加，而不同Linux版本的transparent huge pages默认是否打开是不同的，对于默认打开transparent huge pages的Linux执行下面的指令，关闭transparent huge pages。
+
 
 ## 参考:
 
-1. [计费项目/spark streaming项目](https://github.com/www6v/urtc-bill/blob/master/src/main/java/ucloud/utrc/bill/SparkStreamingKafka.scala)
+1. [计费项目/spark streaming项目](https://github.com/www6v/r-tc-bill/blob/master/src/main/java/cloud/rtc/bill/SparkStreamingKafka.scala)
 2. 《Spark大数据处理：技术、应用与性能优化》 高彦杰
 3. 《Spark大数据处理技术》 夏俊鸾,黄洁,程浩等
 4. [Spark中foreachRDD、foreachPartition和foreach解读](https://blog.csdn.net/Scapel/article/details/84030362)
