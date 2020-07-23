@@ -1,5 +1,5 @@
 ---
-title: 缓存机制
+title: 缓存(cache)机制
 date: 2017-12-07 09:58:48
 tags:
   - cache

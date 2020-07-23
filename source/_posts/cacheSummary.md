@@ -1,5 +1,5 @@
 ---
-title: 缓存总结
+title: 缓存(cache)总结
 date: 2018-01-21 09:59:17
 tags:
   - cache
@@ -29,6 +29,10 @@ Write Through ： 主动失效
 ### 缓存更新策略: Cache Aside 模式
 Cache Aside 模式和上面的 Read/Write Through 模式非常像，它们处理读请求的逻辑是完全一样的，唯一的一个小差别就是，Cache Aside 模式在更新数据的时候，并不去尝试更新缓存，而是去删除缓存。
 {% asset_img  cache-aside.PNG  Cache Aside模式 %}
+**普遍使用这种方式**
+
+## 三. 缓存穿透
+使用bloomfilter
 
 
 ## 参考:

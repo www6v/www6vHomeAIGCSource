@@ -18,7 +18,7 @@ categories:
 ## 二.  Spark优化
 
 ### 1. 数据倾斜处理
-产品经理曾经讲过一个案例，他想把用户日志和用户表通过用户ID进行join，但是日志表有几亿条记录的**用户ID是null**，Hive把**null当作一个字段值shuffle到同一个Reduce，结果这个Reduce跑了两天也没跑完，SQL当然也执行不完。像这种情况的数据倾斜，因为null字段没有意义，**所以可以在where条件里加一个userID != null过滤掉就可以了**。
+把用户日志和用户表通过用户ID进行join，但是日志表有几亿条记录的**用户ID是null**，Hive把**null当作一个字段值shuffle到同一个Reduce，结果这个Reduce跑了两天也没跑完，SQL当然也执行不完。像这种情况的数据倾斜，因为null字段没有意义，**所以可以在where条件里加一个userID != null过滤掉就可以了**。
 
 
 ### 2. 配置参数优化。
@@ -41,6 +41,10 @@ categories:
 ### 5. 操作系统配置优化
 > 当transparent huge pages打开的时候，sys态CPU消耗就会增加，而不同Linux版本的transparent huge pages默认是否打开是不同的，对于默认打开transparent huge pages的Linux执行下面的指令，关闭transparent huge pages。
 
+
+## 三. Structured Streaming 
+
+## 四. Spark Streaming Kafka 反压（Backpressure）
 
 ## 参考:
 
