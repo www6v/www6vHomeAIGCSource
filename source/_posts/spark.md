@@ -78,6 +78,8 @@ df.sort_values([‘age’], ascending=False).head(100) // 返回 100 个年龄�
 4. [Spark中foreachRDD、foreachPartition和foreach解读](https://blog.csdn.net/Scapel/article/details/84030362)
 5. [从0开始学大数据 - Spark的性能优化案例分析（上）]()  李智慧
 6. [从0开始学大数据 - Spark的性能优化案例分析（下）]()  李智慧
+7. [Spark SQL：Spark数据查询的利器]  蔡元楠
+8. [Structured Streaming：如何用DataFrame API进行实时数据分析?]  蔡元楠
 
 
 
