@@ -1,5 +1,5 @@
 ---
-title: 分布式ID生成
+title: 分布式ID生成 发号器
 date: 2016-08-15 06:28:23
 tags:
   - 中间件
@@ -23,6 +23,9 @@ categories:
    ID 有序也会提升数据的写入性能， 数据库索引B+树的插入。
 
 ## 二. Snowflake
+
+[Snowflake算法实现](https://github.com/www6v/jDemo/blob/master/src/main/java/middleware/snowflake/SnowflakeIdWorker.java)
+
 ### 实现方式：
 + 嵌入在服务器中
 + 独立的分布式id服务器
