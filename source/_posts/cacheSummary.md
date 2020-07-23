@@ -31,8 +31,15 @@ Cache Aside 模式和上面的 Read/Write Through 模式非常像，它们处理
 {% asset_img  cache-aside.PNG  Cache Aside模式 %}
 **普遍使用这种方式**
 
+
+### 缓存更新策略: Write Behind模式
+linux page cache: dirty page刷盘。
+kafka使用page cache异步刷盘。
+
+
 ## 三. 缓存穿透
-使用bloomfilter
+1. 回种空值
+2. 使用bloomfilter
 
 
 ## 参考:
