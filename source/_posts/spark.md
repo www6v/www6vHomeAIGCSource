@@ -43,8 +43,32 @@ categories:
 
 
 ## 三. Structured Streaming 
+1. time 
+事件时间 event time
+处理时间 processing time
 
-## 四. Spark Streaming Kafka 反压（Backpressure）
+2. DSL
+<code>
+df = … // 这个 DataFrame 代表学校学生的数据流，schema 是{name: string, age: number, height
+df.select("name").where("age > 10") // 返回年龄大于 10 岁的学生名字列表
+df.groupBy("grade").count() // 返回每个年级学生的人数
+df.sort_values([‘age’], ascending=False).head(100) // 返回 100 个年龄最大的学生
+</code>
+
+3. API 
+**Spark Streaming** 提供的 DStream API 与 RDD API 很类似，相对**比较低 level**。
+**Structured Streaming** 提供的 DataFrame API 就是这么一个相对**高 level **的 API，大部分
+开发者都很**熟悉关系型数据库和 SQL**。
+
+4. 实时性
+**Spark Streaming** 是准实时的，它能做到的最小延迟在一秒左右。 **秒级**
+**Structured Streaming** 引入了**连续处理**的模式，可以做到真正的**毫秒级**延迟。
+
+## 四. spark-sql
+{% asset_img  rdd-dataset-dataframe.PNG  RDD,DataFrame,DataSet比较 %}
+
+
+## 五. Spark Streaming Kafka 反压（Backpressure）
 
 ## 参考:
 
