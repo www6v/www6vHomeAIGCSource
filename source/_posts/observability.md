@@ -1,7 +1,12 @@
 ---
-title: 可观察性 链路追踪
+title: 可观察性-链路追踪-Metric
 date: 2019-08-31 11:54:42
 tags:
+  - 可观察性
+categories:
+  - 分布式
+  - 服务治理
+  - 可观察性
 ---
 
 <p hidden></p>
@@ -12,12 +17,12 @@ tags:
 
 模式| 产品/框架
 :-:|:-:|:-:
-Log aggregation| AWS Cloud Watch
+Log aggregation|  ELK， AWS Cloud Watch
 Application metrics + alert| Prometheus 、AWS Cloud Watch
-Distributed tracing| Open Tracing ，Zipkin ，Jaeger，pinpoint（无侵入）, skywalking（无侵入）, CAT
-Exception tracking| Open Tracing ，Zipkin ，Jaeger，pinpoint（无侵入）, skywalking（无侵入）, CAT
+Distributed tracing| Zipkin ，Jaeger，pinpoint（无侵入）, skywalking（无侵入）, CAT
+Exception tracking| Zipkin ，Jaeger，pinpoint（无侵入）, skywalking（无侵入）, CAT
 
-## 监控指标和原则
+## 一. 监控指标和原则
 ### USE 原则 -> 面向"资源监控指标"
 + 利用率（Utilization），资源被有效利用起来提供服务的平均时间占比；
 + 饱和度（Saturation），资源拥挤的程度，比如工作队列的长度；
@@ -34,11 +39,23 @@ Exception tracking| Open Tracing ，Zipkin ，Jaeger，pinpoint（无侵入）, 
 + 错误
 + 饱和度
 
-## Prometheus
+## 二. Log
+ELK，EFK
+
+{% asset_img  log.JPG   log %}
+
+## 三. Metric 之 Prometheus
 1. 非分布式， 联邦
 2. pushgataway
 3. 服务发现
-4. 拉模式   
+4. 拉模式  
+
+{% asset_img  metric.JPG   metric的类型 %}
+
+## 四. APM 
+{% asset_img  apm.JPG   APM产品比对 %}
+
+{% asset_img  apm1.JPG   APM产品比对 %}
 
 ## 参考:
 1. [Metrics, tracing 和 logging 的关系](https://wu-sheng.github.io/me/articles/metrics-tracing-and-logging)
@@ -47,8 +64,10 @@ Exception tracking| Open Tracing ，Zipkin ，Jaeger，pinpoint（无侵入）, 
 4. [容器日志采集利器Log-Pilot](https://yq.aliyun.com/articles/674327)  阿里开源的Log-Pilot 容器日志采集模式
 5. [Pattern: Microservice Architecture](https://microservices.io/patterns/microservices.html)
 6. [深入剖析Kubernetes - 48 | Prometheus、Metrics Server与Kubernetes监控体系]() 张磊
+7. [微服务架构实战160讲 第七模块 ：微服务监控告警Prometheus架构和实践 119.监控模式分类]() 杨波 partial
+8. [微服务架构实战160讲 第四模块 ：微服务调用链监控CAT架构和实践 69.调用链监控产品和比较]() 杨波
 
-### tracing
+### APM, tracing
 1. [OpenTracing语义标准](https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md)
 2. [Dapper，大规模分布式系统的跟踪系统](http://bigbully.github.io/Dapper-translation/)  论文
 3. [如何检测 Web 服务请求丢失问题](https://mp.weixin.qq.com/s/QA_BTF1D3GJJ7_nYQ6oAzQ) 问题排查 应用： Nginx tracing + Tomcat tracing

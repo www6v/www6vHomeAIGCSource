@@ -14,7 +14,7 @@ categories:
 <p></p>
 <!-- more -->
 
-{% asset_img  Kafka-Reliability.jpg  Kafka 可靠性总结 %}
+{% asset_img  Kafka-Reliability.jpg  Kafka可靠性总结 %}
 
 
 <style>
