@@ -13,6 +13,8 @@ categories:
 <p></p>
 <!-- more -->
 
+关键词： 锁优化，池化，数据库优化，架构优化， 系统优化，性能测试， 监控 
+
 {% asset_img performance.jpg 性能优化总结 %}
 
 {% asset_img performance2.jpg 性能优化总结 %}
