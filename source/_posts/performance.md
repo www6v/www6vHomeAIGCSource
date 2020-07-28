@@ -38,6 +38,9 @@ categories:
 + Tomcat线程池
 Tomcat 使用的线程池就不是 JDK 原生的线程池，而是做了一些改造，**当线程数超过 coreThreadCount 之后会优先创建线程，直到线程数到达maxThreadCount**，这样就比较适合于 Web 系统**大量 IO 操作的场景**了。
 
++ 最佳实践
+大量的任务堆积会占用大量的内存空间，一旦内存空间被占满就会**频繁地触发 Full GC**，造成服务不可用，我之前排查过的一次 GC 引起的宕机，起因就是系统中的一个**线程池使用了无界队列**.
+
 ## 参考：
 1. [高性能高并发系统的稳定性保障](http://dwz.cn/4SrP4L) 京东
 2. [Linux性能优化实战](https://time.geekbang.org/column/intro/140)  极客时间
