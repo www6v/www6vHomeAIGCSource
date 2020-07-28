@@ -19,6 +19,25 @@ categories:
 
 {% asset_img performance2.jpg 性能优化总结 %}
 
+## 一. 连接池优化
+### 1. 分类 
+ 数据库连接池， redis连接池， http连接池
+
+### 2. 数据库连接池： 
++ 最小连接数， 最大连接数
+   建议**最小连接数控制在 10 左右**，**最大连接数控制在 20～30 左右**
++ 连接的可用性   
+   使用连接发送**“select 1”**的命令给数据库看是否会抛出异常，如果抛出异常则将这个连接从连接池中移除，并且尝试关闭.
+
+### 3. 线程池
++ JDK线程池
+重要参数： **coreThreadCount** 和 **maxThreadCount**，
+
+{% asset_img jdk-threadpool.PNG JDK线程池 %}
+
++ Tomcat线程池
+Tomcat 使用的线程池就不是 JDK 原生的线程池，而是做了一些改造，**当线程数超过 coreThreadCount 之后会优先创建线程，直到线程数到达maxThreadCount**，这样就比较适合于 Web 系统**大量 IO 操作的场景**了。
+
 ## 参考：
 1. [高性能高并发系统的稳定性保障](http://dwz.cn/4SrP4L) 京东
 2. [Linux性能优化实战](https://time.geekbang.org/column/intro/140)  极客时间
@@ -34,3 +53,4 @@ categories:
 12. [wordcount设计与优化](https://yq.aliyun.com/articles/25487)  竞赛题
 13. [mysql](../../../../2019/09/10/mysql/) self 索引优化， 锁的优化   未
 14. [Nginx优化](../../../../2020/03/26/nginxOptimize/)  self 未
+15. [高并发系统设计40问 - 07 | 池化技术：如何减少频繁创建数据库连接的性能损耗？]() 唐扬
