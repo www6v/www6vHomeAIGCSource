@@ -5,7 +5,7 @@ tags:
   - 云计算
 categories:
   - 分布式
-  - 架构  
+  - 云计算  
   - xaas
 ---
 
@@ -20,6 +20,8 @@ categories:
 Paas
 </div>
 
+
+
 ## 参考:
 1. [BaaS后端即服务 - 通往中台架构之路](https://yq.aliyun.com/articles/2918)
 2. [BaaS后端即服务 - 概念篇](https://yq.aliyun.com/articles/8521)
@@ -29,4 +31,5 @@ Paas
 6. [Serverless Architectures](https://martinfowler.com/articles/serverless.html)
 7. 《企业IT架构转型之道(阿里巴巴中台战略思想与架构实战)》 钟华
 8. 洞悉PaaS平台的本质  左耳听风
+9. [深入浅出云计算-07 | 云端架构最佳实践：与故障同舞，与伸缩共生]()  何恺铎
 
