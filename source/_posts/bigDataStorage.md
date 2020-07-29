@@ -30,9 +30,11 @@ categories:
  结构化	| 单行随机访问，或者是大批量范围扫描| 1.作为关系数据库的补充，存储历史归档数据。<br>2.非关系模型数据，例如时序、日志等。	 | HBase，Cassandra，<br>Tablestore | + [面向列<br>Ordered Key-Value(列族)<br> 索引 LSM-tree](../../../../2018/07/19/NoSQL/)[3][4]
 
 
+{% asset_img  storage.JPG  云计算中的大数据产品 %}
 
 ## 参考:
 1. [数据中台之结构化大数据存储设计](https://yq.aliyun.com/articles/715254?spm=a2c4e.11155435.0.0.2eba5b6e3DhL3A)
 2. [NoSQL总结](../../../../2018/07/19/NoSQL/) self
 3. [日志结构的合并树 The Log-Structured Merge-Tree](https://www.cnblogs.com/siegfang/archive/2013/01/12/lsm-tree.html)
 4. [【Paper笔记】The Log structured Merge-Tree（LSM-Tree）](https://kernelmaker.github.io/lsm-tree)
+5. [深入浅出云计算 - 13 | 云上大数据：云计算遇上大数据，为什么堪称天作之合？]() 何恺铎
