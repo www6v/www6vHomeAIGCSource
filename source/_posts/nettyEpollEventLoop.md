@@ -17,7 +17,7 @@ categories:
 
 Netty4.0.17 提供了默认采用ET工作模式的EpollEventLoop。NioEventLoop比EpollEventLoop相对更通用，EpollEventLoop只能在linux上运行，属于Linux native transport，是不能跨操作系统的。EpollEventLoop使用了JNI，调用了linux的epoll API。EpollEventLoop的API也就沿袭了Linux epoll IO多路复用中API的风格和命名方式。相对于基于NIO的transport，JNI transport在特殊平台上增加了特别的特性，会产生更少的内存垃圾，并且也会提高性能。
 
-![](http://www6v.github.io/www6vHome/nettyEpollEventLoop/twoType.JPG)
+{% asset_img  twoType.JPG  %}
 
 **epoll使用一组函数来完成任务，而不是像select/poll使用单个函数。**
 
@@ -29,37 +29,27 @@ epoll把用户关心的文件描述符上的事件放在内核里的一个事件
 
 Native.epollCtlAdd把epollFd和 eventFd做了关联。epoll与select/poll不同，**epoll不用每次调用都向内核拷贝事件描述信息**，在第一次调用后，事件信息就会与对应的epoll描述符关联起来。
 
-
-![图1 EpollEventLoop初始化epoll](http://www6v.github.io/www6vHome/nettyEpollEventLoop/epoll_function1.JPG "图1 EpollEventLoop初始化epoll")
+{% asset_img  epoll_function1.JPG   图1 EpollEventLoop初始化epoll %}
                   
 
 ### 2. epoll通过epoll_ctl添加/修改/删除事件，类似于Observer模式的事件注册。
 
-
-![图2 epollFd中添加事件](http://www6v.github.io/www6vHome/nettyEpollEventLoop/epoll_functionAdd.JPG "图2 epollFd中添加事件")
+{% asset_img  epoll_functionAdd.JPG  图2 epollFd中添加事件 %}
                   
-
-![图3 epollFd中修改事件](http://www6v.github.io/www6vHome/nettyEpollEventLoop/epoll_functionModify.JPG "图3 epollFd中修改事件")
+{% asset_img  epoll_functionModify.JPG  图3 epollFd中修改事件  %}
                   
-
-![图4 epollFd中删除事件](http://www6v.github.io/www6vHome/nettyEpollEventLoop/epoll_functionDelete.JPG "图4 epollFd中删除事件")
+{% asset_img  epoll_functionDelete.JPG  图4 epollFd中删除事件  %}
                   
 ### 3. epoll使用“事件”的就绪通知方式，通过在等待的描述符上注册回调函数（epoll_ctl注册fd），当事件发生（事件fd就绪）时，回调函数负责把发生的事件存储在就绪事件链表中，最后写到用户空间， epoll_wait便可以收到通知。 下图是处理就绪事件的流程。
 
-
-![图5 循环阻塞调用epollWait方法，等待就绪的事件](http://www6v.github.io/www6vHome/nettyEpollEventLoop/epoll_functionWait.JPG "图5 循环阻塞调用epollWait方法，等待就绪的事件")
+{% asset_img  epoll_functionWait.JPG  图5 循环阻塞调用epollWait方法，等待就绪的事件  %}
                   
-
-
-![图6 epollwait收到通知后返回epollFd对应的已经就绪的事件id，也就是ready变量](http://www6v.github.io/www6vHome/nettyEpollEventLoop/epoll_function_wait.JPG "图6 epollwait收到通知后返回epollFd对应的已经就绪的事件id，也就是ready变量")
+{% asset_img  epoll_function_wait.JPG   图6 epollwait收到通知后返回epollFd对应的已经就绪的事件id，也就是ready变量 %}
                   
+{% asset_img  epoll_function_handle_ready_event.JPG   图7 根据事件id，调用就绪处理事件方法 %}
 
-![图7 根据事件id，调用就绪处理事件方法](http://www6v.github.io/www6vHome/nettyEpollEventLoop/epoll_function_%E5%A4%84%E7%90%86%E5%B0%B1%E7%BB%AA%E4%BA%8B%E4%BB%B6.JPG "图7 根据事件id，调用就绪处理事件方法")
-
+{% asset_img  epoll_function_handle_ready_event_1.JPG   图8 消费已经就绪的事件 %}                  
                   
-![图8 消费已经就绪的事件](http://www6v.github.io/www6vHome/nettyEpollEventLoop/epoll_function_%E5%A4%84%E7%90%86%E5%B0%B1%E7%BB%AA%E4%BA%8B%E4%BB%B61.JPG "图8 消费已经就绪的事件")
-                  
-
 ### 总结：epoll基于CQRS的理念，分离了command（epollCtl）和queuy（epollWait）。epoll在性能上也比select/poll高出很多。epoll不需要一直轮询，节省了cpu时间。
 
 在复制问题上，epoll使用mmap减少复制开销。
