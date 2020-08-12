@@ -21,11 +21,11 @@ categories:
 
 |组件| 详细
 :-:|:-:|:-:
-kafka|Controller leader| 依赖zk选主
-|Partition leader | 
+kafka|Controller leader| 依赖zk选主, kafka只有一个Controller
+|Partition leader | leader在ISR中
 |Consumer leader的选举| 消费组内的消费者选举出一个消费组的leader
-zookeeper| zk自身的选主 | Zab协议
- | 其他系统依赖zk选主| Eg.  kafka
+zookeeper| zk自身的选主 | Zab协议(原子广播+奔溃恢复)
+ | 其他系统依赖zk选主| 使用zk的临时节点， session结束， 临时节点消失
 
 
 ### Partition

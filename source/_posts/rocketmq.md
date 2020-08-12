@@ -11,19 +11,12 @@ categories:
   - RocketMQ   
 ---
 
+<p></p>
+<!-- more -->
+
 关键词: 顺序消息[6][9][10], 重复消息, 事务消息, 消息存储
 
 {% asset_img  rocketMQ.jpg  RocketMQ %}
-
-## 事务
-### Rocketmq事务
-**半消息**保存在特殊的内部主题RMQ_SYS_TRANS_HALF_TOPIC中，使用的队列号固定为0。这个主题和队列对消费者是不可见的。
-### Kafka事务
-coordinate 协调者
-事务日志
-### 事务总结
-RocketMQ 和 Kafka 的事务都是基于**两阶段提交**来实现的事务，都利用了**特殊的主题中的队列和分区**来记录**事务日志**.
-RocketMQ 和 Kafka 的事务，它们的适用场景是不一样的，**RocketMQ的事务适用于解决本地事务和发消息的数据一致性问题**，而 **Kafka 的事务则是用于实现它的 Exactly Once 机制，应用于实时计算的场景中**。
 
 
 ## 参考:
@@ -40,6 +33,6 @@ RocketMQ 和 Kafka 的事务，它们的适用场景是不一样的，**RocketMQ
    producer: selector, 相同orderid的发送到同一个topic;
    consumer: 多消费者加锁竞争消息
 10. [收发顺序消息](https://help.aliyun.com/document_detail/49323.html)  阿里云文档
-11. [消息队列高手课 - 25 | RocketMQ与Kafka中如何实现事务？]() 李玥
+
 
 
