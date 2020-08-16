@@ -29,7 +29,15 @@ SQL| DSL
 副本数可以动态调整。
 
 ##### 节点角色
-{% asset_img  nodeRole.PNG  节点角色  %}
+节点类型| 配置参数 |  默认值
+:-:|:-:| :-:
+master eligible| node.master| true
+data| node.data | true
+ingest| node.ingest| true
+coordinating only| 无| 每个节点默认都是coordinating节点。设置其他类型全部为false。
+machine learning| node.ml | true（需enable x-pack）
+
+
 
 ##### 三种颜色
 绿色： 主分片和副本分片都正常
