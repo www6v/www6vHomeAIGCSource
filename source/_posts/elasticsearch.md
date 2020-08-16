@@ -1,5 +1,5 @@
 ---
-title: Elastic Search
+title: Elastic Search(es)
 date: 2019-08-02 22:27:22
 tags: 
   - elasticSearch
@@ -13,7 +13,15 @@ categories:
 <!-- more -->
 
 ## ES的概念
-{% asset_img  esVSdb.PNG  ES和DB的比较 %}
+
+DB| Elastic Search | 
+:-:|:-:
+Table|Index(Type)
+Row|Document
+Column|Field
+Schema|Mapping
+SQL| DSL
+
 
 ## ES的集群
 ##### 主分片（Primary Shard）和副本分片（Replica Shard）

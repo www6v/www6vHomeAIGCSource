@@ -8,13 +8,13 @@ categories:
   - 性能优化  
 ---
 
-<p hidden>linux性能优化</p>
+<p hidden></p>
 
 <!-- more -->
 
-<div style="width:70%; height:70%; text-align: center;">
-![cpu](https://user-images.githubusercontent.com/5608425/65083664-b6d52d00-d9db-11e9-918c-2a99c5708189.jpg)
-cpu
+<div style="width:60%; height:60%; text-align: center;">
+![最常用的cpu工具](https://user-images.githubusercontent.com/5608425/65083664-b6d52d00-d9db-11e9-918c-2a99c5708189.jpg)
+最常用的cpu工具
 </div>
 
 <div style="text-align: center;">
