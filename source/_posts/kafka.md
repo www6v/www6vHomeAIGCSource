@@ -15,6 +15,7 @@ categories:
 
 {% asset_img  kafka.png  Kafka总结 %}
 
+### kafka中的选主
 <div style="text-align: center;">
 	 表. 选主
 </div>
@@ -34,6 +35,11 @@ zookeeper| zk自身的选主 | Zab协议(原子广播+奔溃恢复)
 3. 首选首领
 
 
+### kafka的副本机制
+AR = ISR + OSR
+好处
+1. 方便实现**“Read-your-writes”**
+2. 方便实现**单调读（Monotonic Reads）**
 
 ## 参考:
 

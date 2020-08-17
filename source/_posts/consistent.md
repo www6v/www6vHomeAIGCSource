@@ -51,7 +51,7 @@ categories:
 弱一致性|协议|特性|举例
 :-:|:-:|:-:|:-:
 最终一致性(因果一致性)| 向量时钟 Vector clock[向量时钟] 图1 || 微信朋友圈的评论, Dynamo
-最终一致性（反熵Anti-Entropy）| [gossip][gossip-visualization] |  | Cassandra， BT(Bit-Torrent)
+最终一致性（反熵Anti-Entropy）| [gossip][gossip-visualization] |  | Cassandra， redis的集群状态的同步机制
 最终一致性| [raft][raft]  | 相对Paxos简单。主从，三个阶段   | etcd
 最终一致性|Master-Slave   |延迟低，吞吐高<br>主动推送/被动拉取  | Mysql 
 最终一致性|Master-Master  |延迟低，吞吐高                      | Mysql	
@@ -60,7 +60,7 @@ categories:
 ### 1.3 最终一致性 客户端为中心的一致性（Client-centric Consistency）
 > 以客户端为中心的一致性为单一客户端提供一致性保证，保证该客户端对数据存储的访问的一致性，但是它不为不同客户端的并发访问提供任何一致性保证.
 
-单调读一致性（Monotonic-read Consistency）
+单调读一致性（Monotonic-read Consistency） **[kafka的消费者的单调读](../../../../2016/05/11/kafka/)** 
 单调写一致性（Monotonic-write Consistency）
 
 ### 1.4 可定制的一致性
