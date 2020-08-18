@@ -30,7 +30,14 @@ categories:
  结构化	| 单行随机访问，或者是大批量范围扫描| 1.作为关系数据库的补充，存储历史归档数据。<br>2.非关系模型数据，例如时序、日志等。	 | HBase，Cassandra，<br>Tablestore | + [面向列<br>Ordered Key-Value(列族)<br> 索引 LSM-tree](../../../../2018/07/19/NoSQL/)[3][4]
 
 
-{% asset_img  storage.JPG  云计算中的大数据产品 %}
+<div style="text-align: center;">云计算中的大数据产品</div>
+
+服务类别	|  AWS | aliyun阿里云 | 	Azure  	   
+:-:    | :-:     | :-:      | :-:            
+大数据计算 	| 	EMR |  E-MapReduce,<br>MaxCompute  | HDInsight 
+大数据存储 	| S3（EMRFS）| OSS，JindoFS  |  Blob Storage，<br>Data Lake Storage Gen2
+分析型数据库 	| Redshift | AnalyticDB for MySQL/PostgreSQL | SQL Data Warehouse(Synapse Analytics)   
+无服务器查询 serverless | Athena| Data Lake Analytics | Azure Data Lake Analytics  
 
 ## 参考:
 1. [数据中台之结构化大数据存储设计](https://yq.aliyun.com/articles/715254?spm=a2c4e.11155435.0.0.2eba5b6e3DhL3A)

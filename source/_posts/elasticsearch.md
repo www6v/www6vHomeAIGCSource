@@ -57,6 +57,8 @@ BM25(5.0之后)
 term -> 不分词
 全文索引 ->  会分词
 
+function score query
+
 ## 索引更新策略
 完全更新策略 -> index 
 再合并策略
