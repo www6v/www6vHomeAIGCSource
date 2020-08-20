@@ -70,6 +70,22 @@ df.sort_values([‘age’], ascending=False).head(100) // 返回 100 个年龄�
 
 ## 五. Spark Streaming Kafka 反压（Backpressure）
 
+
+## 六. 互联网运营常用数据指标
+1. 新增用户数
+新增用户数有日新增用户数、周新增用户数、月新增用户数等几种统计口径
+2. 用户留存率
+用户留存率 = 留存用户数 / 当期新增用户数
+3. 活跃用户数
+有日活跃用户数、月活跃用户数
+6. 用户转化率
+转化率 = 有购买行为的用户数 / 总访问用户数
+4. PV
+用户每次点击，每个页面跳转，被称为一个PV（Page View）
+5. GMV
+GMV即成交总金额（Gross Merchandise Volume），是电商网站统计营业额（流水
+
+
 ## 参考:
 
 1. [计费项目/spark streaming项目](https://github.com/www6v/r-tc-bill/blob/master/src/main/java/cloud/rtc/bill/SparkStreamingKafka.scala)
@@ -81,6 +97,7 @@ df.sort_values([‘age’], ascending=False).head(100) // 返回 100 个年龄�
 7. [Spark SQL：Spark数据查询的利器]  蔡元楠
 8. [Structured Streaming：如何用DataFrame API进行实时数据分析?]  蔡元楠
 9. [Structured Streaming编程指南](https://github.com/xy2953396112/spark-sourcecodes-analysis/blob/master/structured-streaming/Structured-Streaming-%E7%BC%96%E7%A8%8B%E6%8C%87%E5%8D%97.md)  官方文档的中文版本  good  未 
+10. [从0开始学大数据 - 32讲互联网运营数据指标与可视化监控]()  李智慧
 
 
 
