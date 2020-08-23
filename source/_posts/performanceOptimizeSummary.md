@@ -15,11 +15,10 @@ top: true
 ## 总结
 1. [性能优化总结](../../../../2018/11/21/performance/)
 2. [Linux性能优化](../../../../2019/08/08/linuxPerformance/)  cpu， memory， io
-3. [Linux命令行工具和性能分析](../../../..//2019/10/01/linuxTool/)
-4. [linux性能分析](../../../..//2018/12/26/linuxProfile/)  method and tools
-5. [TCP流控和拥塞控制](../../../../2019/08/07/tcpUdpControlCongestion/) net
-6. [Linux性能优化 之 cpu优化](../../../../2020/08/16/linuxPerformance-cpu/)
-7. [虚拟机和容器中的内核参数 kernel](../../../../2020/08/16/kernelParam/)
+3. [linux性能分析](../../../..//2018/12/26/linuxProfile/)  method and tools
+4. [TCP流控和拥塞控制](../../../../2019/08/07/tcpUdpControlCongestion/) net
+5. [Linux性能优化 之 cpu优化](../../../../2020/08/16/linuxPerformance-cpu/)
+6. [虚拟机和容器中的内核参数 kernel](../../../../2020/08/16/kernelParam/)
 
 ## Java和应用
 1. [JVM性能调优](../../../../2017/11/27/optimize/)  内存
