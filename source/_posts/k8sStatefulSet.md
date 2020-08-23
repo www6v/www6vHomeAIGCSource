@@ -13,7 +13,6 @@ categories:
 
 <!-- more -->
 
-
 ## 源码分析
 
 ## 1. StatefulSet资源定义

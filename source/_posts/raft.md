@@ -1,5 +1,5 @@
 ---
-title: raft协议
+title: Raft协议
 date: 2019-06-21 18:18:07
 tags:
   - 分布式
@@ -15,12 +15,15 @@ categories:
 <p></p>
 <!-- more -->
 
-一. 总结
+## 一. 总结
+
+从本质上说，**Raft 算法是通过一切以领导者为准的方式，实现一系列值的共识和各节点日志的一致.**
+
 {% asset_img   raft.jpg  raft协议 %}
 
 Raft： leader + term + peers
 
-二. raft-分区脑裂
+## 二. Raft-分区脑裂（成员变更的问题）
 
 <div style="text-align: center;">
 ![raft-patition](https://user-images.githubusercontent.com/5608425/64484884-1c425480-d24b-11e9-92c1-865111cc016d.JPG)  
@@ -29,6 +32,21 @@ Raft： leader + term + peers
 ![raft-patition-1](https://user-images.githubusercontent.com/5608425/64484885-1c425480-d24b-11e9-8375-102d20506265.JPG)  
 分区脑裂[majority可以同步log、 term2]
 </div>
+
+## 三. Raft-领导者选举
+
+{% asset_img   raft-leader-1.JPG  raft选举-步骤1-Election Timeout  %}
+{% asset_img   raft-leader-2.JPG  raft选举-步骤2 %}
+{% asset_img   raft-leader-3.JPG  raft选举-步骤3 %}
+{% asset_img   raft-leader-4.JPG  raft选举-步骤4 %}
+{% asset_img   raft-leader-5.JPG  raft选举-步骤5 %}
+
+## 四. Raft-复制日志
++ 副本数据是以日志的形式存在的，其中日志项中的指令表示用户指定的数据。
++ Raft 是通过以领导者的日志为准，来实现日志的一致的。
++ 在 Raft 中日志必须是**连续的**
++ **日志完整性最高的节点才能当选领导者**
+
 
 ## 参考：
 
@@ -39,6 +57,8 @@ Raft： leader + term + peers
 5. [raft协议和zab协议有啥区别？](https://www.zhihu.com/question/28242561)
 6. [一张图看懂Raft](http://www.seflerzhou.net/post-109.html) 未
 7. [Raft 为什么是更易理解的分布式一致性算法](https://www.cnblogs.com/mindwind/p/5231986.html)  未
+8. [分布式协议与算法实战 - 07 | Raft算法（一）：如何选举领导者？]() 韩健 good
+9. [分布式协议与算法实战 - 08丨Raft算法（二）：如何复制日志？.pdf]() 韩健 good
 
 ---
 ### 论文
