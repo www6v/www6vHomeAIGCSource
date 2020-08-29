@@ -10,6 +10,9 @@ categories:
   - 可靠性   
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  reliabilityOfMsg.jpg  消息可靠性总结 %}
 
 

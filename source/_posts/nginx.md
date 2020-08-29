@@ -47,6 +47,16 @@ Nginx总结
 ###  反向代理流程
 修改发送到upstream机器的请求的nginx指令。
 
+
+## 三. 节点热更新
+### master节点热更新
+{% asset_img  master-graceful-showdown.jpg  %}
+
+### worker节点热更新
+{% asset_img  worker-graceful-showdown1.jpg  %}
+{% asset_img  worker-graceful-showdown.jpg  %}
+
+
 ## 参考:
 
 1. [深入Nginx 思维导图](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651010416&idx=4&sn=dfa07f0e065d273b028e662e87e780ff&chksm=bdbecd238ac9443511c4e7eadf9e59cc9139fac25c52b44f7a93787b940826c5f61f06e10224&scene=27#wechat_redirect)
