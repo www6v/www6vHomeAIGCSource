@@ -76,7 +76,7 @@ mysql  |√       |√    |√    | √
 ## 三. 回收策略
  回收策略       | redis   | kafka    
  :-:     | :-:     | :-:       
- 基于时间 | 过期删除策略 <br>1. 定时删除 <br>2. 惰性删除 <br>3.定期删除  | ![kafka-time]  
+ 基于时间 | 过期删除策略 <br>1. 定时删除(对内存最友好， 对CPU时间最不友好) <br>2. 惰性删除(对CPU时间最友好， 对内存最不友好) <br>3.定期删除(整合和折中)  | ![kafka-time]  
  基于大小 | 内存淘汰策略 <br>1. noeviction <br>2.lru <br>3. random <br>4. ttl  | ![kafka-size]
  其他 | x  | ![kafka-offset]  
 
