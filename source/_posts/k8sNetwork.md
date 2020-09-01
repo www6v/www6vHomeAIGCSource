@@ -125,6 +125,13 @@ underlay方案;
 + 普适性最强 flannel-VxLan
 + 2层可直连可选用Calico / Flannel host-gw
 
+
+ / | overlay（隧道）  | underlay（路由）  
+:-: | :-: | :-: 
+L2  | Vxlan(大二层 通讯双方在同一逻辑网段内) |  IPvlan L2模式<br> Macvlan   
+L3  | flannel-UDP（类似L2 overlay， 在节点上增加一个网关）   |  IPvlan L3模式<br> flannel host-gw（不能跨两层网络） <br> Calico BGP组网方式（大三层） 
+
+
 ## 三. Pod与Service之间的网络
 
 [Kubernetes服务](../../../../2019/11/04/k8sService/)
