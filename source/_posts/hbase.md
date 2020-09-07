@@ -54,7 +54,7 @@ KV存储结构 K( (row, column, timestamp, type) ) -> V( value )
   LRUBlockCache(时间局部性)；
   BucketCache(空间局部性)；
 + Region
-  分片， 水平切分（split）， 负载均衡的基本单位
+  **分片， 水平切分（split）， 负载均衡的基本单位**
   Region包含<code>n个Store</code>   **Store==column family**
   Store包含<code>1个MemStore</code>和<code>n个HFile</code>
   MemStore： 写缓存 
@@ -64,9 +64,19 @@ KV存储结构 K( (row, column, timestamp, type) ) -> V( value )
   ConcurrentSkipListMap A异步flush罗盘成HFile;
   **HDFS只允许顺序读写，MemStore在落盘生成HFile之前完成kv的排序；  **
 + HFile
-  **HFile内的kv是按key排序的索引树，对读友好**；
-  HDFS的Block默认是64M，128M；HBase的Block默认是64K； 
+  **HFile Data Block（文件读取的最小单元）内的kv是按key排序的索引树，对读友好**；
+  HFile Index Block的索引结构分为两种: V1 单层索引， V2 多级索引（只加载部分索引，降低内存使用）
+  HDFS的Block默认是64M，128M；HBase的Block默认是64K；
+  {% asset_img  HFile.JPG  HFile物理结构 %}
 
+Block Type |    基本介绍
+:-:|:-:|:-:
+Data Block| 用户Key-Value 
+Meta Block| Bloom过滤器相关元数据
+Root Index| HFile索引树根索引
+Intermediate Level Index| HFile索引树中间层级索引
+Leaf Level Index| HFile索引树叶子索引 
+ 
 ## 三. 性能和优化
 ### 1. 性能  
 单表 千亿行， 百万列  容量TB甚至PB级别
@@ -90,7 +100,7 @@ KV存储结构 K( (row, column, timestamp, type) ) -> V( value )
 
 参考：
 1. [【Paper笔记】The Log structured Merge-Tree（LSM-Tree）](https://kernelmaker.github.io/lsm-tree)
-2. 《Hbase原理和实践》 胡争  范欣欣   第1,2,7章
+2. 《Hbase原理和实践》 胡争  范欣欣   第1,2,5,7章
 
 
 
