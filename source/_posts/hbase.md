@@ -76,23 +76,42 @@ Meta Block| Bloom过滤器相关元数据
 Root Index| HFile索引树根索引
 Intermediate Level Index| HFile索引树中间层级索引
 Leaf Level Index| HFile索引树叶子索引 
- 
-## 三. 性能和优化
+
+
+## 四. 读写流程和读优化
+### 1. 写流程
+客户端写入MemStore和HFile就表示写入成功。
+Flush的时机： 三个flush的参数
+
+### 2. 读流程
+**BlockCache没有数据的前提下， MemStore和StoreFile（HFile）都会读取数据。**
+
+### 总结 
+Master不参与读写流程，但是master宕机了，集群会处于不健康状态， Region分裂后改不了元数据。
+客户端只要配置Zookeeper地址，Master的切换对客户端是透明的。
+客户端缓存Meta数据， RegionServer的BlockCache缓存StoreFile（HFile）的数据。
+
+
+### 3. HFile Compaction  读优化
+3.1 类型
+ Minor Compaction: 小的相邻HFile合并成更大的HFiile。
+ Major Compaction: 一个store中所有的HFile合并成一个HFile。**线上建议关闭自动触发，改为在低峰期手动或者自动触发**。
+ **Minor Compaction不会删除数据，Major Compaction会删除数据。** 
+ **Minor Compaction 合并后，旧的数据不会马上删除， 会对客户端不可见。** 
+
+3.2 Compaction作用
+ 减少文件数， **稳定随机读延迟**; 用短时间的IO消耗以及带宽消耗换取后序读操作的低延迟。（空间换时间）.
+ 清除无效数据，较少数据存储量。
+
+
+## 五. 性能和优化
 ### 1. 性能  
 单表 千亿行， 百万列  容量TB甚至PB级别
 
+### 2. 优化
+**预分区**
 
-### 2. Compaction  读优化
-2.1 类型
- Minor Compaction: 小的相邻HFile合并成更大的HFiile。
- Major Compaction: 一个store中所有的HFile合并成一个HFile。**线上建议关闭自动触发，改为在低峰期手动或者自动触发**。
-
-2.2 Compaction作用
- 减少文件数， **稳定随机读延迟**; 用短时间的IO消耗以及带宽消耗换取后序读操作的低延迟。（空间换时间）.
- 清除无效数据，较少数据存储量
-
-## 四. 版本
-
+## 六. 版本
 **v0.98**    目前生产线上使用最广泛的版本之一
 **v1.4.10**   HBase社区推荐使用的稳定版本
 **v2.x**    最受期待的一个版本
