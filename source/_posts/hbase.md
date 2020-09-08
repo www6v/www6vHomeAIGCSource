@@ -104,22 +104,35 @@ Master不参与读写流程，但是master宕机了，集群会处于不健康�
  清除无效数据，较少数据存储量。
 
 
-## 五. 性能和优化
-### 1. 性能  
+### 4. 数据删除时机
+flush和Major Compaction的时候会删除冗余的数据。
+flush时只删除内存的冗余数据，不删除"Delete标记",因为在Major Compaction删冗余数据的时候会用到这个"Delete标记"。
+
+
+## 五. Region分裂（split）
++ 寻找分裂点
++ Region迁移的状态存在meta表， Master内存， zookeeper的region-in-transition节点
+  **RIT状态**： Region在三个地方不能保持一致
++ 整个分裂过程包装成了一个事务， 保证分裂事务的原子性。
+  **迁移的中间状态都只存储在内存中， 一旦在分裂过程中出现RegionServer宕机，有可能出现RIT状态， 需要HBCK工具分析并解决。**
++ **Region分裂过程没有涉及数据的移动， 分裂后的子Region的文件没有任何用户数据。 [通过reference文件来查找数据，像游标offset]**  
+  **真正数据迁移的迁移发生在子Region执行Major Compaction时。**
+
+## 六. 优化  
+### **预分区**
+
+## 五. 性能和版本
+###  性能  
 单表 千亿行， 百万列  容量TB甚至PB级别
 
-### 2. 优化
-**预分区**
-
-## 六. 版本
+###  版本
 **v0.98**    目前生产线上使用最广泛的版本之一
 **v1.4.10**   HBase社区推荐使用的稳定版本
 **v2.x**    最受期待的一个版本
 
-
-参考：
+## 参考：
 1. [【Paper笔记】The Log structured Merge-Tree（LSM-Tree）](https://kernelmaker.github.io/lsm-tree)
-2. 《Hbase原理和实践》 胡争  范欣欣   第1,2,5,7章
+2. 《Hbase原理和实践》 胡争  范欣欣   第1,2,5,7，8章
 
 
 
