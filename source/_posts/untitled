@@ -1,0 +1,25 @@
+
+
+@所有人
+
+研发小伙伴们，明天是新一年的第一个工作日， 为了更好的助力你完成KPI，中间件团队重磅上线了KV存储产品Chassis。 
+Chassis是一款持久化、大容量TB级别、读写低延迟的分布式存储产品。 产品底层基于HBase，适用于各种在线和离线的场景。 
+其SDK接口简单，丝滑兼容Renault的SDK，能快速接入业务代码， 欢迎使用并提出宝贵的建议。
+
+KV存储中间件-Chassis具体使用方式请参考 
+Chassis 用户文档 https://wiki.tuhu.cn/pages/viewpage.action?pageId=70580373
+Chassis 快速入门 https://wiki.tuhu.cn/pages/viewpage.action?pageId=84144594
+
+如有疑问或需咨询，请联系 @中间件客服 @王伟 @孟强军 @应宏辉
+
+
+
+研发小伙伴们，你可曾记得你为了读写分离，还要写两份代码时的无奈，发生故障需要主从切换时，还需要改配置，重新发布的头疼嘛？
+为了解决这些问题，我们开发了新的数据库访问中间件Dolphin，它可以自动完成主从切换，可以不再为了读写分离而写两份代码，可以大大提高你的生产力，可以有更多的时间写出更优秀的系统。
+它已经上线了，你还在等什么，赶紧用起来吧！
+
+
+数据库访问中间件-Dolphin具体使用方式请参考 
+Dolphin 用户文档 https://wiki.tuhu.cn/pages/viewpage.action?pageId=16648791
+快速入门 wiki: https://wiki.tuhu.cn/pages/viewpage.action?pageId=70577508
+
