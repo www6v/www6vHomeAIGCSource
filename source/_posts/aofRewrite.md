@@ -1,6 +1,6 @@
 ---
 title: Redis AOF Rewrite
-date: 2022-03-08 19:35:54
+date: 2021-11-21 19:35:54
 tags:
   - redis
 categories:
