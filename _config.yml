@@ -87,7 +87,7 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://www6v:6v6v6v6v6v3w@github.com/www6v/www6vHomeHexo.git
+  repo: https://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@github.com/www6v/www6vHomeHexo.git
 
 
 
