@@ -1,6 +1,6 @@
 ---
 title: Kubernetes Operator
-date: 2022-03-10 10:42:36
+date: 2021-12-30 20:42:36
 tags:
   - Kubenetes
 categories:
