@@ -20,7 +20,7 @@ categories:
 	 表. 选主
 </div>
 
-|组件| 详细
+/|组件| 详细
 :-:|:-:|:-:
 kafka|Controller leader| 依赖zk选主, kafka只有一个Controller
 |Partition leader | leader在ISR中

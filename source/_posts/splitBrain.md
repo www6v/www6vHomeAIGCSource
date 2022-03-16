@@ -23,7 +23,7 @@ categories:
 
 
 ## 二. 系统
-|现象| 解决方案
+/|现象| 解决方案
 :-:|:-:|:-:
 kafka|kafka脑裂现象:1. 存在多个controller <br> 2. consumer的splitBrain| controller使用epoch来避免脑裂
 elastic search | | 配置discovery.zen.minimum_master_nodes，类似Quorums
