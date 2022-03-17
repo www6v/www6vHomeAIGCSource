@@ -18,8 +18,9 @@ categories:
 ## 一. 虚拟化技术
 
 <div style="text-align: center;">
-![virtual-container](https://user-images.githubusercontent.com/5608425/69125404-b858c980-0ae0-11ea-9bd1-8e2f45cc1184.jpg)
-容器虚拟化
+	
+{% asset_img   k8sRuntime1.jpg   虚拟化技术  %}
+
 </div>
 
 runc： OSContainerRuntime（基于进程隔离技术）
@@ -28,8 +29,7 @@ runv： UnikernelRuntime（基于unikernel）
 
 ## 二. CRI架构
 <div style="text-align: center;">
-![cni-arc-1](https://user-images.githubusercontent.com/5608425/69023129-a7cd2400-09f8-11ea-9c90-762d04360012.jpg)
-CRI架构
+{% asset_img   k8sRuntime2.jpg   CRI架构  %}
 
 ![cni-arch](https://user-images.githubusercontent.com/5608425/69022893-c67eeb00-09f7-11ea-9203-fd96b90dfbef.jpg)
 CRI架构

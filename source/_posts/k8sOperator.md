@@ -47,8 +47,7 @@ etcd
 ## 三. etcd Operator 
  
 <div>
-![etcd-operator](https://user-images.githubusercontent.com/5608425/69115489-b3395180-0ac3-11ea-9443-d6b8c7633321.jpg)
-etcd Operator
+{% asset_img   operator1.jpg  etcd Operator  %}
 </div>
 
 注: 一个etcd集群，一个controller。
