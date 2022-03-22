@@ -1,5 +1,5 @@
 ---
-title: Kubernetes资源对象 - StatefulSet
+title: StatefulSet原理和源码
 date: 2019-11-11 15:20:39
 tags:
   - Kubernetes
