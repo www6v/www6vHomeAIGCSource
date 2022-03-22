@@ -35,6 +35,7 @@ categories:
 {% asset_img  dynamic-provision.PNG  Dynamic Provisioning %}
 
 <div style="text-align: center;">
+	
 ![relationship](https://user-images.githubusercontent.com/5608425/64247540-aafc5c00-cf41-11e9-83af-64199e79ded7.JPG)
 **Kubernetes pvc 动态绑定流程**
 </div>

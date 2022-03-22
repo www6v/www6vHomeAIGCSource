@@ -26,6 +26,7 @@ categories:
 ## 二. 资源调度泛型
 
 <div style="text-align: center;">
+	
 ![调度系统泛型](https://user-images.githubusercontent.com/5608425/65023010-96b65700-d964-11e9-9acd-7cc8edbbde85.JPG)
 调度系统泛型
 </div>

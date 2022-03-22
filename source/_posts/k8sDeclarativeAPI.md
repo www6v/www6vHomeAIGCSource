@@ -42,6 +42,7 @@ $ tree
 
 ## 二. 自定义控制器 
 <div style="text-align: center;">
+	
 ![自定义控制器](https://user-images.githubusercontent.com/5608425/64071488-e7b02500-ccad-11e9-927e-dd71af8c3923.jpg)  自定义控制器
 </div>
 

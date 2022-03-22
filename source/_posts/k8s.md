@@ -16,6 +16,7 @@ categories:
 {% asset_img   kubenetes-arch.jpg  Kubenetes架构  %}
 
 <div style="text-align: center;">
+
 ![kubernetes-high-level-component-archtecture](https://user-images.githubusercontent.com/5608425/63923811-c535c600-ca79-11e9-8057-2b6264b39d80.jpg) kubernetes-high-level-component-archtecture
 </div>
 
@@ -28,6 +29,7 @@ categories:
 
 
 <div style="text-align: center;">
+  
 ![控制器模型](https://user-images.githubusercontent.com/5608425/63924251-85bba980-ca7a-11e9-8a3a-4cf852dfe86c.JPG)  控制器模型
 </div>
 

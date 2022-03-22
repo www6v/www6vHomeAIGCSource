@@ -15,6 +15,7 @@ categories:
 ## 一. Kubenetes服务
 
 <div style="text-align: center;">
+
 ![Kubernetes服务发现架构](https://user-images.githubusercontent.com/5608425/68105556-d4257280-ff19-11e9-9d19-f18f5c454f34.jpg)
 Kubernetes服务发现架构
 </div>
@@ -28,6 +29,7 @@ Kubernetes服务发现架构
 
 1. NodePort  四层
 <div style="text-align: center; width:60%; height: 60%">
+
 ![node-port](https://user-images.githubusercontent.com/5608425/68234082-7d17be80-003b-11ea-891f-90a9e174bbc8.png)
 </div>
 
@@ -61,6 +63,7 @@ endpoint
 
 2. Service LoadBalancer  四层
 <div style="text-align: center; width:60%; height: 60%">
+
 ![loadbalancer](https://user-images.githubusercontent.com/5608425/68290997-e216f700-00c3-11ea-82d3-b5e3f4c565a1.jpg)
 </div>
 
@@ -72,6 +75,7 @@ ExternalName 类型的 Service，其实是在 kubedns里为你添加了一条 CN
 
 4. Ingress Controller  七层
 <div style="text-align: center; width:60%; height: 60%">
+  
 ![ingress-1](https://user-images.githubusercontent.com/5608425/68234079-7c7f2800-003b-11ea-8ada-2c034db8b25a.png)
 ![ingress-2](https://user-images.githubusercontent.com/5608425/68234081-7c7f2800-003b-11ea-804c-1c5d87164d06.png)   
 </div>

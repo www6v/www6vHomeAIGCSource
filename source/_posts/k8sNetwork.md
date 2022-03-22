@@ -26,6 +26,7 @@ categories:
 通过**网桥**通信
 
 <div style="text-align: center; width:60%; height: 60%">
+  
 ![pod-to-pod-in-node](https://user-images.githubusercontent.com/5608425/68114098-31c4b980-ff30-11e9-9dbd-163452ec51bc.jpg)
 图2. 同节点pod通信
 </div>
@@ -36,7 +37,8 @@ categories:
 1. **Flannel**
 
 <div style="text-align: center;">
-![flannel-udp](https://user-images.githubusercontent.com/5608425/65022322-50acc380-d963-11e9-8476-5e5ab22c8b4c.JPG)  
+
+![flannel-udp](https://user-images.githubusercontent.com/5608425/65022322-50acc380-d963-11e9-8476-5e5ab22c8b4c.JPG)
 图3. flannel-UDP模式
 
 ![flannel-udp](https://user-images.githubusercontent.com/5608425/68364150-16dc8a00-0168-11ea-8281-272b274fdfae.jpg)
@@ -57,6 +59,7 @@ categories:
 + 劣势:  三次用户态和内核态切换 ; 性能差， 已弃用 
 
 <div style="text-align: center;">
+  
 ![flannel-vxlan](https://user-images.githubusercontent.com/5608425/65022323-51455a00-d963-11e9-9442-d4f1b84ecce5.JPG)  
 图5. flannel-vxlan模式
 
