@@ -51,6 +51,23 @@ BestEffort > Burstable > Guaranteed
 + Guaranteed
 + CPU 资源的 requests == limits
 
+
+### 1.3 在cgroup中的设置
+
+##### requests.cpu
+requests.cpu=250m
+cpu.shares = (250/1000)/1024 
+
+cpu.shares 默认 则是 1024
+
+
+##### limits.cpu 
+limits.cpu=500m
+cpu.cfs_quota_us =  (500/1000)* 100ms
+
+cpu.cfs_period_us 的值始终是 100ms
+
+
 ## 参考:
 1. [《Kubenetes in Action》](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)  七牛容器云团队
 2. [深入剖析Kubernetes - 40  Kubernetes的资源模型与资源管理]() 张磊
