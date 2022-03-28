@@ -2,8 +2,6 @@
 title: Redis可靠性
 date: 2021-01-02 21:41:43
 tags:
-  - 中间件
-  - 存储
   - Redis
 categories: 
   - 分布式
