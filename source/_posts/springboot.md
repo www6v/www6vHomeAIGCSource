@@ -39,6 +39,17 @@ Actuator（Runtime）
 
 ## 二.
 ## 2.1 Auto Configuration
+
+```
+组件
+   @EnableXXX
+        @Importer @ImportXXXSelector
+   @Conditional
+   @ConditionalOnClass
+   @ConditionalOnBean
+   ... 
+```
+
 ```
 开启自动配置
 @EnableAutoConfiguration
@@ -46,14 +57,14 @@ Actuator（Runtime）
 ```
 
 ```
-实现原理
-@Conditional
+实现原理 - 有条件的加载机制
 @ConditionalOnClass
 @ConditionalOnBean
 @ConditionalOnMissingBean
 @ConditionalOnProperty
 ...
 ```
+
 
 ## 2.2 Starter Dependency
 
@@ -75,6 +86,9 @@ Actuator（Runtime）
 Bill of Materials - bom
 BOM本质上是一个普通的POM文件
 ```
+
++ 扩展自定义starter
+... 
 
 ## 2.3 外部化配置加载顺序
 ```
@@ -128,3 +142,4 @@ Tomcat特性配置
 
 ## 参考
 《玩转Spring全家桶》 67.68.71.73.75,79 丁雪峰 
+黑马程序员SpringBoot教程，6小时快速入门Java微服务架构Spring Boot - bilibili
