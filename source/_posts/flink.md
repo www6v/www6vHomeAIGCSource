@@ -21,8 +21,6 @@ categories:
 ## 三. 端到端Exactly-once
    [5][6]
    
-## 四. watermark
-
 ## 五. checkpoint
 
 ## 参考：
