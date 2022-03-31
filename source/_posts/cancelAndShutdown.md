@@ -10,4 +10,7 @@ categories:
   - 多线程  
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  cancelAndShutdown.jpg  Java多线程中的取消和关闭 %}

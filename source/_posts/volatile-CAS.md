@@ -9,6 +9,10 @@ categories:
   - 多线程   
 ---
 
+
+<p></p>
+<!-- more -->
+
 {% asset_img  volatile-CAS.jpg  多线程中的volatile和CAS %}
 
 ## 参考:

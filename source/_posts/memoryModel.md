@@ -9,6 +9,9 @@ categories:
   - 内存模型
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  memoryModel.jpg  Java内存模型 %}
 
 ## 参考:

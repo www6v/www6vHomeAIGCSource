@@ -11,6 +11,10 @@ categories:
   - 事务  
 ---
 
+
+<p></p>
+<!-- more -->
+
 {% asset_img  springTransaction.jpg  Spring事务 %}
 
 ## 参考:

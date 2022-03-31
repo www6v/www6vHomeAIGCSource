@@ -10,6 +10,9 @@ categories:
   - 多线程  
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  thread.jpg  Java多线程总结 %}
 
 ## 参考：

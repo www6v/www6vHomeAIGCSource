@@ -28,6 +28,7 @@ HTTP2.0| HTTP2是在HTTPS上实现的 |  HTTP2的Multiplexing多路传输特性�
 ## 二. TCP 握手、挥手
 
 <div style="text-align: center;">
+	
 ![图1.TCP三次握手](https://user-images.githubusercontent.com/5608425/65186269-e2b7e780-da9b-11e9-926f-ea186bb3282a.jpg)   
 图1.TCP三次握手
 

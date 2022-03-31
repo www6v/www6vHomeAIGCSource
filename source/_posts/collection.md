@@ -10,6 +10,9 @@ categories:
   - 集合      
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  collection.jpg  Java集合总结 %}
 
 ## 参考：

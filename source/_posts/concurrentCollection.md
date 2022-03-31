@@ -10,6 +10,9 @@ categories:
   - 并发容器    
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  concurrentCollection.jpg  Java并发容器总结 %}
 
 ## 参考:

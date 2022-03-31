@@ -9,6 +9,9 @@ categories:
   - 多线程    
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  lock.jpg  多线程中的锁 %}
 
 ## 参考：
