@@ -25,6 +25,7 @@ categories:
 ## 一. 一致性
 
 <div style="text-align: center;">
+
 ![consistent-relationship](https://user-images.githubusercontent.com/5608425/65506192-989c8f00-defd-11e9-8ce4-df9b2bd8a96f.jpg)
 </div>
 
@@ -110,6 +111,7 @@ table th:first-of-type {
 ## 四. 时钟
 
 <div style="text-align: center;">
+
 ![vectorClock](https://user-images.githubusercontent.com/5608425/67629891-be300600-f8b8-11e9-931c-e0fa265f2f78.jpg)
 图1. 向量时钟 vector-clock
 
@@ -120,6 +122,7 @@ table th:first-of-type {
 ## 五.  state machine && primary-copy
 
 <div style="text-align: center;">
+  
 ![state-machine-primary-back](https://user-images.githubusercontent.com/5608425/67629999-09e3af00-f8bb-11e9-88fb-10142745bfdd.png)
 state machine replication && primary-copy
 </div>

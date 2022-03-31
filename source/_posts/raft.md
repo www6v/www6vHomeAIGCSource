@@ -26,6 +26,7 @@ Raft： leader + term + peers
 ## 二. Raft-分区脑裂（成员变更的问题）
 
 <div style="text-align: center;">
+	
 ![raft-patition](https://user-images.githubusercontent.com/5608425/64484884-1c425480-d24b-11e9-92c1-865111cc016d.JPG)  
 分区脑裂[非majority有uncommited log、 term1]
 
