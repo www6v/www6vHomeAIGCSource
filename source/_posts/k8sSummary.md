@@ -42,8 +42,10 @@ top: true
  [Kubernetes存储](../../../../2019/09/01/k8sStorage/)
 
 ## 调度
- [Kubernetes调度器](../../../../2019/06/09/k8sScheduler/)  
+ [Kubernetes调度器](../../../../2019/06/09/k8sScheduler/)
 
+## 生产化
+[K8S 控制面高可用](../../../../2022/01/02/k8sHA/)
 
 ## 总结
  [Kubernetes技能图谱](../../../../2019/11/03/k8sSkill/) 
