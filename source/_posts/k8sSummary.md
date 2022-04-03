@@ -25,10 +25,6 @@ top: true
  [Kubernetes Operator-ETCD](../../../..//2019/11/19/k8sOperator/)
  [Kubernetes声明式API](../../../..//2019/08/29/k8sDeclarativeAPI/)  
 
-## 多租户
- [Kubernetes 多租户](../../../../2021/10/18/k8sMultiTenancy/)
- [Kubenetes RBAC](../../../../2019/11/14/k8sRBAC/)
-
 ## Container Runtime
  [Kubernetes Runtime](../../../../2019/11/19/k8sRuntime/)
  [K8S 弃用Docker](../../../..//2021/06/01/k8sAbandonDocker/)
@@ -46,6 +42,8 @@ top: true
 
 ## 生产化
 [K8S 控制面高可用](../../../../2022/01/02/k8sHA/)
+[Kubernetes 多租户](../../../../2021/10/18/k8sMultiTenancy/)
+[Kubenetes RBAC](../../../../2019/11/14/k8sRBAC/)
 
 ## 总结
  [Kubernetes技能图谱](../../../../2019/11/03/k8sSkill/) 

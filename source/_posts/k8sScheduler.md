@@ -12,18 +12,9 @@ categories:
 <p></p>
 <!-- more -->
 
-## 一. k8s资源调度
 
-{% asset_img   k8sScheduler.jpg  k8s调度器  %} 
 
-> K8s自带的的资源调度器，有一个明显的特点是：依次调度每个容器。
-
-> Volcano [5] 
-  + DRF（dominant resource fairness）: Yarn和Mesos都有
-  DRF意为：“谁要的资源少，谁的优先级高”
-  + Queue: Yarn调度器的功能
-
-## 二. 资源调度泛型
+## 一. 资源调度泛型
 
 <div style="text-align: center;">
 	
@@ -40,10 +31,31 @@ categories:
 
 表1. 常见调度器的比较
 
+
+## 二. k8s资源调度
+
+{% asset_img   k8sScheduler.jpg  k8s调度器  %} 
+
+> K8s自带的的资源调度器，有一个明显的特点是：依次调度每个容器。
+
+> Volcano [5] 
+  + DRF（dominant resource fairness）: Yarn和Mesos都有
+  DRF意为：“谁要的资源少，谁的优先级高”
+  + Queue: Yarn调度器的功能
+
+
+## 三. k8s高级调度
+{% asset_img   k8sScheduler1.jpg   k8s高级调度  %} 
+
+亲和，反亲和 - 要改现有pod
+taint - 不要改现有pod
+
+
 ## 参考:
 
-1. [《Kubenetes in Action》 第11章  第16章  七牛容器云团队](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)
-2. [《大数据日知录：架构与算法》第4章 张俊林](https://www.amazon.cn/dp/B00NGW4EAG/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&keywords=%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%A5%E7%9F%A5%E5%BD%95%EF%BC%9A%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95&qid=1560055240&s=gateway&sr=8-1)
+1. [《大数据日知录：架构与算法》第4章 张俊林](https://www.amazon.cn/dp/B00NGW4EAG/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&keywords=%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%A5%E7%9F%A5%E5%BD%95%EF%BC%9A%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95&qid=1560055240&s=gateway&sr=8-1)
+2. [《Kubenetes in Action》 第11章  第16章  七牛容器云团队](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)
 3. [Kubernetes集群调度器原理剖析及思考](https://mp.weixin.qq.com/s/gfq1qghLW7g4gKZBBP17IA)
-4. [Kubernetes高级调度- Taint和Toleration、Node Affinity分析](https://mp.weixin.qq.com/s/oL7_a9a_V913IR78_dZfaA)
-5. [为什么K8s需要Volcano？](https://mp.weixin.qq.com/s/_6WCgqxjTR1rAv8gQqNdWw) 华为
+4. [为什么K8s需要Volcano？](https://mp.weixin.qq.com/s/_6WCgqxjTR1rAv8gQqNdWw) 华为
+5. [Kubernetes高级调度- Taint和Toleration、Node Affinity分析](https://mp.weixin.qq.com/s/oL7_a9a_V913IR78_dZfaA)
+6. [详解 K8S Pod 高级调度](https://mp.weixin.qq.com/s/iv60pNiLsIoWdAVVAA4Dpg)

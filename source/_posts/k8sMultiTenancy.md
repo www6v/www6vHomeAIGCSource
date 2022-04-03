@@ -18,8 +18,20 @@ categories:
 2. 多租户集群必须将租户彼此隔离
 3. 集群须在租户之间公平的分配集群资源。
 
+
+## 二. Overview
+
++ 软隔离：在这种情况下，我们有一个企业，不同的团队访问同一个集群，这需要较少的安全开销，因为用户可以相互信任。
+
++ 硬隔离：当 Kubernetes 暴露给具有独立且完全不受信任的用户的多个企业时，这是必需的。
+
+{% asset_img  k8sMultiTenancy1.png  多租户Overview %}
+
+
+方案B  软隔离 https://github.com/kubernetes-sigs/hierarchical-namespaces
+方案C  硬隔离 https://github.com/kubernetes-sigs/cluster-api-provider-nested/tree/main/virtualcluster 
    
-## 二. 解决方案
+## 三. 方案B 解决方案
 
 ##### 1. 认证
    + 识别访问的用户是谁
@@ -40,7 +52,8 @@ categories:
 
    + 节点隔离 
      Taints和Toleration机制
-
+     [Kubernetes 调度 - 污点和容忍度详解](https://mp.weixin.qq.com/s/rza4euQCLuMLTI5fHdj67Q)
+     
    + 网路隔离
      NetworkPolicy 网路策略 - 实质上也是iptables规则
 
@@ -63,6 +76,13 @@ categories:
 
    ResourceQuota  
 
+##### 5. 开源方案
+[kiosk](https://github.com/loft-sh/kiosk)
 
+### 参考：
+1. [Kubernetes 多租户简介](https://mp.weixin.qq.com/s/YBxsZ5a_K6AWnOISTtiX3g)
+    https://static.sched.com/hosted_files/kccnceu19/74/kubecon-eu-multitenancy-wg-deepdive.pdf
+    官方 https://github.com/kubernetes-sigs/multi-tenancy
 
+2. [解决 K8s 落地难题的方法论提炼](https://mp.weixin.qq.com/s/PobybjwmzOdbLcx53onJZQ)
 
