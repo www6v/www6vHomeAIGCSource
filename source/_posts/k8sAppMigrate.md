@@ -87,6 +87,13 @@ categories:
 + imagePullPolicy Image 拉取策略
    Never，IfNotPresent， always
 
++ 数据保存
+local-ssd: 独占的本地磁盘， 独占io， 固定大小， 读写性能高;
+local-dynamic: LVM,动态分配空间， 效率低;
+{% asset_img  persistentChoose.png  数据保存 %}
+
+
+
 ## 参考：
 1. 模块十一： 将应用迁移至Kubernetes平台
 2. 06|容器CPU(2):如何正确地拿到容器CPU的开销?   -  李程远
