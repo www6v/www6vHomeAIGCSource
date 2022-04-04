@@ -59,3 +59,8 @@ taint - 不要改现有pod
 4. [为什么K8s需要Volcano？](https://mp.weixin.qq.com/s/_6WCgqxjTR1rAv8gQqNdWw) 华为
 5. [Kubernetes高级调度- Taint和Toleration、Node Affinity分析](https://mp.weixin.qq.com/s/oL7_a9a_V913IR78_dZfaA)
 6. [详解 K8S Pod 高级调度](https://mp.weixin.qq.com/s/iv60pNiLsIoWdAVVAA4Dpg)
+
+7. [深度解析Kubernetes核心原理之Scheduler](https://cloud.tencent.com/developer/article/1475940) good 未
+8. [DockOne微信分享（一四九）：Kubernetes调度详解 ](http://dockone.io/article/2885) good 未
+9. [Kubernetes之Pod调度 ](http://dockone.io/article/2635) 未
+                                        

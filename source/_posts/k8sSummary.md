@@ -30,7 +30,7 @@ top: true
  [K8S 弃用Docker](../../../..//2021/06/01/k8sAbandonDocker/)
 
 
-## 网路
+## 网络
  [Kubernetes网络](../../../../2019/08/23/k8sNetwork/)
  [Kubernetes服务](../../../../2019/11/04/k8sService/)   
 
@@ -41,9 +41,11 @@ top: true
  [Kubernetes调度器](../../../../2019/06/09/k8sScheduler/)
 
 ## 生产化
+[K8S 应用迁移至K8S](../../../../2022/02/02/k8sAppMigrate/)
 [K8S 控制面高可用](../../../../2022/01/02/k8sHA/)
 [Kubernetes 多租户](../../../../2021/10/18/k8sMultiTenancy/)
 [Kubenetes RBAC](../../../../2019/11/14/k8sRBAC/)
+[虚拟机和容器中的内核参数 kernel](../../../../2020/08/16/kernelParam/)
 
 ## 总结
  [Kubernetes技能图谱](../../../../2019/11/03/k8sSkill/) 
