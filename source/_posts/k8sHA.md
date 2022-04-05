@@ -23,9 +23,20 @@ categories:
 
 
 ### 架构图
-load balancer： 虚ip
-controller-manager： leader election
+
 {% asset_img  k8sHa.png  控制面高可用  %}
+
++ load balancer 
+     虚ip
+
++ controller-manager： 
+   用lease来实现controller-manager和scheduler的leader election
+
+{% asset_img  lease.png  用lease来实现scheduler的leader election  %}
+
+
+
+
 
 
 

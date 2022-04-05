@@ -39,10 +39,22 @@ CRI架构
 docker调用的链路：dockershim => dockerd => Containerd => runc
 Containerd调用的链路：Containerd --> shim v2 --> runtimes
 
-runc：运行可信容器（弱隔离但性能好）;  
-runv: 运行不可信容器（强隔离安全性好）; 
++ Docker 作为 K8S 容器运行时，调用关系如下：
+  kubelet --> docker shim （在 kubelet 进程中） --> dockerd --> containerd
++ Containerd 作为 K8S 容器运行时，调用关系如下：
+  kubelet --> cri plugin（在 containerd 进程中） --> containerd
+
+
+
++ high level运行时： Dockershim， containerd， CRI-O
++ low level运行时： 
+    runc， kata， gVisor
+    runc：运行可信容器（弱隔离但性能好）;  
+    runv: 运行不可信容器（强隔离安全性好）; 
 
 
 ## 参考:
 1. [CRI - Container Runtime Interface（容器运行时接口）](https://jimmysong.io/kubernetes-handbook/concepts/cri.html)
 2. [为Kubernetes选择合适的容器运行时](https://mp.weixin.qq.com/s/sshrTSsUfqjja6g4-Lb42g)
+3. 模块七 
+3. [](https://cloud.tencent.com/document/product/457/35747) 腾讯云

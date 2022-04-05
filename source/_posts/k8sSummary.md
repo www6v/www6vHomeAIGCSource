@@ -19,6 +19,8 @@ top: true
  [k8s声明式应用管理](../../../../2020/05/26/k8sDeclarativeManage/)
  [Kubenetes资源模型](../../../../2019/11/14/k8sResouceModel/)
  [Kubernetes自动伸缩和HPA](../../../../2019/11/16/k8sAutoScale/)
+ [kubelet和PLEG](../../../../2022/04/03/k8sPLEG/)
+ 
 
 ## Operator && Controller
  [Kubernetes Operator-源码](../../../../2021/12/30/k8s-operator/)
@@ -43,6 +45,7 @@ top: true
 ## 生产化
 [K8S 应用迁移至K8S](../../../../2022/02/02/k8sAppMigrate/)
 [K8S 控制面高可用](../../../../2022/01/02/k8sHA/)
+[K8S零停机 可用性](../../../../2022/04/05/k8sAvailable/)
 [Kubernetes 多租户](../../../../2021/10/18/k8sMultiTenancy/)
 [Kubenetes RBAC](../../../../2019/11/14/k8sRBAC/)
 [虚拟机和容器中的内核参数 kernel](../../../../2020/08/16/kernelParam/)

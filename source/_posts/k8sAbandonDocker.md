@@ -23,7 +23,7 @@ categories:
 + cri-containerd 模式：cri-containerd(*)-> containerd->containerd-shim
 + cri-o 模式：cri-o
 
-
+K8S弃用Docker是指弃用Docker daemon
 RedHat 推崇的 cri-o  → Podman
 
 
