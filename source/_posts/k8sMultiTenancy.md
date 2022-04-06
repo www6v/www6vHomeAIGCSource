@@ -58,6 +58,8 @@ categories:
    + 网路隔离
      NetworkPolicy 网路策略 - 实质上也是iptables规则
 
+     网络策略通过网络插件来实现，所以必须使用一种支持 NetworkPolicy 的网络方案（如 calico）—— 非 Controller 创建的资源，是不起作用的。
+
    + 容器隔离
        5种隔离机制
        - Mount Namespace 隔离
@@ -86,4 +88,6 @@ categories:
     官方 https://github.com/kubernetes-sigs/multi-tenancy
 
 2. [解决 K8s 落地难题的方法论提炼](https://mp.weixin.qq.com/s/PobybjwmzOdbLcx53onJZQ)
+
+3. [NetworkPolicy](https://jimmysong.io/kubernetes-handbook/concepts/network-policy.html) jimmysong
 

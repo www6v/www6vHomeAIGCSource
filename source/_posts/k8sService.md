@@ -85,6 +85,17 @@ ExternalName 类型的 Service，其实是在 kubedns里为你添加了一条 CN
 + Ingress Controller: Nginx、HAProxy、Envoy、Traefik
 
 
+**Ingress controller**
+
+为了使 Ingress 正常工作，集群中必须运行 Ingress controller。 这与其他类型的控制器不同，其他类型的控制器通常作为 kube-controller-manager 二进制文件的一部分运行，在集群启动时自动启动。 你需要选择最适合自己集群的 Ingress controller 或者自己实现一个。
+
++ Kubernetes 当前支持并维护 GCE 和 nginx 两种 controller
++ F5（公司）支持并维护 F5 BIG-IP Controller for Kubernetes
++ Kong 同时支持并维护 社区版 与 企业版 的 Kong Ingress Controller for Kubernetes
++ Traefik 是功能齐全的 ingress controller（Let’s Encrypt, secrets, http2, websocket…）, Containous 也对其提供商业支持。
++ Istio 使用 CRD Gateway 来 控制 Ingress 流量。
+
+
 ### 1.2 通过DNS发现服务
 > 每个Service对象相关的DNS记录有两个：
 {SVCNAME}.{NAMESPACE}.{CLUSTER_DOMAIN}
@@ -171,6 +182,7 @@ userspace 代理模式
 7. [获取真实客户端IP](https://docs.ucloud.cn/compute/uk8s/service/getresourceip)
 8. [华为云在 K8S 大规模场景下的 Service 性能优化实践](https://mp.weixin.qq.com/s?__biz=MzU1OTAzNzc5MQ==&mid=2247485610&idx=1&sn=e092e55c848af62368835d530c57da15&chksm=fc1c249acb6bad8c940c587e59e0dc63ba4863c7063f0a0e322dcbd6ad5f610cd2ad1b4ba87d&scene=21#wechat_redirect) 未
 9. [Service](https://jimmysong.io/kubernetes-handbook/concepts/service.html)  jimmysong
+10. [Ingress](https://jimmysong.io/kubernetes-handbook/concepts/ingress.html) jimmysong
 
 -----
 
