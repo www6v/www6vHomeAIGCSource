@@ -53,6 +53,7 @@ categories:
    + 节点隔离 
      Taints和Toleration机制
      [Kubernetes 调度 - 污点和容忍度详解](https://mp.weixin.qq.com/s/rza4euQCLuMLTI5fHdj67Q)
+     [Taint 和 Toleration（污点和容忍）](https://jimmysong.io/kubernetes-handbook/concepts/taint-and-toleration.html)
      
    + 网路隔离
      NetworkPolicy 网路策略 - 实质上也是iptables规则

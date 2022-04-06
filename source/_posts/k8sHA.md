@@ -21,6 +21,8 @@ categories:
 4. 减少或消除外部依赖； Cloud Provider API
 5. 核心组件以普通Pod形式加载运行时， 可能会调度到任意工作节点。
 
+## 控制面 高可用方案
+[1][2]
 
 ### 架构图
 
@@ -33,6 +35,11 @@ categories:
    用lease来实现controller-manager和scheduler的leader election
 
 {% asset_img  lease.png  用lease来实现scheduler的leader election  %}
+
+
+## 参考:
+1. [Options for Highly Available topology](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology/)
+2. [Creating Highly Available clusters with kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/)
 
 
 

@@ -43,9 +43,6 @@ categories:
 {% asset_img   product.jpg  Kubernetes产品形态  %}
 
 
-## 四.  Kubernetes高可用方案
-[8][9]
-
 ## 参考:
 
 1. [《Kubenetes in Action》](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)  七牛容器云团队
@@ -55,8 +52,6 @@ categories:
 5. [K8S 从懵圈到熟练：读懂此文，集群节点不下线](https://mp.weixin.qq.com/s/xmVHqTZblQsAxdaSjWjn1Q) 阿里
 6. <<深入剖析Kubernetes - 16  编排其实很简单：谈谈“控制器”模型>> 张磊  
 7. [Serverless Kubernetes：理想，现实与未来](https://mp.weixin.qq.com/s/o_dPKP_6dL92Q4jiG4097A)  易立、张维
-8. [Options for Highly Available topology](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology/)
-9. [Creating Highly Available clusters with kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/)
 
 ---
 

@@ -67,6 +67,12 @@ k8s-prometheus-adapter：聚合进apiserver，即一种custom-metrics-apiserver�
 
 ![hpa2](https://user-images.githubusercontent.com/5608425/68987951-a3730080-086a-11ea-82d6-78ba5efcdfa5.jpg)
 
+
+## 四. 实战
+
+[HPA](https://github.com/rootsongjc/kubernetes-handbook/tree/master/manifests/HPA) 基于http_requests
+
+
 ## 参考:
 1. [《Kubernetes进阶实战》]() 马永亮
 2. [深入剖析Kubernetes - 49  Custom Metrics 让Auto Scaling不再“食之无味”]() 张磊
