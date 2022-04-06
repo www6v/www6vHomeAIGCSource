@@ -149,6 +149,17 @@ userspace 代理模式
 
 ##### IPVS proxy mode
 > IPVS是LVS一个组件，提供高性能、高可靠性的四层负载均衡器。IPVS 是IP Virtual Server的简写。IPVS构建在netfilter上，作为Linux 内核的一部分，从传输层实现了负载均衡。
+
+
+与iptables类似，ipvs基于netfilter 的 hook 功能，但使用哈希表作为底层数据结构并在内核空间中工作。这意味着ipvs可以更快地重定向流量，并且在同步代理规则时具有更好的性能。此外，ipvs为负载均衡算法提供了更多选项，例如：
+
+    rr：轮询调度
+    lc：最小连接数
+    dh：目标哈希
+    sh：源哈希
+    sed：最短期望延迟
+    nq： 不排队调度
+
  
 
 ## 参考:
@@ -159,6 +170,7 @@ userspace 代理模式
 6. [从 K8S 的 Cloud Provider 到 CCM 的演进之路](https://mp.weixin.qq.com/s/a_540yJ1EGVroJ9TpvYtPw)  毛宏斌 百度
 7. [获取真实客户端IP](https://docs.ucloud.cn/compute/uk8s/service/getresourceip)
 8. [华为云在 K8S 大规模场景下的 Service 性能优化实践](https://mp.weixin.qq.com/s?__biz=MzU1OTAzNzc5MQ==&mid=2247485610&idx=1&sn=e092e55c848af62368835d530c57da15&chksm=fc1c249acb6bad8c940c587e59e0dc63ba4863c7063f0a0e322dcbd6ad5f610cd2ad1b4ba87d&scene=21#wechat_redirect) 未
+9. [Service](https://jimmysong.io/kubernetes-handbook/concepts/service.html)  jimmysong
 
 -----
 
