@@ -15,6 +15,7 @@ categories:
 
 **Lease** 
 <div style="text-align: center;">
+	
 ![lease](https://user-images.githubusercontent.com/5608425/66694573-605fc380-ece7-11e9-8213-9fd6cfe8ae1c.jpg)
 </div>
 
