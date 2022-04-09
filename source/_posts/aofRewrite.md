@@ -3,9 +3,10 @@ title: Redis AOF Rewrite
 date: 2021-11-21 19:35:54
 tags:
   - redis
-categories:
+categories: 
+  - 分布式
   - 存储
-  - Redis
+  - Redis  
 ---
 
 <p hidden></p>

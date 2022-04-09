@@ -3,7 +3,8 @@ title: Redis RDB源码
 date: 2021-12-08 20:28:02
 tags:
   - redis
-categories:
+categories: 
+  - 分布式
   - 存储
   - Redis
 ---
