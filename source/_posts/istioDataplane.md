@@ -16,6 +16,7 @@ categories:
 {% asset_img  istio-data.jpg  istio数据面-sidecar注入 %}
 
 <div style="text-align: center;">
+
 ![Envoy Sidecar 代理的路由转发](https://user-images.githubusercontent.com/5608425/64623499-a50fea80-d41b-11e9-9524-6d834fd45d88.jpg)  Envoy Sidecar 代理的路由转发 [7][8]
 </div>
 
@@ -27,6 +28,7 @@ categories:
 
 ## 二. Envoy proxy的架构
 <div style="text-align: center;">
+
 ![Envoy代理的架构](https://user-images.githubusercontent.com/5608425/64623492-a3462700-d41b-11e9-8e2b-6fc0b05d8c5d.jpg)  
 Envoy proxy的架构 [18]
 
@@ -44,6 +46,7 @@ Envoy proxy的架构 [18]
 > XDS服务接口的最终一致性: 遵循 make before break 模型
 
 <div style="text-align: center; width: 50%; height: 50%">
+	
 ![xds](https://user-images.githubusercontent.com/5608425/69417029-dded0980-0d52-11ea-96a1-4c14e08aadf8.jpg)
 </div>
 

@@ -19,7 +19,7 @@ top: true
 + [Socket总结](../../../../2019/08/25/linux-socket/)
 
 
-### 跨网段，vpc
+### 容器网络、VPC
 + [Docker网络](../../../../2019/08/04/docker-network/)
 + [Kubernetes开放接口](../../../../2019/08/11/k8sInterface/)   
 + [IDC网络互通](../../../../2019/05/15/netConnection/)
