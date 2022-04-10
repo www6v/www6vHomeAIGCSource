@@ -1,5 +1,5 @@
 ---
-title: 结构化数据库分类
+title: 数据库分类
 date: 2019-10-27 22:30:59
 tags:
   - db
@@ -13,11 +13,12 @@ categories:
 <!-- more -->
 
 <div style="text-align: center;">
+
 ![dbClassify](https://user-images.githubusercontent.com/5608425/67636314-55717980-f90a-11e9-8506-2051221f245b.png)
 结构化数据库分类
 </div>
 
-## 1. NoSQL 
+## 1. NoSQL
 Key-Value 键值对
 Ordered Key-Value 有序键值对
 Document databases 文档模型
@@ -29,7 +30,7 @@ TiDB
 OceanBase
 
 ## 3. RMDB
-mysql
+MySQL
 
 
 ## 参考：

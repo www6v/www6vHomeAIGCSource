@@ -15,6 +15,7 @@ categories:
 <!-- more -->
 
 <div style="text-align: center;">
+  
 ![trade-off](https://user-images.githubusercontent.com/5608425/67635359-14c13280-f901-11e9-93f2-50720186ad33.jpg)
 基于一致性、可用性的系统分类
 </div>
