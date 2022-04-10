@@ -71,6 +71,8 @@ k8s-prometheus-adapter：聚合进apiserver，即一种custom-metrics-apiserver�
 ## 四. 实战
 
 [HPA](https://github.com/rootsongjc/kubernetes-handbook/tree/master/manifests/HPA) 基于http_requests
+[custom metrics](https://yasongxu.gitbook.io/container-monitor/yi-.-kai-yuan-fang-an/di-1-zhang-cai-ji/custom-metrics)
+[容器监控实践—Custom Metrics](http://www.xuyasong.com/?p=1520)
 
 
 ## 参考:
@@ -78,7 +80,8 @@ k8s-prometheus-adapter：聚合进apiserver，即一种custom-metrics-apiserver�
 2. [深入剖析Kubernetes - 49  Custom Metrics 让Auto Scaling不再“食之无味”]() 张磊
 3. [container-monitor](https://github.com/www6v/container-monitor) git
 4. [metrics-server](https://yasongxu.gitbook.io/container-monitor/yi-.-kai-yuan-fang-an/di-1-zhang-cai-ji/metrics-server)
-5. [custom metrics](https://yasongxu.gitbook.io/container-monitor/yi-.-kai-yuan-fang-an/di-1-zhang-cai-ji/custom-metrics)
+
+
 
 
 
