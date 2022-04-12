@@ -1,5 +1,5 @@
 ---
-title: Mysql中的SQL更新语句
+title: MySQL中的SQL更新语句
 date: 2020-06-26 13:41:44
 tags:
   - mysql
@@ -30,9 +30,10 @@ MySQL里的WAL(Write-Ahead Logging)技术，它的关键点就是**先写日志�
 <div style="width:35%;margin:auto">
 {% asset_img  update.PNG  update语句执行流程 %}
 </div>
-图中浅色框表示是在InnoDB内部执行的，深色框表示是在执行器中执行的。
+图中浅色框表示是在InnoDB内部执行的，深色框表示是在执行器中执行的。 
 
-redo log的写入拆成了两个步骤：prepare和commit，这就是**"两阶段提交"**， 让redo log和bin log之间的**逻辑一致**。
+
+redo log的写入拆成了两个步骤：**prepare和commit，这就是"两阶段提交", 让redo log和bin log之间的逻辑一致**。
 
 ## 参考:
 1. 《MySQL实战45讲 - 日志系统：一条SQL更新语句是如何执行的？》    丁奇
