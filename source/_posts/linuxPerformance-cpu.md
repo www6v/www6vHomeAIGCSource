@@ -19,6 +19,7 @@ categories:
 
 ## 二. 最常用的cpu工具
 <div style="width:60%; height:60%; text-align: center;">
+	
 ![最常用的cpu工具](https://user-images.githubusercontent.com/5608425/65083664-b6d52d00-d9db-11e9-918c-2a99c5708189.jpg)
 最常用的cpu工具 工具中指标之间的关系
 </div>
@@ -41,7 +42,7 @@ categories:
 僵尸进程是因为父进程没有回收子进程的资源而出现的，那么，要解决掉它们，就要找到它们的根儿，也就是找出父进程，然后在父进程里解决。
 
 ### 4.软中断的案例。
-> 通过 top 观察到，系统的软中断 CPU 使用率升高；接着查看/proc/softirqs， 找到了几种变化速率较快的软中断；然后通过 sar 命令，发现是网络小包的问题，最后再用 tcpdump ，找出网络帧的类型和来源，确定是一个** SYN FLOOD 攻击**导致的。
+> 通过 top 观察到，系统的软中断 CPU 使用率升高；接着查看/proc/softirqs， 找到了几种变化速率较快的软中断；然后通过 sar 命令，发现是网络小包的问题，最后再用 tcpdump ，找出网络帧的类型和来源，确定是一个**SYN FLOOD 攻击**导致的。
 
 ## 参考：
 
