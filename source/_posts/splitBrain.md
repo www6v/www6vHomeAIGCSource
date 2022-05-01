@@ -10,6 +10,9 @@ categories:
   - Split Brain   
 ---
 
+<p></p>
+<!-- more -->
+
 **关键词**: 脑裂, fence, Quorums , epoch
 
 

@@ -10,10 +10,12 @@ categories:
   - 故障模型
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img fault1.jpg 故障模型1 %}
 {% asset_img fault2.jpg 故障模型2 %}
 
-<!-- more -->
 
 ## 参考：
 

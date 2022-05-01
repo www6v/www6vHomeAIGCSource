@@ -1,5 +1,5 @@
 ---
-title: Kubernetes集群搭建
+title: Kubernetes集群搭建(二进制)
 date: 2019-01-17 12:23:58
 tags:
   - Kubernetes
@@ -8,6 +8,10 @@ categories:
   - 云原生
   - Kubernetes
 ---
+
+<p></p>
+<!-- more -->
+
 
 1. 禁用swap
 ```
@@ -27,8 +31,6 @@ $  tar zxf kubernetes-client-linux-amd64.tar.gz
 $  sudo mv kubernetes/client/bin/kubectl /usr/local/bin/kubectl
 $  /usr/local/bin/kubectl version --client
 ```
-
-<!--more-->
 
 4. 安装 kubeadm 和 kubelet
 

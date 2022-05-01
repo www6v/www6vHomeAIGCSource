@@ -9,6 +9,9 @@ categories:
   - Zookeeper 
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  zab.jpg  Zookeeper的分布式一致性协议Zab %}
 
 ## 参考:

@@ -11,6 +11,9 @@ categories:
   - Netty   
 ---
 
+<p></p>
+<!-- more -->
+
 京东JSF中的服务提供者的server可以使用两种EventLoop， 默认为false，所以使用NioEventLoop，如下图所示。
 
 在Netty中, NioEventLoop使用JDK Nio中基于Selector的IO多路复用的方法。在早期的JDK1.4和1.5 update10版本之前，Selector基于select/poll模型实现，是基于IO复用技术的非阻塞IO，不是异步IO。在JDK1.5 update10和linux core2.6以上版本，sun优化了Selctor的实现，底层使用epoll替换了select/poll。 但是在上层的JDK Nio的api中还是沿袭了select（）函数的叫法，而JDK Nio在linux中底层其实用的也是epoll模型。
@@ -21,7 +24,6 @@ Netty4.0.17 提供了默认采用ET工作模式的EpollEventLoop。NioEventLoop�
 
 **epoll使用一组函数来完成任务，而不是像select/poll使用单个函数。**
 
-<!-- more -->
 
 ### 1. epoll通过epoll_create创建一个用于epoll轮询的描述符，对应于图1中的 epollFd。
 

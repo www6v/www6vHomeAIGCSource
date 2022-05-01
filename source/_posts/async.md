@@ -11,6 +11,9 @@ categories:
   - 异步化   
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  async.jpg  服务异步化总结 %}
 
 ## 一. 并行 范式/编程模型

@@ -36,6 +36,7 @@ In short, the microservice architectural style [1] is an approach to developing 
 
 ### 3. 服务注册和发现
 <div style="text-align: center;">
+
 ![service-find](https://user-images.githubusercontent.com/5608425/66263484-fa29fb00-e825-11e9-83aa-47bcb97d7580.png)
 服务注册和发现
 </div>
@@ -65,6 +66,7 @@ In short, the microservice architectural style [1] is an approach to developing 
   
 
    <div style="text-align: center;">
+
    ![micro-service-architecture-comms](https://user-images.githubusercontent.com/5608425/66257280-8528d800-e7c9-11e9-95f4-bfe436d9d283.png)
    </div>
 
@@ -84,6 +86,7 @@ In short, the microservice architectural style [1] is an approach to developing 
    [可观察性](../../../../2019/08/31/observability/) self
 
    <div style="text-align: center;">
+
    ![apm-fault](https://user-images.githubusercontent.com/5608425/66256533-43942f00-e7c1-11e9-8fe8-80565025c792.png)
    APM 故障
    ![apm-tracing](https://user-images.githubusercontent.com/5608425/66256535-4727b600-e7c1-11e9-82c9-cd2222fce9bb.png)
@@ -109,6 +112,7 @@ In short, the microservice architectural style [1] is an approach to developing 
 ## 二. 微服务设计模式 
 ### 2.1 微服务设计模式
 <div style="text-align: center;">
+
 ![PatternsRelatedToMicroservices](https://user-images.githubusercontent.com/5608425/66229516-8ea43880-e714-11e9-8f56-0a70cc695882.jpg)
 微服务设计模式    
 </div>    
@@ -140,6 +144,7 @@ Eg. k8s pod中日志采集sidecar
 
 
 <div style="text-align: center;">
+  
 ![productivity](https://user-images.githubusercontent.com/5608425/66262608-af54b700-e816-11e9-9e16-3b95d76e14e2.png)
 生产率和复杂度之间的关系。 
 </div>

@@ -12,6 +12,9 @@ categories:
   - 中台战略 
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  middleStage.jpg  中台战略 %}
 
 {% asset_img  middleAndService.JPG  中台和微服务 %}

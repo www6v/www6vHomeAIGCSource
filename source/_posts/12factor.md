@@ -10,6 +10,8 @@ categories:
   - 十二要素
 ---
 
+<p></p>
+<!-- more -->
 
 {% asset_img  12factor.jpg  十二要素 %}
 {% asset_img  12-factor-app.png  十二要素 %}

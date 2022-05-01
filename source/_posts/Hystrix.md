@@ -10,6 +10,9 @@ categories:
   - 容错        
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  Hystrix.jpg  Hystrix实现和容错模式 %}
 
 ## 参考：

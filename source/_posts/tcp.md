@@ -10,12 +10,15 @@ categories:
   - TCP   
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img  tcp-base.jpg  TCP基础总结 %}
 {% asset_img  tcp-optimize.jpg  TCP优化 %}
 
 Tcp五元组: 源ip, 源port, 目的ip, 目的port, 协议
 
-<!-- more -->
+
 
 ## 一.  TCP Keep-Alive 
 【TCP Keep-Alive】 |  基础  |  并行请求

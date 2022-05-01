@@ -9,6 +9,9 @@ categories:
   - 秒杀系统   
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img secKillSummary.jpg  秒杀系统总结 %}
 
 ## 参考：

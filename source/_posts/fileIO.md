@@ -9,6 +9,9 @@ categories:
   - 文件IO   
 ---
 
+<p></p>
+<!-- more -->
+
 {% asset_img fileIO.jpg 文件IO总结 %}
 
 
