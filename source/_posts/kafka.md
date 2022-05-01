@@ -42,8 +42,9 @@ ISR 不只是追随者副本集合，它必然包括 Leader 副本。
 好处（一致性方面）
 + 方便实现**“Read-your-writes”**
 + 方便实现**单调读（Monotonic Reads）**
-3. **Kafka 判断 Follower 是否与 Leader 同步的标准，不是看"相差的消息数"，而是看"落后的时间"**。
-**落后的时间**就是 Broker 端参数 replica.lag.time.max.ms 参数值。这个参数的含义是Follower 副本能够落后 Leader 副本的最长时间间隔，当前默认值是 10 秒。
+3. Kafka 判断 Follower 是否与 Leader 同步的标准,**不是看"相差的消息数"，而是看"落后的时间"。**
+   **落后的时间**就是 Broker 端参数 replica.lag.time.max.ms 参数值。
+   这个参数的含义是Follower 副本能够落后 Leader 副本的最长时间间隔，当前默认值是 10 秒。
 4. Unclean 领导者选举（Unclean Leader Election） 
 [Kafka 可靠性总结](../../../../2016/07/05/kafkaReliability/) self
 
