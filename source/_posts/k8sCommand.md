@@ -8,6 +8,11 @@ categories:
   - 云原生
   - Kubernetes  
 ---
+
+
+<p></p>
+<!-- more -->
+
    
 1. kubectl get 资源名  -> 简单描述
 
