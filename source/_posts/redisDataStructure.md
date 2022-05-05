@@ -2,8 +2,6 @@
 title: Redis数据结构
 date: 2021-05-05 22:25:55
 tags:
-  - 中间件
-  - 存储
   - Redis
 categories: 
   - 分布式
