@@ -62,3 +62,4 @@ enable.idempotence = true
 ## 参考:
 1. [消息队列高手课 - 25 | RocketMQ与Kafka中如何实现事务？]() 李玥
 2. [Kafka Exactly-Once 之事务性实现](http://matt33.com/2018/11/04/kafka-transaction/)  Matt's Blog-柳年思水
+3. <<深入理解Kafka：核心设计与实践原理>>  7.4节
