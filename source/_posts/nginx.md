@@ -13,6 +13,7 @@ categories:
 <!-- more -->
 
 <div style="text-align: center;">
+	
 ![Nginx总结](https://user-images.githubusercontent.com/5608425/64508349-cedbeb00-d30f-11e9-836c-2f920725e1bb.jpg) 
 Nginx总结
 </div>
