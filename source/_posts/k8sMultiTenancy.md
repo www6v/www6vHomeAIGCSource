@@ -28,8 +28,13 @@ categories:
 {% asset_img  k8sMultiTenancy1.png  多租户Overview %}
 
 
-方案B  软隔离 https://github.com/kubernetes-sigs/hierarchical-namespaces
-方案C  硬隔离 https://github.com/kubernetes-sigs/cluster-api-provider-nested/tree/main/virtualcluster 
++ 方案B  软隔离 - hierarchical-namespaces
+https://github.com/kubernetes-sigs/hierarchical-namespaces
+[Kubernetes 的层级命名空间介绍](https://icloudnative.io/posts/introducing-hierarchical-namespaces/)
+
++ 方案C  硬隔离 - virtualcluster
+https://github.com/kubernetes-sigs/cluster-api-provider-nested/tree/main/virtualcluster 
+
    
 ## 三. 方案B 解决方案
 
@@ -76,11 +81,11 @@ categories:
 ```
      
 ##### 4. 配额
-
    ResourceQuota  
 
 ##### 5. 开源方案
 [kiosk](https://github.com/loft-sh/kiosk)
+[Set up soft multi-tenancy with Kiosk on Amazon Elastic Kubernetes Service](https://aws.amazon.com/de/blogs/containers/set-up-soft-multi-tenancy-with-kiosk-on-amazon-elastic-kubernetes-service/)
 
 ### 参考：
 1. [Kubernetes 多租户简介](https://mp.weixin.qq.com/s/YBxsZ5a_K6AWnOISTtiX3g)
@@ -90,4 +95,10 @@ categories:
 2. [解决 K8s 落地难题的方法论提炼](https://mp.weixin.qq.com/s/PobybjwmzOdbLcx53onJZQ)
 
 3. [NetworkPolicy](https://jimmysong.io/kubernetes-handbook/concepts/network-policy.html) jimmysong
+
+4. [轻量级 Kubernetes 多租户方案的探索与实践](https://mp.weixin.qq.com/s/Y-dUtp1yqRxpd40YwjyE0Q) 火山引擎云原生
+   本质上来说 KubeZoo 的方案和 Virtual Cluster 有点类似，是一种 Serverless 的 Kubernetes 方案。
+
+
+
 

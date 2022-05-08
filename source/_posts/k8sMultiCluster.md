@@ -25,16 +25,23 @@ categories:
 
 ## 开源和解决方案
 + KubeFed 或 Federation v2
+https://github.com/kubernetes-sigs/kubefed
+[集群联邦（Cluster Federation）](https://jimmysong.io/kubernetes-handbook/practice/federation.html)   jimmysong
 
 + virtual-kubelet
-
-+ Karmada（Kubernetes Armada）
-
-
-## 参考：
-https://github.com/kubernetes-sigs/kubefed
-
 [阿里云virtual-kubelet-autoscaler实现ECI作为弹性补充](https://www.modb.pro/db/166209)
 [通过 virtual-kubelet-autoscaler 将Pod自动调度到虚拟节点](https://www.alibabacloud.com/help/zh/elastic-container-instance/latest/schedule-pods-to-a-virtual-node-through-the-virtual-kubelet-autoscaler-add-on)
 
++ Karmada（Kubernetes Armada）
 [Karmada: 开源的云原生多云容器编排引擎](https://www.bilibili.com/video/BV1rX4y1c72s?spm_id_from=333.999.0.0) 华为
+
++ clusternet - 腾讯云
+
+## 参考：
+[k8s多集群的思考](https://www.huweihuang.com/kubernetes-notes/multi-cluster/k8s-multi-cluster-thinking.html)
+
+
+
+
+
+
