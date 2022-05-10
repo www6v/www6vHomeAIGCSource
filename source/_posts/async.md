@@ -2,9 +2,7 @@
 title: 异步化总结
 date: 2015-12-05 12:11:22
 tags:
-  - 服务化
   - 异步
-  - 性能
 categories:
   - 分布式 
   - 服务治理
@@ -19,7 +17,7 @@ categories:
 ## 一. 并行 范式/编程模型
 
 并行 范式/编程模型  |  系统/语言  
-:-:|:-:|:-:
+:-:|:-:
 线程和锁| Java
 函数式(Future，Promise）| Java8 Streaming API, lambda表达式<br> Spark/Flink 算子<br> Clojure reducer
 分离标识和状态| Clojure
@@ -33,6 +31,7 @@ Reactive | RxJava<br> Flux (Reactor Core)<br> RSocket
 
 ## 二. Java8、RxJava、Reactor比较[11]
 <div style="text-align: center;">
+	
 ![reactor](https://user-images.githubusercontent.com/5608425/66807471-a329d180-ef5b-11e9-9d8a-28724638916e.jpeg)
 Java8、RxJava、Reactor比较  
 </div>
@@ -47,7 +46,7 @@ Java8、RxJava、Reactor比较
 4. [Web服务请求异步化介绍（概念篇）](https://blog.csdn.net/cenwenchu79/article/details/5703430) 放翁（文初）  good
 5. Java中的纤程库 - Quasar 鸟窝
 6. [SEDA: An Architecture for Well-Conditioned, Scalable Internet Services](https://www.researchgate.net/publication/2391753_SEDA_An_Architecture_for_Well-Conditioned_Scalable_Internet_Services)
-13. [《七周七并发》]()
+13. 《七周七并发》
 
 ---
 ##### Reactive，ReactiveX
