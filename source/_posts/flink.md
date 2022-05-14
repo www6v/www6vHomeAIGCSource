@@ -12,19 +12,28 @@ categories:
 <p></p>
 <!-- more -->
 
-## 一. 总结
+##  总结
 {% asset_img   flink.jpg  flink  %} 
 
-+ 组件
-  JobManager 
-    ResourceManager
-    Dispatcher
-    JobMaster
 
-  TaskManager 
-     Task Slot
+##  组件
+{% asset_img  flink-arch.png flink架构 %}
 
-+ 概念
+
+## Runtime  
++ JobMaster AM
+   - JobManager 
+   - ResourceManager
+   - Dispatcher
+    
+
++ TaskManager 
+   - Task Slot
+
+{% asset_img  flink-runtime.png flink架构 %}
+
+
+## 概念
    1. 数据流图
    2. 并行度
    3. 算子链
@@ -37,7 +46,7 @@ categories:
    5. 任务(Tasks)和任务槽(Task Slots)
 
 
-## 二. Flink on Kubernetes 
+## Flink on Kubernetes 
 [Flink on Kubernetes](https://github.com/www6v/dev-ops/tree/master/yaml-prod/flink)  Flink官方的方案
 
 
@@ -47,4 +56,7 @@ categories:
 3. [Flink使用Broadcast State实现流处理配置实时更新](http://ju.outofmemory.cn/entry/371335)
 4. [Apache Flink状态管理和容错机制介绍](https://www.iteblog.com/archives/2417.html)
 5. 尚硅谷 flink(Java) - bilibili 
+6. [Apache Flink 进阶（一）：Runtime 核心机制剖析](https://www.infoq.cn/article/RWTM9o0SHHV3Xr8o8giT) 阿里-高赟（云骞）
+
+
 

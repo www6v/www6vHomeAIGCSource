@@ -48,12 +48,12 @@ categories:
 处理时间 processing time
 
 2. DSL
-<code>
+```	
 df = … // 这个 DataFrame 代表学校学生的数据流，schema 是{name: string, age: number, height
 df.select("name").where("age > 10") // 返回年龄大于 10 岁的学生名字列表
 df.groupBy("grade").count() // 返回每个年级学生的人数
 df.sort_values([‘age’], ascending=False).head(100) // 返回 100 个年龄最大的学生
-</code>
+```
 
 3. API 
 **Spark Streaming** 提供的 DStream API 与 RDD API 很类似，相对**比较低 level**。
