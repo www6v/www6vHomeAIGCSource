@@ -25,8 +25,6 @@ categories:
 
 
 ## Producer
-+    Kafka生产者客户端的整体结构是什么样子的？
-
 +    Kafka生产者客户端中使用了几个线程来处理？分别是什么？
 
 ## Consumer
