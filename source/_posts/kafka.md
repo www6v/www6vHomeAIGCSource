@@ -56,4 +56,4 @@ ISR 不只是追随者副本集合，它必然包括 Leader 副本。
 4. Kafka文件存储机制那些事 幽灵之使
 5. [分布式发布订阅消息系统 - Kafka架构设计](https://www.oschina.net/translate/kafka-design?cmp&p=1)  官方文档翻译 未
 6. [Kafka科普系列 | 原来Kafka中的选举有这么多？](https://mp.weixin.qq.com/s?__biz=MzU0MzQ5MDA0Mw==&mid=2247485365&idx=1&sn=f55d8d2e1d6e82d23b6f60b847382c25&chksm=fb0bed21cc7c64370398daf3caf0f639c46db1989583ca035391cb82a29d3ca66d94f860cca8&token=1885824046&lang=zh_CN&scene=21#wechat_redirect)  朱小厮
-7. [Kafka核心技术与实战 - 23丨Kafka副本机制详解]() 胡夕
+7. Kafka核心技术与实战 - 23丨Kafka副本机制详解  胡夕
