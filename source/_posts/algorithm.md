@@ -17,12 +17,14 @@ categories:
    
 ## 一. Master Thereom  主定律
 <div style="text-align: center;">
+
 ![图1.主定律在常用算法中的应用](https://user-images.githubusercontent.com/5608425/64620811-25801c80-d417-11e9-88aa-182269f0bc02.JPG)
 图1.主定律在常用算法中的应用
 </div>
 
 ## 二. 数据结构操作 O(n)
 <div style="text-align: center;">
+
 ![图2.数据结构操作](https://user-images.githubusercontent.com/5608425/64620788-1a2cf100-d417-11e9-82d3-7ca7864f6129.JPG)
 图2.数据结构操作
 </div>
@@ -53,12 +55,14 @@ categories:
 
 ## 四 =  二 +  三
 <div style="text-align: center;">
+
 ![图4.BigO总结](https://user-images.githubusercontent.com/5608425/64620785-19945a80-d417-11e9-97bf-5af847bdbd5a.png)
 图4.BigO总结
 </div>
 
 ## 五. 堆实现 O(n)
 <div style="text-align: center;">
+  
 ![图5.堆实现](https://user-images.githubusercontent.com/5608425/64620806-244eef80-d417-11e9-9b17-39538ad19573.JPG)  
 图5.堆实现
 </div>
