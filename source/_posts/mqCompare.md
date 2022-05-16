@@ -33,3 +33,5 @@ categories:
 
 ## 参数：
 [Kafka、RabbitMQ、RocketMQ等消息中间件的对比](https://blog.csdn.net/belvine/article/details/80842240)
+
+https://honeypps.com/mq/kafka-vs-rabbitmq/   未

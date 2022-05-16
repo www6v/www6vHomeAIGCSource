@@ -35,6 +35,10 @@ categories:
 + 第二类非必要 Rebalance 是 Consumer 消费时间过长导致的。
   max.poll.interval.ms参数值的设置显得尤为关键。
 
+## Q&A
++    消费再均衡的原理是什么？（提示：消费者协调器和消费组协调器）
+     [Kafka Rebalance机制](../../../../2022/05/11/kafkaRebalance/)
+
 
 ## 参考：
 17 | 消费者组重平衡能避免吗?  胡夕

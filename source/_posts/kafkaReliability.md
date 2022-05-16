@@ -62,8 +62,14 @@ Eg. **表. kafka高可靠配置**  topic的配置
 ## 检测消息丢失的方法
 可以利用消息队列的有序性来验证是否有消息丢失。在 Producer 端，我们给每个发出的消息附加一个连续递增的序号，然后在 Consumer 端来检查这个序号的连续性。
 
-## 参考:
 
+## Q&A
++    怎么样才能确保Kafka极大程度上的可靠性？  
++    Kafka在可靠性方面做了哪些改进？（HW, LeaderEpoch）  
+[Kafka 可靠性总结](../../../../2016/07/05/kafkaReliability/)
+
+
+## 参考:
 1. [Kafka设计解析（六）- Kafka高性能架构之道](http://www.jasongj.com/kafka/high_throughput/) 郭俊   
 2. [kafka数据可靠性深度解读](https://blog.csdn.net/u013256816/article/details/71091774) 朱忠华
 3. 《Kafka权威指南》 第6 章可靠的数据传递 薛命灯

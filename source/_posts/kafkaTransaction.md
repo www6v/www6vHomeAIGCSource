@@ -59,6 +59,11 @@ enable.idempotence = true
 ## 总结：
 幂等性、事务都是0.11.0.0之后引入的特性, 以此来实现EOS（Exactly-Once semantics 精确一次性语义）
 
+## Q&A
++    Kafka中的幂等是怎么实现的 
++    Kafka中的事务是怎么实现的（这题我去面试6家被问4次） 
+     [Kafka 幂等性和事务](../../../../2022/05/04/kafkaTransaction/)
+
 ## 参考:
 1. [消息队列高手课 - 25 | RocketMQ与Kafka中如何实现事务？]() 李玥
 2. [Kafka Exactly-Once 之事务性实现](http://matt33.com/2018/11/04/kafka-transaction/)  Matt's Blog-柳年思水
