@@ -24,6 +24,14 @@ categories:
 ####  数组的两分搜索
    > [LeetCode 540. Single Element in a Sorted Array](https://github.com/grandyang/leetcode/issues/540) [中等]
 
+
+#### 合并有序数组 [简单]
+LeetCode 88
++ 方法一：直接合并后排序
++ 方法二：双指针
++ 方法三：逆向双指针
+
+
 ## 链表
 ####  单链表的反转 [简单]
 +  使用3个指针遍历单链表，逐个链接点进行反转。 复杂
@@ -78,13 +86,19 @@ class Solution {
 > [LeetCode题解21_合并两个有序链表](https://www.cnblogs.com/xugenpeng/p/9850372.html)
   [LeetCode21:合并两个有序链表](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC21%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8.md)
 
-####  快指针，慢指针
-+ 删除链表倒数第n个结点 ->  快指针先于慢指针走若干步 
-> 剑指 题15 
+####  快指针，慢指针 
 + 链表中环的检测 
   1. 硬解 
   2. 每走一步，把节点的地址存在set中，走下一步的时候查找地址是否已经在set中
   3. 快指针是慢指针的两倍， 最后快指针和慢指针相遇
+
++ 链表倒数第k个结点 
+> 剑指 题15
+题解： 快指针先于慢指针走若干步
+
++ 删除链表倒数第n个结点  [中等]
+LeetCode 19 
+
 + 求链表的中间结点 -> 快指针是慢指针的两倍
 [LeetCode 例题精讲 | 05 双指针×链表问题：快慢指针](https://mp.weixin.qq.com/s/Jdbr_-UACicLU_Akn4czSw)
 
@@ -99,9 +113,9 @@ class Solution {
   
 
 ##  栈,队列
-####  两个栈实现一个队列
-> 指南 P5， 剑指 7题
-> leetcode 232
+####  两个栈实现一个队列 [简单]
+> 剑指 7题，指南 P5 
+> leetcode 232 
 
 ####  包含min函数的栈
 > 剑指 21题 , 指南 P1
