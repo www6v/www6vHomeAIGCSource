@@ -115,10 +115,12 @@ LeetCode 19
 ##  栈,队列
 ####  两个栈实现一个队列 [简单]
 > 剑指 7题，指南 P5 
-> leetcode 232 
+> Leetcode 232 
 
-####  包含min函数的栈
+####  包含min函数的栈 [简单]
 > 剑指 21题 , 指南 P1
+> Leetcode 155 
+题解：方法一：辅助栈
 
 
 ## 二. HashTable 哈希表
@@ -142,9 +144,6 @@ LeetCode 19
 > 剑指 50题 ，指南 P153 
 > 参考17 LeetCode 235,236. 递归，非递归
 
-####  二叉树的深度
-> 剑指 39题 P207， 递归的方法
-
 ####  二叉树的最大距离（即相距最远的两个叶子节点）。
 
 ####  二叉树中和为某一值的路径
@@ -158,11 +157,12 @@ LeetCode 19
  解1： BFS  队列辅助 
  解2： DFS 
 
-####  LeetCode 104 二叉树的最小/最大深度
+####  LeetCode 104 二叉树的最小/最大深度， 二叉树的深度
+> 剑指 39题 ， 递归的方法 
 > [LeetCode 104](https://github.com/grandyang/leetcode/issues/104)  
    BFS： 第一个达到的叶子节点是最小深度， 最后一个达到的叶子节点是最大深度。
-   DFS递归。
-
+   DFS递归。 
+  
 ## 四. 字符串
 ####   一个字符串中， 要找到其中最长的字符串，并且没有重复字符。
 > [Leetcode 3](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC3%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2.md)
