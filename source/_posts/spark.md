@@ -66,8 +66,6 @@ GMV即成交总金额（Gross Merchandise Volume），是电商网站统计营�
 2. 《Spark大数据处理：技术、应用与性能优化》 高彦杰
 3. 《Spark大数据处理技术》 夏俊鸾,黄洁,程浩等
 4. [Spark中foreachRDD、foreachPartition和foreach解读](https://blog.csdn.net/Scapel/article/details/84030362)
-5. [从0开始学大数据 - Spark的性能优化案例分析（上）]()  李智慧
-6. [从0开始学大数据 - Spark的性能优化案例分析（下）]()  李智慧
 7. [Spark SQL：Spark数据查询的利器]  蔡元楠
 8. [Structured Streaming：如何用DataFrame API进行实时数据分析?]  蔡元楠
 9. [Structured Streaming编程指南](https://github.com/xy2953396112/spark-sourcecodes-analysis/blob/master/structured-streaming/Structured-Streaming-%E7%BC%96%E7%A8%8B%E6%8C%87%E5%8D%97.md)  官方文档的中文版本  good  未 
