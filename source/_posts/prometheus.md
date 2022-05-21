@@ -3,8 +3,7 @@ title: Prometheus
 date: 2022-04-10 21:58:17
 tags:
   - prometheus
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Prometheus
 ---

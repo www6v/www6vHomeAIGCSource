@@ -3,8 +3,7 @@ title: K8S零停机 可用性
 date: 2022-04-05 15:09:31
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

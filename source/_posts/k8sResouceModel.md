@@ -3,8 +3,7 @@ title: Kubenetes资源模型
 date: 2019-11-14 10:23:19
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes 
 ---

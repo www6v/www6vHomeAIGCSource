@@ -3,8 +3,7 @@ title: Kubernetes总结
 date: 2019-04-25 10:29:34
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes  
 ---

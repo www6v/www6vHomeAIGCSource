@@ -3,8 +3,7 @@ title: Kubernetes调度器
 date: 2019-06-09 12:27:44
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes  
 ---

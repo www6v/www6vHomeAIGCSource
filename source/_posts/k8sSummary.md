@@ -3,8 +3,7 @@ title: Kubernetes 汇总
 date: 2022-01-22 21:45:51
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 top: true  
@@ -60,6 +59,8 @@ top: true
 
 ## 其他
  [Kubernetes命令](../../../../2019/06/09/k8sCommand/)  
+ [Kubernetes 学习资源](../../../../2022/05/21/k8sStudy/)
+ 
 
 ## 安装
  [Kubernetes安装-kubeasz](../../../..//2021/06/02/k8sDeploy/)

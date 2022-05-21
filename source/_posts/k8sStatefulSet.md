@@ -3,8 +3,7 @@ title: StatefulSet原理和源码
 date: 2019-11-11 15:20:39
 tags:
   - Kubernetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

@@ -3,8 +3,7 @@ title: Kubernetes Operator
 date: 2019-11-19 10:59:00
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

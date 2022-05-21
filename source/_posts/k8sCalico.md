@@ -3,8 +3,7 @@ title: Calico
 date: 2022-05-03 10:15:18
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

@@ -3,8 +3,7 @@ title: K8S 弃用Docker
 date: 2021-06-01 21:57:51
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes  
 ---

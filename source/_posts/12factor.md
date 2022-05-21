@@ -1,11 +1,10 @@
 ---
-title: 十二要素
+title: 十二要素-12 factor
 date: 2019-04-09 11:09:06
 tags:
   - 云原生
   - 微服务
 categories:
-  - 分布式
   - 云原生
   - 十二要素
 ---

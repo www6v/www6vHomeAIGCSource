@@ -4,7 +4,6 @@ date: 2020-06-14 00:35:05
 tags:
   - 云原生
 categories:
-  - 分布式
   - 云原生
   - 相关资源
 ---
@@ -12,22 +11,22 @@ categories:
 <p></p>
 <!-- more -->
 
-1. [2020阿里巴巴研发效能峰会——云原生应用与架构专场](https://developer.aliyun.com/live/2730) video seen
-2. [CNCF × Alibaba 云原生技术公开课](https://edu.aliyun.com/course/1651) video + text +ppt  seen
-3. [Alibaba Cloud Native Day 杭州站 2020-05-30 2020年第二期](https://yq.aliyun.com/live/2831) seen  网盘里有ppt
++ [2020阿里巴巴研发效能峰会——云原生应用与架构专场](https://developer.aliyun.com/live/2730) video seen
 
-4. [基于阿里云容器服务&ECI的在线业务弹性伸缩最佳实践](https://www.bilibili.com/video/BV1qt4y1C74P) video seen 钉钉2020.6.12有相同的视频
++ [Alibaba Cloud Native Day 杭州站 2020-05-30 2020年第二期](https://yq.aliyun.com/live/2831) seen  网盘里有ppt
+
++ [基于阿里云容器服务&ECI的在线业务弹性伸缩最佳实践](https://www.bilibili.com/video/BV1qt4y1C74P) video seen 钉钉2020.6.12有相同的视频
 ECI, kata, vitual kubelet
 
-5. [如何为云原生应用带来稳定高效的部署能力？](https://www.bilibili.com/video/BV1mK4y1t7WS/) video seen 钉钉2020.05.28有相同的视频
++ [如何为云原生应用带来稳定高效的部署能力？](https://www.bilibili.com/video/BV1mK4y1t7WS/) video seen 钉钉2020.05.28有相同的视频
 [如何为云原生应用带来稳定高效的部署能力？](https://yq.aliyun.com/articles/762949) text seen 
 CloneSet, Advanced StatefulSet, OpenKuise
 
-6. [云原生时代消息中间件的演进路线](https://blog.csdn.net/zl1zl2zl3/article/details/106129314) text 未 钉钉2020.05.28有相同的视频
++ [云原生时代消息中间件的演进路线](https://blog.csdn.net/zl1zl2zl3/article/details/106129314) text 未 钉钉2020.05.28有相同的视频
 
-7. [阿里云核心技术竞争力第二期](https://edu.csdn.net/course/play/29034/407143?spm=1002.2009.3001.4024) 未
++ [阿里云核心技术竞争力第二期](https://edu.csdn.net/course/play/29034/407143?spm=1002.2009.3001.4024) 未
 
-8. [云原生应用白皮书 - 定义云原生应用标准](https://jimmysong.io/guide-to-cloud-native-app/)
++ [云原生应用白皮书 - 定义云原生应用标准](https://jimmysong.io/guide-to-cloud-native-app/)
 
 + Serverless
 [Serverless 工程化落地与实践](https://yq.aliyun.com/articles/744370)  video 未 

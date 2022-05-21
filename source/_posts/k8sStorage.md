@@ -3,8 +3,7 @@ title: Kubernetes存储
 date: 2019-09-01 17:39:12
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes  
 ---

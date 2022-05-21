@@ -3,8 +3,7 @@ title: K8S 问题排查
 date: 2022-04-03 22:42:10
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

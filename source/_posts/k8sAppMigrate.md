@@ -3,8 +3,7 @@ title: K8S 应用迁移至K8S
 date: 2022-02-02 22:16:54
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

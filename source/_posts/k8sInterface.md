@@ -3,8 +3,7 @@ title: Kubernetes开放接口
 date: 2019-08-11 01:04:40
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes  
 ---

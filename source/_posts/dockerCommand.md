@@ -4,7 +4,6 @@ date: 2020-05-27 16:41:43
 tags: 
   - docker
 categories:  
-  - 分布式
   - 云原生
   - docker
 ---

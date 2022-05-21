@@ -3,8 +3,7 @@ title: Kubernetes技能图谱
 date: 2019-11-03 16:46:55
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

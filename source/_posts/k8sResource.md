@@ -3,8 +3,7 @@ title: Kubernetes Workload
 date: 2019-06-09 22:13:52
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes  
 ---

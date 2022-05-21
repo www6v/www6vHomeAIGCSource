@@ -3,8 +3,7 @@ title: Kubernetes 多租户
 date: 2021-10-18 21:51:13
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

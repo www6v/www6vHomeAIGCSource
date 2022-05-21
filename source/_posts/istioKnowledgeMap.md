@@ -4,7 +4,6 @@ date: 2019-11-18 15:34:18
 tags:
   - istio
 categories: 
-  - 分布式
   - 云原生
   - serviceMesh
 ---

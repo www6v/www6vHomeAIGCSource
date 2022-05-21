@@ -3,8 +3,7 @@ title: etcd
 date: 2022-04-06 21:19:30
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

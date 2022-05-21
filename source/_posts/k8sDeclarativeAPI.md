@@ -3,8 +3,7 @@ title: Kubernetes声明式API
 date: 2019-08-29 18:15:25
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

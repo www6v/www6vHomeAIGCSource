@@ -3,8 +3,7 @@ title: Knative
 date: 2019-09-27 05:36:18
 tags:
   - knative
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - knative  
 ---

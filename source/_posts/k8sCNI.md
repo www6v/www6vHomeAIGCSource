@@ -3,8 +3,7 @@ title: K8S CNI
 date: 2022-04-03 23:59:15
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

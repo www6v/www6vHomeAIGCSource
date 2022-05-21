@@ -3,8 +3,7 @@ title: Kubernetes Runtime
 date: 2019-11-19 15:21:19
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes  
 ---

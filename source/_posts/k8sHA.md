@@ -3,8 +3,7 @@ title: K8S 控制面高可用
 date: 2022-01-02 22:09:31
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

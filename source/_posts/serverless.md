@@ -3,8 +3,7 @@ title: Serverless
 date: 2019-10-10 10:50:53
 tags:
   - serverless
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - serverless
 ---

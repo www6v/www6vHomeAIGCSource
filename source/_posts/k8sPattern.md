@@ -3,8 +3,7 @@ title: Kubernetes模式
 date: 2019-11-13 15:18:24
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes  
 ---

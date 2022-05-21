@@ -3,8 +3,7 @@ title: kubelet和PLEG
 date: 2022-04-03 21:40:02
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

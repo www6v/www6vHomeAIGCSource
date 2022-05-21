@@ -3,8 +3,7 @@ title: Kubernetes集群搭建(二进制)
 date: 2019-01-17 12:23:58
 tags:
   - Kubernetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

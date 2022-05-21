@@ -3,8 +3,7 @@ title: Kubernetes 多集群管理
 date: 2022-05-08 22:14:17
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes
 ---

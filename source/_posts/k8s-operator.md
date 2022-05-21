@@ -3,8 +3,7 @@ title: Kubernetes Operator
 date: 2021-12-30 20:42:36
 tags:
   - Kubenetes
-categories:
-  - 分布式 
+categories: 
   - 云原生
   - Kubernetes  
 ---

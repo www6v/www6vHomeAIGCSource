@@ -5,7 +5,6 @@ tags:
   - k8s
   - istio
 categories:  
-  - 分布式
   - 云原生
   - serviceMesh  
 ---
