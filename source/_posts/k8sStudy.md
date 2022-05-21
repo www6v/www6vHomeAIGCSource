@@ -11,9 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
-
+## 公司落地
 [唯品会Noah云平台实现内幕披露](https://mp.weixin.qq.com/s/hV8oT13J4DFtpe7JsxSONA)
-
+[点评]
 
 ## 倪朋飞
 [Kubernetes 指南](https://feisky.xyz/kubernetes-handbook/)   good
@@ -26,7 +26,57 @@ categories:
 [Docker Handbook](https://jimmysong.io/docker-handbook/)  
 [Serverless Handbook——无服务架构实践手册](https://jimmysong.io/serverless-handbook/)  
 
+## others
+[Kubernetes 学习笔记](https://www.huweihuang.com/kubernetes-notes/) 胡伟煌
+
+
 ## CNCF × Alibaba 云原生技术公开课  
 [CNCF × Alibaba 云原生技术公开课](https://edu.aliyun.com/course/1651)  video+text+ppt  seen (30章节)
+[阿里云-K8s 资源全汇总 | K8s 大咖带你 31 堂课从零入门 K8s](https://developer.aliyun.com/article/765059?utm_content=g_1000142140)   
+[阿里云-云原生技术公开课](https://edu.aliyun.com/roadmap/cloudnative?spm=a2c6h.12873581.1367615.1.e9cf115eVcBAsC)    
+[阿里云-云原生技术公开课（备用地址）](https://edu.aliyun.com/course/1651/lesson/list?spm=a2c6h.12873581.1367615.2.e9cf115eVcBAsC)  
+
++ 第9 章 ： 应用存储和持久化数据卷：核心知识 - seen
++ 第10 章 ： 应用存储和持久化数据卷：存储快照与拓扑调度 
++ 第11 章 ： 可观测性：你的应用健康吗 - seen
+readiness， liveness， 应用故障排查
++ 第12 章 ： 可观测性：监控与日志 
+prometheus， 监控大图
++ 第13 章 ： Kubernetes网络概念及策略控制 -seen
+  约法三章
++ 第14 章 ： Kubernetes Services - seen
+  架构图
++ 第15 章 ： 深入剖析 Linux 容器
+   cgroup ，overlay， dockershim, containerd
++ 第16 章 ： 深入理解 etcd - 基本原理解析 
++ 第17 章 ： 深入理解etcd：etcd性能优化实践 
++ 第18 章 ： Kubernetesdi调度和资源管理 
+  QoS(requests,limits) , 亲和， taint/toleration, 优先级调度
++ 第19 章 ： 调度器的调度流程和算法介绍 
++ 第21 章 ： Kubernetes 存储架构及插件使用 
+    第一部分讲述了Kubernetes存储架构，主要包括存储卷概念、挂载流程、系统组件等相关知识；
+    第二部分讲述了Flexvolume插件的实现原理、部署架构、使用示例等；
+    第三部分讲述了CSI插件的实现原理、资源对象、功能组件、使用示例等；
++ 第22 章 ： 有状态应用编排：StatefulSet 
++ 第23 章 ： KubernetesAPI编程范式 
++ 第24 章 ： KubernetesAPI编程利器：Operator和OperatorFramework 
+  kubebuilder 和 operator-sdk
++ 第25 章 ： Kubernetes网络模型进阶 -- seen
+  架构图（重要）
++ 第26 章 ： 理解CNI和CNI插件 
++ 第27 章 ： Kubernetes安全之访问控制 
++ 第28 章 ： 理解容器运行时接口CRI 
++ 第29 章 ： 安全容器技术 -- seen
+  Kata Containers， gVisor
++ 第30 章 ： 理解RuntimeClass与使用多容器运行时 
+
+
+# kube-study
+[华为云-Cloud Native Lives](https://bbs.huaweicloud.com/webinar/100009)   
+ 
+[Learn Kubernetes using Interactive Browser-Based Scenarios](https://www.katacoda.com/courses/kubernetes)   
+[Play with Kubernetes](https://labs.play-with-k8s.com/)   
+
+
 
 
