@@ -11,23 +11,30 @@ categories:
 <p></p>
 <!-- more -->
 
-## 公司落地
-[唯品会Noah云平台实现内幕披露](https://mp.weixin.qq.com/s/hV8oT13J4DFtpe7JsxSONA)
-[点评]
-
 ## 倪朋飞
 [Kubernetes 指南](https://feisky.xyz/kubernetes-handbook/)   good
 [SDN](https://sdn.feisky.xyz/) good
 
-## Jimmy Song
-[Kubernetes Handbook——Kubernetes 中文指南/云原生应用架构实战手册](https://jimmysong.io/kubernetes-handbook/)    good
+[倪朋飞 微软](https://feisky.xyz/)  
+[倪朋飞@知乎 微软](https://www.zhihu.com/people/feisky/posts)  
+
+## 宋净超-Jimmy Song
+[Kubernetes Handbook——Kubernetes 中文指南/云原生应用架构实战手册](https://jimmysong.io/kubernetes-handbook/)    good  
 [Istio 基础教程](https://jimmysong.io/docs/istio-handbook/)     good
 [Kubernetes 加固指南](https://jimmysong.io/docs/kubernetes-hardening-guidance/)    good 
 [Docker Handbook](https://jimmysong.io/docker-handbook/)  
 [Serverless Handbook——无服务架构实践手册](https://jimmysong.io/serverless-handbook/)  
-
+  
 ## others
 [Kubernetes 学习笔记](https://www.huweihuang.com/kubernetes-notes/) 胡伟煌
+[崔秀龙](https://blog.fleeto.us/) istio
+[傲小剑  service mesh](https://skyao.io/#posts)
+[赵化冰@ZTE](https://zhaohuabing.com/) 
+[陈鹏](https://imroc.io/) 腾讯云工程师 k8s
+[刘超的通俗云计算  网易云首席架构](https://www.cnblogs.com/popsuper1982/)
+[钟华 腾讯云](https://imfox.io/) 
+[腾讯云容器团队](https://tencentcloudcontainerteam.github.io/)  
+[cizixs@蚂蚁金服](https://cizixs.com/) 
 
 
 ## CNCF × Alibaba 云原生技术公开课  
@@ -70,8 +77,21 @@ prometheus， 监控大图
   Kata Containers， gVisor
 + 第30 章 ： 理解RuntimeClass与使用多容器运行时 
 
+## 华为云云原生王者课程集训营（黄金-->钻石-->王者）
+[华为云云原生王者课程集训营](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIzNzU5NTYzMA==&action=getalbum&album_id=2082025559781376005&scene=173&from_msgid=2247494514&from_itemidx=1&count=3&nolastread=1#wechat_redirect) - (黄金+钻石)  文字稿 
+[华为云云原生王者之路钻石集训营--学习笔记](https://zhuanlan.zhihu.com/p/400092006) good
+[华为云云原生王者之路_钻石](https://www.bilibili.com/video/BV1ZR4y1E7rb/?spm_id_from=333.788.recommend_more_video.2) bilibili视频课
+[华为云云原生王者之路集训营_黄金课程](https://www.bilibili.com/video/BV1Qr4y1278d/?spm_id_from=333.788.recommend_more_video.5) bilibili视频课
+[华为云云原生王者课程集训营](https://edu.huaweicloud.com/activity/Cloud-native3.html?utm_source=hwynewbanner&utm_medium=sm-huaweiyun&utm_campaign=edu&utm_content=activity&utm_term=2)  视频课
+[华为云云原生王者课程集训营](https://education.huaweicloud.com/programs/63384278-52ab-42e9-8e67-5dff5a9f37fd/about?utm_source=zhihu&utm_medium=bbs-ex&utm_campaign=edu&utm_content=courses&utm_term=16) 视频课
 
-# kube-study
+
+## 公司落地
+[唯品会Noah云平台实现内幕披露](https://mp.weixin.qq.com/s/hV8oT13J4DFtpe7JsxSONA)
+[点评]
+
+
+## kube-study
 [华为云-Cloud Native Lives](https://bbs.huaweicloud.com/webinar/100009)   
  
 [Learn Kubernetes using Interactive Browser-Based Scenarios](https://www.katacoda.com/courses/kubernetes)   
