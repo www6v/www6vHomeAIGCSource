@@ -73,3 +73,4 @@ Default ClusterRoleBinding(预置角色)
 第29 章 ： 安全容器技术
 + [Kubernetes 加固指南](https://jimmysong.io/docs/kubernetes-hardening-guidance/)    good
 + Kubernetes in Action - 12章， 13章 （未）
++ [记一次Kubernetes中严重的安全问题](https://corvo.myseu.cn/2021/03/23/2021-03-23-%E8%AE%B0%E4%B8%80%E6%AC%A1Kubernetes%E4%B8%AD%E4%B8%A5%E9%87%8D%E7%9A%84%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98/) 未

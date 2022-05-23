@@ -50,6 +50,7 @@ top: true
 [Kubenetes RBAC](../../../../2019/11/14/k8sRBAC/)
 [虚拟机和容器中的内核参数 kernel](../../../../2020/08/16/kernelParam/)
 [Kubernetes 多集群管理](../../../../2022/05/08/k8sMultiCluster/)
+[Kubernetes安全](../../../../2022/05/22/k8sSecurity/)
 
 ## 总结
  [Kubernetes技能图谱](../../../../2019/11/03/k8sSkill/) 
