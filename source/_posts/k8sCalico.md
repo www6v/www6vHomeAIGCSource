@@ -91,16 +91,27 @@ BGP 协议传输的消息
 
 
 ## 参考:
-《31容器网络之Calico：为高效说出善意的谎言》  趣谈网络协议  刘超
-《35  解读Kubernetes三层网络方案》  深入剖析Kubernetes  张磊
++ 《31容器网络之Calico：为高效说出善意的谎言》  趣谈网络协议  刘超
++ 《35  解读Kubernetes三层网络方案》  深入剖析Kubernetes  张磊
 
 
-[kubernetes网络之---Calico原理解读](https://blog.csdn.net/ccy19910925/article/details/82423452)  看图
-[容器网络Calico进阶实践 | 褚向阳](https://developer.aliyun.com/article/68558)  "看看 Calico 是如何实现跨主机互通"
-[Calico网络方案](https://www.cnblogs.com/netonline/p/9720279.html) 安装
++ [kubernetes网络之---Calico原理解读](https://blog.csdn.net/ccy19910925/article/details/82423452)  看图
++ [容器网络Calico进阶实践 | 褚向阳](https://developer.aliyun.com/article/68558)  "看看 Calico 是如何实现跨主机互通"
++ [Calico网络方案](https://www.cnblogs.com/netonline/p/9720279.html) 安装
 
-[docker 容器网络方案：calico 网络模型](https://cizixs.com/2017/10/19/docker-calico-network/) 安装+原理 - 阿里人 - ”报文流程“
++ [docker 容器网络方案：calico 网络模型](https://cizixs.com/2017/10/19/docker-calico-network/) 安装+原理 - 阿里人 - ”报文流程“
 <<kubernetes网络权威指南>>  5.4节
+
+
++ [20210806-Calico基础架构](https://www.yuque.com/wei.luo/cni/uf5hyp) 未
++ [Configure BGP peering](https://projectcalico.docs.tigera.io/archive/v3.20/networking/bgp) 未
+Full-mesh , Route reflectors
++ [Overlay networking](https://projectcalico.docs.tigera.io/archive/v3.20/networking/vxlan-ipip)  未 
+公有云环境中（aws）
+ipipMode field (IP in IP encapsulation)， ipipMode 必须with BGP
+vxlanMode field (VXLAN encapsulation)， vxlanMode 可以without BGP
+两种模式不能一起运行，只能运行其中的一种
+
 
 
 
