@@ -52,6 +52,10 @@ top: true
 [Kubernetes 多集群管理](../../../../2022/05/08/k8sMultiCluster/)
 [Kubernetes安全](../../../../2022/05/22/k8sSecurity/)
 
+## 问题和最佳实践
+[Kubernetes问题排查](../../../../2022/04/03/k8sProblem/)
+[Kubernetes最佳实践](../../../../2022/01/23/k8sBestPractice/)
+
 ## 总结
  [Kubernetes技能图谱](../../../../2019/11/03/k8sSkill/) 
  [Kubernetes总结](../../../../2019/04/25/k8s/) 

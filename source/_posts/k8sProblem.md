@@ -1,5 +1,5 @@
 ---
-title: K8S 问题排查
+title: Kubernetes问题排查-troubleshooting
 date: 2022-04-03 22:42:10
 tags:
   - Kubenetes
