@@ -36,10 +36,12 @@ top: true
  [Calico](../../../../2022/05/03/k8sCalico/)  
 
 ## 存储 
- [Kubernetes存储](../../../../2019/09/01/k8sStorage/)
+ [Kubernetes 存储](../../../../2019/09/01/k8sStorage/)
 
 ## 调度
- [Kubernetes调度器](../../../../2019/06/09/k8sScheduler/)
+ [Kubernetes 调度器](../../../../2019/06/09/k8sScheduler/)
+ [Kubernetes 高级调度](../../../../2022/05/27/k8sAdvancedScheduling/)
+
 
 ## 生产化
 [K8S 应用迁移至K8S](../../../../2022/02/02/k8sAppMigrate/)
