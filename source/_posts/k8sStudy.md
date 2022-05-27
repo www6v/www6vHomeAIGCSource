@@ -33,10 +33,11 @@ categories:
 [陈鹏](https://imroc.io/) 腾讯云工程师 k8s
 [刘超的通俗云计算  网易云首席架构](https://www.cnblogs.com/popsuper1982/)
 [钟华 腾讯云](https://imfox.io/)  
-[腾讯云容器团队](https://tencentcloudcontainerteam.github.io/)  
+[腾讯云容器团队](https://tencentcloudcontainerteam.github.io/)  k8s
 [cizixs@蚂蚁金服](https://cizixs.com/) 
 [ArthurChiao's Blog](http://arthurchiao.art/categories/) cliumn , bpf, network
 [云原生实验室](https://icloudnative.io)
+[draveness](https://draveness.me/)   golang, k8s 
 
 
 ## CNCF × Alibaba 云原生技术公开课  

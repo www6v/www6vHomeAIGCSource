@@ -15,7 +15,6 @@ top: true
 ## 编排原理 
  [Kubernetes Workload](../../../../2019/06/09/k8sResource/)  
  [StatefulSet原理和源码](../../../../2019/11/11/k8sStatefulSet/)
- [k8s声明式应用管理](../../../../2020/05/26/k8sDeclarativeManage/)
  [Kubenetes资源模型](../../../../2019/11/14/k8sResouceModel/)
  [Kubernetes自动伸缩和HPA](../../../../2019/11/16/k8sAutoScale/)
  [kubelet和PLEG](../../../../2022/04/03/k8sPLEG/)
@@ -65,8 +64,8 @@ Kubernetes最佳实践
 ## 其他
  [Kubernetes命令](../../../../2019/06/09/k8sCommand/)  
  [Kubernetes 学习资源](../../../../2022/05/21/k8sStudy/)
+ [k8s声明式应用管理](../../../../2020/05/26/k8sDeclarativeManage/) 
  
-
 ## 安装
  [Kubernetes安装-kubeasz](../../../..//2021/06/02/k8sDeploy/)
  [Kubernetes集群搭建-二进制](../../../../2019/01/17/k8sSetup/)  
