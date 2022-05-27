@@ -4,7 +4,6 @@ date: 2019-02-07 00:06:48
 tags:
   - 云计算
 categories:
-  - 分布式
   - 云计算  
   - xaas
 ---

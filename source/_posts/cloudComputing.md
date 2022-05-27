@@ -4,7 +4,6 @@ date: 2022-04-09 20:14:32
 tags:
   - 云计算
 categories:
-  - 分布式
   - 云计算  
   - 总结
 top: true  
