@@ -71,6 +71,7 @@ categories:
 + [《Kubenetes in Action》 第11章-机理 第16章-高级调度  七牛容器云团队](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)
 + [调度系统设计精要](https://draveness.me/system-design-scheduler/) linux 调度器， go调度器， k8s调度器
 + [Kubernetes Scheduler 设计与实现](https://www.bilibili.com/video/BV1N7411w7M9) bilibili
+https://github.com/kubernetes/enhancements/issues/895 even pod, 多个region调度
 + [为什么K8s需要Volcano？](https://mp.weixin.qq.com/s/_6WCgqxjTR1rAv8gQqNdWw) 华为
 
 ##### 基于谓词的调度器
