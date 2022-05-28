@@ -33,12 +33,15 @@ categories:
 [陈鹏](https://imroc.io/) 腾讯云工程师 k8s
 [刘超的通俗云计算  网易云首席架构](https://www.cnblogs.com/popsuper1982/)
 [钟华 腾讯云](https://imfox.io/)  
-[腾讯云容器团队](https://tencentcloudcontainerteam.github.io/)  k8s
 [cizixs@蚂蚁金服](https://cizixs.com/) 
 [ArthurChiao's Blog](http://arthurchiao.art/categories/) cliumn , bpf, network
 [云原生实验室](https://icloudnative.io)
 [draveness](https://draveness.me/)   golang, k8s 
 
+## 公司
+[腾讯云容器团队](https://tencentcloudcontainerteam.github.io/)  k8s
+[青云QingCloud 知乎](https://zhuanlan.zhihu.com/qingcloud)  干货少
+[腾讯云容器服务团队的专栏](https://cloud.tencent.com/developer/column/1075/tag-0)
 
 ## CNCF × Alibaba 云原生技术公开课  
 [CNCF × Alibaba 云原生技术公开课](https://edu.aliyun.com/course/1651)  video+text+ppt  seen (30章节)
@@ -93,12 +96,14 @@ prometheus， 监控大图
 [唯品会Noah云平台实现内幕披露](https://mp.weixin.qq.com/s/hV8oT13J4DFtpe7JsxSONA)
 [点评]
 
-
 ## kube-study
 [华为云-Cloud Native Lives](https://bbs.huaweicloud.com/webinar/100009)   
  
 [Learn Kubernetes using Interactive Browser-Based Scenarios](https://www.katacoda.com/courses/kubernetes)   
 [Play with Kubernetes](https://labs.play-with-k8s.com/)   
+
+
+
 
 
 
