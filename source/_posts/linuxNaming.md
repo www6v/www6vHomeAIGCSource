@@ -5,7 +5,7 @@ tags:
   - linux
 categories:
   - linux  
-  - 内存管理 
+  - 总结 
 ---
 
 <p></p>

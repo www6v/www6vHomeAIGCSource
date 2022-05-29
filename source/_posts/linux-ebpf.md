@@ -5,12 +5,12 @@ tags:
   - linux
 categories:
   - linux 
-  - eBPF
+  - kernel
+  - 网络
 ---
 
 <p></p>
 <!-- more -->
-
 
 
 [深入浅出 eBPF](https://www.ebpf.top/categories/BPF/) 

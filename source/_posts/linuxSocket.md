@@ -2,9 +2,9 @@
 title: Socket总结
 date: 2019-08-25 03:43:24
 tags:
-  - socket
+  - 网络
 categories: 
-  - 分布式
+  - linux
   - 网络
   - socket
 ---

@@ -2,7 +2,9 @@
 title: vim
 date: 2020-12-20 23:19:24
 tags:
-  vim
+  - 开发  
+categories:
+  - 开发  
 ---
 
 <p hidden>vim</p>

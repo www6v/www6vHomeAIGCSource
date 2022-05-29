@@ -5,7 +5,8 @@ tags:
   - linux
 categories:
   - linux 
-  - 内核参数
+  - kernel  
+  - 参数 
 ---
 
 <p></p>

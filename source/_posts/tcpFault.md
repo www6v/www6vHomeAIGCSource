@@ -3,9 +3,8 @@ title: TCP故障模式
 date: 2020-08-08 23:17:36
 tags: 
   - 网络
-  - TCP
 categories: 
-  - 分布式
+  - linux
   - 网络
   - TCP     
 ---

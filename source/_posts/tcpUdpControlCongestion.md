@@ -3,9 +3,8 @@ title: TCP流控和拥塞控制
 date: 2019-08-07 13:52:09
 tags: 
   - 网络
-  - TCP
 categories: 
-  - 分布式
+  - linux
   - 网络
   - TCP   
 ---

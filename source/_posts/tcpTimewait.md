@@ -3,9 +3,8 @@ title: TIME_WAIT和优化
 date: 2020-08-09 12:03:41
 tags: 
   - 网络
-  - TCP
 categories: 
-  - 分布式
+  - linux
   - 网络
   - TCP     
 ---

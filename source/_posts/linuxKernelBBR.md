@@ -2,10 +2,16 @@
 title: centos7 内核升级到4.9  &&  bbr配置
 date: 2020-11-29 19:29:57
 tags:
+  - kernel
+categories:
+  - linux 
+  - kernel
+  - 升级   
 ---
 
-<p hidden></p>
+<p></p>
 <!-- more -->
+
 
 首先，让我们添加 ELRepo GPG key：
 

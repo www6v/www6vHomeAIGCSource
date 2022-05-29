@@ -3,9 +3,8 @@ title: iptables总结
 date: 2019-08-19 14:31:40
 tags:
   - 网络
-  - iptables
 categories:
-  - 分布式 
+  - linux 
   - 网络
   - iptables    
 ---

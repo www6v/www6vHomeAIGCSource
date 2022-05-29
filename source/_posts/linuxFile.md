@@ -4,7 +4,8 @@ date: 2019-08-24 11:48:15
 tags:
   - linux
 categories:
-  - linux  
+  - linux 
+  - kernel   
   - 文件系统 
 ---
 

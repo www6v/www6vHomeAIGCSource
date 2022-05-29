@@ -34,7 +34,7 @@ top: true
 ## 二. 内存总结
 ### Linux 
 + [Linux内存管理](../../../../2019/08/23/linuxMemory/)  
-+ [Linux zero copy](../../../../2019/09/14/zeroCopy/)   
++ [Linux zero copy](../../../../2019/09/14/zeroCopy/)   （todo: kafka zero-copy）
 
 ### 应用层
 + [Java内存模型](../../../../2014/01/03/memoryModel/)
@@ -59,4 +59,4 @@ top: true
  [文件IO总结](../../../../2017/04/23/fileIO/)    |  mmap，NIO(FileChannel)
  [Redis总结](../../../../2016/11/12/redis/)     | AOF，RDB 
  [Kafka总结](../../../../2016/05/11/kafka/)     | Partition的Segment中的index文件，data文件 
- [RocketMQ总结](../../../../2019/06/18/rocketmq/)   | CommitLog， ComsumeQueue， 索引文件 
+ [RocketMQ总结](../../../../2019/06/18/rocketmq/)   | CommitLog， ComsumeQueue， 索引文件(todo mmap优化) 

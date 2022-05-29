@@ -3,9 +3,8 @@ title: TCP总结
 date: 2015-04-25 14:59:29
 tags: 
   - 网络
-  - TCP
 categories: 
-  - 分布式
+  - linux
   - 网络
   - TCP   
 ---
