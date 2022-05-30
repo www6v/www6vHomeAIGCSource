@@ -34,6 +34,7 @@ case2: **某个协程被io中断后**， Processer会把自己移动到另一个
        当这个协程io中断被唤醒后，会把自己加入到某个Processor的队列里， 或者加入到全局的等待队列里。
 
 
++ 看参考文档里的图
 
 ## 参考：
 [Golang的GMP原理与调度](https://blog.csdn.net/qq_44205272/article/details/111565957)
