@@ -13,6 +13,7 @@ top: true
 <!-- more -->
 
 ## 编排原理 
+ [Kubernetes 架构](../../../../2019/04/25/k8s/) 
  [Kubernetes Workload](../../../../2019/06/09/k8sResource/)  
  [StatefulSet原理和源码](../../../../2019/11/11/k8sStatefulSet/)
  [Kubenetes资源模型](../../../../2019/11/14/k8sResouceModel/)
@@ -59,7 +60,6 @@ Kubernetes最佳实践
 
 ## 总结
  [Kubernetes技能图谱](../../../../2019/11/03/k8sSkill/) 
- [Kubernetes总结](../../../../2019/04/25/k8s/) 
  [Kubernetes模式](../../../../2019/11/13/k8sPattern/)
  [Kubernetes开放接口](../../../../2019/08/11/k8sInterface/)
 

@@ -39,6 +39,8 @@ https://github.com/kubernetes-sigs/kubefed
 ## 参考：
 [k8s多集群的思考](https://www.huweihuang.com/kubernetes-notes/multi-cluster/k8s-multi-cluster-thinking.html)
 
+[混合云下的 Kubernetes 多集群管理与应用部署](https://kubesphere.com.cn/blogs/kubernetes-multicluster-kubesphere/) 未
+
 
 
 

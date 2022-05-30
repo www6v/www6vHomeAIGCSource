@@ -112,6 +112,8 @@ ipipMode field (IP in IP encapsulation)， ipipMode 必须with BGP
 vxlanMode field (VXLAN encapsulation)， vxlanMode 可以without BGP
 两种模式不能一起运行，只能运行其中的一种
 
++ [Calico 路由反射模式权威指南](https://kubesphere.com.cn/blogs/calico-guide/) 未
+
 
 
 

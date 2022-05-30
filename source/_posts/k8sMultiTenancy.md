@@ -98,6 +98,6 @@ https://github.com/kubernetes-sigs/cluster-api-provider-nested/tree/main/virtual
 4. [轻量级 Kubernetes 多租户方案的探索与实践](https://mp.weixin.qq.com/s/Y-dUtp1yqRxpd40YwjyE0Q) 火山引擎云原生
    本质上来说 KubeZoo 的方案和 Virtual Cluster 有点类似，是一种 Serverless 的 Kubernetes 方案。
 
-
+5. [KubeSphere 多租户与认证鉴权实践：使用 GitLab 账号登陆 KubeSphere](https://kubesphere.com.cn/blogs/gitlab-kubesphere/) 未
 
 
