@@ -27,8 +27,13 @@ categories:
 liveness的初始值为成功。
 **Readiness Probe**:  确定容器是否已经就绪可以接受流量. 该信号的作用是控制哪些Pod应该作为service的后端。如果Pod处于非就绪状态，那么它们将会被从service的load balancer中移除。
 readiness的初始值为失败。
+**startupProbe**: 启动检查, 使用启动探针检测容器应用程序是否已经启动
 
 
++ 探针类型
+httpGet: 指定端口和路径执行 HTTP GET 请求
+tcpSocket: 对容器的 IP 地址上的指定端口执行 TCP 检查
+命令,exec: 在容器内执行指定命令
 
 ## 优雅终止（参考3）
 
