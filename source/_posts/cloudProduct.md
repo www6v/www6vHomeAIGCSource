@@ -51,7 +51,7 @@ VPC对等连接| VPC Peering | |  对等连接（Peering Connection)
 混合云网络  | AWS | 阿里云 | 腾讯云 
 :-: | :-: | :-: | :-:
 VPN | VPN | VPN | VPN
-专线| Direct Connect | Express Connect | Direct Connect
+专线| Direct Connect | Express Connect<br>高速通道-专线 | Direct Connect
 DNS | Route 53 | DNS/Private Zone| DNSPod
 
 ENI， SD-WAN
