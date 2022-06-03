@@ -14,13 +14,14 @@ categories:
 ## 官方
 二进制
 kubeadmin
-kubespray
+kubespray - ansible
 KOPS - cluster-api
 
 ## 非官方
-kubekey
+kubekey - golang
+kubeasz - ansible
 
 
-参考：
+## 参考：
 模块九
 

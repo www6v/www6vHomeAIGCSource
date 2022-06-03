@@ -65,11 +65,16 @@ Kubernetes最佳实践
 
 ## 其他
  [Kubernetes命令](../../../../2019/06/09/k8sCommand/)  
+ [k8s声明式应用管理](../../../../2020/05/26/k8sDeclarativeManage/)
+ [Kubernetes和VM](../../../../2022/06/03/k8sVM/) 
+
+## 学习
  [Kubernetes 学习资源](../../../../2022/05/21/k8sStudy/)
- [k8s声明式应用管理](../../../../2020/05/26/k8sDeclarativeManage/) 
+ [云原生相关资源](../../../../2020/06/14/cloudNativeResource/) 
  
 ## 安装
- [Kubernetes安装-kubeasz](../../../..//2021/06/02/k8sDeploy/)
+ [Kubernetes 安装方式](../../../../2022/06/03/k8sSetupSummary/)
+ [Kubernetes安装-kubeasz](../../../../2021/06/02/k8sDeploy/)
  [Kubernetes集群搭建-二进制](../../../../2019/01/17/k8sSetup/)  
 
   

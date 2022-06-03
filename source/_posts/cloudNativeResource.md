@@ -36,7 +36,4 @@ CloneSet, Advanced StatefulSet, OpenKuise
 [阿里巴巴DevOps文化浅谈](https://yq.aliyun.com/live/2499) video  未
 [云原生时代 Devops 实操笔记](https://yq.aliyun.com/articles/744373) video  10期 未
 
-+ Virtual Kubelet
-[自建Kubernetes集群部署Virtual Kubelet（ECI）](https://help.aliyun.com/document_detail/97527.html) 未
-[简介：Virtual Kubelet](https://v.qq.com/x/page/d0816t4u183.html) video 2018 kubecon   未  
-[深入了解：Virtual Kubelet](https://v.qq.com/x/page/q0827olfrlx.html) video   2018 kubecon  未  
+
