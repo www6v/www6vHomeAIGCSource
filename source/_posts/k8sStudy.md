@@ -42,6 +42,7 @@ categories:
 [腾讯云容器团队](https://tencentcloudcontainerteam.github.io/)  k8s
 [青云QingCloud 知乎](https://zhuanlan.zhihu.com/qingcloud)  干货少
 [腾讯云容器服务团队的专栏](https://cloud.tencent.com/developer/column/1075/tag-0)
+[DaoCloud 道客](https://www.zhihu.com/org/daocloud-3)  干货多
 
 ## CNCF × Alibaba 云原生技术公开课  
 [CNCF × Alibaba 云原生技术公开课](https://edu.aliyun.com/course/1651)  video+text+ppt  seen (30章节)

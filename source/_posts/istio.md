@@ -58,6 +58,7 @@ istio1.1组件[2]
 
 ##### 3.2 Envoy启动过程和配置
 <div style="text-align: center;">
+	
 ![envoy-config-init](https://user-images.githubusercontent.com/5608425/69950671-b81feb80-152e-11ea-96ba-6261b7f4c09f.png)
 Envoy启动过程和配置
 </div>
