@@ -15,8 +15,8 @@ categories:
 ![metric-tracing-logging](https://user-images.githubusercontent.com/5608425/64059064-216a2880-cbe7-11e9-9ee7-141334d93959.png)
 
 
-模式| 产品/框架
-:-:|:-:|:-:
+模式| 产品/框架 
+:-:| :-: 
 Log aggregation|  ELK， AWS Cloud Watch
 Application metrics + alert| Prometheus 、AWS Cloud Watch
 Distributed tracing| Zipkin ，Jaeger，pinpoint（无侵入）, skywalking（无侵入）, CAT
