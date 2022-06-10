@@ -55,8 +55,10 @@ top: true
 [Kubernetes安全](../../../../2022/05/22/k8sSecurity/)
 
 ## 问题和最佳实践
-Kubernetes问题排查
-Kubernetes最佳实践
+[Kubernetes问题排查](../../../../2022/04/03/k8sProblem/)
+[Kubernetes最佳实践](../../../../2022/01/23/k8sBestPractice/)
+[kubernetes 问题Troubleshoot](../../../../2022/06/08/k8sTroubleshoot/)
+
 
 ## 总结
  [Kubernetes技能图谱](../../../../2019/11/03/k8sSkill/) 
