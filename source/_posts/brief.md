@@ -41,6 +41,7 @@ top: true
 + golang内存分配
 [图解Go语言内存分配](https://mp.weixin.qq.com/s/7bTGxhl7RXBmw5bxaR7Cnw)
 [图解 Go 内存分配器](https://www.infoq.cn/article/IEhRLwmmIM7-11RYaLHR)
++ [[译] 编程语言中的 6 种内存模型（2016）](http://arthurchiao.art/blog/memory-models-underlie-programming-languages-zh/)
 
 
 ## 三. 文件和存储

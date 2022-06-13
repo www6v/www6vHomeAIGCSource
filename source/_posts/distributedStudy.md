@@ -121,6 +121,8 @@ http://www.cnblogs.com/IT-Bear/p/3191423.html
 [数据库内核月报 淘宝数据库组](http://mysql.taobao.org/monthly/)   干货
  SOFA 微信公众号
 
+ [鹅厂架构师](https://www.zhihu.com/org/e-han-jia-gou-shi) - 知乎
+
 ## 国外技术公司
 [facebook](https://code.fb.com/) 
 [linkedin techblog](https://engineering.linkedin.com/blog) 
