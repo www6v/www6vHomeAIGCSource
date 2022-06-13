@@ -17,6 +17,13 @@ categories:
 {% asset_img  nettySummary.jpg  Netty总结 %}
 
 
+## netty的粘包和拆包
+类型 |  实现
+:-:|:-:
+固定长度解码器  |   使用FixedLengthFrameDecoder
+自定义字符进行分隔  |  使用DelimiterBasedFrameDecoder
+自定义长度  |  进行长度字段解码，就是消息体传了消息的长度 <br> LengthFieldBasedFrameDecoder和LengthFieldPrepender结合
+
 ## 参考 :
 
 ### 线程模型
@@ -40,3 +47,7 @@ categories:
 
 ### Plain NIO
 1. 《Netty in Action》 第4章 [PlainNioServer](https://github.com/www6v/netty-in-action-cn/blob/ChineseVersion/chapter4/src/main/java/nia/chapter4/PlainNioServer.java)
+
+### 粘包和拆包
+[通过大量实战案例分解Netty中是如何解决拆包黏包问题的？](https://baijiahao.baidu.com/s?id=1716387532053553497&wfr=spider&for=pc)
+[netty解决拆包粘包的三种方案](https://blog.csdn.net/wwwzhouzy/article/details/119154039)
