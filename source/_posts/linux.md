@@ -39,6 +39,10 @@ categories:
 它。
 + 信号更加常用，机制也比较复杂。
 
+
+## 四. Map
+{% asset_img  kernelMap.jpg  kernel %}
+
 ## 参考：
 + [趣谈Linux操作系统 - 03 你可以把Linux内核当成一家软件外包公司的老板]()   刘超
 + [趣谈Linux操作系统 - 08_内核初始化：生意做大了就得成立公]()    刘超
