@@ -14,13 +14,13 @@ categories:
 <!-- more -->
 
 
-### 二. Partition
+### 一. Partition
 1. 首领 leader ， 首领副本
 2. 跟随者 follower， 跟随者副本
 3. 首选首领
 
 
-### 三. kafka的副本机制
+### 二. kafka的副本机制
 1. AR = ISR + OSR。 
 ISR 不只是追随者副本集合，它必然包括 Leader 副本。
 2. ISR中副本有主从之分，但是**读写都是主副本**， 从副本只负责**拉取**主副本的数据。
@@ -36,9 +36,9 @@ ISR 不只是追随者副本集合，它必然包括 Leader 副本。
 ## Q&A
 +    失效副本是指什么？有那些应对措施？ 
 怎么样判定一个分区是否有副本是处于同步失效状态的呢？从Kafka 0.9.x版本开始通过唯一的一个参数replica.lag.time.max.ms（默认大小为10,000）来控制，当ISR中的一个follower副本滞后leader副本的时间超过参数replica.lag.time.max.ms指定的值时即判定为副本失效，需要将此follower副本剔出除ISR之外。
+[Kafka解析之失效副本](https://honeypps.com/mq/kafka-analysis-of-under-replicated-partitions/)
 
 +    优先副本是什么？它有什么特殊的作用？  
-[Kafka解析之失效副本](https://honeypps.com/mq/kafka-analysis-of-under-replicated-partitions/)
 
 +    多副本下，各个副本中的HW和LEO的演变过程
 
