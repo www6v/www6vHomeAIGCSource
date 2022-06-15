@@ -145,7 +145,16 @@ flush时只删除内存的冗余数据，不删除"Delete标记",因为在Major 
 + 多租户方案
   rsgroup
 + 二级索引  
-
++ 超时 Timeout
++ RIT
++ 高可用
+  双向同步
++ 优化
++ bulkload
++ CAS
+HBase提供基于单 行 数据操作的原子性保证
+HBase基于行锁来保证单行操作的原子性
+checkAndPut/checkAndDelete/increment/append  
 
 ## 参考：
 1. [【Paper笔记】The Log structured Merge-Tree（LSM-Tree）](https://kernelmaker.github.io/lsm-tree)
