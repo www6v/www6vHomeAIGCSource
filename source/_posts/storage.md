@@ -17,10 +17,11 @@ categories:
 概念|本地存储| 有目录树结构| 将数据和元数据当做一个对象
 分布式| ×| √ | √
 文件大小| 大小都可以| 适合大文件| 适合各种大小
-接口| Diver，kernel module| POSIX<br> NFS/SMB协议 | Restful API
-典型技术 | SAN | HDFS、GFS<br>  NAS存储  | Swift， Amazion S3， 阿里OSS
-场景|  云主机本地存储 | 共享存储 | 音频，视频，图片。 <br> 网站资源动静分离; 网盘
-
+接口| Diver，kernel module| POSIX<br> NFS/SMB协议 | 语义简单，基于HTTP协议访问，Restful API
+典型技术 | 直连，FC SAN， IP SAN | HDFS、GFS<br>  NAS存储 <br> 以太网承载的NFS  | Swift， Amazion S3， 阿里OSS
+场景|  专用领域<br> 高性能，低延迟<br> 云主机本地存储 |  通用 <br> 高并发，共享<br> HPC高性能计算<br> 共享存储 | 海量，并发 <br>读多写少 <br> 音频，视频，图片。 <br> 网站资源动静分离; 网盘
+数据结构（类比） | 数组| 二叉树 | hash表
+ 
 
 ## 块存储
 必须连接到相关的虚拟机，才能访问它里面的数据。
