@@ -69,8 +69,8 @@ KV存储结构 K( (row, column, timestamp, type) ) -> V( value )
   HDFS的Block默认是64M，128M；HBase的Block默认是64K；
   {% asset_img  HFile.JPG  HFile物理结构 %}
 
-Block Type |    基本介绍
-:-:|:-:|:-:
+ Block Type |    基本介绍
+:-:|:-:
 Data Block| 用户Key-Value 
 Meta Block| Bloom过滤器相关元数据
 Root Index| HFile索引树根索引
