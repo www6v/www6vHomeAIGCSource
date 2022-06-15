@@ -138,6 +138,15 @@ flush时只删除内存的冗余数据，不删除"Delete标记",因为在Major 
 **v1.4.10**   HBase社区推荐使用的稳定版本
 **v2.x**    最受期待的一个版本
 
+### 工作中接触的
++ MVCC
++ 读写队列 - 4个核心参数
++ TTL - TTL失效问题
++ 多租户方案
+  rsgroup
++ 二级索引  
+
+
 ## 参考：
 1. [【Paper笔记】The Log structured Merge-Tree（LSM-Tree）](https://kernelmaker.github.io/lsm-tree)
 2. 《Hbase原理和实践》 胡争  范欣欣   第1,2,5,7，8章
