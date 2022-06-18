@@ -122,6 +122,9 @@ LeetCode 19
 > Leetcode 155 
 题解：方法一：辅助栈
 
+#### 有效的括号[简单]
+> Leetcode 20 
+题解：辅助栈
 
 ## 二. HashTable 哈希表
 ####  两数之和
@@ -139,6 +142,7 @@ LeetCode 19
 ####  中序遍历   非递归算法
 > 指南 P88
 > [LeetCode 94：二叉树的中序遍历](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC94%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86.md)
+  在迭代的时候需要显式地将这个栈模拟出来
 
 ####  公共祖先 
 > 剑指 50题 ，指南 P153 

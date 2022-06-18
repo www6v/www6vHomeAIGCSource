@@ -36,5 +36,14 @@ case2: **某个协程被io中断后**， Processer会把自己移动到另一个
 
 + 看参考文档里的图
 
+{% asset_img  GMP.jpg  GMP  %}
+
+
++ 协程跟线程是有区别的，线程由 CPU 调度是抢占式的，协程由用户态调度是协作式的，一个协程让出 CPU 后，才执行下一个协程。
+
+##### 调度器的设计策略
++ work stealing 机制
++ hand off 机制
+
 ## 参考：
-[Golang的GMP原理与调度](https://blog.csdn.net/qq_44205272/article/details/111565957)
+[Golang的GMP原理与调度](https://blog.csdn.net/qq_44205272/article/details/111565957) good
