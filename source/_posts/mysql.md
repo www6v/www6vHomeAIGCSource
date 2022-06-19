@@ -3,7 +3,9 @@ title: Mysql的索引和优化
 date: 2019-09-10 16:02:39
 tags:
   - mysql
-categories:  
+categories: 
+  - 数据库
+  - 关系型 
   - mysql
 ---
 

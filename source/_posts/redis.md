@@ -3,9 +3,9 @@ title: Redis 总结
 date: 2016-11-12 23:29:16
 tags:
   - Redis
-categories: 
-  - 分布式
-  - 存储
+categories:
+  - 数据库
+  - 非关系型  
   - Redis    
 ---
 

@@ -4,7 +4,7 @@ date: 2020-09-04 10:53:01
 tags:
   - hbase
 categories: 
-  - 分布式
+  - 大数据
   - 存储
   - HBase   
 ---

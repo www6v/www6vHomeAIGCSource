@@ -4,7 +4,7 @@ date: 2019-08-02 22:27:22
 tags: 
   - elasticSearch
 categories:  
-  - 分布式
+  - 大数据
   - 存储
   - elasticSearch
 ---

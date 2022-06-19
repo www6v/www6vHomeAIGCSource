@@ -3,7 +3,9 @@ title: MySQL的高可靠和高可用
 date: 2020-06-21 18:14:49
 tags:
   - mysql
-categories:  
+categories: 
+  - 数据库
+  - 关系型 
   - mysql
 ---
 

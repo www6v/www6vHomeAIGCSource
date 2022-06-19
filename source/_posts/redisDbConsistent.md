@@ -3,9 +3,9 @@ title: Redis和数据库之间的一致性
 date: 2022-02-21 21:23:23
 tags:
   - Redis
-categories: 
-  - 分布式
-  - 存储
+categories:
+  - 数据库
+  - 非关系型  
   - Redis
 ---
 

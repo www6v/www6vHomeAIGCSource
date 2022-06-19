@@ -4,6 +4,8 @@ date: 2020-08-14 17:22:20
 tags:
   - mysql
 categories:  
+  - 数据库
+  - 关系型
   - mysql
 ---
 

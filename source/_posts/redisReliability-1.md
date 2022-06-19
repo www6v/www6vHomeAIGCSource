@@ -4,8 +4,8 @@ date: 2022-03-28 22:00:34
 tags:
   - Redis
 categories: 
-  - 分布式
-  - 存储
+  - 数据库
+  - 非关系型  
   - Redis
 ---
 

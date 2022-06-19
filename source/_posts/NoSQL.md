@@ -3,11 +3,9 @@ title: NoSQL总结
 date: 2018-07-19 10:30:36
 tags:
   - Nosql
-  - 一致性
-  - 事务
 categories:
-  - 分布式
-  - 存储 
+  - 数据库
+  - 非关系型  
   - Nosql  
 ---
 
