@@ -2,9 +2,10 @@
 title: OLAP 在线分析处理
 date: 2021-06-15 22:09:44
 tags:
-  - olad
+  - olap
 categories: 
   - 大数据 
+  - 计算 
   - olap 
 ---
 
