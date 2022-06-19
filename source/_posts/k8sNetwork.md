@@ -20,9 +20,12 @@ categories:
 
 ## 二. Pod与Pod之间的网络
 
-基础: 网桥
 
-### 2.1 同节点pod通信  
+### 2.0  Overview
+{%asset_img  k8sNetworkAll.png  K8S 网络 %} 
+
+### 2.1 同节点pod通信
+基础: 网桥 bridge  
 通过**网桥**通信
 
 <div style="text-align: center; width:60%; height: 60%">
@@ -125,8 +128,8 @@ underlay方案;
 
 ### 2.2.3 总结:  
 + flannel-UDP模式和flannel-vxlan模式都可以称作"隧道"机制；都是是overlay的。
-+ 普适性最强 flannel-VxLan
-+ 2层可直连可选用Calico / Flannel host-gw
++ 普适性最强 flannel-VxLan (OpenShift使用)
++ 二层可直连可选用Calico / Flannel host-gw
 
 
  / | overlay（隧道）  | underlay（路由）  
