@@ -34,8 +34,12 @@ categories:
 +    消费者提交消费位移时提交的是当前消费到的最新消息的offset还是offset+1?
 
 +    有哪些情形会造成重复消费？
-
+     [Kafka常见的导致重复消费原因和解决方案](https://cloud.tencent.com/developer/article/1665700)
+     原因3:（重复消费最常见的原因）：消费后的数据，当offset还没有提交时，partition就断开连接。比如，通常会遇到消费的数据，处理很耗时，导致超过了Kafka的session timeout时间（0.10.x版本默认是30秒），那么就会re-blance重平衡，此时有一定几率offset没提交，会导致重平衡后重复消费。
+     
 +    那些情景下会造成消息漏消费？
+     [Kafka 可靠性总结](../../../../2016/07/05/kafkaReliability/)
+     [聊聊 Kafka：Kafka 消息丢失的场景以及最佳实践](https://blog.csdn.net/riemann_/article/details/124534487)
 
 +    KafkaConsumer是非线程安全的，那么怎么样实现多线程消费？
 
