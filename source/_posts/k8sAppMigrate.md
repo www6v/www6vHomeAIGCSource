@@ -88,6 +88,8 @@ local-dynamic: LVM,动态分配空间， 效率低;
 ## 参考：
 1. 模块十一： 将应用迁移至Kubernetes平台
 2. 06|容器CPU(2):如何正确地拿到容器CPU的开销?   -  李程远
+3. [DEVOPS-迁移SpringMVC应用到生产K8S集群](https://blog.csdn.net/qq_36441027/article/details/103527710) 未  java项目
+4. [如何把应用程序迁移到k8s](http://t.zoukankan.com/code-craftsman-p-11746603.html) 未 golang项目
 
 
  
