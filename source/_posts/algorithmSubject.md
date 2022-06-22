@@ -126,6 +126,10 @@ LeetCode 19
 > Leetcode 20 
 题解：辅助栈
 
+#### 用数组在实现栈
+[用数组来实现栈](https://github.com/www6v/jDemo)
+
+
 ## 二. HashTable 哈希表
 ####  两数之和
 > Leetcode 1  a + b = 9
