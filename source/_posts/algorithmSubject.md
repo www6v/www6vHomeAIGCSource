@@ -191,6 +191,10 @@ LeetCode 19
 ####  KMP子串查找算法
 
 
+#### Leetcode 415. 字符串相加: 字符串表示的数字相加
+[Leetcode 415. 字符串相加](https://leetcode.cn/problems/add-strings/solution/add-strings-shuang-zhi-zhen-fa-by-jyd/) 
+ 
+
 ## 五. 其他
 ####  最小响应时间的算法
 > 有的task 执行时间长，有的task 执行时间短， 如何设计一个负载均衡策略
