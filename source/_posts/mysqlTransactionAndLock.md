@@ -40,8 +40,11 @@ SERIALIZABLE|  ×| ×| ×
 ### 2.2 MVCC
 {% asset_img  mvcc.JPG  MVCC（一致性读视图） %}
 
-InnoDB 中的 **RC 和 RR 隔离事务**是基于**多版本并发控制（MVVC）**实现高性能事务。
+InnoDB 中的 **RC(READ COMMITTED) 和 RR(REPEATABLE READ) 隔离事务**是基于**多版本并发控制（MVVC）**实现高性能事务。
 **MVVC 对普通的 Select 不加锁**，如果读取的数据正在执行 Delete 或 Update 操作，这时读取操作不会等待排它锁的释放，而是**直接利用 MVVC 读取该行的数据快照**（数据快照是指在该行的之前版本的数据，而数据快照的版本是基于 undo 实现的，undo 是用来做事务回滚的，记录了回滚的不同版本的行记录）。
+
+
+**MySQL默认的事务隔离级别是RR(REPEATABLE READ)**
   
 
 ## 三. 锁

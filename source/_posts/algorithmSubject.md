@@ -240,6 +240,11 @@ LeetCode 19
 > 布隆过滤器
 
 
+####  面试题 16.26. 计算器
+[Leetcode 面试题 16.26. 计算器](https://leetcode.cn/problems/calculator-lcci/solution/java-zhe-dao-ti-yong-dan-zhan-ji-ke-by-f-dgm7/)
+用Stack来实现
+
+
 ## 六. 线性规划
 [背包问题研究与应用](http://dongxicheng.org/structure/knapsack-problems/)
 [算法面试通关40讲  - 动态规划]()  覃超
