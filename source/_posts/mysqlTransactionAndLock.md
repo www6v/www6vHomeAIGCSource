@@ -44,9 +44,9 @@ InnoDB 中的 **RC(READ COMMITTED) 和 RR(REPEATABLE READ) 隔离事务**是基�
 **MVVC 对普通的 Select 不加锁**，如果读取的数据正在执行 Delete 或 Update 操作，这时读取操作不会等待排它锁的释放，而是**直接利用 MVVC 读取该行的数据快照**（数据快照是指在该行的之前版本的数据，而数据快照的版本是基于 undo 实现的，undo 是用来做事务回滚的，记录了回滚的不同版本的行记录）。
 
 
-**MySQL默认的事务隔离级别是RR(REPEATABLE READ)**
-  
+**MySQL默认的事务隔离级别是RR(REPEATABLE READ)**, InnoDB引擎的Select操作使用一致性非锁定读（MVCC）。 对于一致性非锁定读， 即使读取的行已经被执行了select...for update,也是可以读取的。
 
+  
 ## 三. 锁
 1. **行锁， 锁优化**
 + 在InnoDB事务中，**行锁**是在需要的时候才加上的，但并不是不需要了就立刻释放，而是要等到事务结束时才释放。这个就是**两阶段锁协议**。
