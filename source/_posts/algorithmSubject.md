@@ -179,6 +179,7 @@ LeetCode 19
 ####   一个字符串中， 要找到其中最长的字符串，并且没有重复字符。
 > [Leetcode 3](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/notes/LeetCode%E7%AC%AC3%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2.md)
   [LeetCode 3](https://github.com/grandyang/leetcode/issues/3)
+   [3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/solution/wu-zhong-fu-zi-fu-de-zui-chang-zi-chuan-cshi-xian-/)
 
 ####  字符串转换为整数
 > 剑指 50题
