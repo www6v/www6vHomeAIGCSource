@@ -113,7 +113,8 @@ LeetCode 19
 
   
 ####  两数相加 : 合并两个链表中的数，并返回一个新的链表  
-[两数相加](https://github.com/www6v/jDemo)
+[Leetcode 2.两数相加](https://github.com/www6v/jDemo)
+[Leetcode 2.两数相加](https://leetcode.cn/problems/add-two-numbers/solution/liang-shu-xiang-jia-by-leetcode-solution/)
 
 
 ##  栈,队列
@@ -224,6 +225,7 @@ LeetCode 19
    解3: 摩尔投票法  特殊高效算法
 
 ####  LRU cache
+   [Leetcode 146. LRU 缓存](https://leetcode.cn/problems/lru-cache/solution/lruhuan-cun-ji-zhi-by-leetcode-solution/)
    参考20  双向链表实现
    [Redis内存淘汰机制](https://my.oschina.net/andylucc/blog/741965)  allkeys-lru
    [Cache replacement policies](https://en.wikipedia.org/wiki/Cache_replacement_policies)
@@ -246,9 +248,12 @@ LeetCode 19
 用Stack来实现
 
 
-## 六. 线性规划
+## 六. 动态规划
 [背包问题研究与应用](http://dongxicheng.org/structure/knapsack-problems/)
 [算法面试通关40讲  - 动态规划]()  覃超
+
+[70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/solution/pa-lou-ti-by-leetcode-solution/)
+[53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/solution/dong-tai-gui-hua-fen-zhi-fa-python-dai-ma-java-dai/)
 
 ## 参考:
 
