@@ -16,6 +16,7 @@ categories:
 
 ## 一. docker全景图
 <div style="text-align: center;">
+	
 ![docker-overview](https://user-images.githubusercontent.com/5608425/64622251-99232900-d419-11e9-8f56-4f88831828ad.JPG)  
 docker全景图
 </div>
