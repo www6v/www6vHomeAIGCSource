@@ -54,7 +54,15 @@ KVM | Type2-Hypervisor运行在宿主机操作系统之上 |  基于硬件虚拟
 Xen | Type1-Hypervisor运行在硬件之上 |  半虚拟化
 
 
+## KVM 动态迁移 [3]
+1. 启动空的target vm
+2. 客户机的内存被传输到目的主机上
+3. qemu/kvm监控内存的修改， 并传输更改的内容
+4. qemu/kvm估计剩余传输的内存可以在300ms内传输完成
+5. qemu/kvm 关闭源主机，将剩余的数据量传输到目的主机
+[全量 + 增量]
 
 ## 参考
-[KVM 介绍（1）：简介及安装](https://www.cnblogs.com/sammyliu/p/4543110.html)
-[KVM 介绍（2）：CPU 和内存虚拟化](https://www.cnblogs.com/sammyliu/p/4543597.html)
+1. [KVM 介绍（1）：简介及安装](https://www.cnblogs.com/sammyliu/p/4543110.html)
+2. [KVM 介绍（2）：CPU 和内存虚拟化](https://www.cnblogs.com/sammyliu/p/4543597.html)
+3. 《KVM 实战》 8.1

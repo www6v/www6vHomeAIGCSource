@@ -12,12 +12,14 @@ categories:
 <!-- more -->
 
 
-## 共有云容灾架构
+## 公有云容灾架构 [2]
 + 通用架构
 + 同城容灾架构
+  同城双活
 + 异地容灾架构
+  异地多活
 + 同城+异地容灾架构
-
+  两地三中心
 
 ## 混合云 
 ##### 混合云容灾方案
@@ -32,7 +34,7 @@ categories:
 + 应用迁移
 
 
-##### 混合云容灾备份架构
+##### 混合云容灾备份架构 [1]
 + 混合云存储备份架构
   - 本地备份架构： 备份到同机房的专有云
   - 异地备份架构： 通过物理专线或VPN连通，通过HBR客户端备份到云备份库
@@ -69,5 +71,5 @@ categories:
 
 
 ## 参考
-+ 《混合云架构》
-+  [阿里云云上常见架构设计及优化-课时5：云上容灾架构设计及解决方案](https://www.bilibili.com/video/BV1jy4y1a7mK?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036) bilibili
+1. 《混合云架构》 6.3
+2.  [阿里云云上常见架构设计及优化-课时5：云上容灾架构设计及解决方案](https://www.bilibili.com/video/BV1jy4y1a7mK?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036) bilibili
