@@ -68,3 +68,6 @@ categories:
 
 
 
+## 参考
++ 《混合云架构》
++  [阿里云云上常见架构设计及优化-课时5：云上容灾架构设计及解决方案](https://www.bilibili.com/video/BV1jy4y1a7mK?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036) bilibili
