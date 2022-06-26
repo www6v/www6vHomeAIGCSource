@@ -70,6 +70,8 @@ mongo-shake|  无 |  P   | P    | O      | P
 {% asset_img  dbMigrate.png  SQLServer迁移MySQL-双写方案 %}
 
 ## 参考
+1. <<云数据库架构>> 第四章
+2. SQL Server 迁移到 MySQL 
 从 SQL Server 到 MySQL（一）：异构数据库迁移   停机迁移
 从 SQL Server 到 MySQL（二）：在线迁移，空中换发动机
 从 SQL Server 到 MySQL（三）：愚公移山 - 开源力量
