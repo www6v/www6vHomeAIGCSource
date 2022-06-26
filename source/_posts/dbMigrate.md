@@ -66,7 +66,8 @@ mongo-shake|  无 |  P   | P    | O      | P
 
 
 ## SQLServer迁移MySQL
-{% asset_img  dbMigrate.png  SQLServer迁移MySQL %}
+
+{% asset_img  dbMigrate.png  SQLServer迁移MySQL-双写方案 %}
 
 ## 参考
 从 SQL Server 到 MySQL（一）：异构数据库迁移   停机迁移
