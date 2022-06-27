@@ -65,7 +65,7 @@ mongo-shake|  无 |  P   | P    | O      | P
 [多表存在因果联系更新下的数据库迁移](https://zhuanlan.zhihu.com/p/68377907) 
 
 
-## SQLServer迁移MySQL
+## SQLServer迁移MySQL(双写方案)
 
 {% asset_img  dbMigrate.png  SQLServer迁移MySQL-双写方案 %}
 

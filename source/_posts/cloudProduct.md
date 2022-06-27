@@ -36,7 +36,7 @@ Serverless | Lambda | Function Compute| 云函数 SCF
 VPC |VPC | VPC | VPC
 EIP IPv4/IPv6 | EIP | EIP IPv4/IPv6 | EIP IPv4/IPv6
 NAT网关| NAT Gateway| NAT Gateway| NAT Gateway
-负载均衡| ELB(NLB，ALB) | SLB <br> CLB: 4层+7层, standby一个可用区中的实例处于工作状态 <br> ALB: 7层,在所有可用区同时工作[3]  | CLB
+负载均衡| ELB(NLB，ALB) | SLB 默认是多可用区的，一主一备<br> CLB: 4层+7层, standby一个可用区中的实例处于工作状态 <br> ALB: 7层,在所有可用区同时工作[3]  | CLB
 私网连接 | Private Link | PrivateLink | Private Link
 计费模式| | 共享带宽包/共享流量包 | 共享带宽包/共享流量包
 
@@ -69,4 +69,4 @@ archive| S3 Glacier | OSS Archive Storage | COS Archive Storage
 1. [从AWS到阿里云： 产品体系差异分析](https://zhuanlan.zhihu.com/p/158035354)
 7. [Serverless Kubernetes：理想，现实与未来](https://mp.weixin.qq.com/s/o_dPKP_6dL92Q4jiG4097A)  易立、张维
 3. <<云网络>> 3.7
-
+4. [课时1](https://www.bilibili.com/video/BV1tD4y1977x?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
