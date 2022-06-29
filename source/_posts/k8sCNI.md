@@ -1,5 +1,5 @@
 ---
-title: K8S CNI
+title: Kubernetes CNI插件
 date: 2022-04-03 23:59:15
 tags:
   - Kubenetes
@@ -13,7 +13,7 @@ categories:
 <!-- more -->
 
 
-## 如何使用CNI
+## 如何使用CNI插件
 1. 配置CNI配置文件
    /etc/cni/net.d/xxnet.conf
 2. 安装CNI二进制插件
@@ -22,10 +22,10 @@ categories:
 4. kubelet 根据CNI配置文件执行CNI插件
 5. Pod的网络配置完成
 
-## CNI 类型
+## CNI插件 三种实现模式
 {%asset_img types.png %}
 
-## CNI 选择
+## CNI插件的选择
 {%asset_img chooseCNI.png %}
 
 ## 参考
