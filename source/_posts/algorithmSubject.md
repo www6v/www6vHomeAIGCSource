@@ -26,7 +26,7 @@ categories:
 
 
 #### 合并有序数组 [简单]
-LeetCode 88
+[LeetCode 88](https://leetcode.cn/problems/merge-sorted-array/solution/he-bing-liang-ge-you-xu-shu-zu-by-leetco-rrb0/)
 + 方法一：直接合并后排序
 + 方法二：双指针
 + 方法三：逆向双指针
@@ -122,6 +122,11 @@ LeetCode 19
 > 剑指 7题，指南 P5 
 > Leetcode 232 
 
+
+####  用队列实现栈
+[Leetcode 225. 用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/solution/yong-dui-lie-shi-xian-zhan-by-leetcode-solution/)
+
+
 ####  包含min函数的栈 [简单]
 > 剑指 21题 , 指南 P1
 > Leetcode 155 
@@ -131,7 +136,7 @@ LeetCode 19
 > Leetcode 20 
 题解：辅助栈
 
-#### 用数组在实现栈
+#### 用数组来实现栈
 [用数组来实现栈](https://github.com/www6v/jDemo)
 
 
