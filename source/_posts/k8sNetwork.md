@@ -134,7 +134,7 @@ underlay方案;
 
  / | overlay（隧道）  | underlay（路由）  
 :-: | :-: | :-: 
-L2  | Vxlan(大二层 通讯双方在同一逻辑网段内) |  IPvlan L2模式<br> Macvlan   
+L2  | Vxlan(大二层 通讯双方在同一逻辑网段内) |  IPvlan L2模式<br> Macvlan [9]  
 L3  | flannel-UDP（类似L2 overlay， 在节点上增加一个网关）   |  IPvlan L3模式<br> flannel host-gw（不能跨两层网络） <br> Calico BGP组网方式（大三层） 
 
 
@@ -155,10 +155,11 @@ NetworkPolicy
 
 
 ## 参考:
-1. [第13 章 ： Kubernetes网络概念及策略控制](https://edu.aliyun.com/lesson_1651_13087#_13087) CNCF × Alibaba 云原生技术公开课
-2. [calico网络原理及与flannel对比](https://blog.csdn.net/hxpjava1/article/details/79566192)
-3. [Kubernetes CNI网络最强对比：Flannel、Calico、Canal和Weave](https://mp.weixin.qq.com/s/GQc8XPV4MaCWiTcN2wVzbw)
-8. [K8s网络模型](https://mp.weixin.qq.com/s/spw8fHkIjiyf4kg5RQIL_w)  阿里 加多
++  1.[第13 章 ： Kubernetes网络概念及策略控制](https://edu.aliyun.com/lesson_1651_13087#_13087) CNCF × Alibaba 云原生技术公开课
++  2.[calico网络原理及与flannel对比](https://blog.csdn.net/hxpjava1/article/details/79566192)
++  3.[Kubernetes CNI网络最强对比：Flannel、Calico、Canal和Weave](https://mp.weixin.qq.com/s/GQc8XPV4MaCWiTcN2wVzbw)
++  8.[K8s网络模型](https://mp.weixin.qq.com/s/spw8fHkIjiyf4kg5RQIL_w)  阿里 加多
++  9.[macvlan和ipvlan介绍及在k8s中的使用](https://larioy.gst.monster/2021/09/06/k8s-ji-chong-cni-fang-an-jie-xi/macvlan-yu-ipvlan/macvlan-he-ipvlan-jie-shao/)
 
 ---
 趣谈网络协议  刘超
