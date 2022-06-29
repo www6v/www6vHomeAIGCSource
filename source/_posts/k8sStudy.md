@@ -77,9 +77,9 @@ prometheus， 监控大图
   kubebuilder 和 operator-sdk
 + 第25 章 ： Kubernetes网络模型进阶 -- seen
   架构图（重要）
-+ 第26 章 ： 理解CNI和CNI插件 
-+ 第27 章 ： Kubernetes安全之访问控制 
-+ 第28 章 ： 理解容器运行时接口CRI 
++ 第26 章 ： 理解CNI和CNI插件 -- seen
++ 第27 章 ： Kubernetes安全之访问控制 -- seen
++ 第28 章 ： 理解容器运行时接口CRI -- seen 
 + 第29 章 ： 安全容器技术 -- seen
   Kata Containers， gVisor
 + 第30 章 ： 理解RuntimeClass与使用多容器运行时 

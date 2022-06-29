@@ -30,4 +30,5 @@ categories:
 
 ## 参考
 [如何实现一个 Kubernetes 网络插件](https://mp.weixin.qq.com/s/oC4PemXm6aupFNKKCkqOJQ)
+[阿里技术大牛 30 分钟讲透 Kubernetes ： 理解 CNI 和 CNI 插件](https://www.bilibili.com/video/BV1XJ411W7zZ?vd_source=f6e8c1128f9f264c5ab8d9411a644036)
 ​
