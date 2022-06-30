@@ -34,7 +34,7 @@ categories:
 + 对于违规用户，批评教育为主
 
 ## 其他
-[4] P26
+[4] P26 P36 P90
 
 
 ## Reference
