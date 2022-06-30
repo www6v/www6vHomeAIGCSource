@@ -54,6 +54,7 @@ categories:
 [高可用 Prometheus：问题集锦](http://www.xuyasong.com/?p=1921)
 [高可用 Prometheus：Thanos 实践](http://www.xuyasong.com/?p=1925) 
 [第十八期: 玩转云原生容器场景的Prometheus监控]()  腾讯云 云原生正发声  #todo 重看一遍
+[Prometheus 存储层的演进](https://cloud.tencent.com/developer/article/1847798) 未 good
 
 
 

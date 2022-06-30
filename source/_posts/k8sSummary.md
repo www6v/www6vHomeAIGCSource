@@ -17,9 +17,8 @@ top: true
  [Kubernetes Workload](../../../../2019/06/09/k8sResource/)  
  [StatefulSet原理和源码](../../../../2019/11/11/k8sStatefulSet/)
  [Kubenetes资源模型](../../../../2019/11/14/k8sResouceModel/)
- [Kubernetes自动伸缩和HPA](../../../../2019/11/16/k8sAutoScale/)
  [kubelet和PLEG](../../../../2022/04/03/k8sPLEG/)
- 
+
 
 ## Operator && Controller
  [Kubernetes Operator-源码](../../../../2021/12/30/k8s-operator/)
@@ -43,6 +42,9 @@ top: true
  [Kubernetes 调度器](../../../../2019/06/09/k8sScheduler/)
  [Kubernetes 高级调度](../../../../2022/05/27/k8sAdvancedScheduling/)
 
+## 监控和AutoScale
+ [Kubernetes自动伸缩和HPA](../../../../2019/11/16/k8sAutoScale/) 
+ [Prometheus](../../../../2022/04/10/prometheus/)
 
 ## 生产化
 [K8S 应用迁移至K8S](../../../../2022/02/02/k8sAppMigrate/)
