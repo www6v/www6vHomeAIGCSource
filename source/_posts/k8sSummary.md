@@ -37,6 +37,7 @@ top: true
 
 ## 存储 
  [Kubernetes 存储](../../../../2019/09/01/k8sStorage/)
+ [etcd](../../../../2022/04/06/etcd/)
 
 ## 调度
  [Kubernetes 调度器](../../../../2019/06/09/k8sScheduler/)
@@ -45,6 +46,7 @@ top: true
 ## 监控和AutoScale
  [Kubernetes自动伸缩和HPA](../../../../2019/11/16/k8sAutoScale/) 
  [Prometheus](../../../../2022/04/10/prometheus/)
+ [Kubernetes 可观察性Observability](../../../../2022/01/30/k8sObservability/)
 
 ## 生产化
 [K8S 应用迁移至K8S](../../../../2022/02/02/k8sAppMigrate/)
