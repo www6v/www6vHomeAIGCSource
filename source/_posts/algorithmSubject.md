@@ -32,6 +32,9 @@ categories:
 + 方法三：逆向双指针
 
 
+#### Leetcode 283. 移动零
+
+
 ## 链表
 ####  单链表的反转 [简单]
 +  使用3个指针遍历单链表，逐个链接点进行反转。 复杂
@@ -192,8 +195,10 @@ LeetCode 19
 > [leetcode 8](https://blog.csdn.net/u010651249/article/details/85709554)
 > [leetcode 8](https://github.com/grandyang/leetcode/issues/8)
 
+
 ####  字符串中第一个只出现一次的字符，如何优化算法使得遍历次数更少
 > 剑指 35题
+
 
 ####  KMP子串查找算法
 
@@ -201,6 +206,10 @@ LeetCode 19
 #### Leetcode 415. 字符串相加: 字符串表示的数字相加
 [Leetcode 415. 字符串相加](https://leetcode.cn/problems/add-strings/solution/add-strings-shuang-zhi-zhen-fa-by-jyd/) 
  
+
+#### Leetcode 344. 反转字符串
+
+#### Leetcode 205. 同构字符串
 
 ## 五. 其他
 ####  最小响应时间的算法
