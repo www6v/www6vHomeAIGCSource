@@ -90,17 +90,20 @@ BGP 协议传输的消息
   {% asset_img  route-reflector.png  Route Reflector模式+IPIP模式  %}
 
 
+
++ 1.注意VxLAN模式不需要BGP协议参与！！！但是IPIP模式是需要的。
+Calico supports two types of encapsulation: VXLAN and IP in IP. VXLAN is supported in some environments where IP in IP is not (for example, Azure). VXLAN has a slightly higher per-packet overhead because the header is larger, but unless you are running very network intensive workloads the difference is not something you would typically notice. The other small difference between the two types of encapsulation is that Calico’s VXLAN implementation does not use BGP, whereas Calico’s IP in IP implementation uses BGP between Calico nodes.   # From Calico Docs
+
+
+
 ## 参考:
 + 《31容器网络之Calico：为高效说出善意的谎言》  趣谈网络协议  刘超
 + 《35  解读Kubernetes三层网络方案》  深入剖析Kubernetes  张磊
-
-
 + [kubernetes网络之---Calico原理解读](https://blog.csdn.net/ccy19910925/article/details/82423452)  看图
 + [容器网络Calico进阶实践 | 褚向阳](https://developer.aliyun.com/article/68558)  "看看 Calico 是如何实现跨主机互通"
 + [Calico网络方案](https://www.cnblogs.com/netonline/p/9720279.html) 安装
-
 + [docker 容器网络方案：calico 网络模型](https://cizixs.com/2017/10/19/docker-calico-network/) 安装+原理 - 阿里人 - ”报文流程“
-<<kubernetes网络权威指南>>  5.4节
++ <<kubernetes网络权威指南>>  5.4节
 
 
 + [20210806-Calico基础架构](https://www.yuque.com/wei.luo/cni/uf5hyp) 未
@@ -111,9 +114,8 @@ Full-mesh , Route reflectors
 ipipMode field (IP in IP encapsulation)， ipipMode 必须with BGP
 vxlanMode field (VXLAN encapsulation)， vxlanMode 可以without BGP
 两种模式不能一起运行，只能运行其中的一种
-
 + [Calico 路由反射模式权威指南](https://kubesphere.com.cn/blogs/calico-guide/) 未
-
++ [20210808-Calico IPIP Mode](https://www.yuque.com/wei.luo/cni/agyl5i)
 
 
 
