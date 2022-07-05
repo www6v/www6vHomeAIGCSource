@@ -73,6 +73,7 @@ top: true
  [Kubernetes命令](../../../../2019/06/09/k8sCommand/)  
  [k8s声明式应用管理](../../../../2020/05/26/k8sDeclarativeManage/)
  [Kubernetes和VM](../../../../2022/06/03/k8sVM/) 
+ [Kubernetes OpenShift](../../../../2022/01/05/k8sOpenShift/)
 
 ## 学习
  [Kubernetes 学习资源](../../../../2022/05/21/k8sStudy/)
