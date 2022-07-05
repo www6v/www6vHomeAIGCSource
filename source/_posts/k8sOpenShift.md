@@ -49,5 +49,14 @@ categories:
 + 应用改造的难度比较大
 
 
+## 基于多云的CI/CD
+
+{% asset_img cicd-multiCluster.png %}
++ 基于jenkins
+  容易编写，耗内存
++ 基于Tekton
+  不容易编写， 不耗内存
+
+
 ## 参考 
 [基于 Red Hat OpenShift 4 构建 Paas、DevOps 平台](https://www.bilibili.com/video/BV19p4y1k7yA?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036) bilibili
