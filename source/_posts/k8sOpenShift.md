@@ -14,6 +14,7 @@ categories:
 
 {% asset_img openshift.png %}
 
+
 ## Interface
 + CNI
   OpenFlow(OVS)(使用的， 更通用，场景适合的更多) 
@@ -28,14 +29,19 @@ categories:
 + CSI
   CEPH(ROOK) 
   NFS
++ 入口 ingress
+   - openshift 默认是haproxy的ingress（首选建议使用， dns解析， mTLS）
+   - 也可以装nginx ingress
+   - 也可以装istio ingress gateway（4层选， istio ingress gateway）
 
- ## PaaS
+
+## PaaS
  角色 - RBAC
  配置管理 - LimitRanage， Quota
  联邦集群 - kubefed 
 
-## 对K8S的增强
 
+## 对K8S的增强
 {% asset_img enhancement.png %}
 
 + Operator
@@ -43,19 +49,34 @@ categories:
   一个pod有多个虚拟网卡， ovs管理网络 + macvlan网络（性能比较好） 
 + kube-virt 虚拟机管理
 
+
 ## 应用迁移
 {% asset_img appMigrate.png %}
 
 + 应用改造的难度比较大
 
 
-## 基于多云的CI/CD
-
+## 多云
+##### 基于多云的CI/CD
 {% asset_img cicd-multiCluster.png %}
 + 基于jenkins
   容易编写，耗内存
 + 基于Tekton
   不容易编写， 不耗内存
+
+##### 应用发布到多个集群
+  RHACM 本来是IBM的，后来给了RedHat   
+
+
+## 竞品分析
++ 占有率30%， 早2018年， 
+   生态做的好（开源项目operator， marketplace， istio， serverlesss）  
+   IBM AI，中间件相关的东西挪到OpenShift
+
+
+## 市场   
+银行， 企业级客户
+[社区版本 OKD](https://quay.io/repository/openshift/okd) 
 
 
 ## 参考 
