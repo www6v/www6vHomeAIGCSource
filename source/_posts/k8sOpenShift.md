@@ -50,6 +50,11 @@ categories:
 + kube-virt 虚拟机管理
 
 
+{% asset_img openshift-vs-k8s1.png %}
+
+{% asset_img openshift-vs-k8s2.png %}
+
+
 ## 应用迁移
 {% asset_img appMigrate.png %}
 

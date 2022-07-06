@@ -27,6 +27,8 @@ top: true
 
 [istio安装 + Bookinfo示例](../../../../2019/07/02/istioSetup-bookinfo/)
 
+[SpringCloud迁移到istio](../../../../2022/01/06/istioMigrateFromSpringCloud/)
+
 
 
     
