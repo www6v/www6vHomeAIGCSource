@@ -11,7 +11,18 @@ categories:
 <p></p>
 <!-- more -->
 
-## 一. istio特性
+
+
+##  为什么用istio
++ SDK思维向平台思维转变
+  SDK的功能下沉到平台中， SDK中保留必要的功能
+
++ 参考
+《阿里云云原生架构实践》
+[基于OpenShift Service Mesh 实现微服务网格化 林斯锐 中国DevOps社区](https://www.bilibili.com/video/BV1V64y1r7oU?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
+
+
+##  istio特性
 {% asset_img  istio.jpg  istio %}
 
 性能优化:
@@ -22,7 +33,7 @@ categories:
 20. [Istio 安装](https://jimmysong.io/istio-handbook/setup/istio-installation.html)  引
 23. [Istio 庖丁解牛五：多集群网格实现分析](https://mp.weixin.qq.com/s/fSklull_8OfpdCtdwbXx9A)  腾讯云 钟华 引
 
-## 二. istio控制面
+##  istio控制面
 {% asset_img  istio-control.jpg  istio控制面（1.1-1.4） %}
 
 + mixer的三大功能：
@@ -37,14 +48,14 @@ categories:
 [Istio1.1新特性之限制服务可见性](http://www.servicemesher.com/blog/istio-service-visibility/)  敖小剑 引
 [官方内置adapters](https://istio.io/docs/reference/config/policy-and-telemetry/adapters/)  大多数是metrics and logs系统 
 
-## 三. istio组件
+##  istio组件
 <div style="text-align: center;">
 
 ![istio组件](https://user-images.githubusercontent.com/5608425/64623495-a3debd80-d41b-11e9-9599-c8c25a7153b9.jpg)  
 istio1.1组件[2]
 </div>
 
-##### 3.1 数据面
+### 数据面
 ##### Istio 注入sidecar实现:
 自动注入: 利用 Kubernetes Dynamic Admission Webhooks 对 新建的pod 进行注入: init container + sidecar
 手动注入: 使用 istioctl kube-inject
@@ -56,7 +67,7 @@ istio1.1组件[2]
 ##### istio-proxy: 
    两个进程pilot-agent和envoy, pilot-agent 进行初始化并启动envoy. 【3.2节】
 
-##### 3.2 Envoy启动过程和配置
+### Envoy启动过程和配置
 <div style="text-align: center;">
 	
 ![envoy-config-init](https://user-images.githubusercontent.com/5608425/69950671-b81feb80-152e-11ea-96ba-6261b7f4c09f.png)
@@ -69,7 +80,7 @@ Envoy启动过程和配置
 [Istio 庖丁解牛1：组件概览](https://mp.weixin.qq.com/s/VwqxrZsVmn4a5PcVckaLxA)  腾讯云 钟华
 [istio数据面](../../../../2019/11/21/istioDataplane/) self
 
-## 四. istio架构演进
+## istio架构演进
 
 从 1.5 开始，把控制平面的所有组件组合并成一个单体结构叫 istiod。
 1.5 Simplify
@@ -86,3 +97,8 @@ Envoy启动过程和配置
 
 self
 1. [istio流量管理](../../../../2019/11/21/istioTrafficManagement/)
+
+
+
+
+  

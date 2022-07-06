@@ -66,6 +66,7 @@ categories:
 
 ##### 应用发布到多个集群
   RHACM 本来是IBM的，后来给了RedHat   
+  RHACM基于CNCF的Open Cluster Management孵化项目 
 
 
 ## 竞品分析
@@ -81,3 +82,5 @@ categories:
 
 ## 参考 
 [基于 Red Hat OpenShift 4 构建 Paas、DevOps 平台](https://www.bilibili.com/video/BV19p4y1k7yA?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036) bilibili
+[15分钟搞定 OpenShift 多云管理，并统一部署应用](https://www.bilibili.com/video/BV1FL4y1c767?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
+[用 Kubernetes Operator 管理 OpenShift 应用生命周期](https://www.bilibili.com/video/BV1nZ4y1b71F?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)

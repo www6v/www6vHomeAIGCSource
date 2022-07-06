@@ -40,6 +40,8 @@ https://github.com/kubernetes-sigs/kubefed
 
 + clusternet - 腾讯云
 
++ OCM(Open Cluster Management) - RedHat 
+
 ## 参考：
 [k8s多集群的思考](https://www.huweihuang.com/kubernetes-notes/multi-cluster/k8s-multi-cluster-thinking.html)
 
