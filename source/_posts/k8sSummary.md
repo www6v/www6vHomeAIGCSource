@@ -52,11 +52,16 @@ top: true
 [K8S 应用迁移至K8S](../../../../2022/02/02/k8sAppMigrate/)
 [K8S 控制面高可用](../../../../2022/01/02/k8sHA/)
 [K8S零停机 可用性](../../../../2022/04/05/k8sAvailable/)
+[虚拟机和容器中的内核参数 kernel](../../../../2020/08/16/kernelParam/)
+
+## PaaS 
+[Kubernetes PaaS平台](../../../../2022/01/12/k8sPaaS)
+[Kubernetes OpenShift](../../../../2022/01/05/k8sOpenShift/)
 [Kubernetes 多租户](../../../../2021/10/18/k8sMultiTenancy/)
 [Kubenetes RBAC](../../../../2019/11/14/k8sRBAC/)
-[虚拟机和容器中的内核参数 kernel](../../../../2020/08/16/kernelParam/)
 [Kubernetes 多集群管理](../../../../2022/05/08/k8sMultiCluster/)
 [Kubernetes安全](../../../../2022/05/22/k8sSecurity/)
+[Kubernetes和VM](../../../../2022/06/03/k8sVM/) 
 
 ## 问题和最佳实践
 [Kubernetes问题排查](../../../../2022/04/03/k8sProblem/)
@@ -72,8 +77,6 @@ top: true
 ## 其他
  [Kubernetes命令](../../../../2019/06/09/k8sCommand/)  
  [k8s声明式应用管理](../../../../2020/05/26/k8sDeclarativeManage/)
- [Kubernetes和VM](../../../../2022/06/03/k8sVM/) 
- [Kubernetes OpenShift](../../../../2022/01/05/k8sOpenShift/)
 
 ## 学习
  [Kubernetes 学习资源](../../../../2022/05/21/k8sStudy/)
