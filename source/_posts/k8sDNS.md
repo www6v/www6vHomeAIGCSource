@@ -1,6 +1,6 @@
 ---
 title: Kubernetes CoreDNS
-date: 2022-07-12 15:26:32
+date: 2022-01-12 15:26:32
 tags:
   - Kubenetes
 categories: 

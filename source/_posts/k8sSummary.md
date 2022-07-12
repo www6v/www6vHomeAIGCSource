@@ -19,7 +19,6 @@ top: true
  [Kubenetes资源模型](../../../../2019/11/14/k8sResouceModel/)
  [kubelet和PLEG](../../../../2022/04/03/k8sPLEG/)
 
-
 ## Operator && Controller
  [Kubernetes Operator-源码](../../../../2021/12/30/k8s-operator/)
  [Kubernetes Operator-ETCD](../../../..//2019/11/19/k8sOperator/)
@@ -29,14 +28,18 @@ top: true
  [Kubernetes Runtime](../../../../2019/11/19/k8sRuntime/)
  [K8S 弃用Docker](../../../..//2021/06/01/k8sAbandonDocker/)
 
-
 ## 网络
  [Kubernetes网络](../../../../2019/08/23/k8sNetwork/)
- [Kubernetes服务](../../../../2019/11/04/k8sService/)
  [Calico](../../../../2022/05/03/k8sCalico/)  
+
+## 服务和DNS
+ [Kubernetes服务](../../../../2019/11/04/k8sService/)
+ [Kubernetes CoreDNS](../../../../2022/01/12/k8sDNS/)
 
 ## 存储 
  [Kubernetes 存储](../../../../2019/09/01/k8sStorage/)
+ [Kubernetes Rook](../../../../2022/01/12/k8sRook/)
+ [Ceph](../../../../2022/01/08/ceph/)
  [etcd](../../../../2022/04/06/etcd/)
 
 ## 调度
