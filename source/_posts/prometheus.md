@@ -74,6 +74,10 @@ categories:
 + Receive
   push, remote rewrite
 
+
+## Prometheus服务发现机制
+
+
 ## 参考：
 [高可用 Prometheus：问题集锦](http://www.xuyasong.com/?p=1921)
 [高可用 Prometheus：Thanos 实践](http://www.xuyasong.com/?p=1925) 
