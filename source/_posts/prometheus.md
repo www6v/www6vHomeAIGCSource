@@ -49,12 +49,37 @@ categories:
 ## 多云, 多地域监控
 在远端云上部署Prometheus agent
 
+## Thanos 
+##### 组件
++ Bucket
++ Check
++ Compactor
++ Query
++ Rule
++ Sidecar
++ Store
++ receive
++ downsample
+
+##### 特点
++ 为多集群Prometheus提供全局接口
+  全局视图
++ 将监控数据存储到各种对象存储
++ 为Prometheus提供高可用
++ 易于与Prometheus集成并可模块化部署  
+
+##### 模式
++ Sidecar
+  pull, remote read
++ Receive
+  push, remote rewrite
 
 ## 参考：
 [高可用 Prometheus：问题集锦](http://www.xuyasong.com/?p=1921)
 [高可用 Prometheus：Thanos 实践](http://www.xuyasong.com/?p=1925) 
 [第十八期: 玩转云原生容器场景的Prometheus监控]()  腾讯云 云原生正发声  #todo 重看一遍
-[Prometheus 存储层的演进](https://cloud.tencent.com/developer/article/1847798) 未 good
+[Prometheus 存储层的演进](https://cloud.tencent.com/developer/article/1847798) 未 good\
+[Thanos：开源的大规模Prometheus集群解决方案](http://dockone.io/article/6019)
 
 
 
