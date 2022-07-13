@@ -80,7 +80,8 @@ categories:
 [第十八期: 玩转云原生容器场景的Prometheus监控]()  腾讯云 云原生正发声  #todo 重看一遍
 [Prometheus 存储层的演进](https://cloud.tencent.com/developer/article/1847798) 未 good\
 [Thanos：开源的大规模Prometheus集群解决方案](http://dockone.io/article/6019)
-
+[基于 KubeSphere 和 Thanos 构建可持久化存储的多集群监控系统](https://kubesphere.com.cn/live/jinaai0602-live/)
+[打造云原生大型分布式监控系统(二): Thanos 架构详解](https://zhuanlan.zhihu.com/p/128658137)
 
 
 
