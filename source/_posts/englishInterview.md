@@ -48,3 +48,7 @@ I believe I have the combination of experience and enthusiasm to contribute to t
 
 ### What make you think you would be a success in this position？ 
   My long-term work experience should qualify me for this particular job. I am sure I will be successful. 
+
+
+## 参考
+[程序员英文面试题及回答（带中文翻译）](https://blog.csdn.net/m0_60126160/article/details/120706390)  
