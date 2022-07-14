@@ -32,7 +32,7 @@ I believe I have the combination of experience and enthusiasm to contribute to t
   With my qualifications and experience, I feel I am hardworking, responsible and diligent in any project I undertake. 
   Your organization could benefit from my analytical and interpersonal skills.
 
-### Give me a summary of your current job description. 
+### Give me a summary of your current job description. [有人问过这个题]
   I have been working as a computer programmer for five years. 
   To be specific, I do system analysis, trouble shooting and provide software support.
 
