@@ -1,12 +1,12 @@
 ---
 title: API Gateway网关
-date: 2022-07-21 10:31:46
+date: 2022-01-21 10:31:46
 tags:
-  - 服务框架
+  - API Gateway
 categories: 
   - 分布式
   - 服务治理
-  - 功能    
+  - API网关    
 ---
 
 <p></p>
