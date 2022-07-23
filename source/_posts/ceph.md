@@ -16,25 +16,22 @@ categories:
 {% asset_img   ceph-arch.png   ceph架构图 %}
 
 {% asset_img   ceph-arch1.png   ceph架构图 %}
-
-
-## Ceph核心组件及概念介绍
-+ Monitor
-    监控整个集群的状态，维护集群的cluster MA二进制表，保证集群数据的一致性
-+ OSD
-    OSD全程Object storage Device,也就是负责响应客户端请求返回具体数据的进程。一个Ceph集群一般都有很多个OSD
-+ MDS
-    MDS全称Ceph Metadata Server，是CephFS服务依赖的元数据服务
-+ Object
-    Ceph最底层的存储单元是Object对象，每个object包含数据和原始数据。
-+ PG
-    PG全称Placement Grouops,是一个逻辑的概念，一个PG包含多个OSD。引入PG这一层其实是为了更好的分配数据和定位数据。
+    
+#####  架构
+基础存储系统
++ rados:基础存现系统RADOS(Reliable,Autonomic,Distribuuted object store，既可靠的、自动化的、分布式的对象存储).所有存储在Ceph系统中的用户数据事实上最终都是由这一层来存储的。Ceph的高可靠、高可扩展、高性能、高自动化等等特性本质上也是由这一层所提供的。
 + RADOS
     RADOS全称Reliable Autonomic Distrubuted object Store,是Ceph集群的精华，用户实现数据分配，Failover等集群操作
+
+基础库librados:
++ librodos:这一层的功能是对RADOS进行抽象和封装，并向上层提供API，以便直接基于RADOS进行应用开发。特别要注意的是，RADOS是一个对象存储系统，因此，librodos实现的API也只是针对对象存储功能的。
 + Libradio    
     Librados是RODOS提供库，因为RADOS是协议很难直接访问，因此上层的RBD、RGW和CephFS都是通过librados访问的，目前提供PHP、Ruby、Java、Python、C和C++支持。
-+ CRUSH
-    CRUSH是Ceph使用的数据分布算法，类似一致性哈希，让数据分配到预期的地方。
+
+高层应用接口
++ radosgw:对象网关接口
++ rbd:块存储
++ cephfs：文件系统存储，其作用是在librodos库的基础上提供抽象层次更高、更便于应用或客户端使用的上层接口。
 + RBD
     RBD全称RADOS Block Device，是ceph对外提供服务的块设备服务。
 + RGW
@@ -42,6 +39,51 @@ categories:
 + CephFS
     CephFS全称Ceph File System，是ceph对外提供的文件系统服务。
 
+
+##### Ceph主要有三个基本进程
++ osd:
+    用于集群中所有数据与对象的存储。处理集群数据的复制、恢复、回填、再负载。并向其他osd守护进程发送心跳，然后向Mon提供一些监控信息。
+    当Ceph存储集群设定数据有两个副本时，则至少需要两个OSD守护进程即OSD节点，集群才能达到active+clean状态。
+
++ MDS(可选)
+    为Ceph文件系统提供元数据计算、缓存与同步(也就是说，ceph块设备和ceph对象存储不使用MDS)。在ceph中，元数据也是存储在osd节点中的，mds类似于元数据的代理缓存服务器。MDS进程并不是必须的进程，只有需要使用CEPHFS时，才需要配置MDS节点。
+
++ Monitor
+    监控整个集群的状态，维护集群的cluster MA二进制表，保证集群数据的一致性。ClusterMAP描述了对象存储的物理位置，以及一个将设备聚合到物理位置的桶列表。
+
++ Manager(ceph-mgr)
+    用于收集ceph集群状态，运行指标，比如存储利用率、当前性能指标和系统负载。对外提供ceph dashboard(ceph-ui)和resetful api,manger组件开启高可用时，至少2个
+
++ MDS
+    MDS全称Ceph Metadata Server，是CephFS服务依赖的元数据服务    
++ Monitor
+    监控整个集群的状态，维护集群的cluster MA二进制表，保证集群数据的一致性
++ OSD
+    OSD全程Object storage Device,也就是负责响应客户端请求返回具体数据的进程。一个Ceph集群一般都有很多个OSD    
+
+
++ rbd: 不需要部署独立的守护进程
++ Cephfs  需要部署独立的守护进程 MDS
++ 对象存储 需要部署独立的守护进程  radosgw
+
+生产环境
++ Monitor 需要至少3个
++ Manager 需要至少2个
+
+## Ceph核心组件及概念介绍
++ Object
+    Ceph最底层的存储单元是Object对象，每个object包含数据和原始数据。
+    [自带元数据]
+    [id + binary data + metadate(key+value)]
++ PG
+    PG全称Placement Grouops,是一个逻辑的概念，一个PG包含多个OSD。引入PG这一层其实是为了更好的分配数据和定位数据。
+
++ CRUSH
+    CRUSH是Ceph使用的数据分布算法，类似一致性哈希，让数据分配到预期的地方。
+
+## 部署
++ ceph ansible
++ rook
 
 ## 参考
 [「基础理论」CEPH 基础介绍](https://github.com/0voice/kernel_awsome_feature/blob/main/%E3%80%8C%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA%E3%80%8DCEPH%20%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D.md) good
