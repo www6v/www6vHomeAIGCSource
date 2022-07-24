@@ -12,28 +12,34 @@ categories:
 <!-- more -->
 
 
-## Memory
-MMU(Memory Management Unit)
-TLB(Translation Lookaside Buffer) - 快表，解决MMU查找page慢的问题
-page - 4K
-Hugepage - 2M
-pagecache
-
 ## CPU
 + CPU架构
   - NUMA
   - UMA
   - SMP
 
+## Memory
++ MMU(Memory Management Unit)
++ page - 4K
+  - Hugepage - 2M
+  - pagecache
+  - TLB(Translation Lookaside Buffer) - 快表，解决MMU查找page慢的问题
++ cacheline
+
 ## File， block
-POSIX
-io_uring
++ POSIX
++ io_uring
+
+## Frameworks && Tools
++ data plan 
+  - DPDK
+  - [SPDK](https://spdk.io/)
+  - VPP
++ LLVM
++ eBPF
+  - bcc  
 
 
-## Tools
-DPDK（data plan）
-[SPDK](https://spdk.io/)
-VPP
 
 
 
