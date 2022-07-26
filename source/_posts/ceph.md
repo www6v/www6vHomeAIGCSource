@@ -17,7 +17,7 @@ categories:
 
 {% asset_img   ceph-arch1.png   ceph架构图 %}
     
-#####  架构
+#####  架构[2]
 基础存储系统
 + rados:基础存现系统RADOS(Reliable,Autonomic,Distribuuted object store，既可靠的、自动化的、分布式的对象存储).所有存储在Ceph系统中的用户数据事实上最终都是由这一层来存储的。Ceph的高可靠、高可扩展、高性能、高自动化等等特性本质上也是由这一层所提供的。
 + RADOS
@@ -40,7 +40,7 @@ categories:
     CephFS全称Ceph File System，是ceph对外提供的文件系统服务。
 
 
-##### Ceph主要有三个基本进程
+##### Ceph主要有三个基本进程[2][5]
 + osd:
     用于集群中所有数据与对象的存储。处理集群数据的复制、恢复、回填、再负载。并向其他osd守护进程发送心跳，然后向Mon提供一些监控信息。
     当Ceph存储集群设定数据有两个副本时，则至少需要两个OSD守护进程即OSD节点，集群才能达到active+clean状态。
@@ -61,7 +61,6 @@ categories:
 + OSD
     OSD全程Object storage Device,也就是负责响应客户端请求返回具体数据的进程。一个Ceph集群一般都有很多个OSD    
 
-
 + rbd: 不需要部署独立的守护进程
 + Cephfs  需要部署独立的守护进程 MDS
 + 对象存储 需要部署独立的守护进程  radosgw
@@ -70,7 +69,7 @@ categories:
 + Monitor 需要至少3个
 + Manager 需要至少2个
 
-## Ceph核心组件及概念介绍[6] 
+## Ceph核心组件及概念介绍[2][6] 
 + Object
     Ceph最底层的存储单元是Object对象，每个object包含数据和原始数据。
     [自带元数据]
@@ -84,9 +83,42 @@ categories:
 + 客户端的数据条带化
    存储内容进行顺序分片, 分布式存储每个分片   
 
-## 部署
+
+## ceph支持的存储接口[7]
+{% asset_img   ceph-interface.png     ceph支持的存储接口 %}
+ 
+
+## 部署 & 工具
 + ceph ansible
-+ rook
+  主流
++ rook operator
+  - **超融合模式**
+    混合部署 资源预留
+  - **存算分离模式**  
+    ceph独立部署, 打label
++ 工具
+  RedHat OCS sizing tool
+
+## 场景[7]
++ openstack
+  静态化
++ 云原生 rook
+  - **动态化**
+    动态扩缩容
+  - **支持混合云，多云场景**
+    通过CSI接口，提供混合云环境下的一致性
+  - 拓扑感知
+    副本分到到3个rack中
+    跨AZ的多副本
+  - multus管理网络， 提升性能[pic]
+    管理网 - ovs
+    ceph private network - vlan10 
+    ceph public network - vlan20     
++ 占比
+Ceph RBD - 48%
+LVM - 15%
+NFS - 8%  
+
 
 ## 参考
 1. [「基础理论」CEPH 基础介绍](https://github.com/0voice/kernel_awsome_feature/blob/main/%E3%80%8C%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA%E3%80%8DCEPH%20%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D.md) good
@@ -95,3 +127,5 @@ categories:
 4. [分布式存储 Ceph 的演进经验 · SOSP '19](https://github.com/0voice/kernel_awsome_feature/blob/main/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%20Ceph%20%E7%9A%84%E6%BC%94%E8%BF%9B%E7%BB%8F%E9%AA%8C%20%C2%B7%20SOSP%20'19.md)
 5. [马哥教育2021-Ceph分布式存储系统快速入门](https://www.bilibili.com/video/BV17p4y1a7Em?p=4&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
 6. 《Ceph企业级分布式存储》
+7. [【直播回放】ROOK 云原生分布式存储开源项目的介绍及其在企业中的应用未来](https://www.bilibili.com/video/BV1D3411873Z?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
+
