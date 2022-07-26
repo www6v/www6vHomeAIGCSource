@@ -70,24 +70,28 @@ categories:
 + Monitor 需要至少3个
 + Manager 需要至少2个
 
-## Ceph核心组件及概念介绍
+## Ceph核心组件及概念介绍[6] 
 + Object
     Ceph最底层的存储单元是Object对象，每个object包含数据和原始数据。
     [自带元数据]
     [id + binary data + metadate(key+value)]
 + PG
     PG全称Placement Grouops,是一个逻辑的概念，一个PG包含多个OSD。引入PG这一层其实是为了更好的分配数据和定位数据。
-
 + CRUSH
     CRUSH是Ceph使用的数据分布算法，类似一致性哈希，让数据分配到预期的地方。
++ Ceph纠删码
+   [数据保护, 数据恢复]
++ 客户端的数据条带化
+   存储内容进行顺序分片, 分布式存储每个分片   
 
 ## 部署
 + ceph ansible
 + rook
 
 ## 参考
-[「基础理论」CEPH 基础介绍](https://github.com/0voice/kernel_awsome_feature/blob/main/%E3%80%8C%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA%E3%80%8DCEPH%20%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D.md) good
-[分布式存储Ceph](https://github.com/0voice/kernel_awsome_feature/blob/main/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8Ceph.md)
-[分布式文件系统ceph知识整理](https://github.com/0voice/kernel_awsome_feature/blob/main/%E5%88%86%E5%B8%83%E5%BC%8F%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9Fceph%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86.md)
-[分布式存储 Ceph 的演进经验 · SOSP '19](https://github.com/0voice/kernel_awsome_feature/blob/main/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%20Ceph%20%E7%9A%84%E6%BC%94%E8%BF%9B%E7%BB%8F%E9%AA%8C%20%C2%B7%20SOSP%20'19.md)
-[马哥教育2021-Ceph分布式存储系统快速入门](https://www.bilibili.com/video/BV17p4y1a7Em?p=4&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
+1. [「基础理论」CEPH 基础介绍](https://github.com/0voice/kernel_awsome_feature/blob/main/%E3%80%8C%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA%E3%80%8DCEPH%20%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D.md) good
+2. [分布式存储Ceph](https://github.com/0voice/kernel_awsome_feature/blob/main/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8Ceph.md)
+3. [分布式文件系统ceph知识整理](https://github.com/0voice/kernel_awsome_feature/blob/main/%E5%88%86%E5%B8%83%E5%BC%8F%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9Fceph%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86.md)
+4. [分布式存储 Ceph 的演进经验 · SOSP '19](https://github.com/0voice/kernel_awsome_feature/blob/main/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%20Ceph%20%E7%9A%84%E6%BC%94%E8%BF%9B%E7%BB%8F%E9%AA%8C%20%C2%B7%20SOSP%20'19.md)
+5. [马哥教育2021-Ceph分布式存储系统快速入门](https://www.bilibili.com/video/BV17p4y1a7Em?p=4&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
+6. 《Ceph企业级分布式存储》
