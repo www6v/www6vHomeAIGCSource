@@ -33,6 +33,8 @@ BPF是高级虚拟机, LLVM将C代码编译成BPF指令。
 {% asset_img  bpf-runtime.png  bpf运行时各模块  %}
 + bpf虚拟机实现包括一个解释器和JIT编译器
 + JIT编译器负责生成处理器可直接执行的机器指令
++ tracepoints 
+  静态探针, 静态内核跟踪点
 
 ## 参考
 1. 《Linux内核观察技术BPF》
