@@ -1,15 +1,18 @@
 ---
-title: Linux 概念和命名
-date: 2022-05-27 08:48:20
+title: Linux 总结
+date: 2021-05-27 08:48:20
 tags:
   - linux
 categories:
   - linux  
   - 总结 
+top: true   
 ---
 
 <p></p>
 <!-- more -->
+
+关键词: linux, 计算机组成
 
 ## 总体架构
 + 北桥 
@@ -17,12 +20,13 @@ categories:
 + 南桥
   IO桥 - [低速]
 
-## 操作系统[2]  
+## 操作系统[3]  
++ [内核](../../../../2022/01/30/linuxKernel/) self
 + 栈
   用函数和寄存器的方式记录了线程的执行历史
 + 中断
-+ 进程  
-+ 系统调用
++ [进程](../../../../2019/08/22/linuxProcess/) self
++ [系统调用](../../../../2022/01/30/linuxSystemCall/) self
 + 虚拟内存
 + [内存管理](../../../../2019/08/23/linuxMemory/) self
 + [调度器](../../../../2022/05/29/linuxSceduling/) self
@@ -32,7 +36,7 @@ categories:
 + [文件系统](../../../../2019/08/24/linuxFile/)
 + 网络
 
-## CPU && Cache
+## CPU && Cache[1]
 + CPU架构
   - SMP UMA
     系统总线成了系统瓶颈，应运而生了NUMA
@@ -57,9 +61,6 @@ categories:
 + TLB(Translation Lookaside Buffer)  
   - 快表，解决MMU查找page慢的问题
   - 专门用于cache内存中的页表项
-+ buffer && cache 
-  page cache - 文件
-  buffer - 磁盘
 
 ## Memory
 + MMU(Memory Management Unit)
@@ -68,6 +69,9 @@ categories:
 + 虚拟内存
 + overcommit
 + SLUB slab
++ buffer && cache 
+  page cache - 文件
+  buffer - 磁盘
 
 ## File， block
 + POSIX
