@@ -1,12 +1,12 @@
 ---
-title: Elastic Search(es)
+title: Elasticsearch(es)
 date: 2019-08-02 22:27:22
 tags: 
-  - elasticSearch
+  - Elasticsearch
 categories:  
   - 大数据
   - 存储
-  - elasticSearch
+  - Elasticsearch
 ---
 
 <p></p>
@@ -28,7 +28,7 @@ SQL| DSL
 主分片数设置好后不能变更， 除非重建索引。 
 副本数可以动态调整。
 
-##### 节点角色
+##### 节点类型[2]
 节点类型| 配置参数 |  默认值
 :-:|:-:| :-:
 master <br> 要部署多个master节点 |   | 
@@ -38,12 +38,20 @@ ingest | node.ingest| true
 coordinating only | 无 | 每个节点默认都是coordinating节点。设置其他类型全部为false。
 machine learning | node.ml | true（需enable x-pack）
 
-
++ 一个节点默认情况下是Master eligible, data, ingest的node
 
 ##### 三种颜色
 绿色： 主分片和副本分片都正常
 黄色： 主分片正常， 副本分片异常 
 红色： 主分片和副本分片都异常 
+
+##### 脑裂问题
++ 7.0之前的版本
+  - 只有在Master eligible节点数大于quorum时, 才能进行选举
+  - quorum = master/2 + 1
+  - 3个Master eligible时, 设置discovery.zen.minimum_master_nodes为2, 可以避免脑裂
++ 7.0开始
+  - 无需配置minimum_master_nodes
 
 ## 搜索模型 
 + 向量空间模型
