@@ -31,11 +31,12 @@ SQL| DSL
 ##### 节点角色
 节点类型| 配置参数 |  默认值
 :-:|:-:| :-:
-master eligible| node.master| true
-data| node.data | true
-ingest| node.ingest| true
-coordinating only| 无| 每个节点默认都是coordinating节点。设置其他类型全部为false。
-machine learning| node.ml | true（需enable x-pack）
+master <br> 要部署多个master节点 |   | 
+master eligible <br> master的候选节点 | node.master | true
+data <br> 保存分片数据 | node.data | true <br> 默认是数据节点，可以禁止掉
+ingest | node.ingest| true
+coordinating only | 无 | 每个节点默认都是coordinating节点。设置其他类型全部为false。
+machine learning | node.ml | true（需enable x-pack）
 
 
 
@@ -84,7 +85,7 @@ elastic geoip
 
 ## 参考
 1. [Elasticsearch 数据写入原理](https://mp.weixin.qq.com/s/BSjA_TBuapPHrE4COCp9VA)
-
+2. 《37丨集群分布式模型及选主与脑裂问题》 
 
 
 
