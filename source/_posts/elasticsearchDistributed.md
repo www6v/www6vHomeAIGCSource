@@ -66,4 +66,4 @@ Elasticsearch 数据写入
 1. 38丨分片与集群的故障转移
 2. 37丨集群分布式模型及选主与脑裂问题
 3. 39丨文档分布式存储
-4. 
+4. [Elasticsearch 数据写入原理](https://mp.weixin.qq.com/s/BSjA_TBuapPHrE4COCp9VA)
