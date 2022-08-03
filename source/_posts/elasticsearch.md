@@ -22,6 +22,41 @@ Column|Field
 Schema|Mapping
 SQL| DSL
 
+##### 倒排索引 [3]
++ 倒排索引包括2部分
+  + 单词词典(term dictionary)
+  + 倒排列表(posting list)
+    文档id: doc id
+    词频 TF
+    位置 Position 
+    偏移 Offset
+
+##### analysis 分词 [4]
++ Analyzer 分词器
+  1. Character Filters 
+     针对原始文本处理
+  2. Tokenizer
+     切分单词
+  3. Token Filters
+     将切分的单词进行加工
++ 中文分词器
+  + icu_analyzer
+  + IK
+  + THULAC
+
+##### term搜索 vs 全文搜索[5]
++ term  不分词
+  - term 返回算分结果
+  - keyword 完全匹配
+  - query 转成 filter
+    忽略tf-idf计算, 避免相关性算分的开销
+    filter可以有效利用缓存    
++ 全文索引  会分词
+  - 索引和搜索时都会进行分词
+    查询时，会对输入的查询进行分词
+
+function score query
+
 
 ## ES的集群
 ##### 主分片（Primary Shard）和副本分片（Replica Shard）
@@ -45,7 +80,7 @@ machine learning | node.ml | true（需enable x-pack）
 黄色： 主分片正常， 副本分片异常 
 红色： 主分片和副本分片都异常 
 
-##### 脑裂问题
+##### 脑裂问题 [2]
 + 7.0之前的版本
   - 只有在Master eligible节点数大于quorum时, 才能进行选举
   - quorum = master/2 + 1
@@ -62,16 +97,10 @@ BM25(5.0之后)
 + 精确率(Presicion)和召回率(recall)
    
 
-## 搜索
-term -> 不分词
-全文索引 ->  会分词
-
-function score query
-
 ## 索引更新策略
-完全更新策略 -> index 
-再合并策略
-原地更新策略
++ 完全更新策略 -> index 
++ 再合并策略
++ 原地更新策略
 
 ##  数据写入
 <div style="text-align: center; width: 70%; height: 70%">
@@ -93,7 +122,10 @@ elastic geoip
 
 ## 参考
 1. [Elasticsearch 数据写入原理](https://mp.weixin.qq.com/s/BSjA_TBuapPHrE4COCp9VA)
-2. 《37丨集群分布式模型及选主与脑裂问题》 
+2. 37丨集群分布式模型及选主与脑裂问题
+3. 12丨倒排索引介绍
+4. 13丨通过Analyzer进行分词
+5. 24丨基于词项和基于全文的搜索
 
 
 
