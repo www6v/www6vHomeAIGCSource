@@ -91,7 +91,6 @@ elastic geoip
 </div>
 
 ## 参考
-1. [Elasticsearch 数据写入原理](https://mp.weixin.qq.com/s/BSjA_TBuapPHrE4COCp9VA)
 3. 12丨倒排索引介绍
 4. 13丨通过Analyzer进行分词
 5. 24丨基于词项和基于全文的搜索
