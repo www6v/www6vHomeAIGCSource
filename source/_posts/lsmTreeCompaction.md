@@ -34,4 +34,4 @@ categories:
 ## 参考
 1. [Research_R42.5 Constructing and Analyzing the LSM Compaction Design Space](https://www.bilibili.com/video/BV12U4y177g3?vd_source=f6e8c1128f9f264c5ab8d9411a644036)  论文 good VLDB2021 bilibili
 2. [VLDB 2021论文概述](https://zhuanlan.zhihu.com/p/413463723) 
-3. [LSM-Tree:从入门到放弃——放弃：LSM Tree的Compaction机制探讨和分析](https://www.zhihu.com/search?hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2094178256%7D&hybrid_search_source=Entity&q=compaction&search_source=Entity&type=content) 
+3. [LSM-Tree:从入门到放弃——放弃：LSM Tree的Compaction机制探讨和分析](https://zhuanlan.zhihu.com/p/428270334) 
