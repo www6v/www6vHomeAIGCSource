@@ -132,6 +132,15 @@ Elasticsearch 数据写入
       **明确不需要做排序及聚合分析**           
     - Fielddata
 
+## 并发读写(乐观锁并发控制)
++ doc不可变
+  更新文档时, doc标记为删除, 同时增加一个全新的doc
+  同时doc的version字段加1
++ 内部版本控制
+  if_seq_no + if_primary_term
++ 使用外部文档
+  version_type(external) + version 
+
 
 ## 参考
 1. 38丨分片与集群的故障转移
@@ -141,3 +150,4 @@ Elasticsearch 数据写入
 5. 40丨分片及其生命周期
 6. 41丨剖析分布式查询及相关性算分
 7. 42丨排序及DocValues&Fielddata
+8. 44丨处理并发读写操作

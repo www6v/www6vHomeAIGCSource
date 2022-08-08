@@ -1,5 +1,5 @@
 ---
-title: Elasticsearch(es)
+title: Elasticsearch基础(ES)
 date: 2019-08-02 22:27:22
 tags: 
   - Elasticsearch
