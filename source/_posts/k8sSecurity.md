@@ -12,9 +12,9 @@ categories:
 <!-- more -->
 
 
-## Overview
+## K8S安全加固建议 [2]
 +    Kubernetes Pod 安全
-       + 使用构建的容器，以非 root 用户身份运行应用程序
+       + 使用构建的容器，以非 root 用户身份运行应用程序 
        + 在可能的情况下，用不可变的文件系统运行容器
        + 扫描容器镜像，以发现可能存在的漏洞或错误配置
        + 使用 Pod 安全政策来执行最低水平的安全，包括:
@@ -45,36 +45,61 @@ categories:
        + 定期进行漏洞扫描和渗透测试
        + 当组件不再需要时，将其从环境中移除
 
-{% asset_img  harden.jpg   安全加固  %}
 
-## Kubernetes 认证
-Kubernetes支持的请求认证方式
-+ Basic 认证（不建议）
-+ X509 证书认证
-+ Bearer Tokens(JSON Web Tokens)：
-  Service Account / OpenID Connect / Webhooks
+## K8S安全加固最佳实践 [1]
+{% asset_img  harden.jpg   安全加固最佳实践  %}
 
-## Kubernetes 鉴权 - RBAC
-三要素， 权限粒度
-Role， RoleBinding
-ClusterRole， ClusterRoleBinding
-Default ClusterRoleBinding(预置角色)
+## Kubernetes 安全机制 [6]
+##### K8S API 安全
++ 所有API交互使用TLS
++ API 认证
+   + Kubernetes支持的请求认证方式
+      - Basic 认证（不建议）
+      - X509 证书认证
+      - Bearer Tokens(JSON Web Tokens)：
+        Service Account / OpenID Connect / Webhooks
++ API 鉴权 - RBAC
+  + 三要素， 权限粒度
+    - Role， RoleBinding
+    - ClusterRole， ClusterRoleBinding
+    - Default ClusterRoleBinding(预置角色)
 
-## Security Context
+##### 容器能力限制
++ 限制容器特权
+  + Security Context
+    限制容器运行时的用户、用户组，对容器特权进行限制
+  + PSP(Pod Security Policy)
+    会在 1.25 之后被后面提到的 pod security admission webhook 替代
++ 限制资源用量
+  +  Resource Quota 
+  + Limit Range
++ 限制资源访问  
+  + network policy
+    网络隔离策略，设置黑名单或者白名单，为 namespace 去分配一独立的 IP 池
++ 限制调度节点      
+  + node selector
+  + Taint
+  + 限制容器能够调度的节点，实现一定程度的物理隔离
 
-
-## 安全容器
+##### 安全增强
++ 审计日志
++ pod security admission webhook
+  GateKeeper 开源
++ Key Management Service
+  借助 KMS 来加密 etcd 中的数据，在容器运行时进行解密
+  
+## 安全容器 [1]
 + kata container(轻量级虚拟机)
 + gVisor(大部分是userspace的调用)
 
 参考：
-+ CNCF × Alibaba 云原生技术公开课
+1. CNCF × Alibaba 云原生技术公开课
 [第27 章 ： Kubernetes安全之访问控制](https://mp.weixin.qq.com/s/nPErpcghHih5-dGPQkStJA?spm=a2c6h.12873639.article-detail.60.67905225MCDpLx)  
 第29 章 ： 安全容器技术
-+ [Kubernetes 加固指南](https://jimmysong.io/docs/kubernetes-hardening-guidance/)    good
-+ Kubernetes in Action - 12章， 13章 （未）
-+ [记一次Kubernetes中严重的安全问题](https://corvo.myseu.cn/2021/03/23/2021-03-23-%E8%AE%B0%E4%B8%80%E6%AC%A1Kubernetes%E4%B8%AD%E4%B8%A5%E9%87%8D%E7%9A%84%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98/) 未
-+ [Kubernetes 最佳安全实践指南](https://icloudnative.io/posts/security-best-practices-for-kubernetes-pods/) 未
-
-[K8s 安全策略最佳实践](https://kubesphere.com.cn/blogs/k8s-security/) 未
-[云原生安全产品 NeuVector 简介](https://kubesphere.com.cn/blogs/neuvector-cloud-native-security/) 未
+2. [Kubernetes 加固指南](https://jimmysong.io/docs/kubernetes-hardening-guidance/)    good
+3. Kubernetes in Action - 12章， 13章 （未）
+4. [记一次Kubernetes中严重的安全问题](https://corvo.myseu.cn/2021/03/23/2021-03-23-%E8%AE%B0%E4%B8%80%E6%AC%A1Kubernetes%E4%B8%AD%E4%B8%A5%E9%87%8D%E7%9A%84%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98/) 未
+5. [Kubernetes 最佳安全实践指南](https://icloudnative.io/posts/security-best-practices-for-kubernetes-pods/) 未
+6. [K8s 安全策略最佳实践](https://kubesphere.com.cn/blogs/k8s-security/)  文字稿 
+   [火线沙龙第24期——K8s 安全策略最佳实践](https://www.bilibili.com/video/BV12Y4y1p7cp?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036) 视频 
+7. [云原生安全产品 NeuVector 简介](https://kubesphere.com.cn/blogs/neuvector-cloud-native-security/) 未
