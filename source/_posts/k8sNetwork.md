@@ -17,6 +17,8 @@ categories:
    + 使用Docker的一种网络模型：–net=container
    + 每个Pod容器有有一个pause容器
    [Pause容器](https://jimmysong.io/kubernetes-handbook/concepts/pause-container.html) 例子
+   [Kubernetes之Pause容器](https://o-my-chenjian.com/2017/10/17/The-Pause-Container-Of-Kubernetes/)
+   [Kubernetes之“暂停”容器](https://mp.weixin.qq.com/s?__biz=Mzg5Mjc3MjIyMA==&mid=2247542987&idx=1&sn=dad6c7723576cf1fb86486f2855b0efd&source=41#wechat_redirect)
 
 ## 二. Pod与Pod之间的网络
 
