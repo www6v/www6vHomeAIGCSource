@@ -12,13 +12,18 @@ categories:
 <!-- more -->
 
 ##  为什么用istio
-+ SDK思维向平台思维转变
++ k8s和istio的比较 [3]
+  k8s的service比较弱，负载均衡基于dns和iptables。
+  需要用户态应用层的负载均衡能力，是istio等mesh项目的驱动力。
+
++ SDK与istio比较 [1]
+  SDK思维向平台思维转变
   SDK的功能下沉到平台中， SDK中保留必要的功能
 
 参考：
-+ 《阿里云云原生架构实践》
-+ [基于OpenShift Service Mesh 实现微服务网格化 林斯锐 中国DevOps社区](https://www.bilibili.com/video/BV1V64y1r7oU?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
-
++ 1. 《阿里云云原生架构实践》
++ 2. [基于OpenShift Service Mesh 实现微服务网格化 林斯锐 中国DevOps社区](https://www.bilibili.com/video/BV1V64y1r7oU?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
++ 3. 12丨模块十二：基于Istio的高级流量管理
 
 ##  istio Overview [1]
 {% asset_img  istio-overview.jpg  istio overview %}
