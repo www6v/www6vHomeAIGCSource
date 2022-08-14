@@ -13,7 +13,9 @@ top: true
 <!-- more -->
 
 
-[istio](../../../..//2019/07/02/istio/)
+[istio](../../../../2019/07/02/istio/)
+
+[istio 控制面ControlPanel](../../../../2022/01/14/istioControlPanel/) 
 
 [Istio流量管理](../../../../2019/11/21/istioTrafficManagement/)
 

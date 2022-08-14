@@ -11,10 +11,10 @@ categories:
 <p></p>
 <!-- more -->
 
-## 一. 流量管理
+##  流量管理
 {% asset_img  istio-traffic-manage.jpg  istio流量管理  %}
 
-### 1.1 组件
+#####  组件
 <div style="text-align: center;">
 	
 ![Pilot流量管理](https://user-images.githubusercontent.com/5608425/64623501-a5a88100-d41b-11e9-9262-8414adb5831a.png)  
@@ -22,18 +22,17 @@ Pilot Design Overview (来自 [Istio old_pilot_repo](https://github.com/istio/ol
 图例说明：图中红色的线表示控制流，黑色的线表示数据流。蓝色部分为和Pilot相关的组件。
 </div>
 
-### 控制面组件
-Discovery Services
-istio crd
++ 控制面组件
+  + Discovery Services
+  + istio crd
 
-### 数据面组件
-Pilot-agent
-Envoy
++ 数据面组件
+  + Pilot-agent
+  + Envoy
 
 [Istio 庖丁解牛1：组件概览](https://mp.weixin.qq.com/s/VwqxrZsVmn4a5PcVckaLxA)  腾讯云 钟华
 
-### 1.2 流量管理模型
-
+#####  流量管理模型
 
 + VirtualService 
 定义了一系列针对指定服务的流量**路由规则**; 
@@ -66,7 +65,7 @@ Envoy
 管理外部流量：Gateway
 管理服务：ServiceEntry
 
-## 二. 灰度发布
+#####  灰度发布
 {% asset_img  istio-gray.jpg  istio灰度发布  %}
 
 ## 参考:
