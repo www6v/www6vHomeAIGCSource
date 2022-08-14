@@ -57,8 +57,9 @@ istio1.1组件[2]
 
 ### 数据面
 ##### Istio 注入sidecar实现:
-自动注入: 利用 Kubernetes Dynamic Admission Webhooks 对 新建的pod 进行注入: init container + sidecar
-手动注入: 使用 istioctl kube-inject
++ 自动注入: 利用 Kubernetes Dynamic Admission Webhooks 对 新建的pod 进行注入: init container + sidecar
+  [一种灵活注入 Istio Sidecar 的方案探索](https://cloudnative.to/blog/istio-sidecar-injection-method/)
++ 手动注入: 使用 istioctl kube-inject
 
 ##### 注入Pod内容:
 ##### istio-init: 
