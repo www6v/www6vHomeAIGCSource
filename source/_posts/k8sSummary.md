@@ -97,4 +97,7 @@ top: true
  [Kubernetes安装-kubeasz](../../../../2021/06/02/k8sDeploy/)
  [Kubernetes集群搭建-二进制](../../../../2019/01/17/k8sSetup/)  
 
+## 认证
+ [Kubernetes CKS](../../../../2022/01/15/k8sCKS/) 
+
   
