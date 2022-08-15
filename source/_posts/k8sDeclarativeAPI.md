@@ -8,7 +8,7 @@ categories:
   - Kubernetes
 ---
 
-<p hidden></p>
+<p></p>
 <!-- more -->
 
 {% asset_img  ks8-declarative-api.jpg  声明式API %}

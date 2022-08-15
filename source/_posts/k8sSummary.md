@@ -66,6 +66,13 @@ top: true
 [Kubernetes安全](../../../../2022/05/22/k8sSecurity/)
 [Kubernetes和VM](../../../../2022/06/03/k8sVM/) 
 
+
+## 代码走读
+[Kubernetes ApiServer 代码走读](../../../../2022/01/15/k8sCodeOfApiServer/)
+[Kubernetes Informer Framework 代码走读](../../../../2022/01/15/k8sCodeOfInformerFramework/)
+[Kubernetes Kubelet 代码走读](../../../../2022/01/15/k8sCodeOfKubelet/)
+[Kubernetes KubeScheduler 代码走读](../../../../2022/01/15/k8sCodeOfKubeScheduler/)
+
 ## 问题和最佳实践
 [Kubernetes问题排查](../../../../2022/04/03/k8sProblem/)
 [Kubernetes最佳实践](../../../../2022/01/23/k8sBestPractice/)
