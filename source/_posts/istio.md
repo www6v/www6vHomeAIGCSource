@@ -21,9 +21,9 @@ categories:
   SDK的功能下沉到平台中， SDK中保留必要的功能
 
 参考：
-+ 1. 《阿里云云原生架构实践》
-+ 2. [基于OpenShift Service Mesh 实现微服务网格化 林斯锐 中国DevOps社区](https://www.bilibili.com/video/BV1V64y1r7oU?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
-+ 3. 12丨模块十二：基于Istio的高级流量管理
+1. 《阿里云云原生架构实践》
+2. [基于OpenShift Service Mesh 实现微服务网格化 林斯锐 中国DevOps社区](https://www.bilibili.com/video/BV1V64y1r7oU?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
+3. 12丨模块十二：基于Istio的高级流量管理
 
 ##  istio Overview [1]
 {% asset_img  istio-overview.jpg  istio overview %}
@@ -54,11 +54,13 @@ istio1.1组件
 + 1.5版本之后的简化 Simplify
   从 1.5 开始，把控制平面的所有组件组合并成一个单体结构叫 istiod。
 
-##### istio架构（1.1-1.4） [5]
+##### istio架构（v1.1-v1.4） [5]
 {% asset_img  istio-old-arch.png  istio架构（1.1-1.4） %}
 
-##### istio架构（1.5） 
+##### istio架构（v1.5） 
 {% asset_img  istio1.5-arch.jpeg  istio架构（1.5） %}
+
+##### istio proxyless架构(v1.11)[6]
 
 
 ## 参考:
@@ -67,6 +69,7 @@ istio1.1组件
 3. [Service Mesh——后 Kubernetes 时代的微服务](http://www.servicemesher.com/blog/service-mesh-the-microservices-in-post-kubernetes-era/) 宋净超 
 4. [《云原生服务网格Istio：原理、实践、架构与源码解析》](https://item.jd.com/12538407.html) 3.1.2节
 5. [Istio 庖丁解牛1：组件概览](https://mp.weixin.qq.com/s/VwqxrZsVmn4a5PcVckaLxA)  腾讯云 钟华
+6. [基于 gRPC 和 Istio 的无 Sidecar 代理的服务网格](https://zhuanlan.zhihu.com/p/437194208)
 
 
 
