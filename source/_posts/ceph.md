@@ -20,23 +20,23 @@ categories:
 #####  架构[2]
 基础存储系统
 + rados:基础存现系统RADOS(Reliable,Autonomic,Distribuuted object store，既可靠的、自动化的、分布式的对象存储).所有存储在Ceph系统中的用户数据事实上最终都是由这一层来存储的。Ceph的高可靠、高可扩展、高性能、高自动化等等特性本质上也是由这一层所提供的。
-+ RADOS
++ RADOS -
     RADOS全称Reliable Autonomic Distrubuted object Store,是Ceph集群的精华，用户实现数据分配，Failover等集群操作
 
 基础库librados:
 + librodos:这一层的功能是对RADOS进行抽象和封装，并向上层提供API，以便直接基于RADOS进行应用开发。特别要注意的是，RADOS是一个对象存储系统，因此，librodos实现的API也只是针对对象存储功能的。
-+ Libradio    
++ Libradio -  
     Librados是RODOS提供库，因为RADOS是协议很难直接访问，因此上层的RBD、RGW和CephFS都是通过librados访问的，目前提供PHP、Ruby、Java、Python、C和C++支持。
 
 高层应用接口
 + radosgw:对象网关接口
 + rbd:块存储
 + cephfs：文件系统存储，其作用是在librodos库的基础上提供抽象层次更高、更便于应用或客户端使用的上层接口。
-+ RBD
++ RBD -
     RBD全称RADOS Block Device，是ceph对外提供服务的块设备服务。
-+ RGW
++ RGW -
     RGW全称RADOS gateway,是ceph对外提供的对象存储服务，接口与S3和Swift兼容
-+ CephFS
++ CephFS -
     CephFS全称Ceph File System，是ceph对外提供的文件系统服务。
 
 
@@ -54,17 +54,19 @@ categories:
 + Manager(ceph-mgr)
     用于收集ceph集群状态，运行指标，比如存储利用率、当前性能指标和系统负载。对外提供ceph dashboard(ceph-ui)和resetful api,manger组件开启高可用时，至少2个
 
-+ MDS
++ MDS -
     MDS全称Ceph Metadata Server，是CephFS服务依赖的元数据服务    
-+ Monitor
++ Monitor -
     监控整个集群的状态，维护集群的cluster MA二进制表，保证集群数据的一致性
-+ OSD
++ OSD -
     OSD全程Object storage Device,也就是负责响应客户端请求返回具体数据的进程。一个Ceph集群一般都有很多个OSD    
 
+---
 + rbd: 不需要部署独立的守护进程
 + Cephfs  需要部署独立的守护进程 MDS
 + 对象存储 需要部署独立的守护进程  radosgw
 
+---
 生产环境
 + Monitor 需要至少3个
 + Manager 需要至少2个
