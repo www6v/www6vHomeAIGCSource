@@ -21,19 +21,19 @@ categories:
             防止有特权的容器
             拒绝经常被利用来突破的容器功能，如 hostPID、hostIPC、hostNetwork、allowedHostPath 等
             拒绝以 root 用户身份执行或允许提升为根用户的容器
-            使用安全服务，如 SELinux®、AppArmor® 和 seccomp，加固应用程序，防止被利用。
+            使用安全服务，如 SELinux®、AppArmor® 和 seccomp，加固应用程序，防止被利用。 @
 
 +    网络隔离和加固
        + 使用防火墙和基于角色的访问控制（RBAC）锁定对控制平面节点的访问
        + 进一步限制对 Kubernetes etcd 服务器的访问
        + 配置控制平面组件，使用传输层安全（TLS）证书进行认证、加密通信
-       + 设置网络策略来隔离资源。不同命名空间的 Pod 和服务仍然可以相互通信，除非执行额外的隔离，如网络策略
+       + 设置网络策略来隔离资源。不同命名空间的 Pod 和服务仍然可以相互通信，除非执行额外的隔离，如网络策略 @
        + 将所有凭证和敏感信息放在 Kubernetes Secret 中，而不是配置文件中。使用强大的加密方法对 Secret 进行加密
 
 +    认证和授权
        + 禁用匿名登录（默认启用）
        + 使用强大的用户认证
-       + 创建 RBAC 策略以限制管理员、用户和服务账户活动
+       + 创建 RBAC 策略以限制管理员、用户和服务账户活动 @
 
 +    日志审计
        + 启用审计记录（默认为禁用）
@@ -50,7 +50,7 @@ categories:
 {% asset_img  harden.jpg   安全加固最佳实践  %}
 
 ## Kubernetes 安全机制 [6]
-##### K8S API 安全
+##### K8S API 安全 @限制访问Kubernetes API
 + 所有API交互使用TLS
 + API 认证
    + Kubernetes支持的请求认证方式
@@ -58,7 +58,7 @@ categories:
       - X509 证书认证
       - Bearer Tokens(JSON Web Tokens)：
         Service Account / OpenID Connect / Webhooks
-+ API 鉴权 - RBAC
++ API 鉴权 - RBAC @使用基于角色的访问控制来最小化暴露
   + 三要素， 权限粒度
     - Role， RoleBinding
     - ClusterRole， ClusterRoleBinding
@@ -74,7 +74,7 @@ categories:
   +  Resource Quota 
   + Limit Range
 + 限制资源访问  
-  + network policy
+  + network policy @使用网络安全策略来限制集群级别的访问
     网络隔离策略，设置黑名单或者白名单，为 namespace 去分配一独立的 IP 池
 + 限制调度节点      
   + node selector
