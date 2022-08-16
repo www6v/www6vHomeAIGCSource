@@ -56,6 +56,7 @@ top: true
 [K8S 控制面高可用](../../../../2022/01/02/k8sHA/)
 [K8S零停机 可用性](../../../../2022/04/05/k8sAvailable/)
 [虚拟机和容器中的内核参数 kernel](../../../../2020/08/16/kernelParam/)
+[Kubernetes 升级upgrade](../../../../2022/01/16/k8sUpgrade/)
 
 ## PaaS 
 [Kubernetes PaaS平台](../../../../2022/01/12/k8sPaaS)
