@@ -63,9 +63,12 @@ top: true
 [Kubernetes 多租户](../../../../2021/10/18/k8sMultiTenancy/)
 [Kubenetes RBAC](../../../../2019/11/14/k8sRBAC/)
 [Kubernetes 多集群管理](../../../../2022/05/08/k8sMultiCluster/)
-[Kubernetes安全](../../../../2022/05/22/k8sSecurity/)
 [Kubernetes和VM](../../../../2022/06/03/k8sVM/) 
 
+## 安全
+ [Kubernetes安全](../../../../2022/05/22/k8sSecurity/)
+ [Kubernetes CKS](../../../../2022/01/15/k8sCKS/) 
+ [Kubernetes 安全实践](../../../../2022/01/16/k8sSecurityPractice/)
 
 ## 代码走读
 [Kubernetes ApiServer 代码走读](../../../../2022/01/15/k8sCodeOfApiServer/)
@@ -97,7 +100,6 @@ top: true
  [Kubernetes安装-kubeasz](../../../../2021/06/02/k8sDeploy/)
  [Kubernetes集群搭建-二进制](../../../../2019/01/17/k8sSetup/)  
 
-## 认证
- [Kubernetes CKS](../../../../2022/01/15/k8sCKS/) 
+
 
   
