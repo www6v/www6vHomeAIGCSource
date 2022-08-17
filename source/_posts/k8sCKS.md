@@ -110,6 +110,7 @@ Minimize host OS footprint (reduce attack surface)
    * [seccomp which stands for secure computing was originally intended as a means of safely running untrusted compute-bound programs](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
    * [AppArmor can be configured for any application to reduce its potential host attack surface and provide greater in-depth defense.](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
    * [PSP enforces](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
+     PodSecurityPolicy is deprecated as of Kubernetes v1.21, and will be removed in v1.25. We recommend migrating to Pod Security Admission.
    * Apply host updates
    * Install minimal required OS fingerprint
    * Identify and address open ports
