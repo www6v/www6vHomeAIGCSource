@@ -50,12 +50,31 @@ categories:
 ##### 2.1 直播场景的设计思路	
 直播场景下思考的问题和直播场景问题解决思路	☆
 
++ 直播场景下思考的问题和直播场景问题解决思路
+{% asset_img  live-broadcast-issue.png  %}
+
+{% asset_img live-broadcast-solution.png %}
+
 ##### 2.2 腾讯云直播架构设计	
 腾讯云直播产品：云直播CSS、移动直播SDK	☆☆☆
 云直播平台工作原理和架构	☆☆☆
 
++ 腾讯云直播产品：云直播CSS、移动直播SDK
+  + 云直播CSS
+  + 移动直播SDK
+
++ 云直播平台工作原理和架构
+  {% asset_img  live-broadcast-arch.png %}
+
+  {% asset_img  live-broadcast-process.png %}
+
 ##### 2.3 腾讯云直播的解决方案	
 发布会场景方案、秀场直播场景方案和教育&培训场景方案	☆☆
+
++ 发布会场景 [pic]
++ 秀场直播场景 [pic]
++ 教育&培训场景 [pic]
++ 大型公开课 & 企业培训 [pic]
 
 ### "3. 点播场景方案设计"	
 ##### 3.1 点播场景的设计思路	
