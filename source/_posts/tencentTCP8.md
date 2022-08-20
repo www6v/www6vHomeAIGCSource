@@ -1,5 +1,5 @@
 ---
-title: 腾讯云 TCP-8
+title: 腾讯云TCP8-AI解决方案
 date: 2022-01-13 22:37:36
 tags: 
   - 认证
