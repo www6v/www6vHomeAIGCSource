@@ -11,16 +11,20 @@ categories:
 <p></p>
 <!-- more -->
 
-## 官方
-二进制
-kubeadmin
-kubespray - ansible
-KOPS - cluster-api
+官方-安装方式 |  |  
+:-:  | :-:  |  
+二进制 |
+kubespray | ansible
+KOPS | cluster-api
+kubeadm安装-kubeadmin| https://github.com/opsnull/follow-me-install-kubernetes-cluster |
+minikube安装| https://minikube.sigs.k8s.io/docs/start/ |
+kind |https://kind.sigs.k8s.io/docs/user/quick-start/
 
-## 非官方
-kubekey - golang
-kubeasz - ansible
 
+非官方-安装方式 |  |  
+:-:  | :-:  |  
+ansible安装 ansible - kubeasz| https://github.com/easzlab/kubeasz<br>https://github.com/easzlab/kubeasz/blob/master/docs/setup/quickStart.md | 
+kubekey  | kubesphere, golang 
 
 ## 参考：
 模块九
