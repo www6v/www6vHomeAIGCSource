@@ -71,7 +71,20 @@ categories:
 + 大数据产品线
     {%  asset_img   products.png  大数据产品线 %}
 
-+ 大数据基础设施的解决方案 [todo 31.3]
++ 大数据基础设施的解决方案 
+  + 数仓领域解决方案
+     {%  asset_img   warehouse-arch.png 数仓领域解决方案 %}     
+     + 海量日志分析[pic]
+     + 经营分析[pic]
+  + 流计算领域解决方案
+    {%  asset_img   streamComputing-arch.png 流计算域解决方案 %} 
+     + 网站点击流分析[pic]
+     + 金融实时风控[pic]
+  + 搜索领域解决方案
+    {%  asset_img   search-arch.png 搜索领域解决方案 %}
+     + 小程序搜索支持[pic]
+     + 日志实时分析监控[pic]
+     + BI分析[pic]
 
 + 大数据应用服务的解决方案
 
