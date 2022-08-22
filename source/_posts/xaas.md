@@ -11,12 +11,16 @@ categories:
 <p></p>
 <!-- more -->
 
+## XaaS
 {% asset_img  xaas.jpg Xaas %}
 
++ aPaaS(行业相关的Kit, OpenApi)
+  - application Platform as a Service
 
+## PaaS [10]
 <div style="text-align: center;">
-	
-![Paas](https://user-images.githubusercontent.com/5608425/65187017-8a81e500-da9d-11e9-80f6-93654e689404.JPG)
+
+![PaaS](https://user-images.githubusercontent.com/5608425/65187017-8a81e500-da9d-11e9-80f6-93654e689404.JPG)
 Paas
 </div>
 
@@ -32,4 +36,5 @@ Paas
 7. 《企业IT架构转型之道(阿里巴巴中台战略思想与架构实战)》 钟华
 8. 洞悉PaaS平台的本质  左耳听风
 9. [深入浅出云计算-07 | 云端架构最佳实践：与故障同舞，与伸缩共生]()  何恺铎
+10. [华为云开天aPaaS上线，服务千万开发者，使能行业场景化创新](https://baijiahao.baidu.com/s?id=1711957365528743403&wfr=spider&for=pc)
 
