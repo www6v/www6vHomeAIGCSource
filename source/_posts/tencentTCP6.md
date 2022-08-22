@@ -87,6 +87,9 @@ categories:
      + BI分析[pic]
 
 + 大数据应用服务的解决方案
+  {%  asset_img   solution-app.png 搜索领域解决方案 %}
+  + 企业画像
+  + 智能选址
 
 ### 3. 架构设计
 ##### 3.1 大数据处理套件TBDS
@@ -98,11 +101,17 @@ TBDS的概述：基本概念、功能原理、应用场景	☆☆
 ##### 3.3 云数据仓库套件Sparking
 Sparking的概述：基本概念、功能原理、应用场景	☆☆
 
++ 云数据仓库PostgreSQL产品概述
+
 ##### 3.4 使用云数据仓库套件 Sparking实现企业全域数据资产管理
 使用云数据仓库套件Sparking实现企业全域数据资产管理	☆☆
 
 ##### 3.5 弹性MapReduce
 MapReduce的概述：基本概念、功能原理、应用场景	☆☆
+
++ MapReduce的概述：基本概念、功能原理、应用场景
+  {%  asset_img   mr-base.png  概念和优势 %}
+  {%  asset_img   mr-senario.png  %}
 
 ##### 3.6 使用弹性MapReduce实现离线数据分析
 使用弹性MapReduce实现离线数据分析	☆☆☆
@@ -110,11 +119,17 @@ MapReduce的概述：基本概念、功能原理、应用场景	☆☆
 ##### 3.7 流计算Oceanus
 Oceanus的概述：基本概念、功能原理、应用场景	☆☆
 
++ Oceanus的概述：基本概念、功能原理、应用场景
+  {%  asset_img   oceanus.png 概念和优势 %}
+  {%  asset_img   oceanus-senario.png  %}
+  
 ##### 3.8 使用流计算Oceanus实现互联网点击流分析
 使用流计算Oceanus实现互联网点击流分析	☆☆
 
 ##### 3.9 商业智能分析BI
 商业智能分析BI的概述：基本概念、功能原理、应用场景	☆☆
+
+[todo 32.6]
 
 ##### 3.10 使用商业智能分析BI实现数据即时分析与决策
 使用商业智能分析BI实现数据即时分析与决策	☆☆
