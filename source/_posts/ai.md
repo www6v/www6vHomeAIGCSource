@@ -45,8 +45,7 @@ categories:
       - 工业检查 
     - 关键问题
       - 小目标 高精度检测
-      - 多类别物体检测   
-    - [基于深度学习的物体检测](https://www.bilibili.com/video/BV1QS4y1s7RZ)    
+      - 多类别物体检测      
   + 图像搜索
   + 图像分割
     - 核心问题
@@ -76,7 +75,6 @@ categories:
 
 ## 自然语言处理 [4]
 + 人工智能的最高境界
-+ [中科院 宗成庆 自然语言处理公开课（64集）](https://www.bilibili.com/video/BV1Cb411T7Cd)
 
 ##### 应用场景  
   + 文本分类
@@ -91,7 +89,6 @@ categories:
     - 跨语言检索
   + 知识图谱
     + 认知智能
-    + [【浙大公开课】2022B站最好最全的知识图谱公开课分享程](https://www.bilibili.com/video/BV1DB4y1z7FN)
   + 对话系统
     - 任务导向 - 问答系统
     - 非任务导向 - 聊天机器人
