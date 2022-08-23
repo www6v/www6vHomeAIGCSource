@@ -2,11 +2,10 @@
 title: IDC网络互通
 date: 2019-05-15 05:42:14
 tags: 
-  - 互通
-categories: 
-  - 分布式
   - 网络
-  - 网络互通  
+categories: 
+  - 云计算
+  - 网络  
 ---
 
 <p></p>

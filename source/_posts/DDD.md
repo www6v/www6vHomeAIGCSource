@@ -3,9 +3,7 @@ title: DDD  领域驱动设计
 date: 2020-05-22 09:54:58
 tags:
   - DDD
-  - 领域驱动设计
 categories:
-  - 分布式  
   - 架构  
   - DDD  
 ---

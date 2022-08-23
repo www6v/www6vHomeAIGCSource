@@ -4,9 +4,7 @@ date: 2018-02-25 10:00:12
 tags:
   - CQRS
   - 读写分离
-  - 应用架构
 categories: 
-  - 分布式
   - 架构
   - CQRS    
 ---

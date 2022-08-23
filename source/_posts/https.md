@@ -3,10 +3,8 @@ title: HTTPS总结
 date: 2019-08-14 15:00:23
 tags: 
   - https
-  - network
 categories:  
-  - 分布式
-  - 网络
+  - 基础
   - https
 ---
 

@@ -4,7 +4,6 @@ date: 2019-09-13 19:35:02
 tags:
   - feed
 categories:
-  - 分布式
   - 架构
   - feed 
 ---
@@ -15,6 +14,7 @@ categories:
 {% asset_img   feed.jpg  Feed总结  %}
 
 <div style="text-align: center;">
+
 ![消息同步模型](https://user-images.githubusercontent.com/5608425/65018148-fa3b8700-d95a-11e9-865d-040c86263ef5.png)
 消息同步模型- 左:BCDEF的发件箱，右:A的收件箱
 
@@ -47,6 +47,7 @@ categories:
  
 
 <div style="text-align: center;">
+	
 ![Rank](https://user-images.githubusercontent.com/5608425/65016689-792ec080-d957-11e9-9834-6a3d5c93e647.png)
 Rank
 </div>

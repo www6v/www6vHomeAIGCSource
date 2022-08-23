@@ -3,8 +3,7 @@ title: OpenAPI 设计
 date: 2019-11-01 03:48:07
 tags:
   - API
-categories:
-  - 分布式  
+categories:  
   - 架构  
   - API
 ---
