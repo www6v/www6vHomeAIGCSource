@@ -28,16 +28,23 @@ categories:
 "包括：负载扩容、灾难恢复、数据备份、应用部署和开发测试生产部署"	☆☆☆
 
 + 包括：负载扩容、灾难恢复、数据备份、应用部署和开发测试生产部署 [todo 34.4]
-     + 负载扩容
+     + 负载扩容       
+       {% asset_img load-scaling.png %}
      + 灾难恢复
+       {% asset_img  disaster-recovery.png %}      
      + 数据备份
+       {% asset_img data-restore.png   %}
      + 应用部署
+       {% asset_img  app-deploy.png  %}       
      + 开发测试生产部署
-
-
+       {% asset_img product-deploy.png  %}
+       
 ### 2. 混合云的设计原则
 ##### 2.1 混合云的挑战
 混合云的挑战：环境复杂、IT环境分散等	☆☆
+
++ 混合云的挑战：环境复杂、IT环境分散等
+{% asset_img hybrid-challage.png  %}
 
 ##### 2.2 混合云架构设计原则
 "网络、存储和应用架构设计需要考虑的因素、设计的方法等"	☆☆
@@ -45,13 +52,16 @@ categories:
 ### 3. 设计混合云网络架构
 ##### 3.1 混合云网络架构
 "专线、VPN、对等连接等产品的概念和功能；如何使用专线、VPN、对等连接等产品进行混合云网络架构设计"	☆☆☆
+{% asset_img hybrid-net-arch.png  %}
+> 测试的时候用vpn, 上生产时用专线
 
 ##### 3.2 多分支机构的网络连接
 "云联网的概念和功能；对等连接/专线接入与云联网的差异；如何使用云联网构建混合云网络架构"	☆☆☆
+{% asset_img hybrid-net-branchs-arch.png  %}
 
 ##### 3.3 多云网络的互通
 "涉及技术：SD-WAN软件定义广域网。为什么需要SD-WAN？SD-WAN如何实现多云网络互通？"	☆
-
+{% asset_img hybrid-net-clouds-arch.png  %}
 
 ### 4. 设计混合云存储架构
 ##### 4.1 云存储网关
