@@ -73,7 +73,9 @@ categories:
     火焰图  
   + kubectl trace  
 + 网络
-
+  + Cilium eBPF Datapath 短路处理 [6]
+  {% asset_img cilium-ebpf.png  %} 
+  + istio 使用 eBPF 优化流量劫持 [7]
 + 安全  
 
 ## eBPF开源项目
@@ -100,7 +102,8 @@ categories:
 4. [ebpf技术简介（上）](https://www.bilibili.com/video/BV1BT4y1q7wx?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036) good bilibili
 5. [深入浅出 eBPF｜你要了解的 7 个核心问题](https://blog.csdn.net/alisystemsoftware/article/details/125753307)  阿里炎寻
    K8s问题排查全景图 
-
+6. [Cilium eBPF 网络解析](https://cloud.tencent.com/developer/article/1916561)
+7. [Beyond Istio OSS —— Istio 服务网格的现状与未来](https://jimmysong.io/blog/beyond-istio-oss/#ebpf)
 
 + [深入浅出 eBPF](https://www.ebpf.top/categories/BPF/) 未
 + [BPF 学习路径总结](https://feisky.xyz/posts/2021-01-06-ebpf-learn-path/) 未
