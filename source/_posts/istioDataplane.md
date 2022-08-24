@@ -86,6 +86,19 @@ Envoy启动过程和配置
 [Istio 庖丁解牛1：组件概览](https://mp.weixin.qq.com/s/VwqxrZsVmn4a5PcVckaLxA)  腾讯云 钟华
 [istio数据面](../../../../2019/11/21/istioDataplane/) self
 
+-----
+## 性能优化 [2]
+##### Proxyless 模式  (v1.11)
+
+##### 使用 eBPF 优化流量劫持
+
+参考
+1. [基于 gRPC 和 Istio 的无 Sidecar 代理的服务网格](https://zhuanlan.zhihu.com/p/437194208)
+2. [Beyond Istio OSS —— Istio 服务网格的现状与未来](https://jimmysong.io/blog/beyond-istio-oss/#performance-optimizing) good
+   [Beyond Istio OSS](https://docs.qq.com/pdf/DRWxETHNDZmRsS0l5?)
+
+
+
 
 
 

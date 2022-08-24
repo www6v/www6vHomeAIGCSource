@@ -57,11 +57,8 @@ istio1.1组件
 ##### istio架构（v1.1-v1.4） [5]
 {% asset_img  istio-old-arch.png  istio架构（1.1-1.4） %}
 
-##### istio架构（v1.5） 
-{% asset_img  istio1.5-arch.jpeg  istio架构（1.5） %}
-
-##### istio proxyless架构(v1.11)[6]
-
+##### istio架构（v1.5+） 
+{% asset_img  istio1.5-arch.jpeg  istio架构（1.5+） %}
 
 ## 参考:
 1. [腾讯云容器团队内部Istio专题分享](https://mp.weixin.qq.com/s/NjMncH84uEl_PywOFFMlFA) 腾讯云 钟华
@@ -69,7 +66,7 @@ istio1.1组件
 3. [Service Mesh——后 Kubernetes 时代的微服务](http://www.servicemesher.com/blog/service-mesh-the-microservices-in-post-kubernetes-era/) 宋净超 
 4. [《云原生服务网格Istio：原理、实践、架构与源码解析》](https://item.jd.com/12538407.html) 3.1.2节
 5. [Istio 庖丁解牛1：组件概览](https://mp.weixin.qq.com/s/VwqxrZsVmn4a5PcVckaLxA)  腾讯云 钟华
-6. [基于 gRPC 和 Istio 的无 Sidecar 代理的服务网格](https://zhuanlan.zhihu.com/p/437194208)
+
 
 
 
