@@ -1,5 +1,5 @@
 ---
-title: 高可用 available
+title: 高可用 Available
 date: 2022-06-26 21:55:43
 tags:
   - 高可用

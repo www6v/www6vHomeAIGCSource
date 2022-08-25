@@ -1,5 +1,5 @@
 ---
-title: Kubernetes 汇总
+title: Kubernetes 总结
 date: 2022-01-22 21:45:51
 tags:
   - Kubenetes
