@@ -16,7 +16,8 @@ categories:
   + 极客时间 《Go 并发编程实战课》  鸟窝 
   + 极客时间 《Go 语言项目开发实战》  孔令飞@腾讯
   + 极客时间 《Go语言从入门到实战》 好像看过
-  + 极客训练营 《go进阶训练营 第4期》 bilibili 毛剑
+  + 极客时间 《Go 语言核心 36 讲》郝林
+  + 极客训练营 《go进阶训练营 第4期》 bilibili 毛剑  
 
 + 学习路线
   + [【上集】2022 年 Go 语言最全学习路线：十分钟带你过思维导图！](https://www.bilibili.com/video/BV1YY4y1g7RU?vd_source=f6e8c1128f9f264c5ab8d9411a644036)
@@ -32,6 +33,7 @@ categories:
 
 ## Python
 + 极客时间 《零基础学Python》  视频课
++ 极客时间 《Python 自动化办公实战课》
 + 极客时间 《Python核心技术与实战》
 + 极客训练营  《Python进阶训练营 第5期》
 
