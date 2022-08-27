@@ -39,6 +39,8 @@ categories:
 
 
 ##  Golang 个人blog
+[Tony Bai](https://tonybai.com/) golang大神
+[鸟窝]() Java， golang  微博架构师 
 [罗道文](http://luodw.cc/)  golang python NSQ 有深度
 [张晓龙](https://www.jianshu.com/u/1381dc29fed9)  golang 一般
-[鸟窝]() Java， golang  微博架构师 
+
