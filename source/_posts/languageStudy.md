@@ -37,3 +37,8 @@ categories:
 + 极客时间 《Python核心技术与实战》
 + 极客训练营  《Python进阶训练营 第5期》
 
+
+##  Golang 个人blog
+[罗道文](http://luodw.cc/)  golang python NSQ 有深度
+[张晓龙](https://www.jianshu.com/u/1381dc29fed9)  golang 一般
+[鸟窝]() Java， golang  微博架构师 

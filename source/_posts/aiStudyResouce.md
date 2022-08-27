@@ -14,6 +14,7 @@ categories:
 + 极客时间 《人工智能基础课》  王天一   
   机器学习，深度学习
 + 极客时间 《AI 技术内参》  洪亮劼
++ 百度技术培训中心 [人工智能学习路线](http://bit.baidu.com/courseRouteDetail?id=111) 
 
 ## 机器学习
 + 极客时间 《机器学习 40 讲》  王天一
@@ -41,3 +42,6 @@ categories:
 ## 实战
 + 极客时间 [TensorFlow 快速入门与实战](https://time.geekbang.org/course/intro/100023001?tab=catalog)
 + 中国大学MOOC [深度学习应用开发-TensorFlow实践](https://www.icourse163.org/course/ZUCC-1206146808?from=searchPage&outVendor=zw_mooc_pcssjg_)  浙大城市学院
+
+## 
+[百度技术学院](http://bit.baidu.com/)   
