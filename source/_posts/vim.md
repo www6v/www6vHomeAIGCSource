@@ -7,7 +7,7 @@ categories:
   - 研发工具  
 ---
 
-<p hidden>vim</p>
+<p></p>
 <!-- more -->
 
 Vim 跳转到行首的命令是 0，跳转到行尾的命令是 $ 
