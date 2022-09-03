@@ -2,11 +2,11 @@
 title: NoSQL总结
 date: 2018-07-19 10:30:36
 tags:
-  - Nosql
+  - NoSQL
 categories:
   - 数据库
   - 非关系型  
-  - Nosql  
+  - NoSQL  
 ---
 
 <p></p>

@@ -15,8 +15,7 @@ categories:
 
 {% asset_img   paas.png  PasS %}
 
-{% asset_img   awsNetwork.png AWS网路产品 %}
-
+{% asset_img   awsNetwork.jpg AWS网路产品 %}
 
 
 ## 参考：
@@ -33,7 +32,7 @@ UCloud海外DDoS防护
 海量数据云归档最佳实践
 
 + 其他
-<< AWS in Action >> Andreas Wittig , Chaptor 11
+<<AWS in Action>> Andreas Wittig , Chaptor 11
 https://bp.aliyun.com/detail/23
 https://bp.aliyun.com/detail/57
 

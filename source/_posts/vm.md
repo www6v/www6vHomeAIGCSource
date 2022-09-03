@@ -12,13 +12,12 @@ categories:
 <!-- more -->
 
 
-## 一. AZ和Region
-{% asset_img   az.png  可用区  %}
+## AZ和Region
+{% asset_img   az.jpg  可用区  %}
 
-{% asset_img   region.png  region  %}
+{% asset_img   region.jpg  region  %}
 
-
-## 二. 计算资源高可用 -> 虚拟机  
+##  计算资源高可用 -> 虚拟机  
 ### 1. IDC内高可用（AZ内部）
    **虚拟机打散分布**
    AWS 称为置放群组（Placement Group）；
@@ -33,12 +32,12 @@ categories:
    + **多云**的方案
    避免厂商锁定
 
-## 三. 虚拟机(弹性伸缩 + 负载均衡器)   
+##  虚拟机(弹性伸缩 + 负载均衡器)   
 AWS 中相关的产品命名是 EC2 自动伸缩（Auto Scaling）;
 Azure 中是虚拟机规模集（VM Scale Set）;
 阿里云则叫做弹性伸缩;
 
-## 四. 虚拟机 
+##  虚拟机 
 KVM, quem, libvirt
 
 
