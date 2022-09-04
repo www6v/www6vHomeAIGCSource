@@ -25,8 +25,7 @@ tcpdump -n tcp port 19000 -w eth1.cap
 
 ##### haproxy 流向 codis-proxy的数据
 
-{% asset_img  h1.png  haproxy流向codis-proxy的数据 %}
-
+{% asset_img  h1.jpg  haproxy流向codis-proxy的数据 %}
 
 ##### jedis连到haproxy，写入数据转发到codis
 

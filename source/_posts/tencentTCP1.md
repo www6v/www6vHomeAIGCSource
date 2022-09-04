@@ -34,23 +34,40 @@ categories:
 对系统重要性、部署模式和业务状况进行评估	☆☆
 
 ### 3.上云迁移流程	
+{% asset_img migrate-process.jpg  %}
+
 ##### 3.1 系统调研	
 包括：业务调研、系统架构调研、数据库调研和应用调研	☆☆☆
+
+{% asset_img survey-1.jpg  %}
+{% asset_img survey-2.jpg  %}
+{% asset_img survey-3.jpg  %}
 
 ##### 3.2 风险评估	
 "包括：平台兼容性评估、性能风险评估、系统改造风险评估和资源风险评估"	☆☆
 
+{% asset_img risk.jpg  %}
+
 ##### 3.3 方案设计	
 "包括：网络架构设计、云上运维管理架构设计、应用架构设计、应用改造设计和容量规划"	☆☆☆
+
+{% asset_img solution1.jpg  %}
+{% asset_img solution2.jpg  %}
 
 ##### 3.4 基础架构环境搭建	
 包括：系统架构、网络架构、数据库、应用程序搭建	☆☆☆
 
+{% asset_img infra.jpg  %}
+
 ##### 3.5 系统割接	
 "系统割接的内容及风险；系统割接的方法：一次性切换、灰度割接"	☆☆☆
 
+{% asset_img cutover.jpg   %}
+
 ##### 3.6 性能和功能测试	
 性能测试和功能测试的指标	☆☆
+
+{% asset_img perf.jpg  %}
 
 ### 4.迁移工具	
 ##### 4.1 迁移服务平台MSP	
