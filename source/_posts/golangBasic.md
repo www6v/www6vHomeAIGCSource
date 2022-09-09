@@ -21,18 +21,18 @@ categories:
     返回一个指向对应类型零值的指针
     new() 一般 显示返回指针
 
-``` golang
+```Golang
 func make(t Type, size ...IntegerType) Type
 func new(Type) *Type
-```    
+```   
+
 [9.Go 内置函数make和new的区别？](https://www.golangroadmap.com/class/gointerview/1-9.html)
 
 ##### array和slice
 + 数组长度是固定的， slice长度是可变的 
   
 ##### slice底层实现
-
-``` golang
+```Golang
 type slice struct {
     array unsafe.Pointer
     len   int
@@ -120,6 +120,14 @@ SingleFlight
 
 ##### Context
 进行上下文信息传递、提供超时和取消机制、控制子 goroutine 的执行
+<code>
+ func WithCancel(parent Context) (ctx Context, cancel CancelFunc)
+ func WithDeadline(parent Context, d time.Time) (Context, CancelFunc)
+ func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc)
+</code>
+
+[context](https://pkg.go.dev/context)
+
 
 ##### channel
 + channel的读写
