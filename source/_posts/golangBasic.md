@@ -22,8 +22,8 @@ categories:
     new() 一般 显示返回指针
 
 ```Golang
-func make(t Type, size ...IntegerType) Type
-func new(Type) *Type
+func make(t Type, size ...IntegerType) Type 
+func new(Type) *Type 
 ```   
 
 [9.Go 内置函数make和new的区别？](https://www.golangroadmap.com/class/gointerview/1-9.html)
@@ -32,6 +32,7 @@ func new(Type) *Type
 + 数组长度是固定的， slice长度是可变的 
   
 ##### slice底层实现
+
 ```Golang
 type slice struct {
     array unsafe.Pointer
@@ -41,6 +42,13 @@ type slice struct {
 ```    
 
 [1.Go slice的底层实现原理?](https://www.golangroadmap.com/class/gointerview/2-1.html)
+
+##### map
++ map
+  + hmap
+  + bmap
+
+[Go面试题系列：Go map的底层实现原理](https://www.bilibili.com/video/BV1194y1o77s/?spm_id_from=pageDriver&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
 
 ##### 值传递、引用传递
 + Go语言中所有的传参都是**值传递（传值），都是一个副本，一个拷贝**。
@@ -118,17 +126,6 @@ errgroup
 Semaphore
 SingleFlight
 
-##### Context
-进行上下文信息传递、提供超时和取消机制、控制子 goroutine 的执行
-<code>
- func WithCancel(parent Context) (ctx Context, cancel CancelFunc)
- func WithDeadline(parent Context, d time.Time) (Context, CancelFunc)
- func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc)
-</code>
-
-[context](https://pkg.go.dev/context)
-
-
 ##### channel
 + channel的读写
   + 向关闭的channel中写入数据会panic
@@ -144,10 +141,23 @@ SingleFlight
 
 [3.Go channel有无缓冲的区别？](https://www.golangroadmap.com/class/gointerview/4-3.html)  
 
+
+##### Context
+进行上下文信息传递、提供超时和取消机制、控制子 goroutine 的执行
+<code>
+ func WithCancel(parent Context) (ctx Context, cancel CancelFunc) 
+ func WithDeadline(parent Context, d time.Time) (Context, CancelFunc) 
+ func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc) 
+</code>
+
+[context](https://pkg.go.dev/context)
+
+
 ## 参考
 + [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
   [GOLANG ROADMAP](https://www.golangroadmap.com/)  
   邀请码：caspar 
+  邀请码：Gopher-10645-1382
 + 极客时间 《Go 并发编程实战课》  鸟窝
 
 
