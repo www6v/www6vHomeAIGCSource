@@ -79,14 +79,46 @@ categories:
 数据存储加密	☆
 使用腾讯云产品实现数据加密	☆☆☆
 
++ 数据存储安全面临的问题
+{% asset_img 2\store-problem.jpg %}
+
++ 制定备份策略
+{% asset_img 2\store-backup.jpg %}
+{% asset_img 2\store-backup1.jpg %}
+
++ 数据存储加密
+{% asset_img 2\store-decode.jpg %}
+{% asset_img 2\store-decode1.jpg %}
+
++ 使用腾讯云产品实现数据加密
+  + KMS使用HSM
+{% asset_img 2\decode-products.jpg  %}
+
 ##### 2.7 数据传输安全
 数据传输的风险	☆
 网络层和应用层可信传输	☆☆☆
+
++ 数据传输的风险
+{% asset_img 2\transfer-risk.jpg  %}
+
++ 网络层和应用层可信传输
+{% asset_img 2\network-layer-transfer.jpg  网络层可信传输  %}
+{% asset_img 2\app-layer-transfer.jpg 应用层可信传输  %}
 
 ##### 2.8 数据访问安全
 数据访问安全概述	☆☆
 用户/业务鉴权和安全审计	☆
 腾讯云审计工具	☆☆
+
++ 数据访问安全概述
+{% asset_img 2\access-security.jpg   %}
+
++ 用户/业务鉴权和安全审计
+{% asset_img 2\authorization.jpg 用户/业务鉴权   %}
+{% asset_img 2\audit.jpg 安全审计   %}
+ 
++ 腾讯云审计工具 
+{% asset_img 2\audit-cloud.jpg   %}
 
 ##### 2.9 数据使用安全
 敏感数据脱敏	☆☆
