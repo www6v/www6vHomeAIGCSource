@@ -124,8 +124,18 @@ categories:
 敏感数据脱敏	☆☆
 泄露溯源水印	☆☆
 
++ 敏感数据脱敏
+{% asset_img 2\seceret-sentive.jpg %}
+{% asset_img 2\seceret-sentive1.jpg  %}
+
++ 泄露溯源水印
+{% asset_img 2\watermark.jpg  %}
+
+
 ##### 2.10 数据销毁
 云上数据销毁的流程和方法	☆☆
+{% asset_img 2\destroy.jpg  %}
+{% asset_img 2\destroy1.jpg  %}
 
 ### 3. 在腾讯云上进行访问控制管理
 ##### 3.1 在腾讯云上实现访问控制
