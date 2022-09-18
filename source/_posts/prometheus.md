@@ -12,7 +12,7 @@ categories:
 <!-- more -->
 
 
-## 高可用方案
+## 高可用方案[1]
 ##### Prometheus 高可用有几种方案：
 
 + 基本 HA：即两套 Prometheus 采集完全一样的数据，外边挂负载均衡
@@ -23,22 +23,22 @@ categories:
 ##### 问题
 就算使用官方建议的多副本 + 联邦，仍然会遇到一些问题:
 
-    官方建议数据做 Shard，然后通过Federation来实现高可用，
-    但是边缘节点和Global节点依然是单点，需要自行决定是否每一层都要使用双节点重复采集进行保活。
++ 官方建议数据做 Shard，然后通过Federation来实现高可用，
++ 但是边缘节点和Global节点依然是单点，需要自行决定是否每一层都要使用双节点重复采集进行保活。
     也就是仍然会有单机瓶颈。
-    另外部分敏感报警尽量不要通过Global节点触发，毕竟从Shard节点到Global节点传输链路的稳定性会影响数据到达的效率，进而导致报警实效降低。
-    例如服务Updown状态，Api请求异常这类报警我们都放在Shard节点进行报警。
++ 另外部分敏感报警尽量不要通过Global节点触发，毕竟从Shard节点到Global节点传输链路的稳定性会影响数据到达的效率，进而导致报警实效降低。
++ 例如服务Updown状态，Api请求异常这类报警我们都放在Shard节点进行报警。
 
 ##### 原因
 本质原因是，Prometheus 的本地存储没有数据同步能力，要在保证可用性的前提下，再保持数据一致性是比较困难的，基础的 HA Proxy 满足不了要求，比如：
 
-    集群的后端有 A 和 B 两个实例，A 和 B 之间没有数据同步。A 宕机一段时间，丢失了一部分数据，如果负载均衡正常轮询，请求打到A 上时，数据就会异常。
-    如果 A 和 B 的启动时间不同，时钟不同，那么采集同样的数据时间戳也不同，就不是多副本同样数据的概念了
-    就算用了远程存储，A 和 B 不能推送到同一个 TSDB，如果每人推送自己的 TSDB，数据查询走哪边就是问题了。
++ 集群的后端有 A 和 B 两个实例，A 和 B 之间没有数据同步。A 宕机一段时间，丢失了一部分数据，如果负载均衡正常轮询，请求打到A 上时，数据就会异常。
++ 如果 A 和 B 的启动时间不同，时钟不同，那么采集同样的数据时间戳也不同，就不是多副本同样数据的概念了
++ 就算用了远程存储，A 和 B 不能推送到同一个 TSDB，如果每人推送自己的 TSDB，数据查询走哪边就是问题了。
 
 ##### 因此解决方案是在**存储、查询**两个角度上保证数据的一致:
-+ 存储角度：如果使用 Remote Write 远程存储， A 和 B后面可以都加一个 Adapter，Adapter做选主逻辑，只有一份数据能推送到 TSDB，这样可以保证一个异常，另一个也能推送成功，数据不丢，同时远程存储只有一份，是共享数据。方案可以参考这篇文章    
-+ 查询角度：上边的方案实现很复杂且有一定风险，因此现在的大多数方案在查询层面做文章，比如 Thanos 或者 Victoriametrics，仍然是两份数据，但是查询时做数据去重和 Join。只是 Thanos 是通过 Sidecar 把数据放在对象存储，Victoriametrics 是把数据 Remote Write 到自己的 Server 实例，但查询层 Thanos-Query 和 Victor 的 Promxy的逻辑基本一致。
++ **存储角度**：如果使用 **Remote Write 远程存储， A 和 B后面可以都加一个 Adapter，Adapter做选主逻辑，只有一份数据能推送到 TSDB，这样可以保证一个异常，另一个也能推送成功，数据不丢，同时远程存储只有一份，是共享数据**。方案可以参考这篇文章    
++ **查询角度**：上边的方案实现很复杂且有一定风险，因此现在的大多数方案在查询层面做文章，**比如 Thanos 或者 Victoriametrics，仍然是两份数据，但是查询时做数据去重和 Join**。只是 Thanos 是通过 Sidecar 把数据放在对象存储，Victoriametrics 是把数据 Remote Write 到自己的 Server 实例，但查询层 Thanos-Query 和 Victor 的 Promxy的逻辑基本一致。
 
 
 ## 业务场景
@@ -69,7 +69,7 @@ categories:
 + 易于与Prometheus集成并可模块化部署  
 
 ##### 模式
-+ Sidecar
++ Sidecar(默认的模式)
   pull, remote read
 + Receive
   push, remote rewrite
@@ -79,13 +79,13 @@ categories:
 
 
 ## 参考：
-[高可用 Prometheus：问题集锦](http://www.xuyasong.com/?p=1921)
-[高可用 Prometheus：Thanos 实践](http://www.xuyasong.com/?p=1925) 
-[第十八期: 玩转云原生容器场景的Prometheus监控]()  腾讯云 云原生正发声  #todo 重看一遍
-[Prometheus 存储层的演进](https://cloud.tencent.com/developer/article/1847798) 未 good\
-[Thanos：开源的大规模Prometheus集群解决方案](http://dockone.io/article/6019)
-[基于 KubeSphere 和 Thanos 构建可持久化存储的多集群监控系统](https://kubesphere.com.cn/live/jinaai0602-live/)
-[打造云原生大型分布式监控系统(二): Thanos 架构详解](https://zhuanlan.zhihu.com/p/128658137)
+1. [高可用 Prometheus：问题集锦](http://www.xuyasong.com/?p=1921)
+2. [高可用 Prometheus：Thanos 实践](http://www.xuyasong.com/?p=1925) 
+3. [第十八期: 玩转云原生容器场景的Prometheus监控]()  腾讯云 云原生正发声  #todo 重看一遍
+4. [Thanos：开源的大规模Prometheus集群解决方案](http://dockone.io/article/6019)
+5. [基于 KubeSphere 和 Thanos 构建可持久化存储的多集群监控系统](https://kubesphere.com.cn/live/jinaai0602-live/)
+6. [打造云原生大型分布式监控系统(二): Thanos 架构详解](https://zhuanlan.zhihu.com/p/128658137) good  imroc@腾讯云
+7. [Prometheus 存储层的演进](https://cloud.tencent.com/developer/article/1847798) 未 good
 
 
 

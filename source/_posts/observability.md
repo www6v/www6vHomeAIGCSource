@@ -1,5 +1,5 @@
 ---
-title: 可观察性-链路追踪-Metric
+title: 可观察性-链路追踪和Metric
 date: 2019-08-31 11:54:42
 tags:
   - 可观察性
@@ -9,7 +9,7 @@ categories:
   - 可观察性
 ---
 
-<p hidden></p>
+<p></p>
 <!-- more -->
 
 ![metric-tracing-logging](https://user-images.githubusercontent.com/5608425/64059064-216a2880-cbe7-11e9-9ee7-141334d93959.png)
@@ -22,7 +22,7 @@ Application metrics + alert| Prometheus 、AWS Cloud Watch
 Distributed tracing| Zipkin ，Jaeger，pinpoint（无侵入）, skywalking（无侵入）, CAT
 Exception tracking| Zipkin ，Jaeger，pinpoint（无侵入）, skywalking（无侵入）, CAT
 
-## 一. 监控指标和原则
+##  监控指标和原则
 ### USE 原则 -> 面向"资源监控指标"
 + 利用率（Utilization），资源被有效利用起来提供服务的平均时间占比；
 + 饱和度（Saturation），资源拥挤的程度，比如工作队列的长度；
@@ -39,12 +39,12 @@ Exception tracking| Zipkin ，Jaeger，pinpoint（无侵入）, skywalking（无
 + 错误
 + 饱和度
 
-## 二. Log
+##  Log
 ELK，EFK
 
 {% asset_img  log.JPG   log %}
 
-## 三. Metric 之 Prometheus
+##  Metric 之 Prometheus
 1. 非分布式， 联邦
 2. pushgataway
 3. 服务发现
@@ -52,7 +52,7 @@ ELK，EFK
 
 {% asset_img  metric.JPG   metric的类型 %}
 
-## 四. APM 
+##  APM 
 {% asset_img  apm.JPG   APM产品比对 %}
 
 {% asset_img  apm1.JPG   APM产品比对 %}
@@ -68,9 +68,10 @@ ELK，EFK
 8. [微服务架构实战160讲 第四模块 ：微服务调用链监控CAT架构和实践 69.调用链监控产品和比较]() 杨波
 
 ### APM, tracing
-1. [OpenTracing语义标准](https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md)
-2. [Dapper，大规模分布式系统的跟踪系统](http://bigbully.github.io/Dapper-translation/)  论文
-3. [如何检测 Web 服务请求丢失问题](https://mp.weixin.qq.com/s/QA_BTF1D3GJJ7_nYQ6oAzQ) 问题排查 应用： Nginx tracing + Tomcat tracing
-4. [剖析 | SOFARPC 框架之 SOFARPC 链路追踪剖析](https://www.sofastack.tech/blog/sofa-rpc-link-tracking/) 未
-5. [虾米SRE实践_监控体系升级之路](https://github.com/StabilityMan/StabilityGuide/blob/master/docs/processing/monitor/%E8%99%BE%E7%B1%B3SRE%E5%AE%9E%E8%B7%B5_%E7%9B%91%E6%8E%A7%E4%BD%93%E7%B3%BB%E5%8D%87%E7%BA%A7%E4%B9%8B%E8%B7%AF.md) good
-6. [分布式调用链调研（pinpoint,skywalking,jaeger,zipkin等对比）](https://my.oschina.net/u/3770892/blog/3005395) good 对比的表格
++ [OpenTracing语义标准](https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md)
++ [opentracing文档中文版](https://wu-sheng.gitbooks.io/opentracing-io/content/pages/spec.html)
++ [Dapper，大规模分布式系统的跟踪系统](http://bigbully.github.io/Dapper-translation/)  论文
++ [如何检测 Web 服务请求丢失问题](https://mp.weixin.qq.com/s/QA_BTF1D3GJJ7_nYQ6oAzQ) 问题排查 应用： Nginx tracing + Tomcat tracing
++ [剖析 | SOFARPC 框架之 SOFARPC 链路追踪剖析](https://www.sofastack.tech/blog/sofa-rpc-link-tracking/) 未
++  [虾米SRE实践_监控体系升级之路](https://github.com/StabilityMan/StabilityGuide/blob/master/docs/processing/monitor/%E8%99%BE%E7%B1%B3SRE%E5%AE%9E%E8%B7%B5_%E7%9B%91%E6%8E%A7%E4%BD%93%E7%B3%BB%E5%8D%87%E7%BA%A7%E4%B9%8B%E8%B7%AF.md) good
++  [分布式调用链调研（pinpoint,skywalking,jaeger,zipkin等对比）](https://my.oschina.net/u/3770892/blog/3005395) good 对比的表格
