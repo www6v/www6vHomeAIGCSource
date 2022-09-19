@@ -89,6 +89,7 @@ categories:
     - Timestamp Compression: Double Delta
     - Value Compression
   - Chunk Encoding  
+    1KB
 + 3rd Generation: Prometheus V2
 
 
