@@ -50,6 +50,6 @@ categories:
 + k8s ingress controller
 
 ## 参考
-[【云原生学院 #3】基于 Apache APISIX 的全流量 API 网关](https://www.bilibili.com/video/BV1Gt4y1q7qC?vd_source=f6e8c1128f9f264c5ab8d9411a644036) good
-[使用 API 网关构建微服务](https://www.infoq.cn/article/construct-micro-service-using-api-gateway/)
-
++ [【云原生学院 #3】基于 Apache APISIX 的全流量 API 网关](https://www.bilibili.com/video/BV1Gt4y1q7qC?vd_source=f6e8c1128f9f264c5ab8d9411a644036) good
++ [使用 API 网关构建微服务](https://www.infoq.cn/article/construct-micro-service-using-api-gateway/)
++ [百亿规模API网关服务Shepherd的设计与实现](https://tech.meituan.com/2021/05/20/shepherd-api-gateway.html) 点评 未
