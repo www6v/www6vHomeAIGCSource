@@ -77,6 +77,20 @@ categories:
 
 ## Prometheus服务发现机制
 
+## Prometheus 存储层的演进
++ 1st Generation: Prototype
+  - key
+    - metric name
+    - labels
+    - timestamp
+  - value
++ 2nd Generation: Prometheus V1
+  - 压缩
+    - Timestamp Compression: Double Delta
+    - Value Compression
+  - Chunk Encoding  
++ 3rd Generation: Prometheus V2
+
 
 ## 参考：
 1. [高可用 Prometheus：问题集锦](http://www.xuyasong.com/?p=1921)
