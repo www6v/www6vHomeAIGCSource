@@ -25,6 +25,7 @@ kind |https://kind.sigs.k8s.io/docs/user/quick-start/
 :-:  | :-:  |  
 ansible安装 ansible - kubeasz| https://github.com/easzlab/kubeasz<br>https://github.com/easzlab/kubeasz/blob/master/docs/setup/quickStart.md | 
 kubekey  | kubesphere, golang 
+sealos| https://www.sealyun.com/
 
 ## 参考：
 模块九
