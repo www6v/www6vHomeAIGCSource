@@ -43,12 +43,6 @@ type slice struct {
 
 [1.Go slice的底层实现原理?](https://www.golangroadmap.com/class/gointerview/2-1.html)
 
-##### map
-+ map
-  + hmap
-  + bmap
-
-[Go面试题系列：Go map的底层实现原理](https://www.bilibili.com/video/BV1194y1o77s/?spm_id_from=pageDriver&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
 
 ##### 值传递、引用传递
 + Go语言中所有的传参都是**值传递（传值），都是一个副本，一个拷贝**。
