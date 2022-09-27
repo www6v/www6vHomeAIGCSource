@@ -33,6 +33,7 @@ categories:
 ## NLP
 + [中科院 宗成庆 自然语言处理公开课（64集）](https://www.bilibili.com/video/BV1Cb411T7Cd) 
 + [2022年首发！B站讲的最好的【NLP自然语言处理】保姆级教程！](https://www.bilibili.com/video/BV1C14y147dp?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)   有实践
++ MLNLP第六期学术研讨会开始报名
 
 ## 知识图谱
 + [深度学习应用实践 60 讲](https://time.geekbang.org/course/detail/100005001-3090)
