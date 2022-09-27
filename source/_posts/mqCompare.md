@@ -31,7 +31,16 @@ categories:
 性能（海量消息堆积场景） | 非常好 十万级 QPS |  低 | 低
 全链路消息轨迹 | 不支持 | 不支持 | 不支持
 
-## 参数：
-[Kafka、RabbitMQ、RocketMQ等消息中间件的对比](https://blog.csdn.net/belvine/article/details/80842240)
+## MQ比较[3]
+{% asset_img mqCompare.jpg MQ比较 %} 
 
-https://honeypps.com/mq/kafka-vs-rabbitmq/   未
+## 重点[3]
++ 功能级别不具备一票否决权
++ 选型时要特别注意中间件的性能与扩展性
++ 需要注重团队技术栈与中间件编程语言的匹配度
+
+
+## 参数
+1. [Kafka、RabbitMQ、RocketMQ等消息中间件的对比](https://blog.csdn.net/belvine/article/details/80842240)
+2. https://honeypps.com/mq/kafka-vs-rabbitmq/   未
+3. 13 | 技术选型：如何根据应用场景选择合适的消息中间件？   丁威
