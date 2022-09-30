@@ -5,7 +5,7 @@ tags:
   - 云计算
 categories:
   - 云计算  
-  - 产品
+  - AWS
 ---
 
 <p></p>
@@ -15,7 +15,7 @@ categories:
 + 3类lb[hand-on]
   - classic LB
   - Application LB
-  - xxx LB
+  - Network LB
 
 ## auto scaling[hand-on][2]
 
