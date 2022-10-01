@@ -22,7 +22,7 @@ categories:
 + bilibili
 AWS基础服务介绍及上手实践（web三层架构）
 01AWS助力电商实现灵活、安全、高度可扩展的全球化的架构部署
-AWS架构师认证-第四课：高可用架构与架构完善框架
+[快速上手训练营-第四课：高可用架构与架构完善框架](https://www.bilibili.com/video/BV1zU4y1w75e/)
 AWS数据库以及最佳实践
 海量数据云归档最佳实践
 
