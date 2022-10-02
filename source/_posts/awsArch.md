@@ -24,7 +24,7 @@ categories:
 [快速上手训练营-第四课：高可用架构与架构完善框架](https://www.bilibili.com/video/BV1zU4y1w75e/)
 
 + 其他
-<<AWS in Action>> Andreas Wittig , Chaptor 11
+ 《AWS in Action》 Andreas Wittig , Chaptor 11
 [互联网行业高弹性系统构建](https://bp.aliyun.com/detail/23)  阿里云
 [同城跨可用区容灾迁移及演练](https://bp.aliyun.com/detail/57) 阿里云
 
