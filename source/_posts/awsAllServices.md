@@ -13,78 +13,89 @@ categories:
 
 
 ## 计算 *
-EC2 **
-Lightsail
-Lambda **
-Batch
-Elastic Beanstalk
+EC2 @
+Lightsail @
+Lambda @
+Batch @
+Elastic Beanstalk @
 Serverless Application Repository
-AWS Outposts **
+AWS Outposts @
 EC2 Image Builder
 AWS App Runner
+++
+Elastic Load Balancing @
+AWS Fargate @
 
 
 ## 容器 *
-Elastic Container Registry
-Elastic Container Service  **
-Elastic Kubernetes Service **
+Elastic Container Registry @ ecr
+Elastic Container Service  @ ecs
+Elastic Kubernetes Service @ eks
 Red Hat OpenShift Service on AWS
 
 
 ## 存储 *
-S3 **
-EFS **
-FSx
-S3 Glacier **
-Storage Gateway **
-AWS Backup
+S3 @
+EFS @ elasic file system
+FSx @
+S3 Glacier @
+Storage Gateway @
+AWS Backup @
 AWS Elastic Disaster Recovery
+++
+Amazon Elastic Block Store (Amazon EBS） @
 
 
 ## 数据库 *
-RDS **
-ElastiCache **
-Neptune
+RDS @
+ElastiCache @
+Neptune @
 Amazon QLDB
 Amazon DocumentDB *
 Amazon Keyspaces
 Amazon Timestream
-DynamoDB **
+DynamoDB @
 Amazon MemoryDB for Redis
+++
+Amazon Aurora @
 
 
 ## 迁移与传输 *
-AWS Migration Hub
+AWS Migration Hub   @
 AWS Application Migration Service
 Application Discovery Service
-Database Migration Service
-AWS Transfer Family
+Database Migration Service  @ dms
+AWS Transfer Family  @
 AWS Snow Family
-DataSync
+DataSync   @
 AWS Mainframe Modernization
-
+++ 
+AWS Server Migration Service (AWS SMS) @
+AWS Snowball  @
 
 ## 联网和内容分发 *
-VPC **
-CloudFront **
-Route 53 **
-API Gateway **
-Direct Connect **
+VPC  @
+CloudFront @
+Route 53 @
+API Gateway  @
+Direct Connect @
 AWS App Mesh
 AWS Cloud Map
-Global Accelerator **
+Global Accelerator @
 Amazon VPC IP Address Manager
 AWS Private 5G
+++ 
+AWS Transit Gateway @
 
 
 ## 开发人员工具
 CodeStar
-CodeCommit
+CodeCommit @
 CodeArtifact
-CodeBuild
-CodeDeploy
-CodePipeline
-Cloud9
+CodeBuild  @
+CodeDeploy @
+CodePipeline @
+Cloud9   @
 CloudShell *
 X-Ray  **
 AWS FIS
@@ -92,30 +103,30 @@ AWS FIS
 ----
 
 ## 管理与监管 *
-AWS Organizations
-CloudWatch **
-AWS Auto Scaling **
-CloudFormation **
-Config
+AWS Organizations @
+CloudWatch @
+AWS Auto Scaling @
+CloudFormation @
+Config  @
 OpsWorks
-Service Catalog
-Systems Manager
+Service Catalog @
+Systems Manager @
 AWS AppConfig
-Trusted Advisor
-Control Tower
-AWS License Manager
-AWS Well-Architected Tool *
+Trusted Advisor @
+Control Tower  @
+AWS License Manager @
+AWS Well-Architected Tool @
 AWS Health Dashboard
 AWS Chatbot
 Launch Wizard
-AWS Compute Optimizer
+AWS Compute Optimizer @
 Resource Groups & Tag Editor
 Amazon Grafana
 Amazon Prometheus
 AWS Proton
 AWS Resilience Hub
 Incident Manager
-CloudTrail
+CloudTrail @
 
 
 ## 媒体服务
@@ -128,49 +139,21 @@ MediaStore
 MediaTailor
 Elemental Appliances & Software
 Amazon Interactive Video Service
-Elastic Transcoder
+Elastic Transcoder  @
 Nimble Studio
 
 
-## Machine Learning
-Amazon SageMaker
-Amazon Augmented AI
-Amazon CodeGuru
-Amazon DevOps Guru
-Amazon Comprehend
-Amazon Forecast
-Amazon Fraud Detector
-Amazon Kendra
-Amazon Personalize
-Amazon Polly
-Amazon Rekognition
-Amazon Textract
-Amazon Transcribe
-Amazon Translate
-AWS DeepComposer
-AWS DeepLens
-AWS DeepRacer
-AWS Panorama
-Amazon Monitron
-Amazon HealthLake
-Amazon Lookout for Vision
-Amazon Lookout for Equipment
-Amazon Lookout for Metrics
-Amazon Comprehend Medical
-Amazon Lex
-
-
 ## 分析 *
-Athena **
-Amazon Redshift **
-EMR **
+Athena  @
+Amazon Redshift @
+EMR @
 CloudSearch
-Amazon OpenSearch Service
-Kinesis **
-QuickSight **
+Amazon OpenSearch Service @
+Kinesis @
+QuickSight @
 Data Pipeline
 AWS Data Exchange
-AWS Glue **
+AWS Glue @
 AWS Lake Formation
 MSK
 AWS Glue DataBrew **
@@ -181,22 +164,22 @@ Amazon FinSpace
 
 
 ## 安全性、身份与合规性 *
-IAM **
-Resource Access Manager
-Cognito
-Secrets Manager
-GuardDuty
-Inspector
-Amazon Macie
-IAM Identity Center（前身为 AWS Single Sign-On）
-Certificate Manager
-Key Management Service **
+IAM @
+Resource Access Manager @
+Cognito  @
+Secrets Manager  @
+GuardDuty  @
+Inspector  @
+Amazon Macie  @
+IAM Identity Center（前身为 AWS Single Sign-On） @
+Certificate Manager @ acm
+Key Management Service @ kms
 CloudHSM
-Directory Service
-WAF & Shield **
+Directory Service  @
+WAF & Shield @
 AWS Firewall Manager
-Artifact
-Security Hub
+Artifact  @
+Security Hub  @
 Detective
 AWS Signer
 AWS Network Firewall
@@ -204,8 +187,8 @@ AWS Audit Manager
 
 
 ## AWS 成本管理 *
-AWS Cost Explorer
-AWS Budgets
+AWS Cost Explorer @
+AWS Budgets @
 AWS Marketplace Subscriptions
 AWS Application Cost Profiler
 AWS Billing Conductor
@@ -213,18 +196,18 @@ AWS Billing Conductor
 
 ## 移动
 AWS Amplify
-AWS AppSync
+AWS AppSync  @
 Device Farm
 Amazon Location Service
 
 
 ## 应用程序集成 *
-Step Functions **
+Step Functions @
 Amazon AppFlow
-Amazon EventBridge
-Amazon MQ  **
-Simple Notification Service
-Simple Queue Service  **
+Amazon EventBridge @
+Amazon MQ  @
+Simple Notification Service @
+Simple Queue Service  @
 SWF
 托管 Apache Airflow
 
@@ -234,32 +217,20 @@ Amazon Connect
 Amazon Pinpoint
 Amazon Honeycode
 Amazon Chime
-Amazon Simple Email Service
+Amazon Simple Email Service @
 Amazon WorkDocs
 Amazon WorkMail
-Alexa for Business
+Alexa for Business @
 
 
 ## 最终用户计算
-WorkSpaces
-AppStream 2.0
+WorkSpaces   @
+AppStream 2.0  @
 WorkSpaces Web
 
 
-## 物联网
-IoT Core
-FreeRTOS
-IoT 1-Click
-IoT Analytics
-IoT Device Defender
-IoT Device Management
-IoT Events
-IoT Greengrass
-IoT SiteWise
-IoT RoboRunner
-IoT TwinMaker
-AWS IoT FleetWise
-
+## Blockchain
+Amazon Managed Blockchain @
 
 ## 参考
 [AWS所有服务](https://us-east-1.console.aws.amazon.com/console/services?region=us-east-1)
