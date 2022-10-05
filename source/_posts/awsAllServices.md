@@ -31,14 +31,14 @@ categories:
 + AWS Fargate @
 
 
-## 容器 *
+## 容器 (4) *
 + Elastic Container Registry @ ecr
 + Elastic Container Service  @ ecs
 + Elastic Kubernetes Service @ eks
 + Red Hat OpenShift Service on AWS
 
 
-## 存储 *
+## 存储 (7) *
 + S3 @
 + EFS @ elasic file system
 + FSx @
@@ -50,7 +50,7 @@ categories:
 + Amazon Elastic Block Store (Amazon EBS） @
 
 
-## 数据库 *
+## 数据库 (9) *
 + RDS @
 + ElastiCache @
 + Neptune @
@@ -64,7 +64,7 @@ categories:
 + Amazon Aurora @ 
 
 
-## 迁移与传输 *
+## 迁移与传输 (8)*
 + AWS Migration Hub   @
 + AWS Application Migration Service
 + Application Discovery Service
@@ -77,7 +77,7 @@ categories:
 + AWS Server Migration Service (AWS SMS) @
 + AWS Snowball  @
 
-## 联网和内容分发 *
+## 联网和内容分发 (10) *
 + VPC  @
 + CloudFront @
 + Route 53 @
@@ -92,7 +92,7 @@ categories:
 + AWS Transit Gateway @
 
 
-## 开发人员工具
+## 开发人员工具(10)
 + CodeStar
 + CodeCommit @
 + CodeArtifact
@@ -106,7 +106,7 @@ categories:
 
 ----
 
-## 管理与监管 *
+## 管理与监管 (24)*
 + AWS Organizations @
 + CloudWatch @
 + AWS Auto Scaling @
@@ -147,7 +147,7 @@ Elastic Transcoder  @
 Nimble Studio
 
 
-## 分析 *
+## 分析 (14) *
 + Athena  @
 + Amazon Redshift @
 + EMR @
@@ -167,7 +167,7 @@ Nimble Studio
 --------
 
 
-## 安全性、身份与合规性 *
+## 安全性、身份与合规性 (20)*
 + IAM @
 + Resource Access Manager @
 + Cognito  @
@@ -190,7 +190,7 @@ Nimble Studio
 + AWS Audit Manager
 
 
-## AWS 成本管理 *
+## AWS 成本管理 (5)*
 + AWS Cost Explorer @
 + AWS Budgets @
 + AWS Marketplace Subscriptions
@@ -198,14 +198,14 @@ Nimble Studio
 + AWS Billing Conductor
 
 
-## 移动
+## 移动 (4)
 AWS Amplify
 AWS AppSync  @
 Device Farm
 Amazon Location Service
 
 
-## 应用程序集成 *
+## 应用程序集成 (8)*
 + Step Functions @
 + Amazon AppFlow
 + Amazon EventBridge @
@@ -216,7 +216,7 @@ Amazon Location Service
 + 托管 Apache Airflow
 
 
-## 业务应用程序
+## 业务应用程序(8)
 + Amazon Connect
 + Amazon Pinpoint
 + Amazon Honeycode
@@ -227,13 +227,13 @@ Amazon Location Service
 + Alexa for Business @
 
 
-## 最终用户计算
+## 最终用户计算(3)
 + WorkSpaces   @
 + AppStream 2.0  @
 + WorkSpaces Web
 
 
-## Blockchain
+## Blockchain (1)
 + Amazon Managed Blockchain @
 
 ## 参考
