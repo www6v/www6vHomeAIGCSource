@@ -59,7 +59,7 @@ categories:
 + Amazon Keyspaces
 + Amazon Timestream
 + DynamoDB @
-+ Amazo+ n MemoryDB for Redis
++ Amazon MemoryDB for Redis
 + ++
 + Amazon Aurora @ 
 
