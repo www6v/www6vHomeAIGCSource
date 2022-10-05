@@ -21,6 +21,7 @@ categories:
 + Batch @
   AWS Batch enables you to easily and efficiently run batch computing workloads of any scale on AWS using Amazon EC2 and Amazon EC2 Spot.
 + Elastic Beanstalk @
+  Amazon Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS. 
 + Serverless Application Repository
 + AWS Outposts @
   AWS Outposts brings native AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility.
@@ -29,18 +30,21 @@ categories:
 ++
 + Elastic Load Balancing @
 + AWS Fargate @
+  AWS Fargate 是一种无服务器、随用随付的计算引擎，可让您专注于构建应用程序，而无需管理服务器。AWS Fargate 与 Amazon Elastic Container Service (ECS) 和 Amazon Elastic Kubernetes Service (EKS) 兼容。
 
 
 ## 容器 (4) *
 + Elastic Container Registry @ ecr
-+ Elastic Container Service  @ ecs
-+ Elastic Kubernetes Service @ eks
++ Elastic Container Service  @ ECS
+  Amazon ECS is a fully managed container orchestration service that helps you easily deploy, manage, and scale containerized applications. It deeply integrates with the rest of the AWS platform to provide a secure and easy-to-use solution for running container workloads in the cloud and now on your infrastructure with Amazon ECS Anywhere. 
++ Elastic Kubernetes Service @ EKS
+  Amazon EKS is a managed service that makes it easy for you to use Kubernetes on AWS without needing to install and operate your own Kubernetes control plane.
 + Red Hat OpenShift Service on AWS
 
 
 ## 存储 (7) *
 + S3 @
-+ EFS @ elasic file system
++ EFS @ [Elasic File System]
 + FSx @
 + S3 Glacier @
 + Storage Gateway @
