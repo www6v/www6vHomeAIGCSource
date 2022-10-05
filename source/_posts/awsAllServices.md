@@ -15,6 +15,8 @@ categories:
 ## 计算 (9)*
 + EC2 @
 + Lightsail @
+  Amazon Lightsail 以经济实惠的月度价格提供易于使用的虚拟专用服务器 (VPS) 实例、容器、存储、数据库等。
+  Lightsail 是由 AWS 推出的面向开发人员、小型企业、学生等人员的轻量级 VPS 云计算服务。(非官方)
 + Lambda @
 + Batch @
   AWS Batch enables you to easily and efficiently run batch computing workloads of any scale on AWS using Amazon EC2 and Amazon EC2 Spot.
