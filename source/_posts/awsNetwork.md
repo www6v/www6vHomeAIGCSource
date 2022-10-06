@@ -28,3 +28,6 @@ categories:
 
 +  
 [VPC](https://jayendrapatil.com/aws-virtual-private-cloud-vpc/) good 
+
++ Tool
+https://network00.com/NetworkTools/IPv4SubnetCreator/
