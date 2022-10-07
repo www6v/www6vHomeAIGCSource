@@ -27,7 +27,8 @@ categories:
 [【云计算】AWS高级网络.LAB1.1.vpc_peering](https://www.bilibili.com/video/BV1CG41137bx/)
 
 +  
-[VPC](https://jayendrapatil.com/aws-virtual-private-cloud-vpc/) good 
+[VPC](https://jayendrapatil.com/aws-virtual-private-cloud-vpc/) *** 
+[路由表概述](https://help.aliyun.com/document_detail/106224.html) 阿里云
 
 + Tool
 https://network00.com/NetworkTools/IPv4SubnetCreator/
