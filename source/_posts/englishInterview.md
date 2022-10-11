@@ -1,11 +1,11 @@
 ---
-title: 英语面试 - English Interview
+title: 英语-面试 Interview
 date: 2012-01-14 09:40:21
 tags:
-  - Kubenetes
+  - 英语
 categories: 
-  - 云原生
-  - Kubernetes
+  - 英语
+  - 面试
 ---
 
 
