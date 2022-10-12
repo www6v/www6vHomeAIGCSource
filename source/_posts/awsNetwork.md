@@ -14,7 +14,7 @@ categories:
 ## Overview[1][3]
 {% asset_img   awsNetwork.jpg AWS网路产品 %}
 
-{% asset_img   aws-network-compare.JPG todo %}
+{% asset_img   aws-network-compare.JPG  VPC Peering vs. Transit VPC vs. Transit Gateway  %}
 
 
 + 单vpc
