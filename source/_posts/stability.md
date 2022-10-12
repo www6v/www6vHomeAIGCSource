@@ -35,9 +35,10 @@ categories:
       - 对压测的写请求做专门的**标记**。 
       - 当请求要写数据库时，由分布式数据库的**中间件框架中的逻辑来判断这个请求是否是压测请求**，如果是压测写请求则路由到对应的**影子库**中，而不是直接写到线上正式的库中。 
 
++ 故障注入
 
 ## 参考：
-1. 超全总结 | 阿里如何应对电商故障？神秘演练细节曝光   阿里巴巴-周洋（花名中亭）
+1. [超全总结 | 阿里如何应对电商故障？神秘演练细节曝光   阿里巴巴-周洋（花名中亭）](https://developer.aliyun.com/article/105551) 故障注入
 2. [稳定性思考-强弱依赖](http://jm.taobao.org/2012/10/31/stability-considerations-dependent-strength/)  阿里中间件团队博客   
 3. [稳定性思考-强弱依赖2](http://jm.taobao.org/2012/10/31/stability-considerations-dependent-strength-2/)  阿里中间件团队博客
 4. [中间件技术及双十一实践·稳定性平台篇](http://jm.taobao.org/2014/03/10/3497/)  阿里中间件团队博客

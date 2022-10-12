@@ -13,8 +13,28 @@ categories:
 <p></p>
 <!-- more -->
 
-## 参考:
+## 实践[1,2]
 
+##### 混沌工程实施步骤
+    + 制订混沌实验计划
+    + 定义系统稳态指标
+    + 做出系统容错行为假设
+    + 执行混沌实验
+    + 检查系统稳态指标
+    + 记录&恢复混沌实验
+    + 修复发现的问题
+    + 自动化持续进行验证
+
+##### 成熟度
+{% asset_img mature.png 成熟度 %} 
+
+##### 原则
+{% asset_img priciple.png 原则 %}
+
+## 混沌工程
++ 相关产品ChaosBlade
+
+## 参考:
 1. [分布式服务架构下的混沌工程实践](https://blog.csdn.net/xxscj/article/details/96840307) 阿里 穹谷
 2. [混沌工程介绍与实践](https://github.com/StabilityMan/StabilityGuide/blob/master/docs/prevention/resilience/%E6%B7%B7%E6%B2%8C%E5%B7%A5%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%9E%E8%B7%B5.md)  阿里 穹谷
 3. [Netflix 混沌工程手册 Part 1：混沌工程简介](https://www.infoq.cn/article/jjp0c2bR4*Ulld0wb88r)
