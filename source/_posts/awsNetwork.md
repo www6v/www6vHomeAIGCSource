@@ -17,12 +17,14 @@ categories:
 {% asset_img   aws-network-compare.JPG  VPC Peering vs. Transit VPC vs. Transit Gateway  %}
 
 
-+ 单vpc
-  + vpc peering ***
-+ 多vpc
-  + transit gateway ***
-+ transit vpc
+
++ vpc peering ***
+  - [劣势：没有transitive 特性]
++ transit gateway ***
+  - [劣势： 不能跨region. 如果要跨region, 需要TGW之间做peering] 
++ transit vpc(解决方案)
 + private link
+  - vpc上打个洞，用的比较少
 + 专线
   + direct connect ***
 + vpn
