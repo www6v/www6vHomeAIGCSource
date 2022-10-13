@@ -22,6 +22,8 @@ categories:
 ## 稳定性总结
 {% asset_img  stability.jpg  稳定性总结 %}
 
+## 容量保障
+[容量保障](../../../../2022/03/13/capacityGuarantee/)
 
 ### 压测
 + 施压机的分布[6]

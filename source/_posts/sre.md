@@ -34,3 +34,4 @@ categories:
 ## 参考
 09｜案例：互联网典型的SRE组织架构是怎样的？ 赵成
 08｜故障复盘：黄金三问与判定三原则  赵成
+[《SRE google 运维解密》读书笔记 （一）](https://cloud.tencent.com/developer/article/2010397) 未

@@ -31,6 +31,9 @@ categories:
 2. [可观察性 链路追踪](/2019/08/31/observability/)   self
 3. [RPC实战与核心原理进 - 19 | 分布式环境下如何快速定位问题？]()   何小锋
 4. 07｜故障处理：一切以恢复业务为最高优先级
+5. [《SRE google 运维解密》读书笔记 （二）](https://cloud.tencent.com/developer/article/2010401) 未
+6. [《SRE google 运维解密》读书笔记 （三）](https://cloud.tencent.com/developer/article/2010405)
+7. [《SRE google 运维解密》读书笔记 （四）](https://cloud.tencent.com/developer/article/2010408)
  
 
 
