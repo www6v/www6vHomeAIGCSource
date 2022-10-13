@@ -33,6 +33,7 @@ categories:
 
 ## 混沌工程
 + 相关产品ChaosBlade
+  故障注入
 
 ## 参考:
 1. [分布式服务架构下的混沌工程实践](https://blog.csdn.net/xxscj/article/details/96840307) 阿里 穹谷
