@@ -54,7 +54,8 @@ AWS产品白皮书
   + AWS考试券-半价  
 
 ## 其他
-[数据库技术新版图 -Serverless 数据库](https://www.infoq.cn/article/bTU5aTNWu2jyHlS5e6Qq)  
+[数据库技术新版图 -Serverless 数据库](https://www.infoq.cn/article/bTU5aTNWu2jyHlS5e6Qq)  5种
+[AWS 上的无服务器](https://aws.amazon.com/cn/serverless/)  计算 集成 存储
 
 ## 参考
 [11 项 AWS 认证：哪一项适合你和你的团队？](https://www.xiaoheiwoo.com/choosing-the-right-aws-certification/) *
