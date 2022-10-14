@@ -45,27 +45,43 @@ categories:
 ## 存储 (7) *
 + S3 @
 + EFS @ [Elasic File System]
+  Simple, serverless, set-and-forget, elastic file system
 + FSx @
+  Launch, run, and scale feature-rich and highly-performant file systems with just a few clicks
 + S3 Glacier @
+  Long-term, secure, durable storage classes for data archiving at the lowest cost and milliseconds access
 + Storage Gateway @
+  Provide on-premises applications with access to virtually unlimited cloud storage
 + AWS Backup @
+  Centrally manage and automate data protection
 + AWS Elastic Disaster Recovery
 ++
 + Amazon Elastic Block Store (Amazon EBS） @
+  Easy to use, high performance block storage at any scale
 
 
 ## 数据库 (9) *
 + RDS @
 + ElastiCache @
+  Unlock microsecond latency and scale with in-memory caching 
+  [Free]
 + Neptune @
+  Amazon Neptune is a fast, reliable, fully-managed graph database service that makes it easy to build and run applications that work with highly connected datasets.
 + Amazon QLDB
 + Amazon DocumentDB *
+  Scale JSON workloads with ease using a fully managed document database service
+  (with MongoDB compatibility)
+  [Free]
 + Amazon Keyspaces
 + Amazon Timestream
 + DynamoDB @
+  Fast, flexible NoSQL database service for single-digit millisecond performance at any scale
+  [Free]  
 + Amazon MemoryDB for Redis
 + ++
 + Amazon Aurora @ 
+  Designed for unparalleled high performance and availability at global scale with full MySQL and PostgreSQL compatibility
+  Amazon Aurora provides built-in security, continuous backups, serverless compute, up to 15 read replicas, automated multi-Region replication, and integrations with other AWS services. 
 
 
 ## 迁移与传输 (8)*
