@@ -54,6 +54,7 @@ AWS产品白皮书
   + AWS考试券-半价  
 
 ## 其他
+[亚马逊云开发者](https://blog.csdn.net/awschina?type=blog)  亚马逊CSDN blog-会议,咨询
 [数据库技术新版图 -Serverless 数据库](https://www.infoq.cn/article/bTU5aTNWu2jyHlS5e6Qq)  5种
 [AWS 上的无服务器](https://aws.amazon.com/cn/serverless/)  计算 集成 存储
 
