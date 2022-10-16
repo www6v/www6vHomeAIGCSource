@@ -14,27 +14,37 @@ categories:
 ## Overview[1][3]
 {% asset_img   awsNetwork.jpg AWS网路产品 %}
 
-{% asset_img   aws-network-compare.JPG  VPC Peering vs. Transit VPC vs. Transit Gateway  %}
 
-
-
+### 云上网络[场景]
++ vpc
 + vpc peering ***
   - [劣势：没有transitive 特性]
-+ transit gateway ***
-  - [劣势： 不能跨region. 如果要跨region, 需要TGW之间做peering] 
-+ transit vpc(解决方案)
 + private link
   - vpc上打个洞，用的比较少
-+ 专线
-  + direct connect ***
++ ELB 
+
+### 跨地域网络[场景]
++ sd-wan    
+  + cloudwan  
+
+### 混合云网络[场景]
 + vpn
   + client vpn ***
   + vpn gateway  
   + vpn site-to-site *** 
     [AWS Site-to-Site VPN](https://zhuanlan.zhihu.com/p/395805857)
     [AWS Site-to-Site VPN 的工作原理](https://docs.aws.amazon.com/zh_cn/vpn/latest/s2svpn/how_it_works.html)
-+ sd-wan    
-  + cloudwan  
++ 专线
+  + direct connect ***
++ transit gateway ***
+  - [劣势： 不能跨region. 如果要跨region, 需要TGW之间做peering] 
+
+### (解决方案)
++ transit vpc
+
+### VPC Peering vs. Transit VPC vs. Transit Gateway
+{% asset_img   aws-network-compare.JPG  VPC Peering vs. Transit VPC vs. Transit Gateway  %}
+
 
 ## VPC
 + CIDR & subnet

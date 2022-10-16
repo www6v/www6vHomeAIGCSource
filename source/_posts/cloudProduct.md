@@ -31,7 +31,7 @@ Serverless | Lambda | Function Compute| 云函数 SCF
 
 
 ## 网络
-云上网络  | AWS | 阿里云 | 腾讯云 
+云上网络[场景]  | AWS | 阿里云 | 腾讯云 
 :-: | :-: | :-: | :-:
 VPC |VPC | VPC | VPC
 EIP IPv4/IPv6 | EIP | EIP IPv4/IPv6 | EIP IPv4/IPv6
@@ -39,22 +39,23 @@ NAT网关| NAT Gateway| NAT Gateway| NAT Gateway
 负载均衡| ELB(NLB，ALB) | SLB 默认是多可用区的，一主一备<br> CLB: 4层+7层, standby一个可用区中的实例处于工作状态 <br> ALB: 7层,在所有可用区同时工作[3]  | CLB
 私网连接 | Private Link | PrivateLink | Private Link
 计费模式| | 共享带宽包/共享流量包 | 共享带宽包/共享流量包
-
-
-跨地域网络  | AWS | 阿里云 | 腾讯云 
-:-: | :-: | :-: | :-:
 VPC对等连接| VPC Peering | |  对等连接（Peering Connection)
+
+
+跨地域网络[场景]  | AWS | 阿里云 | 腾讯云 
+:-: | :-: | :-: | :-:
 多VPC互联 | Transit Gateway(TGW) | 云企业网（CEN） | 云联网（CCN）
 动态加速网络| Global accelerator | Global accelerator | Anycast Internet Acceleration
 
 
-混合云网络  | AWS | 阿里云 | 腾讯云 
+混合云网络[场景]  | AWS | 阿里云 | 腾讯云 
 :-: | :-: | :-: | :-:
 VPN | VPN | VPN | VPN
 专线| Direct Connect | Express Connect<br>高速通道-专线 | Direct Connect
 DNS | Route 53 | DNS/Private Zone| DNSPod
+SD-WAN | CloudWan | 智能接入网关 SAG | 
 
-ENI， SD-WAN
+ENI， 
  
 ## 存储
  /  | AWS | 阿里云 | 腾讯云 

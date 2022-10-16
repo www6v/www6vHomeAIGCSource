@@ -50,4 +50,12 @@ categories:
   - DNAT
     从公网访问ECS
 
+## VPN网关
++ 协议
+  + IP-Sec
+  + SSL
 
+
+## 参考
++ [云上常见架构设计及优化](https://www.bilibili.com/video/BV1tD4y1977x) 阿里云 ***
++ 《云网络》 阿里云
