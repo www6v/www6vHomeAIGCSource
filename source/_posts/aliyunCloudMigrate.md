@@ -1,11 +1,11 @@
 ---
-title: 云迁移 Migrate
+title: 阿里云-云迁移Migrate
 date: 2021-06-27 21:58:28
 tags:
   - 云计算
 categories:
   - 云计算  
-  - 云迁移
+  - 阿里云
 ---
 
 <p></p>
