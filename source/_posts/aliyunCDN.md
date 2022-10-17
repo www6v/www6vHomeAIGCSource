@@ -1,11 +1,11 @@
 ---
-title: CDN
+title: 阿里云-CDN
 date: 2022-01-15 21:57:51
 tags:
   - 云计算
 categories:
   - 云计算  
-  - CDN
+  - 阿里云
 ---
 
 <p></p>
@@ -66,4 +66,4 @@ categories:
 ##### 七层动态加速
 
 ## 参考
-《CDN技术架构》 
+《CDN技术架构》  阿里云

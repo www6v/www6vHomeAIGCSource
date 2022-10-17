@@ -53,6 +53,11 @@ AWS产品白皮书
     24小时之前改期，只能改期2次 
   + AWS考试券-半价  
 
+## 其他
+[亚马逊云开发者](https://blog.csdn.net/awschina?type=blog)  亚马逊CSDN blog-会议,咨询
+[数据库技术新版图 -Serverless 数据库](https://www.infoq.cn/article/bTU5aTNWu2jyHlS5e6Qq)  5种
+[AWS 上的无服务器](https://aws.amazon.com/cn/serverless/)  计算 集成 存储
+
 ## 参考
 [11 项 AWS 认证：哪一项适合你和你的团队？](https://www.xiaoheiwoo.com/choosing-the-right-aws-certification/) *
 [AWS认证之路 - 备战 AWS Certification 考试](https://www.bilibili.com/video/BV1gU4y177TE/) bilibili  *
