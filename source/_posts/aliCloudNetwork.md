@@ -50,12 +50,17 @@ categories:
   - DNAT
     从公网访问ECS
 
-## VPN网关
+## VPN网关[2]
 + 协议
   + IP-Sec
+    IPSec-VPN低成本快速构建混合云
   + SSL
-
+    远程用户访问公司敏感数据的方案[远程办公场景]
+    简单、安全
+    
+## 高速通道[2]
++ 基于运营商的专线接入公有云
 
 ## 参考
-+ [云上常见架构设计及优化](https://www.bilibili.com/video/BV1tD4y1977x) 阿里云 ***
-+ 《云网络》 阿里云
++ 1. [云上常见架构设计及优化](https://www.bilibili.com/video/BV1tD4y1977x) 阿里云 ***
++ 2. 《云网络》 阿里云
