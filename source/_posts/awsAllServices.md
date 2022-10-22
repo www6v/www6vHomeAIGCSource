@@ -86,16 +86,25 @@ categories:
 
 ## 迁移与传输 (8)*
 + AWS Migration Hub   @
+  Discover the tools that you need to simplify your migration and modernization
+  AWS Migration Hub provides a central location to collect server and application inventory data for the assessment, planning, and tracking of migrations to AWS. Migration Hub can also help accelerate application modernization following migration.
 + AWS Application Migration Service
 + Application Discovery Service
 + Database Migration Service  @ dms
+  Homogeneous Database Migrations
+  Heterogeneous Database Migrations
 + AWS Transfer Family  @
+  AWS Transfer Family securely scales your recurring business-to-business file transfers to AWS Storage services using SFTP, FTPS, FTP, and AS2 protocols. 
 + AWS Snow Family
 + DataSync   @
+  Simplify and accelerate secure data migrations
 + AWS Mainframe Modernization
 ++ 
 + AWS Server Migration Service (AWS SMS) @
+  Migrate your on-premises workloads to AWS 
 + AWS Snowball  @
+  专为边缘计算和数据迁移构建
+  使用 AWS Snowball，你需要到 AWS 管理控制台申请，AWS 会邮寄一个物理 Snowball 给你，然后你需要通过以太网和客户端软件把数据从本地传输到 Snowball上，最后将 Snowball 邮寄给 AWS 即可。AWS 会负责将 Snowball 内的数据导入到你所需要的 S3 存储桶上。
 
 ## 联网和内容分发 (10) *
 + VPC  @
