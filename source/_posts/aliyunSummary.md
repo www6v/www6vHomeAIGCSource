@@ -21,3 +21,5 @@ categories:
  [阿里云-混合云HybridCloud](../../../../2022/01/04/aliyunHybridCloud/) 
  
  [阿里云-容灾恢复DisasterRecovery](../../../../2022/06/26/aliyunDisasterRecovery)
+
+ [阿里云最佳实践-BestPractice](../../../../2022/03/24/aliyunBestPractice/)
