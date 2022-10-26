@@ -115,6 +115,7 @@ categories:
 + AWS App Mesh *
 + AWS Cloud Map
 + Global Accelerator @
+  [使用 AWS Global Accelerator 加速你的服务](https://kebingzao.com/2020/08/13/aws-ga/)
 + Amazon VPC IP Address Manager
 + AWS Private 5G
 ++ 
