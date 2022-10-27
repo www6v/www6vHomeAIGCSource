@@ -12,7 +12,7 @@ categories:
 <!-- more -->
 
 ## LB[2]
-+ 3类lb[hand-on]
++ 3类LB [hand-on]
   - classic LB
   - Application LB
   - Network LB
@@ -39,15 +39,27 @@ categories:
 参考：
 [AWS解决方案架构师认证 Professional(SAP)中文视频培训课程2022](https://www.bilibili.com/video/BV1hJ411U7vd?)  P23-25
 
-## Lambda[1]
+
+## Serverless
+领域  |  Serverless 服务
+:-:| :-:
+计算  |   Lambda， Fargate
+程序集成 |  EventBridge, SNS, Step Functions,  SQS,  API Gateway,  AppSync
+存储 |   S3， DynamoDB， RDS，Aurora Serverless
+分析  | Redshift Serverless, EMR Serverless，MSK Serverless
+
+
+##### Lambda[1]
 + 场景
 + 并发 流量
 + 版本
 
+参考:
+[AWS 15 年（1）：从 Serverful 到 Serverless](https://www.cnblogs.com/sammyliu/p/15739301.html)
+
 ## 参考
 1. bilibili video
 2. aws中文教程
-
 
 
 
