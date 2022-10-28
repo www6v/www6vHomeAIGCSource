@@ -29,7 +29,7 @@ categories:
 {% asset_img mature.png 成熟度 %} 
 
 ##### 原则
-{% asset_img priciple.png 原则 %}
+{% asset_img priciple.jpg 原则 %}
 
 ## 混沌工程
 + 相关产品ChaosBlade
