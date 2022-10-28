@@ -11,6 +11,11 @@ categories:
 <p></p>
 <!-- more -->
 
+## EC2
+##### Types
+{% asset_img  ec2-types.JPG  EC2类型 %}
+
+
 ## LB[2]
 + 3类LB [hand-on]
   - classic LB
