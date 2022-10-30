@@ -15,9 +15,14 @@ top: true
 
 [AWS 所有的Services](../../../../2022/10/01/awsAllServices/)
 [AWS Computing](../../../../2022/03/30/awsComputing/)
-[AWS Network](../../../../2022/10/01/awsNetwork/)
 [AWS Storage](../../../../2022/10/01/awsStorage/)
 [AWS Database](../../../../2022/10/01/awsDatabase/)
 [AWS Security](../../../../2022/10/01/awssecurity/)
 [AWS 三层架构](../../../../2022/05/01/awsArch/)
 [AWS 学习资源](../../../../2022/10/01/awsStudyResource/)
+
+[AWS Network](../../../../2022/10/01/awsNetwork/)
+[AWS Network-VPC](../../../../2022/10/30/awsNetworkVPC/)
+[AWS Network-Direct Connect](../../../../2022/10/30/awsNetworkDX/)
+ 
+
