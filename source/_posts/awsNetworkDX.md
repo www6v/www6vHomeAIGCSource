@@ -11,14 +11,22 @@ categories:
 <p></p>
 <!-- more -->
 
-## Direct Connect[6]   
+## Direct Connect[1][2]   
 + Virtual Interfaces 
   - Public VIF
     公共 VIF 使您的网络能够访问所有区域（中国除外）的 AWS 全球骨干网络上的所有 AWS 公共 IP 地址。
   - Private VIF
     私有 VIF 使您的网络能够通过其私有 IP 地址访问已在您的虚拟私有云 (VPC) 中配置的资源。
 
++ 高可用
+  [常规做法: DX + VPN]
+  
++ 双向转发检测 (BFD)
+  DR
 
-## 参考 
-6. [SAP-1] Direct Connect Section
+
+## 参考
+1. [Chapter5 AWS Direct Connect](https://zhuanlan.zhihu.com/p/531166462) 
+2. [SAP-1] Direct Connect Section
+
 
