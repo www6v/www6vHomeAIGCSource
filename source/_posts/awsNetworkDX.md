@@ -24,6 +24,11 @@ categories:
 + 双向转发检测 (BFD)
   DR
 
++ Billing
+  - 两个主要成本组成部分
+    -  所有 AWS Direct Connect 位置的每端口小时定价和 [使用时长]
+    -  AWS Direct Connect 位置和 AWS 区域的数据传出费用  [数据传输的量]
+
 
 ## 参考
 1. [Chapter5 AWS Direct Connect](https://zhuanlan.zhihu.com/p/531166462) 
