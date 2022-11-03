@@ -30,7 +30,7 @@ categories:
     [YOUTUBE上播放量超过16万人次的AWS SAA认证视频](https://www.bilibili.com/video/BV1K7411H7xm/) 不全
   + AWS 认证解决方案架构师 – 专业 (SAP-C01)
     [Amazon ECS 和 Fargate 大师班 - AWS 上的 Docker](https://www.bilibili.com/video/BV1nR4y1N72u/) 中文
-    [ AWS Solution Architect Professional, Stephane Maarek-2020](https://www.bilibili.com/video/BV1S541187uv/) 无字幕
+    [AWS Solution Architect Professional, Stephane Maarek-2020](https://www.bilibili.com/video/BV1S541187uv/) 无字幕
 
 ## special
 + AWS 认证高级网络 – 专业 (ANS-C00)
