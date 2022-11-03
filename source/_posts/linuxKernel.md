@@ -15,7 +15,7 @@ categories:
 关键字: 内核, 系统调用
 
 ## Big Map
-{% asset_img  kernelMap.jpg  kernel %}
+{% asset_img  kernelMap1.jpg  kernel %}
 
 <div style="text-align: center;">
 
