@@ -24,5 +24,7 @@ top: true
 [AWS Network](../../../../2022/10/01/awsNetwork/)
 [AWS Network-VPC](../../../../2022/10/30/awsNetworkVPC/)
 [AWS Network-Direct Connect](../../../../2022/10/30/awsNetworkDX/)
+[AWS Network-CDN](../../../../2022/05/03/awsNetworkCDN/)
+[AWS Network-DNS](../../../..//2022/05/03/awsNetworkDNS/)
  
 
