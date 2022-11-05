@@ -6,6 +6,7 @@ tags:
 categories:
   - 云计算  
   - AWS
+  - 学习资源  
 ---
 
 <p></p>
