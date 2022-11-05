@@ -63,4 +63,5 @@ AWS产品白皮书
 [11 项 AWS 认证：哪一项适合你和你的团队？](https://www.xiaoheiwoo.com/choosing-the-right-aws-certification/) *
 [AWS认证之路 - 备战 AWS Certification 考试](https://www.bilibili.com/video/BV1gU4y177TE/) bilibili  *
 [口袋资源](https://www.koudaizy.com) ***
+[亚马逊云科技 视频中心](https://aws.amazon.bokecc.com/) *** 
 
