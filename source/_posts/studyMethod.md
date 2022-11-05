@@ -11,7 +11,7 @@ categories:
 <!-- more -->
 
 
-## 笔记
+## 笔记[1]
 + 康奈尔笔记法
    - 最上 题目
    - 最左 提炼
@@ -37,6 +37,9 @@ categories:
 
 ## 思维导图
 
+## 学习方法
+[【英国学霸】其实你不是笨：如何学好重难点知识与科目？！](https://www.bilibili.com/read/cv19167283)
+
+
 ## 参考
-bili
-[非常实用的笔记方法](https://zhuanlan.zhihu.com/p/498568360)
+1. [非常实用的笔记方法](https://zhuanlan.zhihu.com/p/498568360)
