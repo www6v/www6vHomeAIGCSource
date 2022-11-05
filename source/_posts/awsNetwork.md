@@ -51,6 +51,10 @@ categories:
 3. [【云计算】AWS高级网络.LAB1.1.vpc_peering](https://www.bilibili.com/video/BV1CG41137bx/)
 7. [AWS networking](https://www.zhihu.com/column/c_1520366118765621248) *** 笔记  未
 
+### white paper
+[Building a Scalable and Secure Multi-VPC AWS Network Infrastructure-AWS Whitepaper](https://d1.awsstatic.com/whitepapers/building-a-scalable-and-secure-multi-vpc-aws-network-infrastructure.pdf) ***  未
+[教主技术进化论2022第24期 AWS网络白皮书.1.vpc_peering](https://www.bilibili.com/video/BV1Cd4y1377m/) 
+
 
 
 
