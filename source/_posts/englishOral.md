@@ -13,11 +13,24 @@ categories:
 <!-- more -->
 
 ## 口语
-+ 辅音 + 元音 
-  - 1
-  - 2
-  - flap t
-+ 元音 + 元音
+ + 连读 
+  - Linking 辅+元
+    -  常规
+    -  不送气
+    -  flap t, 闪音  
+  - Insertion 元+元 
+    拖长    
++ 略读 Gemination 辅+辅
+  /t/ + /d/ , 浊辅音 + 清辅音 
++ 吞音 
+  - Gemination 辅+辅
+  - Glottal stop[仅作了解，听懂就可以]
++ 略读 [常见]
+  - H-dropping
+  - G-dropping
++ 变音 Fusion 同化
++ 弱读[常见], 缩写, 其他
+
 
 参考:
 [【合集完结】【最全英语连读规则】英语听力口语发音提高秘诀](https://www.bilibili.com/video/BV1WW41147bm/) ***
@@ -34,12 +47,11 @@ step6:recap your day in English[复习 回顾]
 参考:
 [【瑞秋英语】培养英语思维-第2期（美式英语）](https://www.bilibili.com/video/BV1By4y1z7LC/)
 
-## 参考
-bili
 
-+ 音标
+## 音标
 [KK美式英语音标（发音口型教学）](https://www.bilibili.com/video/BV1cW411773Y/)  *** 
 [【纯正英式发音】这是BBC出品的到现在为止最棒的英语发音教程（完整版）](https://www.bilibili.com/video/BV1GJ411X7hu/)  ***
+
 
 
 
