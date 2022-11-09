@@ -39,12 +39,15 @@ categories:
   - Transition actions
   - Expiration actions
 
-+ s3访问策略[1]  
-{% asset_img s3-accessPolicy.JPG  s3访问策略 %}
++ 访问S3
+  + s3访问策略[1]  
+    {% asset_img s3-accessPolicy.JPG  s3访问策略 %}
+  + 访问方式[4]
+    - private Address
+    - public Address
 
-+ 访问方式[4]
-  - private Address
-  - public Address
++ Versioning
+  + preserve, retrieve, and restore
 
 ## 参考
 1. [AWS解决方案架构师认证 Professional(SAP)中文视频培训课程2022](https://www.bilibili.com/video/BV1hJ411U7vd?)  P10
