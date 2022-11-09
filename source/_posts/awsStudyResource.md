@@ -58,6 +58,7 @@ AWS产品白皮书
 [亚马逊云开发者](https://blog.csdn.net/awschina?type=blog)  亚马逊CSDN blog-会议,咨询
 [数据库技术新版图 -Serverless 数据库](https://www.infoq.cn/article/bTU5aTNWu2jyHlS5e6Qq)  5种
 [AWS 上的无服务器](https://aws.amazon.com/cn/serverless/)  计算 集成 存储
+[全是aws干货](https://www.zhihu.com/column/c_1347591909771182080) 分享aws云经验，提供实操干货
 
 ## 参考
 [11 项 AWS 认证：哪一项适合你和你的团队？](https://www.xiaoheiwoo.com/choosing-the-right-aws-certification/) *
