@@ -64,6 +64,7 @@ AWS产品白皮书
 在线研讨会, re:Invent, Innovate,  Summit,  Transformation Day
 [亚马逊云科技中国市场及培训活动](https://aws.amazon.com/cn/about-aws/events/) *** 
 [aws 在线研讨会](https://aws.amazon.com/cn/about-aws/events/webinar/2019/) ***  2015-2019
+[亚马逊云科技官方账号](https://space.bilibili.com/418158141) *** bili  - INNOVATE 2020
 [亚马逊云开发者](https://blog.csdn.net/awschina?type=blog)  亚马逊CSDN blog-会议,咨询
 [全是aws干货](https://www.zhihu.com/column/c_1347591909771182080) 分享aws云经验，提供实操干货
 
