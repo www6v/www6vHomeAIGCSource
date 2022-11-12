@@ -20,7 +20,6 @@ categories:
   + AWS 认证 SysOps 管理员 – 助理 (SOA-C02)
    [2022 终极 AWS 认证 - SysOps 管理员助理-上](https://www.bilibili.com/video/BV15U4y1S73s/) 大量实操 中文
    [2022 终极 AWS 认证 - SysOps 管理员助理-下](https://www.bilibili.com/video/BV1F3411N7TJ/) 大量实操 中文
-
   + AWS 认证 DevOps 工程师 – 专业 (DOP-C01)
 
 + Solution
@@ -54,15 +53,20 @@ AWS产品白皮书
     24小时之前改期，只能改期2次 
   + AWS考试券-半价  
 
-## 其他
-[亚马逊云开发者](https://blog.csdn.net/awschina?type=blog)  亚马逊CSDN blog-会议,咨询
-[数据库技术新版图 -Serverless 数据库](https://www.infoq.cn/article/bTU5aTNWu2jyHlS5e6Qq)  5种
-[AWS 上的无服务器](https://aws.amazon.com/cn/serverless/)  计算 集成 存储
-[全是aws干货](https://www.zhihu.com/column/c_1347591909771182080) 分享aws云经验，提供实操干货
-
-## 参考
+参考:
 [11 项 AWS 认证：哪一项适合你和你的团队？](https://www.xiaoheiwoo.com/choosing-the-right-aws-certification/) *
 [AWS认证之路 - 备战 AWS Certification 考试](https://www.bilibili.com/video/BV1gU4y177TE/) bilibili  *
+
+
+## 其他
 [口袋资源](https://www.koudaizy.com) ***
 [亚马逊云科技 视频中心](https://aws.amazon.bokecc.com/) *** 
+在线研讨会, re:Invent, Innovate,  Summit,  Transformation Day
+[亚马逊云科技中国市场及培训活动](https://aws.amazon.com/cn/about-aws/events/) *** 
+[aws 在线研讨会](https://aws.amazon.com/cn/about-aws/events/webinar/2019/) ***  2015-2019
+[亚马逊云开发者](https://blog.csdn.net/awschina?type=blog)  亚马逊CSDN blog-会议,咨询
+[全是aws干货](https://www.zhihu.com/column/c_1347591909771182080) 分享aws云经验，提供实操干货
+
+
+
 
