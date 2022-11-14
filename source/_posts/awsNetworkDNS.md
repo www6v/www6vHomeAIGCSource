@@ -33,6 +33,10 @@ categories:
   + for public resources
     - Private Hosted Zones
       create a CloudWatch Metric and associate a CloudWatch Alarm
+  + Resolver Endpoints
+    - Inbound Endpoint
+    - Outbound Endpoint
+      - Resolver Rules    
 
 ## 参考
 SAP-2  DNS Section
