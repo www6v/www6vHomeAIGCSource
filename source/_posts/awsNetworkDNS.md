@@ -8,5 +8,20 @@ categories:
   - AWS
 ---
 
+## Route 53
++ Routing Policies
+  + Simple
+  + Weighted 
+  + Latency-based
+  + Failover (Active-Passive)
+  + Geolocation
+  + Geoproximity
+    - Traffic flow
+
+
++ Hosted Zones
+  - Public Hosted Zones
+  - Private Hosted Zones
+
 <p></p>
 <!-- more -->
