@@ -49,10 +49,29 @@ categories:
 + Versioning
   + preserve, retrieve, and restore
 
++ 基本特性[5]
+  - S3的文件存储在存储桶（Buckets）内，可以理解为文件夹
+  - 存储桶创建之后会生成一个URL
+    S3是以HTTPS的形式展现的，而非HTTP
+  - S3的存储桶创建的时候可以选择所在区域（Region），但不能选择可用区（AZ），AWS会负责S3的高可用、容灾问题 
+    - S3创建的时候可以选择某个AWS区域，一旦选择了就不能更改
+    - 如果要在其他区域使用该S3的内容，可以使用跨区域复制
+  - S3拥有不同的等级（Standard, Stantard-IA, Onezone-IA, RRS, Glacier）
+  - 启用了版本控制（Version Control）你可以恢复S3内的文件到之前的版本
+  - S3可以开启生命周期管理
+    - 要启用生命周期管理需要先启用版本控制功能
+  - 支持加密功能  
+  - 使用访问控制列表（Access Control Lists）和桶策略（Bucket Policy）可以控制S3的访问安全
+
+
+
 ## 参考
 1. [AWS解决方案架构师认证 Professional(SAP)中文视频培训课程2022](https://www.bilibili.com/video/BV1hJ411U7vd?)  P10
 2. [SAP-2] Storage Section *** 
 3. [S3 Select and Glacier Select – Retrieving Subsets of Objects](https://aws.amazon.com/blogs/aws/s3-glacier-select/)
 4. [SAP-1] *** 
+5. [AWS学习笔记（十） Amazon Simple Storage Service (S3)](http://www.cloudbin.cn/?p=1968) 
 
 [海量数据云归档最佳实践](https://www.bilibili.com/video/BV14a4y1W77S/) bili ucloud
+
+
