@@ -29,5 +29,12 @@ categories:
   - Allow list
   - Block list    
 
+
++ CloudFront vs. S3 CRR  
+  + CloudFront
+    Great for static content
+  + S3 CRR
+    Great for dynamic content  
+
 ## 参考
 SAP-2  Caching Section
