@@ -8,6 +8,10 @@ categories:
   - AWS
 ---
 
+<p></p>
+<!-- more -->
+
+
 ## Route 53
 + Routing Policies
   + Simple
@@ -23,5 +27,10 @@ categories:
   - Public Hosted Zones
   - Private Hosted Zones
 
-<p></p>
-<!-- more -->
+
+## 参考
+SAP-2  DNS Section
+[AWS学习笔记（十八） Route53](http://www.cloudbin.cn/?p=2349)
+
+
+
