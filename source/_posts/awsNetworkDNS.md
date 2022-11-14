@@ -36,7 +36,9 @@ categories:
   + Resolver Endpoints
     - Inbound Endpoint
     - Outbound Endpoint
-      - Resolver Rules    
+      - Resolver Rules  
+
++ CNAME vs 别名        
 
 ## 参考
 SAP-2  DNS Section
