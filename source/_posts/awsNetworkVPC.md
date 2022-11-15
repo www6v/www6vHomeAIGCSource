@@ -47,7 +47,7 @@ categories:
   - 接口终端节点
     支持Kinesis Streams、ELB API、Amazon EC2 API等  .
     接口终端节点（由 AWS PrivateLink 提供支持）在您的 VPC 中使用具有私有 IP 地址的弹性网络接口，该地址用作流向受支持服务的流量的入口点。
-
+{% asset_img  vpc-endpoint.JPG  interface endpoint vs. Gateway endpoint %}
 
 + IP 寻址
 + 仅出口 Internet 网关 (EIGW)
