@@ -28,9 +28,9 @@ categories:
 ## 参考
 2. [Chapter 2-Amazon Virtual Private Cloud (Amazon VPC) and Networking Fundamentals](https://zhuanlan.zhihu.com/p/529181222) *** 
 
-[44-VPC 终端节点-网关终端节点](https://www.iloveaws.cn/3257.html)
+[44-VPC 终端节点-网关终端节点](https://www.iloveaws.cn/3257.html) seen
 [45-VPC 终端节点-接口终端节点](https://www.iloveaws.cn/3606.html)
-[46-使用VPC终端节点策略控制对服务的访问](https://www.iloveaws.cn/3638.html)
+[46-使用VPC终端节点策略控制对服务的访问](https://www.iloveaws.cn/3638.html) seen
 [53-VPC 终端节点服务](https://www.iloveaws.cn/3882.html)  seen
 [47-配置VPC终端节点策略](https://www.iloveaws.cn/3656.html)
 
