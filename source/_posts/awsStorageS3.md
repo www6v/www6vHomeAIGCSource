@@ -1,5 +1,5 @@
 ---
-title: AWS Storage
+title: AWS Storage-S3
 date: 2022-10-01 06:23:50
 tags:
   - 云计算
@@ -10,10 +10,6 @@ categories:
 
 <p></p>
 <!-- more -->
-
-## EBS
-
-## EFS
 
 ## S3
 + S3[2]
@@ -63,8 +59,6 @@ categories:
   - 支持加密功能  
   - 使用访问控制列表（Access Control Lists）和桶策略（Bucket Policy）可以控制S3的访问安全
 
-
-
 ## 参考
 1. [AWS解决方案架构师认证 Professional(SAP)中文视频培训课程2022](https://www.bilibili.com/video/BV1hJ411U7vd?)  P10
 2. [SAP-2] Storage Section *** 
@@ -75,3 +69,8 @@ categories:
 [海量数据云归档最佳实践](https://www.bilibili.com/video/BV14a4y1W77S/) bili ucloud
 
 
+
+[08-S3存储桶策略（S3 Bucket Policies）](https://www.iloveaws.cn/1238.html)
+[09-配置跨账户S3存储桶的访问（Cross Account S3 Bucket Configuration）](https://www.iloveaws.cn/1361.html)
+[10-S3标准 ACL（Canned ACL）](https://www.iloveaws.cn/1426.html)
+[39-S3存储桶跨区域复制 (CRR)](https://www.iloveaws.cn/2428.html)
