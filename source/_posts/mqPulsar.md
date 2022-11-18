@@ -17,16 +17,21 @@ categories:
 
 ## 物理架构 [1]
 + broker <-> bundle负载均衡 <-> topic
-  	+ bundle负载均衡
-  	  一致性hash映射
-  	  以Bundle为单位进行Topic迁移
-    + brocker leader
-      负责为其他几个Broker分配Bundle
+  - bundle负载均衡
+  	一致性hash映射
+  	以Bundle为单位进行Topic迁移
+  - brocker leader
+    负责为其他几个Broker分配Bundle
+
+{% asset_img bundle.png bundle %}      
 
 ## 逻辑架构 [1]
 + tenant  
    + namespace
      + topic
+
+## 架构
+{% asset_img concept.png 概念 %} 
 
 
 ## 跨地域复制[2]
@@ -35,6 +40,9 @@ categories:
 + 单向复制
 + Failover 模式
   单向复制的特例
+
+
+
 
 
 ## 参考
