@@ -29,9 +29,14 @@ categories:
     -  所有 AWS Direct Connect 位置的每端口小时定价和 [使用时长]
     -  AWS Direct Connect 位置和 AWS 区域的数据传出费用  [数据传输的量]
 
++ Direct Connect gateway[3][4]
+  Virtual private gateway associations
+  private VIF that references the Gateway and the Connection
+  {% asset_img directConnectionGateway.JPG  Direct Connect gateway %} 
 
 ## 参考
 1. [Chapter5 AWS Direct Connect](https://zhuanlan.zhihu.com/p/531166462) 
 2. [SAP-1] Direct Connect Section
-
+3. [New – AWS Direct Connect Gateway – Inter-Region VPC Access](https://aws.amazon.com/blogs/aws/new-aws-direct-connect-gateway-inter-region-vpc-access/)
+4. [Working with Direct Connect gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html)
 
