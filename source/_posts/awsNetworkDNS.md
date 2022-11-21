@@ -12,7 +12,7 @@ categories:
 <!-- more -->
 
 
-## Route 53
+## Route 53 [1][2]
 + Routing Policies
   + Simple
   + Weighted 
@@ -21,11 +21,14 @@ categories:
   + Geolocation
   + Geoproximity
     - Traffic flow
-
+  
+  {% asset_img routingPolicy.JPG  Routing Policy %}
 
 + Hosted Zones
+  hosted zone: a set of records belonging to a domain
   - Public Hosted Zones
   - Private Hosted Zones
+    Association with VPC
 
 
 + Health Checks
@@ -41,8 +44,9 @@ categories:
 + CNAME vs 别名        
 
 ## 参考
-SAP-2  DNS Section
-[AWS学习笔记（十八） Route53](http://www.cloudbin.cn/?p=2349)
+1. SAP-1  
+2. SAP-2  DNS Section
+3. [AWS学习笔记（十八） Route53](http://www.cloudbin.cn/?p=2349)
 
 
 
