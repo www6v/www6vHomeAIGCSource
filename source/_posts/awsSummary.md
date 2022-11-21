@@ -24,7 +24,7 @@ top: true
 
 
 [AWS Storage-S3](../../../../2022/10/01/awsStorageS3/)
-[AWS Storage-EBS](../../../../2022/11/17/awsStorageEBS/)
+[AWS Storage-EBS](../../../../2022/06/17/awsStorageEBS/)
 [AWS Storage-EFS](../../../../2022/06/17/awsStorageEFS/)
 
 
