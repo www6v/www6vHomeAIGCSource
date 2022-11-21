@@ -143,9 +143,12 @@ categories:
 • Amazon Fraud Detector
 • Amazon Kendra
 • Amazon Lex
+  Build chatbots with conversational AI
 • Amazon Personalize
 • Amazon Polly
+  Amazon Polly uses deep learning technologies to synthesize natural-sounding human speech, so you can convert articles to speech. 
 • Amazon Rekognition
+  Automate your image and video analysis with machine learning
 • Amazon SageMaker
 • Amazon Textract
 • Amazon Transcribe
