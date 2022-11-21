@@ -60,13 +60,17 @@ categories:
   + preserve, retrieve, and restore
 
 
-## AWS Storage Gateway[4]
+## AWS Storage Gateway[4][6]
 + File Gateway
   SMB or NFS-based access
 + Volume Gateway
   Block storage – iSCSI protocol
+  + Cached volumes
+    provides low-latency access to your frequently accessed data but not to the entire data.
+  + Stored volumes 
+    store your primary data locally, while asynchronously back up that data to AWS.
 + Tape Gateway
-
+[AWS Storage Gateway Documentation](https://docs.aws.amazon.com/storagegateway/index.html)
 
 ## 参考
 1. [AWS解决方案架构师认证 Professional(SAP)中文视频培训课程2022](https://www.bilibili.com/video/BV1hJ411U7vd?)  P10
@@ -74,11 +78,12 @@ categories:
 3. [S3 Select and Glacier Select – Retrieving Subsets of Objects](https://aws.amazon.com/blogs/aws/s3-glacier-select/)
 4. [SAP-1] *** 
 5. [AWS学习笔记（十） Amazon Simple Storage Service (S3)](http://www.cloudbin.cn/?p=1968) 
+6. [Practice Set 1]() Question 13
 
 Series
-6. [08-S3存储桶策略（S3 Bucket Policies）](https://www.iloveaws.cn/1238.html)
-7. [09-配置跨账户S3存储桶的访问（Cross Account S3 Bucket Configuration）](https://www.iloveaws.cn/1361.html)
-8. [10-S3标准 ACL（Canned ACL）](https://www.iloveaws.cn/1426.html)
-9. [39-S3存储桶跨区域复制 (CRR)](https://www.iloveaws.cn/2428.html)
+10. [08-S3存储桶策略（S3 Bucket Policies）](https://www.iloveaws.cn/1238.html)
+11. [09-配置跨账户S3存储桶的访问（Cross Account S3 Bucket Configuration）](https://www.iloveaws.cn/1361.html)
+12. [10-S3标准 ACL（Canned ACL）](https://www.iloveaws.cn/1426.html)
+13. [39-S3存储桶跨区域复制 (CRR)](https://www.iloveaws.cn/2428.html)
 
 [海量数据云归档最佳实践](https://www.bilibili.com/video/BV14a4y1W77S/) bili ucloud
