@@ -53,6 +53,16 @@ categories:
 + DNS 服务器  
 
 
+## Bring your own IP addresses (BYOIP)
+**Bring Your Own IP (BYOIP) enables customers to move all or part of their existing publicly routable IPv4 or IPv6 address space to AWS for use with their AWS resources.** Customers will continue to own the IP range. Customers can create Elastic IPs from the IPv4 space they bring to AWS and use them with EC2 instances, NAT Gateways, and Network Load Balancers. Customers can also associate up to 5 CIDRs to a VPC from the IPv6 space they bring to AWS. Customers will continue to have access to Amazon-supplied IPs and can choose to use BYOIP Elastic IPs, Amazon-supplied IPs, or both.
+
+
+参考
+[Amazon VPC 常见问题](https://aws.amazon.com/cn/vpc/faqs/)  *** BYOIP
+[Introducing Bring Your Own IP (BYOIP) for Amazon VPC](https://aws.amazon.com/cn/blogs/networking-and-content-delivery/introducing-bring-your-own-ip-byoip-for-amazon-vpc/) *** 
+[Bring your own IP addresses (BYOIP) in Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html)
+
+
 
 ## 参考
 1. [SAP-1] VPC Section *** 
