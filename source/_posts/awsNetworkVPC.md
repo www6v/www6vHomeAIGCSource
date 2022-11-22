@@ -59,7 +59,7 @@ categories:
 
 参考
 [Amazon VPC 常见问题](https://aws.amazon.com/cn/vpc/faqs/)  *** BYOIP
-[Introducing Bring Your Own IP (BYOIP) for Amazon VPC](https://aws.amazon.com/cn/blogs/networking-and-content-delivery/introducing-bring-your-own-ip-byoip-for-amazon-vpc/) *** 
+[Introducing Bring Your Own IP (BYOIP) for Amazon VPC](https://aws.amazon.com/cn/blogs/networking-and-content-delivery/introducing-bring-your-own-ip-byoip-for-amazon-vpc/) ***  50%
 [Bring your own IP addresses (BYOIP) in Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html)
 [Practice Set 1] 32题
 
