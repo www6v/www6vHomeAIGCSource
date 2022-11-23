@@ -158,6 +158,7 @@ categories:
 ## Management and Governance:
 • AWS CloudFormation  @
 • AWS CloudTrail
+  AWS CloudTrail monitors and records account activity across your AWS infrastructure, giving you control over storage, analysis, and remediation actions. 
 • Amazon CloudWatch  @
 • Amazon CloudWatch Logs  @
 • AWS Command Line Interface (AWS CLI)
