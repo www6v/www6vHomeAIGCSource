@@ -32,6 +32,7 @@ top: true
 
 ## 其他
 [AWS 所有的Services](../../../../2022/10/01/awsAllServices/)
+[AWS Account和Orgnization](../../../../2022/06/23/awsAccountOrgnization/)
 [AWS Serverless](../../../../2022/05/12/awsServerless/)
 [AWS Database](../../../../2022/10/01/awsDatabase/)
 [AWS Security](../../../../2022/10/01/awssecurity/)
