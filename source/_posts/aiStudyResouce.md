@@ -34,6 +34,7 @@ categories:
 + [聚类算法：层次聚类、k-means 聚类、k-medoids 聚类、密度聚类](https://www.bilibili.com/video/BV1Bg411Z77N?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)  ***
 + Coursera吴恩达- 《machine learning》+ 笔记  入门  *** 
 + [Machine Learning A-Z Hands-On Python & R In Data Science](https://www.bilibili.com/video/av79340208/)  Udemy 入门  ***
++ [【人工智能系列】【中文】机器学习A-Z Machine Learning in Chinese(前7部分)](https://www.bilibili.com/video/BV1KB4y1E73v)
 + [[Coursera公开课] [机器学习专项课程1/4] 机器学习基础：案例研究](https://www.bilibili.com/video/BV1jF411A7VF/)  ***
 
 ## 深度学习
