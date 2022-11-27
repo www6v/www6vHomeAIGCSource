@@ -10,3 +10,9 @@ categories:
 
 <p></p>
 <!-- more -->
+
+
+## RDS
+
+## 参考
+[Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)
