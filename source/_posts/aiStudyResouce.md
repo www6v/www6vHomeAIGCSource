@@ -16,8 +16,20 @@ categories:
 + 极客时间 《AI 技术内参》  洪亮劼
 + 百度技术培训中心 [人工智能学习路线](http://bit.baidu.com/courseRouteDetail?id=111) 
 
-## 机器学习
-+ 极客时间 《机器学习 40 讲》  王天一
+
+
+## 书籍
++ 理论
+  + The Hundred-Page Machine Learning Book - 入门
+  + 西瓜书
+  + 花书
++ 框架
+  + Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, v3 - 入门
+  + Deep Learning with PyTorch - 入门
+  + Deep Learning with Python - v2 - keras库
+
+## 机器学习 
++ 极客时间 《机器学习 40 讲》  王天一 
 + 极客训练营 《机器学习训练营1期》  视频课 
 + [聚类算法：层次聚类、k-means 聚类、k-medoids 聚类、密度聚类](https://www.bilibili.com/video/BV1Bg411Z77N?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)  ***
 + Coursera吴恩达- 《machine learning》+ 笔记  入门  *** 
@@ -48,5 +60,5 @@ categories:
 + 极客时间 [TensorFlow 快速入门与实战](https://time.geekbang.org/course/intro/100023001?tab=catalog)
 + 中国大学MOOC [深度学习应用开发-TensorFlow实践](https://www.icourse163.org/course/ZUCC-1206146808?from=searchPage&outVendor=zw_mooc_pcssjg_)  浙大城市学院
 
-## 
-[百度技术学院](http://bit.baidu.com/)   
+##  培训
+[百度技术培训中心](http://bit.baidu.com/)  *** 认证， 自动驾驶，人工智能培训  
