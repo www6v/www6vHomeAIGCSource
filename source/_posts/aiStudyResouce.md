@@ -19,7 +19,10 @@ categories:
 ## 机器学习
 + 极客时间 《机器学习 40 讲》  王天一
 + 极客训练营 《机器学习训练营1期》  视频课 
-+ [聚类算法：层次聚类、k-means 聚类、k-medoids 聚类、密度聚类](https://www.bilibili.com/video/BV1Bg411Z77N?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036) good
++ [聚类算法：层次聚类、k-means 聚类、k-medoids 聚类、密度聚类](https://www.bilibili.com/video/BV1Bg411Z77N?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)  ***
++ Coursera吴恩达- 《machine learning》+ 笔记  入门  *** 
++ [Machine Learning A-Z Hands-On Python & R In Data Science](https://www.bilibili.com/video/av79340208/)  Udemy 入门  ***
++ [[Coursera公开课] [机器学习专项课程1/4] 机器学习基础：案例研究](https://www.bilibili.com/video/BV1jF411A7VF/)  ***
 
 ## 深度学习
 + [深度学习应用实践 60 讲](https://time.geekbang.org/course/detail/100005001-3090)
@@ -29,6 +32,7 @@ categories:
 
 + 中国大学MOOC [深度学习基础](https://www.icourse163.org/learn/HIT-1206320802?tid=1468208513#/learn/announce)   哈尔滨工业大学
 + 中国大学MOOC [深度学习及其应用](https://www.icourse163.org/course/FUDAN-1205806833)   复旦
++ Coursera吴恩达《深度学习》 + 笔记 ***
 
 ## NLP
 + [中科院 宗成庆 自然语言处理公开课（64集）](https://www.bilibili.com/video/BV1Cb411T7Cd) 
