@@ -33,6 +33,7 @@ categories:
 
 参考:
 [在 Amazon Aurora Global Database 中使用全球分布式 MySQL 程序](https://zhuanlan.zhihu.com/p/159304158)
+[使用 Amazon Aurora Global Database 进行快速的跨区域灾难恢复和低延迟全球读取](https://aws.amazon.com/cn/getting-started/hands-on/aurora-global-database/)
 
 ## 参考
 1. [Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)
