@@ -32,8 +32,10 @@ categories:
   + Fault tolerance across 3 AZs  
 
 参考:
-[在 Amazon Aurora Global Database 中使用全球分布式 MySQL 程序](https://zhuanlan.zhihu.com/p/159304158)
-[使用 Amazon Aurora Global Database 进行快速的跨区域灾难恢复和低延迟全球读取](https://aws.amazon.com/cn/getting-started/hands-on/aurora-global-database/)
+[在 Amazon Aurora Global Database 中使用全球分布式 MySQL 程序](https://zhuanlan.zhihu.com/p/159304158)  未
+[使用 Amazon Aurora Global Database 进行快速的跨区域灾难恢复和低延迟全球读取](https://aws.amazon.com/cn/getting-started/hands-on/aurora-global-database/) 未
+[力从地起 - 揭秘 Aurora 底层存储 (Level 300)](https://www.bilibili.com/video/BV1P64y1M7fu/)  *** global database，snapshot
+
 
 ## 参考
 1. [Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)
