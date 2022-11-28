@@ -31,6 +31,9 @@ categories:
 + Fault Tolerance
   + Fault tolerance across 3 AZs  
 
+参考:
+[在 Amazon Aurora Global Database 中使用全球分布式 MySQL 程序](https://zhuanlan.zhihu.com/p/159304158)
+
 ## 参考
 1. [Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)
 2. SAP-1  Database
