@@ -38,9 +38,9 @@ top: true
 [AWS Database](../../../../2022/10/01/awsDatabase/)
 [AWS Security](../../../../2022/10/01/awssecurity/)
 [AWS Deployment](../../../../2022/06/18/awsDeployment/)
+[AWS Migrate](../../../../2022/06/28/awsMigrate/)
 [AWS 三层架构](../../../../2022/05/01/awsArch/)
 [AWS 学习资源](../../../../2022/10/01/awsStudyResource/)
 
 
- 
 
