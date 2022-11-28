@@ -26,6 +26,7 @@ categories:
 
 + Global Database
   + **Replication uses the Aurora storage layer**
+  + Applications can connect to the cluster Reader Endpoint [3]
 
 + Fault Tolerance
   + Fault tolerance across 3 AZs  
@@ -33,3 +34,4 @@ categories:
 ## 参考
 1. [Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)
 2. SAP-1  Database
+3. [New Reader Endpoint for Amazon Aurora – Load Balancing & Higher Availability](https://aws.amazon.com/cn/blogs/aws/new-reader-endpoint-for-amazon-aurora-load-balancing-higher-availability/)
