@@ -2,17 +2,17 @@
 title: 分布式数据库中一致性和可用性的权衡
 date: 2019-10-27 22:09:36
 tags:
-  - 数据库
+  - 分布式数据库
 categories:
-  - 数据库  
-  - 架构属性
+  - Paper
+  - 分布式数据库
 ---
 
 <p></p>
 <!-- more -->
 
 <div style="text-align: center;">
-  
+
 ![trade-off](https://user-images.githubusercontent.com/5608425/67635359-14c13280-f901-11e9-93f2-50720186ad33.jpg)
 基于一致性、可用性的系统分类
 </div>
