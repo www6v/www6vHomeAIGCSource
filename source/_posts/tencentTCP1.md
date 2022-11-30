@@ -1,5 +1,4 @@
 ---
-layout: w
 title: 腾讯云TCP1-上云迁移
 date: 2022-03-03 19:13:00
 tags: 
