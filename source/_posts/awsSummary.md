@@ -36,7 +36,7 @@ top: true
 [AWS Management](../../../../2022/06/23/awsManagement/)
 [AWS Serverless](../../../../2022/05/12/awsServerless/)
 [AWS Database](../../../../2022/10/01/awsDatabase/)
-[AWS Security](../../../../2022/10/01/awssecurity/)
+[AWS Security](../../../../2022/10/01/awsSecurity/)
 [AWS Deployment](../../../../2022/06/18/awsDeployment/)
 [AWS Migrate](../../../../2022/06/28/awsMigrate/)
 [AWS 三层架构](../../../../2022/05/01/awsArch/)
