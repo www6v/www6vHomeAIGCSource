@@ -1,5 +1,5 @@
 ---
-title: paper 学习资源
+title: Paper 学习资源
 date: 2022-11-30 22:22:45
 tags:
   - 学习资源

@@ -117,8 +117,7 @@ serverless和serverful的对比
 
 
 ## 参考
-
-+ 2.[对Serverless架构的一点体验和思考](https://yq.aliyun.com/articles/160370?spm=5176.8067842.tagmain.56.9Vk1fX) 阿里 未    
+  
 + 5.[无服务计算的未来和挑战: A Berkeley View on Serverless Computing](https://mp.weixin.qq.com/s/7qJUzf8xrGihPPLsvwPEig)  ***
 + 6.[当我们在聊Serverless时你应该知道这些](https://yq.aliyun.com/articles/574222)  阿里 竹涧， 场景 产品 架构
 + 8.[Serverless 与容器决战在即？有了弹性伸缩就不一样了](https://yq.aliyun.com/articles/717318)  阿里 莫源 未   
