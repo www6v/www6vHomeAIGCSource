@@ -28,10 +28,8 @@ categories:
 
 ##  10 种 compaction 策略[todo]
 
-## KV分离[3]
-+ Wisckey 
 
 ## 参考
-1. [Research_R42.5 Constructing and Analyzing the LSM Compaction Design Space](https://www.bilibili.com/video/BV12U4y177g3?vd_source=f6e8c1128f9f264c5ab8d9411a644036)  论文 good VLDB2021 bilibili
-2. [VLDB 2021论文概述](https://zhuanlan.zhihu.com/p/413463723) 
-3. [LSM-Tree:从入门到放弃——放弃：LSM Tree的Compaction机制探讨和分析](https://zhuanlan.zhihu.com/p/428270334) 
+1. [Research_R42.5 Constructing and Analyzing the LSM Compaction Design Space](https://www.bilibili.com/video/BV12U4y177g3?vd_source=f6e8c1128f9f264c5ab8d9411a644036)  论文 VLDB2021 bili
+2. [构建分析LSM Compaction Design Space](https://loopjump.com/pr-lsm-compaction-design-space/) ***
+3. [VLDB 2021论文概述](https://zhuanlan.zhihu.com/p/413463723)   Overview
