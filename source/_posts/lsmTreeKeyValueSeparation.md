@@ -29,4 +29,5 @@ categories:
 1. bili 
 2. [LSM 存储引擎中 KV 分离的实现](https://www.skyzh.dev/posts/articles/2021-08-07-lsm-kv-separation-overview/)  *** 
 3. [LSM-Tree:从入门到放弃——放弃：LSM Tree的Compaction机制探讨和分析](https://zhuanlan.zhihu.com/p/428270334)   Overview
+4. [论文翻译 WiscKey: Separating Keys from Values in SSD-Conscious Storage](https://zhuanlan.zhihu.com/p/423565251)  中文翻译
 
