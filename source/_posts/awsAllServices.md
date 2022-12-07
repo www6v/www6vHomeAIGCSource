@@ -215,10 +215,12 @@ categories:
 • AWS Audit Manager
 • AWS Certificate Manager (ACM)
 • AWS CloudHSM
+ Manage single-tenant hardware security modules (HSMs) on AWS
 • Amazon Cognito
 • Amazon Detective
 • AWS Directory Service
-• AWS Firewall Manager
+• AWS Firewall Manager @
+ Centrally configure and manage firewall rules across your accounts
 • Amazon GuardDuty
 • AWS Identity and Access Management (IAM)  @
 • Amazon Inspector
