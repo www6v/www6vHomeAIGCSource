@@ -13,23 +13,29 @@ categories:
 
 ## 机器学习算法
 + 监督式学习
-  + 线性回归 (Linear Regression)
-    **连续**
-  + 决策树，
-  + 随机森林，
-  + K邻近算法，KNN
-  + 逻辑回归 (Logistic Regression) 
+  + Linear Models
+    逻辑回归 (Logistic Regression) 
     **离散**
     逻辑回归其实是一个分类算法而不是回归算法。
-  + SVM算法[2] 
+  + Nearest Neighbors
+    K邻近算法，KNN
+  + 决策树 Decision Trees
+  + Support Vector Machines, SVM [2] 
+  + Naive Bayes
+
+     
+  + 线性回归 (Linear Regression)
+    **连续**
+
+  + 随机森林
+
+
+
   
 + 无监督式学习
-  + 关联规则，
-  
+  + 关联规则 
   + K-means聚类算法
-  
     质心（centroids），距离
-  
 + 强化学习
 
 ## 机器学习 
