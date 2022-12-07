@@ -5,6 +5,7 @@ tags:
   - AI
 categories:
   - AI
+  - Overview
 ---
 
 <p></p>
@@ -26,7 +27,7 @@ categories:
 {% asset_img  ai-hangye.png  行业 %}
 
 
- 
+
 ## 计算机视觉 [4]
 ##### 应用场景
   + 图像分类
@@ -107,7 +108,6 @@ categories:
 2. 1.2 
 3. 1.4 未
 4. 1.5
-
 
 
 
