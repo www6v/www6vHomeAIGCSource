@@ -14,13 +14,13 @@ categories:
 <!-- more -->
 
 
-### 一. Partition
+###  Partition
 1. 首领 leader ， 首领副本
 2. 跟随者 follower， 跟随者副本
 3. 首选首领
 
 
-### 二. kafka的副本机制
+###  Kafka的副本机制
 1. AR = ISR + OSR。 
 ISR 不只是追随者副本集合，它必然包括 Leader 副本。
 2. ISR中副本有主从之分，但是**读写都是主副本**， 从副本只负责**拉取**主副本的数据。
@@ -39,9 +39,7 @@ ISR 不只是追随者副本集合，它必然包括 Leader 副本。
 [Kafka解析之失效副本](https://honeypps.com/mq/kafka-analysis-of-under-replicated-partitions/)
 
 +    优先副本是什么？它有什么特殊的作用？  
-
 +    多副本下，各个副本中的HW和LEO的演变过程
-
 +    为什么Kafka不支持读写分离？
 
 ## 参考：

@@ -28,9 +28,7 @@ categories:
 [Kafka消费者总结](../../../../2016/06/25/kafkaConsumer/)
 
 +    怎么计算Lag？(注意read_uncommitted和read_committed状态下的不同)
-
 +    “消费组中的消费者个数如果超过topic的分区，那么就会有消费者消费不到数据”这句话是否正确？如果不正确，那么有没有什么hack的手段？
-
 +    消费者提交消费位移时提交的是当前消费到的最新消息的offset还是offset+1?
 
 +    有哪些情形会造成重复消费？
@@ -42,10 +40,9 @@ categories:
      [聊聊 Kafka：Kafka 消息丢失的场景以及最佳实践](https://blog.csdn.net/riemann_/article/details/124534487)
 
 +    KafkaConsumer是非线程安全的，那么怎么样实现多线程消费？
-
 +    简述消费者与消费组之间的关系
-
 +    Kafka的旧版Scala的消费者客户端的设计有什么缺陷？
+
 
 ## 参考:
 1. [Kafka设计解析（四）- Kafka Consumer设计解析](http://www.jasongj.com/2015/08/09/KafkaColumn4/) 郭俊
@@ -55,5 +52,4 @@ categories:
 5. [Kafka的Lag计算误区及正确实现](https://blog.csdn.net/u013256816/article/details/79955578) 朱小厮
 6. 《kafka权威指南》 薛命灯 第3，4 ，5章
 7. Kafka Consumer机制优化-保证每条消息至少消费一次 幽灵之使
-
 
