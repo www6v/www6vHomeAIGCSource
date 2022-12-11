@@ -5,6 +5,7 @@ tags:
   - AI
 categories:
   - AI
+  - 学习资源
 ---
 
 <p></p>
