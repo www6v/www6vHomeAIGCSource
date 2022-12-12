@@ -17,8 +17,6 @@ categories:
 + 极客时间 《AI 技术内参》  洪亮劼
 + 百度技术培训中心 [人工智能学习路线](http://bit.baidu.com/courseRouteDetail?id=111) 
 
-
-
 ## 书籍
 + 理论
   + The Hundred-Page Machine Learning Book - 入门
@@ -49,6 +47,7 @@ categories:
 + Coursera吴恩达《深度学习》 + 笔记 ***
 
 ## NLP
++ 极客时间 [NLP 实战高手课](https://time.geekbang.org/course/intro/100046401) 
 + [中科院 宗成庆 自然语言处理公开课（64集）](https://www.bilibili.com/video/BV1Cb411T7Cd) 
 + [2022年首发！B站讲的最好的【NLP自然语言处理】保姆级教程！](https://www.bilibili.com/video/BV1C14y147dp?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)   有实践
 + MLNLP第六期学术研讨会开始报名
@@ -60,6 +59,7 @@ categories:
 
 ## 实战
 + 极客时间 [TensorFlow 快速入门与实战](https://time.geekbang.org/course/intro/100023001?tab=catalog)
++ 极客时间 [TensorFlow 2 项目进阶实战](https://time.geekbang.org/course/intro/315)
 + 中国大学MOOC [深度学习应用开发-TensorFlow实践](https://www.icourse163.org/course/ZUCC-1206146808?from=searchPage&outVendor=zw_mooc_pcssjg_)  浙大城市学院
 
 ##  培训
