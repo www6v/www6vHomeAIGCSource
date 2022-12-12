@@ -214,6 +214,7 @@ categories:
 • AWS Artifact
 • AWS Audit Manager
 • AWS Certificate Manager (ACM)
+ Provision and manage SSL/TLS certificates with AWS services and connected resources
 • AWS CloudHSM
  Manage single-tenant hardware security modules (HSMs) on AWS
 • Amazon Cognito
