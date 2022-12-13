@@ -14,15 +14,15 @@ categories:
 
 + VPC Endpoints[2]
   VPC Endpoints 使您能够将您的 VPC 私下连接到可支持的 AWS 服务和 VPC 终端节点服务（由 AWS PrivateLink 提供支持），而无需 Internet 网关、NAT 设备、VPN 连接或 AWS Direct Connect 连接。
-  - 网关终端节点
+  - 网关终端节点 - Gateway Endpoint
     支持S3 和 DynamoDB 的通信
     网关终端节点将路由表目标用于路由表中的指定路由以获得支持的服务。
     - 注意点
       使用 VPC 终端节点， S3 存储桶策略可以允许基于 VPC 标识符或特定 VPC 终端节点标识符的访问。 但是，在使用 VPC 终端节点时，S3 存储桶策略不支持基于 IP 地址的策略。   
-  - 接口终端节点
+  - 接口终端节点 - Interface Endpoint
     支持Kinesis Streams、ELB API、Amazon EC2 API等  .
     接口终端节点（由 AWS PrivateLink 提供支持）在您的 VPC 中使用具有私有 IP 地址的弹性网络接口，该地址用作流向受支持服务的流量的入口点。
-{% asset_img  vpc-endpoint.JPG  interface endpoint vs. Gateway endpoint %}
+    {% asset_img  vpc-endpoint.JPG  interface endpoint vs. Gateway endpoint %}
 
 
 ## 参考

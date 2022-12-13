@@ -50,7 +50,7 @@ categories:
   - Expiration actions
 
 + 访问S3
-  + s3访问策略[1]  
+  + S3访问策略[1]  
     {% asset_img s3-accessPolicy.JPG  s3访问策略 %}
   + 访问方式[4]
     - private Address
@@ -58,6 +58,13 @@ categories:
 
 + Versioning #4
   + preserve, retrieve, and restore
+
++ Access Points [2]
+  - Access Point gets its own DNS and policy to limit who can access it
+    One policy per Access Point
+    [Amazon S3 Access Points](https://aws.amazon.com/s3/features/access-points/)
+    [Amazon S3 Multi-Region Access Points](https://aws.amazon.com/s3/features/multi-region-access-points/)
+    [AWS Network-VPC Endpoint](../../../../2022/06/17/awsNetworkVPCendpoint/) self
 
 
 ## AWS Storage Gateway[4][6]
