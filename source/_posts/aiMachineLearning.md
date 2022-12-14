@@ -19,19 +19,30 @@ categories:
       逻辑回归其实是一个分类算法而不是回归算法。
     - 线性回归 (Linear Regression)
       **连续**  
+    
   + Nearest Neighbors
-    K邻近算法，KNN
+    - K邻近算法，KNN
+    
   + 决策树 Decision Trees
-  + Support Vector Machines, SVM [2] 
-  + Naive Bayes
-  + 随机森林
+  
+  + Support Vector Machines, SVM [2]
+    + 可分 
+      - 线性可分
+      - 线性不可分
+    + 超平面
+      - 低纬升到高纬
 
  
+  + Naive Bayes
+  
+  + 随机森林
+
+
 + 无监督式学习
   + 关联规则 
   + K-means聚类算法
     质心（centroids），距离
-    
+  
 + 强化学习
 
 ## 机器学习 
