@@ -14,7 +14,7 @@ categories:
 ## 书籍
 + 理论
   + The Hundred-Page Machine Learning Book - 入门
-  + 西瓜书
+  + 西瓜书 ***
   + 花书
 + 框架
   + Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, v3 - 入门
@@ -22,13 +22,18 @@ categories:
   + Deep Learning with Python - v2 - keras库
 
 ## 机器学习 
-+ [聚类算法：层次聚类、k-means 聚类、k-medoids 聚类、密度聚类](https://www.bilibili.com/video/BV1Bg411Z77N)  ***
++ 浙大 - 吴XX   *** 
 + Coursera吴恩达- 《machine learning》+ 笔记  入门  *** 
 + [Machine Learning A-Z Hands-On Python & R In Data Science](https://www.bilibili.com/video/av79340208/)  Udemy 入门  ***
 + [【人工智能系列】【中文】机器学习A-Z Machine Learning in Chinese(前7部分)](https://www.bilibili.com/video/BV1KB4y1E73v)
 + [[Coursera公开课] [机器学习专项课程1/4] 机器学习基础：案例研究](https://www.bilibili.com/video/BV1jF411A7VF/)  ***
++ [聚类算法：层次聚类、k-means 聚类、k-medoids 聚类、密度聚类](https://www.bilibili.com/video/BV1Bg411Z77N)  ***
 
 ## 深度学习
++ 动手学深度学习- 第二版 -pyTorch
+  b站有视频课
+  [《动手学深度学习》](http://zh.d2l.ai/index.html) 在线
+  电子书+jupternote代码
 + Coursera吴恩达《深度学习》 + 笔记  ***
 + [深度学习应用实践 60 讲](https://time.geekbang.org/course/detail/100005001-3090)
    + 深度学习在CTR预估的应用   张俊林
