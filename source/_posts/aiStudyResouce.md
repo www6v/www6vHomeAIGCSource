@@ -13,6 +13,8 @@ categories:
 
 ## 书籍
 + 理论
+  + 《人工智能的数据基础》
+  + 《统计学习方法》 v2
   + The Hundred-Page Machine Learning Book - 入门
   + 西瓜书 ***
   + 花书
@@ -22,7 +24,8 @@ categories:
   + Deep Learning with Python - v2 - keras库
 
 ## 机器学习 
-+ 浙大 - 吴XX   *** 
++ 浙大 - 吴浩基   ***
++ 周志华 《机器学习初步》 *** 
 + Coursera吴恩达- 《machine learning》+ 笔记  入门  *** 
 + [Machine Learning A-Z Hands-On Python & R In Data Science](https://www.bilibili.com/video/av79340208/)  Udemy 入门  ***
 + [【人工智能系列】【中文】机器学习A-Z Machine Learning in Chinese(前7部分)](https://www.bilibili.com/video/BV1KB4y1E73v)
@@ -30,16 +33,17 @@ categories:
 + [聚类算法：层次聚类、k-means 聚类、k-medoids 聚类、密度聚类](https://www.bilibili.com/video/BV1Bg411Z77N)  ***
 
 ## 深度学习
-+ 动手学深度学习- 第二版 -pyTorch
++ 《动手学深度学习- 第二版 -pyTorch》  *** 
   b站有视频课
   [《动手学深度学习》](http://zh.d2l.ai/index.html) 在线
   电子书+jupternote代码
++ 《神经网络和深度学习 》 复旦  
 + Coursera吴恩达《深度学习》 + 笔记  ***
-+ [深度学习应用实践 60 讲](https://time.geekbang.org/course/detail/100005001-3090)
-   + 深度学习在CTR预估的应用   张俊林
-   + 深度学习在图像理解中的应用  熊鹏飞
-+ [基于深度学习的物体检测](https://www.bilibili.com/video/BV1QS4y1s7RZ)
-
++ 老唐 ***
++ 莫烦Python 
++ 北京大学 TensorFlow 2.0
++ 算法可视化  ***
++ 李宏毅 台湾
 
 ## NLP
 + [中科院 宗成庆 自然语言处理公开课（64集）](https://www.bilibili.com/video/BV1Cb411T7Cd) 
@@ -47,8 +51,6 @@ categories:
 + MLNLP第六期学术研讨会开始报名
 
 ## 知识图谱
-+ [深度学习应用实践 60 讲](https://time.geekbang.org/course/detail/100005001-3090)
-   + 知识图谱技术实践  邵蓥侠
 + [【国家级精品课】浙江大学教授（新全44集）知识图谱公开课分享](https://www.bilibili.com/video/BV1VT411G7Y6?p=6)  *** 
 
 
@@ -61,7 +63,12 @@ categories:
 + 极客时间 [TensorFlow 快速入门与实战](https://time.geekbang.org/course/intro/100023001?tab=catalog)
 + 极客时间 [TensorFlow 2 项目进阶实战](https://time.geekbang.org/course/intro/315)
 + 极客时间 [NLP 实战高手课](https://time.geekbang.org/course/intro/100046401) 
-
++ [深度学习应用实践 60 讲](https://time.geekbang.org/course/detail/100005001-3090)
+   + 深度学习在CTR预估的应用   张俊林
+   + 深度学习在图像理解中的应用  熊鹏飞
++ [深度学习应用实践 60 讲](https://time.geekbang.org/course/detail/100005001-3090)
+   + 知识图谱技术实践  邵蓥侠
+   
 ## 中国大学MOOC 
 + 中国大学MOOC [深度学习基础](https://www.icourse163.org/learn/HIT-1206320802?tid=1468208513#/learn/announce)   哈尔滨工业大学
 + 中国大学MOOC [深度学习及其应用](https://www.icourse163.org/course/FUDAN-1205806833)   复旦
