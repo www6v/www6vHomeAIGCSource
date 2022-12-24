@@ -14,10 +14,13 @@ categories:
 
 ## Analytics:
 • Amazon Athena
+ Amazon Athena is a serverless, interactive analytics service built on open-source frameworks, supporting open-table and file formats.
 • AWS Data Exchange
 • AWS Data Pipeline
 • Amazon EMR
 • AWS Glue
+AWS Glue is a serverless data integration service that makes it easier to discover, prepare, move, and integrate data from multiple sources for analytics, machine learning (ML), and application development.
+[ETL]
 • Amazon Kinesis Data Analytics
 • Amazon Kinesis Data Firehose
 • Amazon Kinesis Data Streams
@@ -25,7 +28,7 @@ categories:
 • Amazon Managed Streaming for Apache Kafka (Amazon MSK)
 • Amazon OpenSearch Service
 • Amazon QuickSight
-
+ BI tool
 
 ## Application Integration:
 • Amazon AppFlow
