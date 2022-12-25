@@ -13,7 +13,7 @@ categories:
 
 ##  挑战和优化
 
-###  加快函数运行环境的创建
+#####  加快函数运行环境的创建
 1. AWS Lambda 中使用的方法是维护一个热的 VM 实例池[5]
 
 
@@ -28,6 +28,8 @@ categories:
    ![ali-serverless-optimiaze](https://user-images.githubusercontent.com/5608425/66549078-18b92a80-eb75-11e9-9c23-f86a1e711934.jpg)
 </div>
 
+CSE 则通过将一个应用的多个实例启动后，共享相同的指令数据，抽取出不同的指令数据，每次启动实例只需要加载多实例的**差异部分**。
+
 3. 阿里云  函数计算的预留实例[11]
    预留实例的执行环境是长驻的，彻底消除冷启动对业务的影响
 4. [9]
@@ -39,7 +41,7 @@ categories:
 + 监控
   X-Ray APM
 
-###  混合部署
+#####  混合部署
 更小的资源占用率， 更短的运行时间更易于混合部署。[3][5]
 
 
@@ -48,7 +50,8 @@ categories:
    I. 提高启动时间 II. 混合部署  优化
       [CSE：阿里在线应用如何演进成Serverless架构](https://yq.aliyun.com/articles/702070)
 + 9. [分享 KubeCon 2019 （上海）关于 Serverless 及 Knative 相关演讲会议](https://yq.aliyun.com/articles/706537)
-   加速：无服务器平台中的冷启动优化; Knative Serving 内部介绍      
+   《加速：无服务器平台中的冷启动优化》
+    《Knative Serving 内部介绍》      
 + 11. [预留实例简介](https://help.aliyun.com/document_detail/138103.html)  优化
 
 
@@ -70,14 +73,14 @@ categories:
 + Tool 开放工具[10] 监控[14]  
   - 10.[函数计算 2.0 重磅发布，Serverless Computing 开启新篇章](https://yq.aliyun.com/articles/719694)
     开发工具 fun，vscode插件  
-      
-      
+    
+  
 +  knowledge[4][5][6][15]
    - 4.[云计算中的Xaas](../../../../2019/02/07/xaas/) self      
    - 5.[无服务计算的未来和挑战: A Berkeley View on Serverless Computing](https://mp.weixin.qq.com/s/7qJUzf8xrGihPPLsvwPEig) good
    - 6.[当我们在聊Serverless时你应该知道这些](https://yq.aliyun.com/articles/574222)  阿里 竹涧， 场景 产品 架构
    - 15.[阿里云函数计算 - 事件驱动的serverless计算平台](https://yq.aliyun.com/articles/60966) 
-      
+   
 +  vender lock-in [12][13][17]  
    采用Serverless架构之后，代码都是各个平台的Lambda代码片段，没法迁移。从客户的角度来看，是不希望自己被某家云厂商所绑架的。所以云计算需要有一个标准，产品需要标准化，方便用户无缝在各种云之间迁移。
    knative试图解决这个问题。             
