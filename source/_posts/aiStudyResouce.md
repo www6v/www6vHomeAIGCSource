@@ -55,19 +55,24 @@ categories:
 
 
 ## 极客时间
-+ 极客时间 《机器学习 40 讲》  王天一 
-+ 极客训练营 《机器学习训练营1期》  视频课 
-+ 极客时间 《人工智能基础课》  王天一   
-  机器学习，深度学习
-+ 极客时间 《AI 技术内参》  洪亮劼
-+ 极客时间 [TensorFlow 快速入门与实战](https://time.geekbang.org/course/intro/100023001?tab=catalog)
-+ 极客时间 [TensorFlow 2 项目进阶实战](https://time.geekbang.org/course/intro/315)
-+ 极客时间 [NLP 实战高手课](https://time.geekbang.org/course/intro/100046401) 
++ 极客时间
+  + 《AI 技术内参》  洪亮劼   全 ***
+  + 《机器学习 40 讲》  王天一 
+  + 《人工智能基础课》  王天一   
+     机器学习，深度学习
+  + 《成为AI产品经理》  刘海丰 京东   
+  + 《零基础实战机器学习》 黄佳  ***
+  + 《PyTorch深度学习实战》方远 大厂
+  +  [TensorFlow 快速入门与实战](https://time.geekbang.org/course/intro/100023001?tab=catalog)
+  +  [TensorFlow 2 项目进阶实战](https://time.geekbang.org/course/intro/315)
+  +  [NLP 实战高手课](https://time.geekbang.org/course/intro/100046401) 
 + [深度学习应用实践 60 讲](https://time.geekbang.org/course/detail/100005001-3090)
    + 深度学习在CTR预估的应用   张俊林
    + 深度学习在图像理解中的应用  熊鹏飞
 + [深度学习应用实践 60 讲](https://time.geekbang.org/course/detail/100005001-3090)
    + 知识图谱技术实践  邵蓥侠
++ 极客训练营 
+  -《机器学习训练营1期》  视频课 
    
 ## 中国大学MOOC 
 + 中国大学MOOC [深度学习基础](https://www.icourse163.org/learn/HIT-1206320802?tid=1468208513#/learn/announce)   哈尔滨工业大学
