@@ -35,7 +35,7 @@ categories:
 [成喆 阿里云存储服务](https://yq.aliyun.com/users/u3vivzisyg2pc/) |
 [文意 阿里云存储服务产品](https://yq.aliyun.com/users/zh5kxxfngqw2m)  serverless 场景 |
 [scorpion 阿里云函数计算研发经理](https://yq.aliyun.com/users/fbt6ovijrs2zi) 函数计算 |
-[Freewill 阿里云的人 SDN ceph](https://www.cnblogs.com/bodhitree/default.html) |
+[Freewill 阿里云的人 SDN ceph](https://www.cnblogs.com/bodhitree/default.html) |  2020 停更
 [阿里  周遥（玄胤）](http://www.seflerzhou.net) |
 入境繁华  蚂蚁金服中间件团队 <br> http://zhengjianglong.cn <br> http://blog.leanote.com/along |  
 阿里人的博客 canel <br> http://agapple.iteye.com/ <br>  https://github.com/agapple   | 
@@ -81,20 +81,20 @@ http://www.cnblogs.com/IT-Bear/p/3191423.html
 
 阿里中间件技术博客
 美团点评技术博客
-[饿了么框架工具部- 知乎](https://zhuanlan.zhihu.com/p/28585781)  异地多活 压测
-[今日头条 技术博客](https://techblog.toutiao.com/2017/05/02/dao/)
+[饿了么框架工具部- 知乎](https://zhuanlan.zhihu.com/p/28585781)  异地多活 压测 - 2018停更
+[今日头条 技术博客](https://techblog.toutiao.com/2017/05/02/dao/)  已失效
 [ArchSummit 知乎](https://www.zhihu.com/org/archsummit/activities)
-[有赞技术团队 知乎](https://www.zhihu.com/org/you-zan-ji-zhu-tuan-dui/activities) 干货挺多
+[有赞技术团队 知乎](https://www.zhihu.com/org/you-zan-ji-zhu-tuan-dui/activities)  *** 干货挺多
 [蚂蚁金融科技](https://tech.antfin.com/)
-[小米信息部技术团队](https://xiaomi-info.github.io/)
-[pingcap](https://pingcap.com/blog-cn/)
+[小米信息部技术团队](https://xiaomi-info.github.io/)  *
+[pingcap](https://pingcap.com/blog-cn/) ***
 
 [Nginx开发从入门到精通 <- Tengine](http://tengine.taobao.org/book/index.html)
 [阿里云redis最佳实践](https://help.aliyun.com/document_detail/67252.html) 
 [数据库内核月报 淘宝数据库组](http://mysql.taobao.org/monthly/)   干货
 SOFA 微信公众号
 
-[鹅厂架构师](https://www.zhihu.com/org/e-han-jia-gou-shi) - 知乎
+[鹅厂架构师](https://www.zhihu.com/org/e-han-jia-gou-shi) - 知乎 ***
 
 ## 开发者中心
 [百度开发者中心](https://developer.baidu.com/) 
