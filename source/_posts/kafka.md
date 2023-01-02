@@ -13,7 +13,7 @@ categories:
 <p></p>
 <!-- more -->
 
-{% asset_img  kafka.png  Kafka总结 %}
+{% asset_img  kafka.jpg  Kafka总结 %}
 
 
 ## 参考:
