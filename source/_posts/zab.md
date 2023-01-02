@@ -14,6 +14,8 @@ categories:
 
 {% asset_img  zab.jpg  Zookeeper的分布式一致性协议Zab %}
 
+
+
 ## 参考:
 
 1. 《PAXOS到ZOOKEEPER分布式一致性原理与实践》 第4章 倪超
