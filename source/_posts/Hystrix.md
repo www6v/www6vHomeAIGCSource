@@ -13,7 +13,9 @@ categories:
 <p></p>
 <!-- more -->
 
-{% asset_img  Hystrix.jpg  Hystrix实现和容错模式 %}
+{% asset_img  Hystrix.png  Hystrix实现和容错模式 %}
+
+
 
 ## 参考：
 

@@ -12,13 +12,15 @@ categories:
 <p></p>
 <!-- more -->
 
-{% asset_img  12factor.jpg  十二要素 %}
+{% asset_img  12factor.jpg 十二要素 %}
+
 {% asset_img  12-factor-app.png  十二要素 %}
+
+
 
 
 ## 参考:
 
 1. [12-Factor应用](https://12factor.net/zh_cn/)
 2. [云原生时代下的12-factor应用与实践](https://talks.bingohuang.com/2017/cloud-native-12factor.article)
-
 

@@ -15,9 +15,15 @@ categories:
 
 {% asset_img  mom1.jpg  消息中间件总结 %}
 
+
+
 {% asset_img  mom2.jpg  消息中间件总结 %}
 
+
+
 {% asset_img  mom3.jpg  消息中间件总结 %}
+
+
 
 ## 消息积压
 ### 原则: 消费性能要高于生产的性能

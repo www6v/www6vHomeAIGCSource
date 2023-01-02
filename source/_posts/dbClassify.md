@@ -11,26 +11,16 @@ categories:
 <p></p>
 <!-- more -->
 
+## 数据库分类
+
 <div style="text-align: center;">
 
 ![dbClassify](https://user-images.githubusercontent.com/5608425/67636314-55717980-f90a-11e9-8506-2051221f245b.png)
 结构化数据库分类
 </div>
 
-## 1. NoSQL
-Key-Value 键值对
-Ordered Key-Value 有序键值对
-Document databases 文档模型
-Graph data models 图式数据库
 
-## 2. NewSQL 
-Google Spanner
-TiDB
-OceanBase
-
-## 3. RMDB
-MySQL
-
+{% asset_img  database.png  数据库分类 %}
 
 ## 参考：
 
@@ -40,5 +30,4 @@ MySQL
 
 
  
-
 

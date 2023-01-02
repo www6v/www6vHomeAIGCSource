@@ -13,7 +13,9 @@ categories:
 
 <!-- more -->
 
-{% asset_img  aop.jpg  AOP总结 %}
+{% asset_img  AOP.png  AOP总结 %}
+
+
 
 ## 参考:
 
