@@ -12,14 +12,14 @@ categories:
 <p></p>
 <!-- more -->
 
-## 口语
+## 口语-连续 
  + 连读 
-  - Linking 辅+元
-    -  常规
-    -  不送气
-    -  flap t, 闪音  
-  - Insertion 元+元 
-    拖长    
+   - Linking 辅+元
+     -  常规
+     -  不送气
+     -  flap t, 闪音  
+   - Insertion 元+元 
+     拖长    
 + 略读 Gemination 辅+辅
   /t/ + /d/ , 浊辅音 + 清辅音 
 + 吞音 
@@ -36,7 +36,25 @@ categories:
 [【合集完结】【最全英语连读规则】英语听力口语发音提高秘诀](https://www.bilibili.com/video/BV1WW41147bm/) ***
 
 
-## thinking in English
+## 口语-音标
++ 类型
+  + K.K. 美式
+  + DJ
+  
+[KK美式英语音标（发音口型教学）](https://www.bilibili.com/video/BV1cW411773Y/)  *** 
+[【纯正英式发音】这是BBC出品的到现在为止最棒的英语发音教程（完整版）](https://www.bilibili.com/video/BV1GJ411X7hu/)  ***
+
+
+## 口语-语调
++ 3个部分
+  + Tonality 调群切分
+  + Tonicity 调核位置
+  + Tone  语调模式
+  
+参考:
+bili
+
+## Thinking in English
 step1:name objects around you in English(youglish) [单词][https://youglish.com/]
 step2:think in simple sentences [短句]
 step3:have small conversations with yourself in English [对话]
@@ -48,9 +66,6 @@ step6:recap your day in English[复习 回顾]
 [【瑞秋英语】培养英语思维-第2期（美式英语）](https://www.bilibili.com/video/BV1By4y1z7LC/)
 
 
-## 音标
-[KK美式英语音标（发音口型教学）](https://www.bilibili.com/video/BV1cW411773Y/)  *** 
-[【纯正英式发音】这是BBC出品的到现在为止最棒的英语发音教程（完整版）](https://www.bilibili.com/video/BV1GJ411X7hu/)  ***
 
 
 
