@@ -13,17 +13,17 @@ categories:
 <!-- more -->
 
 <div style="text-align: center;">
-	
+
 ![Nginx总结](https://user-images.githubusercontent.com/5608425/64508349-cedbeb00-d30f-11e9-836c-2f920725e1bb.jpg) 
 Nginx总结
 </div>
 
-## 一. Nginx架构
+##  Nginx架构
 1. 共享内存 Slab
    分页 4K， 8K， 16K
 
 
-## 二. Nginx反向代理
+##  Nginx反向代理
 ### 类型
 + 带权重的round-robin算法是基础 
 + hash负载均衡算法
@@ -49,7 +49,7 @@ Nginx总结
 修改发送到upstream机器的请求的nginx指令。
 
 
-## 三. 节点热更新
+##  节点热更新
 ### master节点热更新
 {% asset_img  master-graceful-showdown.jpg  %}
 
@@ -57,10 +57,15 @@ Nginx总结
 {% asset_img  worker-graceful-showdown1.jpg  %}
 {% asset_img  worker-graceful-showdown.jpg  %}
 
+## 域名转发到其他域名[2]
++ return 指令
++ rewrite
++ proxy_pass
+
+
 
 ## 参考:
 
 1. [深入Nginx 思维导图](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651010416&idx=4&sn=dfa07f0e065d273b028e662e87e780ff&chksm=bdbecd238ac9443511c4e7eadf9e59cc9139fac25c52b44f7a93787b940826c5f61f06e10224&scene=27#wechat_redirect)
 
-
-
+2. [nginx配置域名转发到其他域名的几种方法](https://blog.csdn.net/yeguxin/article/details/94020476) 
