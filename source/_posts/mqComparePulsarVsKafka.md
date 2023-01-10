@@ -32,8 +32,8 @@ categories:
 | 分区                    | kafka分区与broker强耦合[一个partion一个broker]               | partion条带化，分成粒度更细的segment。segment 分散再多个bookeeper的节点上 |
 | 水平扩展[某一节点宕机]  | 1. broker id不会自动转移，要手动维护。2. 新的broker无法承载旧的partition的流量，要手动均衡。 | broker计算节点宕机，zookeeper元数据要变更。不影响producer，comsumer。 |
 | 追赶读&延迟抖动敏感场景 | 1. 重度依赖pagecahce， 追赶读的数据会冲刷掉追尾读的未读取部分 2. zero copy在内存有明显争抢情况下，会出现延迟抖动非常剧烈。 | 使用JVM管理的堆外内存，更可控。对内存的依赖小于kafka.        |
-|                         |                                                              |                                                              |
-|                         |                                                              |                                                              |
-|                         |                                                              |                                                              |
-|                         |                                                              |                                                              |
 
+
+
+## 参考
+[深入对比 Apache Pulsar 与 Kafka](https://www.bilibili.com/video/BV19e4y1M7Ao/)  Pulsar Summit Asia 2022 ***
