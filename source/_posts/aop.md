@@ -2,20 +2,17 @@
 title: AOP总结
 date: 2014-11-21 14:25:58
 tags:
-  - Java基础
   - AOP
 categories:
   - Java基础 
   - AOP    
 ---
 
-<p hidden></p>
+<p></p>
 
 <!-- more -->
 
 {% asset_img  AOP.png  AOP总结 %}
-
-
 
 ## 参考:
 
