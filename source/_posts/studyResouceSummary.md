@@ -15,7 +15,9 @@ top: true
 [Kubernetes 学习资源](../../../../2022/05/21/k8sStudy/)
 [云原生-学习资源](../../../../2020/06/14/cloudNativeResource/)
 [Linux-学习资源](../../../../2022/05/30/linuxStudy/)
-[分布式系统的学习资源](../../../../2019/10/13/distributedStudy/)
+[分布式系统学习资源-个人](../../../../2019/10/13/distributedStudy/)
+[分布式系统学习资源-团队](../../../../2019/01/21/distributedStudyTeam/)
+
 
 [Golang 学习资源](../../../../2022/09/09/golangStudy/)
 [语言 学习资源](../../../../2022/08/25/languageStudy/)

@@ -19,7 +19,7 @@ categories:
   + AWS 认证开发人员 – 助理 (DVA-C01) 
   + AWS 认证 SysOps 管理员 – 助理 (SOA-C02)
    [2022 终极 AWS 认证 - SysOps 管理员助理-上](https://www.bilibili.com/video/BV15U4y1S73s/) 大量实操 中文
-   [2022 终极 AWS 认证 - SysOps 管理员助理-下](https://www.bilibili.com/video/BV1F3411N7TJ/) 大量实操 中文
+    [2022 终极 AWS 认证 - SysOps 管理员助理-下](https://www.bilibili.com/video/BV1F3411N7TJ/) 大量实操 中文
   + AWS 认证 DevOps 工程师 – 专业 (DOP-C01)
 
 + Solution
@@ -58,15 +58,21 @@ AWS产品白皮书
 [AWS认证之路 - 备战 AWS Certification 考试](https://www.bilibili.com/video/BV1gU4y177TE/) bilibili  *
 
 
-## 其他
-[口袋资源](https://www.koudaizy.com) ***
+## 官方
 [亚马逊云科技 视频中心](https://aws.amazon.bokecc.com/) *** 
 在线研讨会, re:Invent, Innovate,  Summit,  Transformation Day
 [亚马逊云科技中国市场及培训活动](https://aws.amazon.com/cn/about-aws/events/) *** 
 [aws 在线研讨会](https://aws.amazon.com/cn/about-aws/events/webinar/2019/) ***  2015-2019
 [亚马逊云科技官方账号](https://space.bilibili.com/418158141) *** bili  - INNOVATE 2020
 [亚马逊云开发者](https://blog.csdn.net/awschina?type=blog)  亚马逊CSDN blog-会议,咨询
+[AWS Architecture Blog](https://amazonaws-china.com/cn/blogs/architecture/) ***
+[All Things Distributed](https://www.allthingsdistributed.com/)  aws cto
+
+
+## 非官方
+[口袋资源](https://www.koudaizy.com) ***
 [全是aws干货](https://www.zhihu.com/column/c_1347591909771182080) 分享aws云经验，提供实操干货
+
 
 
 

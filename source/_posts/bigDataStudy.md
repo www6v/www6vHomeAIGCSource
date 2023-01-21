@@ -11,10 +11,15 @@ categories:
 <p></p>
 <!-- more -->
 
- 
-+ [郭俊 Jason](http://www.jasongj.com/)   kafka spark
-+ [tianzhisheng](http://www.54tianzhisheng.cn/tags/Flink/)    flink
-+ [董西成  大数据&算法](http://dongxicheng.org/)  
-+ [Apache Flink零基础入门到进阶](https://www.infoq.cn/theme/28)
+## Big Data
++ [DataFunTalk](https://www.zhihu.com/org/datafuntalk/posts) ***
+  DataFun社区专注于大数据和AI方向的技术分享
+  关注微信公众号：DataFunSummit
++ [郭俊 Jason](http://www.jasongj.com/)   kafka spark  停更
++ [董西成  大数据&算法](http://dongxicheng.org/)  停更
 
+## Flink
++ [tianzhisheng](http://www.54tianzhisheng.cn/tags/Flink/)    ***
++ [Apache Flink零基础入门到进阶](https://www.infoq.cn/theme/28) ***
++ [Apache Flink 入门](https://developer.aliyun.com/learning/course/58) ***
 
