@@ -26,8 +26,7 @@ categories:
    - JobManager 
    - ResourceManager
    - Dispatcher
-    
-
+   
 + TaskManager 
    - Task Slot
 
@@ -38,6 +37,7 @@ categories:
    1. 数据流图
    2. 并行度
    3. 算子链
+
      (1)一对一(One-to-one，forwarding)
         这种关系类似于 Spark 中的窄依赖。
      (2)重分区(Redistributing)
@@ -46,10 +46,13 @@ categories:
    4. 执行图
    5. 任务(Tasks)和任务槽(Task Slots)
 
+## Flink Table Store
+[Flink Table Store：流批一体存储](https://zhuanlan.zhihu.com/p/575040340)
+
+## Flink CDC
 
 ## Flink on Kubernetes 
 [Flink on Kubernetes](https://github.com/www6v/dev-ops/tree/master/yaml-prod/flink)  Flink官方的方案
-
 
 ## 参考：
 1. [Flink架构及其工作原理](https://www.cnblogs.com/code2one/p/10123112.html)

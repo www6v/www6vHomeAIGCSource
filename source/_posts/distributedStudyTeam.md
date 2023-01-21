@@ -52,10 +52,10 @@ categories:
 ## 阿里云栖社区(已更名为开发者社区) 
 0. [博客热门标签](https://yq.aliyun.com/tags/)
 0. [阿里云栖  技术团队入口](https://yq.aliyun.com/teams)  
-1. [阿里技术协会 ATA](https://yq.aliyun.com/tags/tagid_523/)
+1. [阿里技术协会 ATA](https://yq.aliyun.com/tags/tagid_523/)   找不到
 2. [阿里云社区做过的在线峰会](https://yq.aliyun.com/topic?spm=a2c4e.11154022.headermainnav.11.7037aMQGaMQGE8#guid-721571)
 3. [容器服务Docker&Kubernetes](https://yq.aliyun.com/teams/11/type_blog-cid_450-page_1)
-4. [中生代技术](https://yq.aliyun.com/users/1080464764156883?spm=a2c4e.11153940.blogrightarea54004.2.22c86a7d3BdzIB)
+4. [中生代技术](https://yq.aliyun.com/users/1080464764156883?spm=a2c4e.11153940.blogrightarea54004.2.22c86a7d3BdzIB)  2018停更
 5. [阿里技术矩阵](https://yq.aliyun.com/teams/16)
 6. [阿里巴巴大数据 —玩家社区](https://yq.aliyun.com/teams/6)
 7. [阿里云网络产品](https://yq.aliyun.com/teams/28)  
@@ -71,7 +71,6 @@ categories:
 [linkedin techblog](https://engineering.linkedin.com/blog) 
 [netflix techblog](https://medium.com/netflix-techblog)  失效
 [techiedelight](https://www.techiedelight.com/) 
-
 
 
 
