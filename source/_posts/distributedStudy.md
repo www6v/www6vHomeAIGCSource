@@ -15,7 +15,7 @@ categories:
 2. [《Designing Data‑Intensive Applications》](http://www.antonfagerberg.com/files/intensive.pdf)
 
 
-### 个人博客 - 阿里 
+## 个人博客 - 阿里 
 
 内容 | 注释-最后更新时间
 :-:  |  :-:
@@ -48,22 +48,25 @@ taobao   毕玄博客   做服务化的
 http://hellojava.info/  
 hellojavacases微信公众号网站  加过  
 
-### 个人博客 - 其他
-[Microservice 微服务的理论模型和现实路径 -- 京东的人](http://blog.csdn.net/mindfloating/article/details/51221780)  2019停更
+## 个人博客 - 其他
+[黑光技术](https://www.helight.cn/)  *** linux 云原生
 [crossoverjie](https://crossoverjie.top/)
-[占小狼 -- 点评](http://www.jianshu.com/u/90ab66c248e6) jvm
-[周志明 的博客 ](http://icyfenix.iteye.com/)  java虚拟机  这本书的作者
-[Float_Luuu  大众点评网 - 高级程序员](http://my.oschina.net/andylucc/home)  
-[水寒  网易研发工程师](https://www.cnblogs.com/java-zhao/)
-[京东 张开涛](https://jinnianshilongnian.iteye.com/)  2016停更
 [瀚海星空](http://abloz.com/)
-[赖明星  网易](http://mingxinglai.com/)
-[张逸的博客](https://www.cnblogs.com/wayfarer/default.html)
 [银文杰 <<高性能服务系统构建与实战>>](https://blog.csdn.net/yinwenjie/article/list/1?)
-[汤雪华，DDD/CQRS](http://www.cnblogs.com/netfocus/)
+
+##### 停更
+[水寒  网易研发工程师](https://www.cnblogs.com/java-zhao/)  2018停更
+[占小狼 -- 点评](http://www.jianshu.com/u/90ab66c248e6)  2020停更 jvm
+[Microservice 微服务的理论模型和现实路径 -- 京东的人](http://blog.csdn.net/mindfloating/article/details/51221780)  2019停更
+[京东 张开涛](https://jinnianshilongnian.iteye.com/)  2016停更
+[周志明 的博客 ](http://icyfenix.iteye.com/)  《java虚拟机》 作者 2013停更
+[Float_Luuu  大众点评网 - 高级程序员](http://my.oschina.net/andylucc/home)  失效
+[张逸的博客](https://www.cnblogs.com/wayfarer/default.html) * 2018停更
+[汤雪华，DDD/CQRS](http://www.cnblogs.com/netfocus/) 2019停更
+[赖明星  网易](http://mingxinglai.com/)  2016停更
+
+##### 其他
 [花钱的年华 江南白衣]()  基础架构
-
-
 零度 jvm
 朱小厮 朱忠华 kafka rabbitmq 唯品会
 闪电侠 netty 
