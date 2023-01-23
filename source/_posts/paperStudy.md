@@ -37,3 +37,7 @@ categories:
 + Apache Flink: Stream and Batch Processing in a Single Engine
 + Lightweight asynchronous snapshots for distributed dataflowss
 + MillWheel: Fault-Tolerant Stream Processing at Internet Scale (VLDB)
+
+## Paper - 个人
++ [论文阅读小组](https://learn-sys.github.io/cn/reading/)   大佬们
++ [Elvis Zhang](http://blog.shunzi.tech/)  存储 数据库 方向，交大大佬

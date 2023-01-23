@@ -61,6 +61,7 @@ categories:
 4. [Apache Flink状态管理和容错机制介绍](https://www.iteblog.com/archives/2417.html)
 5. 尚硅谷 flink(Java) - bilibili 
 6. [Apache Flink 进阶（一）：Runtime 核心机制剖析](https://www.infoq.cn/article/RWTM9o0SHHV3Xr8o8giT) 阿里-高赟（云骞）
+7. [数据实时化技术创新进展 | 一文览尽 Flink Forward Asia 2022 重磅干货内容](https://www.infoq.cn/article/UXwLxU0D85E9eTU66E2A)  *** 未
 
 
 
