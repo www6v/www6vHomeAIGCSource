@@ -12,15 +12,17 @@ categories:
 <p></p>
 <!-- more -->
 
-{% asset_img rolesInCompany.JPG 组织架构图 %} 
-
+## SRE [1]
 + SRE = PE（Production Engineer） + 工具平台开发 + 稳定性平台开发
   + 工具平台团队，负责效能工具的研发，比如实现 CMDB、运维自动化、持续交付流水线以
   及部分技术运营报表的实现，为基础运维和应用运维提供效率平台支持。
   + 稳定性平台团队，负责稳定性保障相关的标准和平台，比如监控、服务治理相关的限流降
   级、全链路跟踪、容量压测和规划。
 
-+ 故障复盘
+## 组织架构图 [1]
+{% asset_img rolesInCompany.JPG 组织架构图 %} 
+
+## 故障复盘 [2]
   + 黄金三问
     - 第一问：故障原因有哪些？
     - 第二问：我们做什么，怎么做才能确保下次不会再出现类似故障？
@@ -31,13 +33,40 @@ categories:
     + 3. 分段判定原则。
   + 5W 分析法
 
+## Google SRE Principle [5]
++ 运营是软件问题 
++ 服务水平目标SLO
++ 减少琐事
+  用自动化的方式减少琐事
++ 自动化 
+  + ** 统一环境， IaC CaC，  **
+  + 生产环境中进行测试
+  + **统一** 版本管理，制品库，cmdb
+  + 可观测性
++ 降低失败成本
+  复盘  从失败中学习
++ 共享所有权 
+  个人安全，责任共担
++ 拥抱风险 + 
+  错误预算
 
-
-
+## Google SRE 实践总结 [5]
++ 确保长期关注研发工作 
++ **在保障SLO的前提下**最大化迭代速度 
++ 监控系统 +
+  insight，根因
++ 应急事件处理 
++ 变更管理 
+  ITIL
++ 需求预测和容量规划 +
+  AIOps
++ 资源部署 
++ 效率与性能
 
 ## 参考
-09｜案例：互联网典型的SRE组织架构是怎样的？ 赵成
-08｜故障复盘：黄金三问与判定三原则  赵成
-[《SRE google 运维解密》读书笔记 （一）](https://cloud.tencent.com/developer/article/2010397) 未
-[SRE 的工作介绍](https://www.kawabangga.com/posts/4481)   SRE大佬  未 
+1.《09｜案例：互联网典型的SRE组织架构是怎样的？》  赵成
+2.《08｜故障复盘：黄金三问与判定三原则》  赵成
+3. [《SRE google 运维解密》读书笔记 （一）](https://cloud.tencent.com/developer/article/2010397) 未
+4. [SRE 的工作介绍](https://www.kawabangga.com/posts/4481)   SRE大佬  未 
+5. [SRE核心概念与可观测性介绍](https://www.bilibili.com/video/BV1i84y147Xe/)   中国DevOps社区 刘峰
 
