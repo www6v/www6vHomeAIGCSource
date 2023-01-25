@@ -16,8 +16,9 @@ categories:
 
 
 
-| 阿里中间件技术博客 ***                                       |          |
+| 团队                                                         | 状态     |
 | ------------------------------------------------------------ | -------- |
+| 阿里中间件技术博客 ***                                       |          |
 | 美团点评技术博客 ***                                         |          |
 | [饿了么框架工具部- 知乎](https://zhuanlan.zhihu.com/p/28585781)  异地多活 压测 | 2018停更 |
 | [今日头条 技术博客](https://techblog.toutiao.com/2017/05/02/dao/) | 已失效   |
@@ -27,7 +28,6 @@ categories:
 | [阿里云redis最佳实践](https://help.aliyun.com/document_detail/67252.html) | 已失效 |
 | [数据库内核月报 淘宝数据库组](http://mysql.taobao.org/monthly/)   *** |          |
 | SOFA 微信公众号                                              |          |
-|                                                              |          |
 
 [蚂蚁金融科技](https://tech.antfin.com/)
 
