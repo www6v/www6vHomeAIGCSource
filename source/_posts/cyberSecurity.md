@@ -30,12 +30,17 @@ categories:
     - XSS
   + 安全配置错误 
 
-## linux安全[3]
+
+
+## Linux安全[3]
+
 {% asset_img linux-security.JPG   linux安全 %}
 
-## 安全产品
-+ 安全产品[7]
-{% asset_img security-product.JPG  安全产品 %}  
+
+
+## 安全防御工具
++ 安全防御工具[7]
+{% asset_img security-product.JPG  安全防御工具 %}  
 
 + 防火墙[5]
 {% asset_img firewall.JPG  防火墙 %}
@@ -43,21 +48,34 @@ categories:
 + 入侵检测-IDS[4]
 {% asset_img IDS.JPG  入侵检测-IDS %}
 
+
+
 ## 攻击模型
+
 [网络攻击模型研究综述](https://www.doc88.com/p-38973089899040.html)
 ATT&CK模型
 
-## 攻击手段
-+ DDos[1]
+
+
+## 攻击手段 [8]
++ 漏洞利用 
+   + SQL 注入漏洞
+   + 跨站漏洞 
+   + 授权验证绕过漏洞 
+   + 权限提升漏洞 
++ 口令爆破 
++ 钓鱼攻击 
+  - 内网钓鱼
+  - 外网钓鱼
++ 供应链攻击 
++ VPN仿冒接入  
++ 近源攻击     
++ DDoS[1] +
    + CC攻击
    + HTTP慢速攻击
 + MITM 中间人
-+ 钓鱼
-+ 勒索软件-木马
-+ SQL注入攻击
 + DNS欺骗
-
-
++ 勒索软件-木马
 
 ## 参考:
 1. [基于Web应用层的DDoS攻击模型研究](https://wenku.baidu.com/view/7f2c9810c8aedd3383c4bb4cf7ec4afe05a1b14c?fr=xueshu) *
@@ -67,4 +85,5 @@ ATT&CK模型
 5. 《19 | 防火墙：如何和黑客“划清界限”？》 何为舟
 6. 《模块串讲（一）丨Web安全：如何评估用户数据和资产数据面临的威胁？》 何为舟
 7. 《模块串讲（三）丨安全防御工具：如何选择和规划公司的安全防御体系？》何为舟
+8. 《红蓝攻防》
 
