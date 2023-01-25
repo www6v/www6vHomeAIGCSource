@@ -37,19 +37,6 @@ categories:
 {% asset_img linux-security.JPG   linux安全 %}
 
 
-
-## 安全防御工具
-+ 安全防御工具[7]
-{% asset_img security-product.JPG  安全防御工具 %}  
-
-+ 防火墙[5]
-{% asset_img firewall.JPG  防火墙 %}
-
-+ 入侵检测-IDS[4]
-{% asset_img IDS.JPG  入侵检测-IDS %}
-
-
-
 ## 攻击模型
 
 [网络攻击模型研究综述](https://www.doc88.com/p-38973089899040.html)
@@ -77,6 +64,17 @@ ATT&CK模型
 + 勒索软件-木马
 
 ## 漏洞防御与渗透测试
+
+## 安全防御工具
++ 安全防御工具[7]
+{% asset_img security-product.JPG  安全防御工具 %}  
+
++ 防火墙[5]
+{% asset_img firewall.JPG  防火墙 %}
+
++ 入侵检测-IDS[4]
+{% asset_img IDS.JPG  入侵检测-IDS %}
+
 
 ## 参考:
 1. [基于Web应用层的DDoS攻击模型研究](https://wenku.baidu.com/view/7f2c9810c8aedd3383c4bb4cf7ec4afe05a1b14c?fr=xueshu) *
