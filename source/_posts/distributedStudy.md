@@ -23,8 +23,8 @@ categories:
 [蚂蚁财富研发工程师](http://monkeyhorse.cn/)  | 已失效
 [李小武，coding@alibaba。](http://blog.lichengwu.cn/) |  已失效
 [阿里人](http://www.blogjava.net/BlueDavy/)  | 2009停更
-[黄若慧 高级技术专家 淘宝文通](http://blog.zephyrleaves.net/) | 
-[Software Engineer @ Alibaba Middleware Team](https://www.sczyh30.com/) |   
+[黄若慧 高级技术专家 淘宝文通](http://blog.zephyrleaves.net/) |
+[Software Engineer @ Alibaba Middleware Team](https://www.sczyh30.com/) |2017停更
 [系统技术非业余研究](http://blog.yufeng.info/)   |
 [arebya](http://arebya.com/) 质量不高 |
 [canal作者 agapple](https://agapple.iteye.com/) |  2016停更
@@ -37,7 +37,7 @@ categories:
 [scorpion 阿里云函数计算研发经理](https://yq.aliyun.com/users/fbt6ovijrs2zi) 函数计算 |
 [Freewill 阿里云的人 SDN ceph](https://www.cnblogs.com/bodhitree/default.html) |  2020 停更
 [阿里  周遥（玄胤）](http://www.seflerzhou.net) |
-入境繁华  蚂蚁金服中间件团队 <br> http://zhengjianglong.cn <br> http://blog.leanote.com/along |  
+入境繁华  蚂蚁金服中间件团队 <br> http://zhengjianglong.cn <br> http://blog.leanote.com/along |
 阿里人的博客 canel <br> http://agapple.iteye.com/ <br>  https://github.com/agapple   |  2016 停更
 [阿里 林昊](http://bluedavy.me/)     |  失效
 [阿里 丁奇 dba mysql](https://dinglin.iteye.com/) |  2016 停更 
@@ -49,6 +49,7 @@ http://hellojava.info/
 hellojavacases微信公众号网站  加过  
 
 ## 个人博客 - 其他
+[陈皓 左耳耗子](https://coolshell.cn/) ***
 [黑光技术](https://www.helight.cn/)  *** linux 云原生
 [crossoverjie](https://crossoverjie.top/)
 [瀚海星空](http://abloz.com/)
