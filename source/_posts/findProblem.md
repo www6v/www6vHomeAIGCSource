@@ -4,8 +4,8 @@ date: 2019-07-06 17:18:47
 tags:
   - 故障排查  
 categories:
-  - 故障排查  
-  - 流程和方法 
+  - 稳定性
+  - 故障排查   
 ---
 
 <p></p>
@@ -22,18 +22,20 @@ categories:
    RPC 异常列表、 异常码、 异常码形成异常列表 
 
 {% asset_img errorCode.PNG 异常码 %}
-   
+
 2. 借助分布式链路跟踪 APM
 
 
+
 ## 参考
+
 1. [微服务](/2019/09/09/microservice/)  self
-2. [可观察性 链路追踪](/2019/08/31/observability/)   self
+2. [可观测性 链路追踪](/2019/08/31/observability/)   self
 3. [RPC实战与核心原理进 - 19 | 分布式环境下如何快速定位问题？]()   何小锋
 4. 07｜故障处理：一切以恢复业务为最高优先级
 5. [《SRE google 运维解密》读书笔记 （二）](https://cloud.tencent.com/developer/article/2010401) 未
 6. [《SRE google 运维解密》读书笔记 （三）](https://cloud.tencent.com/developer/article/2010405)
 7. [《SRE google 运维解密》读书笔记 （四）](https://cloud.tencent.com/developer/article/2010408)
- 
+
 
 

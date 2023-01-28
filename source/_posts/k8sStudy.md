@@ -25,7 +25,7 @@ categories:
 [Kubernetes 加固指南](https://jimmysong.io/docs/kubernetes-hardening-guidance/)    good 
 [Docker Handbook](https://jimmysong.io/docker-handbook/)  
 [Serverless Handbook——无服务架构实践手册](https://jimmysong.io/serverless-handbook/)  
-  
+
 ## others
 [Kubernetes 学习笔记](https://www.huweihuang.com/kubernetes-notes/) 胡伟煌
 [崔秀龙](https://blog.fleeto.us/) service mesh
@@ -42,10 +42,10 @@ categories:
 [morven](https://morven.life/) Kubernetes, go
 
 ## 公司
-[腾讯云容器团队](https://tencentcloudcontainerteam.github.io/)  k8s
-[青云QingCloud 知乎](https://zhuanlan.zhihu.com/qingcloud)  干货少
+[腾讯云容器团队](https://tencentcloudcontainerteam.github.io/)  k8s  2020停更
 [腾讯云容器服务团队的专栏](https://cloud.tencent.com/developer/column/1075/tag-0)
-[DaoCloud 道客](https://www.zhihu.com/org/daocloud-3)  干货多
+[青云QingCloud 知乎](https://zhuanlan.zhihu.com/qingcloud)  知乎 干货少
+[DaoCloud 道客](https://www.zhihu.com/org/daocloud-3)  知乎 干货多
 
 ## CNCF × Alibaba 云原生技术公开课  
 [CNCF × Alibaba 云原生技术公开课](https://edu.aliyun.com/course/1651)  video+text+ppt  seen (30章节)
@@ -102,10 +102,9 @@ prometheus， 监控大图
 
 ## kube-study
 [华为云-Cloud Native Lives](https://bbs.huaweicloud.com/webinar/100009)   
- 
+
 [Learn Kubernetes using Interactive Browser-Based Scenarios](https://www.katacoda.com/courses/kubernetes)   
 [Play with Kubernetes](https://labs.play-with-k8s.com/)   
-
 
 
 

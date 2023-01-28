@@ -1,11 +1,12 @@
 ---
-title: Kubernetes 可观察性Observability
+title: 可观测性-Kubernetes 
 date: 2022-01-30 22:24:11
 tags:
-  - prometheus
+  - 可观测性
 categories: 
+  - 分布式
+  - 可观测性
   - 云原生
-  - Observability
 ---
 
 <p></p>
@@ -17,5 +18,8 @@ categories:
 + NPD： node problem detector
 + kube-eventer： Kubernetes 事件离线工具
 
+
+
 ## 参考
+
 [第12 章 ： 可观测性：监控与日志](https://edu.aliyun.com/lesson_1651_18360#_18360)

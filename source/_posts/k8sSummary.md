@@ -49,7 +49,7 @@ top: true
 ## 监控和AutoScale
  [Kubernetes自动伸缩和HPA](../../../../2019/11/16/k8sAutoScale/) 
  [Prometheus](../../../../2022/04/10/prometheus/)
- [Kubernetes 可观察性Observability](../../../../2022/01/30/k8sObservability/)
+ [Kubernetes 可观测性Observability](../../../../2022/01/30/k8sObservability/)
 
 ## 生产化
 [K8S 应用迁移至K8S](../../../../2022/02/02/k8sAppMigrate/)
@@ -95,7 +95,7 @@ top: true
 ## 学习
  [Kubernetes 学习资源](../../../../2022/05/21/k8sStudy/)
  [云原生相关资源](../../../../2020/06/14/cloudNativeResource/) 
- 
+
 ## 安装
  [Kubernetes 安装方式](../../../../2022/06/03/k8sSetupSummary/)
  [Kubernetes安装-kubeasz](../../../../2021/06/02/k8sDeploy/)

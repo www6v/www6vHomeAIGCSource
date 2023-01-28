@@ -1,19 +1,22 @@
 ---
-title: 可观察性-Skywalking
+title: 可观测性-Skywalking
 date: 2022-03-18 22:15:49
 tags:
-  - 可观察性
+  - 可观测性
 categories:
   - 分布式
-  - 服务治理
-  - 可观察性
+  - 可观测性
+  - tracing
 ---
 
 <p></p>
 <!-- more -->
 
+## 定位
+APM: Tracing + Metric
+
 ## 架构
-{% asset_img arch.jpeg %}
+{% asset_img arch.jpeg  架构  %}
 
 ## agent
 + rpc
