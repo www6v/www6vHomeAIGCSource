@@ -17,16 +17,25 @@ categories:
 **关键词**:  可观测性,  全链路,  APM， Metric， Log
 
 
-## Overview
+## 可观测性1.0-基础支柱
 ![metric-tracing-logging](https://user-images.githubusercontent.com/5608425/64059064-216a2880-cbe7-11e9-9ee7-141334d93959.png)
 
 
 模式| 产品/框架 
 :-:| :-: 
-Log aggregation|  ELK， AWS Cloud Watch
-Application metrics + alert| Prometheus 、AWS Cloud Watch
-Distributed tracing| Zipkin ，Jaeger，pinpoint（无侵入）, skywalking（无侵入）, CAT
-Exception tracking| Zipkin ，Jaeger，pinpoint（无侵入）, skywalking（无侵入）, CAT
+Log aggregation| **ELK**， AWS Cloud Watch 
+Application metrics + alert| **Prometheus** 、AWS Cloud Watch 
+Distributed tracing| Zipkin ，Jaeger，pinpoint（无侵入）, **skywalking**（无侵入）, CAT 
+Exception tracking| Zipkin ，Jaeger，pinpoint（无侵入）, **skywalking**（无侵入）, CAT 
+
+
+
+## 可观测性2.0-统一的可观测性平台
++ OpenTelemetry - 数据采集传输的标准化
+
+## 可观测性3.0-内生的可观测性能力
++ ebpf
+
 
 ##  监控指标和原则
 
@@ -46,9 +55,9 @@ Exception tracking| Zipkin ，Jaeger，pinpoint（无侵入）, skywalking（无
   + 错误    error
   + 饱和度  
   
+  
 ## 参考
 1. [Metrics, tracing 和 logging 的关系](https://wu-sheng.github.io/me/articles/metrics-tracing-and-logging)
 2. [观察之道：带你走进可观察性](https://mp.weixin.qq.com/s?__biz=MzIzNjUxMzk2NQ==&mid=2247489564&idx=1&sn=46d9103444bef97e89e897224a896268&chksm=e8d7e7dedfa06ec8d687c1292a1d82ff9e579430afafb9d003e18c13d4ec7e1682dbd4c642d9&scene=27#wechat_redirect)
-
-
+3. [【云原生学院#25】云原生应用可观测性实践](https://www.bilibili.com/video/BV1CL411777R?spm_id_from=333.880.my_history.page.click)  github中有PPT ***
 

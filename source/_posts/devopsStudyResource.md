@@ -5,7 +5,7 @@ tags:
   - 学习资源
 categories:
   - 分布式
-  - 稳定性
+  - devops
   - 学习资源
 ---
 
