@@ -34,9 +34,11 @@ categories:
 [book-1](https://github.com/www6v/book-1)  学习笔记 golang
 
 ## Devops
-[devops-exercises](https://github.com/www6v/devops-exercises) DevOps Interview Questions
+[devops-exercises](https://github.com/www6v/devops-exercises) DevOps Interview Questions ***
 
 [StabilityGuide](https://github.com/www6v/StabilityGuide)  打造国内稳定性领域知识库 ***
+
+[awesome-chaosblade](https://github.com/www6v/awesome-chaosblade)     
 
 
 ## K8S 容器
@@ -196,6 +198,8 @@ categories:
 [aws-sap-code](https://github.com/www6v/aws-sap-code)   Code used in our AWS Certified Solutions Architect Professional course  
 
 ## Self
+
+[ awesome-awesomes](https://github.com/www6v/awesome-awesomes)  ***
 
 [demo](https://github.com/www6v/demo)
 
