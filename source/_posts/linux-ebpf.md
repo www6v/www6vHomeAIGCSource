@@ -109,5 +109,6 @@ categories:
 + [BPF 学习路径总结](https://feisky.xyz/posts/2021-01-06-ebpf-learn-path/) 未
   [Linux Extended BPF (eBPF) Tracing Tools](https://www.brendangregg.com/ebpf.html)  brendangregg
 + [davidlovezoe](https://davidlovezoe.club/wordpress/archives/tag/bpf) 未
++  [【云原生学院#25】云原生应用可观测性实践](https://www.bilibili.com/video/BV1CL411777R/) 
 
  
