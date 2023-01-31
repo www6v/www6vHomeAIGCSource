@@ -99,16 +99,21 @@ categories:
 2. [高效入门eBPF](https://www.bilibili.com/video/BV1LX4y157Gp?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036) bilibili good - 西安邮电大学 贺东升
 [高效入门eBPF](http://kerneltravel.net/blog/2021/ebpf_beginner/ebpf.pdf) 相关的ppt  
 3. [The BSD Packet Filter:A New Architecture for User-level Packet Capture](https://www.tcpdump.org/papers/bpf-usenix93.pdf) bpf论文-1992
-4. [ebpf技术简介（上）](https://www.bilibili.com/video/BV1BT4y1q7wx?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036) good bilibili
+4. [ebpf技术简介（上）](https://www.bilibili.com/video/BV1BT4y1q7wx?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036) *** bili
 5. [深入浅出 eBPF｜你要了解的 7 个核心问题](https://blog.csdn.net/alisystemsoftware/article/details/125753307)  阿里炎寻
    K8s问题排查全景图 
 6. [Cilium eBPF 网络解析](https://cloud.tencent.com/developer/article/1916561)
 7. [Beyond Istio OSS —— Istio 服务网格的现状与未来](https://jimmysong.io/blog/beyond-istio-oss/#ebpf)
 
 + [深入浅出 eBPF](https://www.ebpf.top/categories/BPF/) 未
+
 + [BPF 学习路径总结](https://feisky.xyz/posts/2021-01-06-ebpf-learn-path/) 未
   [Linux Extended BPF (eBPF) Tracing Tools](https://www.brendangregg.com/ebpf.html)  brendangregg
+  
 + [davidlovezoe](https://davidlovezoe.club/wordpress/archives/tag/bpf) 未
-+  [【云原生学院#25】云原生应用可观测性实践](https://www.bilibili.com/video/BV1CL411777R/) 
+
++ [【云原生学院#25】云原生应用可观测性实践](https://www.bilibili.com/video/BV1CL411777R/)  未 *** 
+
+   
 
  
