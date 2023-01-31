@@ -2,9 +2,8 @@
 title: DevOps
 date: 2022-01-29 16:45:04
 tags: 
-  - 学习资源
+  - devops
 categories:
-  - 分布式
   - devops
 ---
 

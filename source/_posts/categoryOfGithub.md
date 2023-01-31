@@ -4,8 +4,7 @@ date: 2022-01-27 14:53:58
 tags:
   - github
 categories:
-  - devops
-  - github
+  - 分布式
   - 学习资源
 ---
 

@@ -3,8 +3,9 @@ title: 有用的Git命令
 date: 2019-05-04 21:59:54
 tags:
   - git
-categories: 
-  - 研发工具 
+categories:
+  - devops 
+  - git 
 ---
 
 <p hidden>有用的Git命令</p>
@@ -57,5 +58,4 @@ git reset --hard origin/<branch_name>
 5. [Git 删除具体某个提交commit的方法](https://www.jianshu.com/p/2fd2467c27bb)
 6. [“git pull”如何强制覆盖本地文件？](https://vimsky.com/article/3679.html)
 7. [关于git提示“warning: LF will be replaced by CRLF”终极解答](https://www.jianshu.com/p/450cd21b36a4)
-
 

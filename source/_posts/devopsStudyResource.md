@@ -4,7 +4,6 @@ date: 2022-06-25 22:05:20
 tags: 
   - 学习资源
 categories:
-  - 分布式
   - devops
   - 学习资源
 ---
