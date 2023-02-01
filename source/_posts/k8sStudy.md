@@ -105,6 +105,12 @@ prometheus， 监控大图
 ##### 华为云-Cloud Native Lives
 [华为云-Cloud Native Lives](https://bbs.huaweicloud.com/webinar/100009)  
 
+##### 腾讯云-云原生正发声
+[云原生技术实践 | 16位专家视频讲解合集（抢新年限定红包封面）](https://mp.weixin.qq.com/s/7RoYOX9PBp79bwsLmTiOsQ)
+[云原生正发声](https://cloud.tencent.com/developer/special/cloudnative)
+[【云原生正发声】直播PPT汇总](https://docs.qq.com/doc/DRmtFZkFNRlpqeVdR)
+
+
 ## kube-study platform
 [Learn Kubernetes using Interactive Browser-Based Scenarios](https://www.katacoda.com/courses/kubernetes)   
 [Play with Kubernetes](https://labs.play-with-k8s.com/)   
