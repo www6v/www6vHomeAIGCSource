@@ -16,7 +16,7 @@ categories:
 ##  资源调度泛型
 
 <div style="text-align: center;">
-	
+
 ![调度系统泛型](https://user-images.githubusercontent.com/5608425/65023010-96b65700-d964-11e9-9acd-7cc8edbbde85.JPG)
 调度系统泛型
 </div>
@@ -84,7 +84,7 @@ https://github.com/kubernetes/enhancements/issues/895 even pod, 多个region调�
 ##### 基于谓词的调度器
 + [Kubernetes集群调度器原理剖析及思考](https://mp.weixin.qq.com/s/gfq1qghLW7g4gKZBBP17IA) - v1.11版本 2019
 + [深度解析Kubernetes核心原理之Scheduler](https://cloud.tencent.com/developer/article/1475940) good 未 - KubeCon 2018
-+ [DockOne微信分享（一四九）：Kubernetes调度详解 ](http://dockone.io/article/2885) good 未 - 2017年 ，FreeWheel 主任工程师 
++ [DockOne微信分享（一四九）：Kubernetes调度详解 ](http://dockone.io/article/2885)  FreeWheel 主任工程师-2017年-***未
 
 
-                                        
+​                                        
