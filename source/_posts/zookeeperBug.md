@@ -2,13 +2,13 @@
 title: zookeeper未通知到服务客户端的异常排查
 date: 2017-07-28 22:56:02
 tags:
-  - zookeeper
   - 故障排查  
 categories:
+  - 稳定性
   - 故障排查  
   - Zookeeper   
 ---
- 
+
 
 ## 背景
 
@@ -63,5 +63,4 @@ categories:
 最后找到的问题是，应用把hedwig的zk3.4.7在pom.xml里exclude掉了，用的是zk3.4.3版本，ZOOKEEPER-706的patch当然没有打上，线上产生这个错误也是正常的。
 
 最后把zk3.4.3升级为zk3.4.7版本，这个问题解决了。
-
 

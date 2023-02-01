@@ -3,8 +3,8 @@ title: Classloader相关的故障排查
 date: 2014-09-06 14:22:17
 tags: 
   - 故障排查  
-  - classloader
-categories: 
+categories:
+  - 稳定性 
   - 故障排查  
   - classloader  
 ---
@@ -20,7 +20,7 @@ categories:
 ## 二.代码
 
 1. 看到客户端里的classloader是AppClassLoader, 能load到classpath下的文件, 所以只要资源文件在classpath下就能load到.
- 
+
 ![图一 客户端classloader](http://www6v.github.io/www6vHome/classloader/client%20appclassloder.PNG "图一 客户端classloader")
 
 ![图二 客户端 classloader打开流文件](http://www6v.github.io/www6vHome/classloader/client%20appclassloder1.PNG "图二 客户端 classloader打开流文件")

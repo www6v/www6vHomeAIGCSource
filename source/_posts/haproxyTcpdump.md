@@ -2,8 +2,9 @@
 title: HAProxy抓包
 date: 2022-01-11 22:00:07
 tags:
-  - 抓包
+  - 故障排查
 categories:
+  - 稳定性
   - 故障排查  
   - tcpdump
 ---
@@ -53,7 +54,7 @@ tcpdump -n tcp port 11111 -w eth1.cap
 {% asset_img  h6.png  实际的客户端IP，和抓包分析的一致 %}
 
 
-## 参考：
+## 参考
 https://zhuanlan.zhihu.com/p/417275080
 https://blog.csdn.net/weixin_40748006/article/details/106429957
 

@@ -2,10 +2,8 @@
 title: 混沌工程
 date: 2019-09-24 22:20:50
 tags: 
-  - 稳定性
-  - 故障
+  - 混沌工程
 categories:
-  - 分布式
   - 稳定性
   - 混沌工程
 ---
@@ -18,7 +16,7 @@ categories:
 {% asset_img priciple.jpg 原则 %}
 
 ##### 成熟度
-{% asset_img mature.png 成熟度 %} 
+{% asset_img mature.jpg 成熟度 %} 
 
 #####  混沌工程实施步骤
 + 制订混沌实验计划
