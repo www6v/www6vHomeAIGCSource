@@ -4,7 +4,8 @@ date: 2019-11-01 03:48:07
 tags:
   - API
 categories:  
-  - 架构  
+  - 架构 
+  - 应用架构 
   - API
 ---
 

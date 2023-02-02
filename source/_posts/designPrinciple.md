@@ -38,7 +38,7 @@ categories:
 
 ##### 8. 康威定律  
          organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations
-
+    
       衍生: 
          1).DDD context
          2).微服务模块划分
@@ -60,7 +60,6 @@ categories:
 
 ## 参考：
 
-1. [对开发人员有用的定律、理论、原则和模式](https://github.com/www6v/hacker-laws-zh)
+1. [对开发人员有用的定律、理论、原则和模式](https://github.com/www6v/hacker-laws-zh) ***
 2. [滴滴杜欢：大型微服务框架设计实践](https://mp.weixin.qq.com/s/HSzqIC1pOdq8H12gCvYgRA)
-
 

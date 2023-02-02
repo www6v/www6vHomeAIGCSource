@@ -5,6 +5,7 @@ tags:
   - 秒杀系统
 categories: 
   - 架构
+  - 系统架构
   - 秒杀系统   
 ---
 
@@ -18,5 +19,4 @@ categories:
 1. 阿里大秒系统
 2. 秒杀系统架构优化思路 58沈剑
 3. [如何设计一个高可用、高并发秒杀系统](https://mp.weixin.qq.com/s/YfHszSORHP_-W7pJA8PEcg) 未
-
 

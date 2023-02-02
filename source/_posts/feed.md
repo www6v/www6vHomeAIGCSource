@@ -5,10 +5,11 @@ tags:
   - feed
 categories:
   - 架构
+  - 应用架构
   - feed 
 ---
 
-<p hideen></p>
+<p></p>
 <!-- more -->
 
 {% asset_img   feed.jpg  Feed总结  %}
@@ -44,10 +45,10 @@ categories:
 |IM群聊	|1 + N个Timeline	| 
 |朋友圈	|1 + N个Timeline 	| 
 |微博	|大V发一条微博就是 1 + M个Timeline（M << N，N是粉丝数） 	| 
- 
+
 
 <div style="text-align: center;">
-	
+
 ![Rank](https://user-images.githubusercontent.com/5608425/65016689-792ec080-d957-11e9-9834-6a3d5c93e647.png)
 Rank
 </div>
