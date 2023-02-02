@@ -29,6 +29,7 @@ categories:
 
 ##### others
 [ArthurChiao's Blog](http://arthurchiao.art/categories/) cliumn , bpf, network  ***
+[wei.luo](https://www.yuque.com/wei.luo/cni)  network  *** 
 [云原生实验室](https://icloudnative.io)   米开朗基杨 @知乎 ，腾讯云开发者社区， ***
 [傲小剑  service mesh](https://skyao.io/#posts)  service mesh ***
 [赵化冰@ZTE](https://zhaohuabing.com/)  service mesh ***
