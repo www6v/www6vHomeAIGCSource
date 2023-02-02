@@ -1,11 +1,11 @@
 ---
-title: Linux 总结
+title: Linux 汇总
 date: 2021-05-27 08:48:20
 tags:
   - linux
 categories:
-  - linux  
-  - 总结 
+  - 汇总
+  - linux   
 top: true   
 ---
 
@@ -97,7 +97,6 @@ top: true
 1. 《深入浅出DPDK》
 2. [与程序员相关的CPU缓存知识](https://coolshell.cn/articles/20793.html) good 有代码
 3. <<性能之巅>>
-
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: AWS 总结
+title: AWS 汇总
 date: 2018-10-04 13:05:24
 tags:
-  - 云计算
+  - 汇总
 categories:
-  - 云计算  
+  - 汇总  
   - AWS
 top: true    
 ---

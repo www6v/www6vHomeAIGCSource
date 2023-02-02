@@ -1,11 +1,11 @@
 ---
-title: 各种编程语言 Examples
+title: 编程语言Examples 汇总
 date: 2019-06-19 09:24:12
 tags:
-  - 总结
+  - 汇总
 categories:
+  - 汇总 
   - 语言
-  - 总结  
 top: true
 ---
 

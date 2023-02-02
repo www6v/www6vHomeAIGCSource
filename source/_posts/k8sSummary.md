@@ -1,10 +1,10 @@
 ---
-title: Kubernetes 总结
+title: Kubernetes 汇总
 date: 2022-01-22 21:45:51
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
-  - 云原生
+  - 汇总
   - Kubernetes
 top: true  
 ---
