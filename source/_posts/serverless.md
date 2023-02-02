@@ -75,7 +75,7 @@ serverless和serverful的对比
 ##### 大数据处理   
 
 ##  产品- Hosted Platform [0]
-| Serverless , Function as a Service(Faas) |                                                              |
+| Serverless , Function as a Service(Faas) | 描述                                                         |
 | ---------------------------------------- | ------------------------------------------------------------ |
 | AWS Lambda                               |                                                              |
 | Google Cloud Functions                   |                                                              |
@@ -84,18 +84,17 @@ serverless和serverful的对比
 
 
 
-| Serverless Container[6] , Container as a Service(Caas) |                                                              |
+| Serverless Container[6] , Container as a Service(Caas) | 描述                                                         |
 | ------------------------------------------------------ | ------------------------------------------------------------ |
 | AWS Fargate                                            |                                                              |
 | Azure ACI                                              |                                                              |
 | 华为CCI                                                |                                                              |
 | 阿里 Serverless Kubernetes、本身是Kubernetes集群       |                                                              |
 | 容器服务 ACS                                           | [大道至简 - 基于Docker的Serverless探索之旅](https://yq.aliyun.com/articles/59483) 产品 |
-|                                                        |                                                              |
 
 
 
-| 面向应用的 Serverless 服务, Paas                             |                                                              |
+| 面向应用的 Serverless 服务, Paas                             | 描述                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [Serverless 应用服务(蚂蚁金服)](https://tech.antfin.com/products/SAS) | [Serverless 落地挑战与蚂蚁金服实践](https://yq.aliyun.com/articles/713292) 产品 <br>SAS , 兼容标准Knative， toB不toC |
 | Serverless 应用引擎（阿里云） <br> SAE是DevOps最佳实践       | [Serverless 时代 DevOps 的最佳打开方式](https://developer.aliyun.com/article/782846?utm_content=g_1000253942)  未<br/>   Serverless 应用引擎（SAE）是阿里云 Serverless 产品矩阵中提供的 DevOps 最佳实践。<br/>   SAE 是一款面向应用 Serverless PaaS 平台，支持 Spring Cloud、Dubbo、HSF 等主流的应用开发框架。 |
@@ -126,7 +125,7 @@ serverless和serverful的对比
 </div>
 
 ## 参考
-+ 0. [CNCF Cloud Native Interactive Landscape](https://landscape.cncf.io/serverless)
++ 0.[CNCF Cloud Native Interactive Landscape](https://landscape.cncf.io/serverless)
 + 5.[无服务计算的未来和挑战: A Berkeley View on Serverless Computing](https://mp.weixin.qq.com/s/7qJUzf8xrGihPPLsvwPEig)  ***
 + 6.[当我们在聊Serverless时你应该知道这些](https://yq.aliyun.com/articles/574222)  阿里 竹涧， 场景 产品 架构
 + 8.[Serverless 与容器决战在即？有了弹性伸缩就不一样了](https://yq.aliyun.com/articles/717318)  阿里 莫源 未   
