@@ -44,6 +44,8 @@ https://github.com/kubernetes-sigs/kubefed
 
 + Gardener [3]
 
++ Crossplane [3]
+
 ## 参考：
 1. [k8s多集群的思考](https://www.huweihuang.com/kubernetes-notes/multi-cluster/k8s-multi-cluster-thinking.html)
 
