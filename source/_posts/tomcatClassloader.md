@@ -2,16 +2,16 @@
 title: Tomcat classloader调研
 date: 2014-10-28 18:46:39
 tags:
-  - Java基础
-  - 调研
   - classloader
 categories: 
   - Java基础
   - classloader   
 ---
 
-## 一. 这次针对共享jar目录对tomcat classloader调研，大概有以下两种解决方案。
+<p></p>
 <!-- more -->
+
+## 一. 这次针对共享jar目录对tomcat classloader调研，大概有以下两种解决方案。
 
 ## 二. Tomcat6.x+ 向前兼容性 和 Delegate“开关”
 
@@ -150,7 +150,7 @@ class_loader    classes bytes   parent_loader   alive?  type
 
 total = 37      8951    55792808            N/A         alive=8, dead=29            N/A
 ```
- 
+
 
 ![图6](http://www6v.github.io/www6vHome/tomcatClassloader/tomcatClassloader_clip_image002_0000.jpg "图6")
 
@@ -179,7 +179,7 @@ class_loader    classes bytes   parent_loader   alive?  type
 
 total = 35      8395    52687048            N/A         alive=7, dead=28            N/A
 ```
- 
+
 ![图7](http://www6v.github.io/www6vHome/tomcatClassloader/tomcatClassloader_clip_image004.jpg "图7")
 
 ## 参考： 
@@ -191,11 +191,10 @@ total = 35      8395    52687048            N/A         alive=7, dead=28        
 6. [应用Tomcat的WebappClassLoader加载指定目录的jar文件](http://dncsoft.iteye.com/blog/336871)  
 7. tomcat6.0和7.0的源代码
 
- 
+
 Btw： WatchedResource - The auto deployer will monitor the specified static resource of the web application for updates, and will reload the web application if it is updated. The content of this element must be a string.
 
  
-
 
 
 

@@ -4,9 +4,7 @@ date: 2019-09-20 15:02:28
 tags:
   - 微服务
 categories:
-  - 分布式
-  - 服务治理
-  - 微服务
+  - Java基础
   - springboot
 ---
 
@@ -120,7 +118,7 @@ BOM本质上是一个普通的POM文件
 + 端口与路径
 + management.server.address=
 + management.server.port=
-   
+  
 
 ## 3.2 内嵌的Web容器
 可选容器列表

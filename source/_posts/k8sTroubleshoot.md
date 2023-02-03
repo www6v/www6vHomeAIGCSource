@@ -4,7 +4,8 @@ date: 2022-06-08 17:39:12
 tags:
   - Kubenetes
 categories: 
-  - 云原生
+  - 稳定性
+  - 故障排查
   - Kubernetes  
 ---
 
