@@ -42,11 +42,14 @@ https://github.com/kubernetes-sigs/kubefed
 
 + OCM(Open Cluster Management) - RedHat 
 
++ Gardener [3]
+
 ## 参考：
-[k8s多集群的思考](https://www.huweihuang.com/kubernetes-notes/multi-cluster/k8s-multi-cluster-thinking.html)
+1. [k8s多集群的思考](https://www.huweihuang.com/kubernetes-notes/multi-cluster/k8s-multi-cluster-thinking.html)
 
-[混合云下的 Kubernetes 多集群管理与应用部署](https://kubesphere.com.cn/blogs/kubernetes-multicluster-kubesphere/) 未
+2. [混合云下的 Kubernetes 多集群管理与应用部署](https://kubesphere.com.cn/blogs/kubernetes-multicluster-kubesphere/) 未
 
+3. [【PingCAP Infra Meetup】No.141 Kubernetes 开发设计模式在 TiDB Cloud 中的应用](https://www.bilibili.com/video/BV14f4y1T7LY/)
 
 
 
