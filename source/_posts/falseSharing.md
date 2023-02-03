@@ -13,6 +13,7 @@ categories:
 
 ## 一. 概念
 <div style="text-align: center;">
+
 ![FalseSharing](https://user-images.githubusercontent.com/5608425/64919353-6c399200-d7dc-11e9-8506-50583042d91a.png)
 伪共享 FalseSharing
 </div>
@@ -112,7 +113,7 @@ public final class FalseSharing
     }
 }
 ```
- 
+
 测试环境： 笔记本电脑 -- Intel（R）Core(TM) i3-3120M CPU @2.50GHz 2.50GHz 内存 10.0GB
 
 ## 参考：
