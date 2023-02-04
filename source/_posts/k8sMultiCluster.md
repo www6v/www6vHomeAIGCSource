@@ -35,8 +35,7 @@ https://github.com/kubernetes-sigs/kubefed
 [深入了解：Virtual Kubelet](https://v.qq.com/x/page/q0827olfrlx.html) video   2018 kubecon  未  
 
 
-+ Karmada（Kubernetes Armada）
-[Karmada: 开源的云原生多云容器编排引擎](https://www.bilibili.com/video/BV1rX4y1c72s?spm_id_from=333.999.0.0) 华为
++ Karmada（Kubernetes Armada）[5]
 
 + clusternet - 腾讯云
 
@@ -46,12 +45,14 @@ https://github.com/kubernetes-sigs/kubefed
 
 + Crossplane [3]
 
++ cluster-api [4]
+
 ## 参考：
 1. [k8s多集群的思考](https://www.huweihuang.com/kubernetes-notes/multi-cluster/k8s-multi-cluster-thinking.html)
-
 2. [混合云下的 Kubernetes 多集群管理与应用部署](https://kubesphere.com.cn/blogs/kubernetes-multicluster-kubesphere/) 未
-
 3. [【PingCAP Infra Meetup】No.141 Kubernetes 开发设计模式在 TiDB Cloud 中的应用](https://www.bilibili.com/video/BV14f4y1T7LY/)
+4. [基于 ClusterAPI 的集群管理](https://www.bilibili.com/video/BV12e4y1M7KM?spm_id_from=333.880.my_history.page.click)
+5. [Karmada: 开源的云原生多云容器编排引擎](https://www.bilibili.com/video/BV1rX4y1c72s?spm_id_from=333.999.0.0) 华为
 
 
 
