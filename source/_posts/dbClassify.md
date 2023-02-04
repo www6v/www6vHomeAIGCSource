@@ -20,7 +20,7 @@ categories:
 </div>
 
 
-{% asset_img  database.png  数据库分类 %}
+{% asset_img  database.jpg  数据库分类 %}
 
 ## 参考：
 
