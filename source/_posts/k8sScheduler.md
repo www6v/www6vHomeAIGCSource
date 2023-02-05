@@ -13,7 +13,7 @@ categories:
 
 
 
-##  资源调度泛型
+##  资源调度泛型 [1]
 
 <div style="text-align: center;">
 
@@ -31,20 +31,12 @@ categories:
 表1. 常见调度器的比较
 
 
-##  Kubernetes 资源调度
+##  Kubernetes 资源调度[2]
 
 {% asset_img   k8sScheduler.jpg  k8s调度器  %} 
 
-> K8s自带的的资源调度器，有一个明显的特点是：依次调度每个容器。
 
-> Volcano [5] 
-  + DRF（dominant resource fairness）: Yarn和Mesos都有
-  DRF意为：“谁要的资源少，谁的优先级高”
-  + Queue: Yarn调度器的功能
-
-
-## Kubernetes 调度的两个阶段
-
+## Kubernetes 调度的两个阶段[4][5]
 ##### 基于谓词和优先级的调度器（Predicates and Priorities） · v1.0.0 ~ v1.14.0
 {%asset_img predicates-and-priorities-scheduling.png 基于谓词和优先级的调度器 %}
 
@@ -65,26 +57,37 @@ categories:
 
 + 除了两个大循环之外，调度框架中还包含 QueueSort、PreFilter、Filter、PostFilter、Score、Reserve、Permit、PreBind、Bind、PostBind 和 Unreserve 11 个扩展点（Extension Point），这些扩展点会在调度的过程中触发。
 
-## 参考:
+## 批量计算[3]
++ K8s自带的的资源调度器，有一个明显的特点是：依次调度每个容器。
 
-+ [《大数据日知录：架构与算法》第4章 张俊林](https://www.amazon.cn/dp/B00NGW4EAG/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&keywords=%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%A5%E7%9F%A5%E5%BD%95%EF%BC%9A%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95&qid=1560055240&s=gateway&sr=8-1)
-+ [《Kubenetes in Action》 第11章-机理 第16章-高级调度  七牛容器云团队](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)
-+ [为什么K8s需要Volcano？](https://mp.weixin.qq.com/s/_6WCgqxjTR1rAv8gQqNdWw) 华为
-+ [第 76 期 Kubernetes Scheduler 设计与实现](https://github.com/talkgo/night/issues/535)
++ Volcano  
+  + DRF（dominant resource fairness）: Yarn和Mesos都有
+  DRF意为：“谁要的资源少，谁的优先级高”
+  +  Queue: Yarn调度器的功能
+
+## 参考
+1. [《大数据日知录：架构与算法]()  第4章  张俊林
+2. [《Kubenetes in Action》 第11章-机理 第16章-高级调度  七牛容器云团队](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)
+3. [为什么K8s需要Volcano？](https://mp.weixin.qq.com/s/_6WCgqxjTR1rAv8gQqNdWw) 华为
 
 
 ##### scheduling framework调度器 && 谓词
-+ [调度系统设计精要](https://draveness.me/system-design-scheduler/) linux 调度器， go调度器， k8s调度器
-+ [Kubernetes Scheduler 设计与实现](https://www.bilibili.com/video/BV1N7411w7M9) bilibili
-https://github.com/kubernetes/enhancements/issues/895 even pod, 多个region调度
-+ [进击的 Kubernetes 调度系统（一）：Kubernetes scheduling framework](https://mp.weixin.qq.com/s/UkVXuZU0E0LT3LaDdZG4Xg)  未
-+ [进击的 Kubernetes 调度系统（二）：支持批任务的 Coscheduling/Gang scheduling](https://blog.csdn.net/alisystemsoftware/article/details/107359341) 未
+4. [调度系统设计精要](https://draveness.me/system-design-scheduler/) linux 调度器， go调度器， k8s调度器
+5. [Kubernetes Scheduler 设计与实现](https://www.bilibili.com/video/BV1N7411w7M9) bili
+   [第 76 期 Kubernetes Scheduler 设计与实现](https://github.com/talkgo/night/issues/535)  ***
+   https://github.com/kubernetes/enhancements/issues/895 even pod, 多个region调度
+6. [进击的 Kubernetes 调度系统（一）：Kubernetes scheduling framework](https://mp.weixin.qq.com/s/UkVXuZU0E0LT3LaDdZG4Xg)  未
+7. [进击的 Kubernetes 调度系统（二）：支持批任务的 Coscheduling/Gang scheduling](https://blog.csdn.net/alisystemsoftware/article/details/107359341) 未
 
 
 ##### 基于谓词的调度器
-+ [Kubernetes集群调度器原理剖析及思考](https://mp.weixin.qq.com/s/gfq1qghLW7g4gKZBBP17IA) - v1.11版本 2019
-+ [深度解析Kubernetes核心原理之Scheduler](https://cloud.tencent.com/developer/article/1475940) good 未 - KubeCon 2018
-+ [DockOne微信分享（一四九）：Kubernetes调度详解 ](http://dockone.io/article/2885)  FreeWheel 主任工程师-2017年-***未
+8. [Kubernetes集群调度器原理剖析及思考](https://mp.weixin.qq.com/s/gfq1qghLW7g4gKZBBP17IA) - v1.11版本 2019
+9. [深度解析Kubernetes核心原理之Scheduler](https://cloud.tencent.com/developer/article/1475940) 未 - KubeCon 2018   *** 
+10. [DockOne微信分享（一四九）：Kubernetes调度详解 ](http://dockone.io/article/2885)  FreeWheel 主任工程师-2017年-***未
 
-
-​                                        
+##### 实战
+11. [容器云调度优化及实践](https://www.bilibili.com/video/BV1iD4y117JL?spm_id_from=333.880.my_history.page.click) 未
++ 服务资源智能推算: crane+Victoria Metrics  
++ 二次调度:  descheduler
++ 弹性调度：  OpenKruise-WorkloadSpread + Virtual Kubelet
+                                    
