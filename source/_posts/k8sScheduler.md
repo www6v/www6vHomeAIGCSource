@@ -65,6 +65,11 @@ categories:
   DRF意为：“谁要的资源少，谁的优先级高”
   +  Queue: Yarn调度器的功能
 
+## 实战[11]
++ 服务资源智能推算: crane+Victoria Metrics  
++ 二次调度:  descheduler [12][13]
++ 弹性调度：  OpenKruise-WorkloadSpread + Virtual Kubelet
+
 ## 参考
 1. [《大数据日知录：架构与算法]()  第4章  张俊林
 2. [《Kubenetes in Action》 第11章-机理 第16章-高级调度  七牛容器云团队](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)
@@ -86,8 +91,6 @@ categories:
 10. [DockOne微信分享（一四九）：Kubernetes调度详解 ](http://dockone.io/article/2885)  FreeWheel 主任工程师-2017年-***未
 
 ##### 实战
-11. [容器云调度优化及实践](https://www.bilibili.com/video/BV1iD4y117JL?spm_id_from=333.880.my_history.page.click) 未
-+ 服务资源智能推算: crane+Victoria Metrics  
-+ 二次调度:  descheduler
-+ 弹性调度：  OpenKruise-WorkloadSpread + Virtual Kubelet
-                                    
+11. [容器云调度优化及实践](https://www.bilibili.com/video/BV1iD4y117JL?spm_id_from=333.880.my_history.page.click) 
+12. [descheduler 二次调度让 Kubernetes 负载更均衡](https://www.chenshaowen.com/blog/descheduler-makes-kubernetes-load-more-balanced.html)
+13. [Kubernetes 中 Descheduler 组件的使用与扩展](https://blog.tianfeiyu.com/2022/06/30/kubernetes_descheduler/)
