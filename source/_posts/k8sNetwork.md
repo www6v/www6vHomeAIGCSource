@@ -139,6 +139,7 @@ NetworkPolicy
 
 # 六. 访问公网[99]
 ### 通过NAT访问公网
+{% asset_img internet-access.jpg  通过NAT访问公网 %}
 
 ## 参考:
 [1]: https://edu.aliyun.com/lesson_1651_13087#_13087
