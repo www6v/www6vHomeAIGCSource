@@ -49,27 +49,26 @@ categories:
 
 -----
 
-/   |Istio Gateway	|阿里云Ingress Controller	|NGINX Ingress Controller
-:-: | :-: | :-: | :-:	
-根据HTTP Header选择路由规则	|支持	|仅支持单个Header，不支持多个Header组合	|不支持
-Header规则支持正则表达式	|支持	|支持	|不支持
-服务之间设置权重拆分流量	|支持	|支持	|不支持
-Header和权重规则组合使用	|支持	|支持	|不支持
-路由规则检查	|支持	|不支持	|不支持
-路由规则粒度	|service下的不同pod	|service	|service
-支持的协议	|HTTP1.1/HTTP2/gRPC/TCP<br>/Websockets/MongoDB	|HTTP1.1/HTTP2/gRPC<br>/TCP/Websockets	|HTTP1.1/HTTP2/gRPC<br>/TCP/Websockets
-
+| 特性                        | Istio Gateway                                  | 阿里云Ingress Controller               | NGINX Ingress Controller               |
+| --------------------------- | ---------------------------------------------- | -------------------------------------- | -------------------------------------- |
+| 根据HTTP Header选择路由规则 | 支持                                           | 仅支持单个Header，不支持多个Header组合 | 不支持                                 |
+| Header规则支持正则表达式    | 支持                                           | 支持                                   | 不支持                                 |
+| 服务之间设置权重拆分流量    | 支持                                           | 支持                                   | 不支持                                 |
+| Header和权重规则组合使用    | 支持                                           | 支持                                   | 不支持                                 |
+| 路由规则检查                | 支持                                           | 不支持                                 | 不支持                                 |
+| 路由规则粒度                | service下的不同pod                             | service                                | service                                |
+| 支持的协议                  | HTTP1.1/HTTP2/gRPC/TCP<br/>/Websockets/MongoDB | HTTP1.1/HTTP2/gRPC<br/>/TCP/Websockets | HTTP1.1/HTTP2/gRPC<br/>/TCP/Websockets |
 
 -----
 
 <div style="text-align: center;">
-	
+
 ![SpringCloud With Kubernetes](https://user-images.githubusercontent.com/5608425/64624730-aa6e3480-d41d-11e9-84eb-2278bdb952e1.jpg)  SpringCloud With Kubernetes
 
 ![SpringCloud .vs Kubernetes](https://user-images.githubusercontent.com/5608425/64624734-ab06cb00-d41d-11e9-8ceb-ed1b5436eec7.jpg)
 SpringCloud .vs Kubernetes
 </div>
- 
+
 ## 参考:
 1. 《分布式系统的技术栈》 左耳听风
 2. [厉害了，Spring Cloud Alibaba 发布 GA 版本！](https://blog.csdn.net/zl1zl2zl3/article/details/89790643)
@@ -77,4 +76,3 @@ SpringCloud .vs Kubernetes
 4. [Istio Gateway与Kubernetes Ingress Controller对比](https://yq.aliyun.com/articles/636511)  灰度例子
 5. [Service Mesh 高可用在企业级生产中的实践](https://www.servicemesher.com/blog/baidu-service-mesh-ha-practice/)  百度 罗广明 未
     Service Mesh与Spring Cloud的结合
-	

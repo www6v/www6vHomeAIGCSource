@@ -1,5 +1,5 @@
 ---
-title: K8S零停机 可用性
+title: K8S高可用-零停机
 date: 2022-04-05 15:09:31
 tags:
   - Kubenetes
@@ -21,7 +21,7 @@ categories:
   3. 多实例有状态应用： 
      etcd N, maxUnavailable=1 或者 minAvailable=N
 
-  
+
 ## 健康检查
 **Liveness Probe**:  确定何时重启容器. 例如，当应用程序处于运行状态但无法做进一步操作，liveness探针将捕获到deadlock，重启处于该状态下的容器，使应用程序在存在bug的情况下依然能够继续运行下去。
 liveness的初始值为成功。
