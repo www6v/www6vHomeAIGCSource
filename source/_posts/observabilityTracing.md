@@ -4,7 +4,6 @@ date: 2023-01-28 22:42:30
 tags:
   - 可观测性
 categories:
-  - 分布式
   - 可观测性
   - tracing
 ---

@@ -2,11 +2,11 @@
 title: TCP故障模式
 date: 2020-08-08 23:17:36
 tags: 
-  - 网络
+  - 稳定性
 categories: 
-  - linux
-  - 网络
-  - TCP     
+  - 稳定性
+  - 故障模型
+  - TCP故障     
 ---
 
 <p hidden></p>

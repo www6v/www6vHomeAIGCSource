@@ -4,7 +4,6 @@ date: 2022-04-10 21:58:17
 tags:
   - prometheus
 categories: 
-  - 分布式
   - 可观测性
   - metric
 ---

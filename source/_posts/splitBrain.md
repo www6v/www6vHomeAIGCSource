@@ -3,11 +3,10 @@ title: Split Brain
 date: 2017-02-19 23:44:11
 tags:
   - 一致性
-  - 可用性
-categories:
-  - 分布式 
-  - 一致性  
-  - Split Brain   
+  - 稳定性
+categories: 
+  - 稳定性  
+  - SplitBrain   
 ---
 
 <p></p>
@@ -44,8 +43,8 @@ redis脑裂、mysql脑裂
 
 
 
-	
+​	
 
-	
-	
-	
+
+​	
+​	

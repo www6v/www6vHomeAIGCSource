@@ -4,7 +4,6 @@ date: 2022-01-29 12:49:06
 tags:
   - 可观测性
 categories: 
-  - 分布式
   - 可观测性
   - OpenTelemetry
 ---
