@@ -42,7 +42,7 @@ top: true
 [图解Go语言内存分配](https://mp.weixin.qq.com/s/7bTGxhl7RXBmw5bxaR7Cnw)
 [图解 Go 内存分配器](https://www.infoq.cn/article/IEhRLwmmIM7-11RYaLHR)
 + [[译] 编程语言中的 6 种内存模型（2016）](http://arthurchiao.art/blog/memory-models-underlie-programming-languages-zh/)
-
++ Redis[todo]
 
 ## 文件和存储
 #####  [Linux文件系统](../../../../2019/08/24/linuxFile/)   
@@ -56,8 +56,7 @@ top: true
 
  总结 | 知识点   
  -|-
- [NoSQL总结](../../../../2018/07/19/NoSQL/)   |  1. Key-Value 键值对 <br>2. “列族”（column families）数据库<br>3. 文档数据库<br> 4.图式数据库 
+ [Ceph](../../../../2022/01/08/ceph/)  |  Block, File, Object
  [文件IO总结](../../../../2017/04/23/fileIO/)    |  mmap，NIO(FileChannel)
- [Redis总结](../../../../2016/11/12/redis/)     | AOF，RDB 
  [Kafka总结](../../../../2016/05/11/kafka/)     | Partition的Segment中的index文件，data文件 
  [RocketMQ总结](../../../../2019/06/18/rocketmq/)   | CommitLog， ComsumeQueue， 索引文件(todo mmap优化) 
