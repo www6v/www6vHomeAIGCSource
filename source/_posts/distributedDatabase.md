@@ -15,7 +15,7 @@ categories:
 {% asset_img  dDatabase.jpg  分布式数据库 %}
 
 ## 参考
-<<分布式数据库30讲>>  1-7讲
+<<分布式数据库30讲>> 
 
 
 
