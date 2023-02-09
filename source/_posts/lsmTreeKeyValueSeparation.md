@@ -1,5 +1,5 @@
 ---
-title: LSM-Tree  Key-Value分离
+title: LSM-Tree  KV分离
 date: 2022-06-05 15:39:47
 tags:
   - LSM-Tree
