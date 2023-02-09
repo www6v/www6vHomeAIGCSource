@@ -14,6 +14,9 @@ categories:
 
 {% asset_img  dDatabase.jpg  分布式数据库 %}
 
+{% asset_img  dDatabase1.jpg  分布式数据库  %}
+
+
 ## 参考
 <<分布式数据库30讲>> 
 
