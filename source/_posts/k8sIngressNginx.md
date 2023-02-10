@@ -14,8 +14,9 @@ categories:
 ## Kubernetes Nginx Ingress
 ##### K8s官方维护
 + There are three ways to customize NGINX:
-   - **ConfigMap**: using a Configmap to set global configurations in NGINX.
-   - **Annotations**: use this if you want a specific configuration for a particular Ingress rule.
+   - **ConfigMap**: using a Configmap to set global configurations in NGINX. 
+     [滚动更新后生效， 针对全局的配置]
+   - **Annotations**: use this if you want a specific configuration for a particular Ingress rule. [立即生效，针对某个域名location进行配置]
    - **Custom template**: when more specific settings are required, like open_file_cache, adjust listen options as rcvbuf or when is not possible to change the configuration through the ConfigMap.
 
 [Ingress-Nginx Doc](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/)
