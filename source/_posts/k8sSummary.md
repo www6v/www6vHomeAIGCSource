@@ -35,6 +35,7 @@ top: true
 ## 服务和DNS
  [Kubernetes服务](../../../../2019/11/04/k8sService/)
  [Kubernetes CoreDNS](../../../../2022/01/12/k8sDNS/)
+ [Kubernetes Nginx Ingress ](../../../../2022/02/10/k8sIngressNginx/)
 
 ## 存储 
  [Kubernetes 存储](../../../../2019/09/01/k8sStorage/)
