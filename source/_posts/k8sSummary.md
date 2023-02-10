@@ -49,7 +49,8 @@ top: true
 
 ## 监控和AutoScale
  [Kubernetes自动伸缩和HPA](../../../../2019/11/16/k8sAutoScale/) 
- [Prometheus](../../../../2022/04/10/observabilityPrometheus/)
+ [可观测性-Prometheus](../../../../2022/04/10/observabilityPrometheus/)
+ [可观测性-Prometheus  HA](../../../../2022/02/11/observabilityPrometheusHA/)
  [Kubernetes 可观测性Observability](../../../../2022/01/30/k8sObservability/)
 
 ## 生产化

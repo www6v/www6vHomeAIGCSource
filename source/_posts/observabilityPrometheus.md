@@ -48,9 +48,14 @@ categories:
     1KB
 + 3rd Generation: Prometheus V2
 
-## Prometheus服务发现机制[10]
-
-
+## Prometheus服务发现机制[10][11]
+```yaml
+  kubernetes_sd_configs: #基于 Kubernetes API实现的服务发现，让prometheus动态发现kubernetes中被监控的目标 
+  static_configs: #静态服务发现，基于prometheus配置文件指定的监控目标
+  dns_sd_configs: #DNS服务发现监控目标
+  consul_sd_configs: #Consul服务发现，基于consul服务动态发现监控目标
+  file_sd_configs: #基于指定的文件实现服务发现，基于指定的文件发现监控目标
+```
 
 ## 参考：
 3. [第十八期: 玩转云原生容器场景的Prometheus监控]()  腾讯云 云原生正发声  #todo 重看一遍
@@ -60,8 +65,8 @@ categories:
 8. [深入剖析Kubernetes - 48 | Prometheus、Metrics Server与Kubernetes监控体系]() 张磊
 9. [微服务架构实战160讲 第七模块 ：微服务监控告警Prometheus架构和实践 119.监控模式分类]() 杨波 partial
 ##### 服务发现机制
-10. [kubernetes架构师课程](https://www.bilibili.com/video/BV16t4y1w7r6)
-
+10. [kubernetes架构师课程](https://www.bilibili.com/video/BV16t4y1w7r6) ***
+11. [prometheus服务发现](https://www.cnblogs.com/punchlinux/p/16773486.html)
 
 
 
