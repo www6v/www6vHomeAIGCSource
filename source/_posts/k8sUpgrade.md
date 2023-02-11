@@ -2,7 +2,7 @@
 title: Kubernetes 升级upgrade
 date: 2022-01-16 23:15:30
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  

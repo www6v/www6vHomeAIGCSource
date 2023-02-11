@@ -2,7 +2,7 @@
 title: Kubernetes 多租户 
 date: 2021-10-18 21:51:13
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes
@@ -32,7 +32,7 @@ https://github.com/kubernetes-sigs/hierarchical-namespaces
 [Kubernetes 的层级命名空间介绍](https://icloudnative.io/posts/introducing-hierarchical-namespaces/)
 
 + 方案C  硬隔离 - virtualcluster
-https://github.com/kubernetes-sigs/cluster-api-provider-nested/tree/main/virtualcluster 
+  https://github.com/kubernetes-sigs/cluster-api-provider-nested/tree/main/virtualcluster 
 
    
 ## 三. 方案B 解决方案
@@ -78,7 +78,7 @@ https://github.com/kubernetes-sigs/cluster-api-provider-nested/tree/main/virtual
          - spec.shareProcessNamespace
          - spec.containers[].securityContext.privileged
 ```
-     
+
 ##### 4. 配额
    ResourceQuota  
 
@@ -99,5 +99,4 @@ https://github.com/kubernetes-sigs/cluster-api-provider-nested/tree/main/virtual
    本质上来说 KubeZoo 的方案和 Virtual Cluster 有点类似，是一种 Serverless 的 Kubernetes 方案。
 
 5. [KubeSphere 多租户与认证鉴权实践：使用 GitLab 账号登陆 KubeSphere](https://kubesphere.com.cn/blogs/gitlab-kubesphere/) 未
-
 

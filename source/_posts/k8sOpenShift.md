@@ -2,7 +2,7 @@
 title: Kubernetes OpenShift
 date: 2022-01-05 21:45:05
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes

@@ -2,7 +2,7 @@
 title: Kubernetes开放接口
 date: 2019-08-11 01:04:40
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  
@@ -16,7 +16,7 @@ categories:
 
 
 <div style="text-align: center;">
-	
+
 ![k8s-interface](https://user-images.githubusercontent.com/5608425/65022324-51455a00-d963-11e9-9338-26675af8d3b7.JPG)  
 Kubenetes开放接口
 </div>

@@ -2,7 +2,7 @@
 title: Kubernetes命令
 date: 2019-06-09 10:28:33
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  
@@ -12,7 +12,7 @@ categories:
 <p></p>
 <!-- more -->
 
-   
+
 1. kubectl get 资源名  -> 简单描述
 
 ```
@@ -97,7 +97,6 @@ kubectl uncordon 10.23.210.145     // 可调度
 
 ## 参考: 
 1. [kubernetes 最佳实践：处理容器数据磁盘被写满](https://tencentcloudcontainerteam.github.io/2019/06/08/kubernetes-best-practice-handle-disk-full/)
-
 
 
 

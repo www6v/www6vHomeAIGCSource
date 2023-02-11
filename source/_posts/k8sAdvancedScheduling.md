@@ -2,7 +2,7 @@
 title: Kubernetes 高级调度
 date: 2022-05-27 18:39:20
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  

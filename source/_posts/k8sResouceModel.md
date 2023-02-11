@@ -2,7 +2,7 @@
 title: Kubenetes资源模型
 date: 2019-11-14 10:23:19
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes 
@@ -108,7 +108,6 @@ Burstable     |  min(max(2,1000 - (1000 * memoryRequestsBytes)/machineMemoryCapa
 1. [《Kubenetes in Action》](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)  七牛容器云团队
 2. [深入剖析Kubernetes - 40  Kubernetes的资源模型与资源管理]() 张磊
 3. <<模块九-生产化集群的管理>> 孟凡杰 
-
 
 
 

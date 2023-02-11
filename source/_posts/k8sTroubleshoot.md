@@ -2,7 +2,7 @@
 title: kubernetes 问题Troubleshoot
 date: 2022-06-08 17:39:12
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 稳定性
   - 故障排查

@@ -2,7 +2,7 @@
 title: Kubernetes最佳实践-BestPractice
 date: 2022-01-23 22:24:22
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 稳定性
   - 故障排查

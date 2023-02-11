@@ -2,7 +2,7 @@
 title: Kubernetes模式
 date: 2019-11-13 15:18:24
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  
@@ -38,7 +38,7 @@ categories:
 A batch scheduler of kubernetes for high performance workload, e.g. AI/ML, BigData, HPC  
 
 ### 2. Singleton Service
- 
+
  + Out-of-application locking mechanism
    replicas =1
 

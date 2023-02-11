@@ -2,7 +2,7 @@
 title: Calico
 date: 2022-08-12 11:55:44
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes

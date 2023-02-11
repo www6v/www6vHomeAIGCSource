@@ -2,7 +2,7 @@
 title: Kubernetes Workload
 date: 2019-06-09 22:13:52
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  
@@ -29,7 +29,7 @@ categories:
 ConfigMap |普通配置 |  环境变量 <br> 文件挂载（卷 Volume） | 纯文本
 Secret| 敏感数据|  环境变量 <br>文件挂载 | Base64
 
- 
+
 ## 监控方案
 cadvisor/exporter+prometheus+grafana
 

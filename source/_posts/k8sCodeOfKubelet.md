@@ -2,7 +2,7 @@
 title: Kubernetes Kubelet 代码走读
 date: 2022-01-15 11:23:11
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes

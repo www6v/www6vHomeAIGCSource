@@ -2,7 +2,7 @@
 title: Kubernetes Rook
 date: 2022-01-12 22:43:17
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  

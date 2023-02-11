@@ -2,10 +2,11 @@
 title: etcd
 date: 2022-04-06 21:19:30
 tags:
-  - Kubenetes
+  - etcd
 categories: 
-  - 云原生
-  - Kubernetes
+  - 数据库
+  - 非关系型
+  - etcd
 ---
 
 

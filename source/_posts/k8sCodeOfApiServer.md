@@ -2,7 +2,7 @@
 title: Kubernetes ApiServer 代码走读
 date: 2022-01-15 22:23:20
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes

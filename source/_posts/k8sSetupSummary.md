@@ -2,7 +2,7 @@
 title: Kubernetes 安装方式
 date: 2022-06-03 19:34:32
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  

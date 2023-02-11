@@ -2,7 +2,7 @@
 title: Kubernetes自动伸缩和HPA
 date: 2019-11-16 11:55:37
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  
@@ -87,6 +87,6 @@ k8s-prometheus-adapter：聚合进apiserver，即一种custom-metrics-apiserver�
 
 
 
- 
+
 
 

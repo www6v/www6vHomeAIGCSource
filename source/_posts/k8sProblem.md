@@ -2,7 +2,7 @@
 title: Kubernetes问题排查-troubleshooting
 date: 2022-04-03 22:42:10
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 稳定性
   - 故障排查
@@ -20,6 +20,5 @@ categories:
 ```
 sync && echo 3 > /proc/sys/vm/drop_caches
 ```
-
 
 [添加 K8S CPU limit 会降低服务性能？](https://mp.weixin.qq.com/s/cR6MpQu-n1cwMbXmVaXqzQ)  cgroup

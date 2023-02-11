@@ -2,7 +2,7 @@
 title: K8S 应用迁移至K8S 
 date: 2022-02-02 22:16:54
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes
@@ -92,5 +92,4 @@ local-dynamic: LVM,动态分配空间， 效率低;
 4. [如何把应用程序迁移到k8s](http://t.zoukankan.com/code-craftsman-p-11746603.html) 未 golang项目
 
 
- 
 

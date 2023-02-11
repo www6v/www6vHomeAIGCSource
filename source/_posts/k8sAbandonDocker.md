@@ -2,7 +2,7 @@
 title: K8S 弃用Docker
 date: 2021-06-01 21:57:51
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  
@@ -40,5 +40,4 @@ RedHat 推崇的 cri-o  → Podman
 ## 参考：
 https://www.infoq.cn/article/VasFWOChD6JoL5avhfAz
 https://www.zhihu.com/question/433184969
-
 

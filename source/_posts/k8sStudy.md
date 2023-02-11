@@ -2,7 +2,7 @@
 title: Kubernetes 学习资源
 date: 2022-05-21 16:57:14
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes 

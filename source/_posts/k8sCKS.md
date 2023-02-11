@@ -2,7 +2,7 @@
 title: Kubernetes CKS
 date: 2022-01-15 23:06:15
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes
@@ -19,7 +19,7 @@ categories:
 1. 使用网络安全策略来限制集群级别的访问 
 [Use Network security policies to restrict cluster level access](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 2. 使用CIS基准检查Kubernetes组件(etcd, kubelet, kubedns, kubeapi)的安全配置 
-[Use CIS benchmark to review the security configuration of Kubernetes components](https://www.cisecurity.org/benchmark/kubernetes/)  (etcd, kubelet, kubedns, kubeapi)
+   [Use CIS benchmark to review the security configuration of Kubernetes components](https://www.cisecurity.org/benchmark/kubernetes/)  (etcd, kubelet, kubedns, kubeapi)
     - [Kube-bench](https://github.com/aquasecurity/kube-bench) - Checks whether Kubernetes is deployed securely by running the checks documented ain the CIS Kubernetes Benchmark.
 3. 正确设置带有安全控制的Ingress对象 
 Properly set up [Ingress objects with security control](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls)
@@ -68,7 +68,7 @@ Properly set up [Ingress objects with security control](https://kubernetes.io/do
   - [Control anonymous requests to Kube-apiserver](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#anonymous-requests)
   - [Non secure access to the kube-apiserver](https://kubernetes.io/docs/concepts/security/controlling-access/#api-server-ports-and-ips)
 2. 使用基于角色的访问控制来最小化暴露 
-[Use Role-Based Access Controls to minimize exposure](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
+   [Use Role-Based Access Controls to minimize exposure](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
     *   [Handy site collects together articles, tools and the official documentation all in one place](https://rbac.dev/)
     *   [Simplify Kubernetes Resource Access Control using RBAC Impersonation](https://docs.bitnami.com/tutorials/simplify-kubernetes-resource-access-rbac-impersonation/)
 3. 谨慎使用服务帐户，例如禁用默认设置，减少新创建帐户的权限 
@@ -121,7 +121,7 @@ Minimize host OS footprint (reduce attack surface)
 </details>
 
 2. 最小化IAM角色 
-Minimize IAM roles
+   Minimize IAM roles
    *   [Access authentication and authorization](https://kubernetes.io/docs/reference/access-authn-authz/authentication/)
 3. 最小化对网络的外部访问 
 Minimize external access to the network
@@ -142,19 +142,19 @@ Minimize external access to the network
      egress:
        to:
        - namespaceSelector: {}
-     ```
+   ```
 
 </details>
 
 4. 适当使用内核强化工具，如AppArmor, seccomp 
-Appropriately use kernel hardening tools such as AppArmor, seccomp
+   Appropriately use kernel hardening tools such as AppArmor, seccomp
    * [AppArmor](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
    * [Seccomp](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
 
 ### Minimize Microservice Vulnerabilities - 20%
 
 1. 设置适当的OS级安全域，例如使用PSP, OPA，安全上下文 
-Setup appropriate OS-level security domains e.g. using PSP, OPA, security contexts
+   Setup appropriate OS-level security domains e.g. using PSP, OPA, security contexts
    - [Pod Security Policies](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
    - [Open Policy Agent](https://kubernetes.io/blog/2019/08/06/opa-gatekeeper-policy-and-governance-for-kubernetes/)
    - [Security Contexts](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
@@ -187,7 +187,7 @@ Secure your supply chain: [whitelist allowed image registries](https://kubernete
 4. 使用用户工作负载的静态分析(例如kubernetes资源，Docker文件) 
 Use static analysis of user workloads (e.g. [kubernetes resources](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/#7-statically-analyse-yaml), docker files)
 5. 扫描镜像，找出已知的漏洞 
-[Scan images for known vulnerabilities](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/#10-scan-images-and-run-ids)
+   [Scan images for known vulnerabilities](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/#10-scan-images-and-run-ids)
     * [Aqua security Trivy]( https://github.com/aquasecurity/trivy)
     *   [Anchore command line scans](https://github.com/anchore/anchore-cli#command-line-examples)
 
@@ -195,7 +195,7 @@ Use static analysis of user workloads (e.g. [kubernetes resources](https://kuber
 ### Monitoring, Logging and Runtime Security - 20%
 
 1. 在主机和容器级别执行系统调用进程和文件活动的行为分析，以检测恶意活动 
-Perform behavioural analytics of syscall process and file activities at the host and container level to detect malicious activities
+	Perform behavioural analytics of syscall process and file activities at the host and container level to detect malicious activities
 	- [Falco installation guide](https://falco.org/docs/)
 	- [Sysdig Falco 101](https://learn.sysdig.com/falco-101)
 	- [Falco Helm Chart](https://github.com/falcosecurity/charts/tree/master/falco)
@@ -216,7 +216,7 @@ Detect all phases of attack regardless where it occurs and how it spreads
    </details>
 
 4. 对环境中的不良行为者进行深入的分析调查和识别 
-Perform deep analytical investigation and identification of bad actors within the environment
+   Perform deep analytical investigation and identification of bad actors within the environment
    - [Sysdig documentation](https://docs.sysdig.com/)
    - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/)
    - [CNCF Webinar: Getting started with container runtime security using Falco](https://youtu.be/VEFaGjfjfyc)
@@ -224,7 +224,6 @@ Perform deep analytical investigation and identification of bad actors within th
 [Ensure immutability of containers at runtime](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/)
 6. 使用审计日志来监视访问 
 [Use Audit Logs to monitor access](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
-
 
 
 

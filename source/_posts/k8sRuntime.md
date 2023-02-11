@@ -2,7 +2,7 @@
 title: Kubernetes Runtime
 date: 2019-11-19 15:21:19
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  
@@ -17,7 +17,7 @@ categories:
 ## 一. 虚拟化技术
 
 <div style="text-align: center;">
-	
+
 {% asset_img   k8sRuntime1.jpg   虚拟化技术  %}
 
 </div>

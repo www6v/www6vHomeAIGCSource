@@ -2,7 +2,7 @@
 title: Kubernetes安装-kubeasz 
 date: 2021-06-02 22:23:27
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes

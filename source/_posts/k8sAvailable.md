@@ -2,7 +2,7 @@
 title: K8S高可用-零停机
 date: 2022-04-05 15:09:31
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes

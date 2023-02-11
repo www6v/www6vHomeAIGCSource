@@ -2,7 +2,7 @@
 title: Kubenetes RBAC
 date: 2019-11-14 17:16:13
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes 

@@ -2,7 +2,7 @@
 title: Kubernetes Operator
 date: 2019-11-19 10:59:00
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes
@@ -44,7 +44,7 @@ etcd
 ```
 
 ## 三. etcd Operator 
- 
+
 <div>
 {% asset_img   operator1.jpg  etcd Operator  %}
 </div>

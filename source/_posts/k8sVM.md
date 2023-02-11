@@ -2,7 +2,7 @@
 title: Kubernetes和VM
 date: 2022-06-03 17:36:53
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  
@@ -11,7 +11,6 @@ categories:
 
 <p></p>
 <!-- more -->
-
 
 
 

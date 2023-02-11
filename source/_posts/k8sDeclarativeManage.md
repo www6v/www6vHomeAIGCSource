@@ -2,7 +2,7 @@
 title: k8s声明式应用管理
 date: 2020-05-26 16:00:13
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes 

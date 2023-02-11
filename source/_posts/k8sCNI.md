@@ -2,7 +2,7 @@
 title: Kubernetes CNI插件
 date: 2022-04-03 23:59:15
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes

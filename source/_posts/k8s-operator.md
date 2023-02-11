@@ -2,7 +2,7 @@
 title: Kubernetes Operator
 date: 2021-12-30 20:42:36
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  
@@ -128,7 +128,6 @@ kubebuilder create webhook --group apps --version v1beta1 --kind MyDaemonset --d
 ### Enable webhook in `config/default/kustomization.yaml`
 
 ### Redeploy
-
 
 
 

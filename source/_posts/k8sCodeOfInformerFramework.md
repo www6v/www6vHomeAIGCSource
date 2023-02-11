@@ -2,7 +2,7 @@
 title: Kubernetes Informer Framework 代码走读
 date: 2022-01-15 22:14:03
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes

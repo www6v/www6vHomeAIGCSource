@@ -2,7 +2,7 @@
 title: Calico
 date: 2022-05-03 10:15:18
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes
@@ -76,10 +76,10 @@ BGP 协议传输的消息
 
 
   {% asset_img  link.png  网路互通  %}
-  
+
 
 ##### 2. Route Reflector模式 + IPIP模式（大规模）
-  
+
 
   {% asset_img  route-reflector+ipip.png  Route Reflector模式+IPIP模式  %}
 
@@ -109,7 +109,6 @@ ipipMode field (IP in IP encapsulation)， ipipMode 必须with BGP
 vxlanMode field (VXLAN encapsulation)， vxlanMode 可以without BGP
 两种模式不能一起运行，只能运行其中的一种
 + [Calico 路由反射模式权威指南](https://kubesphere.com.cn/blogs/calico-guide/) 未
-
 
 
 

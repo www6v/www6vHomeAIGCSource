@@ -2,7 +2,7 @@
 title: Kubernetes 架构
 date: 2019-04-25 10:29:34
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes  
@@ -28,7 +28,7 @@ categories:
 
 
 <div style="text-align: center;">
-  
+
 ![控制器模型](https://user-images.githubusercontent.com/5608425/63924251-85bba980-ca7a-11e9-8a3a-4cf852dfe86c.JPG)  控制器模型
 </div>
 
@@ -62,4 +62,4 @@ CNCF × Alibaba 云原生技术公开课
 
 
 
-    
+​    

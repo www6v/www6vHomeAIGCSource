@@ -2,7 +2,7 @@
 title: Kubernetes KubeScheduler 代码走读
 date: 2022-01-15 10:56:28
 tags:
-  - Kubenetes
+  - Kubernetes
 categories: 
   - 云原生
   - Kubernetes

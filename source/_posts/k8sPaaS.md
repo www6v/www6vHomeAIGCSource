@@ -2,7 +2,7 @@
 title: Kubernetes PaaS平台
 date: 2022-01-12 11:07:23
 tags:
-  - Kubenetes
+  - Kubernetes
 categories:
   - 云原生
   - Kubernetes
