@@ -107,7 +107,9 @@ categories:
 
 [JCSprout](https://github.com/www6v/JCSprout)  Java Core Sprout : basic, concurrent, algorithm面试
 
-[system-design-primer](https://github.com/www6v/system-design-primer)   Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.  
+[system-design-primer](https://github.com/www6v/system-design-primer) ***   
+
+Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.  
 
 ##  综合
 [academy](https://github.com/www6v/academy)  云原生学院|直播|活动 ***
