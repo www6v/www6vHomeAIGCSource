@@ -4,8 +4,6 @@ date: 2016-06-25 18:46:27
 tags:
   - kafka  
 categories:
-  - 分布式
-  - 中间件 
   - 消息系统
   - Kafka   
 ---

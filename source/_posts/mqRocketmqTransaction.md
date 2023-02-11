@@ -2,10 +2,8 @@
 title: Rocketmq中的事务
 date: 2020-08-12 10:47:29
 tags:
-  - RocketMQ
+  - 消息系统
 categories:
-  - 分布式 
-  - 中间件
   - 消息系统
   - 事务   
 ---

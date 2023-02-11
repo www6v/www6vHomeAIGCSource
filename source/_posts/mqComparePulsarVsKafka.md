@@ -3,9 +3,7 @@ title: Pulsar vs. Kafka
 date: 2022-06-10 11:43:43
 tags:
   - 消息系统
-categories:
-  - 分布式
-  - 中间件 
+categories: 
   - 消息系统
   - 总结  
 ---

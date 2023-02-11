@@ -3,9 +3,7 @@ title: Kafka  Q&A
 date: 2019-05-15 17:06:28
 tags:
   - kafka  
-categories:
-  - 分布式
-  - 中间件 
+categories: 
   - 消息系统
   - Kafka   
 ---
@@ -84,4 +82,3 @@ categories:
 
 
 [Kafka总结](../../../../2016/05/11/kafka/) 
-  

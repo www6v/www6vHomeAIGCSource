@@ -3,9 +3,7 @@ title: Kafka 中的选主
 date: 2021-05-16 10:37:20
 tags:
   - kafka
-categories:
-  - 分布式
-  - 中间件 
+categories: 
   - 消息系统
   - Kafka   
 ---

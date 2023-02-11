@@ -3,9 +3,7 @@ title: MQ总结(Kafka, Rocketmq, Rabbitmq)
 date: 2022-05-12 22:17:03
 tags:
   - 消息系统
-categories:
-  - 分布式
-  - 中间件 
+categories: 
   - 消息系统
   - 总结  
 ---

@@ -3,10 +3,7 @@ title: RocketMQ总结
 date: 2019-06-18 14:39:50
 tags:
   - 消息系统
-  - RocketMQ
 categories:
-  - 分布式 
-  - 中间件
   - 消息系统
   - RocketMQ   
 ---

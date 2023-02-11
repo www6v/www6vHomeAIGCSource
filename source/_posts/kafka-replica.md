@@ -3,9 +3,7 @@ title: Kafka Replication-副本机制
 date: 2021-05-16 10:50:48
 tags:
   - kafka
-categories:
-  - 分布式
-  - 中间件 
+categories: 
   - 消息系统
   - Kafka   
 ---

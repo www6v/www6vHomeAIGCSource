@@ -3,9 +3,7 @@ title: 消息中间件总结
 date: 2016-04-19 18:33:32
 tags:
   - 消息系统
-categories:
-  - 分布式
-  - 中间件 
+categories: 
   - 消息系统
   - 特性  
 ---

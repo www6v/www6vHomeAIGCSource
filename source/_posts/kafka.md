@@ -3,9 +3,7 @@ title: Kafka总结
 date: 2016-05-11 18:41:01
 tags:
   - kafka
-categories:
-  - 分布式
-  - 中间件 
+categories: 
   - 消息系统
   - Kafka   
 ---
