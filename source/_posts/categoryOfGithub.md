@@ -14,23 +14,25 @@ categories:
 ## Language
 [concurrency-programming-via-rust](https://github.com/www6v/concurrency-programming-via-rust)  鸟窝 大佬 rust  
 
-[learn-go-with-tests](https://github.com/www6v/learn-go-with-tests)
+[read](https://github.com/www6v/read)   *****
+Go 学习之路：Go 开发者博客、Go 微信公众号、Go 学习资料（文档、书籍、视频） 
 
-[read](https://github.com/www6v/read)  Go 学习之路：Go 开发者博客、Go 微信公众号、Go 学习资料（文档、书籍、视频） 
+[conference](https://github.com/www6v/conference)  go conference-ppt ***
 
-[go-perfbook](https://github.com/www6v/go-perfbook)  Thoughts on Go performance optimization        
+[gopl-zh](https://github.com/www6v/gopl-zh)  Go语言圣经中文版  ***
+
+[learn-go-with-tests](https://github.com/www6v/learn-go-with-tests)  ***
+
+[go-advice](https://github.com/www6v/go-advice)  
+List of advice and tricks for Go - 面试  *
+
+[awesome-go-cn](https://github.com/www6v/awesome-go-cn)   Go 资源大全中文版 *
+
+[book-1](https://github.com/www6v/book-1)  学习笔记 golang *
+
+[go-perfbook](https://github.com/www6v/go-perfbook)  Thoughts on Go performance optimization  
 
 [under-the-hood](https://github.com/www6v/under-the-hood)  Go: Under The Hood | Go 语言原本 | https://golang.design/under-the-hood     
-
-[conference](https://github.com/www6v/conference)  go conference 
-
-[go-advice](https://github.com/www6v/go-advice)   List of advice and tricks for Go ʕ◔ϖ◔ʔ - 面试  
-
-[awesome-go-cn](https://github.com/www6v/awesome-go-cn)   Go 资源大全中文版
-
-[gopl-zh](https://github.com/www6v/gopl-zh)  Go语言圣经中文版  
-
-[book-1](https://github.com/www6v/book-1)  学习笔记 golang
 
 ## Devops
 [devops-exercises](https://github.com/www6v/devops-exercises) DevOps Interview Questions ***
