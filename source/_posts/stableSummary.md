@@ -34,8 +34,18 @@ top: true
 
 ## 故障排查
 
++ [故障排查的流程和方法](../../../../2019/07/06/findProblem/)   
++ [两个GC案例](../../../../2014/07/21/twoGCcase/) 
 + [关于任务取消相关异常的排查](../../../../2017/08/09/interrupted/) 
 + [zookeeper未通知到服务客户端的异常排查](../../../../2017/07/28/zookeeperBug/) 
 + [Classloader相关的故障排查](../../../../2014/09/06/classloader/) 
 + [线上不能下单问题排查](../../../../2017/09/25/mybatisBug/) 
-+ [服务慢响应排查](../../../../2017/10/17/slowRT/)
++ [服务慢响应超时排查](../../../../2017/10/17/slowRT/)
+
++ [使用Mysql的性能问题和紧急处理手段](../../../../2020/06/21/mysqlBestPractice/)      
++ [HAProxy抓包](../../../../2022/01/11/haproxyTcpdump/)      
+
+##### K8s
++ [kubernetes 问题Troubleshoot](../../../../2022/06/08/k8sTroubleshoot/)      
++ [Kubernetes问题排查-troubleshooting](../../../../2022/04/03/k8sProblem/)      
++ [Kubernetes最佳实践-BestPractice](../../../../2022/01/23/k8sBestPractice/)      
