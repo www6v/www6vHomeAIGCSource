@@ -24,7 +24,7 @@ $ terraform plan -detailed-exitcode
   0 no drift
   1 error
   2 success ## infra drift,可能有人变更了infra并apply成功
-$ terraform apply/destroy
+$ terraform apply/destroy -target
 ```
 
 ## 参考
