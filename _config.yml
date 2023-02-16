@@ -90,6 +90,8 @@ deploy:
   repo: https://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@github.com/www6v/www6vHomeHexo.git
 
 
-
-
+# hexo-tag-details plugin
+tag_details:
+  className:
+  open: false
   
