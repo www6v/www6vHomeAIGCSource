@@ -14,8 +14,9 @@ top: true
 
 ## 编排原理 
  [Kubernetes 架构](../../../../2019/04/25/k8s/) 
- [Kubernetes Workload](../../../../2019/06/09/k8sResource/)  
- [StatefulSet原理和源码](../../../../2019/11/11/k8sStatefulSet/)
+ [Kubernetes Workload](../../../../2019/06/09/k8sResource/) 
+ [Kubernetes Deployment](../../../../2022/02/16/k8sDeployment/)
+ [Kubernetes StatefulSet原理和源码](../../../../2019/11/11/k8sStatefulSet/)
  [Kubenetes资源模型](../../../../2019/11/14/k8sResouceModel/)
  [kubelet和PLEG](../../../../2022/04/03/k8sPLEG/)
 

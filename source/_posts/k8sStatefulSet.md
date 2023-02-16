@@ -1,5 +1,5 @@
 ---
-title: StatefulSet原理和源码
+title: Kubernetes StatefulSet原理和源码
 date: 2019-11-11 15:20:39
 tags:
   - Kubernetes
@@ -142,7 +142,7 @@ func getPodName(set *apps.StatefulSet, ordinal int) string {
 ```
 
 索引号 ordinal={0~ StatefulSetSpec.Replicas - 1}
- 
+
 + 网络地址维度
 
 headless service对应pod的网络地址(完整**域名**)为: `<hostname>.<subdomain>.<ns>.svc.cluster.local`
