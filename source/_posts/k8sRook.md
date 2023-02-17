@@ -57,7 +57,7 @@ reclaimPolicy: Delete
 ```
 
 + Consume Block[II]
-eg 1. StatefulSet通过StorageClass动态申请pv
+eg 1.   {% post_link 'k8sStatefulSet' StatefulSet %}通过StorageClass动态申请pv  
 ``` yaml
     volumeClaimTemplates:
     -metadata:

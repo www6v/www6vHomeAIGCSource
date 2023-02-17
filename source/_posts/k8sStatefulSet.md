@@ -293,11 +293,11 @@ for target := len(replicas) - 1; target >= updateMin; target-- {
 + 更新 StatefulSet的 Status （1.3节）
 
 
+## Draft Here
+{% draft %}
 ## 参考:
 
 1. [深入剖析Kubernetes - 18  深入理解StatefulSet（一）：拓扑状态]()  张磊
 2. [深入剖析Kubernetes - 19  深入理解StatefulSet（二）：存储状态]()  张磊
-
-<p hidden> 
-3. [kubernetes controller源码解读之StatefulSet](https://yq.aliyun.com/articles/702306)  源码 
-</p>
+3. [kubernetes controller源码解读之StatefulSet](https://yq.aliyun.com/articles/702306)  源码 *** 
+{% enddraft %}
