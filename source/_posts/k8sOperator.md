@@ -65,3 +65,27 @@ etcd
 [面向 Kubernetes 编程： Kubernetes 是下一代操作系统](https://mp.weixin.qq.com/s/E5-agHtMvW_X7znVJDkTKA)
 [awesome-operators](https://github.com/www6v/awesome-operators)    obsolete
 [operator-sdk](https://github.com/operator-framework/operator-sdk)   工具
+
+
+
+{% details 附件-有用的 Operator %}
+[elastic/cloud-on-k8s](https://github.com/elastic/cloud-on-k8s)
+[solo-io/envoy-operator](https://github.com/solo-io/envoy-operator)
+[coreos/etcd-operator](https://github.com/coreos/etcd-operator)
+[lyft/flinkk8soperator](https://github.com/lyft/flinkk8soperator) ***
+[banzaicloud/hpa-operator](https://github.com/banzaicloud/hpa-operator)
+[gianarb/influxdb-operator](https://github.com/gianarb/influxdb-operator)
+[banzaicloud/istio-operator](https://github.com/banzaicloud/istio-operator)
+[jaegertracing/jaeger-operator](https://github.com/jaegertracing/jaeger-operator)
+[banzaicloud/kafka-operator](https://github.com/banzaicloud/kafka-operator) ***
+[oracle/mysql-operator](https://github.com/oracle/mysql-operator)
+[Percona-Lab/percona-xtradb-cluster-operator](https://github.com/Percona-Lab/percona-xtradb-cluster-operator)
+[coreos/prometheus-operator](https://github.com/coreos/prometheus-operator) ***
+[ucloud/redis-cluster-operator](https://github.com/ucloud/redis-cluster-operator) ***
+[apache/rocketmq-operator](https://github.com/apache/rocketmq-operator)***
+[rook/rook](https://github.com/rook/rook/tree/master/cluster/examples/kubernetes)***
+[GoogleCloudPlatform/spark-on-k8s-operator](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator) ***
+[pingcap/tidb-operator](https://github.com/pingcap/tidb-operator)***
+
+{% enddetails %}
+

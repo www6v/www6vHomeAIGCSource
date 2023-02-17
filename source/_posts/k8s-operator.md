@@ -1,5 +1,5 @@
 ---
-title: Kubernetes Operator
+title: Kubernetes Operator-kubebuilder
 date: 2021-12-30 20:42:36
 tags:
   - Kubernetes
@@ -11,25 +11,20 @@ categories:
 <p></p>
 <!-- more -->
 
-## 使用kubebuilder来部署Operator
+##  使用kubebuilder构建Operator的过程
++ 自己定义DaemonSet Operator包括：
+  - [在每个node上启动一个Pod（CRD + Controller）](#Step2)
+  - [webhook(证书 + mutation + validation)](#Step3)     
 
-Operator源代码
-https://github.com/www6v/mydaemonset   
-
-
-## 以下为kubebuilder构建Operator的过程
-   自己定义DaemonSet Operator包括：
-   在每个node上启动一个Pod（CRD + Controller）
-   webhook(证书 + mutation + validation)
-
-
-### Create a kubebuilder project, which requires an empty folder
+## Step1
+## init project
+##### Create a kubebuilder project, which requires an empty folder
 
 ```sh
 kubebuilder init --domain cncamp.io
 ```
 
-### Check project layout
+##### Check project layout
 
 ```sh
 cat PROJECT
@@ -42,13 +37,15 @@ repo: github.com/www6v/demo-operator
 version: "3"
 ```
 
-### Create API, create resource[Y], create controller[Y]
+## Step2 
+## Create  CRD & Controller
+##### Create API, create resource[Y], create controller[Y]
 
 ```sh
 kubebuilder create api --group apps --version v1beta1 --kind MyDaemonset
 ```
 
-### Open project with IDE and edit `api/v1alpha1/simplestatefulset_types.go`
+#####  edit `api/v1alpha1/simplestatefulset_types.go`
 
 ```sh
 // MyDaemonsetSpec defines the desired state of MyDaemonset
@@ -68,7 +65,7 @@ type MyDaemonsetStatus struct {
 }
 ```
 
-### Check Makefile
+##### Check Makefile
 
 ```makefile
 Build targets:
@@ -86,7 +83,7 @@ Build targets:
     deploy: Deploy controller to the K8s cluster specified in ~/.kube/config.
 ```
 
-### Edit `controllers/mydaemonset_controller.go`, add permissions to the controller
+##### Edit `controllers/mydaemonset_controller.go`, add permissions to the controller
 ```go
 //+kubebuilder:rbac:groups=apps.cncamp.io,resources=mydaemonsets/finalizers,verbs=update
 // Add the following
@@ -94,13 +91,13 @@ Build targets:
 //+kubebuilder:rbac:groups=core,resources=pods,verbs=get;list;watch;create;update;patch;delete
 ```
 
-### Generate crd
+##### Generate crd
 
 ```sh
 make manifests
 ```
 
-### Build & install
+##### Build & install
 
 ```sh
 make build
@@ -109,27 +106,29 @@ make docker-push
 make deploy
 ```
 
+## Step3
 ## Enable webhooks
 
-### Install cert-manager
+##### Install cert-manager
 
 ```sh
 kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.6.1/cert-manager.yaml
 ```
 
-### Create webhooks
+##### Create webhooks
 
 ```sh
 kubebuilder create webhook --group apps --version v1beta1 --kind MyDaemonset --defaulting --programmatic-validation
 ```
 
-### Change code
+##### Change code
 
-### Enable webhook in `config/default/kustomization.yaml`
+##### Enable webhook in `config/default/kustomization.yaml`
 
-### Redeploy
+##### Redeploy
 
-
+## 附件: Operator源代码
+https://github.com/www6v/mydaemonset  
 
 
 
