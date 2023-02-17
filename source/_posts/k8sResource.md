@@ -17,7 +17,7 @@ categories:
 ##### Basic
 - [Node](https://feisky.xyz/kubernetes-handbook/concepts/node.html)
 - [Namespace](https://feisky.xyz/kubernetes-handbook/concepts/namespace.html)
-- [Pod](https://feisky.xyz/kubernetes-handbook/concepts/pod.html)
+- [Pod](https://feisky.xyz/kubernetes-handbook/concepts/pod.html) [8]
 - [ServiceAccount](https://feisky.xyz/kubernetes-handbook/concepts/serviceaccount.html)
 
 ##### Config
@@ -66,7 +66,7 @@ Secret| 敏感数据|  环境变量 <br>文件挂载 | Base64
 5. [第3 章 ： Kubernetes 核心概念](https://edu.aliyun.com/lesson_1651_13078?spm=5176.254948.1334973.8.2c12cad2AHzzTw#_13078) 阿里 
 6. [第5 章 ： 应用编排与管理：核心原理](https://edu.aliyun.com/lesson_1651_13080?spm=5176.254948.1334973.12.2c12cad2AHzzTw#_13080) 阿里
 7. [K8s 中 ConfigMap 使用介绍](https://blog.csdn.net/weixin_46902396/article/details/121143037)  
-
+8. [详解 Kubernetes Pod 的实现原理](https://draveness.me/kubernetes-pod/)  未
 
 {% details  附: ConfigMap 使用 %}
 ```

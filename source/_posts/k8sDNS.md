@@ -36,5 +36,7 @@ github中
 
 
 ## reference:
-[【Meetup 分享】使用 KubeSphere & CoreDNS 搭建云原生 DNS](https://www.bilibili.com/video/BV1HY4y1n7PV?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
+1. [【Meetup 分享】使用 KubeSphere & CoreDNS 搭建云原生 DNS](https://www.bilibili.com/video/BV1HY4y1n7PV)
+2. [详解 DNS 与 CoreDNS 的实现原理](https://draveness.me/dns-coredns/) 未
+
 
