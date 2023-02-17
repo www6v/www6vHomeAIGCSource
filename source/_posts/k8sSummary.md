@@ -21,9 +21,10 @@ top: true
  [kubelet和PLEG](../../../../2022/04/03/k8sPLEG/)
 
 ## Operator && Controller
- [Kubernetes Operator-源码](../../../../2021/12/30/k8s-operator/)
- [Kubernetes Operator-ETCD](../../../..//2019/11/19/k8sOperator/)
- [Kubernetes声明式API](../../../..//2019/08/29/k8sDeclarativeAPI/)  
++ {% post_link 'k8s-operator' %} 
++ {% post_link 'k8sOperator' %} 
++ {% post_link 'k8sDeclarativeAPI' %} 
++ {% post_link 'k8sOperator-redis' %}
 
 ## Container Runtime
  [Kubernetes Runtime](../../../../2019/11/19/k8sRuntime/)
