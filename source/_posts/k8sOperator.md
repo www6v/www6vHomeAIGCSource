@@ -15,7 +15,7 @@ categories:
 
 **Operator: "有状态应用", 自动化运维工作。**
 
-## 一. Etcd Operator部署 
+##  Etcd Operator部署 
 Controller + CRD 
 [etcd Controller](https://github.com/coreos/etcd-operator/blob/master/example/deployment.yaml)  Deployment
 [etcd CRD](https://github.com/coreos/etcd-operator/blob/master/example/example-etcd-cluster.yaml)  API资源类型 kind: "EtcdCluster"
@@ -24,7 +24,7 @@ etcd高可靠： backup + restore
 [etcd backup](https://github.com/coreos/etcd-operator/tree/master/example/etcd-backup-operator)  etcd备份
 [etcd restore](https://github.com/coreos/etcd-operator/tree/master/example/etcd-restore-operator) etcd恢复: 恢复备份的数据
 
-## 二. 普通运维方式etcd运维步骤:
+##  普通运维方式etcd运维步骤:
 1. 创建种子节点（集群）的阶段称为：Bootstrap
 2. 通过 Etcd 命令行添加一个新成员：
 ```
@@ -43,7 +43,7 @@ etcd
 --initial-cluster-state=existing
 ```
 
-## 三. etcd Operator 
+##  etcd Operator 
 
 <div>
 {% asset_img   operator1.jpg  etcd Operator  %}
@@ -63,5 +63,5 @@ etcd
 ## 参考:
 [深入剖析Kubernetes - 27  聪明的微创新：Operator工作原理解读]() 张磊
 [面向 Kubernetes 编程： Kubernetes 是下一代操作系统](https://mp.weixin.qq.com/s/E5-agHtMvW_X7znVJDkTKA)
-[awesome-operators](https://github.com/www6v/awesome-operators)   github 
-[operator-sdk](https://github.com/operator-framework/operator-sdk)  github 工具
+[awesome-operators](https://github.com/www6v/awesome-operators)    obsolete
+[operator-sdk](https://github.com/operator-framework/operator-sdk)   工具
