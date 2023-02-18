@@ -7,18 +7,21 @@ categories:
   - 汇总
   - Kubernetes
 top: true  
+toc: true
 ---
 
 <p></p>
 <!-- more -->
 
+
 ## 编排原理 
- [Kubernetes 架构](../../../../2019/04/25/k8s/) 
- [Kubernetes Workload](../../../../2019/06/09/k8sResource/) 
- [Kubernetes Deployment](../../../../2022/02/16/k8sDeployment/)
- [Kubernetes StatefulSet原理和源码](../../../../2019/11/11/k8sStatefulSet/)
- [Kubenetes资源模型](../../../../2019/11/14/k8sResouceModel/)
- [kubelet和PLEG](../../../../2022/04/03/k8sPLEG/)
++ {% post_link 'k8s' %} 
++ {% post_link 'k8sResource' %} 
++ {% post_link 'k8sDeployment' %} 
++ {% post_link 'k8sStatefulSet' %} 
++ {% post_link 'k8sResouceModel' %} 
++ {% post_link 'k8sPLEG' %} 
+
 
 ## Operator && Controller
 + {% post_link 'k8s-operator' %} 
@@ -27,23 +30,24 @@ top: true
 + {% post_link 'k8sOperator-redis' %}
 
 ## Container Runtime
- [Kubernetes Runtime](../../../../2019/11/19/k8sRuntime/)
- [K8S 弃用Docker](../../../..//2021/06/01/k8sAbandonDocker/)
++ {% post_link 'k8sRuntime' %} 
++ {% post_link 'k8sAbandonDocker' %} 
 
 ## 网络
- [Kubernetes网络](../../../../2019/08/23/k8sNetwork/)
- [Calico](../../../../2022/05/03/k8sCalico/)  
++ {% post_link 'k8sNetwork' %} 
++ {% post_link 'k8sCalico' %} 
 
 ## 服务和DNS
- [Kubernetes服务](../../../../2019/11/04/k8sService/)
- [Kubernetes CoreDNS](../../../../2022/01/12/k8sDNS/)
- [Kubernetes Nginx Ingress ](../../../../2022/02/10/k8sIngressNginx/)
++ {% post_link 'k8sService' %} 
++ {% post_link 'k8sDNS' %} 
++ {% post_link 'k8sIngressNginx' %} 
 
 ## 存储 
- [Kubernetes 存储](../../../../2019/09/01/k8sStorage/)
- [Kubernetes Rook](../../../../2022/01/12/k8sRook/)
- [Ceph](../../../../2022/01/08/ceph/)
- [etcd](../../../../2022/04/06/etcd/)
++ {% post_link 'k8sStorage' %} 
++ {% post_link 'k8sRook' %} 
++ {% post_link 'ceph' %} 
++ {% post_link 'etcd' %} 
+
 
 ## 调度
  [Kubernetes 调度器](../../../../2019/06/09/k8sScheduler/)
@@ -63,12 +67,12 @@ top: true
 [Kubernetes 升级upgrade](../../../../2022/01/16/k8sUpgrade/)
 
 ## PaaS 
-[Kubernetes PaaS平台](../../../../2022/01/12/k8sPaaS)
-[Kubernetes OpenShift](../../../../2022/01/05/k8sOpenShift/)
-[Kubernetes 多租户](../../../../2021/10/18/k8sMultiTenancy/)
-[Kubenetes RBAC](../../../../2019/11/14/k8sRBAC/)
-[Kubernetes 多集群管理](../../../../2022/05/08/k8sMultiCluster/)
-[Kubernetes和VM](../../../../2022/06/03/k8sVM/) 
++ {% post_link 'k8sPaaS' %} 
++ {% post_link 'k8sOpenShift' %} 
++ {% post_link 'k8sMultiTenancy' %} 
++ {% post_link 'k8sRBAC' %} 
++ {% post_link 'k8sMultiCluster' %} 
++ {% post_link 'k8sVM' %} 
 
 ## 安全
  [Kubernetes安全](../../../../2022/05/22/k8sSecurity/)
