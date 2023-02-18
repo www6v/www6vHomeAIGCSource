@@ -95,3 +95,14 @@ tag_details:
   className:
   open: false
   
+
+## hexo-toc
+toc:
+  maxdepth: 5
+  class: toc
+  slugify: uslug
+  decodeEntities: false
+  anchor:
+    position: after
+    symbol: '#'
+    style: header-anchor

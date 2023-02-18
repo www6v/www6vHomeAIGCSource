@@ -11,13 +11,16 @@ categories:
 <p></p>
 <!-- more -->
 
-##  使用kubebuilder构建Operator的过程
-+ 自己定义DaemonSet Operator包括：
-  - [在每个node上启动一个Pod（CRD + Controller）](#Step2)
-  - [webhook(证书 + mutation + validation)](#Step3)     
+## 目录
+<!-- toc -->
 
-## Step1
-## init project
+##  使用kubebuilder构建Operator的过程
+
++ 自己定义DaemonSet Operator包括：
+  - [在每个node上启动一个Pod（CRD + Controller）](#step2-create-crd-and-controller)
+  - [webhook(证书 + mutation + validation)](#step3-enable-webhooks)     
+
+## Step1:  init project
 ##### Create a kubebuilder project, which requires an empty folder
 
 ```sh
@@ -37,8 +40,7 @@ repo: github.com/www6v/demo-operator
 version: "3"
 ```
 
-## Step2 
-## Create  CRD & Controller
+## Step2: Create  CRD and Controller
 ##### Create API, create resource[Y], create controller[Y]
 
 ```sh
@@ -106,8 +108,7 @@ make docker-push
 make deploy
 ```
 
-## Step3
-## Enable webhooks
+## Step3: Enable webhooks
 
 ##### Install cert-manager
 

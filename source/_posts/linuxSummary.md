@@ -14,6 +14,9 @@ top: true
 
 关键词: linux, 计算机组成
 
+## 目录
+<!-- toc -->
+
 ## 总体架构
 + 北桥 
   主桥 - 处理高速信号 
@@ -36,7 +39,7 @@ top: true
 + [文件系统](../../../../2019/08/24/linuxFile/)
 + 网络
 
-## CPU && Cache[1]
+## CPU and Cache[1]
 + CPU架构
   - SMP UMA
     系统总线成了系统瓶颈，应运而生了NUMA
@@ -83,7 +86,7 @@ top: true
 + [Linux 协议栈](../../../../2022/01/30/linuxNetwork/)  self
 + epoll
 
-## Frameworks && Tools
+## Frameworks and Tools
 + data plan 
   + [DPDK](../../../../2022/01/25/linuxDPDK/) self        
   + [SPDK](https://spdk.io/) 官网
