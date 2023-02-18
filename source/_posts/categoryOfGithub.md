@@ -41,8 +41,9 @@ List of advice and tricks for Go - 面试  *
 
 [awesome-chaosblade](https://github.com/www6v/awesome-chaosblade)     
 
-
 ## K8S 容器
+[k8s_awesome_document](https://github.com/www6v/k8s_awesome_document) *** 
+
 [101](https://github.com/www6v/101)   A basic instruction for Kubernetes setup and understanding.  ***
 
 [kubernetes-the-hard-way](https://github.com/www6v/kubernetes-the-hard-way)   
