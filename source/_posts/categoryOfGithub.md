@@ -17,8 +17,6 @@ categories:
 [read](https://github.com/www6v/read)   *****
 Go 学习之路：Go 开发者博客、Go 微信公众号、Go 学习资料（文档、书籍、视频） 
 
-[conference](https://github.com/www6v/conference)  go conference-ppt ***
-
 [gopl-zh](https://github.com/www6v/gopl-zh)  Go语言圣经中文版  ***
 
 [learn-go-with-tests](https://github.com/www6v/learn-go-with-tests)  ***
@@ -114,12 +112,17 @@ List of advice and tricks for Go - 面试  *
 
 Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.  
 
-##  综合
+
+
+## community
+[talkgo-night](https://github.com/www6v/talkgo-night)    Go 夜读 ***
+
+[gopherchina  conference](https://github.com/www6v/conference)  conference-ppt ***
+
 [academy](https://github.com/www6v/academy)  云原生学院|直播|活动 ***
 
+##  综合
 [cloud-atlas](https://github.com/www6v/cloud-atlas)   云计算指南
-
-[talkgo-night](https://github.com/www6v/talkgo-night)    Go 夜读 ***
 
 [open_source_team](https://github.com/www6v/open_source_team)     国内顶尖团队的开源地址  
 
