@@ -13,8 +13,13 @@ categories:
 <!-- more -->
 
 ##  Java和Go的并发
+
+
+##### Java和Go的并发 
+
 {% asset_img javaAndgo.JPG Java和Go的并发 %}
 
-{% asset_img threadRelationship.JPG  用户线程和系统线程之间的关系（M:N，1:1） %}
 
+##### 用户线程和系统线程之间的关系（M:N，1:1）
+{% asset_img threadRelationship.JPG  用户线程和系统线程之间的关系（M:N，1:1） %}
 

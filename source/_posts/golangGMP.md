@@ -39,4 +39,11 @@ case2: **某个协程被io中断后**， Processer会把自己移动到另一个
 + hand off 机制
 
 ## 参考：
-[Golang的GMP原理与调度](https://blog.csdn.net/qq_44205272/article/details/111565957) good
+1. [Golang的GMP原理与调度](https://blog.csdn.net/qq_44205272/article/details/111565957) ***
+
+2. [#64 深入浅出 Golang Runtime 【 Go 夜读 】](https://www.bilibili.com/video/BV1oE411y7qG/)  goroutine ,  go network , gc *** 未
+
+3. [Golang深入理解GPM模型](https://www.bilibili.com/video/BV19r4y1w7Nx?spm_id_from=333.880.my_history.page.click)  *** 未
+
+
+
