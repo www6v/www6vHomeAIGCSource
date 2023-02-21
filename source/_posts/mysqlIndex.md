@@ -148,7 +148,7 @@ mysql> show profiles;
 
 + **type**：表示连接类型，性能由好到差的连接类型为 NULL、system、const、eq_ref、ref、range、index、all
 + possible_key：可能应用在这张表上的索引，一个或多个
-+ Key：实际使用的索引，如果为 NULL，则没有使用索引
++ Key：**实际使用的索引**，如果为 NULL，则没有使用索引
 + Key_len：表示索引中使用的字节数，该值为索引字段最大可能长度，并非实际使用长度，在不损失精确性的前提下，长度越短越好
 + rows：MySQL认为必须要执行的行数，在InnoDB引擎的表中，是一个估计值，可能并不总是准确的
 
