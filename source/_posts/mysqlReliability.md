@@ -13,10 +13,12 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
 
-## 一. MySQL主从复制原理
+##  MySQL主从复制原理
 
-### 1.1  主从复制
+#####   主从复制
 <div style="text-align: center;">
 
 ![master-slave](https://user-images.githubusercontent.com/5608425/66110430-58be6180-e5f9-11e9-9272-da2f69e51b1c.jpg)
@@ -27,7 +29,7 @@ MySQL主从复制
 + MySQL slave 将 master 的 binary log events 拷贝到它的中继日志(relay log)
 + MySQL slave 重放 relay log 中事件，将数据变更反映它自己的数据
 
-### 1.2 主备切换
+#####  主备切换
 <div style="width:70%;margin:auto">
 {% asset_img  mysqlMasterSlave1.PNG  MySQL主备切换流程 %}
 
@@ -47,14 +49,14 @@ sql_thread。其中io_thread负责与主库建立连接。
 4. 备库B拿到binlog后，写到本地文件，称为中转日志（relay log）。
 5. sql_thread读取中转日志，解析出日志里的命令，并执行。
 
-### 1.3  Master-Master(双M)循环复制问题 
+#####  Master-Master(双M)循环复制问题 
 > 如果设置了双M结构，日志的执行流就会变成这样：
 1. 从节点A更新的事务，binlog里面记的都是A的server id；
 2. 传到节点B执行一次以后，节点B生成的binlog 的server id也是A的server id；
 3. 再传回给节点A，A判断到这个server id与自己的相同，就不会再处理这个日志。所以，死循
 环在这里就断掉了。
 
-### 1.4 主备延迟
+#####  主备延迟
 + 主备延迟来源
 1. 备库所在机器的性能要比主库所在的**机器性能差**
 2. **备库的压力大**
@@ -68,7 +70,7 @@ II. 大表DDL场景, 处理方案就是，计划内的DDL，建议使用gh-ost�
 4. 备库的并行复制能力 [3]
 
 
-### 1.5 主备切换的策略
+#####  主备切换的策略
 
 由于主备延迟的存在，所以在主备切换的时候，就相应的有不同的策略。
 
@@ -88,10 +90,10 @@ II. 大表DDL场景, 处理方案就是，计划内的DDL，建议使用gh-ost�
 实际的应用中，我更建议使用可靠性优先的策略。
 在满足数据可靠性的前提下，MySQL高可用系统的可用性，是依赖于主备延迟的。延迟的时间越小，在主库故障的时候，服务恢复需要的时间就越短，可用性就越高。**
 
-## 二. binlog的三种格式
-1. statement
-2. row格式
-3. mixed格式: statement or row格式
+##  binlog的三种格式
++ statement
++ row格式
++ mixed格式: statement or row格式
 
 > 因为有些**statement格式**的binlog可能会**导致主备不一致**，所以要使用row格式。
 但**row格式的缺点是，很占空间**。比如你用一个delete语句删掉10万行数据，用statement的
@@ -106,7 +108,7 @@ II. 大表DDL场景, 处理方案就是，计划内的DDL，建议使用gh-ost�
 不合理的设置。你至少应该把binlog的格式设置为mixed。
 
 
-## 三. redo log 和 undo log
+## redo log 和 undo log
 
 ##### redo Log 
 + WAL日志，保证事务持久性
@@ -132,7 +134,7 @@ II. 大表DDL场景, 处理方案就是，计划内的DDL，建议使用gh-ost�
 
 
 ## 参考:
-1. 《MySQL实战45讲-MySQL是怎么保证主备一致的？》   丁奇
-2. 《MySQL实战45讲-MySQL是怎么保证高可用的？》  丁奇
-3. 《MySQL实战45讲-备库为什么会延迟好几个小时？》  丁奇
+1. 《MySQL是怎么保证主备一致的？》 MySQL实战45讲  丁奇
+2. 《MySQL是怎么保证高可用的？》 MySQL实战45讲 丁奇
+3. 《备库为什么会延迟好几个小时？》MySQL实战45讲  丁奇
 4. 《云数据库架构》 1.1.5  1.1.7 - 阿里云

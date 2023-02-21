@@ -28,30 +28,50 @@ categories:
 
 ##  事务隔离级别
 
-#####  隔离级别
+#####  隔离级别 [4]
 隔离级别| 脏读|  不可重复读<br>（重点是修改）| 幻影读<br>（重点是新增或者删除）
 :-: | :-: | :-: | :-:
 READ-UNCOMMITTED|  √| √| √
 READ-COMMITTED|  ×| √| √
-REPEATABLE-READ<br>（**InnoDB默认支持**）| ×| ×| √
+REPEATABLE-READ<br>（**InnoDB默认隔离级别**）| ×| ×| √
 SERIALIZABLE|  ×| ×| ×
 
 > innodb对于行的查询使用next-key lock
   **Next-locking keying、Gap锁为了解决Phantom Problem幻读问题**
   当查询的索引含有唯一属性时(单条记录)，将next-key lock降级为record key
 
-#####  MVCC
+##  MVCC 
+##### 原理  [2][3]
 {% asset_img  mvcc.JPG  MVCC（一致性读视图） %}
 
-InnoDB 中的 **RC(READ COMMITTED) 和 RR(REPEATABLE READ) 隔离事务**是基于**多版本并发控制（MVVC）**实现高性能事务。
-**MVVC 对普通的 Select 不加锁**，如果读取的数据正在执行 Delete 或 Update 操作，这时读取操作不会等待排它锁的释放，而是**直接利用 MVVC 读取该行的数据快照**（数据快照是指在该行的之前版本的数据，而数据快照的版本是基于 undo 实现的，undo 是用来做事务回滚的，记录了回滚的不同版本的行记录）。
+  InnoDB 中的 **RC(READ COMMITTED) 和 RR(REPEATABLE READ) 隔离事务**是基于**多版本并发控制（MVVC）**实现高性能事务。
+  **MVCC 对普通的 Select 不加锁**，如果读取的数据正在执行 Delete 或 Update 操作，这时读取操作不会等待排它锁的释放，而是**直接利用 MVCC 读取该行的数据快照**（数据快照是指在该行的之前版本的数据，而数据快照的版本是基于 undo 实现的，undo 是用来做事务回滚的，记录了回滚的不同版本的行记录）。
+
+  **MySQL默认的事务隔离级别是RR(REPEATABLE READ)**, InnoDB引擎的Select操作使用一致性非锁定读（MVCC）。 对于一致性非锁定读， 即使读取的行已经被执行了select...for update,也是可以读取的。
+
+#####  实现 
+|        | 含义                                                         | 例子                                                         |
+| ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 当前读 | 读取的是记录的最新版本，读取时还要保证其他并发事务不能修改当前记录，会对读取的记录进行加锁。 | `select ... lock in share mode`(共享锁)，<br>`select ...for update`、<br>`update`、`insert`、`delete`(排他锁) |
+| 快照读 | 简单的select（不加锁）就是快照读，快照读，读取的是记录数据的可见版本，有可能是历史数据，不加锁，是非阻塞读。 | Read Committed：每次select，都生成一个快照读。<br> Repeatable Read：开启事务后第一个select语句才是快照读的地方。<br> Serializable：快照读会退化为当前读。 |
 
 
-**MySQL默认的事务隔离级别是RR(REPEATABLE READ)**, InnoDB引擎的Select操作使用一致性非锁定读（MVCC）。 对于一致性非锁定读， 即使读取的行已经被执行了select...for update,也是可以读取的。
 
++ MVCC实现 [0]
+  + 隐藏字段 
+    DB_TRX_ID:  最近修改事务ID
+    DB_ROLL_PTR: 回滚指针
+    DB_ROW_ID: 隐藏主键    
+  + undolog版本链 
+    链表的头部是最新的旧记录，链表尾部是最早的旧记录
+  + readview
+    - ReadView（读视图）是 **快照读** SQL执行时MVCC提取数据的依据，记录并维护系统当前活跃的事务（未提交的）id。
+    - 不同的隔离级别，生成ReadView的时机不同：
+      - READ COMMITTED ：在事务中每一次执行快照读时生成ReadView。
+      - REPEATABLE READ：仅在事务中第一次执行快照读时生成ReadView，后续复用该ReadView。
 
 ##  锁
-#####  行锁， 锁优化
+#####  行锁， 锁优化 [3]
 + 在InnoDB事务中，**行锁**是在需要的时候才加上的，但并不是不需要了就立刻释放，而是要等到事务结束时才释放。这个就是**两阶段锁协议**。
 知道了这个设定，对我们使用事务有什么帮助呢？那就是，**如果你的事务中需要锁多个行，要把最可能造成锁冲突、最可能影响并发度的锁尽量往后放.**[todo 加个例子]
 
@@ -63,7 +83,7 @@ InnoDB 中的 **RC(READ COMMITTED) 和 RR(REPEATABLE READ) 隔离事务**是基�
   - **next-key lock** 则是前面两种的组合，对索引项以其之间的间隙加锁。
   只在可重复读或以上隔离级别下的特定操作才会取得 gap lock 或 next-key lock，在Select 、Update 和 Delete 时，除了基于唯一索引的查询之外，其他索引查询时都会获取gap lock 或 next-key lock，即锁住其扫描的范围。
 
-#####  死锁和死锁检测
+#####  死锁和死锁检测 [5]
 当出现死锁以后，有两种策略：
 + 一种策略是，直接进入等待，直到超时。这个超时时间可以通过参数
 innodb_lock_wait_timeout来设置。
@@ -83,13 +103,23 @@ SELECT ... LOCK IN SHARE MODE(加共享锁);
 SELECT ... FOR UPDATE(加排他锁);
 
 ## 参考
+
+0. [黑马程序员 MySQL数据库入门到精通](https://www.bilibili.com/video/BV1Kr4y1i7ru?p=78)  P141-P144
+   [mysql_note](https://github.com/www6v/mysql_note) 笔记1
+   [MySQL 索引](https://frxcat.fun/database/MySQL/MySQL_Advanced_index/) 笔记2 ***
+
 1. 《深入浅出MySQL：数据库开发、优化与管理维护》 
-4. [Mysql事务总结](../../../../2015/02/21/transaction/) self
-6. [可能是全网最好的MySQL重要知识点](https://mp.weixin.qq.com/s/M1dLLuePpdM9vA3F1uJGyw)  
-12. 《MySQL实战45讲 - 行锁功过：怎么减少行锁对性能的影响？》  丁奇
-13. 《MySQL实战45讲 - 为什么这些SQL语句逻辑相同性能却差异巨大？》  丁奇
-2. 《MySQL实战45讲 - 03 | 事务隔离：为什么你改了我还看不见？ 》  丁奇
-3. 《Java性能调优实战进入课程 - 33 | MySQL调优之事务：高并发场景下的数据库事务调优》  刘超
+2. 《03 | 事务隔离：为什么你改了我还看不见？ 》MySQL实战45讲  丁奇
+3. 《33 | MySQL调优之事务：高并发场景下的数据库事务调优》 Java性能调优实战  进入课程  刘超
+4. [可能是全网最好的MySQL重要知识点](https://segmentfault.com/a/1190000019619667)  
+5. 《07 | 行锁功过：怎么减少行锁对性能的影响？》 MySQL实战45讲  丁奇
+6. 《18 | 为什么这些SQL语句逻辑相同性能却差异巨大？》MySQL实战45讲  丁奇
+
+
+
+
+
++  {% post_link 'mysqlTransaction' %}  self
 
 
 
