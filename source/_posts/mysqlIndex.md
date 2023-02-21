@@ -21,10 +21,8 @@ categories:
 
 索引的数据结构： B+树能够很好地配合磁盘的读写特性，减少单次查询的磁盘访问次数
 
-<div style="text-align: center;">
-![innodb-myisam-index](https://user-images.githubusercontent.com/5608425/65374438-66501f00-dcbc-11e9-8609-2da27df96809.png)
-Innodb和MyISAM中的聚集索引和非聚集索引(二级索引)
-</div>
+{% asset_img mysql-index.jpg  Innodb和MyISAM中的聚集索引和非聚集索引(二级索引)  %}
+
 
  index | MyISAM  |  InnoDB | Memory
 :-: | :-: | :-: | :-:
