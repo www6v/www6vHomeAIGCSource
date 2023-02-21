@@ -1,5 +1,5 @@
 ---
-title: MySQL 事务和锁
+title: MySQL 事务-隔离性和锁
 date: 2020-08-14 17:22:20
 tags:
   - mysql
@@ -12,7 +12,10 @@ categories:
 <p></p>
 <!-- more -->
 
-## 一. MyISAM 和 InnoDB
+## 目录
+<!-- toc -->
+
+##  MyISAM 和 InnoDB
 
   描述  | MyISAM  |  InnoDB 
   :-: | :-: | :-: 
@@ -23,9 +26,9 @@ categories:
   MVCC| × |  √ <br> 在READ COMMITTED 和 REPEATABLE READ时有效 
 
 
-## 二. 事务隔离级别
+##  事务隔离级别
 
-### 2.1 隔离级别
+#####  隔离级别
 隔离级别| 脏读|  不可重复读<br>（重点是修改）| 幻影读<br>（重点是新增或者删除）
 :-: | :-: | :-: | :-:
 READ-UNCOMMITTED|  √| √| √
@@ -37,7 +40,7 @@ SERIALIZABLE|  ×| ×| ×
   **Next-locking keying、Gap锁为了解决Phantom Problem幻读问题**
   当查询的索引含有唯一属性时(单条记录)，将next-key lock降级为record key
 
-### 2.2 MVCC
+#####  MVCC
 {% asset_img  mvcc.JPG  MVCC（一致性读视图） %}
 
 InnoDB 中的 **RC(READ COMMITTED) 和 RR(REPEATABLE READ) 隔离事务**是基于**多版本并发控制（MVVC）**实现高性能事务。
@@ -47,8 +50,8 @@ InnoDB 中的 **RC(READ COMMITTED) 和 RR(REPEATABLE READ) 隔离事务**是基�
 **MySQL默认的事务隔离级别是RR(REPEATABLE READ)**, InnoDB引擎的Select操作使用一致性非锁定读（MVCC）。 对于一致性非锁定读， 即使读取的行已经被执行了select...for update,也是可以读取的。
 
 
-## 三. 锁
-#### 1. 行锁， 锁优化
+##  锁
+#####  行锁， 锁优化
 + 在InnoDB事务中，**行锁**是在需要的时候才加上的，但并不是不需要了就立刻释放，而是要等到事务结束时才释放。这个就是**两阶段锁协议**。
 知道了这个设定，对我们使用事务有什么帮助呢？那就是，**如果你的事务中需要锁多个行，要把最可能造成锁冲突、最可能影响并发度的锁尽量往后放.**[todo 加个例子]
 
@@ -60,7 +63,7 @@ InnoDB 中的 **RC(READ COMMITTED) 和 RR(REPEATABLE READ) 隔离事务**是基�
   - **next-key lock** 则是前面两种的组合，对索引项以其之间的间隙加锁。
   只在可重复读或以上隔离级别下的特定操作才会取得 gap lock 或 next-key lock，在Select 、Update 和 Delete 时，除了基于唯一索引的查询之外，其他索引查询时都会获取gap lock 或 next-key lock，即锁住其扫描的范围。
 
-#### 2. 死锁和死锁检测
+#####  死锁和死锁检测
 当出现死锁以后，有两种策略：
 + 一种策略是，直接进入等待，直到超时。这个超时时间可以通过参数
 innodb_lock_wait_timeout来设置。
@@ -74,12 +77,12 @@ innodb_lock_wait_timeout的默认值是50s。 实际中不用这种策略。
    - 一种解决思路是**控制并发度**：并发控制要做在数据库服务端。如果有中间件，可以考虑在中间件实现；如果-团队有能修改MySQL源码的人，也可以做在MySQL里面。基本思路就是，**对于相同行的更新，-在进入引擎之前排队**。这样在InnoDB内部就不会有大量的死锁检测工作了。
    - 另一种解决思路是**在应用层上优化**:你可以考虑通过将一行改成逻辑上的多行来减少锁冲突。 比如，一个账户1条记录变10条记录。
 
-####  3. 隐式锁和显示锁
+#####   隐式锁和显示锁
 显示锁
 SELECT ... LOCK IN SHARE MODE(加共享锁);
 SELECT ... FOR UPDATE(加排他锁);
 
-## 参考:
+## 参考
 1. 《深入浅出MySQL：数据库开发、优化与管理维护》 
 4. [Mysql事务总结](../../../../2015/02/21/transaction/) self
 6. [可能是全网最好的MySQL重要知识点](https://mp.weixin.qq.com/s/M1dLLuePpdM9vA3F1uJGyw)  

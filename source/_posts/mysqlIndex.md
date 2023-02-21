@@ -56,7 +56,7 @@ categories:
 
 
 
-#####  复合索引的数据结构  最左前缀原则
+#####  复合索引的数据结构  
 
 ```
 create table people {
@@ -82,20 +82,23 @@ create table people {
   匹配列前缀 | index （a， b） <br> a like 'WEER%'    
   Index Condition Pushdown（ICP） |  减少回表IO     
 
-#####  索引的失效  性能变差[13]
+#####  索引的失效   [12][7]
++ 非复合索引
+ 索引失效(不会使用index的场景) | 例子| 解释 
+ :-: | :-: | :-: 
+ 在索引列上进行运算操作 | substring(phone,10,2) | **对索引字段做函数操作，可能会破坏索引值的有序性，因此优化器就决定放弃走树搜索功能。** 
+ 模糊查询, 头部模糊匹配 | like "%NI" |
+ 字符串类型字段使用时，不加引号[隐式转换] | lastname=1  不使用索引 <br>lastname='1'  使用索引| **隐式类型转换**， **隐式字符编码转换**，等价于在索引字段上做函数操作而导致了全索引扫描。 
+ or连接条件 | index a <br>  a=3 or c=6 or d=9| 如果or前的条件中的列有索引，而后面的列中没有索引，那么涉及的索引都不会被用到. 当or连接的条件，左右两侧字段都有索引时，索引才会生效。 
 
- 索引失效(不会使用index的场景) | 例子
- :-: | :-: 
- like | like "%NI%"
- 隐式转换 | lastname=1  不使用索引 <br>lastname='1'  使用索引
-  复合索引不符合最左匹配原则 |
- or | index a <br>  a=3 or c=6 or d=9
-
-
-**对索引字段做函数操作，可能会破坏索引值的有序性，因此优化器就决定放弃走树搜索功能。**
-**隐式类型转换**， **隐式字符编码转换**，等价于在索引字段上做函数操作而导致了全索引扫描。
-
-
++ 复合索引[7]
+  + 最左前缀原则
+  如果索引关联了多列（联合索引），要遵守最左前缀法则，最左前缀法则指的是查询从索引的最左列开始，并且不跳过索引中的列。**如果跳跃某一列，索引将部分失效（后面的字段索引失效）。**  
+  + 范围查询
+    联合索引中，**出现范围查询(>,<)，范围查询右侧的列索引失效**。
+    ```mysql
+    explain select * from tb_user where profession = '软件工程' and age >= 30 and status = '0';
+    ```
 
 ##  索引-优化
 
@@ -166,7 +169,7 @@ mysql> show profiles;
 
 6. [可能是全网最好的MySQL重要知识点](https://mp.weixin.qq.com/s/M1dLLuePpdM9vA3F1uJGyw)  已失效
 
-7. [黑马程序员 MySQL数据库入门到精通](https://www.bilibili.com/video/BV1Kr4y1i7ru?p=78)
+7. [黑马程序员 MySQL数据库入门到精通](https://www.bilibili.com/video/BV1Kr4y1i7ru?p=78) P75-P82 P72
    [mysql_note](https://github.com/www6v/mysql_note) 笔记1
    [MySQL 索引](https://frxcat.fun/database/MySQL/MySQL_Advanced_index/) 笔记2
 
