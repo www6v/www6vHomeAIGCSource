@@ -2,13 +2,11 @@
 title: MySQL事务总结
 date: 2015-02-21 14:44:33
 tags:
-  - 基础
-  - 事务
-  - transaction
-categories: 
-  - 分布式
-  - 一致性
-  - 事务     
+  - mysql
+categories:  
+  - 数据库
+  - 关系型
+  - mysql
 ---
 
 <p></p>

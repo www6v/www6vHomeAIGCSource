@@ -13,10 +13,11 @@ top: true
 <!-- more -->
 
 ## 单机
-+ [MySQL 事务和锁](../../../../2020/08/14/mysqlTransactionAndLock/)      
-+ [MySQL中的SQL更新语句](../../../../2020/06/26/mysqlUpdate/)      
-+ [MySQL的高可靠和高可用](../../../../2020/06/21/mysqlReliability/)      
-+ [MySQL的索引和优化](../../../../2019/09/10/mysql/)      
++ {% post_link 'mysqlTransactionAndLock'  %}
++ {% post_link 'mysqlUpdate'  %}
++ {% post_link 'mysqlReliability'  %}
++ {% post_link 'mysqlIndex'  %}
++ {% post_link 'mysqlTransaction' %}       
 
 ## 分布式
 + [分布式 数据库](../../../../2022/02/09/distributedDatabase/)     
