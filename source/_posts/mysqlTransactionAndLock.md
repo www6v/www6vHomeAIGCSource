@@ -26,15 +26,13 @@ categories:
   MVCC| × |  √ <br> 在READ COMMITTED 和 REPEATABLE READ时有效 
 
 
-##  事务隔离级别
-
-#####  隔离级别 [4]
-隔离级别| 脏读|  不可重复读<br>（重点是修改）| 幻影读<br>（重点是新增或者删除）
+##  事务隔离级别  [4]
+隔离级别(从高到低)| 脏读|  不可重复读<br>（重点是修改）| 幻影读<br>（重点是新增或者删除）
 :-: | :-: | :-: | :-:
-READ-UNCOMMITTED|  √| √| √
-READ-COMMITTED|  ×| √| √
-REPEATABLE-READ<br>（**InnoDB默认隔离级别**）| ×| ×| √
-SERIALIZABLE|  ×| ×| ×
+SERIALIZABLE| × | × | × 
+REPEATABLE-READ<br>（**InnoDB默认隔离级别**）| × | × | √ 
+READ-COMMITTED| × | √ | √ 
+READ-UNCOMMITTED| √ | √ | √ 
 
 > innodb对于行的查询使用next-key lock
   **Next-locking keying、Gap锁为了解决Phantom Problem幻读问题**
