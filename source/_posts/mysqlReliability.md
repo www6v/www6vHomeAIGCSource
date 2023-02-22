@@ -18,16 +18,23 @@ categories:
 
 ##  MySQL主从复制原理
 
-#####   主从复制
+#####   主从复制-流程
 <div style="text-align: center;">
 
 ![master-slave](https://user-images.githubusercontent.com/5608425/66110430-58be6180-e5f9-11e9-9272-da2f69e51b1c.jpg)
 MySQL主从复制
 </div>
 
-> + MySQL master 将数据变更写入二进制日志( binary log, 其中记录叫做二进制日志事件binary log events，可以通过 show binlog events 进行查看)
++ MySQL master 将数据变更写入二进制日志( binary log, 其中记录叫做二进制日志事件binary log events，可以通过 show binlog events 进行查看)
 + MySQL slave 将 master 的 binary log events 拷贝到它的中继日志(relay log)
 + MySQL slave 重放 relay log 中事件，将数据变更反映它自己的数据
+
+#####   主从复制-类型 [6]
++ 异步复制
++ 半同步复制
+  MHA + 半同步复制
++ 全同步复制 
+  MGR + 全同步
 
 #####  主备切换
 <div style="width:70%;margin:auto">
@@ -90,6 +97,34 @@ II. 大表DDL场景, 处理方案就是，计划内的DDL，建议使用gh-ost�
 实际的应用中，我更建议使用可靠性优先的策略。
 在满足数据可靠性的前提下，MySQL高可用系统的可用性，是依赖于主备延迟的。延迟的时间越小，在主库故障的时候，服务恢复需要的时间就越短，可用性就越高。**
 
+## 高可用方案-Master高可用[5]
+##### MMM
+  早期，不建议使用
+##### MHA - 单主 +
+  - MHA-manager 管理Master
+      使用**半同步复制**
+  - 缺陷： 只关注到master，对slave关注不够
+##### MySQL Group Replicatoin(MGR) - 单(荐)/多主 +
+  +  5.7之后支持
+  +  **全同步复制**， raft协议
+  -   缺陷：只能在GTID模式下， 并且日志格式未row格式
+##### MySQL Cluster - 多主
+  + 官方亲儿子
+  + NDB engine， **存算分离**
+  + 实现数据的强一致
+  - 缺陷：国内使用少， 配置复杂
+##### Galera Cluster - 多主 +
+  + 三方提供
+  + Master和数据Node部署在一起
+  + WSREP协议来做数据同步
+##### Percona XtraDB(PXC) -多主
+  + 早期
+
+## 高可用方案 - 数据可靠性[5]
+#####  Raid10( Raid 1+0 )
+##### SAN共享存储- 贵
+##### DRBD磁盘复制-系统自带 + 
+
 ##  binlog的三种格式
 + statement
 + row格式
@@ -138,3 +173,5 @@ II. 大表DDL场景, 处理方案就是，计划内的DDL，建议使用gh-ost�
 2. 《MySQL是怎么保证高可用的？》 MySQL实战45讲 丁奇
 3. 《备库为什么会延迟好几个小时？》MySQL实战45讲  丁奇
 4. 《云数据库架构》 1.1.5  1.1.7 - 阿里云
+5. [【IT老齐245】综合对比九种MySQL高可用方案](https://www.bilibili.com/video/BV1m44y1Q7ZF/)
+6.  [【IT老齐099】哎，MySQL高可用架构选型要慎重啊！](https://www.bilibili.com/video/BV1HL411T7C8/)
