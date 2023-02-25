@@ -1,4 +1,5 @@
 #!/bin/bash
 
-hexo g && hexo s --draft
+hexo g  
+hexo s --draft
 
