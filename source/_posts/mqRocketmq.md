@@ -11,7 +11,7 @@ categories:
 <p></p>
 <!-- more -->
 
-关键词: 顺序消息[6][9][10], 重复消息, 事务消息, 消息存储
+关键词: 顺序消息[6][9][10], 重复消息, 事务消息
 
 {% asset_img  rocketMQ.jpg  RocketMQ %}
 
@@ -20,12 +20,10 @@ categories:
 ##### Overview
 1. [Apache RocketMQ背后的设计思路与最佳实践](https://yq.aliyun.com/articles/71889?spm=5176.100239.blogcont55626.10.FWVVKw) 阿里 冯嘉
 2. [十分钟入门RocketMQ](https://yq.aliyun.com/articles/66101?spm=5176.100239.blogcont55634.18.ODias7)  阿里 尘央
-3. [RocketMQ 关键特性](https://yq.aliyun.com/articles/66110?spm=a2c4e.11155435.0.0.2cb97b3fBOIG8W)
+3. [RocketMQ 关键特性](https://yq.aliyun.com/articles/66110?spm=a2c4e.11155435.0.0.2cb97b3fBOIG8W) ***
 
-##### 存储
-4. [《RocketMq》二、存储篇](https://blog.csdn.net/xxxxxx91116/article/details/50333161)
-5. [分布式消息队列RocketMQ与Kafka架构上的巨大差异之2 -- CommitLog与ConsumeQueue](https://blog.csdn.net/gh670011677/article/details/75095469)
-
+4. xxx
+5. xxx
 6. [分布式开放消息系统(RocketMQ)的原理与实践](https://zhuanlan.zhihu.com/p/396726719)   CHEN川  ***  消息的顺序问题  消息的重复问题
 
 ##### 事务
