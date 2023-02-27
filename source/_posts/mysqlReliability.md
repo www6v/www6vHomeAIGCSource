@@ -36,7 +36,7 @@ MySQL主从复制
 + 全同步复制 
   MGR + 全同步
 
-#####  主备切换
+#####  主备切换 [1]
 <div style="width:70%;margin:auto">
 {% asset_img  mysqlMasterSlave1.PNG  MySQL主备切换流程 %}
 
@@ -56,14 +56,14 @@ sql_thread。其中io_thread负责与主库建立连接。
 4. 备库B拿到binlog后，写到本地文件，称为中转日志（relay log）。
 5. sql_thread读取中转日志，解析出日志里的命令，并执行。
 
-#####  Master-Master(双M)循环复制问题 
+#####  Master-Master(双M)循环复制问题  [1]
 + 如果设置了双M结构，日志的执行流就会变成这样：
 1. 从节点A更新的事务，binlog里面记的都是A的server id；
 2. 传到节点B执行一次以后，节点B生成的binlog 的server id也是A的server id；
 3. 再传回给节点A，A判断到这个server id与自己的相同，就不会再处理这个日志。所以，死循
 环在这里就断掉了。
 
-#####  主备延迟
+#####  主备延迟 [2]
 + 主备延迟原因
   + 备库所在机器的性能要比主库所在的**机器性能差**
   + **备库的压力大**
@@ -77,7 +77,7 @@ sql_thread。其中io_thread负责与主库建立连接。
    + 备库的并行复制能力 [3]
 
 
-#####  主备切换的策略
+#####  主备切换的策略 [2]
 
 由于主备延迟的存在，所以在主备切换的时候，就相应的有不同的策略。
 
@@ -104,7 +104,7 @@ sql_thread。其中io_thread负责与主库建立连接。
   - MHA-manager 管理Master
       使用**半同步复制**
   - 缺陷： 只关注到master，对slave关注不够
-##### MySQL Group Replicatoin(MGR) - 单主 [7]+
+##### MySQL Group Replicatoin(MGR) - 单主 [6]+
   +  **单主(荐)  多主(不推荐)** 
   +  5.7之后支持
   +   raft协议算法，自动选主节点， 自动故障转移
@@ -132,53 +132,20 @@ sql_thread。其中io_thread负责与主库建立连接。
 ##### SAN共享存储- 贵
 ##### DRBD磁盘复制-系统自带 + 
 
-##  binlog的三种格式
-+ statement
-+ row格式
-+ mixed格式: statement or row格式
-
-> 因为有些**statement格式**的binlog可能会**导致主备不一致**，所以要使用row格式。
-但**row格式的缺点是，很占空间**。比如你用一个delete语句删掉10万行数据，用statement的
-话就是一个SQL语句被记录到binlog中，占用几十个字节的空间。但如果用row格式的binlog，
-就要把这10万条记录都写到binlog中。这样做，不仅会占用更大的空间，同时写binlog也要耗
-费IO资源，影响执行速度。
-所以，MySQL就取了个**折中方案**，也就是有了mixed格式的binlog。**mixed格式**的意思
-是，MySQL自己会判断这条SQL语句是否可能引起主备不一致，如果有可能，就用row格式，
-否则就用statement格式。
-也就是说，mixed格式**可以利用statment格式的优点，同时又避免了数据不一致的风险**。
-因此，如果你的线上MySQL设置的binlog格式是statement的话，那基本上就可以认为这是一个
-不合理的设置。你至少应该把binlog的格式设置为mixed。
 
 
-## redo log 和 undo log
+## MySQL Log和可靠性
 
-##### redo Log 
-+ WAL日志，保证事务持久性
-+ buffer楼盘之前数据库意外宕机， 可以进行数据的恢复
+{% post_link 'mysqlLog' %}  
 
-##### undo log
-+ 保证事务原子性， 回滚或者事务异常，可以回滚到历史版本
-+ 实现MVCC的必要条件
 
-```
-  事务开始.
-      记录A=1到undo log.
-      修改A=3.
-      记录A=3到redo log.( 先写内存， 后同步到磁盘中)
 
-      记录B=2到undo log.
-      修改B=4.
-      记录B=4到redo log.( 先写内存， 后同步到磁盘中)
 
-      将redo log写入磁盘。
-  事务提交
-```
+## 参考
 
-## 参考:
 1. 《MySQL是怎么保证主备一致的？》 MySQL实战45讲  丁奇
 2. 《MySQL是怎么保证高可用的？》 MySQL实战45讲 丁奇
 3. 《备库为什么会延迟好几个小时？》MySQL实战45讲  丁奇
-4. 《云数据库架构》 1.1.5  1.1.7 - 阿里云
+4.  xxx
 5. [【IT老齐245】综合对比九种MySQL高可用方案](https://www.bilibili.com/video/BV1m44y1Q7ZF/)
 6.  [【IT老齐099】哎，MySQL高可用架构选型要慎重啊！](https://www.bilibili.com/video/BV1HL411T7C8/)
-7.  [【IT老齐099】哎，MySQL高可用架构选型要慎重啊！](https://www.bilibili.com/video/BV1HL411T7C8/)
