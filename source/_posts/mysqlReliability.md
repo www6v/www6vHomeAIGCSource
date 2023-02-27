@@ -146,6 +146,6 @@ sql_thread。其中io_thread负责与主库建立连接。
 1. 《MySQL是怎么保证主备一致的？》 MySQL实战45讲  丁奇
 2. 《MySQL是怎么保证高可用的？》 MySQL实战45讲 丁奇
 3. 《备库为什么会延迟好几个小时？》MySQL实战45讲  丁奇
-4.  xxx
+4.    xxx
 5. [【IT老齐245】综合对比九种MySQL高可用方案](https://www.bilibili.com/video/BV1m44y1Q7ZF/)
 6.  [【IT老齐099】哎，MySQL高可用架构选型要慎重啊！](https://www.bilibili.com/video/BV1HL411T7C8/)
