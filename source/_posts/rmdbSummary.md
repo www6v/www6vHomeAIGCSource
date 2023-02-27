@@ -1,5 +1,5 @@
 ---
-title: RMDB-汇总
+title: 关系型数据库 汇总
 date: 2021-02-09 22:42:16
 tags:
   - 汇总
@@ -17,9 +17,15 @@ top: true
 + {% post_link 'mysqlUpdate'  %}
 + {% post_link 'mysqlReliability'  %}
 + {% post_link 'mysqlIndex'  %}
-+ {% post_link 'mysqlTransaction' %}       
++ {% post_link 'mysqlTransaction' %}   
+
 
 ## 分布式
-+ [分布式 数据库](../../../../2022/02/09/distributedDatabase/)     
-+ [LSM-Tree  Key-Value分离](../../../../2022/06/05/lsmTreeKeyValueSeparation/)      
-+ [LSM-Tree Compaction压缩](../../../../2022/01/08/lsmTreeCompaction/)      
++ {% post_link 'distributedDatabase'  %}
+
+##### 存储引擎
++ {% post_link 'lsmTreeKeyValueSeparation'  %}
++ {% post_link 'lsmTreeCompaction'  %}
+
+
++ {% post_link 'paperlsmTreeSurvey'  %}

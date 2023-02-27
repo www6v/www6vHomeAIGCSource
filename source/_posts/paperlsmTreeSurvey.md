@@ -14,7 +14,7 @@ categories:
 ## LSM-tree basics
 #####   LSM Tree基础
 + Merge有两个典型的策略：Leveling Merge Policy和 Tiering Merge Policy
-{%  asset_img  merge.png  %}
+{%  asset_img  merge.png  720 576 %}
 
 Leveling Merge：每层维护一个component，层之间数据量比例为T。
 Tiering Merge：每层维护最多T个component，满T个就整体合并成下一层的一个component。

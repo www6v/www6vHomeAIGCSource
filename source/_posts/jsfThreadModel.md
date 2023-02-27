@@ -11,11 +11,12 @@ categories:
   - 案例-京东JSF  
 ---
 
-JSF是京东基础架构组的服务化中间件产品，全名是Jingdong Service Framework（中文名：杰夫）。
-
-JSF整体是依据netty来构建的，本文从代码层面简单介绍一下JSF服务端的线程模型。
-
+<p></p>
 <!-- more -->
+
+### 京东服务框架JSF 
+JSF是京东基础架构组的服务化中间件产品，全名是Jingdong Service Framework（中文名：杰夫）。
+JSF整体是依据netty来构建的，本文从代码层面简单介绍一下JSF服务端的线程模型。
 
 ### 1.JSF的服务端线程模型整体上是 boss线程池 + worker线程池 + 业务线程池。boss线程池和worker线程池称为Reactor线程池。
 
@@ -74,7 +75,7 @@ worker线程池和业务线程池之间的关系详见下图2，在图中可以�
 ![图10 提交task到业务线程Executor](http://www6v.github.io/www6vHome/jsf%20%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B/%E4%B8%9A%E5%8A%A1%E7%BA%BF%E7%A8%8B%E6%89%A7%E8%A1%8Ctask.JPG "图10 提交task到业务线程Executor")
          
 
- 
+
 可以看到，JSF服务提供者线程模型整体还是按照boss+worker+biz这种netty官方推荐的方式构建的。
 
  
