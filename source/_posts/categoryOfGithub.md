@@ -122,11 +122,13 @@ Learn how to design large-scale systems. Prep for the system design interview. I
 [academy](https://github.com/www6v/academy)  云原生学院|直播|活动 ***
 
 ##  综合
+[patterns-of-distributed-systems](https://github.com/www6v/patterns-of-distributed-systems)  分布式设计模式 *** 
+
+[blog_demos](https://github.com/www6v/blog_demos)    all demos for my blogs : http://blog.csdn.net/boling_cavalry    ***
+
 [cloud-atlas](https://github.com/www6v/cloud-atlas)   云计算指南
 
 [open_source_team](https://github.com/www6v/open_source_team)     国内顶尖团队的开源地址  
-
-[blog_demos](https://github.com/www6v/blog_demos)    all demos for my blogs : http://blog.csdn.net/boling_cavalry    ***
 
 [issue-case](https://github.com/www6v/issue-case)   问题/故障案例总结与整理
 
