@@ -2,12 +2,10 @@
 title: Netty EpollEventLoop
 date: 2015-10-03 18:11:10
 tags:  
-  - 中间件
   - 网络
   - Netty
-categories:
-  - 分布式 
-  - 基础
+categories: 
+  - Java基础 
   - Netty   
 ---
 

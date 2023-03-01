@@ -6,8 +6,7 @@ tags:
   - 网络
   - Netty
 categories:
-  - 分布式 
-  - 基础
+  - Java基础
   - Netty    
 ---
 

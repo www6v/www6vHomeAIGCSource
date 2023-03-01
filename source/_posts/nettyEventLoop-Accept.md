@@ -2,12 +2,10 @@
 title: Netty中NioEventLoop的accept过程
 date: 2015-09-06 18:04:04
 tags:
-  - 中间件
   - 网络
   - Netty
 categories: 
-  - 分布式
-  - 基础
+  - Java基础
   - Netty  
 ---
 
