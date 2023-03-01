@@ -4,7 +4,6 @@ date: 2019-09-09 15:02:28
 tags:
   - 微服务
 categories:
-  - 分布式
   - 服务治理
   - 微服务
 ---
@@ -23,7 +22,7 @@ In short, the microservice architectural style [1] is an approach to developing 
    + 鉴权、 
    + 监控、
    + 缓存
-   [使用 API 网关构建微服务](https://www.infoq.cn/article/construct-micro-service-using-api-gateway/)
+      [使用 API 网关构建微服务](https://www.infoq.cn/article/construct-micro-service-using-api-gateway/)
 
 ### 2. 服务容错,
    + 超时重试机制[self 1][self 2]
@@ -32,7 +31,7 @@ In short, the microservice architectural style [1] is an approach to developing 
    + 隔离
    + 降级（本地缓存）
    + 流量调度、负载均衡
-   [微服务熔断与隔离](https://yq.aliyun.com/articles/7443?spm=5176.100238.yqhn2.2.XS3jCO)
+      [微服务熔断与隔离](https://yq.aliyun.com/articles/7443?spm=5176.100238.yqhn2.2.XS3jCO)
 
 ### 3. 服务注册和发现
 <div style="text-align: center;">
@@ -144,7 +143,7 @@ Eg. k8s pod中日志采集sidecar
 
 
 <div style="text-align: center;">
-  
+
 ![productivity](https://user-images.githubusercontent.com/5608425/66262608-af54b700-e816-11e9-9e16-3b95d76e14e2.png)
 生产率和复杂度之间的关系。 
 </div>
@@ -168,7 +167,7 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 自动化运维（**DevOps**） | | 系统集成测试 | DevOps 要求
 **容错**| 可用性高 |  数据一致性 | 性能监控; 分布式系统的复杂性
 快速**演化**| 开发简单 |重复工作  | 系统集成测试 
- 
+
 
 ## 五. SOA、微服务、云原生演进
 
@@ -207,7 +206,7 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 
 
 
-             
+​             
 
 
 

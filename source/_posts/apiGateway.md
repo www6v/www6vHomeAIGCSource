@@ -4,7 +4,6 @@ date: 2022-01-21 10:31:46
 tags:
   - API Gateway
 categories: 
-  - 分布式
   - 服务治理
   - API网关    
 ---
