@@ -4,7 +4,6 @@ date: 2019-08-22 02:17:53
 tags:
   - Nginx
 categories:
-  - 分布式
   - 中间件
   - nginx
 ---

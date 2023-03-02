@@ -1,14 +1,13 @@
 ---
-title: 分布式一致性总结
+title: 分布式一致性 总结
 date: 2016-02-09 18:19:56
 tags:
-  - 分布式
   - 一致性
   - 事务
 categories: 
   - 分布式
-  - 一致性    
-  - 事务
+  - 一致性 
+  - 总结   
 ---
 
 <p></p>
@@ -16,7 +15,7 @@ categories:
 
 [raft]:../../../../2019/06/21/raft
 [gossip-visualization]:https://rrmoelker.github.io/gossip-visualization/
-[AT Mode]:https://github.com/seata/seata/wiki/AT-Mode  
+[AT Mode]:https://github.com/seata/seata/wiki/AT-Mode
 [MT Mode]:https://github.com/seata/seata/wiki/MT-Mode
 
 {% asset_img  consistent.jpg  分布式一致性总结 %}
@@ -69,7 +68,7 @@ categories:
 可定制的一致性|协议|特性|举例
 :-:|:-:|:-:|:-:
 可定制的一致性|R+W>N[ReadQurum-WriteQurum]| 可定制 | [Dynamo, Cassandra](../../../../2018/07/19/NoSQL/)  定制灵活
-	
+
 ## 二. 柔性事务 最终一致性
 
 模式 |  流程 | 流程细节 
@@ -88,7 +87,7 @@ TCC #4| Eg: 支付宝DTS #3 |蚂蚁 XTS(内部)/DTX(蚂蚁金融云) #3 <br>**�
 两阶段 |  | 阿里 TXC(内部)/GTS(阿里云) <br>**非入侵性** <br>[AT Mode][AT Mode] 基于 支持本地 ACID 事务 的 "关系型数据库" <br>[MT Mode][MT Mode] 支持把"自定义"的分支事务纳入到全局事务的管理中
 
 {% asset_img  saga.jpg  saga流程 %}
- 
+
 
 ## 三. 柔性事务
 
@@ -122,7 +121,7 @@ table th:first-of-type {
 ## 五.  state machine && primary-copy
 
 <div style="text-align: center;">
-  
+
 ![state-machine-primary-back](https://user-images.githubusercontent.com/5608425/67629999-09e3af00-f8bb-11e9-88fb-10142745bfdd.png)
 state machine replication && primary-copy
 </div>
@@ -154,7 +153,7 @@ state machine replication && primary-copy
 8. [Base: An Acid Alternative](https://queue.acm.org/detail.cfm?id=1394128)  Ebay模式  good
 9. [mysql](../../../../2019/09/10/mysql/) self
 10. [如何选择分布式事务解决方案？](https://mp.weixin.qq.com/s/2AL3uJ5BG2X3Y2Vxg0XqnQ)   道苏
- 
+
 ### Seata && TCC
 1. 分布式事务之TCC事务 梁钟霖
 2. 分布式事务之TCC服务设计和实现注意事项 绍辉

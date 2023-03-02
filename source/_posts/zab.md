@@ -4,7 +4,6 @@ date: 2015-11-29 12:06:43
 tags:
   - Zookeeper
 categories:
-  - 分布式 
   - 中间件
   - Zookeeper 
 ---

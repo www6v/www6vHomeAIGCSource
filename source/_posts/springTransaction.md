@@ -6,8 +6,7 @@ tags:
   - 事务
   - transaction
 categories: 
-  - 分布式
-  - 一致性
+  - Java基础
   - 事务  
 ---
 

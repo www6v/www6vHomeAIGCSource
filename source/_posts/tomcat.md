@@ -4,7 +4,6 @@ date: 2020-08-08 22:38:36
 tags:
   - Tomcat
 categories:
-  - 分布式
   - 中间件
   - Tomcat
 ---

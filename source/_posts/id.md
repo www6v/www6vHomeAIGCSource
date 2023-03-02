@@ -4,9 +4,7 @@ date: 2016-08-15 06:28:23
 tags:
   - 中间件 
 categories: 
-  - 分布式
-  - 一致性
-  - 幂等  
+  - 中间件 
   - id生成    
 ---
 
@@ -44,5 +42,4 @@ categories:
 2. 服务化框架－分布式Unique ID的生成方法一览 江南白衣
 3. [Leaf：美团分布式ID生成服务开源](https://tech.meituan.com/2019/03/07/open-source-project-leaf.html)
 4. [发号器：如何保证分库分表后ID的全局唯一性？]()  唐扬
-
 

@@ -3,10 +3,8 @@ title: 分布式锁
 date: 2016-12-05 23:33:34
 tags:
   - 中间件
-  - 锁
 categories: 
-  - 分布式
-  - 一致性
+  - 中间件
   - 分布式锁  
 ---
 
@@ -47,7 +45,6 @@ categories:
 9. [分布式锁（一）基于Zookeeper实现可重入分布式锁](https://blog.csdn.net/u013278314/article/details/82715716) 
 10. [Redis分布式锁实现秒杀业务(乐观锁、悲观锁)](https://www.cnblogs.com/jasonZh/p/9522772.html)  最后
     乐观锁: jedis的watch方法
-
 
 
 

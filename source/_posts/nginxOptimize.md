@@ -4,7 +4,6 @@ date: 2020-03-26 12:07:27
 tags:
   - Nginx
 categories:
-  - 分布式
   - 中间件
   - nginx
 ---
@@ -35,7 +34,7 @@ ssl_protocols TLSv1.2;  /// 版本号
 ``` 
 No redirect:  无重定向 
 Redirect： 301-302 -》 转到https站点 
-``` 
+```
 
 ### gzip
 ```
@@ -55,18 +54,18 @@ worker_connections  16384;  ///    一个worker有 16384/2=8192 ‬个链接 .
                                    两个事件， 一个读事件， 一个写事件。 
                                    越多的connections对应更多的内存消耗。
 Default: worker_connections 512;                                 
-``` 
+```
 
 ``` 
 高级选项：
 worker connections的内存池（pools）， 更少的的内存碎片。一般是nginx自动分配的， 不用分配。
 Default: 	connection_pool_size 256|512
 Default: 	request_pool_size 4k;
-``` 
+```
 
 ```
 worker_processes  设置worker进程的数量
-``` 
+```
 
 
 ### 减少进程间切换
@@ -86,14 +85,14 @@ L3（共享的）
 ``` 
 worker_cpu_affinity cpumask ...;
 worker_cpu_affinity auto [cpumask];
-``` 
+```
 
 ### lua 分配的内存（暂时没有使用）
 ``` 
 lua_shared_dict configuration_data 5M;
 lua_shared_dict certificate_data 16M;
 应用场景: 集群流控,  多个worker之间的内存的共享。
-``` 
+```
 
 
 ### http的keeplive  长链接（一个tcp的链接，上面有多个http的请求）  非tcp keeplive 
@@ -101,7 +100,7 @@ lua_shared_dict certificate_data 16M;
 keepalive_disable;  /// 没有设置
 keepalive_timeout  75s; // 默认值
 keepalive_requests 100; // 默认值  一个tcp请求中可发100个http请求
-``` 
+```
 
 ### 二. 测试用例
 URL：logsearch.sh.pre.urtc.com.cn
