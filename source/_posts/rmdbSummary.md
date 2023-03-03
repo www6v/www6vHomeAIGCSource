@@ -5,7 +5,7 @@ tags:
   - 汇总
 categories:
   - 汇总  
-  - Redis
+  - 关系型数据库
 top: true    
 ---
 
