@@ -11,15 +11,18 @@ categories:
 <p></p>
 <!-- more -->
 
-## 一. 基础模式
+## 目录
+<!-- toc -->
 
-### 1. 声明式的Deployment
+##  基础模式
+
+#####  声明式的Deployment
    Rolling deployment， 滚动发布
    Fixed deployment
    Blue-green release， 蓝绿部署
    Canary release, 灰度发布
 
-### 2. 受管理的声明周期
+#####   受管理的声明周期
    SIGTERM Signal：  SIGTERM 是通知进程优雅退出的信号
    SIGKILL Signal： SIGKILL 是硬终止的信号
    Poststart Hook
@@ -29,14 +32,14 @@ categories:
    [Kubernetes 中如何保证优雅地停止 Pod](https://mp.weixin.qq.com/s/wvg2AqOZd-WtjehGWNWFXg)
    PingCAP 吴叶磊
 
-## 二. 行为模式
+##  行为模式
 
-### 1. Batch Job
+#####  Batch Job
 
 参考:
 [kube-batch](https://github.com/kubernetes-sigs/kube-batch)     
 
-### 2. Singleton Service
+#####  Singleton Service
 
  + Out-of-application locking mechanism
    replicas =1
@@ -44,12 +47,12 @@ categories:
  + In-application locking mechanism: 
    replicas>1  + 分布式锁
 
-### 3.Stateful Service
+#####  Stateful Service
 
 参考:
 + {% post_link 'k8sStatefulSet' %}  self
 
-### 4.Service Discovery
+#####  Service Discovery
 
 
 Name | Configuration | Client type | Summary
@@ -65,38 +68,37 @@ Ingress | kind: Ingress | External | L7/HTTP-based smart routing mechanism
 参考:
 + {% post_link 'k8sService' %} self
 
-## 三. 结构模式
+##  结构模式
 
-### 1. Init Container
+#####  Init Container
 
-### 2. Sidecar
+#####  Sidecar
 
 场景:
 + 跨多语言; istio 
 + [容器日志采集利器Log-Pilot](https://yq.aliyun.com/articles/674327)
 
-## 四. 高级模式
+##  高级模式
 
-### 1. 控制器模式
+#####  控制器模式
 
 参考:
 [sample-controller 官方控制器的例子](https://github.com/kubernetes/sample-controller) git
 [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder) git
 
-### 2. Operator
+#####  Operator
 
 + {% post_link 'k8sOperator' %} self
 
-### 3. Elastic Scale
+#####  Elastic Scale
++ 类型
+  - VPA
+  - HPA
+  - CA
 
-##### 类型
-+ VPA
-+ HPA
-+ CA
-
-##### 资源模型概念
-+ QoS
-+ requests, limits
++ 资源模型概念
+  - QoS
+  - requests, limits
 
 参考:
 + {% post_link 'k8sResouceModel' %} self
