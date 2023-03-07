@@ -43,7 +43,7 @@ categories:
 ##### 匹配请求头
   Mobile 和 PC 的请求头不同，路由到不同的后端服务
 
-##### 实现灰度金丝雀发布[6]
+##### 实现灰度金丝雀发布[6][7]
 
 不同灰度方式的优先级由高到低为：
 canary-by-header`>`canary-by-cookie`>`canary-weight
@@ -95,6 +95,7 @@ metadata:
 4. [Nginx-ingress GitHub](https://github.com/nginxinc/kubernetes-ingress)
 5. [nginx-ingress-controllers.md](https://github.com/nginxinc/kubernetes-ingress/blob/main/docs/content/intro/nginx-ingress-controllers.md)    表格 
 6. [Nginx Ingress高级用法](https://help.aliyun.com/document_detail/86533.html#section-gjm-dw6-hkn)
+7. [【IT老齐294】大厂如何基于K8S实现金丝雀发布](https://www.bilibili.com/video/BV15o4y1Y7Bq/)
 
 
 99. [kubernetes架构师课程](https://www.bilibili.com/video/BV16t4y1w7r6?p=162)
