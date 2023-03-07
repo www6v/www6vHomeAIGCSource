@@ -34,8 +34,7 @@ categories:
 ### 1. Batch Job
 
 参考:
-[kube-batch](https://github.com/kubernetes-sigs/kube-batch)   git
-A batch scheduler of kubernetes for high performance workload, e.g. AI/ML, BigData, HPC  
+[kube-batch](https://github.com/kubernetes-sigs/kube-batch)     
 
 ### 2. Singleton Service
 
@@ -48,7 +47,7 @@ A batch scheduler of kubernetes for high performance workload, e.g. AI/ML, BigDa
 ### 3.Stateful Service
 
 参考:
-[Kubernetes资源对象 - StatefulSet](../../../../2019/11/11/k8sStatefulSet/) self
++ {% post_link 'k8sStatefulSet' %}  self
 
 ### 4.Service Discovery
 
@@ -64,7 +63,7 @@ LoadBalancer | type: LoadBalancer | External | Requires supporting cloud infrast
 Ingress | kind: Ingress | External | L7/HTTP-based smart routing mechanism
 
 参考:
-[Kubernetes服务](../../../../2019/11/04/k8sService/) self
++ {% post_link 'k8sService' %} self
 
 ## 三. 结构模式
 
@@ -86,8 +85,7 @@ Ingress | kind: Ingress | External | L7/HTTP-based smart routing mechanism
 
 ### 2. Operator
 
-[Kubernetes Operator](../../../../2019/11/19/k8sOperator/) self
-
++ {% post_link 'k8sOperator' %} self
 
 ### 3. Elastic Scale
 
@@ -101,8 +99,11 @@ Ingress | kind: Ingress | External | L7/HTTP-based smart routing mechanism
 + requests, limits
 
 参考:
-[Kubenetes资源模型](../../../../2019/11/14/k8sResouceModel/) self
-[Kubernetes自动伸缩和HPA](../../../../2019/11/16/k8sAutoScale/)  self
++ {% post_link 'k8sResouceModel' %} self
++ {% post_link 'k8sAutoScale' %}  self
 
 ## 参考
 1. [《Kubernetes Patterns - Reusable Elements for Designing Cloud-Native Applications》]()  Bilgin Ibryam@RedHat, Roland Huß@RedHat
+
+2. [K8S 中的设计模式- 读《Kubernetes Patterns》](http://www.xuyasong.com/?p=2056) 
+3. [Kubernetes Patterns](https://github.com/k8spatterns)
