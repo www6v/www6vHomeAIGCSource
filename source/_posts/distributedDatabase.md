@@ -1,5 +1,5 @@
 ---
-title: 分布式 数据库
+title: 分布式 数据库 总结
 date: 2022-02-09 12:31:58
 tags:
   - 分布式数据库
@@ -17,7 +17,9 @@ categories:
 {% asset_img  dDatabase1.jpg  分布式数据库  %}
 
 
+
 ## 参考
+
 <<分布式数据库30讲>> 
 
 

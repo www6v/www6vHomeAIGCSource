@@ -22,6 +22,7 @@ top: true
 
 ## 分布式
 + {% post_link 'distributedDatabase'  %}
++ {% post_link 'distributedDatabaseCompare'  %}
 
 ##### 存储引擎
 + {% post_link 'lsmTreeKeyValueSeparation'  %}
