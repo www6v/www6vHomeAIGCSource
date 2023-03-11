@@ -78,6 +78,14 @@ categories:
 
 
 
+## Self
+
+leader election
+
+time wheel
+
+
+
 ## 参考
 
 [Patterns of Distributed Systems](https://martinfowler.com/articles/patterns-of-distributed-systems/)
