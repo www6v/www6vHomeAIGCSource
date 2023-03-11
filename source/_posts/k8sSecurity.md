@@ -97,7 +97,7 @@ categories:
 1. CNCF × Alibaba 云原生技术公开课
 [第27 章 ： Kubernetes安全之访问控制](https://mp.weixin.qq.com/s/nPErpcghHih5-dGPQkStJA?spm=a2c6h.12873639.article-detail.60.67905225MCDpLx)  
 第29 章 ： 安全容器技术
-2. [Kubernetes 加固指南](https://jimmysong.io/docs/kubernetes-hardening-guidance/)    good
+2. [Kubernetes 加固指南](https://jimmysong.io/docs/kubernetes-hardening-guidance/)    ***
 3. Kubernetes in Action - 12章， 13章 （未）
 4. [记一次Kubernetes中严重的安全问题](https://corvo.myseu.cn/2021/03/23/2021-03-23-%E8%AE%B0%E4%B8%80%E6%AC%A1Kubernetes%E4%B8%AD%E4%B8%A5%E9%87%8D%E7%9A%84%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98/) 未
 5. [Kubernetes 最佳安全实践指南](https://icloudnative.io/posts/security-best-practices-for-kubernetes-pods/) 未

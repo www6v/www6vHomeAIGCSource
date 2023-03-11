@@ -84,7 +84,7 @@ K8s configfile --> 创建后门Pod/挂载主机路径 --> 通过Kubectl 进入�
 ## 参考
 1. [Threat matrix for Kubernetes](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/)  overview
 2. [云原生之 Kubernetes 安全](https://paper.seebug.org/1803/) 深信服千里目安全实验室  overview
-3. [容器逃逸技术概览](https://blog.wohin.me/posts/container-escape-overview/) good
+3. [容器逃逸技术概览](https://blog.wohin.me/posts/container-escape-overview/) ***
 4. [红队视角下的容器逃逸利用及分析](https://www.bilibili.com/read/cv17136407) 未
 5. [浅析K8S各种未授权攻击方法](https://cloud.tencent.com/developer/article/2000490)
 6. [k8s对外攻击面总结](https://www.bilibili.com/read/cv15722560/) 未
