@@ -10,6 +10,10 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
+
 {% details 点击  原文  %}
 # ***When\*/\*Where\*: Processing-Time Windows**
 
@@ -147,7 +151,8 @@ systems had played things out in a slightly different order). —
 
 
 {% details 点击   原文  %}
-# **Event-Time Windowing**
+
+### **Event-Time Windowing**
 
 To establish a baseline, let’s first compare fixed windowing in event time
 
@@ -168,7 +173,7 @@ the different orders of observation in processing time), *the final results for 
 *Figure 4-2. Event-time windowing over two different processing-time orderings of the same inputs*
 {% enddetails %}
 
-# **事件时间窗口**
+### **事件时间窗口**
 
 为了建立一个基准，让我们先比较事件时间中固定窗口和基于启发式水印的两种观察顺序。我们将重用示例2-7/图2-10中的早期/晚期代码，以获得图4-2中所示的结果。左边实质上是我们之前看到的；右边是第二个观察顺序的结果。这里需要注意的重要事情是，即使输出的总体形状不同（由于处理时间中的不同观察顺序），*四个窗口的最终结果仍然相同*：14、18、3和12。
 
@@ -180,7 +185,7 @@ the different orders of observation in processing time), *the final results for 
 
 
 {% details 点击   原文  %}
-# **Processing-Time Windowing via Triggers**
+### **Processing-Time Windowing via Triggers**
 
 Let’s now compare this to the two processing-time methods just described.
 
@@ -252,7 +257,7 @@ On the left we get 12, 18, 18, whereas on the right we get 7, 36, 5.
 *the same inputs*
 {% enddetails %}
 
-# **触发器的处理时间窗口**
+### **触发器的处理时间窗口**
 
 现在，我们将此与刚刚描述的两种处理时间方法进行比较。首先，我们将尝试触发器方法。 实现处理时间“窗口化”的方式有三个方面：|
                         
@@ -290,7 +295,7 @@ PCollection<KV<Team, Integer>> totals = input
 {% details 点击   原文  %}
 
 
-# **Processing-Time Windowing via Ingress Time**
+### **Processing-Time Windowing via Ingress Time**
 
 Lastly, let’s look at processing-time windowing achieved by mapping the
 
@@ -420,7 +425,7 @@ now.
 
 
 
-# 通过进入时间进行处理时间窗口化 |
+### 通过进入时间进行处理时间窗口化 |
 
 最后，让我们看一下通过将输入数据的事件时间映射为它们的进入时间来实现的处理时间窗口。在代码方面，这里有四个值得一提的方面：
 
