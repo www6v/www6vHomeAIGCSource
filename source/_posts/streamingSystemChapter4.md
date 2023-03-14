@@ -1,5 +1,5 @@
 ---
-title: Streaming System-Chapter4
+title: 《Streaming System》-第四章：高级窗口
 date: 2000-03-14 14:36:25
 tags: 
   - Streaming System
@@ -14,111 +14,8 @@ categories:
 <!-- toc -->
 
 
-{% details 点击  原文  %}
-# ***When\*/\*Where\*: Processing-Time Windows**
 
-Processing-time windowing is important for two reasons:
-
-- For certain use cases, such as usage monitoring (e.g., web service
-
-traffic QPS), for which you want to analyze an incoming stream of
-
-data as it’s observed, processing-time windowing is absolutely the
-
-appropriate approach to take.
-
-- For use cases for which the time that events happened is important
-
-(e.g., analyzing user behavior trends, billing, scoring, etc.),
-
-processing-time windowing is absolutely the wrong approach to take,
-
-and being able to recognize these cases is critical.
-
-As such, it’s worth gaining a solid understanding of the differences between
-
-processing-time windowing and event-time windowing, particularly given the
-
-prevalence of processing-time windowing in many streaming systems today. —
-
-When working within a model for which windowing as a first-class notion is
-
-strictly event-time based, such as the one presented in this book, there are two
-
-methods that you can use to achieve processing-time windowing: —
-
-Triggers
-
-​	Ignore event time (i.e., use a global window spanning all of event time)
-
-​	and use triggers to provide snapshots of that window in the processing
-
-​	time axis.
-
-Ingress time
-
-​	Assign ingress times as the event times for data as they arrive, and use
-
-​	normal event-time windowing from there on. This is essentially what
-
-​	something like Spark Streaming 1.x does.
-
-Note that the two methods are more or less equivalent, although they differ
-
-slightly in the case of multistage pipelines: in the triggers version, a
-
-multistage pipeline will slice the processing-time “windows” independently at
-
-each stage, so, for example, data in window *N* for one stage might instead end
-
-up in window *N*–1 or *N*+1 in the following stage; in the ingress-time version,
-
-after a datum is incorporated into window *N*, it will remain in window *N* for
-
-the duration of the pipeline due to synchronization of progress between stages
-
-via watermarks (in the Cloud Dataflow case), microbatch boundaries (in the
-
-Spark Streaming case), or whatever other coordinating factor is involved at
-
-the engine level. —
-
-As I’ve noted to death, the big downside of processing-time windowing is
-
-that the contents of the windows change when the observation order of the
-
-inputs changes. To drive this point home in a more concrete manner, we’re
-
-going to look at these three use cases: *event-time* windowing, *processing-time*
-
-windowing via triggers, and *processing-time* windowing via ingress time. —
-
-Each will be applied to two different input sets (so six variations total). The
-
-two inputs sets will be for the exact same events (i.e., same values, occurring
-
-at the same event times), but with different observation orders. The first set
-
-will be the observation order we’ve seen all along, colored white; the second
-
-one will have all the values shifted in the processing-time axis as in Figure 4-
-
-1, colored purple. You can simply imagine that the purple example is another
-
-way reality could have happened if the winds had been blowing in from the
-
-east instead of the west (i.e., the underlying set of complex distributed
-
-systems had played things out in a slightly different order). —
-
-
-
-*Figure 4-1. Shifting input observation order in processing time, holding values, and event-times*
-
-*constant*
-{% enddetails %}
-
-# ***何时/何地***：处理时间窗口**
+# 何时/何地：处理时间窗口
 
 处理时间窗口对于两个原因都很重要：
 
@@ -150,28 +47,7 @@ systems had played things out in a slightly different order). —
 *图4-1。在处理时间中移动输入观察顺序，保持值和事件时间不变*
 
 
-{% details 点击   原文  %}
 
-### **Event-Time Windowing**
-
-To establish a baseline, let’s first compare fixed windowing in event time
-
-with a heuristic watermark over these two observation orderings. We’ll reuse
-
-the early/late code from Example 2-7/Figure 2-10 to get the results shown in
-
-Figure 4-2. The lefthand side is essentially what we saw before; the righthand
-
-side is the results over the second observation order. The important thing to
-
-note here is that even though the overall shape of the outputs differs (due to
-
-the different orders of observation in processing time), *the final results for the*
-
-*four windows remain the same*: 14, 18, 3, and 12.
-
-*Figure 4-2. Event-time windowing over two different processing-time orderings of the same inputs*
-{% enddetails %}
 
 ### **事件时间窗口**
 
@@ -184,78 +60,7 @@ the different orders of observation in processing time), *the final results for 
 
 
 
-{% details 点击   原文  %}
-### **Processing-Time Windowing via Triggers**
 
-Let’s now compare this to the two processing-time methods just described.
-
-First, we’ll try the triggers method. There are three aspects to making
-
-processing-time “windowing” work in this manner:
-
-*Windowing*
-
-We use the global event-time window because we’re essentially emulating
-
-processing-time windows with event-time panes.
-
-*Triggering*
-
-We trigger periodically in the processing-time domain based on the
-
-desired size of the processing-time windows.
-
-*Accumulation*
-
-We use discarding mode to keep the panes independent from one another,
-
-thus letting each of them act like an independent processing-time
-
-“window.”
-
-The corresponding code looks something like Example 4-1; note that global
-
-windowing is the default in Beam, hence there is no specific override of the
-
-108windowing strategy.
-
-*Example 4-1. Processing-time windowing via repeated, discarding panes of a*
-
-*global event-time window*
-```
-PCollection<KV<Team, Integer>> totals = input
-.apply(Window.triggering(Repeatedly(AlignedDelay(ONE_MINUTE)))
-             .discardingFiredPanes())
-.apply(Sum.integersPerKey());
-```
-When executed on a streaming runner against our two different orderings of
-
-the input data, the results look like Figure 4-3. Here are some interesting notes
-
-about this figure:
-
-- Because we’re emulating processing-time windows via event-time
-
-panes, the “windows” are delineated in the processing-time axis,
-
-which means their effective width is measured on the y-axis instead
-
-of the x-axis.
-
-- Because processing-time windowing is sensitive to the order that
-
-input data are encountered, the results for each of the “windows”
-
-differs for each of the two observation orders, even though the events
-
-themselves technically happened at the same times in each version.
-
-On the left we get 12, 18, 18, whereas on the right we get 7, 36, 5.
-
-*Figure 4-3. Processing-time “windowing” via triggers, over two different processing-time orderings of*
-
-*the same inputs*
-{% enddetails %}
 
 ### **触发器的处理时间窗口**
 
@@ -289,139 +94,6 @@ PCollection<KV<Team, Integer>> totals = input
 {% dplayer "url=stsy_0403.mp4" %} 
 
 *图4-3. 通过触发器的处理时间“窗口”，针对相同输入数据的两种不同处理时间排序*
-
-
-
-{% details 点击   原文  %}
-
-
-### **Processing-Time Windowing via Ingress Time**
-
-Lastly, let’s look at processing-time windowing achieved by mapping the
-
-event times of input data to be their ingress times. Code-wise, there are four
-
-aspects worth mentioning here:
-
-- *Time-shifting*
-
-When elements arrive, their event times need to be overwritten with the
-
-time of ingress. We can do this in Beam by providing a new DoFn that sets
-
-the timestamp of the element to the current time via the
-
-outputWithTimestamp method.
-
-- *Windowing*
-
-Return to using standard event-time fixed windowing.
-
-- *Triggering*
-
-Because ingress time affords the ability to calculate a perfect watermark,
-
-we can use the default trigger, which in this case implicitly fires exactly
-
-once when the watermark passes the end of the window.
-
-- *Accumulation mode*
-
-Because we only ever have one output per window, the accumulation
-
-mode is irrelevant.
-
-The actual code might thus look something like that in Example 4-2.
-
-*Example 4-2. Processing-time windowing via repeated, discarding panes of a*
-
-*global event-time window*
-
-`PCollection<String> raw = IO.read().apply(ParDo.of(`
-
-`new DoFn<String, String>() {`
-
-`public void processElement(ProcessContext c) {`
-
-`c.outputWithTimestmap(new Instant());`
-
-`}`
-
-`});`
-
-`PCollection<KV<Team, Integer>> input =`
-
-`raw.apply(ParDo.of(new ParseFn());`
-
-`PCollection<KV<Team, Integer>> totals = input`
-
-`.apply(Window.info(FixedWindows.of(TWO_MINUTES))`
-
-`.apply(Sum.integersPerKey());`
-
-Execution on a streaming engine would look like Figure 4-4. As data arrive,
-
-their event times are updated to match their ingress times (i.e., the processing
-
-times at arrival), resulting in a rightward horizontal shift onto the ideal
-
-watermark line. Here are some interesting notes about this figure:
-
-- As with the other processing-time windowing example, we get
-
-different results when the ordering of inputs changes, even though
-
-the values and event times for the input stay constant.
-
-- Unlike the other example, the windows are once again delineated in
-
-the event-time domain (and thus along the x-axis). Despite this, they
-
-aren’t bonafide event-time windows; we’ve simply mapped
-
-processing time onto the event-time domain, erasing the original
-
-record of occurrence for each input and replacing it with a new one
-
-that instead represents the time the datum was first observed by the
-
-pipeline.
-
-- Despite this, thanks to the watermark, trigger firings still happen at
-
-exactly the same time as in the previous processing-time example.
-
-Furthermore, the output values produced are identical to that
-
-example, as predicted: 12, 18, 18 on the left, and 7, 36, 5 on the right.
-
-- Because perfect watermarks are possible when using ingress time,
-
-the actual watermark matches the ideal watermark, ascending up and
-
-to the right with a slope of one.
-
-*Figure 4-4. Processing-time windowing via the use of ingress time, over two different processing-time*
-
-*orderings of the same inputs*
-
-Although it’s interesting to see the different ways you can implement
-
-processing-time windowing, the big takeaway here is the one I’ve been
-
-harping on since the first chapter: event-time windowing is order-agnostic, at
-
-least in the limit (actual panes along the way might differ until the input
-
-becomes complete); processing-time windowing is not. *If you care about the*
-
-*times at which your events actually happened, you must use event-time*
-
-*windowing or your results will be meaningless.* I will get off my soapbox
-
-now.
-
-{% enddetails %}
 
 
 
@@ -472,6 +144,66 @@ PCollection<KV<Team， Integer>> totals = input
 *图4-4。通过使用进入时间进行处理时间窗口，在相同输入的两个不同处理时间顺序上*
 
 虽然看到了不同实现处理时间窗口的方法是有趣的，但其中的重要教训自第一章以来一直是我一直在强调的：事件时间窗口是无序的，至少在极限情况下（在输入完成之前，实际窗格可能会有所不同）；处理时间窗口则不是。**如果您关心事件实际发生的时间，您必须使用事件时间窗口，否则您的结果将毫无意义。**现在我将结束我的演讲。
+
+
+
+#  何地：会话窗口
+
+处理时间窗口已经够了。现在我们回到了经过验证的事件时间窗口，但现在我们将看看我最喜欢的动态数据驱动窗口之一：*会话*。
+
+会话是一种特殊类型的窗口，可以捕获由不活动间隙终止的数据中的活动期间。它们在数据分析中特别有用，因为它们可以提供特定用户在特定时间段内参与某些活动的活动视图。这允许在会话中的活动之间进行关联，根据会话的长度推断参与水平等等。
+
+从窗口的角度来看，会话有两个特别有趣的方面：
+
+- 它们是*数据驱动的窗口*的例子：窗口的位置和大小是输入数据本身的直接结果，而不是基于一些预定义的时间模式，如固定窗口和滑动窗口。
+- 它们也是*不对齐的窗口*的例子。也就是说，窗口并不适用于数据的所有部分，而只适用于特定的数据子集（例如，每个用户）。这与固定窗口和滑动窗口等对齐窗口形成对比，后者通常适用于数据的所有部分。
+
+对于某些用例，可以提前使用共同标识符标记单个会话中的数据（例如，发出带有服务质量信息的心跳脉冲的视频播放器;对于任何给定的观看，所有脉冲都可以提前标记为单个会话ID）。在这种情况下，会话构建起来要容易得多，因为它基本上只是按键分组的一种形式。
+
+然而，在更一般的情况下（即实际会话本身不是提前知道的情况下），会话必须仅从时间内的数据位置构建。处理无序数据时，这变得非常棘手。
+
+图4-5展示了一个示例，其中五个独立记录被分组到具有60分钟间隙超时的会话窗口中。每个记录都开始于其自己的60分钟窗口中（原型会话）。合并重叠的原型会话会产生包含三个和两个记录的两个较大会话窗口。
+
+{% asset_img  stsy_0405.png %}
+*图4-5。未合并的原型会话窗口及其结果合并的会话*
+
+提供一般会话支持的关键见解是，完整的会话窗口是一组较小、重叠的窗口的组合，每个窗口包含单个记录，序列中的每个记录与下一个记录之间的不活动间隙不大于预定义的超时时间。因此，即使我们以无序的方式观察会话中的数据，只要到达任何重叠的数据，我们就可以将其合并为最终的会话。
+
+换个角度看，考虑到目前为止我们一直在使用的示例。如果我们指定了一个1分钟的会话超时时间，那么我们期望在图4-6中用虚线黑线划分出两个会话。每个会话都捕获用户的一次活动，会话中的每个事件都至少与会话中的另一个事件相隔不到一分钟。
+
+{% asset_img  stsy_0406.png %}
+*图4-6。我们要计算的会话*
+
+为了看到窗口合并如何在遇到事件时随着时间建立这些会话，让我们看看它是如何运作的。我们将使用启用了缩回的早期/准时/后期引发的示例2-10，并将窗口更新为使用一分钟的间隙持续时间超时生成会话。示例4-3说明了这看起来像什么。
+
+*例4-3。使用会话窗口和撤回的早期/准时/延迟触发*   
+```
+PCollection<KV<Team，Integer>>  totals=input
+  .apply（Window.into（Sessions.withGapDuration（ONE_MINUTE）)
+                .triggering（
+                 AfterWatermark（）
+                   .withEarlyFirings（AlignedDelay（ONE_MINUTE））
+                   .withLateFirings（AfterCount（1））））
+  .apply（Sum.integersPerKey（））;
+```
+
+在流引擎上执行，您将获得类似于图4-7所示的内容（请注意，我已经留下了用虚线黑线注释的预期最终会话以供参考）。
+
+{% dplayer "url=stsy_0407.mp4" %}
+*图4-7。使用会话窗口和缩回的早期和后期引发的流引擎*
+
+这里有很多事情要做，所以我会向您介绍一些：
+
+- 当遇到值为5的第一个记录时，它被放置在一个单个的原型会话窗口中，该窗口从该记录的事件时间开始，并跨越会话间隙持续时间的宽度；例如，在该数据发生的时间点之后一分钟。我们将来遇到的任何重叠窗口都应该是同一个会话的一部分，并将被合并为这样的窗口。
+- 到达的第二个记录是7，由于它与5的窗口不重叠，因此同样被放置在自己的原型会话窗口中。
+- 同时，水印已经过去了第一个窗口的末尾，因此值为5的结果在12:06之前实现为准时结果。不久之后，第二个窗口也作为具有值7的推测结果实现，当处理时间达到12:06时。
+- 我们接下来观察到一对记录3和4，其原型会话重叠。因此，它们被合并在一起，当12:07的早期触发器触发时，将发出一个值为7的单个窗口。
+- 紧随其后的8，它与值为7的两个窗口重叠。因此，它们全部合并在一起，形成一个新的组合会话，值为22。当水印通过该会话的末尾时，它会将值为22的新会话以及以前发出但后来合并到其中的值为7的两个窗口的缩回作为材料化。
+- 当9到达时，它与值为5的原型会话和值为22的会话一起形成单个较大的会话，值为36。当水印过去时，36和5和22窗口的缩回都会立即发出。
+
+这是一些非常强大的东西。真正令人惊讶的是，在一个将流处理的维度分解为不同的、可组合的组件的模型中描述这样的东西是多么容易。最终，您可以更专注于有趣的业务逻辑，而不是将数据塑造成可用形式的细枝末节。
+
+如果您不相信我，请查看这篇博客文章，了解如何在Spark Streaming 1.x上手动构建会话（请注意，这不是为了指责他们；Spark的人们已经在其他方面做得足够好，以至于有人确实费心记录构建特定类型的会话支持所需的内容在Spark 1.x之上；您无法对大多数其他系统做出同样的说法）。这非常复杂，他们甚至没有做正确的事件时间会话，也没有提供推测或后期引发或撤销。 [todo 后期引发 是否改成  后期触发 ]
 
 
 ## Draft Here
