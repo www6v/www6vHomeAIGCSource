@@ -417,3 +417,377 @@ Furthermore, Dataflow uses a consistent store that allows it to prevent
 duplicates from being written to stable storage.
 
 {%  enddetails   %}
+
+
+
+
+{% details 点击  原文  %}
+# **Performance**
+
+To implement exactly-once shuffle delivery, a catalog of record IDs is stored
+
+in each receiver key. For every record that arrives, Dataflow looks up the
+
+catalog of IDs already seen to determine whether this record is a duplicate.
+
+Every output from step to step is checkpointed to storage to ensure that the
+
+generated record IDs are stable.
+
+However, unless implemented carefully, this process would significantly
+
+degrade pipeline performance for customers by creating a huge increase in
+
+reads and writes. Thus, for exactly-once processing to be viable for Dataflow
+
+users, that I/O has to be reduced, in particular by preventing I/O on every
+
+record.
+
+Dataflow achieves this goal via two key techniques: *graph optimization* and
+
+*Bloom filters*.
+
+### **Graph Optimization**
+
+The Dataflow service runs a series of optimizations on the pipeline graph
+
+before executing it. One such optimization is *fusion*, in which the service
+
+fuses many logical steps into a single execution stage. Figure 5-3 shows some
+
+simple examples.
+
+*Figure 5-3. Example optimizations: fusion*
+
+All fused steps are run as an in-process unit, so there’s no need to store
+
+exactly-once data for each of them. In many cases, fusion reduces the entire
+
+graph down to a few physical steps, greatly reducing the amount of data
+
+transfer needed (and saving on state usage, as well).
+
+Dataflow also optimizes associative and commutative Combine operations
+
+(such as Count and Sum) by performing partial combining locally before
+
+sending the data to the main grouping operation, as illustrated in Figure 5-4.
+
+This approach can greatly reduce the number of messages for delivery,
+
+consequently also reducing the number of reads and writes.
+
+*Figure 5-4. Example optimizations: combiner lifting*
+
+### **Bloom Filters**
+
+The aforementioned optimizations are general techniques that improve
+
+exactly-once performance as a byproduct. For an optimization aimed strictly
+
+at improving exactly-once processing, we turn to *Bloom filters*.
+
+In a healthy pipeline, most arriving records will not be duplicates. We can use
+
+that fact to greatly improve performance via Bloom filters, which are compact
+
+data structures that allow for quick set-membership checks. Bloom filters
+
+have a very interesting property: they can return false positives but never false
+
+negatives. If the filter says “Yes, the element is in the set,” we know that the
+
+element is *probably* in the set (with a probability that can be calculated).
+
+However, if the filter says an element is *not* in the set, it definitely isn’t. This
+
+function is a perfect fit for the task at hand.
+
+The implementation in Dataflow works like this: each worker keeps a Bloom
+
+filter of every ID it has seen. Whenever a new record ID shows up, it looks it
+
+up in the filter. If the filter returns false, this record is not a duplicate and the
+
+worker can skip the more expensive lookup from stable storage. It needs to do
+
+that second lookup only if the Bloom filter returns true, but as long as the
+
+filter’s false-positive rate is low, that step is rarely needed.
+
+Bloom filters tend to fill up over time, however, and as that happens, the
+
+false-positive rate increases. We also need to construct this Bloom filter anew
+
+any time a worker restarts by scanning the ID catalog stored in state.
+
+Helpfully, Dataflow attaches a system timestamp to each record.  Thus,
+
+instead of creating a single Bloom filter, the service creates a separate one for
+
+every 10-minute range. When a record arrives, Dataflow queries the
+
+appropriate filter based on the system timestamp. This step prevents the
+
+Bloom filters from saturating because filters are garbage-collected over time,
+
+and it also bounds the amount of data that needs to be scanned at startup.
+
+Figure 5-5 illustrates this process: records arrive in the system and are
+
+delegated to a Bloom filter based on their arrival time. None of the records
+
+hitting the first filter are duplicates, and all of their catalog lookups are
+
+filtered. Record r1 is delivered a second time, so a catalog lookup is needed
+
+to verify that it is indeed a duplicate; the same is true for records r4 and r6.
+
+Record r8 is not a duplicate; however, due to a false positive in its Bloom
+
+filter, a catalog lookup is generated (which will determine that r8 is not a
+
+duplicate and should be processed).
+
+*Figure 5-5. Exactly-once Bloom filters*
+
+### **Garbage Collection**
+
+Every Dataflow worker persistently stores a catalog of unique record IDs it
+
+has seen. As Dataflow’s state and consistency model is per-key, in reality
+
+each key stores a catalog of records that have been delivered to that key. We
+
+can’t store these identifiers forever, or all available storage will eventually fill
+
+up. To avoid that issue, you need garbage collection of acknowledged record
+
+IDs.
+
+One strategy for accomplishing this goal would be for senders to tag each
+
+record with a strictly increasing sequence number in order to track the earliest
+
+sequence number still in flight (corresponding to an unacknowledged record
+
+delivery). Any identifier in the catalog with an earlier sequence number could
+
+then be garbage-collected because all earlier records have already been
+
+acknowledged.
+
+There is a better alternative, however. As previously mentioned, Dataflow
+
+already tags each record with a system timestamp that is used for bucketing
+
+exactly-once Bloom filters. Consequently, instead of using sequence numbers
+
+to garbage-collect the exactly-once catalog, Dataflow calculates a garbage
+
+collection watermark based on these system timestamps (this is the
+
+processing-time watermark discussed in Chapter 3). A nice side benefit of this
+
+approach is that because this watermark is based on the amount of physical
+
+time spent waiting in a given stage (unlike the data watermark, which is based
+
+on custom event times), it provides intuition on what parts of the pipeline are
+
+slow. This metadata is the basis for the System Lag metric shown in the
+
+Dataflow WebUI.
+
+What happens if a record arrives with an old timestamp and we’ve already
+
+garbage-collected identifiers for this point in time? This can happen due to an
+
+effect we call *network remnants*, in which an old message becomes stuck for
+
+an indefinite period of time inside the network and then suddenly shows up.
+
+Well, the low watermark that triggers garbage collection won’t advance until
+
+record deliveries have been acknowledged, so we know that this record has
+
+already been successfully processed. Such network remnants are clearly
+
+duplicates and are ignored.
+
+{%  enddetails   %}
+
+
+
+
+
+{% details 点击  原文  %}
+
+# **Exactly Once in Sources**
+
+Beam provides a source API for reading data into a Dataflow pipeline. Dataflow might retry reads from a source if processing fails and needs to
+
+ensure that every unique record produced by a source is processed exactly
+
+once.
+
+For most sources Dataflow handles this process transparently; such sources
+
+are *deterministic*. For example, consider a source that reads data out of files.
+
+The records in a file will always be in a deterministic order and at
+
+deterministic byte locations, no matter how many times the file is read. The
+
+filename and byte location uniquely identify each record, so the service can
+
+automatically generate unique IDs for each record. Another source that
+
+provides similar determinism guarantees is Apache Kafka; each Kafka topic
+
+is divided into a static set of partitions, and records in a partition always have
+
+a deterministic order. Such deterministic sources will work seamlessly in
+
+Dataflow with no duplicates.
+
+However, not all sources are so simple. For example, one common source for
+
+Dataflow pipelines is Google Cloud Pub/Sub. Pub/Sub is a *nondeterministic*
+
+source: multiple subscribers can pull from a Pub/Sub topic, but which
+
+subscribers receive a given message is unpredictable. If processing fails
+
+Pub/Sub will redeliver messages but the messages might be delivered to
+
+different workers than those that processed them originally, and in a different
+
+order. This nondeterministic behavior means that Dataflow needs assistance
+
+for detecting duplicates because there is no way for the service to
+
+deterministically assign record IDs that will be stable upon retry. (We dive
+
+into a more detailed case study of Pub/Sub later in this chapter.)
+
+Because Dataflow cannot automatically assign record IDs, nondeterministic
+
+sources are required to inform the system what the record IDs should be.
+
+Beam’s Source API provides the UnboundedReader.getCurrentRecordId method. If a source provides unique IDs per record and notifies Dataflow that
+
+it requires deduplication, records with the same ID will be filtered out.
+
+# **Exactly Once in Sinks**
+
+At some point, every pipeline needs to output data to the outside world, and a
+
+sink is simply a transform that does exactly that. Keep in mind that delivering
+
+data externally is a side effect, and we have already mentioned that Dataflow
+
+does not guarantee exactly-once application of side effects. So, how can a
+
+sink guarantee that outputs are delivered exactly once?
+
+The simplest answer is that a number of built-in sinks are provided as part of
+
+the Beam SDK. These sinks are carefully designed to ensure that they do not
+
+produce duplicates, even if executed multiple times. Whenever possible,
+
+pipeline authors are encouraged to use one of these built-in sinks.
+
+However, sometimes the built-ins are insufficient and you need to write your
+
+own. The best approach is to ensure that your side-effect operation is
+
+idempotent and therefore robust in the face of replay. However, often some
+
+component of a side-effect DoFn is nondeterministic and thus might change
+
+on replay. For example, in a windowed aggregation, the set of records in the
+
+window can also be nondeterministic!
+
+Specifically, the window might attempt to fire with elements e0, e1, e2, but
+
+the worker crashes before committing the window processing (but not before
+
+those elements are sent as a side effect). When the worker restarts, the
+
+window will fire again, but now a late element e3 shows up. Because this
+
+element shows up before the window is committed, it’s not counted as late
+
+data, so the DoFn is called again with elements e0, e1, e2, e3. These are then
+
+sent to the side-effect operation. Idempotency does not help here, because
+
+different logical record sets were sent each time.
+
+There are other ways nondeterminism can be introduced. The standard way to
+
+address this risk is to rely on the fact that Dataflow currently guarantees that
+
+only one version of a DoFn’s output can make it past a shuffle boundary.
+
+A simple way of using this guarantee is via the built-in Reshuffle transform.
+
+The pattern presented in Example 5-2 ensures that the side-effect operation
+
+always receives a deterministic record to output.
+
+*Example 5-2. Reshuffle example*
+
+```
+c.apply(Window.<..>into(FixedWindows.of(Duration.standardMinutes(1))))
+.apply(GroupByKey.<..>.create())
+.apply(new PrepareOutputData())
+.apply(Reshuffle.<..>of())
+.apply(WriteToSideEffect());
+```
+
+The preceding pipeline splits the sink into two steps: PrepareOutputData
+
+and WriteToSideEffect.  PrepareOutputData outputs  records
+
+corresponding to idempotent writes. If we simply ran one after the other, the
+
+entire process might be replayed on failure, PrepareOutputData might
+
+produce a different result, and both would be written as side effects. When we
+
+add the Reshuffle in between the two, Dataflow guarantees this can’t
+
+happen.
+
+Of course, Dataflow might still run the WriteToSideEffect operation
+
+multiple times. The side effects themselves still need to be idempotent, or the
+
+sink will receive duplicates. For example, an operation that sets or overwrites
+
+a value in a data store is idempotent, and will generate correct output even if
+
+it’s run several times. An operation that appends to a list is not idempotent; if
+
+the operation is run multiple times, the same value will be appended each
+
+time.
+
+While Reshuffle provides a simple way of achieving stable input to a DoFn,
+
+a GroupByKey works just as well. However, there is currently a proposal that
+
+removes the need to add a GroupByKey to achieve stable input into a DoFn.
+
+Instead, the user could annotate WriteToSideEffect with a special
+
+annotation, @RequiresStableInput, and the system would then ensure stable
+
+input to that transform.
+
+{%  enddetails   %}
