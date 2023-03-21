@@ -9,7 +9,10 @@ categories:
   - NIO   
 ---
 
-## 背景：
+<p></p>
+<!-- more -->
+
+## 背景
 
 最近有些应用中会时不时的抛出如下异常：
 ```
@@ -29,15 +32,15 @@ at com.ycache.danga.MemCached.SockIOPool$SockIO.readLine(SockIOPool.java:2023)
 
 ![](http://www6v.github.io/www6vHome/interrupt/interrupted_clip_image001.png )
 
-## 异常原因： 
+## 异常原因 
 调用方使用了 Thread.interrupt 方法 或者 Future.cancel方法。
 
 
-## 解决办法： 
+## 解决办法
 在调用ycache的线程中，去掉Future.cancel 或者 Thread.interrupt 方法使用。
 
 
-## 调用过程分析：
+## 调用过程分析
 
 1. 当调用方使用ycache的MemCachedClient.get方法时，就会调用SocketChannelImpl.read 方法，在读操作前运行 begin方法，读操作后使用 end方法
 ```
@@ -95,7 +98,7 @@ protected final void end(boolean completed)
 }
 ```
 
-## 整体过程是： 
+## 整体过程是 
 1.线程执行begin方法，植入中断触发器interruptor，然后可能在channel上阻塞； 
 2.另外一个线程调用步骤1线程的interrupt方法； 
 3.interrupt方法会执行channel的close方法，并设置标志位interrupted = true； 

@@ -1,5 +1,5 @@
 ---
-title: 流式计算 --- Flink vs. Spark
+title: 流式计算-Flink vs. Spark
 date: 2019-07-19 07:37:56
 tags:
   - flink
@@ -14,8 +14,8 @@ categories:
 <p></p>
 <!-- more -->
 
- 
-特性  |  spark | flink
+
+特性  | Spark | Flink 
 ---|----|---
 本质 |  batch |  event 
 State | RDD |  Keyed State(Value, List, Map) <br> Operator State(List)

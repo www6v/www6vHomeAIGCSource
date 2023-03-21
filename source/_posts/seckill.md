@@ -9,4 +9,7 @@ categories:
   - 秒杀系统 
 ---
 
+<p></p>
+<!-- more -->
+
 [秒杀系统和商品详情页系统(培训讲义)](http://www6v.github.io/www6vHome/seckill.htm)
