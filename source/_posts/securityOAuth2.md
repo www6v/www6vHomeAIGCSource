@@ -25,7 +25,9 @@ categories:
   
 + Legacy: [Password Grant](https://oauth.net/2/grant-types/password/)
 
-# 基于OAuth 2.0的微服务参考架构 [3]
+# 基于OAuth2 的微服务参考架构 [3]
+
+### Overview
 
 {%   asset_img   microservice-oauth2.jpg  基于OAuth 2.0的微服务参考架构 %}
 + 网关
@@ -38,7 +40,17 @@ JWT 令牌颁发和管理，以及用户认证等功能。IDP 使用后台的 Lo
 证。
 选型:   Spring Security OAuth  or KeyCloak(RedHat)
 
+### OAuth2 与微服务进行集成
++ 第三方 Web 应用 + 授权码模式
+{%   asset_img   microservice-oauth2-pattern.jpg 第三方 Web 应用 + 授权码模式  %}
+
+### 各大开放平台是如何使用 OAuth 2.0 的 [2]
+{%   asset_img   wechat-oauth2.jpg  微信   %}
+
+
 # OIDC [2]
+{%   asset_img   OIDC.jpg   %}
+
 OIDC 是 OpenID Connect 的简称，OIDC=(Identity, Authentication) + OAuth 2.0。它在 OAuth2 上构建了一个身份层，是一个基于 OAuth2 协议的身份认证标准协议。OAuth2 是一个授权协议，它无法提供完善的身份认证功能，OIDC 使用 OAuth2 的授权服务器来为第三方客户端提供用户的身份认证，并把对应的身份认证信息传递给客户端.
 
 OAuth2 提供了**Access Token**来解决授权第三方客户端访问受保护资源的问题；OIDC 在这个基础上提供了**ID Token** 来解决第三方客户端标识用户身份认证的问题。
