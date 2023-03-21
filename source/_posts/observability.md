@@ -15,8 +15,8 @@ categories:
 
 **关键词**:  可观测性,  全链路,  APM， Metric， Log
 
-
-## 可观测性1.0-基础支柱
+# 可观测性
+### 1.0-基础支柱
 ![metric-tracing-logging](https://user-images.githubusercontent.com/5608425/64059064-216a2880-cbe7-11e9-9ee7-141334d93959.png)
 
 
@@ -27,13 +27,11 @@ Application metrics + alert| **Prometheus** 、AWS Cloud Watch
 Distributed tracing| Zipkin ，Jaeger，pinpoint（无侵入）, **skywalking**（无侵入）, CAT 
 Exception tracking| Zipkin ，Jaeger，pinpoint（无侵入）, **skywalking**（无侵入）, CAT 
 
-
-
-## 可观测性2.0-统一的可观测性平台
+### 2.0-统一的可观测性平台
 + OpenTelemetry - 数据采集传输的标准化
 
-## 可观测性3.0-内生的可观测性能力
-+ ebpf
+### 3.0-内生的可观测性能力
++ 基于ebpf
 
 
 ##  监控指标和原则

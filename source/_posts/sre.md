@@ -1,5 +1,5 @@
 ---
-title: SRE
+title: SRE 总结
 date: 2022-03-13 22:36:50
 tags: 
   - sre
@@ -66,7 +66,13 @@ categories:
 ## 参考
 1. 《09｜案例：互联网典型的SRE组织架构是怎样的？》  赵成
 2. 《08｜故障复盘：黄金三问与判定三原则》  赵成
-3. [《SRE google 运维解密》读书笔记 （一）](https://cloud.tencent.com/developer/article/2010397) 未
+3. xxx
 4. [SRE 的工作介绍](https://www.kawabangga.com/posts/4481)   SRE大佬  未 
 5. [SRE核心概念与可观测性介绍](https://www.bilibili.com/video/BV1i84y147Xe/)   中国DevOps社区 刘峰
 
+
++《SRE google 运维解密》
+  - [《SRE google 运维解密》读书笔记 （一）](https://cloud.tencent.com/developer/article/2010397) 未
+  -  [《SRE google 运维解密》读书笔记 （二）](https://cloud.tencent.com/developer/article/2010401) 未
+  -  [《SRE google 运维解密》读书笔记 （三）](https://cloud.tencent.com/developer/article/2010405)
+  -  [《SRE google 运维解密》读书笔记 （四）](https://cloud.tencent.com/developer/article/2010408)
