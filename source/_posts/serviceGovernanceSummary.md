@@ -12,14 +12,19 @@ top: true
 <p></p>
 <!-- more -->
 
+# 服务治理  汇总
++ {% post_link 'microservice' %}
++ {% post_link 'soaFeature' %}
 + {% post_link 'apiGateway' %}
 + {% post_link 'config' %}
-+ {% post_link 'microservice' %}
++ {% post_link 'jsfThreadModel' %}
+
+### 非功能性
++ {% post_link 'soaTolerate' %}
 + {% post_link 'Hystrix' %}
 + {% post_link 'timeout' %}
-+ {% post_link 'jsfThreadModel' %}
-+ {% post_link 'soaTolerate' %}
-+ {% post_link 'soaFeature' %}
+
+
 
 
 

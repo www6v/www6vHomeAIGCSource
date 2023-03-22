@@ -1,5 +1,5 @@
 ---
-title: 微服务
+title: 微服务 总结
 date: 2019-09-09 15:02:28
 tags:
   - 微服务
@@ -11,12 +11,15 @@ categories:
 <p></p>
 <!-- more -->
 
-## 微服务 定义
+## 目录
+<!-- toc -->
+
+# 微服务 定义
 
 In short, the microservice architectural style [1] is an approach to developing a single application as a suite of **small services**, **each running in its own process** and **communicating with lightweight mechanisms**, often an HTTP resource API. These services are built around business capabilities and **independently deployable** by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.   --  [Martin Fowler]
 
-## 一. 微服务相关的问题
-### 1. API网关
+#  微服务相关的问题
+###  API网关
    + 灰度发布、
    + 负载均衡、 
    + 鉴权、 
@@ -24,7 +27,7 @@ In short, the microservice architectural style [1] is an approach to developing 
    + 缓存
       [使用 API 网关构建微服务](https://www.infoq.cn/article/construct-micro-service-using-api-gateway/)
 
-### 2. 服务容错,
+###  服务容错
    + 超时重试机制[self 1][self 2]
    + 限流
    + 熔断机制
@@ -33,7 +36,7 @@ In short, the microservice architectural style [1] is an approach to developing 
    + 流量调度、负载均衡
       [微服务熔断与隔离](https://yq.aliyun.com/articles/7443?spm=5176.100238.yqhn2.2.XS3jCO)
 
-### 3. 服务注册和发现
+###  服务注册和发现
 <div style="text-align: center;">
 
 ![service-find](https://user-images.githubusercontent.com/5608425/66263484-fa29fb00-e825-11e9-83aa-47bcb97d7580.png)
@@ -44,17 +47,17 @@ In short, the microservice architectural style [1] is an approach to developing 
 + Client-side Discovery  
 + Server-side Discovery patterns
 
-### 4. 服务间调用
+###  服务间调用
    [Micro Service Architecture](https://yobriefca.se/blog/2013/04/29/micro-service-architecture/)
    [Microservice 微服务的理论模型和现实路径](http://blog.csdn.net/mindfloating/article/details/51221780)
 
-##### 服务契约
+#####  服务契约
 + API，具体接口的 API 接入技术说明。
 + 能力，服务能力的描述。
 + 契约，提供这些能力所约定的一些限制条件说明。
 + 版本，支持的最新和历史的版本说明。
 
-##### 调用协议
+#####  调用协议
 + 同步 HTTP
   REST（JAX-RS）
   RPC（Dubbo）
@@ -69,7 +72,7 @@ In short, the microservice architectural style [1] is an approach to developing 
    ![micro-service-architecture-comms](https://user-images.githubusercontent.com/5608425/66257280-8528d800-e7c9-11e9-95f4-bfe436d9d283.png)
    </div>
 
-### 5. 服务部署和发布
+###   服务部署和发布
 
 [微服务部署：蓝绿部署、滚动部署、灰度发布、金丝雀发布](https://my.oschina.net/xiaominmin/blog/3070053)
 
@@ -77,10 +80,10 @@ In short, the microservice architectural style [1] is an approach to developing 
 + Single Service per Host  
 + Multiple Services per Host patterns
 
-### 6. 数据调用
+###   数据调用
 
 
-### 7. 可观察性
+###   可观察性
    [鹰眼跟踪、限流降级，EDAS的微服务解决之道](https://yq.aliyun.com/articles/60994?spm=5176.100239.blogcont61320.29.6SwFH6)
    [可观察性](../../../../2019/08/31/observability/) self
 
@@ -92,31 +95,31 @@ In short, the microservice architectural style [1] is an approach to developing 
    APM 稳定性
    </div>
 
-### 8. 服务划分和组合
+###   服务划分和组合
 
 > 微服务不是指"微小"的服务, 而是如何"拆分"服务,然后"组合"服务.
 
 + DDD 领域驱动设计, 上下文划分（context）
 + 康威定律
 
-### 8. 服务分层
-### 上层: 聚合服务（适配服务， 边界服务）
+###   服务分层
+##### 上层: 聚合服务（适配服务， 边界服务）
     比如：pc和mobile服务对商品服务返回内容的裁剪。
           聚合商品服务和目录服务的内容。   
 
-### 下层: 基础服务（核心领域服务， 公共服务）
+##### 下层: 基础服务（核心领域服务， 公共服务）
     比如：电商的商品服务， 目录服务， 订单服务
 
 
-## 二. 微服务设计模式 
-### 2.1 微服务设计模式
+#  微服务设计模式 
+###  微服务设计模式
 <div style="text-align: center;">
 
 ![PatternsRelatedToMicroservices](https://user-images.githubusercontent.com/5608425/66229516-8ea43880-e714-11e9-8f56-0a70cc695882.jpg)
 微服务设计模式    
 </div>    
     
-### 2.2 sidecar [11]
+###  Sidecar [11]
 分离业务逻辑与路由，流控，熔断，幂等，服务发现，鉴权等控制组件。
 
 适用场景：
@@ -125,7 +128,7 @@ In short, the microservice architectural style [1] is an approach to developing 
 
 Eg. k8s pod中日志采集sidecar
 
-## 三. The Scale Cube 可伸缩性
+#  The Scale Cube 可伸缩性
 [The Scale Cube](https://akfpartners.com/techblog/2008/05/08/splitting-applications-or-services-for-scale/)
 
 
@@ -137,7 +140,7 @@ Eg. k8s pod中日志采集sidecar
     Y-Axis: Servcie
     Z-Axis: Data Sharding
 
-## 四. 微服务的优势和代价
+#  微服务的优势和代价
 
 [MicroservicePremium](https://martinfowler.com/bliki/MicroservicePremium.html) Martin Fowler. 
 
@@ -151,7 +154,7 @@ Eg. k8s pod中日志采集sidecar
 > 在不复杂的系统中， 更适合monolithic的应用。
   复杂度增长时， 微服务的生产率能持续保持，在生产率方面是可伸缩的。
 
-## 五. 原则和缺点（挑战）
+#  原则和缺点（挑战）
 
 
 [微服务架构——不是免费的午餐](https://www.phodal.com/blog/microservices-is-not-a-free-lunch/) 
@@ -169,7 +172,7 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 快速**演化**| 开发简单 |重复工作  | 系统集成测试 
 
 
-## 五. SOA、微服务、云原生演进
+#  SOA、微服务、云原生演进
 
 关注点  |SOA  |微服务 |云原生
 :-:|:-:|:-:|:-:
@@ -185,7 +188,7 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 
 
 
-## 参考:
+# 参考
 1. [Introduction to Microservices](https://www.nginx.com/blog/introduction-to-microservices/)  英文  
 2. [Introduction to Microservices](https://kb.cnblogs.com/page/521880/)  中文  优缺点
 3. [微服务（Microservice）那点事](https://yq.aliyun.com/articles/2764?spm=5176.100239.blogcont59193.8.R9MzN9) good
@@ -193,10 +196,10 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 5. [一致性](../../../2016/02/09/consistent/)  self
 6. [微服务：分解应用以实现可部署性和可扩展性](http://www.infoq.com/cn/articles/microservices-intro)  Chris Richardson
 7. [《Linux/Unix设计思想》随笔 ——Linux/Unix哲学概述](https://www.cnblogs.com/suter/p/3401952.html)  未
-8. [微服务学习资料汇总](https://www.infoq.cn/article/2014/07/microservice-learning-resources/)  good
+8. [微服务学习资料汇总](https://www.infoq.cn/article/2014/07/microservice-learning-resources/)  ***
 9. [微服务架构技术栈选型手册](https://www.infoq.cn/article/micro-service-technology-stack/?utm_source=infoq&utm_medium=popular_widget&utm_campaign=popular_content_list&utm_content=homepage) 未
-10. [从 SOA 到微服务，企业分布式应用架构在云原生时代如何重塑？](https://mp.weixin.qq.com/s/zl0Z-bCoLDFGD8GFYh68CQ) 阿里 易立 good
-11. [云原生时代，分布式系统设计必备知识图谱（内含22个知识点）](https://mp.weixin.qq.com/s?__biz=MzUzNzYxNjAzMg==&mid=2247486600&idx=1&sn=0ad92a1fe535f141fe2e8c87ffbd1229&chksm=fae50747cd928e51c05c41d2cc206069babbe9dfdba5957c52ac6e77cb754192169bb6b3e898&scene=0&xtrack=1#rd) 杨泽强（竹涧） good
+10. [从 SOA 到微服务，企业分布式应用架构在云原生时代如何重塑？](https://mp.weixin.qq.com/s/zl0Z-bCoLDFGD8GFYh68CQ) 阿里 易立  *** 
+11. [云原生时代，分布式系统设计必备知识图谱（内含22个知识点）](https://mp.weixin.qq.com/s?__biz=MzUzNzYxNjAzMg==&mid=2247486600&idx=1&sn=0ad92a1fe535f141fe2e8c87ffbd1229&chksm=fae50747cd928e51c05c41d2cc206069babbe9dfdba5957c52ac6e77cb754192169bb6b3e898&scene=0&xtrack=1#rd) 杨泽强（竹涧） ***
 12. [使用托管服务网格实现应用在多集群中的 GitOps 全自动化渐进式发布](https://www.servicemesher.com/blog/202003-gitops-progressive-delivery-with-asm/)  郝树伟 阿里云容器服务
 
 ## self
