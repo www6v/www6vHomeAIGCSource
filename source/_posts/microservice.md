@@ -19,13 +19,9 @@ categories:
 In short, the microservice architectural style [1] is an approach to developing a single application as a suite of **small services**, **each running in its own process** and **communicating with lightweight mechanisms**, often an HTTP resource API. These services are built around business capabilities and **independently deployable** by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.   --  [Martin Fowler]
 
 #  微服务相关的问题
-###  API网关
-   + 灰度发布、
-   + 负载均衡、 
-   + 鉴权、 
-   + 监控、
-   + 缓存
-      [使用 API 网关构建微服务](https://www.infoq.cn/article/construct-micro-service-using-api-gateway/)
+###  API网关  
++ {% post_link 'apiGateway'  %}  self
+      
 
 ###  服务容错
    + 超时重试机制[self 1][self 2]
@@ -79,8 +75,6 @@ In short, the microservice architectural style [1] is an approach to developing 
 + 部署模式
 + Single Service per Host  
 + Multiple Services per Host patterns
-
-###   数据调用
 
 
 ###   可观察性
