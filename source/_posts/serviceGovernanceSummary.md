@@ -18,6 +18,7 @@ top: true
 + {% post_link 'apiGateway' %}
   - {% post_link 'apiGatawayApisix' %}
   - {% post_link 'apiGatawaySpringGateway' %}
+  - {% post_link 'apiGatewayGray' %}
 + {% post_link 'config' %}
 + {% post_link 'jsfThreadModel' %}
 
