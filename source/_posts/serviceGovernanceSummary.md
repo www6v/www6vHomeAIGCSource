@@ -16,6 +16,8 @@ top: true
 + {% post_link 'microservice' %}
 + {% post_link 'soaFeature' %}
 + {% post_link 'apiGateway' %}
+  - {% post_link 'apiGatawayApisix' %}
+  - {% post_link 'apiGatawaySpringGateway' %}
 + {% post_link 'config' %}
 + {% post_link 'jsfThreadModel' %}
 
