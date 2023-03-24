@@ -11,7 +11,11 @@ categories:
 <p></p>
 <!-- more -->
 
-{% asset_img kafka-producer.png  Producer架构 %}
+
+
+{% asset_img   kafka-producer.jpg  Producer架构 %}
+
+
 
 ### Q&A
 +    Kafka中的分区器、序列化器、拦截器是否了解？它们之间的处理顺序是什么？

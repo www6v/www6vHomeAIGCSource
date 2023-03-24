@@ -12,6 +12,11 @@ categories:
 <!-- more -->
 
 # 口语 - 副词
+
+### 副词分类[4]
+
+{%  asset_img  fuci.jpg  %}
+
 ### 常用副词[1]
 basically 基本上
 essentially 实质上
@@ -71,7 +76,8 @@ Never               0%
 
 
 ## 参考
-
 1. [12个最常用最需要知道的英文副词](https://www.bilibili.com/video/BV1JZ4y1A7Rv/)
 2. [【英语雪梨老师】常见频率副词~【建议收藏】](https://www.bilibili.com/video/BV1a34y197jB/)
 3. [背熟这25个高频万能英文句型 从根本上改善你的英语口语：马上说出流畅英语](https://www.bilibili.com/video/BV1jG411w7rh/)
+4. [13章学会英语语法｜思维导图｜形容词和副词](https://zhuanlan.zhihu.com/p/557775585)
+5. [英语语法专题91：副词的种类，一张图看全部！](https://baijiahao.baidu.com/s?id=1660959409475418381&wfr=spider&for=pc)  未
