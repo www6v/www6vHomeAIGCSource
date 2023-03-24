@@ -109,6 +109,7 @@ public class PayServiceImpl implements PayService {
 2. [Seata AT 模式](https://seata.io/zh-cn/docs/dev/mode/at-mode.html)  官方文档
 3. [[Seata 使用调研](http://koca.szkingdom.com/forum/t/topic/322)](http://koca.szkingdom.com/forum/t/topic/322)
 4. [Seata AT模式-多数据源](https://github.com/www6v/seata-samples/tree/master/multiple-datasource)
+5. [seata的AT模式](https://blog.csdn.net/abcd930704/article/details/121650029)
 
 
 
