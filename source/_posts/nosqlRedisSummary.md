@@ -31,7 +31,8 @@ top: true
 + [Redis 使用场景UseCase](../../../../2021/06/29/redisUseCase/)  
 + [Redis 分布式锁](../../../../2022/05/05/redisDistKey/)     
 + [Redis雪崩、击穿、穿透](../../../../2022/03/28/redisReliability-1/)      
-+ [Redis和数据库之间的一致性](../../../../2022/02/21/redisDbConsistent/)       
++ [Redis和数据库之间的一致性](../../../../2022/02/21/redisDbConsistent/)    
++ {% post_link 'redisSlowResponse' %}   
 
     
   

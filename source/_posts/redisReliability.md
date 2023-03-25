@@ -12,7 +12,7 @@ categories:
 <p></p>
 <!-- more -->
 
-## 一. AOF
+#  AOF
 [AOF不是WAL，是先操作，后记录日志。]
 传统数据库的日志，例如 redo log(重做日志)，记录的是修改后的数据，而AOF里记录的是Redis收到的每一条命令，这些命令是以文本形式保存的。
 
@@ -31,16 +31,15 @@ No，操作系统控制的写回: 每个写命令执行完，只是先把日志�
 一个拷贝，两处日志
 {% asset_img   redisRewrite.png  AOF非阻塞的重写过程 %}
 
-## 二. RDB
+#  RDB
 
 
-## 三. AOF+RDB混合
+#  AOF+RDB混合
 
 
-## 参考：
+# 参考
 《Redis核心技术与实战》 蒋德钧
 04 | AOF日志:宕机了，Redis如何避免数据丢失?
-
 
 
 
