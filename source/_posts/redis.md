@@ -12,6 +12,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 [kafka-size]:https://user-images.githubusercontent.com/5608425/66014512-ca1ae900-e501-11e9-93d7-840409a862c5.png
 [kafka-time]:https://user-images.githubusercontent.com/5608425/66014513-cab37f80-e501-11e9-9b2c-917838d91a4d.png
 [kafka-offset]:https://user-images.githubusercontent.com/5608425/66014514-cab37f80-e501-11e9-9be8-a247690b5f9f.png
@@ -31,7 +34,7 @@ categories:
    min-slaves-max-lag 10   
 ```
 
-#### 2. redis cluster
+### 2. redis cluster
 **整体架构**
 1. 去中心化的;
 2. 所有数据划分为16384个slots，每个节点负责其中一部分slots;
