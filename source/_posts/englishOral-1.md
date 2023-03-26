@@ -1,5 +1,5 @@
 ---
-title: English-Oral[Words and Sentence]
+title: English-Oral[Words]
 date: 2012-03-22 22:40:37
 tags:
   - 英语
@@ -11,13 +11,19 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
+# 口语- 程序员英语词汇 [5]
+
+
 # 口语 - 副词
 
-### 副词分类[4]
+### 副词分类 [4]
 
 {%  asset_img  fuci.jpg  %}
 
-### 常用副词[1]
+### 常用副词 [1]
 basically 基本上
 essentially 实质上
 ultimatly 最终
@@ -33,7 +39,7 @@ eventually   最终
 dramatically   戏剧地，显著地
 additionally   此外，额外地
 
-### 频率副词[2]
+### 频率副词 [2]
 Always            100%
 usually            90%
 frequently      80%
@@ -46,38 +52,14 @@ Never               0%
 
 
 
-# 常用句型[3]
-1. It's very nice of you to...
-2. I wonder if you...
-3. I would like to...
-4. That's why...
-5. How come you...?
-6. Where can i...?
-7. Could you tell me...?
-8. I'm sure...
-9. There's no way...
-10. If i were you, I will...
-11. Believe me, ....
-12. I am sorry, but I...
-13. I don't like...
-14. When shall we...?
-15. How much...?
-16. You'd better...
-17. What is the best way to...?
-18. Nothing is more...than...
-19. I really appreciate...
-20. I wll never...
-21. i'm determined to...
-22. I'm very glad to...
-23. I can't imagine...
-24. In my opinion,...
-25. ... is one of the most...
 
 
-
-## 参考
+# 参考
 1. [12个最常用最需要知道的英文副词](https://www.bilibili.com/video/BV1JZ4y1A7Rv/)
 2. [【英语雪梨老师】常见频率副词~【建议收藏】](https://www.bilibili.com/video/BV1a34y197jB/)
-3. [背熟这25个高频万能英文句型 从根本上改善你的英语口语：马上说出流畅英语](https://www.bilibili.com/video/BV1jG411w7rh/)
+3. [英语语法专题91：副词的种类，一张图看全部！](https://baijiahao.baidu.com/s?id=1660959409475418381&wfr=spider&for=pc)  未
 4. [13章学会英语语法｜思维导图｜形容词和副词](https://zhuanlan.zhihu.com/p/557775585)
-5. [英语语法专题91：副词的种类，一张图看全部！](https://baijiahao.baidu.com/s?id=1660959409475418381&wfr=spider&for=pc)  未
+5. [程序员工作中常见的英语词汇（有读音）](https://www.bilibili.com/video/BV1hJ411h7sA/)  V
+   [ most-frequent-technology-english-words](https://github.com/www6v/most-frequent-technology-english-words)
+   [程序员英语词汇宝典](https://learn-english.dev/)
+
