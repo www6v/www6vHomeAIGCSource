@@ -31,8 +31,8 @@ Reactive | RxJava<br> Flux (Reactor Core)<br> RSocket
 
 ## 二. Java8、RxJava、Reactor比较[11]
 <div style="text-align: center;">
-	
-![reactor](https://user-images.githubusercontent.com/5608425/66807471-a329d180-ef5b-11e9-9d8a-28724638916e.jpeg)
+{%   asset_img    reactor.jpeg     Java8、RxJava、Reactor比较  %}
+
 Java8、RxJava、Reactor比较  
 </div>
 
