@@ -23,6 +23,93 @@ categories:
 
 + 分布式限流 [1]
 
++ 滑动窗口  [2]
+{% details  核心代码  %}
+
+```  Java
+        /*
+         * Get bucket item at given time from the array.
+         *
+         * (1) Bucket is absent, then just create a new bucket and CAS update to circular array.
+         * (2) Bucket is up-to-date, then just return the bucket.
+         * (3) Bucket is deprecated, then reset current bucket.
+         */
+        while (true) {
+            WindowWrap<T> old = array.get(idx);
+            if (old == null) {
+                /*
+                 *     B0       B1      B2    NULL      B4
+                 * ||_______|_______|_______|_______|_______||___
+                 * 200     400     600     800     1000    1200  timestamp
+                 *                             ^
+                 *                          time=888
+                 *            bucket is empty, so create new and update
+                 *
+                 * If the old bucket is absent, then we create a new bucket at {@code windowStart},
+                 * then try to update circular array via a CAS operation. Only one thread can
+                 * succeed to update, while other threads yield its time slice.
+                 */
+                WindowWrap<T> window = new WindowWrap<T>(windowLengthInMs, windowStart, newEmptyBucket(timeMillis));
+                if (array.compareAndSet(idx, null, window)) {
+                    // Successfully updated, return the created bucket.
+                    return window;
+                } else {
+                    // Contention failed, the thread will yield its time slice to wait for bucket available.
+                    Thread.yield();
+                }
+            } else if (windowStart == old.windowStart()) {
+                /*
+                 *     B0       B1      B2     B3      B4
+                 * ||_______|_______|_______|_______|_______||___
+                 * 200     400     600     800     1000    1200  timestamp
+                 *                             ^
+                 *                          time=888
+                 *            startTime of Bucket 3: 800, so it's up-to-date
+                 *
+                 * If current {@code windowStart} is equal to the start timestamp of old bucket,
+                 * that means the time is within the bucket, so directly return the bucket.
+                 */
+                return old;
+            } else if (windowStart > old.windowStart()) {
+                /*
+                 *   (old)
+                 *             B0       B1      B2    NULL      B4
+                 * |_______||_______|_______|_______|_______|_______||___
+                 * ...    1200     1400    1600    1800    2000    2200  timestamp
+                 *                              ^
+                 *                           time=1676
+                 *          startTime of Bucket 2: 400, deprecated, should be reset
+                 *
+                 * If the start timestamp of old bucket is behind provided time, that means
+                 * the bucket is deprecated. We have to reset the bucket to current {@code windowStart}.
+                 * Note that the reset and clean-up operations are hard to be atomic,
+                 * so we need a update lock to guarantee the correctness of bucket update.
+                 *
+                 * The update lock is conditional (tiny scope) and will take effect only when
+                 * bucket is deprecated, so in most cases it won't lead to performance loss.
+                 */
+                if (updateLock.tryLock()) {
+                    try {
+                        // Successfully get the update lock, now we reset the bucket.
+                        return resetWindowTo(old, windowStart);
+                    } finally {
+                        updateLock.unlock();
+                    }
+                } else {
+                    // Contention failed, the thread will yield its time slice to wait for bucket available.
+                    Thread.yield();
+                }
+            } else if (windowStart < old.windowStart()) {
+                // Should not go through here, as the provided time is already behind.
+                return new WindowWrap<T>(windowLengthInMs, windowStart, newEmptyBucket(timeMillis));
+            }
+        }
+    }
+```
+
+{% enddetails  %}
+
+
 ## 参考
 
 1.  [集群流量控制](https://sentinelguard.io/zh-cn/docs/cluster-flow-control.html)
