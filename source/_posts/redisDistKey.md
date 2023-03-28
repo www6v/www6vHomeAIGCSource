@@ -37,7 +37,7 @@ categories:
 3. 《从Paxos到Zookeeper分布式一致性原理与实践》 倪超 6.1.7节
 4. Redlock：Redis分布式锁最牛逼的实现 阿飞的博客
 5. [SOFAJRaft-RheaKV 分布式锁实现剖析 | SOFAJRaft 实现原理](https://mp.weixin.qq.com/s/ahcbgxWVVmRwrH9Y4-gXBA)   SOFALab 米麒麟 未
-6. [Redis 总结](../../../../2016/11/12/redis/) self
+6. {% post_link 'redis'    %}  self
 
 ---
 7. [分布式服务总结 分布式锁](https://www.jianshu.com/p/31e85a18a9e7)  

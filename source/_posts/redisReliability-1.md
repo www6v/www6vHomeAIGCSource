@@ -12,7 +12,9 @@ categories:
 <p></p>
 <!-- more -->
 
-{% asset_img   redisReliability-1.png  Redis雪崩、击穿、穿透 %}
+{% asset_img   redisReliability-1.jpg   Redis雪崩、击穿、穿透 %}
+
+
 
 
 + 服务熔断、服务降级、请求限流这些方法都是属于**“有损”方案**，在保证数据库和整体系统稳定的同时，会对业务应用带来负面影响。
@@ -33,6 +35,8 @@ categories:
     分布式锁
 
 
-### 参考：
+
+### 参考
+
 26丨缓存异常（下）：如何解决缓存雪崩、击穿、穿透难题？
 [【直播回放】海量并发微服务框架设计](https://www.bilibili.com/video/BV1Gb4y187un?zw&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
