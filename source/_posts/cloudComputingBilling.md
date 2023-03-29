@@ -34,9 +34,15 @@ categories:
 + 按请求数计费
 
 
+###  省钱工具
++ 阿里云  ->   ECS中长期成本节省方案（简称：节省计划）
++ AWS -> Savings Plans
+
 ## 参考
+
 1. [计费方式概述](https://help.aliyun.com/document_detail/25370.html?source=5176.11533457&userCode=xbifxhv7)
 2. <<云网络>> 3.2
+3. [精讲云计算系列-成本优化章之综述](https://www.bilibili.com/video/BV1dP411u7js/) V
 
     
 
