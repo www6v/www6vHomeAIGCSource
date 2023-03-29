@@ -24,7 +24,10 @@ categories:
 + 分布式限流 [1]
 
 + 滑动窗口  [2]
-{% details  核心代码  %}
+
+{% asset_img  SlidingWindows.png %}
+
+{% details  核心代码  LeapArray.java  %}
 
 ```  Java
         /*
@@ -36,7 +39,7 @@ categories:
          */
         while (true) {
             WindowWrap<T> old = array.get(idx);
-            if (old == null) {
+            if (old == null) { /// 初始化一个窗口
                 /*
                  *     B0       B1      B2    NULL      B4
                  * ||_______|_______|_______|_______|_______||___
@@ -57,7 +60,7 @@ categories:
                     // Contention failed, the thread will yield its time slice to wait for bucket available.
                     Thread.yield();
                 }
-            } else if (windowStart == old.windowStart()) {
+            } else if (windowStart == old.windowStart()) { /// 返回老的窗口
                 /*
                  *     B0       B1      B2     B3      B4
                  * ||_______|_______|_______|_______|_______||___
@@ -70,7 +73,7 @@ categories:
                  * that means the time is within the bucket, so directly return the bucket.
                  */
                 return old;
-            } else if (windowStart > old.windowStart()) {
+            } else if (windowStart > old.windowStart()) {  /// 滚动: 重置老的窗口, 增加新的窗口
                 /*
                  *   (old)
                  *             B0       B1      B2    NULL      B4
@@ -91,7 +94,7 @@ categories:
                 if (updateLock.tryLock()) {
                     try {
                         // Successfully get the update lock, now we reset the bucket.
-                        return resetWindowTo(old, windowStart);
+                        return resetWindowTo(old, windowStart);  /// 清零重置old窗口
                     } finally {
                         updateLock.unlock();
                     }
@@ -99,7 +102,7 @@ categories:
                     // Contention failed, the thread will yield its time slice to wait for bucket available.
                     Thread.yield();
                 }
-            } else if (windowStart < old.windowStart()) {
+            } else if (windowStart < old.windowStart()) {  /// 时钟回拨
                 // Should not go through here, as the provided time is already behind.
                 return new WindowWrap<T>(windowLengthInMs, windowStart, newEmptyBucket(timeMillis));
             }
@@ -108,6 +111,7 @@ categories:
 ```
 
 {% enddetails  %}
+
 
 
 ## 参考
