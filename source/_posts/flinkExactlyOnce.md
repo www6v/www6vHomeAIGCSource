@@ -42,7 +42,8 @@ By combining checkpointing with transactional sources and sinks, Flink can guara
 
 For more information on how to implement exactly-once semantics in Flink, you can refer to the official documentation: https://ci.apache.org/projects/flink/flink-docs-release-1.13/docs/deployment/transactional/
 
-
+### Exactly Once vs.   At Least Once  [6][7]
+barrier对齐就是Exactly Once，为什么barrier不对齐就是 At Least Once
 
 
 ## 参考：
@@ -50,7 +51,9 @@ For more information on how to implement exactly-once semantics in Flink, you ca
 2. [An Overview of End-to-End Exactly-Once Processing in Apache Flink (with Apache Kafka, too!)](https://flink.apache.org/features/2018/03/01/end-to-end-exactly-once-apache-flink.html)   official
 3. 尚硅谷 flink(Java) - bilibili   ***
 4. [端到端一致性,流系统Spark/Flink/Kafka/DataFlow对比总结(压箱宝具呕血之作)](https://zhuanlan.zhihu.com/p/77677075) 原理 - aws SDE - 未
-5. {% post_link 'flinkCheckpoint' %}  self
+5. [Apache Flink 结合 Kafka 构建端到端的 Exactly-Once 处理 ](http://www.54tianzhisheng.cn/2019/06/20/flink-kafka-Exactly-Once/)
+6. [一文搞懂 Flink 的 Exactly Once 和 At Least Once ](http://www.54tianzhisheng.cn/2019/08/21/Flink-Exactly_Once_vs_At_Least_Once/)  ***
+7. {% post_link 'flinkCheckpoint' %}  self
 
 
 
