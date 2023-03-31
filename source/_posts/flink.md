@@ -13,6 +13,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 ##  总结
 {% asset_img   flink.jpg  flink  %} 
 
@@ -21,7 +24,7 @@ categories:
 {% asset_img  flink-arch.png flink架构 %}
 
 
-## Runtime  
+## Runtime [6] 
 + JobMaster AM
    - JobManager 
    - ResourceManager
@@ -51,16 +54,14 @@ categories:
 
 ## Flink CDC
 
-## Flink on Kubernetes 
-[Flink on Kubernetes](https://github.com/www6v/dev-ops/tree/master/yaml-prod/flink)  Flink官方的方案
+## 参考
 
-## 参考：
-1. [Flink架构及其工作原理](https://www.cnblogs.com/code2one/p/10123112.html)
+1. [Flink架构及其工作原理](https://www.cnblogs.com/code2one/p/10123112.html)  ***
 2. <<Flink原理、实战与性能优化>>  张利兵
 3. [Flink使用Broadcast State实现流处理配置实时更新](http://ju.outofmemory.cn/entry/371335)
 4. [Apache Flink状态管理和容错机制介绍](https://www.iteblog.com/archives/2417.html)
 5. 尚硅谷 flink(Java) - bilibili 
-6. [Apache Flink 进阶（一）：Runtime 核心机制剖析](https://www.infoq.cn/article/RWTM9o0SHHV3Xr8o8giT) 阿里-高赟（云骞）
+6. [Apache Flink 进阶（一）：Runtime 核心机制剖析](https://www.infoq.cn/article/RWTM9o0SHHV3Xr8o8giT) 阿里-高赟（云骞） ***
 7. [数据实时化技术创新进展 | 一文览尽 Flink Forward Asia 2022 重磅干货内容](https://www.infoq.cn/article/UXwLxU0D85E9eTU66E2A)  *** 未
 
 
