@@ -1,5 +1,5 @@
 ---
-title: English Interview
+title: English Interview-Q&A
 date: 2012-02-04 00:09:30
 tags:
   - 英语
@@ -11,14 +11,14 @@ categories:
 <p></p>
 <!-- more -->
 
-###  Q1. Tell me about yourself
+###  Q1. Tell me about yourself  ***  ***
 + Thank you for giving me the opportunity to be interviewed for this position Today。
 I have applied for the job because I believe the skill and qualities I possess are a match for the job description。
-+ I have several years experience in this industry which means I can come into your Company and make a fast and immediate Impact.  I'm A Strong communicator, I work very well both On My Own and as part of A Team,  I will Always  provide excellent customer service and I will Always perform to High standard whilst Under Pressure.  
-+ I am a positive forward-thinking person and I genuinely believe I can come into the team and help push the company forward towards achieving its goals. Now if you hire me, you will quickly see a positive return on your investment. 
++ I have **several years experience in  [ software development ]** which means I can come into your Company and make a fast and immediate Impact.  I'm A **Strong communicator**, I work very well both On My Own and as part of A Team,  I will Always  **provide excellent  [programming skill]** and I will Always perform to **High standard whilst Under Pressure**.  
++ I am a positive **forward-thinking person** and I genuinely believe I can come into the team and help push the company forward towards achieving its goals.  Now if you hire me, you will quickly see a positive return on your investment. 
   
 
-### Q2 Why do you want to work for us?
+### Q2 Why do you want to work for us? *** ***
 + I’ve been keen to apply for a job with your company for some time now and I’ve kept my eyes open for the right opportunity to be advertised. 
 + I want to work for your company because not only do I believe this is a place I can develop and grow as a person, but it is also a place that is clearly driven towards being the best it can be within this sector.
 + The research I carried out before applying points to the fact your company is well run and you clearly support your employees in their work.
@@ -31,14 +31,14 @@ I have applied for the job because I believe the skill and qualities I possess a
 + I would speak to the person with whom the conflict was with, to ascertain the cause of it before suggesting a way forward that we were both comfortable with. I am confident that we could sort out our differences and move forward quickly. 
 
 
-### Q4 Why do you want this job? 
+### Q4 Why do you want this job?  ***
 + I want this job because the job description is a close match for my own skills, qualities and experience. 
 + This means I can come into the position and make an immediate impact. I want this job because it is with your company. You are clearly innovative, forward-thinking and you want to continually grow and develop.
 + We spend a lot of time at work, and I only want to work for a positive employer that supports its staff to help them do a great job. 
 + Finally, I want this job because I feel in the long term, there will be opportunities for me to grow, develop and advance professionally within the company. 
 
 
-### Q6 What's your greatest achievement?
+### Q6 What's your greatest achievement?  ***
 + My greatest achievement has to be in my previous role when I worked as part of a team that managed to increase company sales by 25 in a year.
 + We achieved this by successfully launching new company products online and by upselling to previous customers.
 + The shift to marketing our products online made a massive difference to our sales figures, and I was very proud to be a part of the team that had so much success in that particular year.
@@ -50,6 +50,11 @@ I have applied for the job because I believe the skill and qualities I possess a
 + 行动：To make sure I completed the task on time and to the right standard, I created a spreadsheet with three columns and i then worked through each product meticulously, cross-checking as I went.
 + 欢天喜地大结局：I only stopped for a short break once and by the time 4 pm had come along I had presented the figures to my manager. I enjoy working under pressure and my ability to remain calm and work meticulously is an advantage in situations like this. 
 
+
+### Q8 Where do you see yourself in five years?  ***  ***
++ In five years from now, I will hopefully still be working for you either in this role or perhaps even having gained advancement to a higher level.
++ In five years, I will have developed into a trusted loyal and committed member of the company who can be relied upon to do a great job for you.
++ I feel in five years` time I will have sufficient experience and expertise to help train up newer members of the organization as and when they join. 
 
 ### Q9 What did you like and dislike about your last job? （回答策略：先扬后抑，避重就轻，借力打力）
 + There were many things I liked such as the team I was a part of and how we all pulled together to get things done during tasks and projects.
@@ -66,12 +71,17 @@ I have applied for the job because I believe the skill and qualities I possess a
 + 永远积极正向的结果：After speaking to all three companies, I chose the one that could provide the best value for money and that could also quickly supply us with the product so the customers who had already ordered the product were not left waiting. 
 
 
-### Q13 What are your strengths and weaknesses? ++
-+ My strengths include my ability to learn things very quickly and to work alone, unsupervised to a high standard. My strong communication skills and how I am a people- person are also other strengths.
+### Q13 What are your strengths and weaknesses?   *** ***
++ **My strengths** include my ability to **learn things very quickly and to work alone**, unsupervised to a high standard. My **strong communication skills** and how I am a people- person are also other strengths.
 + I enjoy providing great service to customers and I will always positively represent your company brand. I am someone who adapts well to change, and I view it as an important aspect of both my own personal progression and company growth.
-+ My weakness is the fact I am not yet confident at speaking in front of large groups of people or giving presentations. However, this is certainly one area I want to improve in, and I've been reading a great book that has been helping me to start building confidence in this area.
++ **My weakness** is the fact I am **not yet confident at speaking in front of large groups of people or giving presentations**. However, this is certainly one area I want to improve in, and I've been reading a great book that has been helping me to start building confidence in this area.
 + I am the type of person who is always open to constructive feedback, so if you want me to develop in a particular area, just let me know and I will take the steps needed to develop. 
 
+
+### Q15 Why should we hire you?  *** *** 
++ You should hire me because having studied the job description and the requirements of the role, I can come into the position and quickly ADD VALUE.
++ I am a fast learner, which means you won't have to spend your valuable time and effort training me up and supervising me for weeks on end. 
++ You should hire me because I am commercially aware. This means I understand that for your business to be successful, I must come into the role, do everything to a high standard and always represent your business positively and loyally.
 
 ### Q16 Talk about a time when you had to work closely with someone whose personality was different from yours.
 + 场景创设：In my previous role a new member of our team joined the organization and I volunteered to help them settle into the role and to teach them how to carry out their duties to the correct standard. She was very nervous and shy, and when I spoke to her, it was clear that English was not her first language.
@@ -86,13 +96,13 @@ I have applied for the job because I believe the skill and qualities I possess a
 + I adapted by being supportive of the change, by viewing it positively and by doing all I could to learn the new duties quickly and diligently. Change is a good thing and if you embrace it positive things can happen. 
 
 
-### Q17 Describe a time when the team you were a part of was undergoing some change. How did the change impact you, and how do you adapt?
-+ In my previous job, a new manager came into the team and she wanted to make big changes to the way that we operated. This was a big thing for the team because the previous manager had not changed anything for many years.
-+ I was quite excited about the change because I felt there were some things we could improve on. The change impacted me because I had to learn new skills and duties. Some members of the team were negative about the change, but I encouraged them to view it more positively and to see it as an opportunity for personal growth.
-+ I adapted by being supportive of the change, by viewing it positively and by doing all I could to learn the new duties quickly and diligently. Change is a good thing and if you embrace it positive things can happen. 
-
-
+### Q22 Describe yourself in three words.
++ I would describe myself as **loyal, self-motivated, and commercially-aware**.
++ Being a loyal employee means you can trust me to do a good job and to always be a good role model for your company.
++ Being self-motivated means, you will never have to pick me up for not doing my job properly either on time or to the necessary standard.
++ And being commercially aware means that I respect the fact that the only way your business will thrive is if people like me do a good job for your company, and I also seek to improve and develop year on year.
 
 
 ## 参考
 [准备英文面试这篇够用了 英文面试中最常问的30个问题与答案（英式英语）](https://www.bilibili.com/video/BV1ta411v79M)
+[【CareerVidz】面试必问的七个问题！满分回答话术 | 自制中字](https://www.bilibili.com/video/BV1qF411s7HV/)
