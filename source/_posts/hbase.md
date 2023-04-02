@@ -12,7 +12,8 @@ categories:
 <p></p>
 <!-- more -->
 
-
+## 目录
+<!-- toc -->
 
 ## 一. 数据模型
 ### 1. 逻辑视图 
@@ -79,32 +80,29 @@ Leaf Level Index| HFile索引树叶子索引
 
 
 ## 四. 读写流程和读优化
-### 1. 写流程
-客户端写入MemStore和HFile就表示写入成功。
-Flush的时机： 三个flush的参数
-
-### 2. 读流程
-**BlockCache没有数据的前提下， MemStore和StoreFile（HFile）都会读取数据。**
-
-### 总结 
-Master不参与读写流程，但是master宕机了，集群会处于不健康状态， Region分裂后改不了元数据。
-客户端只要配置Zookeeper地址，Master的切换对客户端是透明的。
-客户端缓存Meta数据， RegionServer的BlockCache缓存StoreFile（HFile）的数据。
-
-
-### 3. HFile Compaction  读优化
-3.1 类型
- Minor Compaction: 小的相邻HFile合并成更大的HFiile。
- Major Compaction: 一个store中所有的HFile合并成一个HFile。**线上建议关闭自动触发，改为在低峰期手动或者自动触发**。
- **Minor Compaction不会删除数据，Major Compaction会删除数据。** 
- **Minor Compaction 合并后，旧的数据不会马上删除， 会对客户端不可见。** 
-
-3.2 Compaction作用
- 减少文件数， **稳定随机读延迟**; 用短时间的IO消耗以及带宽消耗换取后序读操作的低延迟。（空间换时间）.
- 清除无效数据，较少数据存储量。
++ 读写流程
+  - 写流程
+    客户端写入MemStore和HFile就表示写入成功。
+    Flush的时机： 三个flush的参数
+  - 读流程
+    **BlockCache没有数据的前提下， MemStore和StoreFile（HFile）都会读取数据。**
+  - 总结 
+    Master不参与读写流程，但是master宕机了，集群会处于不健康状态， Region分裂后改不了元数据。
+    客户端只要配置Zookeeper地址，Master的切换对客户端是透明的。
+    客户端缓存Meta数据， RegionServer的BlockCache缓存StoreFile（HFile）的数据。
 
 
-### 4. 数据删除时机
++ HFile Compaction  读优化
+  - 类型
+     Minor Compaction: 小的相邻HFile合并成更大的HFiile。
+     Major Compaction: 一个store中所有的HFile合并成一个HFile。**线上建议关闭自动触发，改为在低峰期手动或者自动触发**。
+     **Minor Compaction不会删除数据，Major Compaction会删除数据。** 
+     **Minor Compaction 合并后，旧的数据不会马上删除， 会对客户端不可见。** 
+   - Compaction作用
+     减少文件数， **稳定随机读延迟**; 用短时间的IO消耗以及带宽消耗换取后序读操作的低延迟。（空间换时间）
+     清除无效数据，较少数据存储量。
+
++ 数据删除时机
 flush和Major Compaction的时候会删除冗余的数据。
 flush时只删除内存的冗余数据，不删除"Delete标记",因为在Major Compaction删冗余数据的时候会用到这个"Delete标记"。
 
