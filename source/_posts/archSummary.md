@@ -35,11 +35,15 @@ top: true
 
 ## 设计原则
 + {% post_link 'designPrinciple'  %}
-    
-
-   
-
-   
+  
++ {% post_link 'designOCPspi'  %}
+  
+  
+  
+  
+  
+  
+  
 
  
 
@@ -47,13 +51,13 @@ top: true
 
 
 
-    
+​    
 
-    
+​    
 
    
 
-     
+​     
 
    
 
