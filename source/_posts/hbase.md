@@ -15,14 +15,14 @@ categories:
 ## 目录
 <!-- toc -->
 
-## 一. 数据模型
-### 1. 逻辑视图 
+#  数据模型
+###  逻辑视图 
 {% asset_img  model-logic.jpg  hbase逻辑视图 %}
 **row**: <code>rowkey + (column + columnValue)*n</code> 
 **column**: <code>column family:qualifier</code>   column family固定, qualifier可增加 
 **cell**： (row, column, timestamp, type, value) 
 
-### 2. 物理视图
+###  物理视图
 HBase中的数据是按照列簇存储的。
 KV存储结构 K( (row, column, timestamp, type) ) -> V( value )  
 <code>
@@ -34,16 +34,9 @@ KV存储结构 K( (row, column, timestamp, type) ) -> V( value )
 {"com.example.www","people","author","put","t5"} -> "John Doe"
 </code>
 
-### 3. column family和LSM-tree
-**column family本质上是一颗LSM-tree**。
 
-{% asset_img  LSM-tree.JPG  hbase中的LSM-tree实现 %}
 
-+ LSM-Tree的核心思想就是将写入推迟(Defer)并转换为批量(Batch)写，首先将大量写入缓存在内存，当积攒到一定程度后，将他们批量写入文件中，这要一次I/O可以进行多条数据的写入，充分利用每一次I/O。
-+ **LSM-Tree是对写操作友好的索引结构； 将写入操作全部转化为磁盘的顺序写入。一次随机IO写入转换成一次顺序IO写入（HLog顺序写）和一次内存写入（MemStore写入）。**
-+ **为了提高读取效率， LSM-tree设计了异步的Compaction**， 小文件合并成大文件（**归并排序**）。
-
-## 二. 架构
+#  架构
 {% asset_img  arch.JPG  hbase体系结构 %}
 
 ### RegionServer
@@ -59,27 +52,11 @@ KV存储结构 K( (row, column, timestamp, type) ) -> V( value )
   Region包含<code>n个Store</code>   **Store==column family**
   Store包含<code>1个MemStore</code>和<code>n个HFile</code>
   MemStore： 写缓存 
-  HFile的Compact操作， 小文件合并成大文件
-+ MemStore
-  由两个ConcurrentSkipListMap实现（双缓冲）;
-  ConcurrentSkipListMap A异步flush罗盘成HFile;
-  **HDFS只允许顺序读写，MemStore在落盘生成HFile之前完成kv的排序；  **
-+ HFile
-  **HFile Data Block（文件读取的最小单元）内的kv是按key排序的索引树，对读友好**；
-  HFile Index Block的索引结构分为两种: V1 单层索引， V2 多级索引（只加载部分索引，降低内存使用）
-  HDFS的Block默认是64M，128M；HBase的Block默认是64K；
-  {% asset_img  HFile.JPG  HFile物理结构 %}
+  HFile的Compact操作， 小文件合并成大文件  
++ MemStore [1]
++ HFile [1]
 
- Block Type |    基本介绍
-:-:|:-:
-Data Block| 用户Key-Value 
-Meta Block| Bloom过滤器相关元数据
-Root Index| HFile索引树根索引
-Intermediate Level Index| HFile索引树中间层级索引
-Leaf Level Index| HFile索引树叶子索引 
-
-
-## 四. 读写流程和读优化
+#  读写流程和读优化
 + 读写流程
   - 写流程
     客户端写入MemStore和HFile就表示写入成功。
@@ -107,7 +84,7 @@ flush和Major Compaction的时候会删除冗余的数据。
 flush时只删除内存的冗余数据，不删除"Delete标记",因为在Major Compaction删冗余数据的时候会用到这个"Delete标记"。
 
 
-## 五. Region分裂（split）
+#  Region分裂（split）
 + 寻找分裂点
 + Region迁移的状态存在meta表， Master内存， zookeeper的region-in-transition节点
   **RIT状态**： Region在三个地方不能保持一致
@@ -116,7 +93,7 @@ flush时只删除内存的冗余数据，不删除"Delete标记",因为在Major 
 + **Region分裂过程没有涉及数据的移动， 分裂后的子Region的文件没有任何用户数据。 [通过reference文件来查找数据，像游标offset]**  
   **真正数据迁移的迁移发生在子Region执行Major Compaction时。**
 
-## 六. 优化和最佳实践
+#  优化和最佳实践
 ### **预分区**
 自动split有数据倾斜问题，所以要预分区。
 建议: 生产中列簇不要太多, 列簇数据要有同步增长的趋势（不要一个列簇有很多数据， 其他列簇数据很少），
@@ -127,7 +104,7 @@ flush时只删除内存的冗余数据，不删除"Delete标记",因为在Major 
 2. Hash
 3. Reversing
 
-## 五. 性能和版本
+#  性能和版本
 ###  性能  
 单表 千亿行， 百万列  容量TB甚至PB级别
 
@@ -154,8 +131,10 @@ HBase提供基于单 行 数据操作的原子性保证
 HBase基于行锁来保证单行操作的原子性
 checkAndPut/checkAndDelete/increment/append  
 
-## 参考：
-1. [【Paper笔记】The Log structured Merge-Tree（LSM-Tree）](https://kernelmaker.github.io/lsm-tree)
+# 参考
+
+1. {% post_link 'hbaselsmTree' %}
+
 2. 《Hbase原理和实践》 胡争  范欣欣   第1,2,5,7，8章
 
 
