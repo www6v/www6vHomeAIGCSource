@@ -31,7 +31,7 @@ I’m a **team player and self-motivated**.
 **[confident]**
   I believe I have the combination of experience and enthusiasm to contribute to the success of  [your company] as software engineer/architect. Thanks.
   **With my qualifications and experience, I feel I am hardworking, responsible and diligent in any project I undertake. Your company could benefit from my architect design and programming  skills.**
-  
+
 **Thanks the oppotinity of this interview in this position.**
 
 ### Give me a summary of your current job description.  ***  [有人问过这个题]  
@@ -40,6 +40,7 @@ I’m a **team player and self-motivated**.
 
 ### Why did you leave your last job？***
  **Because  the impact of the COVID-19 pandemic, the company's financial situation is not very good.** 
+ **I‘ve outgrown that job. I want to continue to develop my career in this filed. In my current job , it's not possible.** [3] 
  I feel I have reached the "glass ceiling" in my current job. **I feel there is no opportunity for promotion.**
  Well, I am hoping to get an offer of a **better position**.   **If opportunity knocks, I will take it.**
 
