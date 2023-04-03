@@ -38,6 +38,10 @@ I’m a **team player and self-motivated**.
   I have been working as a computer programmer for five years. 
   **To be specific, I do system analysis, trouble shooting and provide software support.**
 
+  **[requirement analysis， programming using Java Framework， debug/
+  diagnose/trouble shooting]**
+  **[write  product release/Q&A/best practice  documentation， online chat Q&A with the user]** 
+
 ### Why did you leave your last job？***
  **Because  the impact of the COVID-19 pandemic, the company's financial situation is not very good.** 
  **I‘ve outgrown that job. I want to continue to develop my career in this filed. In my current job , it's not possible.** [3] 
