@@ -15,7 +15,7 @@ categories:
 
 ### Self Introduce ***
 
-Good afternoon, I am bruce wang. 
+Good afternoon, I am bruce.  **Thanks the oppotinity of this interview of this position.**
 **[work experience]**
 I have over sixteen years of work experience in **programming and software development**. 
 I am the **team member of product  [OMS]  for [baisheng]**  since 2022. 
@@ -32,7 +32,7 @@ I’m a **team player and self-motivated**.
   I believe I have the combination of experience and enthusiasm to contribute to the success of  [your company] as software engineer/architect. Thanks.
   **With my qualifications and experience, I feel I am hardworking, responsible and diligent in any project I undertake. Your company could benefit from my architect design and programming  skills.**
 
-**Thanks the oppotinity of this interview in this position.**
+
 
 ### Give me a summary of your current job description.  ***  [有人问过这个题]  
   I have been working as a computer programmer for five years. 
