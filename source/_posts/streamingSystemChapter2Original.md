@@ -1435,3 +1435,267 @@ of windows via allowed lateness.
 Practicality sated, let’s move on to our fourth and final question.
 
 {%  enddetails   %}
+
+
+
+
+
+
+
+{% details 点击  原文  %}
+
+# ***How\*: Accumulation**
+
+When triggers are used to produce multiple panes for a single window over
+
+time, we find ourselves confronted with the last question: “*How* do
+
+refinements of results relate?” In the examples we’ve seen so far, each
+
+successive pane is built upon the one immediately preceding it. However,
+
+there are actually three different modes of accumulation:
+
+- Discarding
+
+Every time a pane is materialized, any stored state is discarded. This
+
+means that each successive pane is independent from any that came
+
+before. Discarding mode is useful when the downstream consumer is
+
+performing some sort of accumulation itself; for example, when sending
+
+integers into a system that expects to receive deltas that it will sum
+
+together to produce a final count.
+
+- Accumulating
+
+As in Figures 2-6 through 2-11, every time a pane is materialized, any
+
+stored state is retained, and future inputs are accumulated into the existing
+
+state. This means that each successive pane builds upon the previous
+
+panes. Accumulating mode is useful when later results can simply
+
+overwrite previous results, such as when storing output in a key/value
+
+store like HBase or Bigtable.
+
+- Accumulating and retracting
+
+This is like accumulating mode, but when producing a new pane, it also
+
+produces independent retractions for the previous pane(s). Retractions
+
+(combined with the new accumulated result) are essentially an explicit
+
+way of saying “I previously told you the result was *X*, but I was wrong.
+
+Get rid of the *X* I told you last time, and replace it with *Y*.” There are two
+
+cases for which retractions are particularly helpful:
+
+- When consumers downstream are *regrouping data by a different*
+
+*dimension*, it’s entirely possible the new value may end up keyed
+
+differently from the previous value and thus end up in a different
+
+group. In that case, the new value can’t just overwrite the old value;
+
+you instead need the retraction to remove the old value
+
+- When *dynamic windows* (e.g., sessions, which we look at more
+
+closely in a few moments) are in use, the new value might be
+
+replacing more than one previous window, due to window merging.
+
+In this case, it can be difficult to determine from the new window
+
+alone which old windows are being replaced. Having explicit
+
+retractions for the old windows makes the task straightforward. We
+
+see an example of this in detail in Chapter 8.
+
+The different semantics for each group are somewhat clearer when seen side
+
+by-side. Consider the two panes for the second window (the one with event
+
+time range [12:06, 12:08)) in Figure 2-11 (the one with early/on-time/late
+
+triggers). Table 2-1 shows what the values for each pane would look like
+
+across the three accumulation modes (with *accumulating* mode being the
+
+specific mode used in Figure 2-11 itself).
+
+*Table 2-1. Comparing accumulation modes using the second*
+
+*window from Figure 2-11*
+
+**Discarding**
+
+**Accumulating**
+
+**Accumulating & Retracting**
+
+**Pane 1: inputs=[3]**
+
+3
+
+3
+
+3
+
+**Pane 2: inputs=[8, 1]**
+
+9
+
+12
+
+12, –3
+
+**Value of final normal pane** 9
+
+12
+
+12
+
+**Sum of all panes**
+
+12
+
+15
+
+12
+
+Let’s take a closer look at what’s happening:
+
+- Discarding
+
+Each pane incorporates only the values that arrived during that specific
+
+pane. As such, the final value observed does not fully capture the total
+
+sum. However, if you were to sum all of the independent panes
+
+themselves, you would arrive at a correct answer of 12. This is why
+
+discarding mode is useful when the downstream consumer itself is
+
+performing some sort of aggregation on the materialized panes.
+
+- Accumulating
+
+As in Figure 2-11, each pane incorporates the values that arrived during
+
+that specific pane, plus all of the values from previous panes. As such, the
+
+final value observed correctly captures the total sum of 12. If you were to
+
+sum up the individual panes themselves, however, you’d effectively be
+
+double-counting the inputs from pane 1, giving you an incorrect total sum
+
+of 15. This is why accumulating mode is most useful when you can
+
+simply overwrite previous values with new values: the new value already
+
+incorporates all of the data seen thus far.
+
+- Accumulating and retracting
+
+Each pane includes both a new accumulating mode value as well as a
+
+retraction of the previous pane’s value. As such, both the last value
+
+observed (excluding retractions) as well as the total sum of all
+
+materialized panes (including retractions) provide you with the correct
+
+answer of 12. This is why retractions are so powerful.
+
+Example 2-9 demonstrates discarding mode in action, illustrating the changes
+
+we would make to Example 2-7:
+
+*Example 2-9. Discarding mode version of early/on-time/late firings*
+
+```
+PCollection<KV<Team, Integer>> totals = input
+.apply(Window.into(FixedWindows.of(TWO_MINUTES))
+.triggering(
+AfterWatermark()
+.withEarlyFirings(AlignedDelay(ONE_MINUTE))
+.withLateFirings(AtCount(1)))
+.discardingFiredPanes())
+.apply(Sum.integersPerKey());
+```
+
+Running again on a streaming engine with a heuristic watermark would
+
+produce output like that shown in Figure 2-13.
+
+*Figure 2-13. Discarding mode version of early/on-time/late firings on a streaming engine*
+
+Even though the overall shape of the output is similar to the accumulating
+
+mode version from Figure 2-11, note how none of the panes in this discarding
+
+version overlap. As a result, each output is independent from the others.
+
+If we want to look at retractions in action, the change would be similar, as
+
+shown in Example 2-10. ??? depicts the results.
+
+*Example 2-10. Accumulating and retracting mode version of early/on*
+
+*time/late firings*
+
+```
+PCollection<KV<Team, Integer>> totals = input
+.apply(Window.into(FixedWindows.of(TWO_MINUTES))
+.triggering(
+AfterWatermark()
+.withEarlyFirings(AlignedDelay(ONE_MINUTE))
+.withLateFirings(AtCount(1)))
+.accumulatingAndRetractingFiredPanes())
+.apply(Sum.integersPerKey());
+```
+
+Accumulating and retracting mode version of early/late firings on a streaming
+
+engine
+
+Because the panes for each window all overlap, it’s a little tricky to see the
+
+retractions clearly. The retractions are indicated in red, which combines with
+
+the overlapping blue panes to yield a slightly purplish color. I’ve also
+
+horizontally shifted the values of the two outputs within a given pane slightly
+
+(and separated them with a comma) to make them easier to differentiate.
+
+Figure 2-14 combines the final frames of Figures 2-9, 2-11 (heuristic only),
+
+and side-by-side, providing a nice visual contrast of the three modes.
+
+*Figure 2-14. Side-by-side comparison of accumulation modes*
+
+As you can imagine, the modes in the order presented (discarding,
+
+accumulating, accumulating and retracting) are each successively more
+
+expensive in terms of storage and computation costs. To that end, choice of
+
+accumulation mode provides yet another dimension for making trade-offs
+
+along the axes of correctness, latency, and cost.
+
+{%  enddetails   %}
