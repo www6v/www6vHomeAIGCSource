@@ -358,3 +358,187 @@ the rest of this chapter looking at common approaches to bounded and
 unbounded data processing, using both batch and streaming systems.
 
 {%  enddetails   %}
+
+
+
+
+
+{% details 点击  原文  %}
+
+### **Event Time Versus Processing Time**
+
+To speak cogently about unbounded data processing requires a clear
+
+understanding of the domains of time involved. Within any data processing
+
+system, there are typically two domains of time that we care about:
+
+- Event time
+
+This is the time at which events actually occurred.
+
+- Processing time
+
+This is the time at which events are observed in the system.
+
+Not all use cases care about event times (and if yours doesn’t, hooray! your
+
+life is easier), but many do. Examples include characterizing user behavior
+
+over time, most billing applications, and many types of anomaly detection, to
+
+name a few.
+
+In an ideal world, event time and processing time would always be equal,
+
+with events being processed immediately as they occur. Reality is not so kind,
+
+however, and the skew between event time and processing time is not only
+
+nonzero, but often a highly variable function of the characteristics of the
+
+underlying input sources, execution engine, and hardware. Things that can
+
+affect the level of skew include the following:
+
+- Shared resource limitations, like network congestion, network
+
+partitions, or shared CPU in a nondedicated environment
+
+- Software causes such as distributed system logic, contention, and so
+
+on
+
+- Features of the data themselves, like key distribution, variance in
+
+throughput, or variance in disorder (i.e., a plane full of people taking
+
+their phones out of airplane mode after having used them offline for
+
+the entire flight)
+
+As a result, if you plot the progress of event time and processing time in any
+
+real-world system, you typically end up with something that looks a bit like
+
+the red line in Figure 1-1.
+
+*Figure 1-1. Time-domain mapping. The x-axis represents event-time completeness in the system; that is, the time X in event time up to which all data with event times less than X have been observed. The y axis represents the progress of processing time; that is, normal clock time as observed by the data*
+
+*processing system as it executes.*
+
+In Figure 1-1, the black dashed line with slope of 1 represents the ideal, where
+
+processing time and event time are exactly equal; the red line represents
+
+reality. In this example, the system lags a bit at the beginning of processing
+
+time, veers closer toward the ideal in the middle, and then lags again a bit
+
+toward the end. At first glance, there are two types of skew visible in this
+
+diagram, each in different time domains:
+
+- Processing time
+
+The vertical distance between the ideal and the red line is the lag in the
+
+processing-time domain. That distance tells you how much delay is
+
+observed (in processing time) between when the events for a given time
+
+occurred and when they were processed. This is the perhaps the more
+
+natural and intuitive of the two skews.
+
+- Event time
+
+The horizontal distance between the ideal and the red line is the amount of
+
+event-time skew in the pipeline at that moment. It tells you how far
+
+behind the ideal (in event time) the pipeline is currently.
+
+In reality, processing-time lag and event-time skew at any given point in time
+
+are identical; they’re just two ways of looking at the same thing. The
+
+important takeaway regarding lag/skew is this: Because the overall mapping
+
+between event time and processing time is not static (i.e., the lag/skew can
+
+vary arbitrarily over time), this means that you cannot analyze your data
+
+solely within the context of when they are observed by your pipeline if you
+
+care about their event times (i.e., when the events actually occurred).
+
+Unfortunately, this is the way many systems designed for unbounded data
+
+have historically operated. To cope with the infinite nature of unbounded
+
+datasets, these systems typically provide some notion of windowing the
+
+incoming data. We discuss windowing in great depth a bit later, but it
+
+essentially means chopping up a dataset into finite pieces along temporal
+
+boundaries. If you care about correctness and are interested in analyzing your
+
+data in the context of their event times, you cannot define those temporal
+
+boundaries using processing time (i.e., processing-time windowing), as many
+
+systems do; with no consistent correlation between processing time and event
+
+time, some of your event-time data are going to end up in the wrong
+
+processing-time windows (due to the inherent lag in distributed systems, the
+
+online/offline nature of many types of input sources, etc.), throwing
+
+correctness out the window, as it were. We look at this problem in more detail
+
+in a number of examples in the sections that follow, as well as the remainder
+
+of the book.
+
+Unfortunately, the picture isn’t exactly rosy when windowing by event time,
+
+either. In the context of unbounded data, disorder and variable skew induce a
+
+completeness problem for event-time windows: lacking a predictable
+
+mapping between processing time and event time, how can you determine
+
+when you’ve observed all of the data for a given event time *X*? For many real
+
+world data sources, you simply can’t. But the vast majority of data processing
+
+systems in use today rely on some notion of completeness, which puts them at
+
+a severe disadvantage when applied to unbounded datasets.
+
+I propose that instead of attempting to groom unbounded data into finite
+
+batches of information that eventually become complete, we should be
+
+designing tools that allow us to live in the world of uncertainty imposed by
+
+these complex datasets. New data will arrive, old data might be retracted or
+
+updated, and any system we build should be able to cope with these facts on
+
+its own, with notions of completeness being a convenient optimization for
+
+specific and appropriate use cases rather than a semantic necessity across all
+
+of them.
+
+Before getting into specifics about what such an approach might look like,
+
+let’s finish up one more useful piece of background: common data processing
+
+patterns.
+
+{%  enddetails   %}
