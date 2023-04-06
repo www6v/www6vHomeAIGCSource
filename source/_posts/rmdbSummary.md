@@ -24,15 +24,5 @@ top: true
 + {% post_link 'distributedDatabase'  %}
 + {% post_link 'distributedDatabaseCompare'  %}
 
-##### 存储引擎
-+ {% post_link 'lsmTreeKeyValueSeparation'  %}
-+ {% post_link 'lsmTreeCompaction'  %}
-
-+ {% post_link 'paperlsmTreeSurvey'  %}
-+ {% post_link 'hbaselsmTree'  %} 
-+ {% post_link 'rocksdb'  %} 
-+ {% post_link 'rocksdbLsm'  %}  
-+ {% post_link 'rocksdbSST'  %}  
-
 
 

@@ -12,6 +12,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 ## Rocksdb SST 类型[1][2]
 
 + BlockBasedTable [本文重点讨论]    
@@ -40,9 +43,16 @@ Data is stored in fixed-sized blocks, which can be compressed and encoded for ef
 索引块用于查找包含指定key的数据块。是一种基于**二分搜索**的数据结构。一个文件可能包含一个索引块，也可能包含一组分区索引块，这取决于使用配置。即存在全局索引与分区索引两种索引方式。
 
 
+
+### SSTable的数据检索过程 [6]
+
+{% asset_img querySST.jpg %}
+
 # 参考
+
 1. [A Tutorial of RocksDB SST formats](https://github.com/facebook/rocksdb/wiki/A-Tutorial-of-RocksDB-SST-formats)
 2. [Rocksdb BlockBasedTable Format](https://github.com/facebook/rocksdb/wiki/Rocksdb-BlockBasedTable-Format)
 3. [RocksDB基本架构与原理介绍](https://www.yii666.com/blog/334918.html)
-4. [leveldb  sstable](https://leveldb-handbook.readthedocs.io/zh/latest/sstable.html) *** 
+4. [leveldb  sstable](https://leveldb-handbook.readthedocs.io/zh/latest/sstable.html) ***  未
 5. [RocksDB block-based SST 文件详解](https://www.jianshu.com/p/d6ce3593a69e) *** 
+6. [浅析RocksDB的SSTable格式](https://zhuanlan.zhihu.com/p/37633790)
