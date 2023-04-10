@@ -22,7 +22,12 @@ top: true
 
 ## 分布式
 + {% post_link 'distributedDatabase'  %}
+
 + {% post_link 'distributedDatabaseCompare'  %}
+
++ {% post_link 'tikvMVCCTransaction'  %}
+
+  
 
 
 
