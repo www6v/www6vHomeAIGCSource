@@ -40,6 +40,7 @@ categories:
 4. [Cockroach  HLC](https://github.com/cockroachdb/cockroach/blob/master/pkg/util/hlc/hlc.go)
 5. 《云原生数据库 原理与实践》 8.1.3
 6. [TiDB 新特性漫谈：悲观事务](https://cn.pingcap.com/blog/pessimistic-transaction-the-new-features-of-tidb)
+7. {% post_link 'distributedDatabaseGlobalTime' %}  self
 
 
 

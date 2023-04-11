@@ -28,7 +28,7 @@ categories:
 | [Low-Water Mark](https://martinfowler.com/articles/patterns-of-distributed-systems/low-watermark.html) *** | [低水位标记（Low-Water Mark）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/low-water-mark.md) |                                                              |
 | [High-Water Mark](https://martinfowler.com/articles/patterns-of-distributed-systems/high-watermark.html) *** | [高水位标记（High-Water Mark）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/high-water-mark.md) | kafka HW <br>{% post_link 'flinkWatermarkWindow' %}          |
 | [HeartBeat](https://martinfowler.com/articles/patterns-of-distributed-systems/heartbeat.html) *** | [心跳（HeartBeat）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/heartbeat.md) | {% post_link 'crashDetect' %}                                |
-| [Leader and Followers](https://martinfowler.com/articles/patterns-of-distributed-systems/leader-follower.html) ***<br>leader election | [领导者和追随者（Leader and Followers）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/leader-and-followers.md) | {% post_link 'kafka-election' %} <br> {% post_link 'raft' %} <br>{% post_link 'zab' %}<br>es 选主[todo] |
+| [Leader and Followers](https://martinfowler.com/articles/patterns-of-distributed-systems/leader-follower.html) ***<br>leader election | [领导者和追随者（Leader and Followers）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/leader-and-followers.md) | {% post_link 'kafka-election' %} <br> {% post_link 'raft' %} <br>{% post_link 'zookeeperZab' %}<br>es 选主[todo] |
 | [Follower Reads](https://martinfowler.com/articles/patterns-of-distributed-systems/follower-reads.html) *** | [追随者读取（Follower Reads）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/follower-reads.md) |                                                              |
 | [Segmented Log](https://martinfowler.com/articles/patterns-of-distributed-systems/log-segmentation.html) *** | [分段日志（Segmented Log）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/segmented-log.md) | Kafka segment                                                |
 | [Request Pipeline](https://martinfowler.com/articles/patterns-of-distributed-systems/request-pipeline.html) | [请求管道（Request Pipeline）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/request-pipeline.md) |                                                              |
@@ -48,11 +48,11 @@ categories:
 
 
 ### Kubernetes or Kafka Control Plane
-| 英文                                                         | 中文                                                         | Example & 扩展                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------- |
-| [Lease](https://martinfowler.com/articles/patterns-of-distributed-systems/time-bound-lease.html) *** | [租约（Lease）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/lease.md) | {% post_link 'crashDetect' %} <br>ETCD |
-| [State Watch](https://martinfowler.com/articles/patterns-of-distributed-systems/state-watch.html) *** | [状态监控（State Watch）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/state-watch.md) |                                        |
-| [Idempotent Receiver](https://martinfowler.com/articles/patterns-of-distributed-systems/idempotent-receiver.html) | [幂等接收者（Idempotent Receiver）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/idempotent-receiver.md) |                                        |
+| 英文                                                         | 中文                                                         | Example & 扩展                                               |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Lease](https://martinfowler.com/articles/patterns-of-distributed-systems/time-bound-lease.html) *** | [租约（Lease）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/lease.md) | {% post_link 'crashDetect' %} <br>ETCD  Lease <br/>K8s Lease<br />Eureka Lease |
+| [State Watch](https://martinfowler.com/articles/patterns-of-distributed-systems/state-watch.html) *** | [状态监控（State Watch）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/state-watch.md) |                                                              |
+| [Idempotent Receiver](https://martinfowler.com/articles/patterns-of-distributed-systems/idempotent-receiver.html) | [幂等接收者（Idempotent Receiver）](https://github.com/www6v/patterns-of-distributed-systems/blob/master/content/idempotent-receiver.md) |                                                              |
 
 
 
@@ -88,7 +88,6 @@ categories:
 
 ## 参考
 
-[Patterns of Distributed Systems](https://martinfowler.com/articles/patterns-of-distributed-systems/)
-
+1. [Patterns of Distributed Systems](https://martinfowler.com/articles/patterns-of-distributed-systems/)
 [《分布式系统模式》中文版](https://github.com/www6v/patterns-of-distributed-systems)
-
+2. {% post_link 'distributedDatabaseGlobalTime' %}  self

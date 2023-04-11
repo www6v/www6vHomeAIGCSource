@@ -20,7 +20,9 @@ categories:
 
 ## 参考
 
-<<分布式数据库30讲>> 
+1. <<分布式数据库30讲>> 
+
+2. {% post_link 'distributedDatabaseGlobalTime' %}  self
 
 
 
