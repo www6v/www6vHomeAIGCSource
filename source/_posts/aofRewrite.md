@@ -5,7 +5,7 @@ tags:
   - redis
 categories: 
   - 数据库
-  - 非关系型  
+  - KV 
   - Redis  
 ---
 

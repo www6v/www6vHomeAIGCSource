@@ -5,7 +5,7 @@ tags:
   - redis
 categories: 
   - 数据库
-  - 非关系型  
+  - KV  
   - Redis
 ---
 
@@ -311,7 +311,6 @@ int rdbSaveToSlavesSockets(rdbSaveInfo *rsi) {
 ## 参考：
 18 | 如何生成和解读RDB文件?  
 《Redis源码剖析与实战》
-
 
 
 

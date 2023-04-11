@@ -5,7 +5,7 @@ tags:
   - Redis
 categories: 
   - 数据库
-  - 非关系型  
+  - KV 
   - Redis
 ---
 
@@ -23,7 +23,7 @@ categories:
 ##### 多路复用
 {% asset_img redis-multiplex.png  基于多路复用的Redis高性能IO模型  %}
 
-                               
+​                               
 
 Linux 中的 IO 多路复用机制是指一个线程处理多个 IO 流，就是我们经常听到的 select/epoll 机制。简单来说，在 Redis 只运行单线程的情况下，**该机制允许内核中，同 时存在多个监听套接字和已连接套接字**。内核会一直监听这些套接字上的连接请求或数据 请求。一旦有请求到达，就会交给 Redis 线程处理，这就实现了一个 Redis 线程处理多个 IO 流的效果。
 
@@ -50,7 +50,6 @@ read，write事件（work线程）
 [Netty源码解读（三）Channel与Pipeline](http://ifeve.com/channel-pipeline/)
 https://www6v.github.io/www6vHomeHexo/2015/08/23/nettySummary/
 [epoll使用详解：epoll_create、epoll_ctl、epoll_wait、close](https://www.cnblogs.com/xuewangkai/p/11158576.html)
-
 
 
 

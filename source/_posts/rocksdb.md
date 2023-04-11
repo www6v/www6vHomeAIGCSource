@@ -1,11 +1,11 @@
 ---
-title: RocksDB
+title: RocksDB 总结
 date: 2022-01-29 22:48:17
 tags:
   - RocksDB
 categories: 
   - 数据库
-  - 非关系型  
+  - KV  
   - RocksDB
 ---
 
