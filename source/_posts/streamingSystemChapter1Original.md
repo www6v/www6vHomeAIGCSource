@@ -542,3 +542,659 @@ let’s finish up one more useful piece of background: common data processing
 patterns.
 
 {%  enddetails   %}
+
+
+
+
+
+{% details 点击  原文  %}
+
+# **Data Processing Patterns**
+
+At this point, we have enough background established that we can begin
+
+looking at the core types of usage patterns common across bounded and
+
+unbounded data processing today. We look at both types of processing and,
+
+where relevant, within the context of the two main types of engines we care
+
+about (batch and streaming, where in this context, I’m essentially lumping
+
+microbatch in with streaming because the differences between the two aren’t
+
+terribly important at this level).
+
+### **Bounded Data**
+
+Processing bounded data is conceptually quite straightforward, and likely
+
+familiar to everyone. In Figure 1-2, we start out on the left with a dataset full
+
+of entropy. We run it through some data processing engine (typically batch,
+
+though a well-designed streaming engine would work just as well), such as
+
+MapReduce, and on the right side end up with a new structured dataset with
+
+greater inherent value.
+
+*Figure 1-2. Bounded data processing with a classic batch engine. A finite pool of unstructured data on*
+
+*the left is run through a data processing engine, resulting in corresponding structured data on the right.*
+
+Though there are of course infinite variations on what you can actually
+
+calculate as part of this scheme, the overall model is quite simple. Much more
+
+interesting is the task of processing an unbounded dataset. Let’s now look at
+
+the various ways unbounded data are typically processed, beginning with the
+
+approaches used with traditional batch engines and then ending up with the
+
+approaches you can take with a system designed for unbounded data, such as
+
+most streaming or microbatch engines.
+
+### **Unbounded Data: Batch**
+
+Batch engines, though not explicitly designed with unbounded data in mind,
+
+have nevertheless been used to process unbounded datasets since batch
+
+systems were first conceived. As you might expect, such approaches revolve
+
+around slicing up the unbounded data into a collection of bounded datasets
+
+appropriate for batch processing.
+
+**Fixed windows**
+
+The most common way to process an unbounded dataset using repeated runs
+
+of a batch engine is by windowing the input data into fixed-size windows and
+
+then processing each of those windows as a separate, bounded data source
+
+(sometimes also called *tumbling windows*), as in Figure 1-3. Particularly for
+
+input sources like logs, for which events can be written into directory and file
+
+hierarchies whose names encode the window they correspond to, this sort of
+
+thing appears quite straightforward at first blush because you’ve essentially
+
+performed the time-based shuffle to get data into the appropriate event-time
+
+windows ahead of time.
+
+In reality, however, most systems still have a completeness problem to deal
+
+with (What if some of your events are delayed en route to the logs due to a
+
+network partition? What if your events are collected globally and must be
+
+transferred to a common location before processing? What if your events
+
+come from mobile devices?), which means some sort of mitigation might be
+
+necessary (e.g., delaying processing until you’re sure all events have been
+
+collected or reprocessing the entire batch for a given window whenever data
+
+arrive late).
+
+*Figure 1-3. Unbounded data processing via ad hoc fixed windows with a classic batch engine. An*
+
+*unbounded dataset is collected up front into finite, fixed-size windows of bounded data that are then*
+
+*processed via successive runs a of classic batch engine.*
+
+**Sessions**
+
+This approach breaks down even more when you try to use a batch engine to
+
+process unbounded data into more sophisticated windowing strategies, like
+
+sessions. Sessions are typically defined as periods of activity (e.g., for a
+
+specific user) terminated by a gap of inactivity. When calculating sessions
+
+using a typical batch engine, you often end up with sessions that are split
+
+across batches, as indicated by the red marks in Figure 1-4. We can reduce the
+
+number of splits by increasing batch sizes, but at the cost of increased latency.
+
+Another option is to add additional logic to stitch up sessions from previous
+
+runs, but at the cost of further complexity.
+
+*Figure 1-4. Unbounded data processing into sessions via ad hoc fixed windows with a classic batch*
+
+*engine. An unbounded dataset is collected up front into finite, fixed-size windows of bounded data that*
+
+*are then subdivided into dynamic session windows via successive runs a of classic batch engine.*
+
+Either way, using a classic batch engine to calculate sessions is less than
+
+ideal. A nicer way would be to build up sessions in a streaming manner,
+
+which we look at later on.
+
+
+
+{%  enddetails   %}
+
+
+
+
+
+{% details 点击  原文  %}
+
+### **Unbounded Data: Streaming**
+
+Contrary to the ad hoc nature of most batch-based unbounded data processing
+
+approaches, streaming systems are built for unbounded data. As we talked
+
+about earlier, for many real-world, distributed input sources, you not only find
+
+yourself dealing with unbounded data, but also data such as the following:
+
+- Highly unordered with respect to event times, meaning that you need
+
+some sort of time-based shuffle in your pipeline if you want to
+
+analyze the data in the context in which they occurred.
+
+- Of varying event-time skew, meaning that you can’t just assume
+
+you’ll always see most of the data for a given event time *X* within
+
+some constant epsilon of time *Y*.
+
+There are a handful of approaches that you can take when dealing with data
+
+that have these characteristics. I generally categorize these approaches into
+
+four groups: time-agnostic, approximation, windowing by processing time,
+
+and windowing by event time.
+
+Let’s now spend a little bit of time looking at each of these approaches.
+
+**Time-agnostic**
+
+Time-agnostic processing is used for cases in which time is essentially
+
+irrelevant; that is, all relevant logic is data driven. Because everything about
+
+such use cases is dictated by the arrival of more data, there’s really nothing
+
+special a streaming engine has to support other than basic data delivery. As a
+
+result, essentially all streaming systems in existence support time-agnostic use
+
+cases out of the box (modulo system-to-system variances in consistency
+
+guarantees, of course, if you care about correctness). Batch systems are also
+
+well suited for time-agnostic processing of unbounded data sources by simply
+
+chopping the unbounded source into an arbitrary sequence of bounded
+
+datasets and processing those datasets independently. We look at a couple of
+
+concrete examples in this section, but given the straightforwardness of
+
+handling time-agnostic processing (from a temporal perspective at least), we
+
+won’t spend much more time on it beyond that.
+
+***Filtering***
+
+A very basic form of time-agnostic processing is filtering, an example of
+
+which is rendered in Figure 1-5. Imagine that you’re processing web traffic
+
+logs and you want to filter out all traffic that didn’t originate from a specific
+
+domain. You would look at each record as it arrived, see if it belonged to the
+
+domain of interest, and drop it if not. Because this sort of thing depends only
+
+on a single element at any time, the fact that the data source is unbounded,
+
+unordered, and of varying event-time skew is irrelevant.
+
+*Figure 1-5. Filtering unbounded data. A collection of data (flowing left to right) of varying types is*
+
+*filtered into a homogeneous collection containing a single type.*
+
+***Inner joins***
+
+Another time-agnostic example is an inner join, diagrammed in Figure 1-6.
+
+When joining two unbounded data sources, if you care only about the results
+
+of a join when an element from both sources arrive, there’s no temporal
+
+element to the logic. Upon seeing a value from one source, you can simply
+
+buffer it up in persistent state; only after the second value from the other
+
+source arrives do you need to emit the joined record. (In truth, you’d likely
+
+want some sort of garbage collection policy for unemitted partial joins, which
+
+would likely be time based. But for a use case with little or no uncompleted
+
+joins, such a thing might not be an issue.)
+
+*Figure 1-6. Performing an inner join on unbounded data. Joins are produced when matching elements*
+
+*from both sources are observed.*
+
+Switching semantics to some sort of outer join introduces the data
+
+completeness problem we’ve talked about: after you’ve seen one side of the
+
+join, how do you know whether the other side is ever going to arrive or not?
+
+Truth be told, you don’t, so you need to introduce some notion of a timeout,
+
+which introduces an element of time. That element of time is essentially a
+
+form of windowing, which we’ll look at more closely in a moment.
+
+**Approximation algorithms**
+
+The second major category of approaches is approximation algorithms, such
+
+as approximate Top-N, streaming k-means, and so on. They take an
+
+unbounded source of input and provide output data that, if you squint at them,
+
+look more or less like what you were hoping to get, as in Figure 1-7. The
+
+upside of approximation algorithms is that, by design, they are low overhead
+
+and designed for unbounded data. The downsides are that a limited set of
+
+them exist, the algorithms themselves are often complicated (which makes it
+
+difficult to conjure up new ones), and their approximate nature limits their
+
+utility.
+
+*Figure 1-7. Computing approximations on unbounded data. Data are run through a complex algorithm,*
+
+*yielding output data that look more or less like the desired result on the other side.*
+
+It’s worth noting that these algorithms typically do have some element of time
+
+in their design (e.g., some sort of built-in decay). And because they process
+
+elements as they arrive, that time element is usually processing-time based.
+
+This is particularly important for algorithms that provide some sort of
+
+provable error bounds on their approximations. If those error bounds are
+
+predicated on data arriving in order, they mean essentially nothing when you
+
+feed the algorithm unordered data with varying event-time skew. Something
+
+to keep in mind.
+
+Approximation algorithms themselves are a fascinating subject, but as they
+
+are essentially another example of time-agnostic processing (modulo the
+
+temporal features of the algorithms themselves), they’re quite straightforward
+
+to use and thus not worth further attention, given our current focus.
+
+
+
+{%  enddetails   %}
+
+
+
+
+
+{% details 点击  原文  %}
+
+**Windowing**
+
+The remaining two approaches for unbounded data processing are both
+
+variations of windowing. Before diving into the differences between them, I
+
+should make it clear exactly what I mean by windowing, insomuch as we
+
+touched on it only briefly in the previous section. Windowing is simply the
+
+notion of taking a data source (either unbounded or bounded), and chopping it
+
+up along temporal boundaries into finite chunks for processing. Figure 1-8
+
+shows three different windowing patterns.
+
+*Figure 1-8. Windowing strategies. Each example is shown for three different keys, highlighting the*
+
+*difference between aligned windows (which apply across all the data) and unaligned windows (which*
+
+*apply across a subset of the data).*
+
+Let’s take a closer look at each strategy:
+
+- Fixed windows (aka tumbling windows)
+
+We discussed fixed windows earlier. Fixed windows slice time into
+
+segments with a fixed-size temporal length. Typically (as shown in
+
+Figure 1-9), the segments for fixed windows are applied uniformly across
+
+the entire dataset, which is an example of *aligned* windows. In some
+
+cases, it’s desirable to phase-shift the windows for different subsets of the
+
+data (e.g., per key) to spread window completion load more evenly over
+
+time, which instead is an example of *unaligned* windows because they
+
+vary across the data.
+
+- Sliding windows (aka hopping windows)
+
+A generalization of fixed windows, sliding windows are defined by a
+
+fixed length and a fixed period. If the period is less than the length, the
+
+windows overlap. If the period equals the length, you have fixed
+
+windows. And if the period is greater than the length, you have a weird
+
+sort of sampling window that looks only at subsets of the data over time.
+
+As with fixed windows, sliding windows are typically aligned, though
+
+they can be unaligned as a performance optimization in certain use cases.
+
+Note that the sliding windows in Figure 1-8 are drawn as they are to give
+
+a sense of sliding motion; in reality, all five windows would apply across
+
+the entire dataset.
+
+- Sessions
+
+An example of dynamic windows, sessions are composed of sequences of
+
+events terminated by a gap of inactivity greater than some timeout.
+
+Sessions are commonly used for analyzing user behavior over time, by
+
+grouping together a series of temporally related events (e.g., a sequence of
+
+videos viewed in one sitting). Sessions are interesting because their
+
+lengths cannot be defined a priori; they are dependent upon the actual data
+
+involved. They’re also the canonical example of unaligned windows
+
+because sessions are practically never identical across different subsets of
+
+data (e.g., different users).
+
+The two domains of time we discussed earlier (processing time and event
+
+time) are essentially the two we care about. Windowing makes sense in both
+
+domains, so let’s look at each in detail and see how they differ. Because
+
+processing-time windowing has historically been more common, we’ll start
+
+there.
+
+{%  enddetails   %}
+
+
+
+{% details 点击  原文  %}
+
+***Windowing by processing time***
+
+When windowing by processing time, the system essentially buffers up
+
+incoming data into windows until some amount of processing time has
+
+passed. For example, in the case of five-minute fixed windows, the system
+
+would buffer data for five minutes of processing time, after which it would
+
+treat all of the data it had observed in those five minutes as a window and
+
+send them downstream for processing.
+
+*Figure 1-9. Windowing into fixed windows by processing time. Data are collected into windows based*
+
+*on the order they arrive in the pipeline.*
+
+There are a few nice properties of processing-time windowing:
+
+- It’s simple. The implementation is extremely straightforward because
+
+you never worry about shuffling data within time. You just buffer
+
+things as they arrive and send them downstream when the window
+
+closes.
+
+- Judging window completeness is straightforward. Because the
+
+system has perfect knowledge of whether all inputs for a window
+
+have been seen, it can make perfect decisions about whether a given
+
+window is complete. This means there is no need to be able to deal
+
+with “late” data in any way when windowing by processing time.
+
+- If you’re wanting to infer information about the source *as it is*
+
+*observed*, processing-time windowing is exactly what you want.
+
+Many monitoring scenarios fall into this category. Imagine tracking
+
+the number of requests per second sent to a global-scale web service.
+
+Calculating a rate of these requests for the purpose of detecting
+
+outages is a perfect use of processing-time windowing.
+
+Good points aside, there is one very big downside to processing-time
+
+windowing: *if the data in question have event times associated with them,*
+
+*those data must arrive in event-time order if the processing-time windows are*
+
+*to reflect the reality of when those events actually happened.* Unfortunately,
+
+event-time ordered data are uncommon in many real-world, distributed input
+
+sources.
+
+As a simple example, imagine any mobile app that gathers usage statistics for
+
+later processing. For cases in which a given mobile device goes offline for
+
+any amount of time (brief loss of connectivity, airplane mode while flying
+
+across the country, etc.), the data recorded during that period won’t be
+
+uploaded until the device comes online again. This means that data might
+
+arrive with an event-time skew of minutes, hours, days, weeks, or more. It’s
+
+essentially impossible to draw any sort of useful inferences from such a
+
+dataset when windowed by processing time.
+
+As another example, many distributed input sources might *seem* to provide
+
+event-time ordered (or very nearly so) data when the overall system is
+
+healthy. Unfortunately, the fact that event-time skew is low for the input
+
+source when healthy does not mean it will always stay that way. Consider a
+
+global service that processes data collected on multiple continents. If network
+
+issues across a bandwidth-constrained transcontinental line (which, sadly, are
+
+surprisingly common) further decrease bandwidth and/or increase latency,
+
+suddenly a portion of your input data might begin arriving with much greater
+
+skew than before. If you are windowing those data by processing time, your
+
+windows are no longer representative of the data that actually occurred within
+
+them; instead, they represent the windows of time as the events arrived at the
+
+processing pipeline, which is some arbitrary mix of old and current data.
+
+What we really want in both of those cases is to window data by their event
+
+times in a way that is robust to the order of arrival of events. What we really
+
+want is event-time windowing.
+
+***Windowing by event time***
+
+Event-time windowing is what you use when you need to observe a data
+
+source in finite chunks that reflect the times at which those events actually
+
+happened. It’s the gold standard of windowing. Prior to 2016, most data
+
+processing systems in use lacked native support for it (though any system
+
+with a decent consistency model, like Hadoop or Spark Streaming 1.x, could
+
+act as a reasonable substrate for building such a windowing system). I’m
+
+happy to say that the world of today looks very different, with multiple
+
+systems, from Flink to Spark to Storm to Apex, natively supporting event
+
+time windowing of some sort.
+
+Figure 1-10 shows an example of windowing an unbounded source into one
+
+hour fixed windows.
+
+*Figure 1-10. Windowing into fixed windows by event time. Data are collected into windows based on*
+
+*the times at which they occurred. The black arrows call out example data that arrived in processing*
+
+*time windows that differed from the event-time windows to which they belonged.*
+
+The black arrows in Figure 1-10 call out two particularly interesting pieces of
+
+data. Each arrived in processing-time windows that did not match the event
+
+time windows to which each bit of data belonged. As such, if these data had
+
+been windowed into processing-time windows for a use case that cared about
+
+event times, the calculated results would have been incorrect. As you would
+
+expect, event-time correctness is one nice thing about using event-time
+
+windows.
+
+Another nice thing about event-time windowing over an unbounded data
+
+source is that you can create dynamically sized windows, such as sessions,
+
+without the arbitrary splits observed when generating sessions over fixed
+
+windows (as we saw previously in the sessions example from “Unbounded
+
+Data: Streaming”), as demonstrated in Figure 1-11.
+
+*Figure 1-11. Windowing into session windows by event time. Data are collected into session windows*
+
+*capturing bursts of activity based on the times that the corresponding events occurred. The black*
+
+*arrows again call out the temporal shuffle necessary to put the data into their correct event-time*
+
+*locations.*
+
+Of course, powerful semantics rarely come for free, and event-time windows
+
+are no exception. Event-time windows have two notable drawbacks due to the
+
+fact that windows must often live longer (in processing time) than the actual
+
+length of the window itself:
+
+- Buffering
+
+Due to extended window lifetimes, more buffering of data is required.
+
+Thankfully, persistent storage is generally the cheapest of the resource
+
+types most data processing systems depend on (the others being primarily
+
+CPU, network bandwidth, and RAM). As such, this problem is typically
+
+much less of a concern than you might think when using any well
+
+designed data processing system with strongly consistent persistent state
+
+and a decent in-memory caching layer. Also, many useful aggregations do
+
+not require the entire input set to be buffered (e.g., sum or average), but
+
+instead can be performed incrementally, with a much smaller,
+
+intermediate aggregate stored in persistent state.
+
+- Completeness
+
+Given that we often have no good way of knowing when we’ve seen all of
+
+the data for a given window, how do we know when the results for the
+
+window are ready to materialize? In truth, we simply don’t. For many
+
+types of inputs, the system can give a reasonably accurate heuristic
+
+estimate of window completion via something like the watermarks found
+
+in MillWheel, Cloud Dataflow, and Flink (which we talk about more in
+
+Chapters 3 and 4). But for cases in which absolute correctness is
+
+paramount (again, think billing), the only real option is to provide a way
+
+for the pipeline builder to express when they want results for windows to
+
+be materialized and how those results should be refined over time.
+
+Dealing with window completeness (or lack thereof) is a fascinating topic
+
+but one perhaps best explored in the context of concrete examples, which
+
+we look at next.
+
+
+
+{%  enddetails   %}
