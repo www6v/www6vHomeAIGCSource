@@ -59,8 +59,8 @@ categories:
        max_heigh_.store(height, ... release)  不能指令重排
        max_heigh_.load()
 
-## RocksDB 写/读流程 
-+ 写流程
+## RocksDB 写/读流程 [5]
++ 写流程 
 + 读流程
 
 ## RocksDB可改进点[4] 
@@ -94,3 +94,4 @@ LSM-Tree 的读操作需要从新到旧（从上到下）一层一层查找，�
 2. [RocksDB 是什么？解决了什么问题？是怎么解决的？解决了哪些具体问题？](https://www.bilibili.com/video/BV1Jr4y1W7Wn?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036) bili  ***
 3. [RocksDB 简介](https://docs.pingcap.com/zh/tidb/dev/rocksdb-overview)
 4. [LSM-Tree 的写放大写放大、读放大、空间放大RockDB 写放大简单分析参考文档](https://cloud.tencent.com/developer/article/1352666?ivk_sa=1024320u)
+5. {% post_link 'rocksdbLsm'  %} self

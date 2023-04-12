@@ -1,5 +1,5 @@
 ---
-title: NoSQL-Redis-汇总
+title: Redis[KV]-汇总
 date: 2021-02-07 12:13:22
 tags:
   - 汇总
