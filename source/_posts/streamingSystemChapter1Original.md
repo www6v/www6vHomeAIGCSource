@@ -1,5 +1,5 @@
 ---
-title: 《Streaming System》- Chapter 1. Streaming 101
+title: 《Streaming System》- Chapter 1. Streaming 101[完整]
 date: 2000-03-18 19:03:13
 tags: 
   - Streaming System
@@ -12,6 +12,52 @@ categories:
 
 ## 目录
 <!-- toc -->
+
+{% details 点击  原文  %}
+
+Streaming data processing is a big deal in big data these days, and for good
+reasons; among them are the following:
++ Businesses crave ever-more timely insights into their data, and
+switching to streaming is a good way to achieve lower latency
++ The massive, unbounded datasets that are increasingly common in
+modern business are more easily tamed using a system designed for
+such never-ending volumes of data.
++ Processing data as they arrive spreads workloads out more evenly
+over time, yielding more consistent and predictable consumption of
+resources.
+Despite this business-driven surge of interest in streaming, streaming systems
+long remained relatively immature compared to their batch brethren. It’s only
+recently that the tide has swung conclusively in the other direction. In my
+more bumptious moments, I hope that might be in small part due to the solid
+dose of goading I originally served up in my “Streaming 101” and “Streaming
+102” blog posts (on which the first few chapters of this book are rather
+obviously based). But in reality, there’s also just a lot of industry interest in
+seeing streaming systems mature and a lot of smart and active folks out there
+who enjoy building them.
+Even though the battle for general streaming advocacy has been, in my
+opinion, effectively won, I’m still going to present my original arguments
+from “Streaming 101” more or less unaltered. For one, they’re still very
+applicable today, even if much of industry has begun to heed the battle cry.
+And for two, there are a lot of folks out there who still haven’t gotten the
+memo; this book is an extended attempt at getting these points across.
+To begin, I cover some important background information that will help
+frame the rest of the topics I want to discuss. I do this in three specific
+sections:
++ Terminology
+To talk precisely about complex topics requires precise definitions of
+terms. For some terms that have overloaded interpretations in current use,
+I’ll try to nail down exactly what I mean when I say them.
++ Capabilities
+I remark on the oft-perceived shortcomings of streaming systems. I also
+propose the frame of mind that I believe data processing system builders
+need to adopt in order to address the needs of modern data consumers
+going forward.
++ Time domains
+I introduce the two primary domains of time that are relevant in data
+processing, show how they relate, and point out some of the difficulties
+these two domains impose.
+
+{%  enddetails   %}
 
 
 
@@ -1196,5 +1242,191 @@ but one perhaps best explored in the context of concrete examples, which
 we look at next.
 
 
+
+{%  enddetails   %}
+
+
+
+
+
+{% details 点击  原文  %}
+
+# **Summary**
+
+Whew! That was a lot of information. If you’ve made it this far, you are to be
+
+commended! But we are only just getting started. Before forging ahead to
+
+looking in detail at the Beam Model approach, let’s briefly step back and
+
+recap what we’ve learned so far. In this chapter, we’ve done the following:
+
+- Clarified terminology, focusing the definition of “streaming” to refer
+
+to systems built with unbounded data in mind, while using more
+
+descriptive terms like approximate/speculative results for distinct
+
+concepts often categorized under the “streaming” umbrella.
+
+Additionally, we highlighted two important dimensions of large
+
+scale datasets: cardinality (i.e., bounded versus unbounded) and
+
+encoding (i.e., table versus stream), the latter of which will consume
+
+much of the second half of the book.
+
+- Assessed the relative capabilities of well-designed batch and
+
+streaming systems, positing streaming is in fact a strict superset of
+
+batch, and that notions like the Lambda Architecture, which are
+
+predicated on streaming being inferior to batch, are destined for
+
+retirement as streaming systems mature.
+
+- Proposed two high-level concepts necessary for streaming systems to
+
+both catch up to and ultimately surpass batch, those being
+
+correctness and tools for reasoning about time, respectively.
+
+- Established the important differences between event time and
+
+processing time, characterized the difficulties those differences
+
+impose when analyzing data in the context of when they occurred,
+
+and proposed a shift in approach away from notions of completeness
+
+and toward simply adapting to changes in data over time.
+
+- Looked at the major data processing approaches in common use
+
+today for bounded and unbounded data, via both batch and streaming
+
+engines, roughly categorizing the unbounded approaches into: time
+
+agnostic, approximation, windowing by processing time, and
+
+windowing by event time.
+
+Next up, we dive into the details of the Beam Model, taking a conceptual look
+
+at how we’ve broken up the notion of data processing across four related
+
+axes: what, where, when, and how. We also take a detailed look at processing
+
+a simple, concrete example dataset across multiple scenarios, highlighting the
+
+plurality of use cases enabled by the Beam Model, with some concrete APIs
+
+to ground us in reality. These examples will help drive home the notions of
+
+event time and processing time introduced in this chapter while additionally
+
+exploring new concepts such as watermarks.
+
+{%  enddetails   %}
+
+
+
+
+
+{% details 点击  原文  %}
+
+1. For completeness, it’s perhaps worth calling out that this definition includes
+
+both true streaming as well as microbatch implementations. For those of you
+
+who aren’t familiar with microbatch systems, they are streaming systems that
+
+use repeated executions of a batch processing engine to process unbounded
+
+data. Spark Streaming is the canonical example in the industry.
+
+1. Readers familiar with my original “Streaming 101” article might recall that I
+
+rather emphatically encouraged the abandonment of the term “stream” when
+
+referring to datasets. That never caught on, which I initially thought was due
+
+to its catchiness and pervasive existing usage. In retrospect, however, I think I
+
+was simply wrong. There actually is great value in distinguishing between the
+
+two different types of dataset constitutions: tables and streams. Indeed, most
+
+of the second half of this book is dedicated to understanding the relationship
+
+between those two.
+
+1. If you’re unfamiliar with what I mean when I say *exactly-once*, it’s referring
+
+to a specific type of consistency guarantee that certain data processing
+
+frameworks provide. Consistency guarantees are typically bucketed into three
+
+main classes: at-most-once processing, at-least-once processing, and exactly
+
+once processing. Note that the names in use here refer to the effective
+
+semantics as observed within the outputs generated by the pipeline, not the
+
+actual number of times a pipeline might process (or attempt to process) any
+
+given record. For this reason, the term *effectively-once* is sometimes used
+
+instead of exactly-once, since it’s more representative of the underlying
+
+nature of things. Reuven covers these concepts in much more detail in
+
+Chapter 5.
+
+1. Since the original publication of “Streaming 101,” numerous individuals
+
+have pointed out to me that it would have been more intuitive to place
+
+processing time on the x-axis and event time on the y-axis. I do agree that
+
+swapping the two axes would initially feel more natural, as event time seems
+
+like the dependent variable to processing time’s independent variable.
+
+However, because both variables are monotonic and intimately related,
+
+they’re effectively interdependent variables. So I think from a technical
+
+perspective you just have to pick an axis and stick with it. Math is confusing
+
+(especially outside of North America, where it suddenly becomes plural and
+
+gangs up on you).
+
+1. This result really shouldn’t be surprising (but was for me, hence why I’m
+
+pointing it out), because we’re effectively creating a right triangle with the
+
+ideal line when measuring the two types of skew/lag. Maths are cool.
+
+1. We look at aligned fixed windows in detail in Chapter 2, and unaligned
+
+fixed windows in Chapter 4.
+
+1. If you poke around enough in the academic literature or SQL-based
+
+streaming systems, you’ll also come across a third windowing time domain:
+
+*tuple-based windowing* (i.e., windows whose sizes are counted in numbers of
+
+elements). However, tuple-based windowing is essentially a form of
+
+processing-time windowing in which elements are assigned monotonically
+
+increasing timestamps as they arrive at the system. As such, we won’t discuss
+
+tuple-based windowing in detail any further.
 
 {%  enddetails   %}
