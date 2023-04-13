@@ -1,5 +1,5 @@
 ---
-title: 《Streaming System》-Chapter 5. Exactly-Once and Side Effects
+title: 《Streaming System》-Chapter 5. Exactly-Once and Side Effects [完整]
 date: 2000-03-16 19:27:27
 tags: 
   - Streaming System
@@ -12,6 +12,36 @@ categories:
 
 ## 目录
 <!-- toc -->
+
+
+{% details   点击   原文 %}
+We now shift from discussing programming models and APIs to the systems
+
+that implement them. A model and API allows users to describe what they
+
+want to compute. Actually running the computation accurately at scale
+
+requires a system—usually a distributed system.
+
+In this chapter, we focus on how an implementing system can correctly
+
+implement the Beam Model to produce accurate results. Streaming systems
+
+often talk about *exactly-once processing*; that is, ensuring that every record is
+
+processed exactly one time. We will explain what we mean by this, and how
+
+it might be implemented.
+
+As a motivating example, this chapter focuses on techniques used by Google
+
+Cloud Dataflow to efficiently guarantee exactly-once processing of records.
+
+Toward the end of the chapter, we also look at techniques used by some other
+
+popular streaming systems to guarantee exactly once.
+
+{% enddetails %}
 
 
 {% details 点击  原文  %}
@@ -791,3 +821,506 @@ annotation, @RequiresStableInput, and the system would then ensure stable
 input to that transform.
 
 {%  enddetails   %}
+
+
+
+
+
+{% details   点击   原文 %}
+
+# **Use Cases**
+
+To illustrate, let’s examine some built-in sources and sinks to see how they
+
+implement the aforementioned patterns.
+
+### **Example Source: Cloud Pub/Sub**
+
+Cloud Pub/Sub is a fully managed, scalable, reliable, and low-latency system
+
+for delivering messages from publishers to subscribers. Publishers publish
+
+data on named topics, and subscribers create named subscriptions to pull data
+
+from these topics. Multiple subscriptions can be created for a single topic, in
+
+which case each subscription receives a full copy of all data published on the
+
+topic from the time of the subscription’s creation. Pub/Sub guarantees that
+
+records will continue to be delivered until they are acknowledged; however, a
+
+record might be delivered multiple times.
+
+Pub/Sub is intended for distributed use, so many publishing processes can
+
+publish to the same topic and many subscribing processes can pull from the
+
+same subscription. After a record has been pulled, the subscriber must
+
+acknowledge it within a certain amount of time, or that pull expires and
+
+Pub/Sub will redeliver that record to another of the subscribing processes.
+
+Although these characteristics make Pub/Sub highly scalable, they also make
+
+it a challenging source for a system like Dataflow. It’s impossible to know
+
+which record will be delivered to which worker, and in which order. What’s
+
+more, in the case of failure, redelivery might send the records to different
+
+workers in different orders!
+
+Pub/Sub provides a stable message ID with each message, and this ID will be
+
+the same upon redelivery. The Dataflow Pub/Sub source will default to using
+
+this ID for removing duplicates from Pub/Sub. (The records are shuffled
+
+based on a hash of the ID, so that repeated deliveries are always processed on
+
+the same worker.) In some cases, however, this is not quite enough. The
+
+user’s publishing process might retry publishes, and as a result introduce
+
+duplicates into Pub/Sub. From that service’s perspective these are unique
+
+records, so they will get unique record IDs. Dataflow’s Pub/Sub source
+
+allows the user to provide their own record IDs as a custom attribute. As long
+
+as the publisher sends the same ID when retrying, Dataflow will be able to
+
+detect these duplicates.
+
+Beam (and therefore Dataflow) provides a reference source implementation
+
+for Pub/Sub. However, keep in mind that this is *not* what Dataflow uses but
+
+rather an implementation used only by non-Dataflow runners (such as Apache
+
+Spark, Apache Flink, and the DirectRunner). For a variety of reasons,
+
+Dataflow handles Pub/Sub internally and does not use the public Pub/Sub
+
+source.
+
+### **Example Sink: Files**
+
+The streaming runner can use Beam’s file sinks (TextIO, AvroIO, and any
+
+other sink that implements FileBasedSink) to continuously output records to
+
+files. Example 5-3 provides an example use case.
+
+*Example 5-3. Windowed file writes*
+
+```
+c.apply(Window.<..>into(FixedWindows.of(Duration.standardMinutes(1))))
+.apply(TextIO.writeStrings().to(new MyNamePolicy()).withWindowedWrites());
+```
+
+The snippet in Example 5-3 writes 10 new files each minute, containing data
+
+from that window. MyNamePolicy is a user-written function that determines
+
+output filenames based on the shard and the window. You can also use
+
+triggers, in which case each trigger pane will be output as a new file.
+
+This process is implemented using a variant on the pattern in Example 5-3.
+
+Files are written out to temporary locations, and these temporary filenames
+
+are sent to a subsequent transform through a GroupByKey. After the
+
+GroupByKey is a finalize transform that atomically moves the temporary files
+
+into their final location. The pseudocode in Example 5-4 provides a sketch of
+
+how a consistent streaming file sink is implemented in Beam. (For more
+
+details, see FileBasedSink and WriteFiles in the Beam codebase.)
+
+*Example 5-4. File sink*
+
+```
+c
+// Tag each record with a random shard id.
+.apply("AttachShard", WithKeys.of(new RandomShardingKey(getNumShards())))
+// Group all records with the same shard.
+.apply("GroupByShard", GroupByKey.<..>())
+// For each window, write per-shard elements to a temporary file. This is the
+// non-deterministic side effect. If this DoFn is executed multiple times, it
+will
+// simply write multiple temporary files; only one of these will pass on through
+// to the Finalize stage.
+.apply("WriteTempFile", ParDo.of(new DoFn<..> {
+@ProcessElement
+public void processElement(ProcessContext c, BoundedWindow window) {
+// Write the contents of c.element() to a temporary file.
+// User-provided name policy used to generate a final filename.
+c.output(new FileResult()).
+}
+}))
+// Group the list of files onto a singleton key.
+.apply("AttachSingletonKey", WithKeys.<..>of((Void)null))
+.apply("FinalizeGroupByKey", GroupByKey.<..>create())
+// Finalize the files by atomically renaming them. This operation is idempotent.
+// Once this DoFn has executed once for a given FileResult, the temporary file
+// is gone, so any further executions will have no effect.
+.apply("Finalize", ParDo.of(new DoFn<..>, Void> {
+@ProcessElement
+public void processElement(ProcessContext c) {
+for (FileResult result : c.element()) {
+rename(result.getTemporaryFileName(), result.getFinalFilename());
+}
+}}));
+```
+
+You can see how the nonidempotent work is done in WriteTempFile. After
+
+the GroupByKey completes, the Finalize step will always see the same
+
+bundles across retries. Because file rename is idempotent, this give us an
+
+exactly-once sink.
+
+### **Example Sink: Google BigQuery**
+
+Google BigQuery is a fully managed, cloud-native data warehouse. Beam
+
+provides a BigQuery sink, and BigQuery provides a streaming insert API that
+
+supports extremely low-latency inserts. This streaming insert API allows
+
+allows you to tag inserts with a unique ID, and BigQuery will attempt to filter
+
+duplicate inserts with the same ID. To use this capability, the BigQuery sink
+
+must generate statistically unique IDs for each record. It does this by using
+
+the java.util.UUID package, which generates statistically unique 128-bit
+
+IDs.
+
+Generating a random universally unique identifier (UUID) is a
+
+nondeterministic operation, so we must add a Reshuffle before we insert
+
+into BigQuery. After we do this, any retries by Dataflow will always use the
+
+same UUID that was shuffled. Duplicate attempts to insert into BigQuery will
+
+always have the same insert ID, so BigQuery is able to filter them. The
+
+pseudocode shown in Example 5-5 illustrates how the BigQuery sink is
+
+implemented.
+
+*Example 5-5. BigQuery sink*
+
+```
+// Apply a unique identifier to each record
+c
+.apply(new DoFn<> {
+@ProcessElement
+public void processElement(ProcessContext context) {
+String uniqueId = UUID.randomUUID().toString();
+context.output(KV.of(ThreadLocalRandom.current().nextInt(0, 50),
+new RecordWithId(context.element(),
+uniqueId)));
+}
+})
+// Reshuffle the data so that the applied identifiers are stable and will not
+change.
+.apply(Reshuffle.<Integer, RecordWithId>of())
+// Stream records into BigQuery with unique ids for deduplication.
+.apply(ParDo.of(new DoFn<..> {
+@ProcessElement
+public void processElement(ProcessContext context) {
+insertIntoBigQuery(context.element().record(), context.element.id());
+}
+});
+```
+
+Again we split the sink into a nonidempotent step (generating a random
+
+number), followed by a step that is idempotent.
+
+
+
+{% enddetails %}
+
+
+
+{% details   点击   原文 %}
+
+# **Other Systems**
+
+Now that we have explained Dataflow’s exactly once in detail, let us contrast
+
+this with some brief overviews of other popular streaming systems. Each
+
+implements exactly-once guarantees in a different way and makes different
+
+trade-offs as a result.
+
+### **Apache Spark Streaming**
+
+Spark Streaming uses a microbatch architecture for continuous data
+
+processing. Users logically deal with a stream object; however, under the
+
+covers, Spark represents this stream as a continuous series of RDDs. Each
+
+RDD is processed as a batch, and Spark relies on the exactly-once nature of
+
+batch processing to ensure correctness; as mentioned previously, techniques
+
+for correct batch shuffles have been known for some time. This approach can
+
+cause increased latency to output—especially for deep pipelines and high
+
+input volumes—and often careful tuning is required to achieve desired
+
+latency.
+
+Spark does assume that operations are all idempotent and might replay the
+
+chain of operations up the current point in the graph. A checkpoint primitive
+
+is provided, however, that causes an RDD to be materialized, guaranteeing
+
+that history prior to that RDD will not be replayed. This checkpoint feature is
+
+intended for performance reasons (e.g., to prevent replaying an expensive
+
+operation); however, you can also use it to implement nonidempotent side
+
+effects.
+
+### **Apache Flink**
+
+Apache Flink also provides exactly-once processing for streaming pipelines
+
+but does so in a manner different than either Dataflow or Spark. Flink
+
+streaming pipelines periodically compute consistent snapshots, each
+
+representing the consistent point-in-time state of an entire pipeline. Flink
+
+snapshots are computed progressively, so there is no need to halt all
+
+processing while computing a snapshot. This allows records to continue
+
+flowing through the system while taking a snapshot, alleviating some of the
+
+latency issues with the Spark Streaming approach.
+
+Flink implements these snapshots by inserting special numbered snapshot
+
+markers into the data streams flowing from sources. As each operator receives
+
+a snapshot marker, it executes a specific algorithm allowing it to copy its state
+
+to an external location and propagate the snapshot marker to downstream
+
+operators. After all operators have executed this snapshot algorithm, a
+
+complete snapshot is made available. Any worker failures will cause the
+
+entire pipeline to roll back its state from the last complete snapshot. In-flight
+
+messages do not need to be included in the snapshot. All message delivery in
+
+Flink is done via an ordered TCP-based channel. Any connection failures can
+
+be handled by resuming the connection from the last good sequence
+
+number; unlike Dataflow, Flink tasks are statically allocated to workers, so
+
+it can assume that the connection will resume from the same sender and
+
+replay the same payloads.
+
+Because Flink might roll back to the previous snapshot at any time, any state
+
+modifications not yet in a snapshot must be considered tentative. A sink that
+
+sends data to the world outside the Flink pipeline must wait until a snapshot
+
+has completed, and then send only the data that is included in that snapshot.
+
+Flink provides a notifySnapshotComplete callback that allows sinks to
+
+know when each snapshot is completed, and send the data onward. Even
+
+though this does affect the output latency of Flink pipelines, this latency is
+
+introduced only at sinks. In practice, this allows Flink to have lower end-to
+
+end latency than Spark for deep pipelines because Spark introduces batch
+
+latency at each stage in the pipeline.
+
+Flink’s distributed snapshots are an elegant way of dealing with consistency
+
+in a streaming pipeline; however, a number of assumptions are made about
+
+the pipeline. Failures are assumed to be rare, as the impact of a failure
+
+(rolling back to the previous snapshot) is substantial. To maintain low-latency
+
+output, it is also assumed that snapshots can complete quickly. It remains to
+
+be seen whether this causes issues on very large clusters where the failure rate
+
+will likely increase, as will the time needed to complete a snapshot.
+
+Implementation is also simplified by assuming that tasks are statically
+
+allocated to workers (at least within a single snapshot epoch). This
+
+assumption allows Flink to provide a simple exactly-once transport between
+
+workers because it knows that if a connection fails, the same data can be
+
+pulled in order from the same worker. In contrast, tasks in Dataflow are
+
+constantly load balanced between workers (and the set of workers is
+
+constantly growing and shrinking), so Dataflow is unable to make this
+
+assumption. This forces Dataflow to implement a much more complex
+
+transport layer in order to provide exactly-once processing.
+
+
+
+{% enddetails %}
+
+
+
+{% details   点击   原文 %}
+
+# **Summary**
+
+In summary, exactly-once data processing, which was once thought to be
+
+incompatible with low-latency results, is quite possible—Dataflow does it
+
+efficiently without sacrificing latency. This enables far richer uses for stream
+
+processing.
+
+Although this chapter has focused on Dataflow-specific techniques, other
+
+streaming systems also provide exactly-once guarantees. Apache Spark
+
+Streaming runs streaming pipelines as a series of small batch jobs, relying on
+
+exactly-once guarantees in the Spark batch runner. Apache Flink uses a
+
+variation on Chandy Lamport distributed snapshots to get a running consistent
+
+state and can use these snapshots to ensure exactly-once processing. We
+
+encourage you to learn about these other systems, as well, for a broad
+
+understanding of how different stream-processing systems work!
+
+1. In fact, no system we are aware of that provides at-least once (or better) is
+
+able to guarantee this, including all other Beam runners.
+
+1. Dataflow also provides an accurate batch runner; however, in this context
+
+we are focused on the streaming runner.
+
+1. The Dataflow optimizer groups many steps together and adds shuffles only
+
+where they are needed.
+
+1. Batch pipelines also need to guard against duplicates in shuffle. However
+
+the problem is much easier to solve in batch, which is why historical batch
+
+systems did do this and streaming systems did not. Streaming runtimes that
+
+use a microbatch architecture, such as Spark Streaming, delegate duplicate
+
+detection to a batch shuffler.
+
+1. A lot of care is taken to make sure this checkpointing is efficient; for
+
+example, schema and access pattern optimizations that are intimately tied to
+
+the characteristics of the underlying key/value store.
+
+1. This is not the custom user-supplied timestamp used for windowing. Rather
+
+this is a deterministic processing-time timestamp that is assigned by the
+
+145sending worker.
+
+1. Some care needs to be taken to ensure that this algorithm works. Each
+
+sender must guarantee that the system timestamps it generates are strictly
+
+increasing, and this guarantee must be maintained across worker restarts.
+
+1. In theory, we could dispense with startup scans entirely by lazily building
+
+the Bloom filter for a bucket only when a threshold number of records show
+
+up with timestamps in that bucket.
+
+1. At the time of this writing, a new, more-flexible API called SplittableDoFn
+
+is available for Apache Beam.
+
+1. We assume that nobody is maliciously modifying the bytes in the file while
+
+we are reading it.
+
+1. Again note that the SplittableDoFn API has different methods for this.
+2. Using the requiresDedupping override.
+3. Note that these determinism boundaries might become more explicit in the
+
+Beam Model at some point. Other Beam runners vary in their ability to handle
+
+nondeterministic user code.
+
+1. As long as you properly handle the failure when the source file no longer
+
+exists.
+
+1. Due to the global nature of the service, BigQuery does not guarantee that
+
+all duplicates are removed. Users can periodically run a query over their
+
+tables to remove any duplicates that were not caught by the streaming insert
+
+API. See the BigQuery documentation for more information.
+
+1. Resilient Distributed Datasets; Spark’s abstraction of a distributed dataset,
+
+similar to PCollection in Beam.
+
+1. These sequence numbers are per connection and are unrelated to the
+
+snapshot epoch number.
+
+1. Only for nonidempotent sinks. Completely idempotent sinks do not need to
+
+wait for the snapshot to complete.
+
+1. Specifically, Flink assumes that the mean time to worker failure is less than
+
+the time to snapshot; otherwise, the pipeline would be unable to make
+
+progress.
+
+{% enddetails %}

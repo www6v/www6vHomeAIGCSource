@@ -1,5 +1,5 @@
 ---
-title:  《Streaming System》-第五章：精确一次和副作用
+title:  《Streaming System》-第五章：精确一次和副作用 [完整]
 date: 2000-03-16 19:22:34
 tags: 
   - Streaming System
@@ -13,6 +13,11 @@ categories:
 ## 目录
 <!-- toc -->
 
+我们现在从讨论编程模型和API转向实现它们的系统。模型和API允许用户描述他们想要计算什么。在大规模准确地运行计算需要一个系统，通常是分布式系统。
+
+在本章中，我们重点介绍如何正确实现Beam模型以产生准确的结果。流系统经常谈论***仅一次处理***;也就是确保每个记录仅被处理一次。我们将解释这是什么意思，以及如何实现。
+
+作为一个激励性的例子，本章重点介绍Google Cloud Dataflow使用的技术，以有效地保证记录的仅一次处理。在本章末尾，我们还将了解一些其他流行流系统用于保证仅一次处理的技术。
 
 # 为什么"精确一次"很重要
 
@@ -213,3 +218,158 @@ c.apply(Window.<..>into(FixedWindows.of(Duration.standardMinutes(1))))
 当然，Dataflow 仍然可能多次运行 WriteToSideEffect 操作。副作用本身仍然需要是幂等的，否则下沉将接收到重复项。例如，在数据存储中设置或覆盖值的操作是幂等的，并且即使多次运行，也会生成正确的输出。将值附加到列表的操作不是幂等的；如果多次运行操作，则每次都会附加相同的值。
 
 虽然 Reshuffle 提供了一种实现对 DoFn 的稳定输入的简单方法，但 GroupByKey 同样有效。但是，目前有一个提案，可以消除添加 GroupByKey 以实现 DoFn 稳定输入的需要。相反，用户可以使用特殊注释@RequiresStableInput注释WriteToSideEffect，系统将确保该变换的稳定输入。
+
+
+---
+
+# 使用案例
+
+为了说明问题，让我们来看一些内置的数据源和数据接收器，以了解它们如何实现上述模式。
+
+### 示例数据源：Cloud Pub/Sub
+
+Cloud Pub/Sub是一个完全托管、可扩展、可靠且低延迟的系统，用于将发布者的消息传递给订阅者。发布者在命名主题上发布数据，而订阅者创建命名订阅以从这些主题中获取数据。可以为单个主题创建多个订阅，如果是这种情况，则每个订阅将从其创建时间起接收到的主题上发布的所有数据的完整副本。 Pub/Sub保证记录将继续传递，直到它们被确认；但是，可能会多次传递记录。
+
+Pub / Sub旨在进行分布式使用，因此许多发布进程可以发布到同一主题，许多订阅进程可以从同一订阅中拉取。在拉取记录后，订阅者必须在一定时间内进行确认，否则该拉取将过期，并且Pub / Sub将将该记录重新传递给其他订阅进程。
+
+尽管这些特征使Pub / Sub高度可扩展，但也使其成为像Dataflow这样的系统的具有挑战性的源。无法知道将向哪个工作程序员传递哪个记录以及传递的顺序。此外，在出现故障的情况下，重新传递可能会将记录发送到不同的工作程序员以不同的顺序！
+
+Pub / Sub为每条消息提供稳定的消息ID，并且此ID将在重新传递时保持不变。 Dataflow Pub / Sub源默认使用此ID从Pub / Sub中删除重复项。 （记录基于ID的哈希进行洗牌，以便始终在同一工作程序上处理重复的传递。）但是，在某些情况下，这还不够。用户的发布过程可能会重试发布，从而将重复项引入Pub / Sub。从该服务的角度来看，这些都是唯一的记录，因此它们将获得唯一的记录ID。 Dataflow的Pub / Sub源允许用户提供自己的记录ID作为自定义属性。只要发布者在重试时发送相同的ID，Dataflow就能够检测到这些重复项。
+
+Beam（因此Dataflow）为Pub / Sub提供了参考源实现。但是，请记住，这不是Dataflow使用的内容，而是仅由非Dataflow运行器（例如Apache Spark、Apache Flink和DirectRunner）使用的实现。由于各种原因，Dataflow在内部处理Pub / Sub并且不使用公共Pub / Sub源。
+
+### 示例接收器：文件
+
+流式处理运行器可以使用Beam的文件接收器（TextIO、AvroIO和实现FileBasedSink的任何其他接收器）不断将记录输出到文件中。示例5-3提供了一个使用示例。
+
+*示例5-3。窗口化文件写入*
+```
+c.apply(Window.<..>into(FixedWindows.of(Duration.standardMinutes(1))))
+.apply(TextIO.writeStrings().to(new MyNamePolicy()).withWindowedWrites());
+```
+
+示例5-3中的片段每分钟写入10个新文件，其中包含该窗口的数据。MyNamePolicy是一个用户编写的函数，它基于分片和窗口确定输出文件名。您还可以使用触发器，在这种情况下，每个触发器窗格都将作为新文件输出。
+
+该过程是使用示例5-3中的模式的变体实现的。文件写入到临时位置，这些临时文件名通过GroupByKey发送到后续转换。在GroupByKey之后是一个最终转换，它将临时文件原子地移动到其最终位置。示例5-4中的伪代码提供了Beam中实现一致的流式文件接收器的草图。（有关更多详细信息，请参见Beam代码库中的FileBasedSink和WriteFiles。）
+
+*示例5-4。文件接收器*
+```
+c
+  //使用随机分片ID为每个记录打标记。
+  .apply("AttachShard", WithKeys.of(new RandomShardingKey(getNumShards())))
+  //将所有具有相同分片的记录分组。
+  .apply("GroupByShard", GroupByKey.<..>())
+  //对于每个窗口，将每个分片元素写入临时文件。这是
+  //非确定性的副作用。如果此DoFn执行多次，则会
+  //仅写入多个临时文件；其中的一个将通过
+  //到最终化阶段。
+  .apply("WriteTempFile", ParDo.of(new DoFn<..> {
+    @ProcessElement
+    public void processElement(ProcessContext c, BoundedWindow window) {
+      //将c.element()的内容写入临时文件。
+      //用户提供的名称策略用于生成最终文件名。
+      c.output(new FileResult()).
+    }
+   }))
+   //将文件列表分组到单个键上。
+   .apply("AttachSingletonKey", WithKeys.<..>of((Void)null))
+   .apply("FinalizeGroupByKey", GroupByKey.<..>create())
+   //通过原子重命名它们来完成文件的最终化。此操作是幂等的。
+   //一旦此DoFn为给定的FileResult执行一次，则临时文件
+   //消失了，因此任何进一步的执行都没有影响。
+   .apply("Finalize", ParDo.of(new DoFn<..>, Void> {
+      @ProcessElement
+       public void processElement(ProcessContext c) {
+         for (FileResult result : c.element()) {
+           rename(result.getTemporaryFileName(), result.getFinalFilename());
+         }
+}}));
+```
+
+您可以看到在WriteTempFile中完成非幂等工作。在GroupByKey完成之后，Finalize步骤始终会看到相同的束再次尝试。因为文件重命名是幂等的，所以这使我们得到了一个恰好一次的接收器。
+
+###   示例接收器：Google BigQuery
+
+Google BigQuery是一个完全托管的云原生数据仓库。Beam提供了BigQuery接收器，而BigQuery提供了支持极低延迟插入的流式插入API。此流式插入API允许您使用唯一ID标记插入，并且BigQuery将尝试过滤具有相同ID的重复插入。为了使用此功能，BigQuery接收器必须为每个记录生成统计唯一的ID。它通过使用java.util.UUID包生成统计唯一的128位ID来实现此目的。
+
+生成随机通用唯一标识符（UUID）是一种非确定性操作，因此我们必须在插入到BigQuery之前添加一个Reshuffle。在我们这样做之后，Dataflow的任何重试都将始终使用被洗牌的相同UUID。尝试重复插入到BigQuery将始终具有相同的插入ID，因此BigQuery能够过滤它们。示例5-5中显示的伪代码说明了如何实现BigQuery接收器。
+
+*示例5-5. BigQuery接收器*
+```
+//为每个记录应用唯一标识符
+c
+  .apply(new DoFn<> {
+    @ProcessElement
+    public void processElement(ProcessContext context) {
+      String uniqueId = UUID.randomUUID().toString();
+      context.output(KV.of(ThreadLocalRandom.current().nextInt(0, 50),
+                                   new RecordWithId(context.element(),
+uniqueId)));
+  }
+})
+   //重洗数据，以便应用的标识符是稳定的并且不会更改。
+  .apply(Reshuffle.<Integer, RecordWithId>of())
+  //使用唯一ID将记录流式传输到BigQuery以进行重复项检测。
+  .apply(ParDo.of(new DoFn<..> {
+    @ProcessElement
+     public void processElement(ProcessContext context) {
+       insertIntoBigQuery(context.element().record(), context.element.id());
+ }
+});
+```
+
+同样，我们将接收器拆分为不幂等步骤（生成随机数），然后是幂等步骤。
+
+---
+
+# 其他系统
+
+现在我们已经详细解释了Dataflow的Exactly Once，让我们来对比一下其他流行的流处理系统的简要概述。每个系统都以不同的方式实现Exactly Once保证，并因此做出不同的权衡。
+
+###  Apache Spark Streaming
+
+Spark Streaming使用微批次体系结构进行连续数据处理。用户逻辑上处理一个流对象；但是，在内部，Spark将此流表示为RDD的连续系列。每个RDD作为批处理进行处理，并且Spark依赖于批处理的Exactly Once属性来确保正确性；就像先前提到过的，正确批处理洗牌技术已经被知道一段时间了。这种方法可能会导致输出的延迟增加 - 尤其是对于深度管道和高输入量，通常需要仔细调整才能实现所需的延迟。
+
+Spark假设所有操作都是幂等的，可能会重播到当前图中的点的操作链。但是，提供了一个检查点原语，导致RDD被实现，保证在该RDD之前的历史记录不会被重播。该检查点功能旨在提高性能（例如，防止重新播放昂贵的操作）；但是，您也可以使用它来实现不可幂等的副作用。
+
+###  Apache Flink
+
+Apache Flink也为流水线提供Exactly Once处理，但是采用与Dataflow或Spark不同的方式。Flink流水线定期计算一致的快照，每个快照表示整个流水线的一致时间点状态。Flink快照是逐步计算的，因此无需在计算快照时停止所有处理。这使记录可以在系统中继续流动而进行快照，缓解了Spark Streaming方法的一些延迟问题。
+
+Flink通过将特殊编号的快照标记插入从源流出的数据流中来实现这些快照。当每个运算符接收到快照标记时，它执行特定的算法，使其可以将其状态复制到外部位置并将快照标记传播到下游运算符。在所有运算符都执行完此快照算法后，将可用完整快照。任何工作器失败都将导致整个管道从上一个完整快照中回滚其状态。在快照中不需要包含正在进行的消息。Flink中的所有消息传递都是通过有序的基于TCP的通道完成的。任何连接故障都可以通过从最后一个良好序列号恢复连接来处理；与Dataflow不同，Flink任务静态分配给工作器，因此可以假定连接将从相同的发送者恢复，并重新播放相同的有效负载。
+
+因为Flink随时可能回滚到以前的快照，所以尚未在快照中的任何状态修改都必须被视为暂时的。将数据发送到Flink管道外部的接收器必须等待快照完成，然后仅发送包含在该快照中的数据。Flink提供了一个notifySnapshotComplete回调，允许接收器知道每个快照何时完成，并将数据发送到下一个节点。即使这会影响Flink管道的输出延迟，但这种延迟仅在接收器中引入。实际上，这使Flink在深层管道的端到端延迟方面比Spark具有更低的延迟，因为Spark在管道的每个阶段引入了批处理延迟。
+
+Flink的分布式快照是处理流水线一致性的一种优雅方法；但是，对管道做出了许多假设。假设故障很少，因为故障的影响（从上一个快照回滚）很大。为了保持低延迟输出，还假设快照可以快速完成。尚不清楚这是否会在非常大的集群上引起问题，因为故障率可能会增加，完成快照所需的时间也会增加。
+
+还通过假设任务静态分配给工作器（至少在单个快照时期内）来简化实现。该假设允许Flink在工作器之间提供简单的Exactly Once传输，因为它知道如果连接失败，则可以按顺序从同一工作器中提取相同的数据。相反，Dataflow中的任务不断在工作器之间负载平衡（并且工作器集合不断增加和缩小），因此Dataflow无法做出这种假设。这迫使Dataflow实现更复杂的传输层以提供Exactly Once处理。
+
+
+# 概要
+
+总的来说，曾经被认为与低延迟结果不兼容的精确一次数据处理是完全可能的，Dataflow可以在不牺牲延迟的情况下有效地实现。这使得流处理有更丰富的用途。
+
+虽然本章重点介绍了Dataflow特定的技术，但其他流媒体系统也提供精确一次的保证。Apache Spark Streaming将流水线作为一系列小批量作业运行，依赖于Spark批处理运行程序的精确一次保证。Apache Flink使用Chandy Lamport分布式快照的变化来获得运行一致的状态，并可以使用这些快照来确保精确一次处理。我们也鼓励您学习这些其他系统，以便广泛了解不同流处理系统的工作方式！
+
+---
+
+1. 实际上，我们所知道的提供至少一次保证（或更好）的系统都无法保证这一点，包括所有其他Beam运行程序。
+2. Dataflow也提供了准确的批处理运行程序；但在这个上下文中，我们专注于流运行程序。
+3. Dataflow优化器将许多步骤分组在一起，并仅在需要时添加洗牌。
+4. 批处理管道也需要防止洗牌中的重复项。但是，批处理中的问题要容易得多，这就是为什么历史批处理系统这样做而流媒体系统没有这样做的原因。使用微批处理架构的流媒体运行时，例如Spark Streaming，将重复项检测委托给批量混洗器。
+5. 为确保检查点效率，需要采取许多谨慎的措施；例如，与底层键/值存储的特性密切相关的模式和访问模式优化。
+6. 这不是用于窗口处理的自定义用户提供的时间戳。而是由发送工作器分配的确定性处理时间戳。
+7. 需要采取一些措施确保该算法有效。每个发送者必须保证其生成的系统时间戳严格递增，并且此保证必须在工作器重新启动时维护。
+8. 从理论上讲，我们可以通过在桶中出现时间戳的阈值记录时才惰性构建桶的布隆过滤器，从而完全放弃启动扫描。
+9. 在撰写本文时，Apache Beam提供了一种新的、更灵活的API，称为SplittableDoFn。
+10. 我们假设在我们读取文件时，没有人恶意修改文件中的字节。
+11. 再次注意，SplittableDoFn API具有不同的方法。
+12. 使用requiresDedupping覆盖。
+13. 请注意，这些确定性边界可能在Beam模型的某个时候变得更加明确。其他Beam运行程序在处理非确定性用户代码方面有所不同。
+14. 只要在源文件不再存在时正确处理故障。
+15. 由于该服务的全局性质，BigQuery不能保证所有重复项都被删除。用户可以定期对他们的表运行查询，以删除未被流式插入API捕获的任何重复项。有关更多信息，请参阅BigQuery文档。
+16. 弹性分布式数据集；Spark的分布式数据集抽象，类似于Beam中的PCollection。
+17. 这些序列号是每个连接的，与快照时期号码无关。
+18. 仅适用于非幂等的汇聚。完全幂等的聚合不需要等待快照完成。
+19. 具体而言，Flink假定工作器故障的平均时间小于快照时间；否则，管道将无法取得进展。
+
