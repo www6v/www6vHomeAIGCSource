@@ -14,6 +14,10 @@ categories:
 <!-- toc -->
 
 
+大家好！希望大家和我一样喜欢第三章节。水印是一个很有趣的话题，Slava比地球上任何人都了解它们。现在我们已经对水印有了更深入的了解，我想深入探讨一些与**“什么”**，**“何地”**，**“何时”**和**“如何”**相关的高级主题。
+
+我们首先看一下***处理时间窗口***，这是一个有趣的组合，既涉及“在哪里”，又涉及“何时”，以更好地理解它与事件时间窗口的关系，并了解在哪些情况下采用这种方法是正确的。然后，我们深入了解一些更高级的事件时间窗口概念，详细了解***会话窗口***，最后通过探索三种不同类型的自定义窗口：***非对齐***固定窗口，***按键***固定窗口和***有界***会话窗口，为什么***广义自定义窗口***是一个有用的（且令人惊讶地简单）概念。
+
 
 # 何时/何地：处理时间窗口
 
@@ -49,7 +53,7 @@ categories:
 
 
 
-### **事件时间窗口**
+### 事件时间窗口
 
 为了建立一个基准，让我们先比较事件时间中固定窗口和基于启发式水印的两种观察顺序。我们将重用示例2-7/图2-10中的早期/晚期代码，以获得图4-2中所示的结果。左边实质上是我们之前看到的；右边是第二个观察顺序的结果。这里需要注意的重要事情是，即使输出的总体形状不同（由于处理时间中的不同观察顺序），*四个窗口的最终结果仍然相同*：14、18、3和12。
 
@@ -62,7 +66,7 @@ categories:
 
 
 
-### **触发器的处理时间窗口**
+### 触发器的处理时间窗口
 
 现在，我们将此与刚刚描述的两种处理时间方法进行比较。首先，我们将尝试触发器方法。 实现处理时间“窗口化”的方式有三个方面：|
                         
@@ -206,7 +210,287 @@ PCollection<KV<Team，Integer>>  totals=input
 如果您不相信我，请查看这篇博客文章，了解如何在Spark Streaming 1.x上手动构建会话（请注意，这不是为了指责他们；Spark的人们已经在其他方面做得足够好，以至于有人确实费心记录构建特定类型的会话支持所需的内容在Spark 1.x之上；您无法对大多数其他系统做出同样的说法）。这非常复杂，他们甚至没有做正确的事件时间会话，也没有提供推测或后期引发或撤销。 [todo 后期引发 是否改成  后期触发 ]
 
 
+
+---
+
+
+
+# **何地**: 自定义窗口化
+
+到目前为止，我们主要讨论了预定义的窗口化策略：固定、滑动和会话。标准类型的窗口可以获得很多收益，但是有很多真实世界的用例需要能够定义自定义窗口化策略，这真的可以挽救一天（我们将看到其中三个）。
+
+今天大多数系统不支持自定义窗口化，就像Beam这样，因此我们专注于Beam方法。在Beam中，自定义窗口化策略由两个部分组成：
+
+- 窗口分配
+  这将每个元素放置在初始窗口中。在极限情况下，这允许将每个元素放置在唯一的窗口中，这是非常强大的。
+
+- （可选）窗口合并
+  这允许窗口在分组时间合并，这使窗口随时间演变成为可能，我们早先在会话窗口中看到了这种情况。
+
+为了让您了解窗口化策略真正的简单性以及自定义窗口支持的实用性，我们将详细查看Beam中固定窗口和会话的股票实现，然后考虑一些需要自定义变化的实际用例。在这个过程中，我们将看到创建自定义窗口化策略的简单程度，以及当您的用例不太适合标准方法时，缺乏自定义窗口化支持的限制性有多大。
+
+###  固定窗口的变化
+
+首先，让我们看看相对简单的固定窗口策略。固定窗口的股票实现与您想象的一样简单，包括以下逻辑：
+
+- 分配
+  根据其时间戳和窗口的大小和偏移参数，将元素放入相应的固定窗口中。
+
+- 合并
+  没有。
+
+代码的缩写版本如示例4-4所示。
+
+*示例4-4. 简写的FixedWindows实现*
+```
+public class FixedWindows extends WindowFn<Object, IntervalWindow> {
+  private final Duration size;
+  private final Duration offset;
+  public Collection<IntervalWindow> assignWindow(AssignContext c) {
+    long start = c.timestamp().getMillis() - c.timestamp()
+                  .plus(size)
+                  .minus(offset)
+                  .getMillis() % size.getMillis();
+    return Arrays.asList(IntervalWindow(new Instant(start), size));
+}
+}
+```
+请记住，这里展示代码的重点并不是教您如何编写窗口化策略（尽管了解它们并指出它们有多简单很好）。实际上，它有助于对比支持某些相对基本用例的相对容易和困难的相对性，分别使用和不使用自定义窗口化。现在让我们考虑两种固定窗口主题的变化。
+
+
+
+---
+
+**未对齐的固定窗口**
+
+默认的固定窗口实现的一个特征是窗口在所有数据中都是对齐的。在我们的运行例子中，给定任何一个团队的从中午到下午1点的窗口与所有其他团队的相应窗口对齐，这些窗口也从中午到下午1点延伸。在您想要在其他维度（例如在团队之间）比较相似窗口的用例中，这种对齐非常有用。然而，它带来了一个相当微妙的成本。所有从中午到下午1点的活动窗口在大约相同的时间内变成完整的，这意味着每小时系统都会面临大量窗口的实现负载。
+
+为了看到我的意思，让我们看一个具体的例子（示例4-5）。我们将从大多数示例中使用的分数总和管道开始，使用固定的两分钟窗口和单个水印触发器。
+
+*示例4-5. 水印完整性触发器（与示例2-6相同）*
+
+```
+PCollection<KV<Team, Integer>> totals = input
+  .apply(Window.into(FixedWindows.of(TWO_MINUTES))
+                .triggering(AfterWatermark()))
+  .apply(Sum.integersPerKey());
+```
+
+但在这种情况下，我们将并行查看来自相同数据集的两个不同键（见图4-8）。我们将看到这两个键的输出都对齐，因为窗口在所有键上都是对齐的。因此，每次水印通过窗口的末尾时，我们就会获得*N*个窗格的实现，其中*N*是在该窗口中有更新的键的数量。在这个例子中，当*N*开始以千计、百万或更多来排序时，这种同步的突发性可能会变得有问题。
+
+{% dplayer "url=stsy_0408.mp4" %} 
+*图4-8. 对齐的固定窗口*
+
+在不需要跨窗口比较的情况下，通常更希望在时间上均匀地分布窗口完成负载。这使系统负载更可预测，可以减少处理峰值负载的资源预配要求。然而，在大多数系统中，如果系统不支持它们，非对齐的固定窗口是不可用的。但是，通过自定义窗口支持，将默认固定窗口实现进行相对简单的修改即可提供非对齐的固定窗口支持。我们想要做的是继续保证所有被分组在一起的元素的窗口（即具有相同键的元素）具有相同的对齐方式，同时放宽跨不同键的对齐限制。默认的固定窗口策略的代码更改如示例4-6所示。
+
+*示例4-6. 简略的UnalignedFixedWindows实现*
+```
+public class UnalignedFixedWindows
+    extends WindowFn<KV<K, V>, IntervalWindow> {
+  private final Duration size;
+  private final Duration offset;
+  public Collection<IntervalWindow> assignWindow(AssignContext c) {
+    long perKeyShift = hash(c.element().key()) % size;
+    long start = perKeyShift + c.timestamp().getMillis()
+                   - c.timestamp()
+                      .plus(size)
+                      .minus(offset)
+    return Arrays.asList(IntervalWindow(new Instant(start), size));
+   }
+}
+```
+
+通过这个改变，所有元素的窗口*具有相同的键*是对齐的，但是元素*具有不同键*的窗口（通常）是不对齐的，因此在成本上分散了窗口完成负载，但这也使得跨键的比较变得不那么有意义。我们可以将我们的管道切换到使用新的窗口策略，如示例4-7所示。
+
+*示例4-7. 使用单个水印触发器的非对齐固定窗口*
+```
+PCollection<KV<Team, Integer>> totals = input
+  .apply(Window.into(UnalignedFixedWindows.of(TWO_MINUTES))
+               .triggering(AfterWatermark()))
+  .apply(Sum.integersPerKey());
+```
+
+然后，您可以通过比较与之前相同数据集的不同固定窗口对齐方式来查看图4-9的结果（在这种情况下，我选择了两个对齐之间的最大相位移，以最清楚地说明好处，因为在大量键的随机选择相位将产生类似的效果）。
+
+{% dplayer "url=stsy_0409.mp4" %} 
+*图4-9. 非对齐的固定窗口*
+
+请注意，我们没有在同时发出多个键的多个窗格的情况。相反，窗格以更均匀的节奏单独到达。这是另一个例子，在用例允许的情况下，在一个维度上进行权衡（跨键比较的能力）以换取另一个维度上的好处（减少峰值资源预配要求）。当您试图尽可能高效地处理大量数据时，这种灵活性至关重要。
+
+现在让我们看一下固定窗口的第二个变体，它与正在处理的数据更紧密地联系在一起。
+
+
+
+---
+**每个元素/键固定窗口**
+
+我们的第二个例子来自于Cloud Dataflow的早期采用者之一。这家公司为其客户生成分析数据，但每个客户都可以配置其要聚合指标的窗口大小。换句话说，每个客户都可以定义其固定窗口的特定大小。
+
+只要可用窗口大小的数量本身固定，支持这样的用例并不太困难。例如，您可以想象提供选择30分钟、60分钟和90分钟固定窗口的选项，然后为每个选项运行一个单独的管道（或管道分支）。虽然不是理想的解决方案，但也不是太糟糕。但是，随着选项数量的增加，这很快就变得难以处理，在提供支持真正任意的窗口大小的极限情况下（这是该客户的用例所需的），完全是不切实际的。
+
+幸运的是，因为每个客户处理的记录已经用于描述聚合所需窗口大小的元数据进行了注释，因此支持任意的每个用户固定窗口大小就像从股票固定窗口实现中更改了几行代码一样简单，如示例4-8所示。
+
+*示例4-8。修改（和缩写）支持每个元素窗口大小的FixedWindows实现*
+```
+public class PerElementFixedWindows<T extends HasWindowSize%gt;
+    extends WindowFn<T, IntervalWindow> {
+  private final Duration offset;
+  public Collection<IntervalWindow> assignWindow(AssignContext c) {
+    long perElementSize = c.element().getWindowSize();
+    long start = perKeyShift + c.timestamp().getMillis()
+                   - c.timestamp()
+                      .plus(size)
+                      .minus(offset)
+                      .getMillis() % size.getMillis();
+    return Arrays.asList(IntervalWindow(
+        new Instant(start), perElementSize));
+  }
+}
+```
+通过这个改变，每个元素都被分配到一个固定大小的窗口中，该大小由元素本身携带的元数据所规定。将管道代码更改为使用此新策略再次很简单，如示例4-9所示。
+
+*示例4-9。单个水印触发器的每个元素固定窗口大小*
+```
+PCollection<KV<Team, Integer>> totals = input
+  .apply(Window.into(PerElementFixedWindows.of(TWO_MINUTES))
+               .triggering(AfterWatermark()))
+  .apply(Sum.integersPerKey());
+```
+然后查看此管道的实际执行情况（图4-10），很容易看出键A的元素都具有两分钟的窗口大小，而键B的元素具有一分钟的窗口大小。
+
+{% dplayer "url=stsy_0410.mp4" %} 
+*图4-10。每个键的自定义大小固定窗口*
+
+这确实不是您可以合理期望系统为您提供的东西；窗口大小偏好存储的性质对于尝试构建到标准API中来说过于特定于用例，因此不合理。尽管如此，正如该客户的需求所展示的那样，这样的用例确实存在。这就是自定义分窗提供的灵活性如此强大的原因。
+
+
+
+---
+
+###  会话窗口的变化
+
+为了真正体现自定义窗口的实用性，让我们看一个最后的例子，这是会话的变化。会话窗口比固定窗口更加复杂。它的实现包括以下内容：
+
+- 分配
+  每个元素最初被放置到一个原型会话窗口中，该窗口从元素的时间戳开始，并延伸到间隙持续时间。
+
+- 合并
+  在分组时间，所有符合条件的窗口都被排序，之后任何重叠的窗口都被合并在一起。
+
+会话代码的简略版（手动从多个辅助类合并而来）看起来像示例4-10所示。
+
+*示例4-10。简略的会话实现*
+```
+public class Sessions extends WindowFn<Object, IntervalWindow> {
+  private final Duration gapDuration;
+  public Collection<IntervalWindow> assignWindows(AssignContext c) {
+    return Arrays.asList(
+    new IntervalWindow(c.timestamp(), gapDuration));
+  }
+  public void mergeWindows(MergeContext c) throws Exception {
+    List<IntervalWindow> sortedWindows = new ArrayList<>();
+    for (IntervalWindow window : c.windows()) {
+      sortedWindows.add(window);
+    }
+    Collections.sort(sortedWindows);
+    List<MergeCandidate> merges = new ArrayList<>();
+    MergeCandidate current = new MergeCandidate();
+    for (IntervalWindow window : sortedWindows) {
+      if (current.intersects(window)) {
+         current.add(window);
+       } else {
+         merges.add(current);
+         current = new MergeCandidate(window);
+      }
+     }
+     merges.add(current);
+     for (MergeCandidate merge : merges) {
+       merge.apply(c);
+     }
+   }
+}
+```
+
+与以前一样，看代码的重点不在于教你如何实现自定义窗口函数，甚至不在于sessions的实现看起来像什么；它真正的目的是展示您可以通过自定义窗口轻松支持新用途。
+
+---
+**有界会话**
+
+我曾多次遇到的一个自定义用例是有界会话：这些会话不允许超过某个特定大小，无论是在时间、元素计数或其他维度上。这可能是由于语义原因，也可能只是一种垃圾邮件保护练习。然而，考虑到限制类型的变化（一些用例关心事件时间内的总会话大小，一些关心元素总数，一些关心元素密度等），为有界会话提供干净简洁的API很困难。让用户实现其自己的自定义窗口逻辑更加实用，以适应其特定的用例。一个这样的用例示例，其中会话窗口受时间限制，可能类似于示例4-11（省略我们将在此处使用的部分构建器样板）。
+
+*示例4-11。缩写会话实现*
+```
+public class BoundedSessions extends WindowFn<Object, IntervalWindow> {
+  private final Duration gapDuration;
+  private final Duration maxSize;
+  public Collection<IntervalWindow> assignWindows(AssignContext c) {
+    return Arrays.asList(
+      new IntervalWindow(c.timestamp(), gapDuration));
+  }
+  private Duration windowSize(IntervalWindow window) {
+    return window == null
+      ? new Duration(0)
+      : new Duration(window.start(), window.end());
+  }
+  public static void mergeWindows(
+    WindowFn<?, IntervalWindow>.MergeContext c) throws Exception {
+    List<IntervalWindow> sortedWindows = new ArrayList<>();
+    for (IntervalWindow window : c.windows()) {
+      sortedWindows.add(window);
+    }
+    Collections.sort(sortedWindows);
+    List<MergeCandidate> merges = new ArrayList<>();
+    MergeCandidate current = new MergeCandidate();
+    for (IntervalWindow window : sortedWindows) {
+      MergeCandidate next = new MergeCandidate(window);
+      if (current.intersects(window)) {
+        current.add(window);
+        if (windowSize(current.union) <= (maxSize - gapDuration))
+           continue;
+        // Current window exceeds bounds, so flush and move to next
+        next = new MergeCandidate();
+       }
+       merges.add(current);
+       current = next;
+     }
+     merges.add(current);
+     for (MergeCandidate merge : merges) {
+       merge.apply(c);
+     }
+   }
+}
+```
+像以前一样，将我们的管道（在本例中是早期/准时/延迟版本的Example2-7）更新为使用此自定义窗口策略是微不足道的，如示例4-12所示。
+
+*示例4-12。通过早期/准时/延迟API进行早期、准时和延迟触发*
+```
+PCollection<KV<Team, Integer>> totals = input
+  .apply(Window.into(BoundedSessions
+                       .withGapDuration(ONE_MINUTE)
+                       .withMaxSize(THREE_MINUTES))
+               .triggering(
+                 AfterWatermark()
+                   .withEarlyFirings(AlignedDelay(ONE_MINUTE))
+                   .withLateFirings(AfterCount(1))))
+   .apply(Sum.integersPerKey());
+```
+并在我们的运行示例上执行，它可能看起来像图4-11。
+
+
+{% dplayer "url=stsy_0411.mp4" %} 
+*图4-11。每个键的自定义大小的固定窗口*
+
+请注意，值为36且跨越[12:00.26,12:05.20)的大会话，在未经界限的会话实现中从图2-7中现在被分成两个较短的长度为2分钟和2分53秒的会话。
+
+鉴于目前很少有系统提供自定义窗口支持，值得指出的是，如果使用仅支持无界会话实现的系统来实现这样的东西，将需要更多的工作量。您唯一的真正手段就是编写会话分组逻辑之后的代码，该代码查看生成的会话并在超过长度限制时将其切分。这将需要在事后分解会话的能力，这将取消增量聚合的好处（我们在第7章中更详细地查看），增加成本。它还会消除任何希望通过限制会话长度获得的垃圾邮件保护好处，因为会话首先需要增长到其完整大小，然后才能被切割或截断。
+
+### 非一刀切
+
+我们现在已经看过三个现实世界的用例，每个用例都是数据处理系统通常提供的窗口类型的微妙变化：不对齐的固定窗口、每个元素的固定窗口和有界会话。在所有三种情况下，我们都看到了通过自定义窗口支持这些用例的简单性，以及在没有它的情况下支持这些用例需要多么困难（或昂贵）。虽然目前自定义窗口在整个行业中尚未得到广泛支持，但它是一项在构建需要尽可能高效地处理大量数据的复杂实际用例的数据处理管道时提供所需灵活性的功能。
+
+
 ## Draft Here
+
 {% draft %}
 参考
 [Streaming Systems｜ 第四章：高级窗口](https://zhuanlan.zhihu.com/p/568497474)
