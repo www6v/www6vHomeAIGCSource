@@ -1,5 +1,5 @@
 ---
-title: 《Streaming System》-Chapter4. Advanced Windowing
+title: 《Streaming System》-Chapter4. Advanced Windowing [完整]
 date: 2000-03-14 22:07:51
 tags: 
   - Streaming System
