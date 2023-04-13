@@ -1,5 +1,5 @@
 ---
-title: 《Streaming System》-Chapter 2. The What, Where, When, and How of Data Processing
+title: 《Streaming System》-Chapter 2. The What, Where, When, and How of Data Processing[完整]
 date: 2000-03-17 22:08:13
 tags: 
   - Streaming System
@@ -12,6 +12,80 @@ categories:
 
 ## 目录
 <!-- toc -->
+
+
+
+{% details 点击  原文  %}
+
+Okay party people, it’s time to get concrete!
+
+Chapter 1 focused on three main areas: *terminology*, defining precisely what I
+
+mean when I use overloaded terms like “streaming”; *batch versus streaming*,
+
+comparing the theoretical capabilities of the two types of systems, and
+
+postulating that only two things are necessary to take streaming systems
+
+beyond their batch counterparts: correctness and tools for reasoning about
+
+time; and *data processing patterns*, looking at the conceptual approaches
+
+taken with both batch and streaming systems when processing bounded and
+
+unbounded data.
+
+In this chapter, we’re now going to focus further on the data processing
+
+patterns from Chapter 1, but in more detail, and within the context of concrete
+
+examples. By the time we’re finished, we’ll have covered what I consider to
+
+be the core set of principles and concepts required for robust out-of-order data
+
+processing; these are the tools for reasoning about time that truly get you
+
+beyond classic batch processing.
+
+To give you a sense of what things look like in action, I use snippets of
+
+Apache Beam code, coupled with time-lapse diagrams to provide a visual
+
+representation of the concepts. Apache Beam is a unified programming model
+
+and portability layer for batch and stream processing, with a set of concrete
+
+SDKs in various languages (e.g., Java and Python). Pipelines written with
+
+Apache Beam can then be portably run on any of the supported execution
+
+engines (Apache Apex, Apache Flink, Apache Spark, Cloud Dataflow, etc.).
+
+I use Apache Beam here for examples not because this is a Beam book (it’s
+
+not), but because it most completely embodies the concepts described in this
+
+book. Back when “Streaming 102” was originally written (back when it was
+
+still the Dataflow Model from Google Cloud Dataflow and not the Beam
+
+Model from Apache Beam), it was literally the only system in existence that
+
+provided the amount of expressiveness necessary for all the examples we’ll
+
+cover here. A year and a half later, I’m happy to say much has changed, and
+
+most of the major systems out there have moved or are moving toward
+
+supporting a model that looks a lot like the one described in this book. So rest
+
+assured that the concepts we cover here, though informed through the Beam
+
+lens, as it were, will apply equally across most other systems you’ll come
+
+across.
+
+{%  enddetails   %}
 
 
 
@@ -1866,5 +1940,113 @@ to take a slight detour to dive deeper into the world of watermarks, as this
 knowledge will help frame future discussions (and be fascinating in and of
 
 itself). Enter Slava, stage right...
+
+{%  enddetails   %}
+
+
+
+
+
+
+
+{% details 点击  原文  %}
+
+1. If you’re fortunate enough to be reading the Safari version of the book, you
+
+have full-blown time-lapse animations just like in “Streaming 102”. For print,
+
+Kindle, and other ebook versions, there are static images with a link to
+
+animated versions on the web.
+
+2. Bear with me here. Fine-grained emotional expressions via composite
+
+punctuation (i.e., emoticons) are strictly forbidden in O’Reilly publications <
+
+winky-smiley/>.
+
+3. And indeed, we did just that with the original triggers feature in Beam. In
+
+retrospect, we went a bit overboard. Future iterations will be simpler and
+
+easier to use, and in this book I focus only on the pieces that are likely to
+
+remain in some form or another.
+
+4. More accurately, the input to the function is really the state at time *P* of
+
+everything upstream of the point in the pipeline where the watermark is being
+
+observed: the input source, buffered data, data actively being processed, and
+
+so on; but conceptually it’s simpler to think of it as a mapping from
+
+processing time to event time.
+
+5. Note that I specifically chose to omit the value of 9 from the heuristic
+
+watermark because it will help me to make some important points about late
+
+data and watermark lag. In reality, a heuristic watermark might be just as
+
+likely to omit some other value(s) instead, which in turn could have
+
+significantly less drastic effect on the watermark. If winnowing late-arriving
+
+data from the watermark is your goal (which is very valid in some cases, such
+
+as abuse detection, for which you just want to see a significant majority of the
+
+data as quickly as possible), you don’t necessarily want a heuristic watermark
+
+rather than a perfect watermark. What you really want is a percentile
+
+watermark, which explicitly drops some percentile of late-arriving data from
+
+its calculations. See Chapter 3.
+
+6. Which isn’t to say there aren’t use cases that care primarily about
+
+correctness and not so much about latency; in those cases, using an accurate
+
+watermark as the sole driver of output from a pipeline is a reasonable
+
+approach.
+
+7. And, as we know from before, this assertion is either guaranteed, in the case
+
+of a perfect watermark being used, or an educated guess, in the case of a
+
+heuristic watermark.
+
+8. You might note that there should logically be a fourth mode: discarding and
+
+retracting. That mode isn’t terribly useful in most cases, so I don’t discuss it
+
+further here.
+
+9. In retrospect, it probably would have been clearer to choose a different set
+
+of names that are more oriented toward the observed nature of data in the
+
+materialized stream (e.g., “output modes”) rather than names describing the
+
+state management semantics that yield those data. Perhaps: discarding mode
+
+→ delta mode, accumulating mode → value mode, accumulating and
+
+retracting mode → value and retraction mode? However, the
+
+discarding/accumulating/accumulating and retracting names are enshrined in
+
+the 1.x and 2.x lineages of the Beam Model, so I don’t want to introduce
+
+potential confusion in the book by deviating. Also, it’s very likely
+
+accumulating modes will blend into the background more with Beam 3.0 and
+
+the introduction of sink triggers; more on this when we discuss SQL in
+
+Chapter 8.
 
 {%  enddetails   %}
