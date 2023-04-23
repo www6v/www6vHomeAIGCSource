@@ -71,7 +71,6 @@ Windows[Where] | Tumbling<br> Sliding <br> Session| Sliding <br> batchDuration,w
 |          Composite triggers |     √      |   √   |   ×   |
 |            Allowed lateness |     √      |   √   |   ×   |
 |                      Timers |     ×      |   ×   |   ×   |
-|                             |            |       |       |
 
 
 
