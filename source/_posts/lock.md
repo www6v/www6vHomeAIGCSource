@@ -12,9 +12,11 @@ categories:
 <p></p>
 <!-- more -->
 
-{% asset_img  lock.jpg  多线程中的锁 %}
+{% asset_img  Lock-theory.jpg   %}
 
-## 参考：
+{% asset_img  Lock-java.jpg   %}
+
+## 参考
 
 1. 《java并发编程实践》 13章 显示锁 ,13.5 读-写锁
 2. 轻松学习java可重入锁(ReentrantLock)的实现原理
