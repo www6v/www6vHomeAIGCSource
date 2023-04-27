@@ -11,10 +11,13 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 # SRE五大根基 
 ### 实践SLO  
 
-+ 服务的SLO
+##### 服务的SLO
   - VALET[Home Depot]
     + Volume
     + Avail
@@ -22,7 +25,7 @@ categories:
     + Errors
     + Ticket
 
-+ 数据服务的SLO
+#####  数据服务的SLO
 {% post_link 'redisSLO' %}
 
 ### 监控
@@ -34,7 +37,7 @@ categories:
 ### 简单化
 
 
-## 参考
+# 参考
 [《Google SRE工作手册》第二期SRE五大根基之一：SLO](https://www.bilibili.com/video/BV1ZK41127WY/)  V ***
 
 [《Google SRE工作手册》第二期SRE五大根基之二：监控](https://www.bilibili.com/video/BV1JY411o7AS/)  V *** 
