@@ -12,6 +12,8 @@ top: true
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
 
 # 原理
 + {%  post_link  'redis'  %}
@@ -27,6 +29,7 @@ top: true
 + {%  post_link  'rdb'  %}
 + {%  post_link  'aofRewrite'  %}
 + {%  post_link  'redisError'  %}
++ {%  post_link  'redisSLO'  %}
 
 # 应用
 + {%  post_link  'redisUseCase'  %}

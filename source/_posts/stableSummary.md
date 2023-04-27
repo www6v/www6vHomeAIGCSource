@@ -20,17 +20,16 @@ top: true
 + {% post_link  'ratelimit' %}
   - {% post_link  'Hystrix' %}
   - {% post_link  'ratelimitSentinel' %}
-  
-[系统架构](../../../../categories/架构/系统架构/)
+-  [系统架构](../../../../categories/架构/系统架构/)  category
 
 ## SRE
 
 + {% post_link  'sre' %}
 + {% post_link  'sreWorkbook' %}
+  -  {% post_link  'sreWorkbookBasic' %} 
 + {% post_link  'capacityGuarantee' %}
 + {% post_link  'chaosEngineering' %}
-
-[可观测性](../../../../categories/可观测性/)
+-  [可观测性](../../../../categories/可观测性/) category
 
 ## 故障
 + {% post_link  'fault' %}
