@@ -60,12 +60,10 @@ $ pip install ansible==2.6.18 netaddr==0.7.19 -i https://mirrors.aliyun.com/pypi
 10.100.140.230 NODE_NAME=etcd2
 10.100.140.231 NODE_NAME=etcd3
 
--master node(s)
 [kube-master]
 10.100.140.227
 10.100.140.228
 
--work node(s)
 [kube-node]
 10.100.140.229
 10.100.140.230
