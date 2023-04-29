@@ -30,20 +30,19 @@ work-arch-kv-redis-3          172.16.28.94     append
 ##  新建集群 [2]
 
 ##### 安装k8s包到本地目录 /bin /down	 
-```
-export release=2.2.4  
+``` shell
+$ export release=2.2.4  
 
-curl -C- -fLO --retry 3 https://github.com/easzlab/kubeasz/releases/  
-download/${release}/easzup  
-chmod +x ./easzup  
+$ curl -C- -fLO --retry 3 https://github.com/easzlab/kubeasz/releases/download/${release}/easzup  
+$ chmod +x ./easzup  
   
-./easzup -D  
-./easzup -S	  
+$ ./easzup -D  
+$ ./easzup -S	  
 ```
 
 
 ##### step1
-```
+``` shell
 CentOS7   
 
 $ yum install git python-pip -y    
@@ -56,10 +55,6 @@ $ pip install ansible==2.6.18 netaddr==0.7.19 -i https://mirrors.aliyun.com/pypi
 
 ##### step2 - vim /etc/ansible/hosts   
 ```
--'etcd' cluster should have odd member(s) (1,3,5,...)
-
--variable 'NODE_NAME' is the distinct name of a member in 'etcd' cluster
-
 [etcd]
 10.100.140.229 NODE_NAME=etcd1
 10.100.140.230 NODE_NAME=etcd2
@@ -83,24 +78,24 @@ $ pip install ansible==2.6.18 netaddr==0.7.19 -i https://mirrors.aliyun.com/pypi
 
 ##### step3
 
-```
+``` shell
 
-ansible-playbook 01.prepare.yml 
-ansible-playbook 02.etcd.yml
-ansible-playbook 03.docker.yml 
-ansible-playbook 04.kube-master.yml 
-ansible-playbook 05.kube-node.yml 
-ansible-playbook 06.network.yml 
-ansible-playbook 07.cluster-addon.yml 
+$ ansible-playbook 01.prepare.yml 
+$ ansible-playbook 02.etcd.yml
+$ ansible-playbook 03.docker.yml 
+$ ansible-playbook 04.kube-master.yml 
+$ ansible-playbook 05.kube-node.yml 
+$ ansible-playbook 06.network.yml 
+$ ansible-playbook 07.cluster-addon.yml 
 
 ```
 
 
 ## 扩展node [3]
-```
-./tools/easzctl add-node 172.16.28.92
-./tools/easzctl add-node 172.16.28.93
-./tools/easzctl add-node 172.16.28.94
+``` shell
+$ ./tools/easzctl add-node 172.16.28.92
+$ ./tools/easzctl add-node 172.16.28.93
+$ ./tools/easzctl add-node 172.16.28.94
 ```
 
 ## 参考
