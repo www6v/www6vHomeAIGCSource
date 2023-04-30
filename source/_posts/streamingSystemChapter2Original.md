@@ -2052,3 +2052,5 @@ the introduction of sink triggers; more on this when we discuss SQL in
 Chapter 8.
 
 {%  enddetails   %}
+
+
