@@ -19,13 +19,10 @@ top: true
 + {% post_link 'EAI'  %}
 + {% post_link 'DomainLogicAndSQL'  %}
 
-
 ## 系统架构
 + {% post_link 'middleStage'  %}
 + {% post_link 'disaggregationOfComputeAndStorage'  %}
-+ {% post_link 'multiLive'  %}
-+ {% post_link 'available'  %}
-
++ {% post_link 'haSummary'  %}
 
 ## 系统设计 
 + {% post_link 'feed'  %}
@@ -37,6 +34,10 @@ top: true
 + {% post_link 'designPrinciple'  %}
   
 + {% post_link 'designOCPspi'  %}
+  
+  
+  
+  
   
   
   

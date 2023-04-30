@@ -1,5 +1,5 @@
 ---
-title: 高可用  汇总
+title: 高可用架构  汇总
 date: 2019-04-28 12:12:25
 tags:
   - 汇总
@@ -18,8 +18,8 @@ top: true
 # 高可用
 ### Overview
 + {% post_link  'available' %}
+   - {% post_link  'splitBrain' %}
 + {% post_link  'tencentTCP3' %}
-+ {% post_link  'splitBrain' %}
 
 ### 容灾&多活
 + {% post_link  'aliyunDisasterRecovery' %}
@@ -27,9 +27,14 @@ top: true
 
 ### 中间件 
 + {% post_link  'kafkaReliability' %}
++ {% post_link  'kafka-election' %}
++ {% post_link  'kafkaController' %}
 
 ### 数据服务
 + {% post_link  'mysqlReliability' %}
 + {% post_link  'dbTradeoff' %}
 
+### K8S  高可用
++ {% post_link  'k8sHA' %}
++ {% post_link  'k8sAvailable' %}
 

@@ -103,7 +103,8 @@ eg. 上海一区和上海二区按照 80% 和 20% 的比例分发
   Redlock - redis分布式锁的高可用
 
 ### 中间件层
-+ kafka
++ kafka 高可用
++ zk高可用
 
 + 系统中的高可用 examples
   [面试|图解 kafka 的高可用机制](https://mp.weixin.qq.com/s/GMsYVgPmoCbdWW4FQthrAA)  isr

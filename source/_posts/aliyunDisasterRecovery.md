@@ -1,5 +1,5 @@
 ---
-title: 阿里云-容灾恢复DisasterRecovery
+title: 阿里云-容灾恢复DR
 date: 2022-06-26 21:05:38
 tags:
   - 云计算
