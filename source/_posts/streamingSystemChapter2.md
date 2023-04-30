@@ -636,8 +636,8 @@ PCollection<KV<Team，Integer>> totals = input
 
 
 # Draft Here
-{% drafts %}
+{% draft %}
 [《Streaming Systems》第二章: 数据处理中的 What, Where, When, How](https://www.jianshu.com/p/cb5a602d4833) 
 [Streaming Systems (二)](https://zhuanlan.zhihu.com/p/96501276)
 [Streaming System 第二章：The What- Where- When- and How of Data Processing](https://developer.aliyun.com/article/674450?spm=a2c6h.13262185.profile.25.4fc222b7lymaKT)
-{% enddrafts %}
+{% enddraft %}
