@@ -19,7 +19,7 @@ categories:
   减少误告警
 - 查全率
   减少漏告警
-{% asset_img  'precision-recall.JPG' %}  
+  {% asset_img  'precision-recall.JPG' %}  
 
 + 检测用时
   过长  影响错误预算
@@ -39,6 +39,6 @@ categories:
   - 方法6 基于多个窗口 多个燃烧率的告警
   
 ## 参考
-[《Google SRE工作手册》第四期基于SLO的告警配置及实践分享](https://www.bilibili.com/video/BV1ov4y197N1/)
-
+1. [《Google SRE工作手册》第四期基于SLO的告警配置及实践分享](https://www.bilibili.com/video/BV1ov4y197N1/) V
+2. 《Google SRE工作手册》  第5章
 

@@ -27,6 +27,8 @@ top: true
 + {% post_link  'sre' %}
 + {% post_link  'sreWorkbook' %}
   -  {% post_link  'sreWorkbookBasic' %} 
+  -  {% post_link  'sreWorkbookBasicSLO' %} 
+  -  {% post_link  'sreWorkbookBasicAlert' %} 
 + {% post_link  'capacityGuarantee' %}
 + {% post_link  'chaosEngineering' %}
 -  [可观测性](../../../../categories/可观测性/) category
