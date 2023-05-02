@@ -18,7 +18,7 @@ categories:
 # 参考
 
 ### 大纲
-1. 超全总结 | 阿里如何应对电商故障？神秘演练细节曝光  阿里巴巴  周洋
+1. [超全总结 | 阿里如何应对电商故障？神秘演练细节曝光](https://developer.aliyun.com/article/105551) 阿里巴巴  周洋
 
 ### Application & Data
 1. 不正当使用HashMap导致cpu 100%的问题追究 王宏江
