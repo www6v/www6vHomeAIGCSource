@@ -17,7 +17,7 @@ categories:
 # SRE五大根基 
 ### 实践SLO  
 
-##### 服务的SLO
+##### 服务的SLO [1]
   - VALET[Home Depot]
     + Volume
     + Avail
@@ -27,6 +27,17 @@ categories:
 
 #####  数据服务的SLO
 {% post_link 'redisSLO' %}
+
+##### SLI [1]
+
+| 服务类型 | SLI类型                |
+| -------- | ---------------------- |
+| 请求驱动 | 可用性，延迟，质量     |
+| 流水线   | 时效性，正确率，覆盖率 |
+| 存储     | 持久性                 |
+
+##### SLO 仪表板[趋势] [1]
+{% asset_img  'slo-trend.JPG'  %}
 
 ### 监控
 
@@ -38,8 +49,6 @@ categories:
 
 
 # 参考
-[《Google SRE工作手册》第二期SRE五大根基之一：SLO](https://www.bilibili.com/video/BV1ZK41127WY/)  V ***
-
-[《Google SRE工作手册》第二期SRE五大根基之二：监控](https://www.bilibili.com/video/BV1JY411o7AS/)  V *** 
-
-{%  post_link 'sreWorkbook' %} self
+1. [《Google SRE工作手册》第二期SRE五大根基之一：SLO](https://www.bilibili.com/video/BV1ZK41127WY/)  V ***
+2. [《Google SRE工作手册》第二期SRE五大根基之二：监控](https://www.bilibili.com/video/BV1JY411o7AS/)  V *** 
+3. {%  post_link 'sreWorkbook' %} self
