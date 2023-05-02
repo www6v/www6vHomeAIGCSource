@@ -39,6 +39,10 @@ categories:
 ##### SLO 仪表板[趋势] [1]
 {% asset_img  'slo-trend.JPG'  %}
 
+##### 基于SLO和错误预算的决策
+{% asset_img  'slo-decision.JPG'  %}
+
+
 ### 监控
 
 ### 告警
