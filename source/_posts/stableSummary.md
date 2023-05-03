@@ -34,7 +34,9 @@ top: true
 -  [可观测性](../../../../categories/可观测性/) category
 
 ## 故障
-+ {% post_link  'fault' %}
++ {% post_link  'faultModel1' %}
++ {% post_link  'faultModel2' %}
++ {% post_link  'faultModel3' %}
 + {% post_link  'tcpFault' %}
 + {% post_link  'splitBrain' %}
 + {% post_link  'crashDetect' %}
