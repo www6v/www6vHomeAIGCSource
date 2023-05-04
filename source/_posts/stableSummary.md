@@ -33,34 +33,41 @@ top: true
 + {% post_link  'chaosEngineering' %}
 -  [可观测性](../../../../categories/可观测性/) category
 
-## 故障
+## 故障模型 && 故障排查
+##### Java Core && Application
 + {% post_link  'faultModel1' %}
-+ {% post_link  'faultModel2' %}
-+ {% post_link  'faultModel3' %}
-+ {% post_link  'tcpFault' %}
-+ {% post_link  'splitBrain' %}
-+ {% post_link  'crashDetect' %}
-
-
-## 故障排查
-##### Overview
-+ {% post_link  'findProblem' %}
-+ {% post_link  'slowRT' %}
-
-##### Java Core
-+ {% post_link  'twoGCcase' %}
-+ {% post_link  'interrupted' %}
-+ {% post_link  'classloader' %}
+  + {% post_link  'twoGCcase' %}
+  + {% post_link  'interrupted' %}
+  + {% post_link  'classloader' %}
 
 #####  中间件
-+ {% post_link  'zookeeperBug' %}
-+ {% post_link  'mybatisBug' %}
-+ {% post_link  'mysqlBestPractice' %}
 
-##### 网络
-+ {% post_link  'haproxyTcpdump' %}   
++ {% post_link  'faultModel2' %}
+  - 微服务
+    + {% post_link  'findProblem' %}
+    + {% post_link  'slowRT' %} 
+  - {% post_link  'zookeeperBug' %}
+  - {% post_link  'mybatisBug' %}
+  - {% post_link  'mysqlBestPractice' %}
+  - {% post_link  'splitBrain' %}
+
+##### Infra
++ {% post_link  'faultModel3' %}
+  + {% post_link  'haproxyTcpdump' %}   网络
 
 ##### K8s
 + {% post_link  'k8sTroubleshoot' %}  
 + {% post_link  'k8sProblem' %}     
-+ {% post_link  'k8sBestPractice' %}    
++ {% post_link  'k8sBestPractice' %}  
+
+##### Basic
++ {% post_link  'tcpFault' %}
++ {% post_link  'crashDetect' %}
+
+
+
+
+
+
+
+  
