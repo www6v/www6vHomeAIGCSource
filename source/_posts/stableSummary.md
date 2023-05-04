@@ -36,9 +36,11 @@ top: true
 ## 故障模型 && 故障排查
 ##### Java Core && Application
 + {% post_link  'faultModel1' %}
+  + {% post_link  'memoryLeak' %} 
   + {% post_link  'twoGCcase' %}
   + {% post_link  'interrupted' %}
   + {% post_link  'classloader' %}
+  + {% post_link  'multiAgent' %}
 
 #####  中间件
 
@@ -46,7 +48,7 @@ top: true
   - 微服务
     + {% post_link  'findProblem' %}
     + {% post_link  'slowRT' %} 
-  - {% post_link  'zookeeperBug' %}
+  - {% post_link  'zookeeperBug' %}  ***
   - {% post_link  'mybatisBug' %}
   - {% post_link  'mysqlBestPractice' %}
   - {% post_link  'splitBrain' %}

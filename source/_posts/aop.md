@@ -12,7 +12,7 @@ categories:
 
 <!-- more -->
 
-{% asset_img  AOP.png  AOP总结 %}
+{% asset_img  AOP.jpg  AOP总结 %}
 
 ## 参考:
 

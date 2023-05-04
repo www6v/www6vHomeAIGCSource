@@ -3,10 +3,10 @@ title: 内存泄漏的案例和解决方案
 date: 2014-02-02 10:26:27
 tags: 
   - 内存
-categories: 
-  - Java基础
-  - 内存
-  - 内存泄漏 
+categories:
+  -  稳定性  
+  -  故障排查  
+  -  Java内存泄漏  
 ---
 
 <p></p>
