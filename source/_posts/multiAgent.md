@@ -1,5 +1,5 @@
 ---
-title: 多个Agent
+title: 多个Java Agent同时使用的类增强冲突问题
 date: 2021-05-04 12:09:07
 tags:
   - 故障排查  
@@ -274,4 +274,6 @@ Draft Here[参考]
 # 参考
 
 [记一次多个JavaAgent同时使用的类增强冲突问题及分析](https://bbs.huaweicloud.com/blogs/382800)
+https://github.com/alibaba/arthas/issues/2051
+https://github.com/apache/skywalking/issues/9701
 {% enddraft %}
