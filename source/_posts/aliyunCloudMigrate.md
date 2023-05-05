@@ -67,6 +67,6 @@ categories:
 {% asset_img dbMigrate.png %}
 
 ## 参考
-1. [课时1](https://www.bilibili.com/video/BV1tD4y1977x?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
-2. [数据库迁移](../../../../2022/04/11/dbMigrate/) self
-3. [KVM 虚拟机](../../../../2022/06/25/kvm/) self  KVM动态迁移
+1. [阿里云云上常见架构设计及优化-课时1：迁移上云架构设计及解决方案](https://www.bilibili.com/video/BV15y4y1a7ds)
+2. {% post_link 'dbMigrate' %} self
+3. {% post_link 'kvm' %}  self  KVM动态迁移

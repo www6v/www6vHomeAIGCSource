@@ -12,19 +12,19 @@ top: true
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 ## 厂商
-##### Overview
-[云计算产品-计算](../../../../2022/04/30/cloudProduct/)<br/>[云计算产品-网络Network](../../../../2022/05/22/cloudProduct-Network/)<br/>[云计算产品-存储Storage](../../../../2022/05/22/cloudProduct-Storage/)<br/>
+##### 分类
++ {%  post_link  'awsSummary'  %}
++ {%  post_link  'aliyunSummary'  %}
++ {%  post_link  'tencentTCPSummary'  %}
 
-
-
-| 厂商   | 总结                                                        |
-| ------ | ----------------------------------------------------------- |
-| AWS    | [AWS 汇总](../../../../2018/10/04/awsSummary/)              |
-| 阿里云 | [阿里云 汇总](../../../../2022/05/16/aliyunSummary/)        |
-| 腾讯云 | [腾讯云TCP-汇总](../../../../2022/06/30/tencentTCPSummary/) |
-
-
+##### 横向比较
++ {%  post_link  'cloudProduct'  %}
++ {%  post_link  'cloudProduct-Network'  %}
++ {%  post_link  'cloudProduct-Storage'  %}
 
 ## 通用总结
 
