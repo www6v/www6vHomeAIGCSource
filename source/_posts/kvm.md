@@ -17,7 +17,7 @@ VMM(Virtual Machine Monitor) Hypervisor
 QEMU: 软件虚拟化
 
 ## KVM架构图
-{% asset_img kvm-arch.png KVM架构图 %}
+{% asset_img kvm-arch.jpg KVM架构图 %}
 
 ## KVM 虚机的创建过程
 
