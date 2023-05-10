@@ -44,8 +44,19 @@ categories:
   
 + ChatHub  [instatlled]
  chatgpt + new bing
- [ChatHub ](https://github.com/chathub-dev/chathub)
- 
+  [ChatHub ](https://github.com/chathub-dev/chathub)
+
 + OpenAI Translator
   [openai-translator](https://github.com/yetone/openai-translator)
   要注册账号, 需要api token
+
+## 创业
+
++ [GPT-3 Demo](https://gpt3demo.com/map)
+  - 聊天机器人
+  - 代码辅助
+  - 写作应用
+  - 游戏
+                
+                
+                                

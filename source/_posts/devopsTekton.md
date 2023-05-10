@@ -14,7 +14,7 @@ categories:
 ## 事件触发的自动化流水线[1]
 {%  asset_img 'tekton-pipeline.JPG'  %}
 
-## Example [chat]
+## Example1 [chat]
 下面是一个包含EventListener、TriggerTemplate和PipelineRun的Tekton YAML模板示例，其中包含interceptors、bindings和template，旨在从Git中拉取代码：
 ```
 apiVersion: tekton.dev/v1beta1
@@ -94,5 +94,15 @@ spec:
     value: https://github.com/my-org/my-repo.git
 ```
 
+
+
+## Example2  [2] 
+
 # 参考
+
 1. 《10丨模块十：Kubernetes的生产化运维》  云原生训练营 
+
+2. [第一季：第 5 集 云原生 CI 中的强者 Tekton](https://www.bilibili.com/video/BV1e94y117tY/) 未
+
+   [相关的git-代码](https://github.com/DevopsChina/lab/tree/main/ci/lab05-tekton)
+
