@@ -130,6 +130,9 @@ create table people {
 覆盖索引可以减少树的搜索次数，显著提升查询性能，所以使用**覆盖索引**是一个常用的性能**优化手段**.
 **[不需要回表， 不需要回到聚集索引里查询]**
 
+
+##### 索引下推 ICP [14]
+
 ##  索引-性能分析[7]
 ##### 查看执行频次
 
@@ -158,37 +161,24 @@ mysql> show profiles;
 ## 参考
 
 1. 《深入浅出MySQL：数据库开发、优化与管理维护》 
-
 2. [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
-
 3. [理解MySQL——索引与优化](https://www.cnblogs.com/hustcat/archive/2009/10/28/1591648.html)
-
 4. xxx
-
 5. [剖析Mysql的InnoDB索引](https://blog.csdn.net/voidccc/article/details/40077329)  ***
-
 6. [可能是全网最好的MySQL重要知识点](https://mp.weixin.qq.com/s/M1dLLuePpdM9vA3F1uJGyw)  已失效
-
 7. [黑马程序员 MySQL数据库入门到精通](https://www.bilibili.com/video/BV1Kr4y1i7ru?p=78) P75-P82 P72
    [mysql_note](https://github.com/www6v/mysql_note) 笔记1
    [MySQL 索引](https://frxcat.fun/database/MySQL/MySQL_Advanced_index/) 笔记2
-
 8. xxx 
-
 9. [ali canal](https://github.com/alibaba/canal)
-
 10. 《MySQL实战45讲 - 深入浅出索引（上）》   丁奇
-
 11. 《MySQL实战45讲 - 深入浅出索引（下）》   丁奇
-
 12. 《Java性能调优实战 - 34 | MySQL调优之索引：索引的失效与优化》  刘超  还要再整理
-
 13. [MySQL索引（二）B+树在磁盘中的存储](https://www.cnblogs.com/tongongV/p/10952102.html) 
-
     > B+树索引并不能直接找到行，只是找到行所在的页，通过把整页读入内存，再在内存中查找。
     > 聚集索引的存储在物理上并不是连续的，每个数据页在不同的磁盘块，通过一个双向链表来进行连接。
+14. [五分钟搞懂MySQL索引下推](https://juejin.cn/post/7005794550862053412)
 
-
-+ [MySQL索引原理及慢查询优化](https://tech.meituan.com/2014/06/30/mysql-index.html)   美团 未  ***
-+ [业界难题-“跨库分页”的四种方案](https://mp.weixin.qq.com/s/h99sXP4mvVFsJw6Oh3aU5A)  58沈剑  未
+99. [MySQL索引原理及慢查询优化](https://tech.meituan.com/2014/06/30/mysql-index.html)   美团 未  ***
+100. [业界难题-“跨库分页”的四种方案](https://mp.weixin.qq.com/s/h99sXP4mvVFsJw6Oh3aU5A)  58沈剑  未
 

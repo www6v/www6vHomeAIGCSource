@@ -12,7 +12,7 @@ categories:
 <p></p>
 <!-- more -->
 
-## 一. redo log && bin log
+##  redo log && bin log
 有了**redo log**，InnoDB就可以保证即使数据库发生异常重启，之前提交的记录都不会丢失，这个
 能力称为**crash-safe**。
 
@@ -24,7 +24,7 @@ categories:
  how    | 循环写的|  追加写入的
 
 
-## 二. update in Mysql
+##  update in Mysql
 MySQL里的WAL(Write-Ahead Logging)技术，它的关键点就是**先写日志，再写磁盘.**
 
 更新流程还涉及两个重要的日志模块，**redo log（重做日志）和 binlog（归档日志）**。
