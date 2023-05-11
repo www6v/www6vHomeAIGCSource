@@ -14,18 +14,18 @@ top: true
 <!-- more -->
 
 ## 总结
-+ {% post_link 'performance'  %}
++ {% post_link 'performance'  %}  ***
 + {% post_link 'linuxPerformance'  %}   cpu， memory， io
 + {% post_link 'linuxProfile'  %}   method and tools
-+ {% post_link 'linuxPerformance-cpu'  %}
++ {% post_link 'linuxPerformance-cpu'  %}  ***
 + {% post_link 'linuxKernelParam'  %}
 
 ## 网络 Net
-+ {% post_link 'tcpTimewait'  %}
++ {% post_link 'tcpTimewait'  %}  *** 
 + {% post_link 'tcpUdpControlCongestion'  %}
 
 ## Java和应用
-+ {% post_link 'optimize'  %}  内存
++ {% post_link 'optimize'  %}  内存 *** 
 + {% post_link 'cache'  %}  内存
 + {% post_link 'falseSharing'  %}  内存
 + {% post_link 'threadNum'  %}  线程 
@@ -33,8 +33,9 @@ top: true
 
 
 ## MySQL
-+ {% post_link 'mysqlIndex'  %}
-+ {% post_link 'mysqlBestPractice' %}
++ {% post_link 'mysqlIndex'  %}  ***
++ {% post_link 'mysqlBestPractice' %}  ***
 
 ## Spark
-+ {% post_link 'sparkPerformance'  %}
++ {% post_link 'streamingSparkPerformance'  %}   ***
+
