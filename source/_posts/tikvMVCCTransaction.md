@@ -47,7 +47,5 @@ categories:
 1. [TiKV 事务模型概览，Google Spanner 开源实现](https://cn.pingcap.com/blog/tidb-transaction-model)  *** 
 2. 《13 | 隔离性：为什么使用乐观协议的分布式数据库越来越少? 》  分布式数据库30讲
 3. 《11｜隔离性：读写冲突时，快照是最好的办法吗？》 分布式数据库30讲
-
-
-[percolator的理解与开源实现分析](https://zhuanlan.zhihu.com/p/149377959)   未
-[Percolator - 分布式事务的理解与分析](https://zhuanlan.zhihu.com/p/261115166)   未
+99. [percolator的理解与开源实现分析](https://zhuanlan.zhihu.com/p/149377959)   未
+100. [Percolator - 分布式事务的理解与分析](https://zhuanlan.zhihu.com/p/261115166)   未
