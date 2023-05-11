@@ -12,25 +12,25 @@ categories:
 <p></p>
 <!-- more -->
 
+## TCP基础总结
 {% asset_img  tcp-base.jpg  TCP基础总结 %}
+
+## TCP优化
 {% asset_img  tcp-optimize.jpg  TCP优化 %}
 
 Tcp五元组: 源ip, 源port, 目的ip, 目的port, 协议
 
-
-
-## 一.  TCP Keep-Alive 
+##   TCP Keep-Alive 
 【TCP Keep-Alive】 |  基础  |  并行请求
 -|-|-
 HTTP1.1|Connection  Header <br>[Connection: keep-alive<br>Connection: close] | 1. 浏览器默认不开启 HTTP Pipelining, 不可行(一个TCP连接中的多个并行HTTP请求) <br> 2. 一个 HOST 上建立多个 TCP 连接,Chrome 最多允许对同一个 Host 建立六个 TCP 连接
 HTTP2.0| HTTP2是在HTTPS上实现的 |  HTTP2的Multiplexing多路传输特性， 可行
 
 
-	
-## 二. TCP 握手、挥手
+##  TCP 握手、挥手
 
 <div style="text-align: center;">
-	
+
 ![图1.TCP三次握手](https://user-images.githubusercontent.com/5608425/65186269-e2b7e780-da9b-11e9-926f-ea186bb3282a.jpg)   
 图1.TCP三次握手
 
@@ -40,7 +40,7 @@ HTTP2.0| HTTP2是在HTTPS上实现的 |  HTTP2的Multiplexing多路传输特性�
 ![tcp-sync-queue-and-accept-queue](https://user-images.githubusercontent.com/5608425/65186270-e3507e00-da9b-11e9-8419-bab1f09e35eb.jpg)  图3.全/半连接队列
 </div>
 
-## 参考:
+## 参考
 
 1. [java socket参数详解:TcpNoDelay](https://blog.csdn.net/huang_xw/article/details/7340241) huang_xw  
 2. [关于TCP 半连接队列和全连接队列 蛰剑](http://jm.taobao.org/2017/05/25/525-1/)

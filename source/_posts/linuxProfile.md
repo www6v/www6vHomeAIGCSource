@@ -1,5 +1,5 @@
 ---
-title: linux性能分析 
+title: Linux性能分析 
 date: 2018-12-26 23:23:18
 tags:
   - linux
@@ -11,17 +11,16 @@ categories:
 <p></p>
 <!-- more -->
 
-## 一. Linux observability tools | Linux 性能观测工具
+##  Linux observability tools | Linux 性能观测工具
 
 <div style="text-align: center;">
-	
+
 ![linux_observe_tools](https://user-images.githubusercontent.com/5608425/65083384-fe0eee00-d9da-11e9-9b5f-c3361a273b67.jpg)
 Linux性能观测工具
 </div>
 
-<!-- more -->
 
-## 二. 快速性能诊断(快速体检)
+##  快速性能诊断(快速体检)
 
 1. 系统平均负载
 ```

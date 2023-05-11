@@ -14,21 +14,18 @@ categories:
 
 {% asset_img   tcp&udp.jpg  TCP流控和拥塞控制 %}
 
+### TCP拥塞控制
+![TCP拥塞控制](https://user-images.githubusercontent.com/5608425/63579884-31ba4c00-c5c6-11e9-97d1-28defaa3286f.jpg)   
 
-<div style="text-align: center;">
+### TCP拥塞控制-快速重传
+![TCP拥塞控制-快速重传](https://user-images.githubusercontent.com/5608425/63579883-31ba4c00-c5c6-11e9-83ca-78a892b3243d.jpg)   
 
-![TCP拥塞控制](https://user-images.githubusercontent.com/5608425/63579884-31ba4c00-c5c6-11e9-97d1-28defaa3286f.jpg)   TCP拥塞控制
+### 快速重传
+![快速重传](https://user-images.githubusercontent.com/5608425/63579882-3121b580-c5c6-11e9-8483-c53b4ec03fe6.jpg)  
 
-![TCP拥塞控制-快速重传](https://user-images.githubusercontent.com/5608425/63579883-31ba4c00-c5c6-11e9-83ca-78a892b3243d.jpg)   TCP拥塞控制-快速重传
-
-![快速重传](https://user-images.githubusercontent.com/5608425/63579882-3121b580-c5c6-11e9-8483-c53b4ec03fe6.jpg)  快速重传
-
-</div>
 
 > 拥塞窗口是为了怕把网络塞满，在出现丢包的时候减少发送速度.
   滑动窗口就是为了怕把接收方塞满，而控制发送速度.
-
-
 
 ## 参考:
 1. [TCP 的那些事儿（下）](https://coolshell.cn/articles/11609.html)
