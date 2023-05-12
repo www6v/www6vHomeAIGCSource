@@ -16,7 +16,7 @@ categories:
 
 # MVCC
 
-+ 四个关键模块设计
++ 四个关键模块设计 [1]
   - 并发控制协议 ***
     + Two-phase Locking (MV2PL)
     + MVOCC
@@ -31,7 +31,7 @@ categories:
 ### 并发控制协议 [4]
 {% asset_img  'mvccProtocol.jpg' %}
 
-### 数据库中的MVCC
+### 本地数据库中的MVCC [2]
 
 | DB           | Protocol  | Version Storage   | Garbage Collection |      | Index Management           |
 | ------------ | --------- | ----------------- | ------------------ | ---- | -------------------------- |
@@ -42,15 +42,12 @@ categories:
 
 ### MySQL中的MVCC [3]
 
+### 分布式数据库中MVCC[5]
 
 # 参考
 1. [Paper Reading：聊一聊MVCC](https://jiekun.dev/posts/mvcc/) ***
-
 2. [1] Y. Wu, An Empirical Evaluation of In-Memory Multi-Version Concurrency Control. In VLDB 2017.
-
 3. {% post_link 'mysqlTransactionAndLock' %} self 
-
-   MySQL MVCC 快照都 vs 当前读 
+   MySQL MVCC 快照读 vs 当前读 
 4. [乐观锁和 MVCC 的区别？](https://www.zhihu.com/question/27876575) 
-
- 
+5. {% post_link 'tikvMVCCTransaction' %} self  
