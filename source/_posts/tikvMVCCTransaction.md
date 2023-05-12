@@ -1,5 +1,5 @@
 ---
-title: TiKV  MVCC Transaction
+title: TiKV Transaction-MVCC+TSO
 date: 2023-04-10 15:43:51
 tags:
   - 分布式数据库
@@ -47,5 +47,8 @@ categories:
 1. [TiKV 事务模型概览，Google Spanner 开源实现](https://cn.pingcap.com/blog/tidb-transaction-model)  *** 
 2. 《13 | 隔离性：为什么使用乐观协议的分布式数据库越来越少? 》  分布式数据库30讲
 3. 《11｜隔离性：读写冲突时，快照是最好的办法吗？》 分布式数据库30讲
-99. [percolator的理解与开源实现分析](https://zhuanlan.zhihu.com/p/149377959)   未
-100. [Percolator - 分布式事务的理解与分析](https://zhuanlan.zhihu.com/p/261115166)   未
+96. [percolator的理解与开源实现分析](https://zhuanlan.zhihu.com/p/149377959)   未
+97. [Percolator - 分布式事务的理解与分析](https://zhuanlan.zhihu.com/p/261115166)   未
+98. 《云原生数据库 原理与实践》 8.1.3   未
+99. [TiDB 新特性漫谈：悲观事务](https://cn.pingcap.com/blog/pessimistic-transaction-the-new-features-of-tidb) 未
+100. {% post_link 'distributedDatabaseGlobalTime' %}  self

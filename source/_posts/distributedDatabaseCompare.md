@@ -38,9 +38,8 @@ categories:
    CockroachDB使用了一个软件实现的基于NTP时钟同步的混合逻辑时钟算法(Hybrid Logic Clock)——HLC追踪系统中事务的的hb关系(happen before)。
 3. [CockroachDB事务解密(二)：事务模型](https://www.modb.pro/db/84153)
 4. [Cockroach  HLC](https://github.com/cockroachdb/cockroach/blob/master/pkg/util/hlc/hlc.go)
-5. 《云原生数据库 原理与实践》 8.1.3
-6. [TiDB 新特性漫谈：悲观事务](https://cn.pingcap.com/blog/pessimistic-transaction-the-new-features-of-tidb)
-7. {% post_link 'distributedDatabaseGlobalTime' %}  self
+5. {% post_link 'tikvMVCCTransaction' %}
+6. {% post_link 'distributedDatabaseGlobalTime' %}  self
 
 
 

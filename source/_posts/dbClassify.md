@@ -22,10 +22,9 @@ categories:
 
 {% asset_img  database.jpg  数据库分类 %}
 
-## 参考：
-
+## 参考
 1. [5分钟理解数据库全景图(SQL,NoSQL,NewSQL,OLAP,OLTP)](https://blog.csdn.net/icycode/article/details/81008607) icycode
-2. [NoSQL总结](../../../../2018/07/19/NoSQL/) self 
+2. {% post_link  'NoSQL'  %}  self
 
 
 

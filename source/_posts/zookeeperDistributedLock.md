@@ -11,11 +11,13 @@ categories:
 <p></p>
 <!-- more -->
 
-#  基于zk的分布式锁   
+## 目录
+<!-- toc -->
+
+#  基于ZK的分布式锁   
 {% asset_img distributedLock-zk.jpg 图3.zk分布式锁 %}
 
-
-
+###  可重入性[2][3]-实现方式
 [chat]
 
 在ZooKeeper中，分布式锁的可重入性是通过在锁节点的数据中保存一个拥有者ID和计数器来实现的。具体来说，当一个客户端第一次获取锁时，它会在锁节点的数据中设置一个拥有者ID，并将计数器设置为1。当这个客户端再次请求获取锁时，它会检查锁节点的数据中是否已经设置了拥有者ID，并且该ID是否与自己相同。如果相同，则将计数器加1，表示该客户端已经多次获取了锁；如果不同，则该客户端需要等待锁的释放。
@@ -34,14 +36,43 @@ categories:
 
 [endchat]
 
+### 可重入性[2]-代码实现
+```
+@Override
+
+public boolean lock() {
+
+    //可重入的判断
+
+    synchronized (this) {
+
+        if (lockCount.get() == 0) {
+
+            thread = Thread.currentThread();
+
+            lockCount.incrementAndGet();
+
+        } else {
+
+            if (!thread.equals(Thread.currentThread())) { ## 本线程是否已经占有锁
+
+            return false;
+
+        }
+
+        lockCount.incrementAndGet();
+
+        return true;
+
+      }
+   }
+   //....
+}
+```
+
 ### 羊群效应 优化 [1]
 
-### 可重入性[2][3]
-
-
-
-## 参考
-
+# 参考
 1. 《从Paxos到Zookeeper分布式一致性原理与实践》 倪超 6.1.7节
 2. [Zookeeper 分布式锁 （图解+秒懂+史上最全）](https://www.cnblogs.com/crazymakercircle/p/14504520.html) *** 
 3. [分布式锁（一）基于Zookeeper实现可重入分布式锁](https://blog.csdn.net/u013278314/article/details/82715716)  *
