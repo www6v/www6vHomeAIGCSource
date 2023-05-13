@@ -12,11 +12,11 @@ categories:
 <p></p>
 <!-- more -->
 
-
+## 计算密集
 
 | 计算密集     | 技术                                                         | 产品                                                     |
 | ------------ | ------------------------------------------------------------ | -------------------------------------------------------- |
-| 微服务       | RPC<br/>Service Mesh(3th)<br>多运行时(4th )                  | Dubbo<br/>istio proxyless<br/>daper                      |
+| 微服务       | RPC(2th)<br/>Service Mesh(3th)<br>多运行时(4th )             | Dubbo<br/>istio proxyless<br/>daper                      |
 | 容器         | 编排                                                         | K8s                                                      |
 | Service Mesh | Sidecar <br/>控制面， 数据面                                 | Envoy xDS <br/>微软SMI                                   |
 | 可观测       | Tracing+Metric+Logs                                          | OpenTelemetry=<br>OpenCensus+OpenTracing                 |
@@ -24,11 +24,11 @@ categories:
 
 
 
+## 数据密集
 
-
-| 数据密集 | 技术                               | 产品                          |
-| -------- | ---------------------------------- | ----------------------------- |
-| 消息队列 | CloudEvent                         | EventMesh                     |
-| 数据库   | 存算分离(资源伸缩)，融合HTAP(模型) | TiDB(TiKV, TiFlash) ，PolarDB |
-| 大数据   | 流计算                             | Beam，Flink                   |
+| 数据密集 | 技术                                         | 产品                          |
+| -------- | -------------------------------------------- | ----------------------------- |
+| 消息队列 | CloudEvent                                   | EventMesh                     |
+| 数据库   | 分离: 存算分离(资源伸缩)<br>融合: HTAP(模型) | TiDB(TiKV, TiFlash) ，PolarDB |
+| 大数据   | 流计算                                       | Beam，Flink                   |
 
