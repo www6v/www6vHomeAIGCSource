@@ -22,9 +22,13 @@ categories:
 [gossip-visualization]:https://rrmoelker.github.io/gossip-visualization/
 
 # 分布式一致性
+{% asset_img    overview.jpg   一致性级别概览（图源：https://jepsen.io/consistency）  %}
+
+[粉色-Unavailable]  在某些网络故障情况下不可用。为了确保安全，一些或所有节点必须暂停操作。
+[黄色-Sticky Available]  只要客户端只与相同的服务器通信而不切换到新的服务器，就可在每个非故障节点上使用。
+[蓝色-Total Available]  即使网络完全瘫痪，也可在每个非故障节点上使用。
 
 {% asset_img  consistent.jpg  分布式一致性总结 %}
-
 
 #  一致性
 
@@ -34,22 +38,23 @@ categories:
 </div>
 
 ###  强一致性
-强一致性|协议|特性|工程
+协议|强一致性|特性|工程
 :-:|:-:|:-:|:-:
-强一致性|两阶段<br>三阶段 #1| 延迟大，吞吐低。全局锁资源| JTA(XA)<br>  {% post_link 'transactionSeata'  Seata XA,AT **非入侵** %} self 
-强一致性|paxos #1|难理解，延迟大，吞吐中等，全局锁资源|分布式锁系统Chubby			
-顺序一直性（Sequential Consistency）| 逻辑时钟 |类似多线程程序执行顺序的模型| Zookeeper的读 <br>1.两个主流程，三个阶段 <br> 2.Zab（Qurum）:2f+1个节点，允许f个节点失败
+2PC<br>3PC #1|线性一致性[chat]| 延迟大，吞吐低。全局锁资源| JTA(XA)<br>  {% post_link 'transactionSeata'  Seata XA,AT **非入侵** %} self 
+Paxos #1|顺序一致性[chat]|难理解，延迟大，吞吐中等，全局锁资源|分布式锁系统Chubby			
+ 逻辑时钟 |顺序一致性|类似多线程程序执行顺序的模型| Zookeeper的读 <br>1.两个主流程，三个阶段 <br> 2.Zab（Qurum）:2f+1个节点，允许f个节点失败
 
-> Lamport提出**逻辑时钟**是为了解决分布式系统中的时序问题，即如何定义a在b之前发生.
++ 逻辑时钟
+  Lamport提出**逻辑时钟**是为了解决分布式系统中的时序问题，即如何定义a在b之前发生.
   Java中有happen-before  
 
-> **线性一致性**  #1： 严格一致性（Strict Consistency）或者原子一致性（Atomic Consistency） 一个操作对于系统的其他部分是不可中断的	
++ 线性一致性 Linearizability 
+  **线性一致性**  #1： 严格一致性（Strict Consistency）或者原子一致性（Atomic Consistency） 一个操作对于系统的其他部分是不可中断的	
 
-> **顺序一致性**  
++ **顺序一致性**   Sequential 
   + 任何一次读写操作都是按照某种特定的顺序。
   + 所有进程看到的读写操作顺序都保持一致。
-
-> **顺序一致性**虽然通过逻辑时钟保证所有进程保持一致的读写操作顺序，但这些读写操作的顺序跟实际上发生的顺序并不一定一致。而**线性一致性**是严格保证跟实际发生的顺序一致的。
+  **顺序一致性**虽然通过逻辑时钟保证所有进程保持一致的读写操作顺序，但这些读写操作的顺序跟实际上发生的顺序并不一定一致。而**线性一致性**是严格保证跟实际发生的顺序一致的。
 
 ###  弱一致性
 
