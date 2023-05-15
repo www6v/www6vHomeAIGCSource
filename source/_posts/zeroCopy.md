@@ -11,14 +11,17 @@ categories:
 <p></p>
 <!-- more -->
 
-> 零拷贝就是一种避免 CPU 将数据从一块存储拷贝到另外一块存储的技术
+# 零拷贝
+### 零拷贝
+  就是一种避免 CPU 将数据从一块存储拷贝到另外一块存储的技术
 
-> 零拷贝包括三种方式： 
-+ mmap()
- <<深入理解计算机系统>>mmap定义为：Linux通过将一个虚拟内存区域与一个磁盘上的对象(object)关联起来，以初始化这个虚拟内存区域的内容，这个过程称为内存映射(memory mapping)。
-+ sendfile() -> Java transferTo();
-+ DMA 
+### 零拷贝包括三种方式： 
+  + mmap()
+    <<深入理解计算机系统>>mmap定义为：Linux通过将一个虚拟内存区域与一个磁盘上的对象(object)关联起来，以初始化这个虚拟内存区域的内容，这个过程称为内存映射(memory mapping)。
+  + sendfile() -> Java transferTo();
+  + DMA 
 
+### mmap
 <div style="text-align: center;">
 <img width="454" alt="mmap概念" src="https://user-images.githubusercontent.com/5608425/64915067-0aa00600-d791-11e9-9aae-6e4832a279af.png"> mmap概念
 
@@ -33,7 +36,7 @@ mmap
 原理
 1. [零拷贝-zero copy](https://www.cnblogs.com/AaronCui/p/10528046.html)
 2. [Efficient data transfer through zero copy](https://developer.ibm.com/articles/j-zerocopy/) good transferTo()
-3. [Zero Copy I: User-Mode Perspective](https://www.linuxjournal.com/article/6345)   good
+3. [Zero Copy I: User-Mode Perspective](https://www.linuxjournal.com/article/6345)   ***
 4. [Linux 中的零拷贝技术，第 1 部分](https://www.ibm.com/developerworks/cn/linux/l-cn-zerocopy1/)
 5. [Linux 中的零拷贝技术，第 2 部分](https://www.ibm.com/developerworks/cn/linux/l-cn-zerocopy2/)
 6. [Linux 中直接 I/O 机制的介绍](https://www.ibm.com/developerworks/cn/linux/l-cn-directio/)  good
@@ -46,4 +49,4 @@ mmap
 9. [RocketMQ入门（上）](http://www.uml.org.cn/zjjs/201504011.asp)
 
 
-10. [Linux内存管理](../../../../2019/08/23/linux-memory/) self
+10. {% post_link 'linuxMemory' %} self
