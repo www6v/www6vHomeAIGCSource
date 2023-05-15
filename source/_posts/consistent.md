@@ -42,7 +42,8 @@ categories:
 :-:|:-:|:-:|:-:
 线性一致性[chat]|2PC<br>3PC #1| 延迟大，吞吐低。全局锁资源| JTA(XA)<br>  {% post_link 'transactionSeata'  Seata XA,AT **非入侵** %} self 
 顺序一致性[chat]|Paxos #1|难理解，延迟大，吞吐中等，全局锁资源|Google Chubby			
-顺序一致性| 逻辑时钟 |类似多线程程序执行顺序的模型| Zookeeper的读 <br>1.两个主流程，三个阶段 <br> 2.Zab（Qurum）:2f+1个节点，允许f个节点失败
+顺序一致性| {% post_link 'zookeeperZab' Zab %} self<br>逻辑时钟 |类似多线程程序执行顺序的模型| Zookeeper的读 <br>1.两个主流程，三个阶段 <br>2. Quorum:2f+1个节点，允许f个节点失败 
+强一致性| {% post_link 'raft' %} self |相对Paxos简单。主从，三个阶段| {% post_link 'etcd' %} self 
 
 + 逻辑时钟
   Lamport提出**逻辑时钟**是为了解决分布式系统中的时序问题，即如何定义a在b之前发生.
@@ -60,9 +61,8 @@ categories:
 
 弱一致性|协议|特性|工程
 :-:|:-:|:-:|:-:
-最终一致性(因果一致性)| 向量时钟 Vector clock[向量时钟] 图1 || 微信朋友圈的评论, Dynamo
-最终一致性（反熵Anti-Entropy）| [gossip][gossip-visualization] |  | Cassandra， redis的集群状态的同步机制
-最终一致性|  {% post_link 'raft' %} self | 相对Paxos简单。主从，三个阶段   | {% post_link 'etcd' %} self 
+因果一致性<br/>(最终一致性)| 向量时钟 Vector clock[向量时钟] 图1 || 微信朋友圈的评论, Dynamo
+反熵Anti-Entropy<br>(最终一致性)| [Gossip][gossip-visualization] |  | Cassandra， redis的集群状态的同步机制
 最终一致性|Master-Slave   |延迟低，吞吐高<br>主动推送/被动拉取  | {% post_link 'mysqlReliability' %} self 
 最终一致性|Master-Master  |延迟低，吞吐高                      | {% post_link 'mysqlReliability' %} self	
 弱一致性|Backups（备份）||
@@ -135,7 +135,8 @@ table th:first-of-type {
 state machine replication && primary-copy
 </div>
 
-> **复制状态机(state machine replication)**: 多个节点上，从相同的初始状态开始，执行相同的一串命令，产生相同的最终状态
++ **复制状态机(state machine replication)**
+  多个节点上，从相同的初始状态开始，执行相同的一串命令，产生相同的最终状态
   状态机 + 命令 -> 重放
 
 + **state machine replication**例子

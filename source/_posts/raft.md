@@ -15,7 +15,12 @@ categories:
 <p></p>
 <!-- more -->
 
-## 一. 总结
+
+
+## 目录
+<!-- toc -->
+
+##  总结
 
 从本质上说，**Raft 算法是通过一切以领导者为准的方式，实现一系列值的共识和各节点日志的一致.**
 
@@ -23,10 +28,10 @@ categories:
 
 Raft： leader + term + peers
 
-## 二. Raft-分区脑裂（成员变更的问题）
+##  Raft-分区脑裂（成员变更的问题）
 
 <div style="text-align: center;">
-	
+
 ![raft-patition](https://user-images.githubusercontent.com/5608425/64484884-1c425480-d24b-11e9-92c1-865111cc016d.JPG)  
 分区脑裂[非majority有uncommited log、 term1]
 
@@ -34,7 +39,7 @@ Raft： leader + term + peers
 分区脑裂[majority可以同步log、 term2]
 </div>
 
-## 三. Raft-领导者选举
+##  Raft-领导者选举
 
 {% asset_img   raft-leader-1.JPG  raft选举-步骤1-Election Timeout  %}
 {% asset_img   raft-leader-2.JPG  raft选举-步骤2 %}
@@ -42,14 +47,14 @@ Raft： leader + term + peers
 {% asset_img   raft-leader-4.JPG  raft选举-步骤4 %}
 {% asset_img   raft-leader-5.JPG  raft选举-步骤5 %}
 
-## 四. Raft-复制日志
+##  Raft-复制日志
 + 副本数据是以日志的形式存在的，其中日志项中的指令表示用户指定的数据。
 + Raft 是通过以领导者的日志为准，来实现日志的一致的。
 + 在 Raft 中日志必须是**连续的**
 + **日志完整性最高的节点才能当选领导者**
 
 
-## 参考：
+## 参考
 
 1. [raft](http://thesecretlivesofdata.com/raft/)  动画 good
 2. [The Raft Consensus Algorithm](https://raft.github.io/)  good 动画 各种系统实现 未
@@ -62,8 +67,7 @@ Raft： leader + term + peers
 9. [分布式协议与算法实战 - 08丨Raft算法（二）：如何复制日志？.pdf]() 韩健 good
 
 ---
-### 论文
++  论文
 1. [Raft一致性算法论文译文](https://www.infoq.cn/article/raft-paper/)
 2. [In Search of an Understandable Consensus Algorithm(Extended Version)](https://raft.github.io/raft.pdf)  raft
-
 
