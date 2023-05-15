@@ -23,12 +23,12 @@ top: true
 + {% post_link 'kafkaConsumer' %}
 + {% post_link 'kafkaRebalance' %}
 + {% post_link 'kafkaReliability' %}
++ {% post_link 'kafkaIndex' %}
 + {% post_link 'kafkaTransaction' %}
 + {% post_link 'kafkaController' %}
 + {% post_link 'kafka-replica' %}
 + {% post_link 'kafka-election' %}
 + {% post_link 'kafkaQ-A' %}
-+ {% post_link 'kafkaIndex' %}
 
 ## Rocketmq  
 + [RocketMQ总结](../../../../2019/06/18/mqRocketmq/) 
