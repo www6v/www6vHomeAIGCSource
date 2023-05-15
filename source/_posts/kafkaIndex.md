@@ -51,7 +51,7 @@ AbstractIndex：这是 Kafka 所有类型索引的抽象父类，里面的 mmap 
 
 - **位移索引和时间戳索引**
 
-{% asset_img  kafka3.jpg  %}
+{% asset_img  kafkaIndex.jpg  %}
 
 
 **参考：**
