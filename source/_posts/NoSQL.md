@@ -11,7 +11,10 @@ categories:
 <p></p>
 <!-- more -->
 
-## 1. NoSQL数据结构
+## 目录
+<!-- toc -->
+
+##  NoSQL数据结构
 大规模数据时，工程实践中常见的数据结构一般有两种：哈希表与平衡树
 **平衡树:** B树, 同时适应磁盘和内存.  复杂度为O(logN).
 **哈希表:** Hash数据结构可以高效地执行根据主键的插入、删除以及查找操作. 但不支持范围查询功能，不支持快照。复杂度为O(N)。
@@ -21,7 +24,7 @@ categories:
 哈希表对应的存储引擎是随机读取存储引擎. 一致性Hash分 桶，每个桶内使用Log-Structured Hash Table存储数据。 Eg. Bitcask
 B+树对应的存储引擎是Merge-Dump存储引擎。 Eg. Hbase, Cassandra.
 
-## 2. NoSQL 数据建模技术
+##  NoSQL 数据建模技术
 **Key-Value 键值对:** 简单， 不支持范围查找。 Eg. Oracle Coherence, Redis
 **Ordered Key-Value 有序键值对：**map里嵌套map。这种模型的value主要通过“列族”（column families），列，和时间戳来控制版本。Eg. Apache HBase, Apache Cassandra
 **Document databases 文档模型：**value中有主观的模式（scheme）,用字段名做索引. Eg. MongoDB, CouchDB
@@ -30,7 +33,7 @@ B+树对应的存储引擎是Merge-Dump存储引擎。 Eg. Hbase, Cassandra.
 数据库有对象模型与表模型的阻抗不匹配，NoSQL的**聚合（Aggregates）模型**更贴合**对象模型**的思路。
 数据库是面向记录的， NoSQL是面向聚集的。
 
-## 3. 一致性
+##  一致性
 #####  I．读写一致性
 写后读一致性。
 读后读一致性。
@@ -62,7 +65,7 @@ B+树对应的存储引擎是Merge-Dump存储引擎。 Eg. Hbase, Cassandra.
 ##### 举例: Cassandra一致性
 ![Cassandra一致性](https://user-images.githubusercontent.com/5608425/64945268-c2710880-d8a2-11e9-8ace-dfe3dca32995.png)
 
-## 4. 事务
+##  事务
 #####  I. 单机事务       
 ACID保证
 （C 一致性）（I 隔离性）：
@@ -89,7 +92,7 @@ CAP理论中适当放宽一致性。 并兼顾一致性， 响应时间，可用
   [用消息队列和消息应用状态表来消除分布式事务](http://wangyuanzju.blog.163.com/blog/static/1302920086424341932)  事务 一致性
   <<海量存储系列之六>>
 
-## 5. 动态还是静态的数据结构
+##  动态还是静态的数据结构
 关系数据库模型： 
    动态更新的B+树， 写数据时，需要更新B+树。 读写依赖， 实现复杂， 有性能上限。
 
@@ -97,7 +100,7 @@ Nosql：
    动态数据和静态数据分离， MemTable(动态) + SSTable（静态）。牺牲读， 提升写性能。  
    MemTable: Write-back Cache, 随机IO写变成顺序IO写，降低大量的写操作对于存储系统的压力
 
-## 6. 索引和join
+##  索引和join
 索引
 + 关系数据库：单机索引
 + NoSQL索引：系统层面， 全局索引。
@@ -111,10 +114,10 @@ Join
 
 
 ## 参考：
-1.  [NoSQL数据库的分布式算法](https://my.oschina.net/juliashine/blog/88173)   论文 good 
+1.  [NoSQL数据库的分布式算法](https://my.oschina.net/juliashine/blog/88173)   论文 *** 
     [NoSQL数据库的分布式算法](https://blog.csdn.net/wxliu1989/article/details/38415933)
     [DISTRIBUTED ALGORITHMS IN NOSQL DATABASES](https://highlyscalable.wordpress.com/2012/09/18/distributed-algorithms-in-nosql-databases/) 原文
-2.  [NoSQL 数据建模技术](http://coolshell.cn/articles/7270.html)   good    
+2.  [NoSQL 数据建模技术](http://coolshell.cn/articles/7270.html)   ***    
 3.  [分布式系统的数据结构](http://www.nosqlnotes.net/archives/134)      
 4.  [优雅的Bitcask](http://blog.nosqlfan.com/html/955.html)      
 5.  [分布式事务](http://www.nosqlnotes.net/archives/62)       

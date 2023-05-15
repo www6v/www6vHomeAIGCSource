@@ -38,11 +38,11 @@ categories:
 </div>
 
 ###  强一致性
-协议|强一致性|特性|工程
+强一致性|协议|特性|工程
 :-:|:-:|:-:|:-:
-2PC<br>3PC #1|线性一致性[chat]| 延迟大，吞吐低。全局锁资源| JTA(XA)<br>  {% post_link 'transactionSeata'  Seata XA,AT **非入侵** %} self 
-Paxos #1|顺序一致性[chat]|难理解，延迟大，吞吐中等，全局锁资源|分布式锁系统Chubby			
- 逻辑时钟 |顺序一致性|类似多线程程序执行顺序的模型| Zookeeper的读 <br>1.两个主流程，三个阶段 <br> 2.Zab（Qurum）:2f+1个节点，允许f个节点失败
+线性一致性[chat]|2PC<br>3PC #1| 延迟大，吞吐低。全局锁资源| JTA(XA)<br>  {% post_link 'transactionSeata'  Seata XA,AT **非入侵** %} self 
+顺序一致性[chat]|Paxos #1|难理解，延迟大，吞吐中等，全局锁资源|Google Chubby			
+顺序一致性| 逻辑时钟 |类似多线程程序执行顺序的模型| Zookeeper的读 <br>1.两个主流程，三个阶段 <br> 2.Zab（Qurum）:2f+1个节点，允许f个节点失败
 
 + 逻辑时钟
   Lamport提出**逻辑时钟**是为了解决分布式系统中的时序问题，即如何定义a在b之前发生.
@@ -67,17 +67,20 @@ Paxos #1|顺序一致性[chat]|难理解，延迟大，吞吐中等，全局锁�
 最终一致性|Master-Master  |延迟低，吞吐高                      | {% post_link 'mysqlReliability' %} self	
 弱一致性|Backups（备份）||
 
-###  最终一致性 客户端为中心的一致性（Client-centric Consistency）
-> 以客户端为中心的一致性为单一客户端提供一致性保证，保证该客户端对数据存储的访问的一致性，但是它不为不同客户端的并发访问提供任何一致性保证.
+###   客户端为中心的一致性（Client-centric Consistency）
++ 客户端为中心的一致性
+  - 最终一致性
+  - 以客户端为中心的一致性为单一客户端提供一致性保证，保证该客户端对数据存储的访问的一致性，但是它不为不同客户端的并发访问提供任何一致性保证.
 
-单调读一致性（Monotonic-read Consistency） **[kafka的消费者的单调读](../../../../2016/05/11/kafka/)** 
-单调写一致性（Monotonic-write Consistency）
++ 单调读一致性（Monotonic-read Consistency） 
+  **{% post_link 'kafka'   kafka的消费者的单调读 %}**
++ 单调写一致性（Monotonic-write Consistency）
 
-###  可定制的一致性
+###  Sloppy quorum
 
-可定制的一致性|协议|特性|工程
-:-:|:-:|:-:|:-:
-可定制的一致性|R+W>N[ReadQurum-WriteQurum]| 可定制 | [Dynamo, Cassandra](../../../../2018/07/19/NoSQL/)  定制灵活
+Sloppy quorum|特性|工程
+:-:|:-:|:-:
+R+W>N[ReadQurum-WriteQurum]| 可定制 | [Dynamo, Cassandra](../../../../2018/07/19/NoSQL/)  定制灵活
 
 #  柔性事务 最终一致性
 
@@ -85,7 +88,7 @@ Paxos #1|顺序一致性[chat]|难理解，延迟大，吞吐中等，全局锁�
 :-:|:-:|:-:|---
 EBay模式 #2 [8] |  **正向流程**<br> [本地事务+幂等业务接口+half消息] | 消息状态<br> 1. 初始化：消息为待处理状态<br> 2. 业务成功：消息为待发送状态<br>3. 业务失败：消息删除 | Eg:  阿里Notify<br> {% post_link 'mqRocketmqTransaction' RocketMQ事务消息 %} self 
    x | **反向流程**（异常流程，补偿流程） |中间件询问业务执行结果，更新消息状态|x
-TCC #4|1.主流程控制整个事务 2.分流程提供Confirm和Cancel方法。| Try:  阶段1的业务执行  Confirm: 阶段2的业务执行  Cancel: 回滚Try阶段执行的业务流程和数据| TCC #4 FMT <br> {% post_link 'transactionSeata'  Seata TCC **入侵性** %} self 
+TCC #4|1.主流程控制整个事务 2.分流程提供Confirm和Cancel方法。| Try:  阶段1的业务执行  Confirm: 阶段2的业务执行  Cancel: 回滚Try阶段执行的业务流程和数据| TCC #4 FMT <br> {% post_link 'transactionSeata'  Seata TCC  %} **有入侵性** self 
 Saga 1PC (一阶段)| 基于补偿的消息驱动的用于解决long-running process业务。 |  x  |  {% post_link 'transactionSeata'  Seata Saga  %} self  
 补偿 | 状态查询（成功or失败）+补偿| 定时校验异常 + 补偿| x 
 
