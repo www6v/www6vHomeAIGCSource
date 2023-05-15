@@ -48,6 +48,11 @@ categories:
 + 逻辑时钟
   Lamport提出**逻辑时钟**是为了解决分布式系统中的时序问题，即如何定义a在b之前发生.
   Java中有happen-before  
+<div style="text-align: center;">
+
+![logicClock](https://user-images.githubusercontent.com/5608425/67629944-a9a03d80-f8b9-11e9-820e-7bbf4fccea20.jpg)
+图2. 逻辑时钟 logic-clock
+</div>
 
 + 线性一致性 Linearizability 
   **线性一致性**  #1： 严格一致性（Strict Consistency）或者原子一致性（Atomic Consistency） 一个操作对于系统的其他部分是不可中断的	
@@ -57,24 +62,42 @@ categories:
   + 所有进程看到的读写操作顺序都保持一致。
   **顺序一致性**虽然通过逻辑时钟保证所有进程保持一致的读写操作顺序，但这些读写操作的顺序跟实际上发生的顺序并不一定一致。而**线性一致性**是严格保证跟实际发生的顺序一致的。
 
+
++ Paxos、ZAB 和 RAFT  有以下几个主要的**共同点**[Claude]: 
+  - 都通过**选举 Leader** 来接受客户端请求, Leader 接收写操作,然后同步给 Follower 节点,保持集群数据的一致性。
+  - 都使用**日志(log)**来记录节点状态的变更,Follower 节点通过应用相同的日志来保持数据一致。
+  - 都通过多个阶段来实现一致性,例如Prepare 阶段 和 Commit 阶段。
+  - 都需要超过半数以上的节点达成一致(**quorum**),才能提交日志。
+
+
 ###  弱一致性
 
 弱一致性|协议|特性|工程
 :-:|:-:|:-:|:-:
 因果一致性<br/>(最终一致性)| 向量时钟 Vector clock[向量时钟] 图1 || 微信朋友圈的评论, Dynamo
 反熵Anti-Entropy<br>(最终一致性)| [Gossip][gossip-visualization] |  | Cassandra， redis的集群状态的同步机制
-最终一致性|Master-Slave   |延迟低，吞吐高<br>主动推送/被动拉取  | {% post_link 'mysqlReliability' %} self 
-最终一致性|Master-Master  |延迟低，吞吐高                      | {% post_link 'mysqlReliability' %} self	
+Master-Slave<br/>(最终一致性)|   |延迟低，吞吐高<br>主动推送/被动拉取  | {% post_link 'mysqlReliability' %} self 
+Master-Master<br/>(最终一致性)|{% post_link 'multiMasterCRDT' CRDT %} self  |延迟低，吞吐高                      | {% post_link 'mysqlReliability' %} self	
 弱一致性|Backups（备份）||
+
++ 向量时钟
+<div style="text-align: center;">
+
+![vectorClock](https://user-images.githubusercontent.com/5608425/67629891-be300600-f8b8-11e9-931c-e0fa265f2f78.jpg)
+图1. 向量时钟 vector-clock
+</div>
 
 ###   客户端为中心的一致性（Client-centric Consistency）
 + 客户端为中心的一致性
   - 最终一致性
   - 以客户端为中心的一致性为单一客户端提供一致性保证，保证该客户端对数据存储的访问的一致性，但是它不为不同客户端的并发访问提供任何一致性保证.
 
-+ 单调读一致性（Monotonic-read Consistency） 
-  **{% post_link 'kafka'   kafka的消费者的单调读 %}**
-+ 单调写一致性（Monotonic-write Consistency）
++ 类型
+  - 单调读一致性（Monotonic-read Consistency） 
+    **{% post_link 'kafka'   kafka的消费者的单调读 %}**
+  - 单调写一致性（Monotonic-write Consistency）
+  - 读写一致性（Read-your-writes Consistency）
+  - 写读一致性（Writes-follow-reads Consistency）
 
 ###  Sloppy quorum
 
@@ -116,17 +139,6 @@ table th:first-of-type {
 
 {% asset_img  localBaseTransaction.jpg  基于本地消息的分布式事务 %}
 
-#  时钟
-
-<div style="text-align: center;">
-
-![vectorClock](https://user-images.githubusercontent.com/5608425/67629891-be300600-f8b8-11e9-931c-e0fa265f2f78.jpg)
-图1. 向量时钟 vector-clock
-
-![logicClock](https://user-images.githubusercontent.com/5608425/67629944-a9a03d80-f8b9-11e9-820e-7bbf4fccea20.jpg)
-图2. 逻辑时钟 logic-clock
-</div>
-
 #   State Machine && Primary-copy
 
 <div style="text-align: center;">
@@ -162,6 +174,8 @@ state machine replication && primary-copy
 7. 《大数据日知录：架构与算法》 张俊林
 8. [Base: An Acid Alternative](https://queue.acm.org/detail.cfm?id=1394128)  Ebay模式  ***
 9. [如何选择分布式事务解决方案？](https://mp.weixin.qq.com/s/2AL3uJ5BG2X3Y2Vxg0XqnQ)   道苏
+10. {% post_link 'NoSQL' %}  self  一致性
+11. [《数据密集型应用系统设计》笔记五：第五章 数据复制](https://blog.csdn.net/weixin_43902592/article/details/103918630) 未
 
 ### 应用
 
