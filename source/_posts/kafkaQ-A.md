@@ -32,22 +32,6 @@ categories:
 +    Kafka有哪几处地方有分区分配的概念？简述大致的过程及原理
 
 
-## 日志模块
-+    简述Kafka的日志目录结构
-
-+    Kafka中有那些索引文件？
-
-+    如果我指定了一个offset，Kafka怎么查找到对应的消息？
-
-+    如果我指定了一个timestamp，Kafka怎么查找到对应的消息？
-
-+    聊一聊你对Kafka的Log Retention的理解
-
-+    聊一聊你对Kafka的Log Compaction的理解
-
-+    聊一聊你对Kafka底层存储的理解（页缓存、内核层、块层、设备层）
-
-
 ## 特性
 +    聊一聊Kafka的延时操作的原理
 [Kafka科普系列 | 轻松理解Kafka中的延时操作](https://hiddenpps.blog.csdn.net/article/details/89325701)

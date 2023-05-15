@@ -18,23 +18,22 @@ top: true
 + [MQ总结(Kafka, Rocketmq, Rabbitmq)](../../../../2022/05/12/mqCompare/)      
   
 ## Kafka  
-  
-+ [Kafka总结](../../../../2016/05/11/kafka/)       
-+ [Kafka Producer生产者](../../../../2022/05/15/kafkaProducer/) 
-+ [Kafka消费者总结](../../../../2016/06/25/kafkaConsumer/)  
-+ [Kafka Rebalance机制](../../../../2022/05/11/kafkaRebalance/) 
-+ [Kafka 可靠性总结](../../../../2016/07/05/kafkaReliability/)  
-+ [Kafka 幂等性和事务](../../../../2022/05/04/kafkaTransaction/) 
-+ [Kafka Controller-控制器](../../../../2021/05/16/kafkaController/)      
-+ [Kafka Replication-副本机制](../../../../2021/05/16/kafka-replica/)  
-+ [Kafka 中的选主](../../../../2021/05/16/kafka-election/)   
-+ [Kafka  Q&A](../../../../2019/05/15/kafkaQ-A/)      
++ {% post_link 'kafka' %}
++ {% post_link 'kafkaProducer' %}
++ {% post_link 'kafkaConsumer' %}
++ {% post_link 'kafkaRebalance' %}
++ {% post_link 'kafkaReliability' %}
++ {% post_link 'kafkaTransaction' %}
++ {% post_link 'kafkaController' %}
++ {% post_link 'kafka-replica' %}
++ {% post_link 'kafka-election' %}
++ {% post_link 'kafkaQ-A' %}
++ {% post_link 'kafkaIndex' %}
 
 ## Rocketmq  
 + [RocketMQ总结](../../../../2019/06/18/mqRocketmq/) 
 + [Rocketmq中的事务](../../../../2020/08/12/mqRocketmqTransaction/)      
-     
-
+  
 ## Pulsar 
 + [Pulsar](../../../../2022/05/31/mqPulsar/)  
 + [Pulsar-数据同步](../../../../2022/06/18/mqPulsarSync/)      

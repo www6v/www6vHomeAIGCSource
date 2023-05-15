@@ -11,10 +11,16 @@ categories:
 <p></p>
 <!-- more -->
 
+
+## 目录
+<!-- toc -->
+
+# Kafka消费者
+### 总结
 {% asset_img  kafka-consumer.jpg  Kafka消费者总结 %}
 
+### lag
 {% asset_img  lag.png  Kafka lag %}
-
 
 ### 消费者
 1. 批量消费
@@ -22,9 +28,7 @@ categories:
    直接把消息从文件里发送到网络通道， 而不需要内核与用户态之间数据的来回复制。
 
 
-## Q&A
-[Kafka消费者总结](../../../../2016/06/25/kafkaConsumer/)
-
+# Q&A
 +    怎么计算Lag？(注意read_uncommitted和read_committed状态下的不同)
 +    “消费组中的消费者个数如果超过topic的分区，那么就会有消费者消费不到数据”这句话是否正确？如果不正确，那么有没有什么hack的手段？
 +    消费者提交消费位移时提交的是当前消费到的最新消息的offset还是offset+1?
@@ -42,12 +46,14 @@ categories:
 +    Kafka的旧版Scala的消费者客户端的设计有什么缺陷？
 
 
-## 参考:
+## 参考
 1. [Kafka设计解析（四）- Kafka Consumer设计解析](http://www.jasongj.com/2015/08/09/KafkaColumn4/) 郭俊
-2. [Kafka分区分配策略（1）——RangeAssignor](https://blog.csdn.net/u013256816/article/details/81123600) 朱小厮
-3. [Kafka分区分配策略（2）——RoundRobinAssignor和StickyAssignor](https://blog.csdn.net/u013256816/article/details/81123625) 朱小厮
-4. [Kafka分区分配策略（3）——自定义分区分配策略](https://blog.csdn.net/u013256816/article/details/81123858) 朱小厮
 5. [Kafka的Lag计算误区及正确实现](https://blog.csdn.net/u013256816/article/details/79955578) 朱小厮
 6. 《kafka权威指南》 薛命灯 第3，4 ，5章
 7. Kafka Consumer机制优化-保证每条消息至少消费一次 幽灵之使
+
++ 分区分配策略
+[Kafka分区分配策略（1）——RangeAssignor](https://blog.csdn.net/u013256816/article/details/81123600) 朱小厮
+[Kafka分区分配策略（2）——RoundRobinAssignor和StickyAssignor](https://blog.csdn.net/u013256816/article/details/81123625) 朱小厮
+[Kafka分区分配策略（3）——自定义分区分配策略](https://blog.csdn.net/u013256816/article/details/81123858) 朱小厮
 
