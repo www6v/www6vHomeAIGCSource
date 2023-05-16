@@ -24,6 +24,7 @@ top: true
 + {% post_link 'kafkaRebalance' %}
 + {% post_link 'kafkaReliability' %}
 + {% post_link 'kafkaIndex' %}
++ {% post_link 'kafkaZeroCopy' %} 
 + {% post_link 'kafkaTransaction' %}
 + {% post_link 'kafkaController' %}
 + {% post_link 'kafka-replica' %}
