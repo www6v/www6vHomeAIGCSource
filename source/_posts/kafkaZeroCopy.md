@@ -48,13 +48,7 @@ AbstractIndex：这是 Kafka 所有类型索引的抽象父类，里面的 mmap 
 {% asset_img 'sendfile.JPG' %}
 
 
-## mmap vs. sendfile
 
-|              | context switch次数 | 数据拷贝次数 |
-| ------------ | ------------------ | ------------ |
-| read + write | 4？                | 3？          |
-| mmap + write | 4                  | 1            |
-| sendfile     | 2                  | 1            |
 
 
 +    *kafka的mmap是对写的优化，还是读的优化？*
