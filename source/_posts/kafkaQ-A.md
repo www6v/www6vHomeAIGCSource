@@ -31,8 +31,12 @@ categories:
 
 +    Kafka有哪几处地方有分区分配的概念？简述大致的过程及原理
 
+### Producer
++    ~~Kafka中的分区器、序列化器、拦截器是否了解？它们之间的处理顺序是什么？~~
++    ~~Kafka生产者客户端中使用了几个线程来处理？分别是什么？~~
 
 ## 特性
+
 +    聊一聊Kafka的延时操作的原理
 [Kafka科普系列 | 轻松理解Kafka中的延时操作](https://hiddenpps.blog.csdn.net/article/details/89325701)
 这里就涉及到了Kafka延迟操作的概念。Kafka在处理拉取请求时，会先读取一次日志文件，如果收集不到足够多（fetchMinBytes，由参数fetch.min.bytes配置，默认值为1）的消息，那么就会创建一个延时拉取操作（DelayedFetch）以等待拉取到足够数量的消息。当延时拉取操作执行时，会再读取一次日志文件，然后将拉取结果返回给follower副本。

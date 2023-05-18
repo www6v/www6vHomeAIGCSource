@@ -50,9 +50,11 @@ top: true
     + {% post_link  'findProblem' %}
     + {% post_link  'slowRT' %} 
   - {% post_link  'zookeeperBug' %}  ***
+  - {% post_link  'kafkaGracefulDown' %}  ***
   - {% post_link  'mybatisBug' %}
   - {% post_link  'mysqlBestPractice' %}
   - {% post_link  'splitBrain' %}
+
 
 ##### Infra
 + {% post_link  'faultModel3' %}

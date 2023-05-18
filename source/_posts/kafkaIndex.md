@@ -62,10 +62,10 @@ $ tree /tmp/kafka-logs/t1-1/
 
 ## 日志模块 Q&A
 
-+    *简述Kafka的日志目录结构*
-+    *Kafka中有那些索引文件？*
-+    *如果我指定了一个offset，Kafka怎么查找到对应的消息？*
-+    *如果我指定了一个timestamp，Kafka怎么查找到对应的消息？*
++    ~~简述Kafka的日志目录结构~~
++    ~~Kafka中有那些索引文件？~~
++    ~~如果我指定了一个offset，Kafka怎么查找到对应的消息？~~
++    ~~如果我指定了一个timestamp，Kafka怎么查找到对应的消息？~~
 +    聊一聊你对Kafka的Log Retention的理解
 +    聊一聊你对Kafka的Log Compaction的理解
 +    聊一聊你对Kafka底层存储的理解（页缓存、内核层、块层、设备层）
