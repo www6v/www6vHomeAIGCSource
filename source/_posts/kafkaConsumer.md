@@ -29,7 +29,7 @@ categories:
 
 
 # Q&A
-+    怎么计算Lag？(注意read_uncommitted和read_committed状态下的不同)
++    ~~怎么计算Lag？(注意read_uncommitted和read_committed状态下的不同)~~
 +    “消费组中的消费者个数如果超过topic的分区，那么就会有消费者消费不到数据”这句话是否正确？如果不正确，那么有没有什么hack的手段？
 +    消费者提交消费位移时提交的是当前消费到的最新消息的offset还是offset+1?
 
@@ -53,7 +53,9 @@ categories:
 7. Kafka Consumer机制优化-保证每条消息至少消费一次 幽灵之使
 
 + 分区分配策略
-[Kafka分区分配策略（1）——RangeAssignor](https://blog.csdn.net/u013256816/article/details/81123600) 朱小厮
-[Kafka分区分配策略（2）——RoundRobinAssignor和StickyAssignor](https://blog.csdn.net/u013256816/article/details/81123625) 朱小厮
-[Kafka分区分配策略（3）——自定义分区分配策略](https://blog.csdn.net/u013256816/article/details/81123858) 朱小厮
+  [Kafka分区分配策略（1）——RangeAssignor](https://blog.csdn.net/u013256816/article/details/81123600) 朱小厮
+  [Kafka分区分配策略（2）——RoundRobinAssignor和StickyAssignor](https://blog.csdn.net/u013256816/article/details/81123625) 朱小厮
+  [Kafka分区分配策略（3）——自定义分区分配策略](https://blog.csdn.net/u013256816/article/details/81123858) 朱小厮
+
+  [图解Kafka消费者分区分配策略](https://mp.weixin.qq.com/s?__biz=Mzg4ODY1NTcxNg==&mid=2247494909&idx=1&sn=e40cd749d060093695e39576c41a9264)   石臻臻 kafka contributor  *** 未
 

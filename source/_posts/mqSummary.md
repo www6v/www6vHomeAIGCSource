@@ -27,8 +27,8 @@ top: true
 + {% post_link 'kafkaZeroCopy' %} 
 + {% post_link 'kafkaTransaction' %}
 + {% post_link 'kafkaController' %}
-+ {% post_link 'kafka-replica' %}
-+ {% post_link 'kafka-election' %}
++ {% post_link 'kafkaReplica' %}
++ {% post_link 'kafkaElection' %}
 + {% post_link 'kafkaQ-A' %}
 
 ## Rocketmq  
