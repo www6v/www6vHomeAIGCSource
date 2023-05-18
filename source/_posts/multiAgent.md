@@ -14,7 +14,7 @@ categories:
 
 
 
-Draft Here[内容]
+## Draft Here[内容]
 
 {% draft %}
 
@@ -233,10 +233,6 @@ final class Dispatcher$LegacyAsyncDispatcher extends Dispatcher implements Enhan
 }
 ```
 
-【 N  AI
-该文介绍了Java中多个Agent进行字节码增强时可能出现的冲突问题，并分析了根本原因。
-***通过对Instrumentation接口的transform和retransform方法的分析，发现retransform方法有一系列限制，包括不能新增、删除或者重命名字段和方法，不能更改方法的签名，不能更改类的继承。而在SkyWalking增强后的字节码文件中，类的继承关系上多了一个接口，导致了多个JavaAgent的类冲突增强失败的问题。*** 】
-
 #  总结
 
 ### 避免多个JavaAgent增强冲突的建议
@@ -264,22 +260,54 @@ final class Dispatcher$LegacyAsyncDispatcher extends Dispatcher implements Enhan
 
 Sermant社区：https://github.com/huaweicloud/Sermant
 
-{% enddraft %}
-
-
-
-Draft Here[参考]
-{% draft %}
 
 # 参考
+1. [记一次多个JavaAgent同时使用的类增强冲突问题及分析](https://bbs.huaweicloud.com/blogs/382800)
+2. https://github.com/alibaba/arthas/issues/2051
+3. https://github.com/apache/skywalking/issues/9701
 
-[记一次多个JavaAgent同时使用的类增强冲突问题及分析](https://bbs.huaweicloud.com/blogs/382800)
-https://github.com/alibaba/arthas/issues/2051
-https://github.com/apache/skywalking/issues/9701
 {% enddraft %}
 
 
-## 扩展 [chat]
+
+# Draft Here[总结]
+
+{% draft %}
+
+# 总结
+### 现象
++ 先加载自研JavaAgent后加载SkyWalking
+
+然而启动后发现日志中**SkyWalking抛出java.lang.UnsupportedOperationException异常**，该异常对应的目标类是com.google.common.eventbus.Dispatcher$LegacyAsyncDispatcher。自研JavaAgent无异常抛出。
+
+``` Java
+ERROR 2022-09-27 15:32:09:546 main SkyWalkingAgent : index=0, batch=[class com.google.common.eventbus.Dispatcher$LegacyAsyncDispatcher], types=[class com.google.common.eventbus.Dispatcher$LegacyAsyncDispatcher] 
+Caused by: java.lang.UnsupportedOperationException: class redefinition failed: attempted to change superclass or interfaces
+	at sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.SkyWalking.apm.dependencies.net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$Dispatcher$ForJava6CapableVm.retransformClasses(AgentBuilder.java:6910)
+	... 12 more
+```
+
+### 排查
+
+### 根因
+【 N  AI
+该文介绍了Java中多个Agent进行字节码增强时可能出现的冲突问题，并分析了根本原因。
+***通过对Instrumentation接口的transform和retransform方法的分析，发现retransform方法有一系列限制，包括不能新增、删除或者重命名字段和方法，不能更改方法的签名，不能更改类的继承。而在SkyWalking增强后的字节码文件中，类的继承关系上多了一个接口，导致了多个JavaAgent的类冲突增强失败的问题。*** 】
+
+### 解决方案
++ 谨慎安排JavaAgent的**挂载顺序**
+  SkyWalking增强时对类的继承关系有修改，而自研JavaAgent则没有，那么该场景**将兼容性相对较低的SkyWalking放在前面，兼容性相对较高的自研JavaAgent放在后面**，可以暂时规避类增强的冲突问题。
+  
++ **严格遵守字节码增强的使用要求和限制**
+  官方接口的设计理念是reTransformClasses()增强类时不能新增、删除或者重命名字段和方法，不能更改方法的签名，也不能更改类的继承关系，那作为JavaAgent的框架开发者，应该不要做出超越上述限制的设计，否则极易导致JavaAgent之间的兼容性问题出现。
+
+### 解决方案-扩展 [chat]
 ``` 
 为确保使用多个代理程序增强Java应用程序时增强的顺序正确，您可以按照以下步骤操作：
 
@@ -309,4 +337,8 @@ https://github.com/apache/skywalking/issues/9701
 
 以上这些开源项目都使用单个代理程序来编排其他代理程序，以确保代理程序按正确的顺序加载，并确保它们被正确初始化。这种方法可以帮助开发人员更好地管理代理程序之间的相互依赖性，并确保应用程序的稳定性和可靠性。
 ```
+
+{% enddraft %}
+
+
 
