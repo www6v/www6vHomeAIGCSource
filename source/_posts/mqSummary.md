@@ -23,7 +23,7 @@ top: true
 + {% post_link 'kafkaConsumer' %}
 + {% post_link 'kafkaRebalance' %}
 + {% post_link 'kafkaReliability' %}
-+ {% post_link 'kafkaIndex' %}
++ {% post_link 'kafkaIndex' %}   #1
 + {% post_link 'kafkaZeroCopy' %} 
 + {% post_link 'kafkaController' %}
 + {% post_link 'kafkaReplica' %}
@@ -31,17 +31,17 @@ top: true
 + {% post_link 'kafkaQ-A' %}
 + {% post_link 'kafkaStudy' %} 
 
-+ {% post_link 'kafkaTransaction' %}
++ {% post_link 'kafkaTransaction' %}  #2
 
-## Rocketmq  
-+ [RocketMQ总结](../../../../2019/06/18/mqRocketmq/) 
-+ [Rocketmq中的事务](../../../../2020/08/12/mqRocketmqTransaction/)      
+## RocketMQ  
++ {% post_link 'mqRocketmq' %}  
++ {% post_link 'mqRocketmqTransaction' %}   #2 
++ {% post_link 'mqRocketmqStorage' %}  #1 
   
 ## Pulsar 
-+ [Pulsar](../../../../2022/05/31/mqPulsar/)  
-+ [Pulsar-数据同步](../../../../2022/06/18/mqPulsarSync/)      
-+ [Pulsar vs. Kafka](../../../../2022/06/10/mqComparePulsarVsKafka/)      
-
++ {% post_link 'mqPulsar' %}  
++ {% post_link 'mqPulsarSync' %}  
++ {% post_link 'mqComparePulsarVsKafka' %}  
 
 
 
