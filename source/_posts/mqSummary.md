@@ -12,10 +12,10 @@ top: true
 <p></p>
 <!-- more -->
 
-
 ## Overview  
-+ [消息中间件总结](../../../../2016/04/19/mom/) 
-+ [MQ总结(Kafka, Rocketmq, Rabbitmq)](../../../../2022/05/12/mqCompare/)      
++ {% post_link 'mq' %}
++ {% post_link 'mqCompare' %}
++ {% post_link 'mqOrdering' %}
   
 ## Kafka  
 + {% post_link 'kafka' %}
@@ -25,11 +25,13 @@ top: true
 + {% post_link 'kafkaReliability' %}
 + {% post_link 'kafkaIndex' %}
 + {% post_link 'kafkaZeroCopy' %} 
-+ {% post_link 'kafkaTransaction' %}
 + {% post_link 'kafkaController' %}
 + {% post_link 'kafkaReplica' %}
 + {% post_link 'kafkaElection' %}
 + {% post_link 'kafkaQ-A' %}
++ {% post_link 'kafkaStudy' %} 
+
++ {% post_link 'kafkaTransaction' %}
 
 ## Rocketmq  
 + [RocketMQ总结](../../../../2019/06/18/mqRocketmq/) 

@@ -1,5 +1,5 @@
 ---
-title: Kafka Rebalance机制 
+title: Kafka消费者-Rebalance机制 
 date: 2022-05-11 17:56:31
 tags:
   - kafka  
@@ -19,11 +19,11 @@ categories:
 再均衡：在同一个消费者组当中，分区的所有权从一个消费者转移到另外一个消费者
 
 + 原理
-  + **重平衡的通知机制正是通过心跳线程来完成的**
+  + **重平衡的通知机制正是通过心跳线程来完成的** [7]
 
 + 角色
-            consumer leader
-            cordinator
+     - consumer leader
+     - cordinator[8]
 
 # Rebalance 发生的时机有三个 (when) [1]
 + 重平衡的 3 个触发条件：
@@ -54,6 +54,7 @@ categories:
   max.poll.interval.ms参数值的设置显得尤为关键。
 
 
+
 {% asset_img  'consumer1.jpg' %}
 
 
@@ -66,5 +67,7 @@ categories:
 3. 《25 | 消费者组重平衡全流程解析》  胡夕
 4. [Kafka的Rebalance机制可能造成的影响及解决方案](https://blog.csdn.net/lzxlfly/article/details/106246879)
 5. [线上Kafka突发rebalance异常，如何快速解决？](https://www.cnblogs.com/chanshuyi/p/kafka_rebalance_quick_guide.html)
-6. [为什么消费客户端频繁出现Rebalance？](https://help.aliyun.com/knowledge_detail/154454.html)
+6. [为什么消费客户端频繁出现Rebalance？](https://help.aliyun.com/knowledge_detail/154454.html)  石臻臻
+7. [Kafka消费者客户端心跳请求](https://mp.weixin.qq.com/s?__biz=Mzg4ODY1NTcxNg==&mid=2247494990&idx=1&sn=54f626f66b8d0c1330a586ca800b1609)  石臻臻
+8. [什么是Kafka消费组协调器](https://mp.weixin.qq.com/s?__biz=Mzg4ODY1NTcxNg==&mid=2247494917&idx=1&sn=e1b18b70b58a3e9797a0110972a9d43e)  石臻臻
 
