@@ -23,13 +23,16 @@ top: true
 + {%  post_link  'redisDataStructure'  %}
 + {%  post_link  'redisNVM'  %}
 
-##### 可靠性
+### 可靠性
 + {%  post_link  'redisReliability'  %}
 + {%  post_link  'redisAOF'  %}
 + {%  post_link  'rdb'  %}
 + {%  post_link  'aofRewrite'  %}
 + {%  post_link  'redisError'  %}
 + {%  post_link  'redisSLO'  %}
+
+### 故障&优化
++ {%  post_link  'redisBigKey'  %} 
 
 # 应用
 + {%  post_link  'redisUseCase'  %}
