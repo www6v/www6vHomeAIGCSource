@@ -12,7 +12,7 @@ categories:
 <!-- more -->
 
 ## Chatgpt
-[Poe](https://poe.com/ChatGPT)
+[Poe](https://poe.com/ChatGPT) ***
 
 
 ## Prompt
@@ -24,6 +24,7 @@ categories:
   [GPT  工具箱](https://gpt.candobear.com/toolbox)
   [Prompt 大全](https://gpt.candobear.com/prompt)
   [学习资料](https://gpt.candobear.com/courses)
++ [AI 工具箱](https://www.ailookme.com)  *** 
 
 ## App
 + [ChatPaper](https://chatpaper.org/)
