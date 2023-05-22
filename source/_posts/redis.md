@@ -23,7 +23,7 @@ categories:
 
 
 ##  redis集群
-### 1. sentinel
+###  sentinel
    master-slave异步复制, 所以会丢消息
 
 ```   
@@ -34,7 +34,7 @@ categories:
    min-slaves-max-lag 10   
 ```
 
-### 2. redis cluster
+###  redis cluster
 **整体架构**
 1. 去中心化的;
 2. 所有数据划分为16384个slots，每个节点负责其中一部分slots;
@@ -125,7 +125,10 @@ ZSCAN：命令用于迭代  zset 中的元素（包括元素成员和元素分�
 这样可以由多个线程来处理读写就绪的事件，但是其中不能有比较耗时的操作如果有的话需要将其放入线程池中，不然会降低其吐吞量。
 在 Redis 中我们可以看做这二者的值都是 1。
 
-## 参考:
+## HotKey
+{%  post_link  'faultModel2'   故障模型- 热点 Key 问题的发现与解决 %}  self
+
+## 参考
 《Redis 深度历险：核心原理与应用实践》 钱文品
 1. 原理 4：雷厉风行 —— 管道
 2. 原理 5：同舟共济 —— 事务
