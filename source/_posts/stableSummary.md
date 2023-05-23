@@ -49,8 +49,12 @@ top: true
   - 微服务
     + {% post_link  'findProblem' %}
     + {% post_link  'slowRT' %} 
-  - {% post_link  'zookeeperBug' %}  ***
-  - {% post_link  'kafkaGracefulDown' %}  ***
+    + {% post_link  'zookeeperBug' %}  ***
+  - Redis
+    + {%  post_link  'redisBigKey'  %} ***
+    + {% post_link 'redisNodeId' %} *** 
+  - Kafka
+    + {% post_link  'kafkaGracefulDown' %}  ***
   - {% post_link  'mybatisBug' %}
   - {% post_link  'mysqlBestPractice' %}
   - {% post_link  'splitBrain' %}
