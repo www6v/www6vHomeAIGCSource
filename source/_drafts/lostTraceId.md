@@ -13,33 +13,29 @@ categories:
 <!-- more -->
 
 
-
-
-## Draft Here[内容]
-
 {% draft %}
+{% enddraft %}
 
 ## 目录
 
 <!-- toc -->
 
 
+# 关键词  
+traceId,  跨线程传递方案,  上下文,  @Async 
 
-关键词:  traceId,  跨线程传递方案,  上下文,  @Async 
-
-##  正文
+#  正文
 
 <iframe height='1000'   width='1000'   src="https://tech.meituan.com/2023/04/20/traceid-google-dapper-mtrace.html"  id="iframe1"></iframe>
 
-## 参考
+# 参考
 [一次「找回」TraceId的问题分析与过程思考](https://tech.meituan.com/2023/04/20/traceid-google-dapper-mtrace.html) 
 
+
+#  Here[总结]
+{% draft %}
 {% enddraft %}
 
-
-## Draft Here[总结]
-{% draft %}
-# 总结
 ### 现象
 
 ### 排查
@@ -70,5 +66,5 @@ public class ThreadPoolConfig {
 	}
 }
 ```
-{% enddraft %}
+
 
