@@ -5,8 +5,7 @@ tags:
   - 汇总
 categories:
   - 汇总  
-  - AWS
-top: true    
+  - AWS   
 ---
 
 <p></p>
