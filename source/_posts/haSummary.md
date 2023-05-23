@@ -27,7 +27,7 @@ top: true
 
 ### 中间件 
 + {% post_link  'kafkaReliability' %}
-+ {% post_link  'kafka-election' %}
++ {% post_link  'kafkaElection' %}
 + {% post_link  'kafkaController' %}
 
 ### 数据服务
