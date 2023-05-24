@@ -35,6 +35,7 @@ top: true
 ### 故障&优化
 + {%  post_link  'redisBigKey'  %} 
 + {% post_link 'redisNodeId' %}
++ {% post_link 'redisOptimize' %}
 
 # 应用
 + {%  post_link  'redisUseCase'  %}
