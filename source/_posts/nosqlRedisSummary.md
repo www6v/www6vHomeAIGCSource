@@ -22,6 +22,7 @@ top: true
 + {%  post_link  'redisRehash'  %}
 + {%  post_link  'redisDataStructure'  %}
 + {%  post_link  'redisNVM'  %}
++ {% post_link 'redisStudy' %}
 
 ### 可靠性
 + {%  post_link  'redisReliability'  %}

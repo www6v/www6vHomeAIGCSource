@@ -21,6 +21,9 @@ top: true
   - {% post_link 'apiGatewayGray' %}
 + {% post_link 'config' %}
 + {% post_link 'jsfThreadModel' %}
++ 负载均衡
+  - {% post_link 'loadBalance' %}
+  - {% post_link 'nginx' %}
 
 ### 非功能性
 + {% post_link 'soaTolerate' %}
