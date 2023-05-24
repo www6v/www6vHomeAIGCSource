@@ -39,12 +39,14 @@ categories:
 ### read + write(传统传输方式)  [1][3]
 {%  asset_img  'read-write.jpg'  %}
 
-## 总结: read+write vs. mmap vs. sendfile
-|              | context switch次数 | 数据拷贝次数            |
-| ------------ | ------------------ | ----------------------- |
-| read + write | 4次                | 2次CPU copy+2次DMA copy |
-| mmap + write | 4次                | 1次CPU copy+2次DMA copy |
-| sendfile     | 2次                | 1次CPU copy+2次DMA copy |
+## 总结 [7]
+|                               | 系统调用     | 上下文切换 | CPU拷贝 | DMA拷贝 | 硬件依赖 | 支持任意类型输入/输出描述符 |
+| ----------------------------- | ------------ | ---------- | ------- | ------- | -------- | --------------------------- |
+| 传统方法                      | read + write | 4          | 2       | 2       | 否       | 是                          |
+| 内存映射                      | mmap + write | 4          | 1       | 2       | 否       | 是                          |
+| sendfile                      | sendfile     | 2          | 1       | 2       | 否       | 否                          |
+| sendfile(scatter/gather copy) | sendfile     | 2          | 0       | 2       | 是       | 否                          |
+| splice                        | splice       | 2          | 0       | 2       | 否       | 是                          |
 
 
 
@@ -58,6 +60,7 @@ categories:
 4. [理解mmap](https://cloud.tencent.com/developer/article/1145377)
 5. [[原创] 深入剖析mmap-从三个关键问题说起](https://www.jianshu.com/p/eece39beee20)
 6. {% post_link 'linuxMemory' %} self
+7. [【万字长文】从Linux零拷贝深入了解Linux I/O](https://zhuanlan.zhihu.com/p/587695921)    腾讯 ***
 
 ---
 
