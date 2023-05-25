@@ -17,12 +17,12 @@ categories:
 <!-- toc -->
 
 # 关键词
- 失效策略(缓存更新)、 使用模式、 缓存与数据库的一致性、 二级缓存（本地缓存+远程缓存）
+ 失效策略(缓存更新)、  缓存与数据库的一致性、 二级缓存（本地缓存+远程缓存）
 
 # 总结
 {% asset_img cacheSummary.jpg  cache总结 %}
 
-# 失效策略(缓存更新)、 使用模式
+# 失效策略(缓存更新) [9]
 
 ### 缓存更新策略: Read/Write Through模式
 {% asset_img write-read-through.PNG  Read/Write Through %}
@@ -53,7 +53,7 @@ kafka使用page cache异步刷盘。
 2. 使用bloomfilter
 
 
-# 多级缓存 [5?]
+# 二级缓存 [5?]
 
 + 本地缓存+远程缓存
 	- 远端Cache推全量或者部分的数据到本地cache，并设置过期时间【初始化】
@@ -84,8 +84,8 @@ kafka使用page cache异步刷盘。
 2. Local Cache的小TIP  阿里 放翁（文初）
 3. [阿里云分布式缓存OCS与DB之间的数据一致性](https://www.csdn.net/article/1970-01-01/2825234) 杨成虎
 4. [缓存失效竟然可以这么解？](https://developer.aliyun.com/article/55842) serana_cai
-5. 移动选购线缓存实践 赵思奇
+5. 移动选购线缓存实践 赵思奇 *** 
 6. 《亿级流量网站架构核心技术》 第9章 张开涛
 7. cache 58沈剑
-8. [缓存更新的套路](https://coolshell.cn/articles/17416.html)
-9. [后端存储实战课 - MySQL如何应对高并发（一）：使用缓存保护MySQL]()  李玥
+8. [缓存更新的套路](https://coolshell.cn/articles/17416.html)  coolshell ***
+9. 《后端存储实战课 - MySQL如何应对高并发（一）：使用缓存保护MySQL》  李玥

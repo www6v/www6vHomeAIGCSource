@@ -44,16 +44,18 @@ categories:
 #####   基于版本的过期方式
 在存储空间较大的前提下，借鉴mvcc的概念，每次更改数据时增加一个副本，并带版本号元数据。 然后由一个代理定时的删除低版本的过期的数据。
 
-## 服务端缓存
+~~## 服务端缓存~~
 
-   缓存服务端常用的有memcache。 Nosql的解决方案有Redies，Redies在作为cache时往往配置为无持久化的形式 。两者数据模型都是key-value的。 Redies比老牌的memcache能提供更好的性能， 更快的速度。 Memcache 没有自建的replicaion 机制, 可靠性需要在客户端以双写支持。 Redies可以看成自带持久化机制的Write-back缓存，在write-behind缓存中，数据的读取和更新通过缓存进行，与write-through缓存不同，更新的数据并不会立即持久化。相反，在缓存中一旦进行更新操作，缓存就会跟踪脏记录列表，并定期将当前的脏记录集刷新到外部存储中， 在Redies中这种机制叫做AOF。 
+~~缓存服务端常用的有memcache。 Nosql的解决方案有Redies，Redies在作为cache时往往配置为无持久化的形式 。两者数据模型都是key-value的。 Redies比老牌的memcache能提供更好的性能， 更快的速度。 Memcache 没有自建的replicaion 机制, 可靠性需要在客户端以双写支持。 Redies可以看成自带持久化机制的Write-back缓存，在write-behind缓存中，数据的读取和更新通过缓存进行，与write-through缓存不同，更新的数据并不会立即持久化。相反，在缓存中一旦进行更新操作，缓存就会跟踪脏记录列表，并定期将当前的脏记录集刷新到外部存储中， 在Redies中这种机制叫做AOF~~
 
  
 
 ## 缓存分层
-#####   边缘cache: 可用CDN实现，往往是服务器端缓存，存静态数据。
+#####   边缘cache
+可用CDN实现，往往是服务器端缓存，存静态数据。
 可以存Html页面， 脚本， 样式， 图片，页面片段等。
-#####   页面级缓存： 往往是本地缓存， 数据相对动态。
+#####   页面级缓存 
+往往是本地缓存， 数据相对动态。
 #####   逻辑缓存:  逻辑计算结果的缓存
 
 可以存储索引聚合数据，比如  BI里的数据聚合表。也可以存储耗时查询数据 ，比如搜索的结果。也可以存储业务相关数据， 比如对象模型的有向图可以整个缓存起来。在微博系统中，所有@你的微博是相对耗时， 可以 考虑作为逻辑缓存。
@@ -78,11 +80,11 @@ POJO 缓存则采用比较复杂的机制——利用字节码编织来内省（
 
 在缓存了细粒度的对象后， 造成的一个问题是数据的冗余。 例如查询条件1的返回的是model1, model2, model3, 查询条件2返回的是model2, model3, model4. model2, model3在缓存里就存了两份， 造成了冗余。这时可以分离出一个索引层，索引层存储缓存对象的地址， 这样可以节约大量的存储空间。 例如可以存储model1- model4的索引， 再从缓存中取得到实际的model.  在数据库中， 这种方式叫look up table. 如果系统更复杂， 可以采取缓存的partition加多级索引的方式。
 
- 
-## 缓存与一致性
 
-  缓存多副本之间的同步：
-  可分为replication和invalidaiton机制。 Replication机制表示一旦有数据的更新， 其余副本都会同步复制一份更新后的数据。Replication机制复制时slave会对master节点有拖累， 这时可以考虑采取invalidation机制。 Invalidation机制在jboss cache里已有实现, 一旦有更新， 广播消息， 失效所有其他的副本，让其重新去获得该值。 可通过这种方式缓存大对象以减少在实例中复制对象的代价。根据用户在一定时间段内上网地点固定不变的规律，用户始终都是访问同一个机房， 针对主节点的本地缓存在有更新时可以异步发invalidation消息，副本节点可以慢慢的再加载回这个大对象， 这样可以提高用户响应度。这种方式也可用在边缘缓存中。对于无法分组的数据， 比如在某时间段的用户认证数据需要保证副本同步，最好的方式是清除相应的副本， 让它在下次使用时初始化。 
+~~## 缓存与一致性~~
+
+  ~~缓存多副本之间的同步：~~
+  ~~可分为replication和invalidaiton机制。 Replication机制表示一旦有数据的更新， 其余副本都会同步复制一份更新后的数据。Replication机制复制时slave会对master节点有拖累， 这时可以考虑采取invalidation机制。 Invalidation机制在jboss cache里已有实现, 一旦有更新， 广播消息， 失效所有其他的副本，让其重新去获得该值。 可通过这种方式缓存大对象以减少在实例中复制对象的代价。根据用户在一定时间段内上网地点固定不变的规律，用户始终都是访问同一个机房， 针对主节点的本地缓存在有更新时可以异步发invalidation消息，副本节点可以慢慢的再加载回这个大对象， 这样可以提高用户响应度。这种方式也可用在边缘缓存中。对于无法分组的数据， 比如在某时间段的用户认证数据需要保证副本同步，最好的方式是清除相应的副本， 让它在下次使用时初始化~~
 
 
 ## 缓存与数据库的数据同步
@@ -150,11 +152,11 @@ Memcache 通过客户端cas命令实现乐观锁。 Jboss在3.0实现了mvcc。 
    Write-behind
 
 ## 参考
-1. [NoSQL架构实践（三）——以NoSQL为缓存](http://www.infoq.com/cn/news/2011/03/nosql-architecture-practice-3) 
+1. [NoSQL架构实践（三）——以NoSQL为缓存](http://www.infoq.com/cn/news/2011/03/nosql-architecture-practice-3)   
 2. [大型网站架构系列之五,缓存策略设计概要](http://wenku.baidu.com/view/018e3f2d7375a417866f8fbc.html?)  失效
 3. [Memcache mutex设计模式](http://timyang.net/programming/memcache-mutex/?) 
 4. [深入理解JBoss Cache3.0——Naga](http://superleo.iteye.com/blog/265823?)  *
-5. [极端事务处理模式：Write-behind缓存](http://www.infoq.com/cn/articles/write-behind-caching?) 
+5. [极端事务处理模式：Write-behind缓存](http://www.infoq.com/cn/articles/write-behind-caching?)   
 6. [多版本并发控制(MVCC)在分布式系统中的应用](http://coolshell.cn/articles/6790.html) 
 
 
