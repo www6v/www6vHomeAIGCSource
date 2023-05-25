@@ -17,6 +17,7 @@ top: true
 
 # 原理
 + {%  post_link  'redis'  %}
++ {%  post_link  'redisArch'  %}
 + {%  post_link  'redisTransaction'  %}
 + {%  post_link  'redisIO'  %}
 + {%  post_link  'redisRehash'  %}

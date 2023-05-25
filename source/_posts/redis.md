@@ -21,50 +21,6 @@ categories:
 
 {% asset_img redis.jpg Redis 总结 %}
 
-
-##  redis集群
-###  sentinel
-   master-slave异步复制, 所以会丢消息
-
-```   
-   参数: 
-   # 至少有一个slave复制
-   min-slaves-to-write 1   
-   # slave节点最大10s的延迟
-   min-slaves-max-lag 10   
-```
-
-###  redis cluster
-**整体架构**
-1. 去中心化的;
-2. 所有数据划分为16384个slots，每个节点负责其中一部分slots;
-
-**容错**
-1. 主从容错，主升从。
-2. PFail（Possibly Fail） -> 临时不可用
-   Fail -> 确定不可用， PFail Count> 集群的1/2
-
-**Gossip**协议
-集群节点采用 Gossip 协议来广播自己的状态以及自己对整个集群认知的改变;
-可能下线 (PFAIL-Possibly Fail) && 确定下线 (Fail)
-
-**slot迁移**
-在迁移过程中，客户端访问的流程会有很大的变化。
-迁移是会影响服务效率的，同样的指令在正常情况下一个 ttl 就能完成，而在迁移中得 3 个 ttl 才能搞定。
-
-**网络抖动**
-```
-# 表示当某个节点持续 timeout 的时间失联时，才可以认定该节点出现故障
-cluster-node-timeout 
-```
-
-**槽位迁移感知**
-2个error指令
-1.**MOVED错误**：  用来纠正槽位
-  槽的负责权已经从一个节点转移到了另一节点
-2. **ASK错误， ASKING命令**： 用来临时纠正槽位
-    只是两个节点在迁移槽的过程中使用的一种临时措施
-
 ##  事务
 
 
@@ -132,10 +88,7 @@ ZSCAN：命令用于迭代  zset 中的元素（包括元素成员和元素分�
 《Redis 深度历险：核心原理与应用实践》 钱文品
 1. 原理 4：雷厉风行 —— 管道
 2. 原理 5：同舟共济 —— 事务
-3. 原理 8：有备无患 —— 主从同步
 4. 原理 3：未雨绸缪 —— 持久化
-5. 集群 1：李代桃僵 —— Sentinel
-6. 集群 3：众志成城 —— Cluster
 7. 大海捞针 ——— scan
 8. 鞭辟入里 ——— 线程IO模型
 
@@ -152,4 +105,3 @@ ZSCAN：命令用于迭代  zset 中的元素（包括元素成员和元素分�
 
 10. [Redis内存回收机制，把我整懵了...](http://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655826994&idx=2&sn=c7efe2b7cdd350f1b3c6fb72cc8c1cd7&chksm=bd74f9e58a0370f3fdbe7c81365b73eafcfc77c4856ce865d43ab8502e677a6100ef7a24d193&scene=0&xtrack=1#rd)
 11. [Kafka日志清理之Log Deletion](https://blog.csdn.net/u013256816/article/details/80418297)
-
