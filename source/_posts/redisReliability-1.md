@@ -34,9 +34,11 @@ categories:
     唯一DB请求，共享结果
     分布式锁
 
++ 缓存击穿
+	- 提交不在数据库中的查询，会击穿缓存，直接到达数据库
+		- 使用bloom filter
 
 
-### 参考
-
+## 参考
 26丨缓存异常（下）：如何解决缓存雪崩、击穿、穿透难题？
 [【直播回放】海量并发微服务框架设计](https://www.bilibili.com/video/BV1Gb4y187un?zw&vd_source=f6e8c1128f9f264c5ab8d9411a644036)
