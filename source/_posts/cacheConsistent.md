@@ -57,8 +57,8 @@ kafka使用page cache异步刷盘。
 		- 增量db数据通过消息来异步变更缓存的数据
 
 
-# 使用模式
-+ 使用模式
+#  缓存的应用模式
++ 缓存的应用模式
 	+ Cache-Aside
 		- 业务代码直接维护缓存
 		- 有并发更新问题【2】
@@ -86,3 +86,4 @@ kafka使用page cache异步刷盘。
 7. xxx
 8. [缓存更新的套路](https://coolshell.cn/articles/17416.html)  coolshell ***
 9. 《后端存储实战课 - MySQL如何应对高并发（一）：使用缓存保护MySQL》  李玥
+10. [浅谈缓存最终一致性的解决方案](https://zhuanlan.zhihu.com/p/554879252)   腾讯 未
