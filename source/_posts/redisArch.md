@@ -15,7 +15,19 @@ categories:
 ## 目录
 <!-- toc -->
 
-# 主从同步
+# Redis架构演进[1]
++ **数据怕丢失** -> 持久化（RDB/AOF）
++ **恢复时间久** -> 主从副本（副本随时可切）
++ **故障手动切换慢** -> 哨兵集群（自动切换）
++ **读存在压力** -> 扩容副本（读写分离）
++ **写存在压力/容量瓶颈** -> 分片集群
+   - **分片集群社区方案** ->  Twemproxy、Codis（Redis 节点之间无通信，需要部署哨兵，可横向扩容）
+   - **分片集群官方方案** ->  Redis Cluster （Redis 节点之间 Gossip 协议，无需部署哨兵，可横向扩容）
++ **业务侧升级困难** -> Proxy + Redis Cluster（不侵入业务侧）
+
+
+
+# 主从架构
 + 主从同步
 	- 异步方式来同步数据
 		- 最终一致性
@@ -29,8 +41,7 @@ categories:
 			- 优化: 2.8.18 版开始支持无盘复制
 
 
-#  Redis Cluster
-###  sentinel
+#  哨兵集群 sentinel
    master-slave异步复制, 所以会丢消息
 
 ```   
@@ -41,7 +52,7 @@ categories:
    min-slaves-max-lag 10   
 ```
 
-###  Redis cluster
+#  Redis cluster
 **整体架构**
 1. 去中心化的;
 2. 所有数据划分为16384个slots，每个节点负责其中一部分slots;
@@ -73,12 +84,11 @@ cluster-node-timeout
     只是两个节点在迁移槽的过程中使用的一种临时措施
 
 # 参考
+1. [一文搞懂 Redis 架构演化之路](https://zhuanlan.zhihu.com/p/543953543) 腾讯 *** 
 
 《Redis 深度历险：核心原理与应用实践》 钱文品
 3. 原理 8：有备无患 —— 主从同步
 ~~4. 原理 3：未雨绸缪 —— 持久化~~
 5. 集群 1：李代桃僵 —— Sentinel
 6. 集群 3：众志成城 —— Cluster
-
-[一文搞懂 Redis 架构演化之路](https://zhuanlan.zhihu.com/p/543953543) 腾讯 *** 
 
