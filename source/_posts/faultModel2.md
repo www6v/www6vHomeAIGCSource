@@ -11,9 +11,25 @@ categories:
 <p></p>
 <!-- more -->
 
-
-{% asset_img fault2.jpg 故障模型2 %}
-
+## 故障模型-中间件层 
++ 故障模型-Runtime&Middleware&OS
+	- 负载均衡失效
+	- 数据库
+		- 数据库热点
+		- 数据库连接满
+		- 数据库宕机
+		- 数据库同步延迟
+		- 数据库主备延迟【参考2】
+	- 缓存
+		- 缓存热点【参考1】
+		- 缓存限流
+	- OS资源
+		- CPU抢占
+			- 案例 : HashMap并发访问，CPU100%【参考1】
+			- 案例：正则表达式回溯，CPU100%
+		- 内存抢占
+			- 案例：OOM killer
+		- 上下文切换
 
 # 参考
 
@@ -35,3 +51,10 @@ categories:
 
 2. [UCloud高可用数据库UDB主从复制延时的解决](https://www.admin5.com/article/20190404/902952.shtml)
 
+
+
+
+---
+
+
+---
