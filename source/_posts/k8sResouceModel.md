@@ -11,12 +11,18 @@ categories:
 <p></p>
 <!-- more -->
 
-关键词: 资源模型, 资源管理
+## 目录
+<!-- toc -->
+
+
+
+## 关键词
+资源模型, 资源管理
 
 {% asset_img   k8sResouceModel.jpg   Kubenetes资源模型  %}
 
-## 一. 资源模型
-### 1.1 requests limits
+##  资源模型
+###  requests limits
 **CPU资源**被称作 “可压缩资源”: Pod 只会“饥饿”，但不会退出.
 **内存资源**被称作“不可压缩资源”: Pod 会因为 OOM（Out-Of-Memory）被内核杀掉。
 
@@ -32,7 +38,7 @@ Cgroups 的，则是相对**较大的 limits 值**。不难看到，这跟 Borg 
 **requests**: 在调度的时候，kube-scheduler 只会按照 requests 的值进行计算
 
 
-### 1.2 QoS
+###  QoS
 
 **Guaranteed**:  requests == limits
 **Burstable**:  至少有一个 Container 设置了 requests
@@ -44,7 +50,7 @@ Cgroups 的，则是相对**较大的 limits 值**。不难看到，这跟 Borg 
 + Guaranteed
 + CPU 资源的 requests == limits
 
-### 1.3 CPU CGroup配置 
+###  CPU CGroup配置 
 
 CGroup类型    |  参数  |   QoS  | 值
 :-:|:-:|:-:|:-:
@@ -66,11 +72,11 @@ cpu.cfs_quota_us =  (500/1000)* 100ms
 cpu.cfs_period_us 的值始终是 100ms
 
 
-### 1.5 CGroup v2
+###  CGroup v2
 
 
-## 二. 驱逐策略 && OOM Killer
-### 2.1 驱逐
+##  驱逐策略 && OOM Killer
+###  驱逐
 kubelet参数  |  分类 | 驱逐方式
 :-:|:-:|:-:
 evictionSoft | 软驱逐 |  有宽限期， pod优雅终止， 不会影响应用。
@@ -92,7 +98,7 @@ evictionHard | 硬驱逐 | 没有宽限期， 可能影响应用。
 BestEffort > Burstable > Guaranteed
 
 
-### 2.2 内存OOM Killer行为
+###  内存OOM Killer行为
 按进程的oom_score来进行优先级排序，选择待终止的进程，oom_score越高， 越容器被终止。
 
 oom_score = (内存占总内存的比例值) * 10 + oom_score_adj
@@ -104,7 +110,7 @@ BestEffort    |  1000 (优先被kill)
 Burstable     |  min(max(2,1000 - (1000 * memoryRequestsBytes)/machineMemoryCapacityBytes), 999)
 
 
-## 参考:
+## 参考
 1. [《Kubenetes in Action》](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)  七牛容器云团队
 2. [深入剖析Kubernetes - 40  Kubernetes的资源模型与资源管理]() 张磊
 3. <<模块九-生产化集群的管理>> 孟凡杰 

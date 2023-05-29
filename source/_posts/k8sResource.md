@@ -11,6 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 ## Workload
 {% asset_img   k8sResource.jpg  Kubenetes Workload  %} 
 
@@ -24,7 +27,6 @@ categories:
 - [ConfigMap](https://feisky.xyz/kubernetes-handbook/concepts/configmap.html)
 - [Secret](https://feisky.xyz/kubernetes-handbook/concepts/secret.html)
 
-##### Config
 类型   | 用途  |  使用方式 | 安全
 :-:      |  :-:     |  :-:             |   :-:  
 ConfigMap |普通配置 |  环境变量 <br> 文件挂载（卷 Volume）[7] | 纯文本
@@ -57,7 +59,7 @@ Secret| 敏感数据|  环境变量 <br>文件挂载 | Base64
 - [Autoscaling (HPA)](https://feisky.xyz/kubernetes-handbook/concepts/autoscaling.html)
 - [PodPreset](https://feisky.xyz/kubernetes-handbook/concepts/podpreset.html)
 
-## 参考:
+## 参考
 
 1. [《Kubenetes in Action》](http://product.dangdang.com/26439199.html?ref=book-65152-9168_1-529800-3)  七牛容器云团队
 2. [资源对象](https://feisky.xyz/kubernetes-handbook/concepts/objects.html)    feisky ***
