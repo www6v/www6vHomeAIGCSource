@@ -120,15 +120,20 @@ eg. 上海一区和上海二区按照 80% 和 20% 的比例分发
     建议单写多读的架构
     set不一定限制在一个机房，可跨机房、跨地域部署
 
-+ 系统中的高可用 examples
-  [Kubernetes 之 master高可用集群搭建](https://mp.weixin.qq.com/s/Br6J3nC51SnRTXBArfs_ug)
-  Redlock - redis分布式锁的高可用
-
++ 系统中的高可用
+  - [Kubernetes 之 master高可用集群搭建](https://mp.weixin.qq.com/s/Br6J3nC51SnRTXBArfs_ug)
+  - Redlock - redis分布式锁的高可用
+  - [百亿规模API网关服务Shepherd的设计与实现](https://tech.meituan.com/2021/05/20/shepherd-api-gateway.html)
+     + 服务隔离 
+       集群隔离  请求隔离
+     + 稳定性
+       流量管控, 请求缓存, 超时管理, 熔断降级
+       
+       
 ### 中间件层
 + kafka 高可用
 + zk高可用
-
-+ 系统中的高可用 examples
++ 系统中的高可用 
   [面试|图解 kafka 的高可用机制](https://mp.weixin.qq.com/s/GMsYVgPmoCbdWW4FQthrAA)  isr
 
 ### 数据层   [3] [P]
@@ -147,7 +152,7 @@ eg. 上海一区和上海二区按照 80% 和 20% 的比例分发
   raft - etcd
   zab - zookeeper
   
-+ 系统中的高可用  examples
++ 系统中的高可用  
   [MySQL 同步复制及高可用方案总结](https://mp.weixin.qq.com/s/fh_9Mk-FVFSkX5pmsc8HPA)  MHA, MMM
   [这可能是目前最全的Redis高可用技术解决方案总结](https://mp.weixin.qq.com/s/Iz7cwun1y_oLUV9fDDh0UQ)  Master-slave, Cluster
   [干货 | 阿里巴巴HBase高可用8年抗战回忆录](https://mp.weixin.qq.com/s/yH5JVD422k6FNtiqAGw75Q)

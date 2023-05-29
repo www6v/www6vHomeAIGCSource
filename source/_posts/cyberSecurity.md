@@ -74,11 +74,20 @@ ATT&CK模型
 ## 参考
 
 1. [基于Web应用层的DDoS攻击模型研究](https://wenku.baidu.com/view/7f2c9810c8aedd3383c4bb4cf7ec4afe05a1b14c?fr=xueshu) *
+
 2. 《Web 漏洞挖掘实战》  王昊天
+
 3. 《13 | Linux系统安全：多人共用服务器，如何防止别人干“坏事”？》  何为舟
-4.   xxx
-5.   xxx
+
+4. xxx
+
+5. xxx
+
 6. 《模块串讲（一）丨Web安全：如何评估用户数据和资产数据面临的威胁？》 何为舟
-7.   xxx
+
+7. xxx
+
 8. 《红蓝攻防》
+
+100. [实践之后，我们来谈谈如何做好威胁建模](https://tech.meituan.com/2021/04/08/threat-modeling-security.html)  美团  未
 
