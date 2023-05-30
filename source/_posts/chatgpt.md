@@ -14,11 +14,6 @@ categories:
 ## Chatgpt
 [Poe](https://poe.com/ChatGPT) ***
 
-
-## Prompt
-+ [Chatgpt ShortCut](https://www.aishort.top/)
-  [ChatGPT Shortcut ](https://github.com/rockbenben/ChatGPT-Shortcut)
-
 ## Tools & Mix
 + GPT学习宝典
   [GPT  工具箱](https://gpt.candobear.com/toolbox)
@@ -29,8 +24,9 @@ categories:
 ## App
 + [ChatPaper](https://chatpaper.org/)
   [ChatPaper](https://github.com/kaixindelele/ChatPaper)
-+ chatpdf  收费
- 总结文献
++ chatpdf  收费 
+  [Chat with any PDF](https://www.chatpdf.com/) 总结文献
++ [Chat with documents](https://chatdoc.com/)
 + [阅读文档的好帮手](https://chat2doc.cn/)  免费
 + ChatGPT 客户端
  windows， mac

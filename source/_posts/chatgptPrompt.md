@@ -84,5 +84,16 @@ prompt =  定义角色+背景信息+任务目标+输出要求
 请用简单的语句来归纳上文，归纳的语句可以生成脑图
 请用金字塔思维的方式来简单的归纳上文
 
+
+
+# Prompt Learning
++ [Learn Prompting](https://learnprompting.org/zh-Hans/docs/intro) *** 
+
++ [Chatgpt ShortCut](https://www.aishort.top/)
+  [ChatGPT Shortcut ](https://github.com/rockbenben/ChatGPT-Shortcut)
+  
++ [ Awesome ChatGPT Prompts](https://prompts.chat/)  
+
 # 参考
+
 [学完这个视频，简历加一条：熟练掌握ChatGPT解决复杂问题｜ChatGPT使用教程](https://www.bilibili.com/video/BV1Lg4y1c7fk/)  *** 

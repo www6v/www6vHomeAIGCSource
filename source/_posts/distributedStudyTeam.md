@@ -40,7 +40,7 @@ categories:
 + 大厂
 [鹅厂架构师](https://www.zhihu.com/org/e-han-jia-gou-shi)  ***
 [美团技术团队](https://www.zhihu.com/org/mei-tuan-dian-ping-ji-shu-tuan-dui/posts)
-[vivo互联网技术](https://www.zhihu.com/org/vivohu-lian-wang-ji-zhu-2/posts) ***
+[vivo互联网技术](https://www.zhihu.com/org/vivohu-lian-wang-ji-zhu-2/posts) ***   看了50%左右
 [携程技术](https://www.zhihu.com/org/xi-cheng-ji-shu-zhong-xin/posts)
 [阿里巴巴开源](https://www.zhihu.com/people/a-li-xi-tong-ruan-jian-ji-zhu-90/posts)
 [有赞技术团队 知乎](https://www.zhihu.com/org/you-zan-ji-zhu-tuan-dui/activities)  *** 干货多
