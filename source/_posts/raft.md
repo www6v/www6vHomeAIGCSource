@@ -63,8 +63,9 @@ Raft： leader + term + peers
 5. [raft协议和zab协议有啥区别？](https://www.zhihu.com/question/28242561)
 6. [一张图看懂Raft](http://www.seflerzhou.net/post-109.html) 未
 7. [Raft 为什么是更易理解的分布式一致性算法](https://www.cnblogs.com/mindwind/p/5231986.html)  未
-8. [分布式协议与算法实战 - 07 | Raft算法（一）：如何选举领导者？]() 韩健 good
-9. [分布式协议与算法实战 - 08丨Raft算法（二）：如何复制日志？.pdf]() 韩健 good
+8. [分布式协议与算法实战 - 07 | Raft算法（一）：如何选举领导者？]() 韩健 ***
+9. [分布式协议与算法实战 - 08丨Raft算法（二）：如何复制日志？.pdf]() 韩健 ***
+100. [Raft 分布式系统一致性协议探讨](https://zhuanlan.zhihu.com/p/510220698)  腾讯 未
 
 ---
 +  论文

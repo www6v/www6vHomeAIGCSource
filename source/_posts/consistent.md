@@ -69,16 +69,13 @@ categories:
   - 都通过多个阶段来实现一致性,例如Prepare 阶段 和 Commit 阶段。
   - 都需要超过半数以上的节点达成一致(**quorum**),才能提交日志。
 
-
 ###  弱一致性
 
-弱一致性|协议|特性|工程
+##### 因果一致性
+
+因果一致性|协议|特性|工程
 :-:|:-:|:-:|:-:
-因果一致性<br/>(最终一致性)| 向量时钟 Vector clock[向量时钟] 图1 || 微信朋友圈的评论, Dynamo
-反熵Anti-Entropy<br>(最终一致性)| [Gossip][gossip-visualization] |  | Cassandra， redis的集群状态的同步机制
-Master-Slave<br/>(最终一致性)|   |延迟低，吞吐高<br>主动推送/被动拉取  | {% post_link 'mysqlReliability' %} self 
-Master-Master<br/>(最终一致性)|{% post_link 'multiMasterCRDT' CRDT %} self  |延迟低，吞吐高                      | {% post_link 'mysqlReliability' %} self	
-弱一致性|Backups（备份）||
+因果一致性<br/>| 向量时钟 Vector clock[向量时钟] 图1 || 微信朋友圈的评论, Dynamo
 
 + 向量时钟
 <div style="text-align: center;">
@@ -87,7 +84,7 @@ Master-Master<br/>(最终一致性)|{% post_link 'multiMasterCRDT' CRDT %} self 
 图1. 向量时钟 vector-clock
 </div>
 
-###   客户端为中心的一致性（Client-centric Consistency）
+#####   客户端为中心的一致性（Client-centric Consistency）
 + 客户端为中心的一致性
   - 最终一致性
   - 以客户端为中心的一致性为单一客户端提供一致性保证，保证该客户端对数据存储的访问的一致性，但是它不为不同客户端的并发访问提供任何一致性保证.
@@ -99,13 +96,21 @@ Master-Master<br/>(最终一致性)|{% post_link 'multiMasterCRDT' CRDT %} self 
   - 读写一致性（Read-your-writes Consistency）
   - 写读一致性（Writes-follow-reads Consistency）
 
+#####  最终一致性
+
+| 最终一致性           | 协议                           | 特性 | 工程                                  |
+| -------------------- | ------------------------------ | ---- | ------------------------------------- |
+| 反熵Anti-Entropy<br> | [Gossip][gossip-visualization] |      | Cassandra， redis的集群状态的同步机制 |
+
+
+
 ###  Sloppy quorum
 
 Sloppy quorum|特性|工程
 :-:|:-:|:-:
 R+W>N[ReadQurum-WriteQurum]| 可定制 | [Dynamo, Cassandra](../../../../2018/07/19/NoSQL/)  定制灵活
 
-#  柔性事务 最终一致性
+#  最终一致性-柔性事务
 
 模式 |  流程 | 流程细节 | 工程 
 :-:|:-:|:-:|---
@@ -169,11 +174,11 @@ state machine replication && primary-copy
 2. [深入解析NoSQL数据库的分布式算法](https://www.csdn.net/article/2015-01-30/2823782)   ***
 3. ZooKeeper真不是最终一致性的，而是顺序一致性 陈东明
 4. 为什么程序员需要关心顺序一致性（Sequential Consistency）而不是Cache一致性（Cache Coherence） carlosstephen
-5. [分布式系统：一致性模型](https://yq.aliyun.com/articles/693187)  阿里 肖汉松 ***
+5. [分布式系统：一致性模型](https://yq.aliyun.com/articles/693187)  阿里 Overview ***
 6. ENode 1.0 - Saga的思想与实现 汤雪华
 7. 《大数据日知录：架构与算法》 张俊林
 8. [Base: An Acid Alternative](https://queue.acm.org/detail.cfm?id=1394128)  Ebay模式  ***
-9. [如何选择分布式事务解决方案？](https://mp.weixin.qq.com/s/2AL3uJ5BG2X3Y2Vxg0XqnQ)   道苏
+9. [如何选择分布式事务解决方案？](https://mp.weixin.qq.com/s/2AL3uJ5BG2X3Y2Vxg0XqnQ)   ali  ***
 10. {% post_link 'NoSQL' %}  self  一致性
 11. [《数据密集型应用系统设计》笔记五：第五章 数据复制](https://blog.csdn.net/weixin_43902592/article/details/103918630) 未
 
