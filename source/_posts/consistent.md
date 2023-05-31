@@ -37,7 +37,7 @@ categories:
 ![consistent-relationship](https://user-images.githubusercontent.com/5608425/65506192-989c8f00-defd-11e9-8ce4-df9b2bd8a96f.jpg)
 </div>
 
-###  强一致性
+###  强一致性模型
 强一致性|协议|特性|工程
 :-:|:-:|:-:|:-:
 线性一致性[chat]|2PC<br>3PC #1| 延迟大，吞吐低。全局锁资源| JTA(XA)<br>  {% post_link 'transactionSeata'  Seata XA,AT **非入侵** %} self 
@@ -69,7 +69,7 @@ categories:
   - 都通过多个阶段来实现一致性,例如Prepare 阶段 和 Commit 阶段。
   - 都需要超过半数以上的节点达成一致(**quorum**),才能提交日志。
 
-###  弱一致性
+###  弱一致性模型
 
 ##### 因果一致性
 
@@ -110,25 +110,39 @@ Sloppy quorum|特性|工程
 :-:|:-:|:-:
 R+W>N[ReadQurum-WriteQurum]| 可定制 | [Dynamo, Cassandra](../../../../2018/07/19/NoSQL/)  定制灵活
 
-#  最终一致性-柔性事务
+#  最终一致性-工程
 
-模式 |  流程 | 流程细节 | 工程 
-:-:|:-:|:-:|---
-EBay模式 #2 [8] |  **正向流程**<br> [本地事务+幂等业务接口+half消息] | 消息状态<br> 1. 初始化：消息为待处理状态<br> 2. 业务成功：消息为待发送状态<br>3. 业务失败：消息删除 | Eg:  阿里Notify<br> {% post_link 'mqRocketmqTransaction' RocketMQ事务消息 %} self 
-   x | **反向流程**（异常流程，补偿流程） |中间件询问业务执行结果，更新消息状态|x
-TCC #4|1.主流程控制整个事务 2.分流程提供Confirm和Cancel方法。| Try:  阶段1的业务执行  Confirm: 阶段2的业务执行  Cancel: 回滚Try阶段执行的业务流程和数据| TCC #4 FMT <br> {% post_link 'transactionSeata'  Seata TCC  %} **有入侵性** self 
-Saga 1PC (一阶段)| 基于补偿的消息驱动的用于解决long-running process业务。 |  x  |  {% post_link 'transactionSeata'  Seata Saga  %} self  
-补偿 | 状态查询（成功or失败）+补偿| 定时校验异常 + 补偿| x 
+###  TCC
++ TCC
+  - 流程 
+      1.主流程控制整个事务 
+      2.分流程提供Confirm和Cancel方法。
+  - 阶段
+      Try:  阶段1的业务执行  
+      Confirm: 阶段2的业务执行  
+      Cancel: 回滚Try阶段执行的业务流程和数据
+  - TCC  FMT 
+    {% post_link 'transactionSeata'  Seata TCC  %}    self
 
-+ Saga流程
 
-{% asset_img  saga.jpg   Saga流程 %}
+###  基于事务消息的分布式事务
++ EBay模式  [8]
 
++ **正向流程**<br>
+  - [本地事务+幂等业务接口+half消息]
+  - 消息状态<br> 
+    1. 初始化：消息为待处理状态<br> 
+    2. 业务成功：消息为待发送状态<br>
+    3. 业务失败：消息删除
 
++ **反向流程**（异常流程，补偿流程）
+  - 中间件询问业务执行结果，更新消息状态
 
-#  柔性事务
++ 工程
+  {% post_link 'mqRocketmqTransaction' RocketMQ事务消息 %} self
 
-1. 基于事务消息的分布式事务
+---
+
 ![mq-normal](https://user-images.githubusercontent.com/5608425/66023796-d2d0e680-e524-11e9-8748-1a26f3d0f157.JPG)
 ![mq-reverse](https://user-images.githubusercontent.com/5608425/66023797-d2d0e680-e524-11e9-85e6-f845863fe4a8.JPG)
 
@@ -140,9 +154,25 @@ table th:first-of-type {
 
 {% asset_img  mqTransaction.jpg  基于事务消息的分布式事务 %}
 
-2. 基于本地消息的分布式事务
+###  基于本地消息的分布式事务
 
 {% asset_img  localBaseTransaction.jpg  基于本地消息的分布式事务 %}
+
+### Saga流程
+
++ Saga 1PC (一阶段) 
+  + 基于补偿的消息驱动的用于解决long-running process业务。 
+  + 工程 
+    {% post_link 'transactionSeata'  Seata Saga  %} self
+
+{% asset_img  saga.jpg   Saga流程 %}
+
+# 弱一致性-工程
+### 补偿
+  + 流程
+    状态查询（成功or失败）+补偿
+  + 流程细节
+    定时校验异常 + 补偿
 
 #   State Machine && Primary-copy
 
