@@ -89,9 +89,40 @@ Biggest   zset found 'testzset' has 129 members
   - 压缩 Value 数据  
     使用序列化、压缩算法将 Key 的大小控制在合理范围内，但是需要注意，序列化、反序列化都会带来一定的消耗
 
+
+### scan命令[1]
++ scan命令：
+zset -> zscan
+hash -> hscan
+set -> sscan
+key of hash -> scan
+SCAN：命令用于迭代 数据库键。
+SSCAN：命令用于迭代 set 中的元素。
+HSCAN：命令用于迭代 hash 中的键值对。
+ZSCAN：命令用于迭代  zset 中的元素（包括元素成员和元素分值）。
+
+```
+127.0.0.1:6379> keys *
+1) "db_number"
+2) "key1"
+3) "myKey"
+127.0.0.1:6379> scan 0 MATCH * COUNT 1
+1) "2"
+2) 1) "db_number"
+127.0.0.1:6379> scan 2 MATCH * COUNT 1
+1) "1"
+2) 1) "myKey"
+127.0.0.1:6379> scan 1 MATCH * COUNT 1
+1) "3"
+2) 1) "key1"
+127.0.0.1:6379> scan 3 MATCH * COUNT 1
+1) "0"
+2) (empty list or set)
+```
+
 # 参考
 1. 《Redis 深度历险：核心原理与应用实践》 钱文品
-    7. 大海捞针 ——— scan  
+   大海捞针—scan  
 2. [Redis中查找大key](https://segmentfault.com/a/1190000018193214?utm_source=tag-newest)
 3. [解决了Redis大key问题](https://zhuanlan.zhihu.com/p/473930220)  *** 
    [解决了Redis大key问题](https://mp.weixin.qq.com/s/0WS7_9EIQqpYlUNWgZZJog)
