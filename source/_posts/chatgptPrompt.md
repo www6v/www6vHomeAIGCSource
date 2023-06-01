@@ -94,6 +94,12 @@ prompt =  定义角色+背景信息+任务目标+输出要求
   
 + [ Awesome ChatGPT Prompts](https://prompts.chat/)  
 
++ [snackprompt.com](https://snackprompt.com/) ***
++ [flowgpt](https://flowgpt.com/) ***
++ [prompthero](https://prompthero.com/)
++ [publicprompts](https://publicprompts.art/)
++ [https://learningprompt.wiki/](https://learningprompt.wiki/) prompt 学习教程
+
 # 参考
 
 [学完这个视频，简历加一条：熟练掌握ChatGPT解决复杂问题｜ChatGPT使用教程](https://www.bilibili.com/video/BV1Lg4y1c7fk/)  *** 
