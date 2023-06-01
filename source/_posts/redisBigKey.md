@@ -95,10 +95,16 @@ OK
   - 渐进式删除<4.0版本
     [scan命令](#scan命令)  **游标式迭代扫描**
     使用 hscan、sscan、zscan 方式渐进式删除 [4]
-  - 惰性删除>4.0版本
+  - 惰性删除>4.0版本  [7][8]
     **unlink命令  异步惰性非阻塞删除**
+     ``` Shell 
+      unlink <keyName> 
+     ```
      ``` 
-     unlink <keyName> 
+      lazyfree-lazy-server-del：Yes(default no)
+      replica-lazy-flush：Yes(default no)
+      
+      lazyfree-lazy-user-del: Yes(default no) （6.0 新增）
      ```
   
 + 不可删除
@@ -176,5 +182,5 @@ public void delBigHash(String host, int port, String password, String bigHashKey
 5. [Bigkey问题的解决思路与方式探索](https://zhuanlan.zhihu.com/p/584594738) vivo team *** 
 6. [一份完整的阿里云 Redis 开发规范，值得收藏！](https://developer.aliyun.com/article/846851)  ***
 7. [尚硅谷Redis零基础到进阶，最强redis7教程，阳哥亲自带练（附redis面试题）](https://www.bilibili.com/video/BV13R4y1v7sP/?p=106) V
-
+8. {% post_link 'redisLazyFree' %} self
 
