@@ -73,6 +73,18 @@ Biggest   zset found 'testzset' has 129 members
      - 如果没有从节点，**可以使用--i参数**，例如(--i 0.1 代表100毫秒执行一次)。
      - --Bigkeys只能计算每种数据结构的top1，如果有些数据结构有比较多的Bigkey，是查找不出来的。
 
+> **--bigkeys的不足** [7]
+  想查询大于10kb的所有key， --bigkeys参数就无能为力了。需要用到memory usage命令来计算每个键值的字节数
+
++ MEMORY USAGE key
+``` Shell 
+> SET cento 01234567890123456789012345678901234567890123
+45678901234567890123456789012345678901234567890123456789
+OK
+> MEMORY USAGE cento
+(integer) 153
+```
+
 + 离线分析RDB [3]
   使用redis-rdb-tools离线分析工具来扫描RDB持久化文件
   
@@ -129,6 +141,31 @@ Biggest   zset found 'testzset' has 129 members
 2) (empty list or set)
 ```
 
++ Hash删除: hscan + hdel [6]
+  先删除hash里的每个field，最后再删除hash
+``` Java
+public void delBigHash(String host, int port, String password, String bigHashKey) {
+    Jedis jedis = new Jedis(host, port);
+    if (password != null && !"".equals(password)) {
+        jedis.auth(password);
+    }
+    ScanParams scanParams = new ScanParams().count(100);
+    String cursor = "0";
+    do {
+        ScanResult<Entry<String, String>> scanResult = jedis.hscan(bigHashKey, cursor, scanParams);
+        List<Entry<String, String>> entryList = scanResult.getResult();
+        if (entryList != null && !entryList.isEmpty()) {
+            for (Entry<String, String> entry : entryList) {
+                jedis.hdel(bigHashKey, entry.getKey());
+            }
+        }
+        cursor = scanResult.getStringCursor();
+    } while (!"0".equals(cursor));
+    //删除bigkey
+    jedis.del(bigHashKey);
+}
+```
+
 # 参考
 1. 《Redis 深度历险：核心原理与应用实践》 钱文品
    大海捞针—scan  
@@ -138,3 +175,6 @@ Biggest   zset found 'testzset' has 129 members
 4. [Redis 大 key 要如何处理？](https://blog.csdn.net/qq_34827674/article/details/126225192)
 5. [Bigkey问题的解决思路与方式探索](https://zhuanlan.zhihu.com/p/584594738) vivo team *** 
 6. [一份完整的阿里云 Redis 开发规范，值得收藏！](https://developer.aliyun.com/article/846851)  ***
+7. [尚硅谷Redis零基础到进阶，最强redis7教程，阳哥亲自带练（附redis面试题）](https://www.bilibili.com/video/BV13R4y1v7sP/?p=106) V
+
+
