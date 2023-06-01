@@ -27,9 +27,9 @@ top: true
 + {% post_link 'redisStudy' %}
 
 ### 可靠性
-+ {%  post_link  'redisReliability'  %}
-+ {%  post_link  'redisAOF'  %}
++ {%  post_link  'redisRDB'  %}
 + {%  post_link  'rdb'  %}
++ {%  post_link  'redisAOF'  %}
 + {%  post_link  'aofRewrite'  %}
 + {%  post_link  'redisError'  %}
 + {%  post_link  'redisSLO'  %}
