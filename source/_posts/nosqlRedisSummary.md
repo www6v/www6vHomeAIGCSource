@@ -24,6 +24,7 @@ top: true
 + {%  post_link  'redisDataStructure'  %}
 + {%  post_link  'redisNVM'  %}
 + {% post_link 'redisLazyFree' %}
++ {% post_link 'redisDelete' %}
 + {% post_link 'redisStudy' %}
 
 ### 可靠性
