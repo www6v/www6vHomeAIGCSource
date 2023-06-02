@@ -11,7 +11,7 @@ categories:
 <p></p>
 <!-- more -->
 
-## Chatgpt
+## Platform
 [Poe](https://poe.com/ChatGPT) ***
 
 ## Tools & Mix
@@ -21,13 +21,23 @@ categories:
   [学习资料](https://gpt.candobear.com/courses)
 + [AI 工具箱](https://www.ailookme.com)  *** 
 
-## App
-+ [ChatPaper](https://chatpaper.org/)
-  [ChatPaper](https://github.com/kaixindelele/ChatPaper)
-+ chatpdf  收费 
-  [Chat with any PDF](https://www.chatpdf.com/) 总结文献
-+ [Chat with documents](https://chatdoc.com/)
-+ [阅读文档的好帮手](https://chat2doc.cn/)  免费
+## 文档分析&科研
+
++ 在线文档分析 
+  Microsoft Edge Dev + new Bing  ***
+
++ 文献查找 + 润色
+  Skype + new Bing  ***
+
++ 本地文档分析
+  - chatpdf  收费  ***
+    [Chat with any PDF](https://www.chatpdf.com/) 总结文献
+  - [ChatPaper](https://chatpaper.org/)
+    [ChatPaper](https://github.com/kaixindelele/ChatPaper)
+  - [Chat with documents](https://chatdoc.com/)
+  - [阅读文档的好帮手](https://chat2doc.cn/)  免费
+
+##  客户端
 + ChatGPT 客户端
  windows， mac
 
