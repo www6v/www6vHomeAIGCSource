@@ -41,16 +41,29 @@ categories:
 
 {% asset_img aof-1.png 三种写回策略 %}
 
-###  AOF 非阻塞的重写Rewrite过程 [1]  
-一个拷贝，两处日志
-{% asset_img   redisRewrite.png  AOF非阻塞的重写过程  838 398 %}
-
-
 ### 关闭AOF落盘 [2]
 AOF落盘会带来一定写性能损耗，如果将Redis实例应用于纯缓存场景中，对数据持久化没有需求，您可以按照本章节的说明，修改appendonly参数的值，关闭AOF落盘。
 
+
+#  AOF Rewrite过程
++ 功能
+  压缩AOF文件的大小
+  
++ AOF Rewrite过程 [1]
+  非阻塞的重写
+
++ 一个拷贝，两处日志 [1]
+{% asset_img   redisRewrite.png  AOF非阻塞的重写过程  838 398 %}
+
++ 触发机制 [4]
+  + 手动触发
+    bgrewriteaof 命令
+  + 自动触发
+    AOF文件大小
+    
 # 参考
 1. 《04 | AOF日志:宕机了，Redis如何避免数据丢失? 》    蒋德钧
 2. [关闭AOF落盘](https://help.aliyun.com/knowledge_detail/147408.html?spm=a2c4g.11186623.2.2.7e373f2e7XKCDO)
 3. {% post_link 'aofRewrite' %}
+4. 《Redis开发与运维》  第5章
 
