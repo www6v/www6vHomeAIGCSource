@@ -17,12 +17,6 @@ Page 19
 
 
 
-{% details 点击  原文  %}
-
-{%  enddetails   %}
-
-
-
 Streaming data processing is a big deal in big data these days, and for good
 reasons; among them are the following:
 
@@ -67,12 +61,6 @@ processing, show how they relate, and point out some of the difficulties
 these two domains impose.
 
 
-
-
-
-{% details 点击  原文  %}
-
-{%  enddetails   %}
 
 # **Terminology: What Is Streaming?**
 
@@ -191,12 +179,6 @@ the challenges that are unique to stream processing.
 
 
 
-
-
-
-{% details 点击  原文  %}
-
-{%  enddetails   %}
 
 ### **On the Greatly Exaggerated Limitations of Streaming**
 
@@ -418,9 +400,7 @@ unbounded data processing, using both batch and streaming systems.
 
 
 
-{% details 点击  原文  %}
 
-{%  enddetails   %}
 
 ### **Event Time Versus Processing Time**
 
@@ -600,10 +580,6 @@ patterns.
 
 
 
-{% details 点击  原文  %}
-
-{%  enddetails   %}
-
 # **Data Processing Patterns**
 
 At this point, we have enough background established that we can begin
@@ -737,12 +713,6 @@ Either way, using a classic batch engine to calculate sessions is less than
 ideal. A nicer way would be to build up sessions in a streaming manner,
 
 which we look at later on.
-
-
-
-{% details 点击  原文  %}
-
-{%  enddetails   %}
 
 
 
@@ -912,10 +882,6 @@ to use and thus not worth further attention, given our current focus.
 
 
 
-{% details 点击  原文  %}
-
-{%  enddetails   %}
-
 
 
 **Windowing**
@@ -1015,10 +981,6 @@ there.
 
 
 
-
-{% details 点击  原文  %}
-
-{%  enddetails   %}
 
 
 
@@ -1252,12 +1214,6 @@ we look at next.
 
 
 
-{% details 点击  原文  %}
-
-{%  enddetails   %}
-
-
-
 # **Summary**
 
 Whew! That was a lot of information. If you’ve made it this far, you are to be
@@ -1335,12 +1291,6 @@ to ground us in reality. These examples will help drive home the notions of
 event time and processing time introduced in this chapter while additionally
 
 exploring new concepts such as watermarks.
-
-
-
-{% details 点击  原文  %}
-
-{%  enddetails   %}
 
 
 
