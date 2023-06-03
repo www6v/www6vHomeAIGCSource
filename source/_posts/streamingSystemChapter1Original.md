@@ -19,8 +19,13 @@ Page 19
 
 {% details 点击  原文  %}
 
+{%  enddetails   %}
+
+
+
 Streaming data processing is a big deal in big data these days, and for good
 reasons; among them are the following:
+
 + Businesses crave ever-more timely insights into their data, and
 switching to streaming is a good way to achieve lower latency
 + The massive, unbounded datasets that are increasingly common in
@@ -61,11 +66,13 @@ I introduce the two primary domains of time that are relevant in data
 processing, show how they relate, and point out some of the difficulties
 these two domains impose.
 
-{%  enddetails   %}
+
 
 
 
 {% details 点击  原文  %}
+
+{%  enddetails   %}
 
 # **Terminology: What Is Streaming?**
 
@@ -181,13 +188,15 @@ batch and streaming). It’s also the constitution that most naturally embodies
 
 the challenges that are unique to stream processing.
 
-{%  enddetails   %}
+
 
 
 
 
 
 {% details 点击  原文  %}
+
+{%  enddetails   %}
 
 ### **On the Greatly Exaggerated Limitations of Streaming**
 
@@ -407,13 +416,11 @@ the rest of this chapter looking at common approaches to bounded and
 
 unbounded data processing, using both batch and streaming systems.
 
-{%  enddetails   %}
-
-
-
 
 
 {% details 点击  原文  %}
+
+{%  enddetails   %}
 
 ### **Event Time Versus Processing Time**
 
@@ -591,13 +598,11 @@ let’s finish up one more useful piece of background: common data processing
 
 patterns.
 
-{%  enddetails   %}
-
-
-
 
 
 {% details 点击  原文  %}
+
+{%  enddetails   %}
 
 # **Data Processing Patterns**
 
@@ -735,13 +740,11 @@ which we look at later on.
 
 
 
+{% details 点击  原文  %}
+
 {%  enddetails   %}
 
 
-
-
-
-{% details 点击  原文  %}
 
 ### **Unbounded Data: Streaming**
 
@@ -909,13 +912,11 @@ to use and thus not worth further attention, given our current focus.
 
 
 
+{% details 点击  原文  %}
+
 {%  enddetails   %}
 
 
-
-
-
-{% details 点击  原文  %}
 
 **Windowing**
 
@@ -1011,11 +1012,15 @@ processing-time windowing has historically been more common, we’ll start
 
 there.
 
-{%  enddetails   %}
+
 
 
 
 {% details 点击  原文  %}
+
+{%  enddetails   %}
+
+
 
 ***Windowing by processing time***
 
@@ -1247,13 +1252,11 @@ we look at next.
 
 
 
+{% details 点击  原文  %}
+
 {%  enddetails   %}
 
 
-
-
-
-{% details 点击  原文  %}
 
 # **Summary**
 
@@ -1333,13 +1336,13 @@ event time and processing time introduced in this chapter while additionally
 
 exploring new concepts such as watermarks.
 
-{%  enddetails   %}
-
-
-
 
 
 {% details 点击  原文  %}
+
+{%  enddetails   %}
+
+
 
 1. For completeness, it’s perhaps worth calling out that this definition includes
 
@@ -1433,4 +1436,3 @@ increasing timestamps as they arrive at the system. As such, we won’t discuss
 
 tuple-based windowing in detail any further.
 
-{%  enddetails   %}
