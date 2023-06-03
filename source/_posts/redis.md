@@ -56,31 +56,28 @@ Java rehash： 一次性将旧数组下挂接的元素全部转移到新数组�
 这样可以由多个线程来处理读写就绪的事件，但是其中不能有比较耗时的操作如果有的话需要将其放入线程池中，不然会降低其吐吞量。
 在 Redis 中我们可以看做这二者的值都是 1。
 
-## HotKey
-{%  post_link  'faultModel2'   故障模型- 热点 Key 问题的发现与解决 %}  self
-
 ## 特性
 + Redis 2.6
   lua, pubsub, Sentinel V1
 + Redis 2.8  
   Sentinel V2, ipv6
 + Redis 3.0
-  Redis Cluster 
+  **Redis Cluster** 
 + Redis3.2
   GEO
 + Redis 4.0
-  psync2.0,  lazy-free, modules
+  psync2.0, **lazy-free**, modules
   RDB-AOF 混合持久化
 + Redis 5.0
   Stream
 + Redis 6.0
-  Thread I/O
+  **Thread I/O**
   SSL, ACL
 + Redis 7.0  
   functions, ACL v2 
   sharded-pubsub
   client-eviction
-  multi-part AOF
+  **multi-part AOF**
 
 ## 参考
 《Redis 深度历险：核心原理与应用实践》 钱文品
@@ -92,7 +89,8 @@ Java rehash： 一次性将旧数组下挂接的元素全部转移到新数组�
 ---
 5. 《Redis实战》 黄健宏 3.7 ,4.4, 6.2
 6. [Redis 数据结构和对象系统，记住这 12 张图就够啦！](https://mp.weixin.qq.com/s/fO0yoHGqtFH5lpu6688h2w)
-7. [七问Redis，才知道我与技术大牛的差距在哪里 ](https://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650780240&idx=1&sn=49fb636a97a3c21fec7d2e2b59bea09f) ***
+7. [七问Redis，才知道我与技术大牛的差距在哪里 ](https://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650780240&idx=1&sn=49fb636a97a3c21fec7d2e2b59bea09f) 
+   *** 事务，乐观锁watch，持久化， 内存优化，主从复制，过期删除策略
 8. [Mysql事务总结](../../../../2015/02/21/transaction/) self
 9. [美团针对Redis Rehash机制的探索和实践](https://www.cnblogs.com/meituantech/p/9376472.html) ***
 10. [为什么 Redis 单线程能达到百万+QPS？](https://mp.weixin.qq.com/s/QrvUl6Ul9DxYoRZwSsMQZw) ***

@@ -46,6 +46,7 @@ top: true
 + {%  post_link  'redisReliability-1'  %}
 + {%  post_link  'redisDbConsistent'  %}
 + {% post_link 'redisSlowResponse' %} 
++ {% post_link 'redisHotkey' %}
 
     
   
