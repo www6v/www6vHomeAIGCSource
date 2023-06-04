@@ -45,9 +45,11 @@ categories:
 + 算法可视化  ***
 + 李宏毅 台湾
 
-## NLP
-+ [中科院 宗成庆 自然语言处理公开课（64集）](https://www.bilibili.com/video/BV1Cb411T7Cd) 
-+ [2022年首发！B站讲的最好的【NLP自然语言处理】保姆级教程！](https://www.bilibili.com/video/BV1C14y147dp)   有实践
+## NLP & 大模型
++ [【清华 NLP X OpenBMB】大模型公开课｜带你从入门到实战](https://www.zhihu.com/education/video-course/1545850719483392000)  V ***
++ [沈向洋带你读论文——CV & NLP 专题](https://www.zhihu.com/education/video-course/1546509363711614976) V ***
++ [中科院 宗成庆 自然语言处理公开课（64集）](https://www.bilibili.com/video/BV1Cb411T7Cd) V
++ [2022年首发！B站讲的最好的【NLP自然语言处理】保姆级教程！](https://www.bilibili.com/video/BV1C14y147dp)  V  有实践
 + MLNLP第六期学术研讨会开始报名
 
 ## 知识图谱
@@ -73,7 +75,7 @@ categories:
    + 知识图谱技术实践  邵蓥侠
 + 极客训练营 
   -《机器学习训练营1期》  视频课 
-   
+  
 ## 中国大学MOOC 
 + 中国大学MOOC [深度学习基础](https://www.icourse163.org/learn/HIT-1206320802?tid=1468208513#/learn/announce)   哈尔滨工业大学
 + 中国大学MOOC [深度学习及其应用](https://www.icourse163.org/course/FUDAN-1205806833)   复旦
