@@ -40,6 +40,7 @@ categories:
 4. [Cockroach  HLC](https://github.com/cockroachdb/cockroach/blob/master/pkg/util/hlc/hlc.go)
 5. {% post_link 'tikvMVCCTransaction' %}
 6. {% post_link 'distributedDatabaseGlobalTime' %}  self
+7. {% post_link ''globalSecondaryIndex %} self
 
 
 

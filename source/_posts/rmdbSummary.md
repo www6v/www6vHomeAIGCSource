@@ -31,6 +31,8 @@ top: true
 
 + {% post_link  'distributedDatabaseJoinQuery'  %}
 
++ {% post_link ''globalSecondaryIndex %} 
+
   
 
 
