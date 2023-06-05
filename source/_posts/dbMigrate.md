@@ -11,12 +11,15 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 ## 迁移方式
 + 全量迁移
 + 全量 + 增量迁移
 
 ## 关注点
-##### 迁移工具
+##### 迁移工具 [1]
 工具名称    | 结构 | 全量 | 增量 | 数据校验 | 在线迁移
 :-:|:-:|:-:|:-:|:-:|:-:
 DTS        |   P |  P   | P    | P      | P 
@@ -28,7 +31,7 @@ mongo-shake|  无 |  P   | P    | O      | P
   + 数据库类型映射
   + 库表列映射 
 
-#####  数据库迁移场景
+#####  数据库迁移场景 [1]
 + 迁移拓扑
   1:1， 1:n， n:1, n:m
 + 同构迁移
@@ -39,12 +42,12 @@ mongo-shake|  无 |  P   | P    | O      | P
 
 #####  迁移时间
 
-#####  业务可以接受的停机时间
+#####  业务可以接受的停机时间 [1]
 + 理想停机时间是 0
 + 借助增量日志来实现
 
 
-#####  迁移策略
+#####  迁移策略 [1]
 + 流量切换策略
   逐渐切流量
   一次性切流量
@@ -56,7 +59,7 @@ mongo-shake|  无 |  P   | P    | O      | P
   最后迁移触发器等对象数据
 
 ##### 迁移场景
-+ 无依赖关系
++ 无依赖关系 [1]
 一对一迁移( 1:1)
 一对多高耦合业务迁移( 1:n )
 多对一异构迁移( n:1 )
@@ -65,7 +68,7 @@ mongo-shake|  无 |  P   | P    | O      | P
 [多表存在因果联系更新下的数据库迁移](https://zhuanlan.zhihu.com/p/68377907) 
 
 
-## SQLServer迁移MySQL(双写方案)
+## SQLServer迁移MySQL(双写方案)  [2]
 
 {% asset_img  dbMigrate.png  SQLServer迁移MySQL-双写方案 %}
 
@@ -76,11 +79,12 @@ mongo-shake|  无 |  P   | P    | O      | P
 从 SQL Server 到 MySQL（二）：在线迁移，空中换发动机
 从 SQL Server 到 MySQL（三）：愚公移山 - 开源力量
 https://github.com/alswl/yugong
+3. [ShardingSphere 数据迁移功能 & 实战-郭信泽](https://www.bilibili.com/video/BV1FW4y1n7R8/) V
+4. [基于Apache ShardingSphere 改造单机数据库为分布式数据库实战](https://www.bilibili.com/video/BV13s4y1t74t/) V
 
 100. [数据迁移的一致性探讨](https://zhuanlan.zhihu.com/p/455976887)  腾讯  未
 
 
 
 
-  
 
