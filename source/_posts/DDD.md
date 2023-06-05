@@ -9,29 +9,31 @@ categories:
   - DDD  
 ---
 
-<p hidden>https</p>
-
+<p></p>
 <!-- more -->
 
-## 目标：
+## 目录
+<!-- toc -->
+
+# 目标
 + DDD的精髓是降低**系统复杂度**
 + 规则
 
-## 三个核心
-1. 统一语言
+# 三个核心
+### 统一语言
 
 + 核心领域词汇表
 + 统一语言重构迭代： 模型-》实现-》 重构-》 隐喻 -》 再到模型
 + 命名规范
 + DSL - Domain Specific Language
 
-2. 领域划分 
+###  领域划分 
 + 边界上下文（Bounded Context）
 + 上下文映射（Context Mapping)
 共享内核（Shared Kernel） 
 防腐层（Anti-Corruption）： 类似adaptor、facade， 对内部领域模型的隔离和屏蔽。
 
-3. 领域模型 
+###  领域模型 
 + 抽象： 
   是从具体事物抽取、概括出它们共同的方面、本质属性与关系等。
 
@@ -40,17 +42,17 @@ categories:
   四色建模法
   [事件风暴](https://www.eventstorming.com/)
 
-## 落地
-1. 基于DDD应用架构的核心：
-    分离业务复杂度和技术复杂度
+# 落地
+###  基于DDD应用架构的核心
+分离业务复杂度和技术复杂度
 
-2. 分层
+###  分层
 + 用户接口层(Controller层) 
 + Application层
 + Domain层
 + Infrastructure层
 
-3. 代码分层
+###  代码分层
   + Interface
     - assembler(DTO和领域对象的互转)
     - dto
@@ -71,13 +73,13 @@ categories:
     - config
     - Util（开发框架、消息、数据库、缓存、文件、总线、网关、第三方类库、通用算法等基础代码，）
 
-## 参考：
+# 参考
 1. 《DDD（Domain Driven Design)的精髓》  直播+ppt  阿里张建飞  钉钉2020.05.21视频
-2. 《领域驱动设计精粹》 未 
-3. 《实现领域驱动设计》 未
-4. 《领域专用语言实战》 未
-5.  [事件风暴和领域建模在阿里巴巴的落地实践](https://developer.aliyun.com/live/2874)  未
-6. [DDD实战课进入课程 - 代码模型（上）：如何使用DDD设计微服务代码模型？]() 欧创新
+2. [DDD实战课进入课程 - 代码模型（上）：如何使用DDD设计微服务代码模型？]() 欧创新
+100. 《领域驱动设计精粹》 未 
+101. 《实现领域驱动设计》 未
+102. 《领域专用语言实战》 未
+103.  [事件风暴和领域建模在阿里巴巴的落地实践](https://developer.aliyun.com/live/2874)  未
 
 
 
