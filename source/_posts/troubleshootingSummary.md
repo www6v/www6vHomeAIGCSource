@@ -38,8 +38,11 @@ top: true
     + {% post_link 'redisNodeId' %} *** 
   - Kafka
     + {% post_link  'kafkaGracefulDown' %}  ***
-  - {% post_link  'mybatisBug' %}
-  - {% post_link  'mysqlBestPractice' %}
+  - 多线程 - 死锁
+    + {% post_link  'mybatisBug' %}
+  - 数据库
+    + {% post_link  'tidbTroubleshooting' %}   
+    + {% post_link  'mysqlBestPractice' %}
   - {% post_link  'splitBrain' %}
 
 
