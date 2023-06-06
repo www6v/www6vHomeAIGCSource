@@ -1,30 +1,34 @@
 ---
-title: Springboot
+title: SpringBoot
 date: 2019-09-20 15:02:28
 tags:
   - 微服务
 categories:
-  - Java基础
+  - 中间件
+  - spring 
   - springboot
 ---
 
-<p hidden></p>
+<p></p>
 <!-- more -->
 
-## 一.
-## 1.1 Spring Boot定义
+## 目录
+<!-- toc -->
+
+# Core
+### 1.1 Spring Boot定义
 **Spring Boot** is designed to get you up and running as quickly as possible, 
 with **minimal** upfront **configuration** of Spring. 
 Spring Boot takes an opinionated view of building production-ready applications.
 
 
-## 1.2 Springboot 4个核心
+### 1.2 Springboot 4个核心
 Auto Configuration
 Starter Dependency
 Springboot CLI
 Actuator（Runtime）
 
-## 1.3 Springboot 特性
+### 1.3 Springboot 特性
 为Spring及第三方库提供自动配置;
 无需生成代码或进行xml配置; 
 简化了项目的构建配置;
@@ -35,8 +39,8 @@ Actuator（Runtime）
 
 约定优于配置(Convention Over Configuration) CoC
 
-## 二.
-## 2.1 Auto Configuration
+#  Config
+### 2.1 Auto Configuration
 
 ```
 组件
@@ -64,7 +68,7 @@ Actuator（Runtime）
 ```
 
 
-## 2.2 Starter Dependency
+### 2.2 Starter Dependency
 
 + 直接面向功能
 + 官方Starters spring-boot-starter-*
@@ -88,7 +92,7 @@ BOM本质上是一个普通的POM文件
 + 扩展自定义starter
 ... 
 
-## 2.3 外部化配置加载顺序
+### 2.3 外部化配置加载顺序
 ```
  ...
  命令行参数（--server.port=9000）
@@ -106,13 +110,13 @@ BOM本质上是一个普通的POM文件
  jar包内的application.properties或 .yml
 ```
 
-## 三. 运行中的Springboot
-## 3.1 Actuator
+#  运行中的Springboot
+### 3.1 Actuator
 + 目的： 监控并管理应用程序
 + 访问方式： HTTP, JMX
 + 依赖： spring-boot-starter-actuator
 
-## 3.1 Actuator Endpoint
+### 3.1 Actuator Endpoint
 + http访问
 /actuator/<id>
 + 端口与路径
@@ -120,7 +124,7 @@ BOM本质上是一个普通的POM文件
 + management.server.port=
   
 
-## 3.2 内嵌的Web容器
+### 3.2 内嵌的Web容器
 可选容器列表
 + spring-boot-starter-tomcat
 + spring-boot-starter-jetty
@@ -138,6 +142,9 @@ Tomcat特性配置
 + server.tomcat.max-http-post-size
 + server.tomcat.max-threads
 
-## 参考
-《玩转Spring全家桶》 67.68.71.73.75,79 丁雪峰 
-黑马程序员SpringBoot教程，6小时快速入门Java微服务架构Spring Boot - bilibili
+
+# 参考
+1. 《玩转Spring全家桶》 67.68.71.73.75,79 丁雪峰 
+2. 《黑马程序员SpringBoot教程，6小时快速入门Java微服务架构Spring Boot》 V
+
+100. [SpringBoot面试题 (史上最全、持续更新、吐血推荐) ](https://www.cnblogs.com/crazymakercircle/p/14365487.html) 未

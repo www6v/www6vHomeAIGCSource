@@ -3,11 +3,10 @@ title: Spring事务
 date: 2015-03-16 14:52:34
 tags: 
   - spring
-  - 事务
-  - transaction
 categories: 
-  - Java基础
-  - 事务  
+  - 中间件
+  - spring 
+  - 事务
 ---
 
 
