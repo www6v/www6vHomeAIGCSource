@@ -50,3 +50,8 @@ categories:
 ### 粘包和拆包
 [通过大量实战案例分解Netty中是如何解决拆包黏包问题的？](https://baijiahao.baidu.com/s?id=1716387532053553497&wfr=spider&for=pc)
 [netty解决拆包粘包的三种方案](https://blog.csdn.net/wwwzhouzy/article/details/119154039)
+
+## 面试
+[Netty内存池（史上最全 + 5W字长文）](https://www.cnblogs.com/crazymakercircle/p/16181994.html)  尼恩 *** 未
+[Netty 面试题 （史上最全、持续更新）](https://www.cnblogs.com/crazymakercircle/p/13903625.html)  尼恩 未
+

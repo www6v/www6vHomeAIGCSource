@@ -83,4 +83,5 @@ Nginx负载均衡到部署的多个Gateway
 # 参考
 1. [2021最新(完整版)Gateway教学-第二代微服务网关组件SpringCloud-Gateway](https://www.bilibili.com/video/BV11i4y1F7eu?p=8) ***
 2. [Spring Cloud Gateway 服务网关的部署与使用详细介绍](https://blog.csdn.net/a745233700/article/details/122917167)
+100. [3W字吃透：微服务网关SpringCloud gateway底层原理和实操](https://www.cnblogs.com/crazymakercircle/p/17436191.html)   尼恩 未 
 
