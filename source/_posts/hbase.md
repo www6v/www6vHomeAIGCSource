@@ -99,7 +99,7 @@ flush时只删除内存的冗余数据，不删除"Delete标记",因为在Major 
 建议: 生产中列簇不要太多, 列簇数据要有同步增长的趋势（不要一个列簇有很多数据， 其他列簇数据很少），
       防止Region分裂时产生多个小文件。
 
-### Row_key设计  防止热点的三种方法
+### Row_key设计  防止热点的三种方法[3]
 1. Salt
 2. Hash
 3. Reversing
@@ -132,10 +132,8 @@ HBase基于行锁来保证单行操作的原子性
 checkAndPut/checkAndDelete/increment/append  
 
 # 参考
-
 1. {% post_link 'hbaselsmTree' %}
-
 2. 《Hbase原理和实践》 胡争  范欣欣   第1,2,5,7，8章
-
+3. {% post_link 'hbaseHotkey' %} 
 
 
