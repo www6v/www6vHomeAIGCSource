@@ -147,5 +147,6 @@ Tomcat特性配置
 1. 《玩转Spring全家桶》 67.68.71.73.75,79 丁雪峰 
 2. 《黑马程序员SpringBoot教程，6小时快速入门Java微服务架构Spring Boot》 V
 
-100. [SpringBoot面试题 (史上最全、持续更新、吐血推荐) ](https://www.cnblogs.com/crazymakercircle/p/14365487.html) 未
-101. [spring + spring mvc + tomcat 面试题（史上最全）](https://www.cnblogs.com/crazymakercircle/p/14465630.html) 未
+3. [SpringBoot面试题 (史上最全、持续更新、吐血推荐) ](https://www.cnblogs.com/crazymakercircle/p/14365487.html)  尼恩  未
+4. [spring + spring mvc + tomcat 面试题（史上最全）](https://www.cnblogs.com/crazymakercircle/p/14465630.html) 尼恩 未
+5. [SpringBoot 基础知识 核心知识 【收藏版】](https://www.cnblogs.com/crazymakercircle/p/13895735.html)  尼恩 未
