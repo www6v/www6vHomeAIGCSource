@@ -16,13 +16,13 @@ categories:
 
 # Features [0]
 + Built on Spring Framework 5, Project Reactor and Spring Boot 2.0
-+ Able to match routes on any request attribute.
-+ Predicates and filters are specific to routes.
-+ Circuit Breaker integration.
-+ Spring Cloud DiscoveryClient integration
-+ Easy to write Predicates and Filters
-+ Request Rate Limiting
-+ Path Rewriting
++ Able to match **routes** on any request attribute.
++ **Predicates and filters** are specific to **routes**.
++ **Circuit Breaker** integration.
++ Spring Cloud **DiscoveryClient** integration
++ Easy to write **Predicates and Filters**
++ Request **Rate Limiting**
++ **Path Rewriting**
 
 
 #  核心概念 [1][2]
@@ -32,13 +32,16 @@ categories:
   - order： 路由优先级，数字越小，优先级越高
   - predicates：断言数组，即判断条件，如果返回值是boolean，则转发请求到 uri 属性指定的服务中
   - filters：过滤器数组，在请求传递过程中，对请求做一些修改
+
+
 + 谓词、断言（Predicate）
   允许开发人员匹配 HTTP 请求中的内容，比如请求头或请求参数，最后根据匹配结果返回一个**布尔值**。参照 Java8 的新特性Predicate.
+  
 + 过滤器（Filter）
   可以在返回请求之前或之后**修改请求和响应的内容**。
   
-###  路由（Route）
-##### 服务发现-集成nacos服务注册中心 [2]
+#  路由（Route）[1][2]
+### 服务发现-集成nacos服务注册中心 [2]
 + 服务路由配置
 ``` yaml
 spring:
@@ -64,7 +67,7 @@ spring.cloud.gateway.discovery.locator.enabled = true
 spring.cloud.gateway.discovery.locator.lower-case-service-id = true
 ```
 
-#####  动态路由-整合 Apollo [2]
+###  动态路由-整合 Apollo [2]
 ``` Java
 /**
  * Apollo路由更改监听刷新
@@ -101,7 +104,7 @@ public class GatewayPropertRefresher implements ApplicationContextAware, Applica
 }
 ```
 
-##### 动态路由-整合nacos  [3]
+### 动态路由-整合nacos  [3]
 ``` Java
 @Component
 @Slf4j
@@ -164,10 +167,10 @@ public class NacosDynamicRouteService implements ApplicationEventPublisherAware 
   }
 ```
 
-### 谓词、断言（Predicate）
+# 谓词、断言（Predicate）[1][2]
 {% asset_img  Predicate.png   Predicate %}
 
-### 过滤器（Filter）
+# 过滤器（Filter）[1][2]
 + 生命周期
   + PRE
   + POST
@@ -181,8 +184,38 @@ public class NacosDynamicRouteService implements ApplicationEventPublisherAware 
       - **统一鉴权过滤器**
       
       
+# 稳定性
+###  熔断降级-Hystrix [3]
+``` YAML
+server.port: 8082
 
+spring:
+  application:
+    name: gateway
+  redis:
+      host: localhost
+      port: 6379
+      password: 123456
+  cloud:
+    gateway:
+      routes: ##
+        - id: rateLimit_route
+          uri: http://localhost:8000
+          order: 0
+          predicates:  ##
+            - Path=/test/**
+          filters:   ##
+            - StripPrefix=1
+            - name: Hystrix
+              args:
+                name: fallbackCmdA
+                fallbackUri: forward:/fallbackA
 
+  hystrix.command.fallbackCmdA.execution.isolation.thread.timeoutInMilliseconds: 5000
+
+```
+
+### 流控和降级-Sentinel [3]
 
 
 # 高可用网关[1]
@@ -193,11 +226,10 @@ Nginx负载均衡到部署的多个Gateway
 
 # 参考
 0. [spring-cloud-gateway](https://spring.io/projects/spring-cloud-gateway)
-1. [2021最新(完整版)Gateway教学-第二代微服务网关组件SpringCloud-Gateway](https://www.bilibili.com/video/BV11i4y1F7eu?p=8) ***
+1. [2021最新(完整版)Gateway教学-第二代微服务网关组件SpringCloud-Gateway](https://www.bilibili.com/video/BV11i4y1F7eu?p=8) *** V
 2. [Spring Cloud Gateway 服务网关的部署与使用详细介绍](https://blog.csdn.net/a745233700/article/details/122917167)
 3. [SpringCloud gateway （史上最全）](https://www.cnblogs.com/crazymakercircle/p/11704077.html) 尼恩 
 
 
 100. [3W字吃透：微服务网关SpringCloud gateway底层原理和实操](https://www.cnblogs.com/crazymakercircle/p/17436191.html)   尼恩 未 
-
 
