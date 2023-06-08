@@ -16,34 +16,45 @@ categories:
 <!-- toc -->
 
 # Core
-### 1.1 Spring Boot定义
+###  Spring Boot定义
 **Spring Boot** is designed to get you up and running as quickly as possible, 
 with **minimal** upfront **configuration** of Spring. 
 Spring Boot takes an opinionated view of building production-ready applications.
 
 
-### 1.2 Springboot 4个核心
-Auto Configuration
-Starter Dependency
-Springboot CLI
-Actuator（Runtime）
+###  Features (官方)
 
-### 1.3 Springboot 特性
-为Spring及第三方库提供自动配置;
-无需生成代码或进行xml配置; 
-简化了项目的构建配置;
+- Create stand-alone Spring applications
+- **Embed** Tomcat, Jetty or Undertow directly (no need to deploy WAR files)
+- Provide opinionated **'starter'** dependencies to simplify your build configuration
+- **Automatically configure** Spring and 3rd party libraries whenever possible
+- Provide **production-ready** features such as metrics, health checks, and externalized configuration
+- Absolutely no code generation and no requirement for XML configuration
 
+###   特性
++  自动配置   Auto Configuration
+   为Spring及第三方库提供自动配置;
+   简化了项目的构建配置;
+   - 无需生成代码或进行xml配置; 
+    约定优于配置(Convention Over Configuration) CoC
+
++ Starter Dependency
+
++ Springboot CLI
+
++ 内嵌的服务器
 方便地创建可独立运行的Spring应用程序;
 直接内嵌的Tomcat， Jetty或者Undertow;
+
++ 生产级
 提供生产级特性;
+Actuator（Runtime）
 
-约定优于配置(Convention Over Configuration) CoC
 
-#  Config
-### 2.1 Auto Configuration
+#  Auto Configuration
 
-```
-组件
+``` Java
+// 组件
    @EnableXXX
         @Importer @ImportXXXSelector
    @Conditional
@@ -52,14 +63,14 @@ Actuator（Runtime）
    ... 
 ```
 
-```
-开启自动配置
+``` Java
+// 开启自动配置
 @EnableAutoConfiguration
 @SpringBootApplication
 ```
 
-```
-实现原理 - 有条件的加载机制
+``` Java
+// 实现原理 - 有条件的加载机制
 @ConditionalOnClass
 @ConditionalOnBean
 @ConditionalOnMissingBean
@@ -67,13 +78,30 @@ Actuator（Runtime）
 ...
 ```
 
+###  外部化配置加载顺序
+```
+ ...
+ 命令行参数（--server.port=9000）
+ ...
+ System.getProperties()
+ 操作系统环境变量
+ ...
+```
 
-### 2.2 Starter Dependency
+
+```
+ jar包外的application-{profile}.properties 或 .yml
+ jar包内的application-{profile}.properties 或 .yml
+ jar包外的application.properties或 .yml
+ jar包内的application.properties或 .yml
+```
+
+#  Starter Dependency
 
 + 直接面向功能
 + 官方Starters spring-boot-starter-*
 
-```
+``` xml
 <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -92,31 +120,15 @@ BOM本质上是一个普通的POM文件
 + 扩展自定义starter
 ... 
 
-### 2.3 外部化配置加载顺序
-```
- ...
- 命令行参数（--server.port=9000）
- ...
- System.getProperties()
- 操作系统环境变量
- ...
-```
 
 
-```
- jar包外的application-{profile}.properties 或 .yml
- jar包内的application-{profile}.properties 或 .yml
- jar包外的application.properties或 .yml
- jar包内的application.properties或 .yml
-```
-
-#  运行中的Springboot
-### 3.1 Actuator
+#  production-ready
+###  Actuator
 + 目的： 监控并管理应用程序
 + 访问方式： HTTP, JMX
 + 依赖： spring-boot-starter-actuator
 
-### 3.1 Actuator Endpoint
+###  Actuator Endpoint
 + http访问
 /actuator/<id>
 + 端口与路径
@@ -124,7 +136,8 @@ BOM本质上是一个普通的POM文件
 + management.server.port=
   
 
-### 3.2 内嵌的Web容器
+#   内嵌的Web容器
+
 可选容器列表
 + spring-boot-starter-tomcat
 + spring-boot-starter-jetty
@@ -144,9 +157,8 @@ Tomcat特性配置
 
 
 # 参考
-1. 《玩转Spring全家桶》 67.68.71.73.75,79 丁雪峰 
+1. 《玩转Spring全家桶》 67, 68, 71, 73,  75, 79  丁雪峰 V
 2. 《黑马程序员SpringBoot教程，6小时快速入门Java微服务架构Spring Boot》 V
-
-3. [SpringBoot面试题 (史上最全、持续更新、吐血推荐) ](https://www.cnblogs.com/crazymakercircle/p/14365487.html)  尼恩  未
-4. [spring + spring mvc + tomcat 面试题（史上最全）](https://www.cnblogs.com/crazymakercircle/p/14465630.html) 尼恩 未
-5. [SpringBoot 基础知识 核心知识 【收藏版】](https://www.cnblogs.com/crazymakercircle/p/13895735.html)  尼恩 未
+100. [SpringBoot面试题 (史上最全、持续更新、吐血推荐) ](https://www.cnblogs.com/crazymakercircle/p/14365487.html)  尼恩  未
+101. [spring + spring mvc + tomcat 面试题（史上最全）](https://www.cnblogs.com/crazymakercircle/p/14465630.html) 尼恩 未
+102. [SpringBoot 基础知识 核心知识 【收藏版】](https://www.cnblogs.com/crazymakercircle/p/13895735.html)  尼恩 未

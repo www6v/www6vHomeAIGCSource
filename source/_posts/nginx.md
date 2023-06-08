@@ -68,3 +68,4 @@ Nginx总结
 1. [深入Nginx 思维导图](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651010416&idx=4&sn=dfa07f0e065d273b028e662e87e780ff&chksm=bdbecd238ac9443511c4e7eadf9e59cc9139fac25c52b44f7a93787b940826c5f61f06e10224&scene=27#wechat_redirect)
 
 2. [nginx配置域名转发到其他域名的几种方法](https://blog.csdn.net/yeguxin/article/details/94020476) 
+
