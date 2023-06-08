@@ -46,13 +46,14 @@ categories:
       增大磁盘空间
       删除不需要的镜像
 
-## Draft Here
 
-{% draft %}
-
+## 参考
 1. [kubernetes 最佳实践：优雅热更新](https://tencentcloudcontainerteam.github.io/2019/05/08/kubernetes-best-practice-grace-update/)
 2. [Kubernetes 最佳实践：解决长连接服务扩容失效](https://tencentcloudcontainerteam.github.io/2019/06/06/scale-keepalive-service/)
 3. [Kubernetes 最佳实践：处理内存碎片化 ](https://tencentcloudcontainerteam.github.io/2019/06/06/handle-memory-fragmentation/)
 4. [kubernetes 最佳实践：处理容器数据磁盘被写满](https://tencentcloudcontainerteam.github.io/2019/06/08/kubernetes-best-practice-handle-disk-full/)
 
+
+## Draft Here
+{% draft %}
 {% enddraft %}
