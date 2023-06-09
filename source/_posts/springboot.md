@@ -53,6 +53,10 @@ Actuator（Runtime）
 
 #  Auto Configuration
 
+### 底层装配技术  [3]
++ Spring 模式注解装配
+
++ Spring @Enable 模块装配
 ``` Java
 // 组件
    @EnableXXX
@@ -62,13 +66,13 @@ Actuator（Runtime）
    @ConditionalOnBean
    ... 
 ```
-
 ``` Java
 // 开启自动配置
 @EnableAutoConfiguration
 @SpringBootApplication
 ```
 
++ Spring 条件装配装配
 ``` Java
 // 实现原理 - 有条件的加载机制
 @ConditionalOnClass
@@ -77,6 +81,10 @@ Actuator（Runtime）
 @ConditionalOnProperty
 ...
 ```
+
++ Spring 工厂加载机制
+  - 实现类： SpringFactoriesLoader
+  - 配置资源： META-INF/spring.factories
 
 ###  外部化配置加载顺序
 ```
@@ -138,19 +146,19 @@ BOM本质上是一个普通的POM文件
 
 #   内嵌的Web容器
 
-可选容器列表
+### 可选容器列表
 + spring-boot-starter-tomcat
 + spring-boot-starter-jetty
 + spring-boot-starter-undertow
 + spring-boot-starter-reactor-netty
 
-端口
+### 端口
 + server.port
 + server.address
 
-压缩
+### 压缩
 
-Tomcat特性配置
+### Tomcat特性配置
 + server.tomcat.max-connections=10000
 + server.tomcat.max-http-post-size
 + server.tomcat.max-threads
@@ -159,6 +167,7 @@ Tomcat特性配置
 # 参考
 1. 《玩转Spring全家桶》 67, 68, 71, 73,  75, 79  丁雪峰 V
 2. 《黑马程序员SpringBoot教程，6小时快速入门Java微服务架构Spring Boot》 V
+3. 《mksz252 - Spring Boot 2.0深度实践之核心技术篇》 第2章 走向自动装配 V *** 
 100. [SpringBoot面试题 (史上最全、持续更新、吐血推荐) ](https://www.cnblogs.com/crazymakercircle/p/14365487.html)  尼恩  未
 101. [spring + spring mvc + tomcat 面试题（史上最全）](https://www.cnblogs.com/crazymakercircle/p/14465630.html) 尼恩 未
 102. [SpringBoot 基础知识 核心知识 【收藏版】](https://www.cnblogs.com/crazymakercircle/p/13895735.html)  尼恩 未
