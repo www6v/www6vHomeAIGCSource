@@ -21,7 +21,6 @@ categories:
 | ------ | ------------------ |
 | JDK 19 | 2022/09/20         |
 | JDK 20 | 2023 年 3 月 21 日 |
-|        |                    |
 
 
 
@@ -273,6 +272,50 @@ public static boolean isSquare(Shape shape) {
 }
 ```
 
+### 外部内存接口 | JDK18-?
++ ByteBuffer && 零拷贝
+	使用堆外存储最常用的办法，就是使用 ByteBuffer 这个类来分配**直接存储空间（direct**
+	**buffer）**。JVM 虚拟机会尽最大努力直接在直接存储空间上执行 IO 操作，避免数据在本
+	地和 JVM 之间的拷贝。
+	由于频繁的内存拷贝是性能的主要障碍之一。所以为了极致的性能，应用程序通常也会尽
+	量避免内存的拷贝。理想的状况下，一份数据只需要一份内存空间，这就是我们常说的**零
+	拷贝**。
+
+	用 ByteBuffer 这个类来分配直接存储空间的方法
+	``` Java
+	public static ByteBuffer allocateDirect(int capacity);
+	```
+	第一个缺陷是没有资源释放的接口。
+	第二个缺陷是存储空间尺寸的限制。
+
++ 外部内存接口
+``` Java
+try (ResourceScope scope = ResourceScope.newConfinedScope()) {
+    MemorySegment segment = MemorySegment.allocateNative(4, scope);
+    for (int i = 0; i < 4; i++) {
+    	MemoryAccess.setByteAtOffset(segment, i, (byte)'A');
+    }
+}
+```
+
+### 外部函数接口[取代Java本地接口] |  JDK 17-?
+``` Java
+public class HelloWorld {
+    public static void main(String[] args) throws Throwable {
+        try (ResourceScope scope = ResourceScope.newConfinedScope()) {
+            CLinker cLinker = CLinker.getInstance();
+            MemorySegment helloWorld =
+            		CLinker.toCString("Hello, world!\n", scope);
+            MethodHandle cPrintf = cLinker.downcallHandle(
+            		CLinker.systemLookup().lookup("printf").get(),
+            		MethodType.methodType(int.class, MemoryAddress.class),
+            		FunctionDescriptor.of(CLinker.C_INT, CLinker.C_POINTER));
+            cPrintf.invoke(helloWorld.address());
+        }
+    }
+}
+```
+
 # 参考
 1. [Java各个版本发布时间和主要特性整理！](http://justzqq.com/2023/03/23/java%E5%90%84%E4%B8%AA%E7%89%88%E6%9C%AC%E7%9A%84%E4%B8%BB%E8%A6%81%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86%EF%BC%81/)
 2. [Java 18 的新特性](https://www.bilibili.com/read/cv16596828)
@@ -282,3 +325,4 @@ public static boolean isSquare(Shape shape) {
 6. [Java19 虚拟线程原理介绍及实现](https://blog.csdn.net/lewyu521/article/details/127649776) ***
 7. [Java虚拟线程：异步编程之死](https://www.jdon.com/63445.html)
 8. 《深入剖析 Java 新特性》  范学雷
+    02,03,04,05,06,07,08,09,12, 13
