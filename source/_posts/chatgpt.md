@@ -12,7 +12,10 @@ categories:
 <!-- more -->
 
 ## Platform
-[Poe](https://poe.com/ChatGPT) ***
++ 国外
+  [Poe](https://poe.com/ChatGPT) ***
++ 国内
+  [ChatGPT使用指南！](https://www.feijix.com/n/y0BnXI) *** 
 
 ## Tools & Mix
 + GPT学习宝典
@@ -20,6 +23,9 @@ categories:
   [Prompt 大全](https://gpt.candobear.com/prompt)
   [学习资料](https://gpt.candobear.com/courses)
 + [AI 工具箱](https://www.ailookme.com)  *** 
+
+## 思维导图
+[albus](https://albus.org/)
 
 ## 文档分析&科研
 
