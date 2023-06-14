@@ -22,8 +22,10 @@ categories:
 2. [十分钟入门RocketMQ](https://yq.aliyun.com/articles/66101?spm=5176.100239.blogcont55634.18.ODias7)  阿里 尘央
 3. [RocketMQ 关键特性](https://yq.aliyun.com/articles/66110?spm=a2c4e.11155435.0.0.2cb97b3fBOIG8W) ***
 6. [分布式开放消息系统(RocketMQ)的原理与实践](https://zhuanlan.zhihu.com/p/396726719)   CHEN川  ***  消息的顺序问题  消息的重复问题
-100. {% post_link 'mqOrdering' %} self
-101. {% post_link 'mqRocketmqTransaction' %} self
+200. {% post_link 'mqOrdering' %} self
+201. {% post_link 'mqRocketmqTransaction' %} self
+
+
 
 
 
