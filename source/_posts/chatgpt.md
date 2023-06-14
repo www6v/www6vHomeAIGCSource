@@ -71,5 +71,8 @@ categories:
   - 写作应用
   - 游戏
                 
-                
+
+## 学习资料
+[ChatGPT 从 0 到 1](https://time.geekbang.org/opencourse/videointro/100541101)  基础
+[ChatGPT 和预训练模型实战课](https://time.geekbang.org/opencourse/videointro/100541201) 
                                 
