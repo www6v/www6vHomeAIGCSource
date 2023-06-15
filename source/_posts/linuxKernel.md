@@ -14,8 +14,16 @@ categories:
 
 关键字: 内核, 系统调用
 
-## Big Map
+#  Kernel 
+###  Linux 内核架构图
 {% asset_img  kernelMap1.jpg  kernel %}
+
+
+###  Linux 内核架构图- 2.6.26 版本  [2]
+
+{% asset_img  'performance2.jpg' %}
+
+
 
 <div style="text-align: center;">
 
@@ -23,5 +31,11 @@ categories:
 
 </div>
 
-## 参考
-+ [趣谈Linux操作系统 - 03 你可以把Linux内核当成一家软件外包公司的老板]()   刘超
+
+
+
+
+# 参考
+1.  《03 你可以把Linux内核当成一家软件外包公司的老板》 趣谈Linux操作系统   刘超
+2.  《15丨性能测试场景：如何进行监控设计？》 ***  高楼
+

@@ -24,19 +24,19 @@ top: true
   IO桥 - [低速]
 
 ## 操作系统[3]  
-+ [内核](../../../../2022/01/30/linuxKernel/) self
++ {% post_link 'linuxKernel'  内核  %}  self
 + 栈
   用函数和寄存器的方式记录了线程的执行历史
 + 中断
-+ [进程](../../../../2019/08/22/linuxProcess/) self
-+ [系统调用](../../../../2022/01/30/linuxSystemCall/) self
++ {% post_link 'linuxProcess'   进程  %}  self
++ {% post_link 'linuxSystemCall'  系统调用 %}  self
 + 虚拟内存
-+ [内存管理](../../../../2019/08/23/linuxMemory/) self
-+ [调度器](../../../../2022/05/29/linuxSceduling/) self
++ {% post_link 'linuxMemory'  内存管理 %}  self
++ {% post_link 'linuxSceduling'  调度器 %}  self
   - cpu调度级别
   - io调度级别
     deadline， CFQ
-+ [文件系统](../../../../2019/08/24/linuxFile/)
++ {% post_link 'linuxFile'  文件系统  %} self
 + 网络
 
 ## CPU and Cache[1]
@@ -82,23 +82,23 @@ top: true
   linux 5.1引入的异步io接口，适合io密集型应用
 
 ## Network
-+ [TCP 阻塞](../../../../2019/08/07/tcpUdpControlCongestion/) self
-+ [Linux 协议栈](../../../../2022/01/30/linuxNetwork/)  self
++ {% post_link 'tcpUdpControlCongestion'  TCP 阻塞 %}  self
++ {% post_link 'linuxNetwork'  Linux 协议栈 %} self
 + epoll
 
 ## Frameworks and Tools
 + data plan 
-  + [DPDK](../../../../2022/01/25/linuxDPDK/) self        
+  + {% post_link 'linuxDPDK'  DPDK %}  self        
   + [SPDK](https://spdk.io/) 官网
     - 用户态的TCP/IP协议栈 libuns
   + VPP
-+  [eBPF](../../../../2022/05/22/linux-eBPF/) self
++ {% post_link 'linux-ebpf'  eBPF %}  self
   - LLVM
   - bcc  
 
 ## 参考
 1. 《深入浅出DPDK》
-2. [与程序员相关的CPU缓存知识](https://coolshell.cn/articles/20793.html) good 有代码
+2. [与程序员相关的CPU缓存知识](https://coolshell.cn/articles/20793.html)   ***   有代码
 3. <<性能之巅>>
 
 
