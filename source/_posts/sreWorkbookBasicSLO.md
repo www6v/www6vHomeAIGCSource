@@ -26,7 +26,8 @@ categories:
     + Ticket
 
 #####  数据服务的SLO
-{% post_link 'redisSLO' %}
++ {% post_link 'redisSLO' %}
++ {% post_link 'kafkaSLO' %}
 
 ##### SLI 
 
