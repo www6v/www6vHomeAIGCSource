@@ -1,18 +1,18 @@
 ---
-title: Kafka 学习资料&案例
+title: MQ 学习资料&案例
 date: 2021-05-19 10:00:10
 tags:
-  - Kafka
+  - MQ 
 categories:
   - 消息系统  
-  - Kafka
   - 学习资料  
 ---
 
 <p></p>
 <!-- more -->
 
-##  个人
+# Kafka
+###  个人
 + 朱忠华 ***
 + 胡夕  kafka contributor  ***
 + [郭俊 Jason](http://www.jasongj.com/)   kafka spark  停更
@@ -21,7 +21,7 @@ categories:
   [Kafka大全](https://www.szzdzhp.com/kafka/) 石臻臻
   [Kafka 思维导图](https://www.processon.com/view/link/618b2f20e0b34d73f7ed3fd5)  ***
 
-##  问题
+###  问题
 + [生产者客户端常见异常Case及其解决方案集锦(强烈建议收藏) ](https://mp.weixin.qq.com/s?__biz=Mzg4ODY1NTcxNg==&mid=2247493695&idx=1&sn=88d97fa5463f1d18a42d40c7981c2ba0)
 + [【读者答疑】为啥我创建的topic分区分配不均匀？](https://mp.weixin.qq.com/s?__biz=Mzg4ODY1NTcxNg==&mid=2247490197&idx=1&sn=5853a44b227b75b33c34f2cfccbf630e)
 + [实战 | Kafka生产环境磁盘坏掉了之后的正确处理姿势,(建议收藏,以备不时之需) ](https://mp.weixin.qq.com/s?__biz=Mzg4ODY1NTcxNg==&mid=2247492616&idx=1&sn=baebd69c8e6959ab77b1176a244d7b7b)
@@ -32,3 +32,8 @@ categories:
   服务端负载不均衡, 负载迁移
 + [Kafka 万亿级消息实践之资源组流量掉零故障排查分析](https://zhuanlan.zhihu.com/p/517244997)
  若发送消息的时候指定了key，并使用的是 Kafka producer默认的分区分配器请款下会出现 Kafka producer 客户端缓冲区资源被耗尽而出现topic所有分区雪崩效应。
+ 
+ 
+# RocketMQ
+[深度剖析 RocketMQ5.0
+](https://time.geekbang.org/opencourse/videointro/100546401)  林清山
