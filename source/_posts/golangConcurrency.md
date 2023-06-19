@@ -24,11 +24,16 @@ categories:
   - 等待一组 Goroutine 的返回
 + sync.Cond
   - 让一组的 Goroutine 都在满足特定条件时被唤醒
-+ sync.Once
++ sync.Once [3]
   - 保证在 Go 程序运行期间的某段代码只会执行一次
 + sync.Map  
   - 线程安全的Map
-+ sync.Pool
++ sync.Pool [3]
+  + 两种场景中可以使用Pool做优化
+    - 进程中的inuse-objects数过多,  gc mark 消耗大量CPU
+    - 进程中的inuse-objects数过多, 进程RSS占用过高
+  + 最佳实践
+    请求生命周期开始时，pool.Get, 请求结束时, pool.Put
 + sync.Context
   - 进行上下文信息传递、提供超时和取消机制、控制子 goroutine 的执行
 
@@ -65,8 +70,9 @@ SingleFlight
 
 
 ## 参考
-+ [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
+1. [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
   [GOLANG ROADMAP](https://www.golangroadmap.com/)  
   邀请码：caspar 
   邀请码：Gopher-10645-1382
-+ 极客时间 《Go 并发编程实战课》  鸟窝
+2. 《Go 并发编程实战课》 极客时间  鸟窝
+3. 《15 辅导 + 案例分析 + 答疑-更多课程》  体系课_Go高级工程师实战营(完结) 
