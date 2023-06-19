@@ -11,6 +11,11 @@ categories:
 <p></p>
 <!-- more -->
 
+
+
+## 目录
+<!-- toc -->
+
 ## 基础
 ##### New vs Make
 + new和make是内置函数,主要用来分配内存空间
@@ -24,7 +29,7 @@ categories:
 ```Golang
 func make(t Type, size ...IntegerType) Type 
 func new(Type) *Type 
-```   
+```
 
 [9.Go 内置函数make和new的区别？](https://www.golangroadmap.com/class/gointerview/1-9.html)
 
@@ -39,7 +44,7 @@ type slice struct {
     len   int
     cap   int
 }
-```    
+```
 
 [1.Go slice的底层实现原理?](https://www.golangroadmap.com/class/gointerview/2-1.html)
 
@@ -73,7 +78,7 @@ type slice struct {
     - 如果函数外部没有引用，则优先放到栈中；
     - 如果函数外部存在引用，则必定放到堆中;
     - 如果栈上放不下，则必定放到堆上;
-[2.Go 内存逃逸机制？](https://www.golangroadmap.com/class/gointerview/8-2.html#%E6%A6%82%E5%BF%B5)
+    [2.Go 内存逃逸机制？](https://www.golangroadmap.com/class/gointerview/8-2.html#%E6%A6%82%E5%BF%B5)
 
 ##### 内存泄漏
 + 可以利用pprof对程序进行分析从而定位内存泄漏地址
@@ -97,54 +102,8 @@ type slice struct {
     管理全局的mspan供所有线程使用
   - mheap
     管理动态分配内存, 持有的整个堆空间
-[1.Go 内存分配机制？](https://www.golangroadmap.com/class/gointerview/8-1.html#%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3)  
+    [1.Go 内存分配机制？](https://www.golangroadmap.com/class/gointerview/8-1.html#%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3)  
 
-## 并发 [2][1]
-##### 并发原语
-+ sync.Mutex
-+ sync.RWMutex
-+ sync.WaitGroup
-  - 等待一组 Goroutine 的返回
-+ sync.Cond
-  - 让一组的 Goroutine 都在满足特定条件时被唤醒
-+ sync.Once
-  - 保证在 Go 程序运行期间的某段代码只会执行一次
-+ sync.Map  
-  - 线程安全的Map
-+ sync.Pool
-+ sync.Context
-  - 进行上下文信息传递、提供超时和取消机制、控制子 goroutine 的执行
-
-##### 扩展并发原语 
-errgroup 
-Semaphore
-SingleFlight
-
-##### channel
-+ channel的读写
-  + 向关闭的channel中写入数据会panic
-  + 关闭的channel中读数据
-    有数据会读到数据，没数据会是nil  
-
-+ buffer channel vs. 非buffered channel  
-/   |无缓冲 |	有缓冲
-:-: |  :-: | :-:
-创建方式 | make(chan TYPE) |	make(chan TYPE, SIZE)
-发送阻塞 |	数据接收前发送阻塞 |	缓冲满时发送阻塞
-接收阻塞 | 	数据发送前接收阻塞 |	缓冲空时接收阻塞 
-
-[3.Go channel有无缓冲的区别？](https://www.golangroadmap.com/class/gointerview/4-3.html)  
-
-
-##### Context
-进行上下文信息传递、提供超时和取消机制、控制子 goroutine 的执行
-<code>
- func WithCancel(parent Context) (ctx Context, cancel CancelFunc) 
- func WithDeadline(parent Context, d time.Time) (Context, CancelFunc) 
- func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc) 
-</code>
-
-[context](https://pkg.go.dev/context)
 
 
 ## 参考
