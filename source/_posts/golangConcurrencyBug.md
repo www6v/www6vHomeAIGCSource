@@ -142,7 +142,7 @@ func main() {
 
 
 # 参考
-1. 《15 辅导 + 案例分析 + 答疑-更多课程》  体系课_Go高级工程师实战营(完结) 
+1. 《15 辅导 + 案例分析 + 答疑-更多课程》  体系课_Go高级工程师实战营(完结)  ***
 2. [Understanding Real-World Concurrency Bugs in Go](https://cseweb.ucsd.edu/~yiying/GoStudy-ASPLOS19.pdf) 
 100. [规避 Go 中的常见并发 bug](https://zhuanlan.zhihu.com/p/400948709) 未
 101. [理解真实项目中的 Go 并发 Bug](https://cloud.tencent.com/developer/article/2211893) 未
