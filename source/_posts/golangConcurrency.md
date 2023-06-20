@@ -35,7 +35,7 @@ categories:
       - 二插搜索树
         树上的每个节点都是一个链表
       - 小顶堆
-     
+  
 + sync.Mutex  互斥锁 [3]
    - 内部结构
      + state
@@ -61,7 +61,7 @@ categories:
   - 设计
     + map+lock 多核扩展性差一点
     + sync.Map 在读多写少的情况下，基本上不需要加锁
-    
+  
 + sync.WaitGroup   [3]
   - 等待一组 Goroutine 的返回
   - 内部结构
@@ -69,9 +69,17 @@ categories:
 
 + sync.Cond
   - 让一组的 Goroutine 都在满足特定条件时被唤醒
- 
+
 + sync.Context
   - 进行上下文信息传递、提供超时和取消机制、控制子 goroutine 的执行
+
+##### 并发编程模式 [3][4]
++ fan-in
+  合并两个channel
++ or channel 
+  多个channel有任一个channel有返回,  就直接返回这个值。
++ pipeline
+ 串联在一起的channel 
 
 ##### 扩展并发原语 
 errgroup 
@@ -107,8 +115,9 @@ SingleFlight
 
 ## 参考
 1. [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
-  [GOLANG ROADMAP](https://www.golangroadmap.com/)  
-  邀请码：caspar 
-  邀请码：Gopher-10645-1382
+    [GOLANG ROADMAP](https://www.golangroadmap.com/)  
+    邀请码：caspar 
+    邀请码：Gopher-10645-1382
 2. 《Go 并发编程实战课》 极客时间  鸟窝
 3. 《15 辅导 + 案例分析 + 答疑-更多课程》  体系课_Go高级工程师实战营(完结) 
+4. << 14 | Channel：透过代码看典型的应用模式 >>   Go 并发编程实战课  鸟窝
