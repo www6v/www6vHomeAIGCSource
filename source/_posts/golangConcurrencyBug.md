@@ -11,6 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 #  死锁 [1]
 + 通过pprof进入goroutine页面查看
 
