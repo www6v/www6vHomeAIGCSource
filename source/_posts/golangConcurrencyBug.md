@@ -11,7 +11,7 @@ categories:
 <p></p>
 <!-- more -->
 
-###  死锁 [1]
+#  死锁 [1]
 + 通过pprof进入goroutine页面查看
 
 [gpt]
@@ -24,6 +24,7 @@ categories:
 总之，**互斥锁不支持重入，而读写锁支持重入**。在使用锁的时候应该根据实际情况选择合适的锁来避免死锁的发生。
 [/gpt]
 
+### example1 [1]
 ``` go
 func m() {
 	b.Lock()
@@ -36,6 +37,7 @@ func n() {
 }
 ```
 
+### example2
 [gpt]
 以下是一个可能导致死锁的Golang代码示例：
 
@@ -100,7 +102,44 @@ func main() {
 
 [/gpt]
 
-## 参考
+
+# bugs [1][2]
+``` go
+ func finishReq(timeout time.Duration) r ob {
+   - ch := make(chan ob)
+   + ch := make(chan ob, 1)
+     go func() {
+         result := fn()
+         ch <- result // block
+     }
+     
+     select {
+         case result = <- ch:
+        	 return result
+         case <- time.After(timeout):
+         	return nil
+     }
+ }
+  Figure 1. A blocking bug caused by channel
+```
+
+``` go
+ var group sync.WaitGroup
+ group.Add(len(pm.plugins))
+     for _, p := range pm.plugins {
+     go func(p *plugin) {
+     	defer group.Done()
+     }
+-    group.Wait()
+ }
+ + group.Wait()
+
+  Figure 5. A blocking bug caused by WaitGroup.
+```
+
+
+# 参考
 1. 《15 辅导 + 案例分析 + 答疑-更多课程》  体系课_Go高级工程师实战营(完结) 
+2. [Understanding Real-World Concurrency Bugs in Go](https://cseweb.ucsd.edu/~yiying/GoStudy-ASPLOS19.pdf) 
 100. [规避 Go 中的常见并发 bug](https://zhuanlan.zhihu.com/p/400948709) 未
 101. [理解真实项目中的 Go 并发 Bug](https://cloud.tencent.com/developer/article/2211893) 未
