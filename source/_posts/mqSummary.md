@@ -29,8 +29,6 @@ top: true
 + {% post_link 'kafkaReplica' %}
 + {% post_link 'kafkaElection' %}
 + {% post_link 'kafkaQ-A' %}
-+ {% post_link 'kafkaStudy' %} 
-
 + {% post_link 'kafkaTransaction' %}  #2
 
 ## RocketMQ  
@@ -43,8 +41,8 @@ top: true
 + {% post_link 'mqPulsarSync' %}  
 + {% post_link 'mqComparePulsarVsKafka' %}  
 
-
-
+## Resource
++ {% post_link 'mqStudy' %}   
 
 
 
