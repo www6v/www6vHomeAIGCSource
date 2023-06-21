@@ -29,9 +29,13 @@ categories:
 + 解决方案
   Memory barrier   
 
+# false sharing [1][4]
+因为CPU处理读写是以cache line为单位, 所以在并发修改变量时,  会一次性将其他CPU Core中的cache line invalidate 掉, 导致未修改的内存上相邻的变量也需要同步,  带来额外的性能负担
+
+# Happen-before [1]
+
 # 参考
 1. 《15 辅导 + 案例分析 + 答疑-更多课程》  体系课_Go高级工程师实战营(完结)  ***
 2. [MESI](https://www.scss.tcd.ie/Jeremy.Jones/VivioJS/caches/MESIHelp.htm)
 3. {% post_link 'javaMemoryModel' %} self
-
-
+4. {% post_link 'falseSharing' %}  self

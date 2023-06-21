@@ -19,7 +19,7 @@ top: true
 ## 故障模型 && 故障排查
 ##### Java Core && 应用
 + {% post_link  'faultModel1' %}
-  + {% post_link  'memoryLeak' %} 
+  + {% post_link  'javaMemoryLeak' %} 
   + {% post_link  'twoGCcase' %}
   + {% post_link  'interrupted' %}
   + {% post_link  'classloader' %}
