@@ -16,6 +16,13 @@ categories:
 ## 目录
 <!-- toc -->
 
+## Rumtime [3]
+### Scheduler
+GMP
+### Netpoll
+### Memory
+### GC
+
 ## 基础
 ##### New vs Make
 + new和make是内置函数,主要用来分配内存空间
@@ -111,7 +118,7 @@ type slice struct {
     邀请码：caspar 
     邀请码：Gopher-10645-1382
 2. 极客时间 《Go 并发编程实战课》  鸟窝
-
+3. 《04 Go 程序是怎么跑起来的》
 
 
 
