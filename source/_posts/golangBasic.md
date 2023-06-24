@@ -105,33 +105,13 @@ type slice struct {
     [1.Go 内存分配机制？](https://www.golangroadmap.com/class/gointerview/8-1.html#%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3)  
 
 
-## linter [3]
-+ 单个
-  + golint
-  + go vet 
-  + gocyclo
-  + 代码覆盖率
-    codecov
-  + 检查错误是否被处理
-    errcheck
-  + bodyclose 
-  + sqlrows
-
-+ 集合
-  - golangci-lint  标准
-  - sonarqube
-  - deepsource 
-
-+ golangci-lint + reviewdog
-  给项目提pr时，自动执行linter，自动CI？
-
 ## 参考
-+ 1. [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
-  [GOLANG ROADMAP](https://www.golangroadmap.com/)  
-  邀请码：caspar 
-  邀请码：Gopher-10645-1382
-+ 2. 极客时间 《Go 并发编程实战课》  鸟窝
-+ 3. 《25 直播：如何写出优雅的 Go 代码》
+1. [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
+    [GOLANG ROADMAP](https://www.golangroadmap.com/)  
+    邀请码：caspar 
+    邀请码：Gopher-10645-1382
+2. 极客时间 《Go 并发编程实战课》  鸟窝
+
 
 
 
