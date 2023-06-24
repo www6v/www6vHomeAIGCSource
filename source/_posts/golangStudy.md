@@ -17,14 +17,22 @@ categories:
     + 极客时间 《Go 并发编程实战课》  鸟窝  ***
     + 极客时间 《Go语言从入门到实战》 好像看过 ***
     + 极客时间 《Go 语言核心 36 讲》 郝林 **
+    + 《Effective Go》
+      [Effective Go](https://golang.google.cn/doc/effective_go)  英文
+      [高效的 Go 编程 Effective Go](https://learnku.com/docs/effective-go/2020) 中文
+      [golang 编程规范 - Effective Go 中文](https://makeoptim.com/golang/effective-go) 中文
+    + 50 Shades of Go
+      [50 Shades of Go: Traps, Gotchas, and Common Mistakes for New Golang Devs](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/)  
+      [Golang 新手可能会踩的 50 个坑](https://github.com/wuYin/blog/blob/master/golang/50-shades-of-golang-traps-gotchas-mistakes.md)
 + 项目&进阶       
     + 极客时间 《Go 语言项目开发实战》  孔令飞@腾讯  ***
-    + 极客训练营 《go进阶训练营 第4期》 bilibili 毛剑  *** 
-
-
+    + 极客训练营 《go进阶训练营 第4期》 bili V 毛剑  *** 
 
 + [gotalk](https://talkgo.org/)
   + [talkgo @github](https://github.com/talkgo/night)
+
++ Mix
+ [0voice/Introduction-to-Golang](https://github.com/0voice/Introduction-to-Golang/tree/main/Golang%20PPT)  *** 
 
 ##  Golang 个人blog
 + [Tony Bai](https://tonybai.com/) golang大神 ***
