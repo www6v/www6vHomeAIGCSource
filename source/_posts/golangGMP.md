@@ -11,8 +11,10 @@ categories:
 <p></p>
 <!-- more -->
 
-##  Goroutine的调度
+## 目录
+<!-- toc -->
 
+##  Goroutine的调度
 
 {% asset_img goroutine.JPG goroutine的调度 %}
 **System Thread** : kernel entity
@@ -34,16 +36,22 @@ case2: **某个协程被io中断后**， Processer会把自己移动到另一个
 
 + 协程跟线程是有区别的，线程由 CPU 调度是抢占式的，协程由用户态调度是协作式的，一个协程让出 CPU 后，才执行下一个协程。
 
+##### 生产端 [2]
+{% asset_img  'producer.JPG' %}
+
+##### 消费端 [2]
+{% asset_img  'consumer.JPG' %}
+
 ##### 调度器的设计策略
 + work stealing 机制
 + hand off 机制
 
-## 参考：
+
+## 参考
 1. [Golang的GMP原理与调度](https://blog.csdn.net/qq_44205272/article/details/111565957) ***
-
-2. [#64 深入浅出 Golang Runtime 【 Go 夜读 】](https://www.bilibili.com/video/BV1oE411y7qG/)  goroutine ,  go network , gc *** 未
-
-3. [Golang深入理解GPM模型](https://www.bilibili.com/video/BV19r4y1w7Nx?spm_id_from=333.880.my_history.page.click)  *** 未
+2. 《04 Go 程序是怎么跑起来的》  *** 
+100. [#64 深入浅出 Golang Runtime 【 Go 夜读 】](https://www.bilibili.com/video/BV1oE411y7qG/)  goroutine ,  go network , gc *** 未
+101. [Golang深入理解GPM模型](https://www.bilibili.com/video/BV19r4y1w7Nx?spm_id_from=333.880.my_history.page.click)  *** 未
 
 
 
