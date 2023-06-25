@@ -59,6 +59,15 @@ categories:
 + Kratos[bili开源]
 + goframe
 
+# 本地缓存[3]
++ freecache
++ bigcache
++ fastcache
+
+{% asset_img  'cache.jpg' %}
+
 # 参考
 1. 《17 直播：社区优秀开源框架对比》
 2. [go-micro 源码解析 - server & client](https://magodo.github.io/micro-go-src-server-client/)
+3. [Golang 本地缓存选型对比及原理总结](https://blog.csdn.net/weixin_52183917/article/details/127704265)
+4. [Go 开源本地缓存组件选型对比（freecache、bigcache、fastcache 等）](https://talkgo.org/t/topic/3519)  未

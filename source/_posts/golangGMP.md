@@ -1,5 +1,5 @@
 ---
-title: Golang GMP
+title: Golang Rumtime-GMP
 date: 2022-03-08 12:15:08
 tags:
   - Golang
