@@ -73,6 +73,18 @@ categories:
 + sync.Context
   - 进行上下文信息传递、提供超时和取消机制、控制子 goroutine 的执行
 
+##### Context
+进行上下文信息传递、提供超时和取消机制、控制子 goroutine 的执行
+``` golang
+ func WithCancel(parent Context) (ctx Context, cancel CancelFunc) 
+ func WithDeadline(parent Context, d time.Time) (Context, CancelFunc) 
+ func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc) 
+```
+[context](https://pkg.go.dev/context)
+
+## 应用&扩展
+##### 控制 goroutine 的并发数量 [5]
+
 ##### 并发编程模式 [3][4]
 + fan-in
   合并两个channel
@@ -87,17 +99,6 @@ Semaphore
 SingleFlight
 
 
-##### Context
-进行上下文信息传递、提供超时和取消机制、控制子 goroutine 的执行
-``` golang
- func WithCancel(parent Context) (ctx Context, cancel CancelFunc) 
- func WithDeadline(parent Context, d time.Time) (Context, CancelFunc) 
- func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc) 
-```
-
-[context](https://pkg.go.dev/context)
-
-
 ## 参考
 1. [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
     [GOLANG ROADMAP](https://www.golangroadmap.com/)  
@@ -106,3 +107,4 @@ SingleFlight
 2. 《Go 并发编程实战课》 极客时间  鸟窝
 3. 《15 辅导 + 案例分析 + 答疑-更多课程》  体系课_Go高级工程师实战营(完结) 
 4. << 14 | Channel：透过代码看典型的应用模式 >>   Go 并发编程实战课  鸟窝
+5. [1.6 来，控制一下 goroutine 的并发数量](https://eddycjy.gitbook.io/golang/di-1-ke-za-tan/control-goroutine)

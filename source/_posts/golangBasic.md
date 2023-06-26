@@ -111,6 +111,8 @@ type slice struct {
     管理动态分配内存, 持有的整个堆空间
     [1.Go 内存分配机制？](https://www.golangroadmap.com/class/gointerview/8-1.html#%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3)  
 
+## 异常处理 [4]
+
 
 ## 参考
 1. [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
@@ -119,6 +121,7 @@ type slice struct {
     邀请码：Gopher-10645-1382
 2. 极客时间 《Go 并发编程实战课》  鸟窝
 3. 《04 Go 程序是怎么跑起来的》
+4. [【go实战系列五】 go1.19.2与pkg中error如何wrap与unwrap Errors | 将error进行wrap向上处理思想 | pkg/errors](https://blog.csdn.net/wanglei19891210/article/details/128092331)
 
 
 
