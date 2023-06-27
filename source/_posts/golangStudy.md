@@ -34,6 +34,12 @@ categories:
 + Mix
  [0voice/Introduction-to-Golang](https://github.com/0voice/Introduction-to-Golang/tree/main/Golang%20PPT)  *** 
 
++ Go 源码分析
+  [Go source code analysis(zh-cn) ](https://github.com/cch123/golang-notes)  曹大 滴滴 *** 
+
++ book
+  [Go语言高级编程(Advanced Go Programming)](https://chai2010.cn/advanced-go-programming-book/)
+
 ##  Golang 个人blog
 + [Tony Bai](https://tonybai.com/) golang大神 ***
 + [鸟窝]() Java， golang  微博架构师 ***
