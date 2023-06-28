@@ -79,40 +79,7 @@ type slice struct {
   则会随机选取其中一个满足条件的分支
 + switch 分支是顺序执行的
 
-## 内存 
-##### 内存逃逸
-+ 编译器会根据变量是否被外部引用来决定是否逃逸：
-    - 如果函数外部没有引用，则优先放到栈中；
-    - 如果函数外部存在引用，则必定放到堆中;
-    - 如果栈上放不下，则必定放到堆上;
-    [2.Go 内存逃逸机制？](https://www.golangroadmap.com/class/gointerview/8-2.html#%E6%A6%82%E5%BF%B5)
-
-##### 内存泄漏
-+ 可以利用pprof对程序进行分析从而定位内存泄漏地址
-
-##### 堆和栈
-
-##### 内存分配
-+ google tcmalloc
-  每个线程维护一个独立的内存池
-+ 多级别管理
-  4K， 8K， 16K ...
-+ 回收内存
-  放回预先分配的大块内存中
-+ 内存管理组件
-  - mspan
-    - 68个规格， [8个字节...32K]
-    - 双向链表
-  - mcache
-    线程缓存 
-  - mcentral
-    管理全局的mspan供所有线程使用
-  - mheap
-    管理动态分配内存, 持有的整个堆空间
-    [1.Go 内存分配机制？](https://www.golangroadmap.com/class/gointerview/8-1.html#%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3)  
-
 ## 异常处理 [4]
-
 
 ## 参考
 1. [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
