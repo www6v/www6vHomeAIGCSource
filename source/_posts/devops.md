@@ -54,6 +54,8 @@ Nocalhost-腾讯CODING
   - 工具
     GitHub的PR
     GitHub的MR
++ CodeView
+  工具 **Gerrit**
 
 ##### 编程工具
 + codota  
