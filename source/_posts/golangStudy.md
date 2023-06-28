@@ -38,6 +38,8 @@ categories:
   [Go source code analysis(zh-cn) ](https://github.com/cch123/golang-notes)  曹大 滴滴 *** 
 
 + book
+  [Go语言圣经中文版](https://github.com/gopl-zh/gopl-zh.github.com)
+  [Go语言圣经（中文版）](https://gopl-zh.github.io/)
   [Go语言高级编程(Advanced Go Programming)](https://chai2010.cn/advanced-go-programming-book/)
 
 ##  Golang 个人blog
