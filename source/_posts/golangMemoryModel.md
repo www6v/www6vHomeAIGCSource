@@ -72,8 +72,19 @@ categories:
     - 如果函数外部存在引用，则必定放到堆中;
     - 如果栈上放不下，则必定放到堆上;
 
-### 内存泄漏
-+ 可以利用pprof对程序进行分析从而定位内存泄漏地址
+### 内存泄漏 
++ 根因 [7][8]
+  - goroutine泄漏
+  - slice造成内存泄漏
+    原因 - 浅拷贝
+  - time.Ticker造成内存泄漏
+    原因 - 没关闭timer
+  - cgo引起的内存泄漏
+    线程个数
+    
+    
++ **常规分析手段** [8]
+  可以利用pprof对程序进行分析从而定位内存泄漏地址
 
 ### 堆和栈
 
@@ -107,4 +118,6 @@ categories:
 4. 《13 Go 语言的内存管理与垃圾回收》 体系课_Go高级工程师实战营(完结) 
 5.  [1.Go 内存分配机制？](https://www.golangroadmap.com/class/gointerview/8-1.html#%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3) 
 6.  [2.Go 内存逃逸机制？](https://www.golangroadmap.com/class/gointerview/8-2.html#%E6%A6%82%E5%BF%B5)
+7.  [浅谈Golang内存泄漏](https://cloud.tencent.com/developer/article/2134737)  code in git
+8.  [golang：快来抓住让我内存泄漏的“真凶”！](https://cloud.tencent.com/developer/article/2279678)  cgo引起的内存泄漏+常规分析手段
 100. {% post_link 'javaMemoryModel' %} self
