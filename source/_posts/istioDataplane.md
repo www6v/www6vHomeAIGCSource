@@ -1,5 +1,5 @@
 ---
-title: istio数据面-sidecar
+title: istio数据平面-sidecar
 date: 2019-11-21 17:05:08
 tags:
   - istio
@@ -10,6 +10,9 @@ categories:
 
 <p></p>
 <!-- more -->
+
+## 目录
+<!-- toc -->
 
 ##  sidecar注入和路由转发
 ##### sidecar注入
@@ -61,7 +64,7 @@ Envoy proxy的架构
 
 
 ## 数据面
-##### Istio 注入sidecar实现:
+##### Istio 注入sidecar实现
 + 自动注入: 利用 Kubernetes Dynamic Admission Webhooks 对 新建的pod 进行注入: init container + sidecar
   [一种灵活注入 Istio Sidecar 的方案探索](https://cloudnative.to/blog/istio-sidecar-injection-method/)
 + 手动注入: 使用 istioctl kube-inject
@@ -94,7 +97,7 @@ Envoy启动过程和配置
 
 参考
 1. [基于 gRPC 和 Istio 的无 Sidecar 代理的服务网格](https://zhuanlan.zhihu.com/p/437194208)
-2. [Beyond Istio OSS —— Istio 服务网格的现状与未来](https://jimmysong.io/blog/beyond-istio-oss/#performance-optimizing) good
+2. [Beyond Istio OSS —— Istio 服务网格的现状与未来](https://jimmysong.io/blog/beyond-istio-oss/#performance-optimizing) ***
    [Beyond Istio OSS](https://docs.qq.com/pdf/DRWxETHNDZmRsS0l5?)
 
 
