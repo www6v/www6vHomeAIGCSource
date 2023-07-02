@@ -12,7 +12,12 @@ categories:
 <p></p>
 <!-- more -->
 
-## 一. istio安装
+
+
+## 目录
+<!-- toc -->
+
+##  istio安装
 
 
  有以下几种方式安装Istio：
@@ -55,9 +60,9 @@ kubectl apply -f install/kubernetes/istio-demo.yaml
 
 <!-- more -->
 
-## 二.  Bookinfo示例
+##   Bookinfo示例
 
-### 1. Bookinfo应用
+###  Bookinfo应用
 ```
 #手动注入
 $ kubectl apply -f <(istioctl kube-inject -f samples/bookinfo/platform/kube/bookinfo.yaml)
@@ -81,7 +86,7 @@ $ curl -s http://${GATEWAY_URL}/productpage | grep -o "<title>.*</title>"
 {% asset_img  getService.JPG  istio-ingressgateway的EXTERNAL-IP %}
 {% asset_img  browserCheck.JPG  浏览器中打开应用程序页面  %}
 
-### 2. 路由 
+###  路由 
 
 #### 基于版本的路由
 ```
@@ -101,7 +106,7 @@ $ kubectl apply -f samples/bookinfo/networking/virtual-service-reviews-test-v2.y
 $ kubectl delete -f samples/bookinfo/networking/virtual-service-reviews-test-v2.yaml
 ```
 
-### 3. 遥测
+###  遥测
 
 #### 收集指标和日志
 
@@ -147,7 +152,7 @@ cluster.outbound|8000||httpbin.default.svc.cluster.local.upstream_rq_pending_ove
 cluster.outbound|8000||httpbin.default.svc.cluster.local.upstream_rq_pending_total: 172
 ```
 
-## 参考:
+## 参考
 
 1. [使用 Helm 进行安装](https://istio.io/zh/docs/setup/kubernetes/install/helm/)
 2. [Istio及Bookinfo示例程序安装试用笔记](https://zhaohuabing.com/2017/11/04/istio-install_and_example/)
@@ -157,5 +162,4 @@ cluster.outbound|8000||httpbin.default.svc.cluster.local.upstream_rq_pending_tot
 6. [熔断](https://preliminary.istio.io/zh/docs/tasks/traffic-management/circuit-breaking/) done
 7. [Quick Start Evaluation Install](https://istio.io/docs/setup/install/kubernetes/) istio快速安装  未
 8. 《云原生服务网格Istio：原理、实践、架构与源码解析》  张超盟，章鑫，徐中虎，徐飞
-
 

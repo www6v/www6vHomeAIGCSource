@@ -79,7 +79,12 @@ type slice struct {
   则会随机选取其中一个满足条件的分支
 + switch 分支是顺序执行的
 
-## 异常处理 [4]
+##### Method &  Function
++ Method
+方法(Method)是一个带有receiver的函数Function
++ Receiver[5]
+
+##### 异常处理 [4]
 
 ## 参考
 1. [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
@@ -89,6 +94,7 @@ type slice struct {
 2. 极客时间 《Go 并发编程实战课》  鸟窝
 3. 《04 Go 程序是怎么跑起来的》
 4. [【go实战系列五】 go1.19.2与pkg中error如何wrap与unwrap Errors | 将error进行wrap向上处理思想 | pkg/errors](https://blog.csdn.net/wanglei19891210/article/details/128092331)
+5. [golang 方法接收者](https://zhuanlan.zhihu.com/p/522568859)  mycode-go
 
 
 

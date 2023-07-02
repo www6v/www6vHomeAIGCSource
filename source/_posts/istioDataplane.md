@@ -1,5 +1,5 @@
 ---
-title: istio数据面
+title: istio数据面-sidecar
 date: 2019-11-21 17:05:08
 tags:
   - istio
@@ -47,7 +47,7 @@ Envoy proxy的架构
 + XDS服务接口的最终一致性: 遵循 make before break 模型
 
 <div style="text-align: center; width: 50%; height: 50%">
-	
+
 ![xds](https://user-images.githubusercontent.com/5608425/69417029-dded0980-0d52-11ea-96a1-4c14e08aadf8.jpg)
 </div>
 
@@ -75,7 +75,7 @@ Envoy proxy的架构
 
 ## Envoy启动过程和配置
 <div style="text-align: center;">
-	
+
 ![envoy-config-init](https://user-images.githubusercontent.com/5608425/69950671-b81feb80-152e-11ea-96ba-6261b7f4c09f.png)
 Envoy启动过程和配置
 </div>

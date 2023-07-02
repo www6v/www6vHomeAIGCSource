@@ -66,7 +66,9 @@ categories:
   +  Queue: Yarn调度器的功能
 
 ## 实战[11]
-+ 服务资源智能推算: crane+Victoria Metrics  
++ 服务资源智能推算: crane+Victoria Metrics 
+  +  Crane 调度器 [14]
+     crane-sheduler 基于prometheus集群真实资源负载进行调度，将其应用于调度过程中的 Filter 和 Score 阶段，能够有效缓解集群资源负载不均的问题，真正实现企业的降本增效。
 + 二次调度:  descheduler [12][13]
 + 弹性调度：  OpenKruise-WorkloadSpread + Virtual Kubelet
 
@@ -91,6 +93,7 @@ categories:
 10. [DockOne微信分享（一四九）：Kubernetes调度详解 ](http://dockone.io/article/2885)  FreeWheel 主任工程师-2017年-***未
 
 ##### 实战
-11. [容器云调度优化及实践](https://www.bilibili.com/video/BV1iD4y117JL?spm_id_from=333.880.my_history.page.click) 
+11. [容器云调度优化及实践](https://www.bilibili.com/video/BV1iD4y117JL?spm_id_from=333.880.my_history.page.click)  V
 12. [descheduler 二次调度让 Kubernetes 负载更均衡](https://www.chenshaowen.com/blog/descheduler-makes-kubernetes-load-more-balanced.html)
 13. [Kubernetes 中 Descheduler 组件的使用与扩展](https://blog.tianfeiyu.com/2022/06/30/kubernetes_descheduler/)
+14. [Crane 调度器介绍——一款在 Kubernetes 集群间迁移应用的调度插件](https://cloudnative.to/blog/crane-scheduler/)
