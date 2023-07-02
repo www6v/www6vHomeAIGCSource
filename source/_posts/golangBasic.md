@@ -16,14 +16,44 @@ categories:
 ## 目录
 <!-- toc -->
 
-## Rumtime [3]
+# Rumtime [3]
 ### Scheduler
 GMP
 ### Netpoll
 ### Memory
 ### GC
 
-## 基础
+# 基础
+### 内建函数
++ init
+  - make()
+  - new()
++ slice  
+  - append()
+    用于切片(slice) 追加元素
+  - copy()
+    只能用于数组切片内容赋值
++ size 
+  - len()
+   计算数组(包括数组指针)、切片(slice)、map、channel、字符串等数据类型的长度
+  - cap()
+   返回指定类型的容量
++ print() & println()
++ resource reclaim
+  - close()
+  - delete()
++ num
+  - complex()
+  - real() & imag()
++ error handle
+  - panic()
+  - recover()
++ others [6]
+  - clear()   
+   对于map对象: clear函数清空map对象的所有的元素
+   对于slice对象： clear函数将所有的元素设置为元素类型的零值，长度不变，容量不变
+  - min()  &&  max()
+
 ##### New vs Make
 + new和make是内置函数,主要用来分配内存空间
 + make
@@ -40,10 +70,10 @@ func new(Type) *Type
 
 [9.Go 内置函数make和new的区别？](https://www.golangroadmap.com/class/gointerview/1-9.html)
 
-##### array和slice
+### array和slice
 + 数组长度是固定的， slice长度是可变的 
   
-##### slice底层实现
+### slice底层实现
 
 ```Golang
 type slice struct {
@@ -56,7 +86,7 @@ type slice struct {
 [1.Go slice的底层实现原理?](https://www.golangroadmap.com/class/gointerview/2-1.html)
 
 
-##### 值传递、引用传递
+### 值传递、引用传递
 + Go语言中所有的传参都是**值传递（传值），都是一个副本，一个拷贝**。
 + 是否可以修改原内容数据，和传值、传引用没有必然的关系。在C++中，传引用肯定是可以修改原内容数据的，在Go语言里，虽然只有传值，但是我们也可以修改原内容数据，因为参数是引用类型
 + 引用类型和引用传递是2个概念，切记！！！
@@ -74,17 +104,17 @@ type slice struct {
 
 [Go 函数参数传递到底是值传递还是引用传递？](https://www.golangroadmap.com/class/gointerview/1-7.html)  
 
-##### select vs. switch  
+###  select vs. switch  
 + select只能应用于channel的操作
   则会随机选取其中一个满足条件的分支
 + switch 分支是顺序执行的
 
-##### Method &  Function
+### Method &  Function
 + Method
 方法(Method)是一个带有receiver的函数Function
 + Receiver[5]
 
-##### 异常处理 [4]
+### 异常处理 [4]
 
 ## 参考
 1. [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
@@ -95,6 +125,7 @@ type slice struct {
 3. 《04 Go 程序是怎么跑起来的》
 4. [【go实战系列五】 go1.19.2与pkg中error如何wrap与unwrap Errors | 将error进行wrap向上处理思想 | pkg/errors](https://blog.csdn.net/wanglei19891210/article/details/128092331)
 5. [golang 方法接收者](https://zhuanlan.zhihu.com/p/522568859)  mycode-go
+6. [你知道吗？Go新增加了三个内建函数 ](https://colobu.com/2023/05/28/go1-21-whats-new-builtin/)
 
 
 

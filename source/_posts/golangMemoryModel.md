@@ -25,13 +25,13 @@ categories:
       - Best-Fit
       - Segregated-Fit
         工业界用的多, golang是这种类型的变种
-  + Collector 
+  + Collector  #2
 
 + 栈内存管理
   - malloc
-    + <128KB  
+    + '<128KB'  
       program break
-    + >=128KB 
+    + '>=128KB' 
       mmap 
 
 
@@ -82,11 +82,14 @@ categories:
   - cgo引起的内存泄漏
     线程个数
     
-    
+  
 + **常规分析手段** [8]
   可以利用pprof对程序进行分析从而定位内存泄漏地址
 
 ### 堆和栈
+
+### 垃圾回收器 [9] #2
+ Go语言的GC使用了**标记(mark)—清除(sweep)**技术
 
 # 系统结构 [1]
 ### 现代计算机的多级存储结构
@@ -120,4 +123,5 @@ categories:
 6.  [2.Go 内存逃逸机制？](https://www.golangroadmap.com/class/gointerview/8-2.html#%E6%A6%82%E5%BF%B5)
 7.  [浅谈Golang内存泄漏](https://cloud.tencent.com/developer/article/2134737)  code in git
 8.  [golang：快来抓住让我内存泄漏的“真凶”！](https://cloud.tencent.com/developer/article/2279678)  cgo引起的内存泄漏+常规分析手段
+9.  [Go 垃圾回收器指南](https://colobu.com/2022/07/16/A-Guide-to-the-Go-Garbage-Collector/) 
 100. {% post_link 'javaMemoryModel' %} self
