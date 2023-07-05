@@ -23,6 +23,7 @@ categories:
   [Prompt 大全](https://gpt.candobear.com/prompt)
   [学习资料](https://gpt.candobear.com/courses)
 + [AI 工具箱](https://www.ailookme.com)  *** 
++ [极客时间 AIGC 知识库](https://gp477l8icq.feishu.cn/wiki/JUXnwzSuviL5E9kh6jUc8FRinHe) *** 
 
 ## 思维导图
 [albus](https://albus.org/)

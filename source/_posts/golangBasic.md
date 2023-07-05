@@ -51,7 +51,7 @@ GMP
 + others [6]
   - clear()   
    对于map对象: clear函数清空map对象的所有的元素
-   对于slice对象： clear函数将所有的元素设置为元素类型的零值，长度不变，容量不变
+    对于slice对象： clear函数将所有的元素设置为元素类型的零值，长度不变，容量不变
   - min()  &&  max()
 
 ##### New vs Make
@@ -63,7 +63,7 @@ GMP
     返回一个指向对应类型零值的指针
     new() 一般 显示返回指针
 
-```Golang
+``` go
 func make(t Type, size ...IntegerType) Type 
 func new(Type) *Type 
 ```
@@ -114,9 +114,13 @@ type slice struct {
 方法(Method)是一个带有receiver的函数Function
 + Receiver[5]
 
+# 异常&Bugs
 ### 异常处理 [4]
 
-## 参考
+### Bugs
++ Golang 循环变量引用问题[7]
+
+# 参考
 1. [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
     [GOLANG ROADMAP](https://www.golangroadmap.com/)  
     邀请码：caspar 
@@ -126,7 +130,7 @@ type slice struct {
 4. [【go实战系列五】 go1.19.2与pkg中error如何wrap与unwrap Errors | 将error进行wrap向上处理思想 | pkg/errors](https://blog.csdn.net/wanglei19891210/article/details/128092331)
 5. [golang 方法接收者](https://zhuanlan.zhihu.com/p/522568859)  mycode-go
 6. [你知道吗？Go新增加了三个内建函数 ](https://colobu.com/2023/05/28/go1-21-whats-new-builtin/)
-
+7. [随笔：Golang 循环变量引用问题以及官方语义修复](https://cloud.tencent.com/developer/article/2240620)
 
 
 
