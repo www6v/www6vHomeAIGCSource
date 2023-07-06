@@ -81,11 +81,17 @@ categories:
     - config
     - Util（开发框架、消息、数据库、缓存、文件、总线、网关、第三方类库、通用算法等基础代码，）
 
+### 项目代码[20]
+
 # 框架
 + Axon Framework
 
 
 # 参考
-2. 《13丨代码模型（上）：如何使用DDD设计微服务代码模型？》   欧创新
-4. 《04  领域模型是如何指导程序设计的？》 DDD 微服务落地实战-拉钩专栏
-7. 《24 直播：框架之上的业务分层》  体系课_Go高级工程师实战营(完结)
++ 2. 《13丨代码模型（上）：如何使用DDD设计微服务代码模型？》   欧创新
++ 4. 《04  领域模型是如何指导程序设计的？》 DDD 微服务落地实战-拉钩专栏
++ 7. 《24 直播：框架之上的业务分层》  体系课_Go高级工程师实战营(完结)
+
++ 20. [阿里技术专家详解DDD系列 第二讲 - 应用架构](https://zhuanlan.zhihu.com/p/343388831)
+[refactor 之前的Transaction Script](https://github.com/www6v/jExamples/tree/master/src/main/java/ddd/transactionScript) git
+[refactor 之后的DDD](https://github.com/www6v/jExamples/tree/master/src/main/java/ddd/refactor)
