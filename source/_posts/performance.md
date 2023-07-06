@@ -57,17 +57,33 @@ Tomcat 使用的线程池就不是 JDK 原生的线程池，而是做了一些�
 
 # 参考
 1. [高性能高并发系统的稳定性保障](http://dwz.cn/4SrP4L) 京东
+
 2. [Linux性能优化实战](https://time.geekbang.org/column/intro/140)  极客时间
+
 3. [性能测试应该怎么做？](https://coolshell.cn/articles/17381.html) 
+
 4. {% post_link 'stability' %}  self
+
 5. [关于容量预估/性能压测的思考](http://blog.jobbole.com/88958/)
+
 6. {% post_link 'stability' %}   self  重复的
-7. <<性能之巅：洞悉系统、企业与云计算  Brendan Gregg>>
+
+7. 《性能之巅：洞悉系统、企业与云计算》 Brendan Gregg
+
 8. [性能调优攻略](https://coolshell.cn/articles/7490.html/comment-page-1)  *** 
+
 9. {% post_link 'threadNum' %}  self
+
 10. [每个程序员都应该收藏的算法复杂度速查表](http://www.codeceo.com/article/algorithm-complexity-table.html)
+
 11. 《编程珠玑 第2版》 Jon Bentley
+
 12. [wordcount设计与优化](https://yq.aliyun.com/articles/25487)  竞赛题
+
 13. {%  post_link   'mysqlIndex'  %}    索引优化 self 未
+
 14. {%  post_link   'nginxOptimize'  %}   self 未
+
 15. 《高并发系统设计40问 - 07 | 池化技术：如何减少频繁创建数据库连接的性能损耗？》 唐扬
+
+100. [latency](https://colin-scott.github.io/personal_website/research/interactive_latency.html)  未  

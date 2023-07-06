@@ -1,16 +1,15 @@
 ---
-title: HTTPS总结
+title: HTTP和HTTPS总结
 date: 2019-08-14 15:00:23
 tags: 
-  - https
+  - http
 categories:  
   - 分布式   
   - 基础
-  - https
+  - http
 ---
 
-<p hidden>https</p>
-
+<p></p>
 <!-- more -->
 
 <div style="width: 70%; height: 70%">
@@ -21,4 +20,6 @@ categories:
 
 ## 参考:
 1. <<趣谈网络协议 - 第15讲 HTTPS协议：点外卖的过程原来这么复杂>> 刘超
+100. [http2](https://github.com/bagder/http2-explained/)  未
+101. [http3](https://github.com/bagder/http3-explained/) 未
 
