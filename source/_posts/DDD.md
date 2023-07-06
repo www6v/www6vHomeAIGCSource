@@ -64,6 +64,7 @@ categories:
 
 # 架构
 ### 六边形架构
+又被称之为**Ports and Adapters（端口和适配器架构）**
 
 
 # 整洁架构 Clean Architecture
