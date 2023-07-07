@@ -114,11 +114,7 @@ type slice struct {
 方法(Method)是一个带有receiver的函数Function
 + Receiver[5]
 
-# 异常&Bugs
-### 异常处理 [4]
 
-### Bugs
-+ Golang 循环变量引用问题[7]
 
 # 参考
 1. [GOLANG ROADMAP](https://www.golangroadmap.com/class/gointerview/)
@@ -127,11 +123,9 @@ type slice struct {
     邀请码：Gopher-10645-1382
 2. 极客时间 《Go 并发编程实战课》  鸟窝
 3. 《04 Go 程序是怎么跑起来的》
-4. [【go实战系列五】 go1.19.2与pkg中error如何wrap与unwrap Errors | 将error进行wrap向上处理思想 | pkg/errors](https://blog.csdn.net/wanglei19891210/article/details/128092331)
+4. xxx
 5. [golang 方法接收者](https://zhuanlan.zhihu.com/p/522568859)  mycode-go
 6. [你知道吗？Go新增加了三个内建函数 ](https://colobu.com/2023/05/28/go1-21-whats-new-builtin/)
-7. [随笔：Golang 循环变量引用问题以及官方语义修复](https://cloud.tencent.com/developer/article/2240620)
-
 
 
 
