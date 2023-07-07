@@ -25,7 +25,17 @@ categories:
     **业务逻辑放到Service中**
   - 缺点 [7]
     **业务逻辑被埋没在存储业务中**
-  
+  - 贫血模型的**缺陷**  [21]
+    - 无法保护模型对象的完整性和一致性
+    - 对象操作的可发现性极差
+    - 代码逻辑重复
+    - 代码的健壮性差
+    - 强依赖底层实现
+  - **99%的代码都是基于贫血模型**  [21]
+    - 数据库思维
+    - 贫血模型“简单”
+    - 脚本思维
+      
 + **充血模型**
   -  实现
    **业务逻辑放到领域对象中(实体对象中有实现方法)**
@@ -72,9 +82,13 @@ categories:
         - **实体**     
         - **值对象**   
         - **工厂模式（Factory）**
-      - event （**事件实体**以及**与事件活动相关的业务逻辑代码**）
-      - repository（所在聚合的查询或持久化领域对象的代码，通常包括仓储接口和仓储实现方法）
-      - service（领域服务是多个实体组合出来的一段业务逻辑）
+      - event 
+        **事件实体**以及**与事件活动相关的业务逻辑代码**
+      - repository
+        所在聚合的查询或持久化领域对象的代码，通常包括仓储接口和仓储实现方法
+        **Data Model只存在于数据层，而Domain Model在领域层，而链接了这两层的关键对象，就是Repository** [7]
+      - service
+        领域服务是多个实体组合出来的一段业务逻辑
 
 
   + Infrastructure
@@ -95,3 +109,4 @@ categories:
 + 20. [阿里技术专家详解DDD系列 第二讲 - 应用架构](https://zhuanlan.zhihu.com/p/343388831)
 [refactor 之前的Transaction Script](https://github.com/www6v/jExamples/tree/master/src/main/java/ddd/transactionScript) git
 [refactor 之后的DDD](https://github.com/www6v/jExamples/tree/master/src/main/java/ddd/refactor)
++ 21. [阿里技术专家详解DDD系列 第三讲 - Repository模式](https://zhuanlan.zhihu.com/p/348706530)

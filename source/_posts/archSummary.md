@@ -15,7 +15,7 @@ top: true
 ## 应用架构
 + {% post_link 'apiDesign'  %}
 + {% post_link 'cqrs'  %}
-+ {% post_link 'DDD'  %}
++ {% post_link 'ddd'  %}
 + {% post_link 'EAI'  %}
 + {% post_link 'DomainLogicAndSQL'  %}
 
