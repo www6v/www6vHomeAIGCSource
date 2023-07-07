@@ -30,6 +30,48 @@ Goroutine 用爆了？ 80w？
 线程数爆了？
 延迟太高？
 
+
+
+# 监控指标 [20]
++ goroutine数，线程数
+  - goroutine 多， 通过pprof看goroutine在干啥，等锁
++ GC频率
+  ``` go
+    GODEBUG='gctrace=1' go run ./cmd/main.go 
+  ```
++ MemStats 结构体
+  - 常规统计信息（General statistics）
+  - 分配堆内存统计（Heap memory statistics）
+  - 栈内存统计（Stack memory statistics）
+  - 堆外内存统计信息（Off-heap memory statistics）
+  - 垃圾回收器统计信息（Garbage collector statistics）
+  - 按 per-size class 大小分配统计（BySize reports per-size class allocation statistics）
+
+# 问题排查套路 [20]
++ 排除外部问题
+  例如依赖的上游服务(db, redis, mq)延迟过高，在监控系统中查看
++ CPU占用过高
+  看CPU profile -> 优化占用CPU较多的部分逻辑
++ 内存占用过高
+  - 看prometheus， 
+      + 内存RSS是多少
+        oomkiller
+      + goroutine数量多少
+        普通任务 - goroutine不多， 重点关注heap profile中的inuse
+        定时任务类 - 需要看alloc
+      + goroutine栈占用多少
++ goroutine数量过多
+  - 从profile网页去看 goroutine在干什么
+    查死锁 阻塞问题
+    不在意延迟的选择第三方库优化
+
+# go压测工具
+
++ wrk
++ wrk2
++ Vegeta
++ ghz
+
 # 参考
 +  4. [【go实战系列五】 go1.19.2与pkg中error如何wrap与unwrap Errors | 将error进行wrap向上处理思想 | pkg/errors](https://blog.csdn.net/wanglei19891210/article/details/128092331)
 +  7. [随笔：Golang 循环变量引用问题以及官方语义修复](https://cloud.tencent.com/developer/article/2240620)
