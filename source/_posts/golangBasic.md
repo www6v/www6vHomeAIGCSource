@@ -70,22 +70,6 @@ func new(Type) *Type
 
 [9.Go 内置函数make和new的区别？](https://www.golangroadmap.com/class/gointerview/1-9.html)
 
-### array和slice
-+ 数组长度是固定的， slice长度是可变的 
-  
-### slice底层实现
-
-```Golang
-type slice struct {
-    array unsafe.Pointer
-    len   int
-    cap   int
-}
-```
-
-[1.Go slice的底层实现原理?](https://www.golangroadmap.com/class/gointerview/2-1.html)
-
-
 ### 值传递、引用传递
 + Go语言中所有的传参都是**值传递（传值），都是一个副本，一个拷贝**。
 + 是否可以修改原内容数据，和传值、传引用没有必然的关系。在C++中，传引用肯定是可以修改原内容数据的，在Go语言里，虽然只有传值，但是我们也可以修改原内容数据，因为参数是引用类型
