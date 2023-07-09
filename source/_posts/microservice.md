@@ -106,13 +106,9 @@ In short, the microservice architectural style [1] is an approach to developing 
 
 
 #  微服务设计模式 
-###  微服务设计模式
-<div style="text-align: center;">
+###  Overview     
+{% asset_img  'MicroservicePatternLanguage.jpg' %}
 
-![PatternsRelatedToMicroservices](https://user-images.githubusercontent.com/5608425/66229516-8ea43880-e714-11e9-8f56-0a70cc695882.jpg)
-微服务设计模式    
-</div>    
-    
 ###  Sidecar [11]
 分离业务逻辑与路由，流控，熔断，幂等，服务发现，鉴权等控制组件。
 

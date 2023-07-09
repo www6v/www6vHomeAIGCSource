@@ -28,6 +28,8 @@ categories:
 + DSL - Domain Specific Language
 
 ###  领域划分 
++ 领域
++ 子域
 + 边界上下文（Bounded Context）
 + 上下文映射（Context Mapping)
 共享内核（Shared Kernel） 
