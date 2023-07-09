@@ -97,7 +97,7 @@ Goroutine 用爆了？ 80w？
    + goroutine栈占用过多内存
      - 减少goroutine数量
        + 如每个连接一读一写  -> 合并为一个连接一个goroutine
-       + goroutine pool 限制最大 goroutine数量
+       + goroutine pool 限制最大 goroutine数量[21]
        + 使用裸 epoll库(evio, gev等) 修改网络编程方式(只适用于对延迟不敏感的业务)
      - 通过修改代码， 减少函数调用层级(难)
 
@@ -118,4 +118,5 @@ Goroutine 用爆了？ 80w？
 +  4. [【go实战系列五】 go1.19.2与pkg中error如何wrap与unwrap Errors | 将error进行wrap向上处理思想 | pkg/errors](https://blog.csdn.net/wanglei19891210/article/details/128092331)
 +  7. [随笔：Golang 循环变量引用问题以及官方语义修复](https://cloud.tencent.com/developer/article/2240620)
 +  20. 《28 直播：服务上线后 - 成为 Go 语言性能调优专家》 
++  21. {% post_link 'golangConcurrency' %} self
 
