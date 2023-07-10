@@ -15,30 +15,40 @@ top: true
 ## 目录
 <!-- toc -->
 
-# 原理
+# 基础
+### overviw
 + {%  post_link  'redis'  %}
-+ {%  post_link  'redisArch'  %}
-+ {%  post_link  'redisTransaction'  %}
 + {%  post_link  'redisIO'  %}
+
+### Arch & Redis Cluster
++ {%  post_link  'redisArch'  %}
++ {%  post_link  'redisError'  %}
+
+### 数据类型
 + {%  post_link  'redisRehash'  %}
 + {%  post_link  'redisDataStructure'  %}
-+ {%  post_link  'redisNVM'  %}
-+ {% post_link 'redisLazyFree' %}
-+ {% post_link 'redisDelete' %}
-+ {% post_link 'redisStudy' %}
 
-### 可靠性
+### 事务
++ {%  post_link  'redisTransaction'  %}
+
+### 持久化
 + {%  post_link  'redisRDB'  %}
 + {%  post_link  'rdb'  %}
 + {%  post_link  'redisAOF'  %}
 + {%  post_link  'aofRewrite'  %}
-+ {%  post_link  'redisError'  %}
-+ {%  post_link  'redisSLO'  %}
+
+### 资源回收
++ {% post_link 'redisLazyFree' %}
++ {% post_link 'redisDelete' %}
 
 ### 故障&优化
 + {%  post_link  'redisBigKey'  %} 
 + {% post_link 'redisNodeId' %}
 + {% post_link 'redisOptimize' %}
++ {%  post_link  'redisSLO'  %}
+
+### 其他
++ {%  post_link  'redisNVM'  %}
 
 # 应用
 + {%  post_link  'redisUseCase'  %}
@@ -47,6 +57,9 @@ top: true
 + {%  post_link  'redisDbConsistent'  %}
 + {% post_link 'redisSlowResponse' %} 
 + {% post_link 'redisHotkey' %}
+
+# 学习资源
++ {% post_link 'redisStudy' %}
 
     
   
