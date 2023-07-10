@@ -36,19 +36,21 @@ top: true
 + {%  post_link  'rdb'  %}
 + {%  post_link  'redisAOF'  %}
 + {%  post_link  'aofRewrite'  %}
++ {%  post_link  'redisBothAofAndRDB'  %}
 
 ### 资源回收
 + {% post_link 'redisLazyFree' %}
 + {% post_link 'redisDelete' %}
 
-### 故障&优化
+### 其他
++ {%  post_link  'redisNVM'  %}
+
+
+# 故障&优化
 + {%  post_link  'redisBigKey'  %} 
 + {% post_link 'redisNodeId' %}
 + {% post_link 'redisOptimize' %}
 + {%  post_link  'redisSLO'  %}
-
-### 其他
-+ {%  post_link  'redisNVM'  %}
 
 # 应用
 + {%  post_link  'redisUseCase'  %}
