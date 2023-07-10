@@ -37,6 +37,7 @@ top: true
 + {%  post_link  'redisAOF'  %}
 + {%  post_link  'aofRewrite'  %}
 + {%  post_link  'redisBothAofAndRDB'  %}
++ {%  post_link  'redisReplica'  %}   
 
 ### 资源回收
 + {% post_link 'redisLazyFree' %}
