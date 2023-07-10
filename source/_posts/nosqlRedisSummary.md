@@ -23,6 +23,7 @@ top: true
 ### Arch & Redis Cluster
 + {%  post_link  'redisArch'  %}
 + {%  post_link  'redisError'  %}
++ {%  post_link  'redisCluster'  %}    
 
 ### 数据类型
 + {%  post_link  'redisRehash'  %}
