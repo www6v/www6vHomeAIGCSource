@@ -70,7 +70,9 @@ redis的集群主节点数量基本不可能超过个1000个。
 + **Redis集群不保证强一致性**
 redis集群不保证强一致性，这意味着在特定的条件下，Redis集群可能会丢掉一些被系统收到的写入请求命令
 
+
 # 参考
+
 1. [10.Redis集群(cluster)](https://github.com/www6v/Learning-in-practice/tree/master/Redis/10.Redis%E9%9B%86%E7%BE%A4(cluster))
 1.1[Redis集群介绍](https://github.com/www6v/Learning-in-practice/blob/master/Redis/10.Redis%E9%9B%86%E7%BE%A4(cluster)/1.Redis%E9%9B%86%E7%BE%A4%E4%BB%8B%E7%BB%8D.md)
 1.2 [Redis Cluster](https://www.bilibili.com/video/BV13R4y1v7sP/?p=76)
