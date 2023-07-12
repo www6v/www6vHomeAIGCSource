@@ -33,10 +33,13 @@ categories:
 + **客户服务**：包括客户查询、客户反馈、客户投诉等。
 
 # baisheng-供应链OMS 
+### 业务流程 [11]
 + 入库流程
 + 出库流程
 + 调拨流程
++ VMI流程
 
+### 业务功能 [11]
 + 库存调整管理
 + 主数据管理
 + 空白订单管理
@@ -53,13 +56,13 @@ categories:
 + 订单差异处理管理
 + 规则管理
 
-### 架构
+### 架构 [11]
 {% asset_img  'supplyChain-bs-2.png' %}
 
-### 功能
+### 功能 [11]
 {% asset_img  'supplyChain-bs-1.png' %}
 
-### 集成
+### 集成 [10]
 {% asset_img  'supplyChain-bs.jpg' %}
 
 # 电商系统
@@ -87,3 +90,8 @@ categories:
 1. chat
 2. [订单系统：从0到1设计思路](https://www.woshipm.com/pd/1392102.html) 
 3. [解构电商、O2O：订单系统，平台的“生命中轴线”](https://www.sohu.com/a/166616877_114819) 
+
+
+baisheng
+10. 《oms集成架构图》
+11. 《OMS需求规格说明书V0.6-20200805》
