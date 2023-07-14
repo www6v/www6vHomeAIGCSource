@@ -135,4 +135,4 @@ net.ipv4.tcp_syncookies
 3. [Linux的overcommit配置](http://www.firefoxbug.com/index.php/archives/2800/)
 4. [给容器设置内核参数](https://tencentcloudcontainerteam.github.io/2018/11/19/kernel-parameters-and-container/) good
 5. [TCP总结](../../../../2015/04/25/tcp/) self
-6. [06_虚拟化技术基础原理详解](https://www.bilibili.com/video/BV1W7411J7DP?p=5&vd_source=f6e8c1128f9f264c5ab8d9411a644036) bilibili
+6. [06_虚拟化技术基础原理详解](https://www.bilibili.com/video/BV1W7411J7DP?p=5&vd_source=f6e8c1128f9f264c5ab8d9411a644036) V

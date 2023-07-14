@@ -31,11 +31,10 @@ top: true
 
 ## Java和应用
 + {% post_link 'optimize'  %}  内存 *** 
++ {% post_link 'async'  %}  ***
++ {% post_link 'threadNum'  %}  线程  ***
 + {% post_link 'cache'  %}  内存
 + {% post_link 'falseSharing'  %}  内存
-+ {% post_link 'threadNum'  %}  线程 
-+ {% post_link 'async'  %}
-
 
 ## MySQL
 + {% post_link 'mysqlIndex'  %}  ***

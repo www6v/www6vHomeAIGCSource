@@ -31,5 +31,5 @@ categories:
   KNI（Kernel NIC Interface）      
 
 ## 参考
-1. [为什么dpdk越来越受欢迎，看完以后，让人醍醐灌顶](https://www.bilibili.com/video/BV1cy4y117UG?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)  bilibili
+1. [为什么dpdk越来越受欢迎，看完以后，让人醍醐灌顶](https://www.bilibili.com/video/BV1cy4y117UG?spm_id_from=333.880.my_history.page.click&vd_source=f6e8c1128f9f264c5ab8d9411a644036)  V
 2. <<深入浅出DPDK>>

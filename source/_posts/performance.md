@@ -80,7 +80,7 @@ Tomcat 使用的线程池就不是 JDK 原生的线程池，而是做了一些�
 
 12. [wordcount设计与优化](https://yq.aliyun.com/articles/25487)  竞赛题
 
-13. {%  post_link   'mysqlIndex'  %}    索引优化 self 未
+13. {%  post_link   'mysqlIndex'  %}     self 未
 
 14. {%  post_link   'nginxOptimize'  %}   self 未
 
