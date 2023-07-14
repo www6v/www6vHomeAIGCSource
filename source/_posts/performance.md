@@ -94,18 +94,22 @@ categories:
 		+ 数据结构
 			- 树，链表，栈，队列
 
+
+
+
+
 # 参考
 1. [高性能高并发系统的稳定性保障](http://dwz.cn/4SrP4L) 京东
 
 2. [Linux性能优化实战](https://time.geekbang.org/column/intro/140)  极客时间
 
-3. [性能测试应该怎么做？](https://coolshell.cn/articles/17381.html) 
+3. [性能测试应该怎么做？](https://coolshell.cn/articles/17381.html)  deleted
 
-4. {% post_link 'stability' %}  self
+4. {% post_link 'stability' %}  self  deleted
 
-5. [关于容量预估/性能压测的思考](http://blog.jobbole.com/88958/)
+5. [关于容量预估/性能压测的思考](http://blog.jobbole.com/88958/)  deleted
 
-6. {% post_link 'stability' %}   self  重复的
+6. {% post_link 'stability' %}   self  重复的 deleted
 
 7. 《性能之巅：洞悉系统、企业与云计算》 
 
@@ -119,7 +123,7 @@ categories:
 
 12. [wordcount设计与优化](https://yq.aliyun.com/articles/25487)  竞赛题
 
-
+### 其他
 100. [latency](https://colin-scott.github.io/personal_website/research/interactive_latency.html)  未  
 101. {%  post_link   'mysqlIndex'  %}     self 未
 102. {%  post_link   'nginxOptimize'  %}   self 未
