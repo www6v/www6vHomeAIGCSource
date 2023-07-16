@@ -44,6 +44,7 @@ top: true
 ### 资源回收
 + {% post_link 'redisLazyFree' %}
 + {% post_link 'redisDelete' %}
++ {% post_link 'redisLRU' %}
 
 ### 其他
 + {%  post_link  'redisNVM'  %}
