@@ -16,11 +16,8 @@ categories:
 
 # 数据库分类
 ### 全景图 [1]
-<div style="text-align: center;">
 
-![dbClassify](https://user-images.githubusercontent.com/5608425/67636314-55717980-f90a-11e9-8506-2051221f245b.png)
-结构化数据库分类
-</div>
+{% asset_img  'overviw.jpg'    结构化数据库分类  %}
 
 
 ### 数据库分类
@@ -42,6 +39,8 @@ categories:
   - RMDB
   	+ MySQL
 
+{% asset_img  'classify.JPG' %}
+
 # 选型 [3]
 ### 关注点
 {% asset_img  'xuqiu.JPG' %}
@@ -56,8 +55,8 @@ categories:
 # 参考
 1. [5分钟理解数据库全景图(SQL,NoSQL,NewSQL,OLAP,OLTP)](https://blog.csdn.net/icycode/article/details/81008607) icycode
 2. {% post_link  'NoSQL'  %}  self
-3. 《数据库架构选型指南》 pdf
+3. 《爱奇艺实用数据库选型树：不同场景如何快速选择
+数据库？》 数据库架构选型指南 pdf
 
 
- 
 
