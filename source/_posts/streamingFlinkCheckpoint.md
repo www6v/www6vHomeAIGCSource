@@ -113,5 +113,6 @@ env.getCheckpointConfig().enableUnalignedCheckpoints();
 3. [Flink Checkpoint 参数详解](https://www.shuzhiduo.com/A/xl56qQM9Jr/)
 4. [有赞实时任务优化：Flink Checkpoint 异常解析与应用实践](https://zhuanlan.zhihu.com/p/112876846)
 5. [课时5: 《 Fault-tolerance in Flink》](https://developer.aliyun.com/learning/course/58/detail/1071)  阿里云  《Apache Flink 入门》 ***
-6. [(十)简单解释: 分布式数据流的异步快照(Flink的核心)](https://zhuanlan.zhihu.com/p/43536305) 原理 - aws SDE - 未 *** 
+100. [(十)简单解释: 分布式数据流的异步快照(Flink的核心)](https://zhuanlan.zhihu.com/p/43536305) 原理 - aws SDE - 未 *** 
+101. [基于 Log 的通用增量 Checkpoint](https://xie.infoq.cn/article/f89ea4c1e06004f617b7ae0a7)  未  阿里
 
