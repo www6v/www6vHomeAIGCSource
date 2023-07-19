@@ -72,8 +72,8 @@ category(int)
  
     
 # 参考   
-1. [【ChatGPT】面向程序员的ChatGPT使用教程38种方式来提升生产力](https://www.bilibili.com/video/BV1Z84y1G7nY/)
-
+1. [【ChatGPT】面向程序员的ChatGPT使用教程38种方式来提升生产力](https://www.bilibili.com/video/BV1Z84y1G7nY/) V
+100. [Top 20 ChatGPT Prompts For Software Developers](https://www.geeksforgeeks.org/chatgpt-prompts-for-software-developers/) 未
 
 # 学习资源
 [GitHub Copilot 实践课](https://time.geekbang.org/opencourse/videointro/100540901)
