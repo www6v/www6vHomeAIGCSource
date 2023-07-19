@@ -13,16 +13,17 @@ categories:
 <p></p>
 <!-- more -->
 
-关键词： 锁优化，池化，数据库优化，架构优化， 系统优化，性能测试， 监控 
+## 目录
+<!-- toc -->
+
+# 关键词 
+锁优化，池化，数据库优化，架构优化， 系统优化，性能测试， 监控 
 
 {% asset_img performance.jpg 性能优化总结 %}
 
-{% asset_img performance2.jpg 性能优化总结 %}
-
-
 # 应用优化
 + 应用
-	- 锁[4]
+	- 锁 【4】
 		+ 粒度
 		  - 粗化
 		+ 最小化锁范围
@@ -59,21 +60,21 @@ categories:
 		+ 字符串操作
 		+ 多线程调优
 			- 锁[4]
-			- 线程个数【参考9】
+			- 线程个数【9】
 		+ 异步操作[3]
 		+ 简化代码
 		+ 热点[5]
 		+ 数值精度
 			- Eg. 双精度 单精度
 	- 算法调优
-		+ 分而治之[6]
+		+ 分而治之 【6】
 			- fork-join【2】
 			- Map-Reduce
 		+ 哈希算法
 		+ 预处理
 			- 提前计算(预处理)，最后合并
 	- 算法和数据结构
-		+ 算法复杂度 大O表示【参考10】
+		+ 算法复杂度 大O表示【10】
 			- 时间复杂度
 				+ O(1)
 					+ 数组访问
@@ -87,7 +88,7 @@ categories:
 					+ B树(多路树)
 				+ O(n log(n))
 					+ 快排、归并、堆
-						快排(分治算法[6])
+						快排(分治算法【6】) 
 				+ O(n)
 				+ O(n^2)
 					+ 选择、插入、冒泡
@@ -95,8 +96,31 @@ categories:
 			- 树，链表，栈，队列
 
 
+# 通用优化方法
+- 通用方法
+	+ 异步化  【3】
+		+ 消息
+			+ 进程内
+			   Eg.  Disruptor, EventBus
+			+ Broker
+		+ 事件
+		  Eg. EventSource
+		+ 服务异步化
+			  Eg. 异步网关
+	+ Batch
+		+ Eg. redis pipeline
+		+ buffer io
+	+ Copy on Write
+	    + Eg. mysql MVCC, CopyOnWriteArrayList
 
 
+​	
+
+# 数据库优化
+- 索引优化
+- 大表优化
+- 慢SQL优化
+- 乐观锁
 
 # 参考
 1. [高性能高并发系统的稳定性保障](http://dwz.cn/4SrP4L) 京东
@@ -107,11 +131,11 @@ categories:
 
 4. {% post_link 'stability' %}  self  deleted
 
-5. [关于容量预估/性能压测的思考](http://blog.jobbole.com/88958/)  deleted
+5. [关于容量预估/性能压测的思考](http://blog.jobbole.com/88958/)  deleted  失效
 
 6. {% post_link 'stability' %}   self  重复的 deleted
 
-7. 《性能之巅：洞悉系统、企业与云计算》 
+7. xxx
 
 8. [性能调优攻略](https://coolshell.cn/articles/7490.html/comment-page-1)  *** 
 
