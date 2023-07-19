@@ -11,9 +11,12 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
 
 ## 高可用方案[1]
-##### Prometheus 高可用有几种方案：
+
+#####  高可用的几种方案
 
 + 基本 HA：即两套 Prometheus 采集完全一样的数据，外边挂负载均衡
 + HA + 远程存储：除了基础的多副本 Prometheus，还通过 Remote Write 写入到远程存储，解决存储持久化问题
@@ -36,9 +39,10 @@ categories:
 + 如果 A 和 B 的启动时间不同，时钟不同，那么采集同样的数据时间戳也不同，就不是多副本同样数据的概念了
 + 就算用了远程存储，A 和 B 不能推送到同一个 TSDB，如果每人推送自己的 TSDB，数据查询走哪边就是问题了。
 
-##### 因此解决方案是在**存储、查询**两个角度上保证数据的一致:
-+ **存储角度**：如果使用 **Remote Write 远程存储， A 和 B后面可以都加一个 Adapter，Adapter做选主逻辑，只有一份数据能推送到 TSDB，这样可以保证一个异常，另一个也能推送成功，数据不丢，同时远程存储只有一份，是共享数据**。方案可以参考这篇文章    
-+ **查询角度**：上边的方案实现很复杂且有一定风险，因此现在的大多数方案在查询层面做文章，**比如 Thanos 或者 Victoriametrics，仍然是两份数据，但是查询时做数据去重和 Join**。只是 Thanos 是通过 Sidecar 把数据放在对象存储，Victoriametrics 是把数据 Remote Write 到自己的 Server 实例，但查询层 Thanos-Query 和 Victor 的 Promxy的逻辑基本一致。
+##### 解决方案  
++ 在**存储、查询**两个角度上保证数据的一致
+   + **存储角度**：如果使用 **Remote Write 远程存储， A 和 B后面可以都加一个 Adapter，Adapter做选主逻辑，只有一份数据能推送到 TSDB，这样可以保证一个异常，另一个也能推送成功，数据不丢，同时远程存储只有一份，是共享数据**。方案可以参考这篇文章 
+   + **查询角度**：上边的方案实现很复杂且有一定风险，因此现在的大多数方案在查询层面做文章，**比如 Thanos 或者 Victoriametrics，仍然是两份数据，但是查询时做数据去重和 Join**。只是 Thanos 是通过 Sidecar 把数据放在对象存储，Victoriametrics 是把数据 Remote Write 到自己的 Server 实例，但查询层 Thanos-Query 和 Victor 的 Promxy的逻辑基本一致。
 
 
 
@@ -76,3 +80,5 @@ categories:
 4. [Thanos：开源的大规模Prometheus集群解决方案](http://dockone.io/article/6019)   失效
 5. [基于 KubeSphere 和 Thanos 构建可持久化存储的多集群监控系统](https://kubesphere.com.cn/live/jinaai0602-live/)  失效
 6. [打造云原生大型分布式监控系统(二): Thanos 架构详解](https://zhuanlan.zhihu.com/p/128658137)   imroc@腾讯云 ***
+100. [Thanos与Cortex方案对比](https://viva.gitbook.io/project/cloud-native/prometheus/cun-chu-fang-an-cha-yi-dui-bi) 未
+101. [Prometheus Thanos与Cortex组件比较](https://blog.csdn.net/sinat_32582203/article/details/121487648) 未
