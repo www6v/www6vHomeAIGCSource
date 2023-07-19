@@ -57,4 +57,5 @@ Exception tracking| Zipkin ，Jaeger，pinpoint（无侵入）, **skywalking**�
 1. [Metrics, tracing 和 logging 的关系](https://wu-sheng.github.io/me/articles/metrics-tracing-and-logging)
 2. [观察之道：带你走进可观察性](https://mp.weixin.qq.com/s?__biz=MzIzNjUxMzk2NQ==&mid=2247489564&idx=1&sn=46d9103444bef97e89e897224a896268&chksm=e8d7e7dedfa06ec8d687c1292a1d82ff9e579430afafb9d003e18c13d4ec7e1682dbd4c642d9&scene=27#wechat_redirect)
 3. [【云原生学院#25】云原生应用可观测性实践](https://www.bilibili.com/video/BV1CL411777R?spm_id_from=333.880.my_history.page.click)  github中有PPT ***
+100. [Monarch: 谷歌的全球级内存时序数据库](https://www.pianshen.com/article/96362082048/)   监控  未
 

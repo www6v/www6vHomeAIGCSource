@@ -11,7 +11,8 @@ categories:
 <p></p>
 <!-- more -->
 
-
+## 目录
+<!-- toc -->
 
 #  TPS和响应时间的关系[1]
 
@@ -82,8 +83,15 @@ C’指并发用户数的峰值，C 就是公式（1）中得到的平均的并�
 	- 应用程序Profile
 		+ 问题：让程序运行的性能变低
 
-# 参考
+# 压测工具
+ab
+Jmeter
+wrk
+### 网络
+httpstat [7]
+ 
 
+# 参考
 1. 02丨性能综述：TPS和响应时间之间是什么关系？  高楼
 2. 03丨性能综述：怎么理解TPS、QPS、RT、吞吐量这些性能指标？ 高楼
 
@@ -92,6 +100,8 @@ C’指并发用户数的峰值，C 就是公式（1）中得到的平均的并�
 4. {% post_link 'stability' %}  self
 5. [关于容量预估/性能压测的思考](http://blog.jobbole.com/88958/)
 6. {% post_link 'stability' %}   self  重复的
+7. [ httpstat](https://github.com/davecheney/httpstat)  go
+   [ httpstat](https://github.com/reorx/httpstat) python
 
 
 

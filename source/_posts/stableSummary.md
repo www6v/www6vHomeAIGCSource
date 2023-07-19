@@ -31,5 +31,5 @@ top: true
   -  {% post_link  'sreWorkbookBasicAlert' %} 
 + {% post_link  'capacityGuarantee' %}
 + {% post_link  'chaosEngineering' %}
--  [可观测性](../../../../categories/可观测性/) category
++ {% post_link  'observabilitySummary' %} 
 
