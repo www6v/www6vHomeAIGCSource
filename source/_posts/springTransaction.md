@@ -35,15 +35,6 @@ categories:
 				业务对象
 
 
-
-# Spring事务失效问题
-+ spring事务失效
-	- 场景：普通方法调用事务方法时，事务会失效
-	- 解决：要在普通方法(一般是最外层)上加上@Transactional
-
-
 # 参考
-
 1. 分布式事务系列（1.1）Spring事务管理器PlatformTransactionManager 乒乓狂魔
 2. 分布式事务系列（1.2）Spring的事务体系 乒乓狂魔
-3. [Spring 踩坑之@Transactional 神奇失效  小鱼儿](https://segmentfault.com/a/1190000014617571)
