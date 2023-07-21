@@ -24,15 +24,15 @@ categories:
     2. 正常运行 g() 函数体；
     3. g() 完成后，连同它的结果一起回调 cont，从而继续执行 f() 里剩余的代码。
        {% asset_img  'CSP.jpg' %}  
- 
+
 ### Callback实现 
   而异步 IO 中，进程发起 IO 操作时也会一并输入回调（也就是 Continuation），这大大解放了生产力 —— **现场无需等待，可以立即返回去做其他事情**。一旦 IO 成功后，AIO 的 Event Loop 会调用刚刚设置的回调函数，把剩下的工作完成。这种模式有时也被称为 Fire and Forget。
   通过实现的 Continuation，**线程不再受 IO 阻塞，可以自由自在地跑满 CPU**。
-  
+
 ### Callback语法糖：Promise
   **Promise 是对异步调用结果的一个封装**，在 Java 中它叫作 **CompletableFuture**  或者 **ListenableFuture** (Guava)。
   Promise 改善了 Callback 的可读性，也让异常处理稍稍优雅了些。
-  
+
 ### 反应式编程(Promise 的极大增强)  
   相比 Promise，反应式引入了流（Flow）的概念。 
 
@@ -54,15 +54,6 @@ Actor| Scala Actor, Akka
 CSP| Golang协程, Kotlin协程 
 Reactive | RxJava<br> Flux (Reactor Core)<br> RSocket 
 
-> ReactiveX: An API for asynchronous programming  with observable streams
-> 响应式流（Reactive Stream）: 具备“异步非阻塞”特性和“流量控制”能力的数据流.
-> RSocket 是一个支持 reactive-stream 语义的开源网络通信协议，它将 reactive 语义的复杂逻辑封装了起来，使得上层可以方便实现网络程序。
-
-
-#  Java8、RxJava、Reactor比较[11]
-{%   asset_img    reactor.jpeg     Java8、RxJava、Reactor比较  %}
-
-+ 核心特性 async，back-pressure(Stream)
 
 
 # 参考
@@ -75,15 +66,3 @@ Reactive | RxJava<br> Flux (Reactor Core)<br> RSocket
 6. [SEDA: An Architecture for Well-Conditioned, Scalable Internet Services](https://www.researchgate.net/publication/2391753_SEDA_An_Architecture_for_Well-Conditioned_Scalable_Internet_Services)
 13. 《七周七并发》
 
----
-##### Reactive，ReactiveX
-7. [The introduction to Reactive Programming](https://github.com/benjycui/introrx-chinese-edition?utm_source=tuicool&utm_medium=referral)
-8. [全面异步化：淘宝反应式架构升级探索](https://mp.weixin.qq.com/s/Cfg-7MzabvPOLWrrlTVXzA)
-9. [Introduction to RSocket](https://www.baeldung.com/rsocket)
-10. [我为什么不再推荐RxJava](https://juejin.im/post/5cd04b6e51882540e53fdfa2)
-11. [八个层面比较 Java 8, RxJava, Reactor](https://cloud.tencent.com/developer/article/1356284) good
-12. [reactivex 官网](http://reactivex.io/)
-13. [reactive-streams-jvm git](https://github.com/www6v/reactive-streams-jvm)
-14. [Reactive Streams](http://www.reactive-streams.org/)
-15. [（1）什么是响应式编程——响应式Spring的道法术器](https://blog.csdn.net/get_set/article/details/79455258) 未
-16. [（2）响应式流——响应式Spring的道法术器](https://blog.csdn.net/get_set/article/details/79466402) 未
