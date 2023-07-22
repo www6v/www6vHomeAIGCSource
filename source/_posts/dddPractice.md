@@ -35,7 +35,7 @@ categories:
     - 数据库思维
     - 贫血模型“简单”
     - 脚本思维
-      
+  
 + **充血模型**
   -  实现
    **业务逻辑放到领域对象中(实体对象中有实现方法)**
@@ -99,6 +99,7 @@ categories:
 
 # 框架
 + Axon Framework
++ COLA [22]
 
 
 # 参考
@@ -106,7 +107,10 @@ categories:
 + 4. 《04  领域模型是如何指导程序设计的？》 DDD 微服务落地实战-拉钩专栏
 + 7. 《24 直播：框架之上的业务分层》  体系课_Go高级工程师实战营(完结)
 
+
+
 + 20. [阿里技术专家详解DDD系列 第二讲 - 应用架构](https://zhuanlan.zhihu.com/p/343388831)
 [refactor 之前的Transaction Script](https://github.com/www6v/jExamples/tree/master/src/main/java/ddd/transactionScript) git
 [refactor 之后的DDD](https://github.com/www6v/jExamples/tree/master/src/main/java/ddd/refactor)
-+ 21. [阿里技术专家详解DDD系列 第三讲 - Repository模式](https://zhuanlan.zhihu.com/p/348706530)
++ 21. [阿里技术专家详解DDD系列 第三讲 - Repository模式](https://zhuanlan.zhihu.com/p/348706530) 
++ 22. [COLA 4.0：应用架构的最佳实践](https://blog.csdn.net/significantfrank/article/details/110934799)  未

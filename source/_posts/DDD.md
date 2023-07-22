@@ -69,18 +69,7 @@ categories:
 又被称之为**Ports and Adapters（端口和适配器架构）**
 
 
-# 整洁架构 Clean Architecture
-+ 核心观点 [7][8]
-  - 不与框架绑定
-    java-spring, Quarkus
-  - 可测试
-    mock- gomock, Testify
-  - 不与UI绑定
-  - 不与数据库绑定
-    DDD 中的Repo
-  - 不依赖任何外部代理
 
-+ Go的实现 [9][10]
 
 # 参考
 1. 《DDD（Domain Driven Design)的精髓》  直播+ppt  阿里张建飞  钉钉2020.05.21视频
@@ -89,10 +78,7 @@ categories:
 4. 《04  领域模型是如何指导程序设计的？》 DDD 微服务落地实战-拉钩专栏
 5. 《05  聚合、仓库与工厂：傻傻分不清楚》  DDD 微服务落地实战-拉钩专栏
 6. {% post_link 'DomainLogicAndSQL' %}  self
-7. 《24 直播：框架之上的业务分层》  体系课_Go高级工程师实战营(完结)
-8. [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
-9. [clean-architecture-go-v2](https://github.com/eminetto/clean-architecture-go-v2) git
-10. [go-clean-arch](https://github.com/bxcodec/go-clean-arch)
+
 
 ### 资源
 1. 《实现领域驱动设计》 B  *** 
@@ -103,6 +89,9 @@ categories:
 6. 《DDD实战课》 
 7. 《mksz541-DDD（领域驱动设计）思想解读及优秀实践~4》 V  
 8. 《lg2061-DDD 微服务落地实战-拉钩专栏》 V  ***   有代码
+
+
+
 
 
 

@@ -23,5 +23,5 @@ tags:
 
 
 ## 参考
-
- [深入浅出Zookeeper（一） Zookeeper架构及FastLeaderElection机制 ](http://www.jasongj.com/zookeeper/fastleaderelection/) *** 
+1. [深入浅出Zookeeper（一） Zookeeper架构及FastLeaderElection机制 ](http://www.jasongj.com/zookeeper/fastleaderelection/) *** 
+100. [ZooKeeper 核心通识](https://zhuanlan.zhihu.com/p/571732977) 未
