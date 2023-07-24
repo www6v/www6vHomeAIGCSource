@@ -26,18 +26,17 @@ categories:
 		+ 粒度
 		  - 粗化
 		+ 最小化锁范围
-		+ Eg， 单线程写文件
+		  - Eg， 单线程写文件
 		+ 锁拆分，分散锁
 		  - 减少竞争，race condition
 		  - eg. ConcurrentHashMap，LongAdder
 		+ 分离锁
 		  - 读写锁
+		    - 读多写少的场景
 		  - 队头队尾， 两把锁
 		+ 乐观锁
-		  - CAS
-		+ 读写锁
-		  - 读多写少的场景
-	- 并行[1]
+		  - CAS	  
+	- 并行  【1】
 		+ 多线程
 		  - fork-join模式【2】
 		  - 本地化 Eg. ThreadLocal
@@ -49,10 +48,6 @@ categories:
 		  - 不可变对象
 		+ 单核单线程
 		  - Eg. Redis, Nginx
-	- 工具
-		+ btrace， 慢响应，生产用
-		+ 排查占cpu最多的线程
-		+ JVM 工具
 	- 池化(重用)
 		+ Eg. 线程池，数据库连接池
 	- 代码调优
@@ -62,7 +57,7 @@ categories:
 			- 线程个数【9】
 		+ 异步操作  【8】
 		+ 简化代码
-		+ 热点[5]
+		+ 热点优化  【5】
 		+ 数值精度
 			- Eg. 双精度 单精度
 
@@ -109,7 +104,7 @@ categories:
 		+ 事件
 		  Eg. EventSource
 		+ 服务异步化
-			  Eg. 异步网关
+		  Eg. 异步网关
 	+ Batch
 		+ Eg. redis pipeline
 		+ buffer io
@@ -120,6 +115,8 @@ categories:
 # 数据库优化
 - 索引优化
 - 大表优化
+  - 水平拆分
+  - 垂直拆分
 - 慢SQL优化
 - 乐观锁
 
@@ -132,9 +129,9 @@ categories:
 		+ 垂直拆分
 		+ 水平拆分
 	- 分布式
-		+ 并行[1]
+		+ 并行 【1】
 		+ 延迟
-			Eg. 跨IDC网络延迟 上海<->北京  50ms
+		  Eg.  跨IDC网络延迟 上海<->北京  50ms
 	- 节省空间/时间换空间【8、11】
 		+ 不存储，重新计算
 		+ 稀疏数据结构
@@ -150,7 +147,7 @@ categories:
 		+ 数据冗余，replication
 	- 系统结构
 		+ 大型系统分解成模块
-			“粗略估算”，性能分析
+		  “粗略估算”，性能分析
 	- 系统软件
 		+ 替换更快的操作系统、中间件、数据库、编译器
 
@@ -159,22 +156,22 @@ categories:
 + 系统
 	- 文件系统
 		+ pageCache, 预读
-			Eg. Rocketmq
+		  Eg. Rocketmq
 		+ 顺序写，随机读
 		+ 大块读优于小块读
 	- CPU
 		+ CPU绑定
 		+ CPU上下文切换
 			+ Eg. Redis单线程
-				CPU不是Redis的瓶颈，
-				瓶颈可能是内存的大小或者网络带宽
+			  CPU不是Redis的瓶颈，
+			  瓶颈可能是内存的大小或者网络带宽
 		+ CPU缓存
 			+ 问题：伪共享
-				解决：cacheline padding
+			  解决：cacheline padding
 	- 网络I/O
 		+ NIO,非阻塞I/O，epoll
 		+ 协议调优
-			TCP参数
+		  TCP参数
 	- 内存
 		+ zeroCopy
 		+ HugePage
