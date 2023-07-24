@@ -19,7 +19,6 @@ categories:
 # 关键词 
 锁优化，池化，数据库优化，架构优化， 系统优化，性能测试， 监控 
 
-{% asset_img performance.jpg 性能优化总结 %}
 
 # 应用优化
 + 应用
@@ -59,13 +58,16 @@ categories:
 	- 代码调优
 		+ 字符串操作
 		+ 多线程调优
-			- 锁[4]
+			- 锁 【4】
 			- 线程个数【9】
-		+ 异步操作[3]
+		+ 异步操作  【8】
 		+ 简化代码
 		+ 热点[5]
 		+ 数值精度
 			- Eg. 双精度 单精度
+
+# 算法优化
++ 算法
 	- 算法调优
 		+ 分而治之 【6】
 			- fork-join【2】
@@ -96,9 +98,10 @@ categories:
 			- 树，链表，栈，队列
 
 
-# 通用优化方法
+
+# 通用优化
 - 通用方法
-	+ 异步化  【3】
+	+ 异步化  【8】
 		+ 消息
 			+ 进程内
 			   Eg.  Disruptor, EventBus
@@ -114,37 +117,81 @@ categories:
 	    + Eg. mysql MVCC, CopyOnWriteArrayList
 
 
-​	
-
 # 数据库优化
 - 索引优化
 - 大表优化
 - 慢SQL优化
 - 乐观锁
 
+# 架构/系统优化
++ 架构/系统优化
+	- 弹性/伸缩
+		+ 资源调度 Eg. k8s
+		+ 资源扩容
+	- 可扩展
+		+ 垂直拆分
+		+ 水平拆分
+	- 分布式
+		+ 并行[1]
+		+ 延迟
+			Eg. 跨IDC网络延迟 上海<->北京  50ms
+	- 节省空间/时间换空间【8、11】
+		+ 不存储，重新计算
+		+ 稀疏数据结构
+			Eg. 稀疏矩阵
+		+ 数据压缩传输
+			RSYNC 的核心算法
+			Huffman 编码压缩算法
+		+ 动态分配策略
+			Eg. ArrayList(10)，HashMap(16)的动态扩展
+		+ 垃圾回收
+	- 空间换时间
+		+ 缓存
+		+ 数据冗余，replication
+	- 系统结构
+		+ 大型系统分解成模块
+			“粗略估算”，性能分析
+	- 系统软件
+		+ 替换更快的操作系统、中间件、数据库、编译器
+
+
+# Linux系统优化
++ 系统
+	- 文件系统
+		+ pageCache, 预读
+			Eg. Rocketmq
+		+ 顺序写，随机读
+		+ 大块读优于小块读
+	- CPU
+		+ CPU绑定
+		+ CPU上下文切换
+			+ Eg. Redis单线程
+				CPU不是Redis的瓶颈，
+				瓶颈可能是内存的大小或者网络带宽
+		+ CPU缓存
+			+ 问题：伪共享
+				解决：cacheline padding
+	- 网络I/O
+		+ NIO,非阻塞I/O，epoll
+		+ 协议调优
+			TCP参数
+	- 内存
+		+ zeroCopy
+		+ HugePage
+
+
 # 参考
 1. [高性能高并发系统的稳定性保障](http://dwz.cn/4SrP4L) 京东
-
 2. [Linux性能优化实战](https://time.geekbang.org/column/intro/140)  极客时间
-
-3. [性能测试应该怎么做？](https://coolshell.cn/articles/17381.html)  deleted
-
+3. [性能测试应该怎么做？](https://coolshell.cn/articles/17381.html)  coolshell  deleted
 4. {% post_link 'stability' %}  self  deleted
-
 5. [关于容量预估/性能压测的思考](http://blog.jobbole.com/88958/)  deleted  失效
-
 6. {% post_link 'stability' %}   self  重复的 deleted
-
 7. xxx
-
-8. [性能调优攻略](https://coolshell.cn/articles/7490.html/comment-page-1)  *** 
-
+8. [性能调优攻略](https://coolshell.cn/articles/7490.html/comment-page-1)  coolshell  *** 
 9. {% post_link 'threadNum' %}  self
-
 10. [每个程序员都应该收藏的算法复杂度速查表](http://www.codeceo.com/article/algorithm-complexity-table.html)
-
 11. 《编程珠玑 第2版》 
-
 12. [wordcount设计与优化](https://yq.aliyun.com/articles/25487)  竞赛题
 
 ### 其他
