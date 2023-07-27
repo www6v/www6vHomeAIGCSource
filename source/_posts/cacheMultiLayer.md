@@ -11,8 +11,11 @@ categories:
 <p></p>
 <!-- more -->
 
+# Overview
+{% asset_img    'arch.jpg'  %}
+
 # 多级缓存 [5?]
-### 二级缓存 
+### 二级缓存（本地缓存+远程缓存）
 + 二级缓存（本地缓存+远程缓存）
 	- 远端Cache推全量或者部分的数据到本地cache，并设置过期时间【初始化】
 	- 查询流程
@@ -34,4 +37,7 @@ categories:
 
 
 # 参考
-5. 移动选购线缓存实践 赵思奇 *** 
+1. [多级缓存架构](https://blog.csdn.net/lee_nacl/article/details/127860463)
+   《架构实战营-第25节课：计算架构模式之多级缓存架构》 V
+100. [jetcache：阿里这款多级缓存框架一定要掌握](http://wed.xjx100.cn/news/154282.html) 未
+5. 《移动选购线缓存实践》 赵思奇 *** 
