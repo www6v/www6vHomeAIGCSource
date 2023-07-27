@@ -10,5 +10,8 @@ categories:
 <p></p>
 <!-- more -->
 
+# PH.D Certificate 
+{% asset_img   certificate.JPG  Ph.D.   Certificate %}
 
+# PH.D Offer 
 {% asset_img phdOffer.JPG  Ph.D. Offer %}
