@@ -67,6 +67,9 @@ top: true
 # 学习资源
 + {% post_link 'redisStudy' %}
 
-    
-  
 
+# 缓存
++ {% post_link 'cacheConsistent' %}
++ {% post_link 'cacheMultiLayer' %}
++ {% post_link 'cacheSummary' %}
++ {% post_link 'cache' %}
