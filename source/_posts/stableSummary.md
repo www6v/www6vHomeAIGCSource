@@ -20,7 +20,9 @@ top: true
 + {% post_link  'ratelimit' %}
   - {% post_link  'Hystrix' %}
   - {% post_link  'ratelimitSentinel' %}
--  [系统架构](../../../../categories/架构/系统架构/)  category
+- [系统架构](../../../../categories/架构/系统架构/)  category
+  + {% post_link  'available' %} 
+  + {% post_link  'multiLive' %} 
 
 ## SRE
 
