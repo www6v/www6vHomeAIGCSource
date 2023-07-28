@@ -23,6 +23,9 @@ top: true
 + {% post_link 'middleStage'  %}
 + {% post_link 'disaggregationOfComputeAndStorage'  %}
 + {% post_link 'haSummary'  %}
+  + {% post_link 'available'  %}  
++ {% post_link 'unifyModel'  %} 
++ {% post_link 'multiLive'  %} 
 
 ## 系统设计 
 + {% post_link 'feed'  %}
@@ -32,7 +35,6 @@ top: true
 
 ## 设计原则
 + {% post_link 'designPrinciple'  %}
-  
 + {% post_link 'designOCPspi'  %}
   
   
@@ -52,13 +54,6 @@ top: true
 
 
 
-​    
-
-​    
-
-   
-
-​     
 
    
 

@@ -39,5 +39,8 @@ categories:
 # 参考
 1. [多级缓存架构](https://blog.csdn.net/lee_nacl/article/details/127860463)
    《架构实战营-第25节课：计算架构模式之多级缓存架构》 V
-100. [jetcache：阿里这款多级缓存框架一定要掌握](http://wed.xjx100.cn/news/154282.html) 未
 5. 《移动选购线缓存实践》 赵思奇 *** 
+100. [jetcache：阿里这款多级缓存框架一定要掌握](http://wed.xjx100.cn/news/154282.html) 未
+101. [聊聊微服务架构中的多级缓存设计（建议收藏）](https://blog.51cto.com/u_15989526/6287632) 未
+102. [Java分布式缓存一篇文章让你明白你多级缓存的分层架构原理分析](https://zhuanlan.zhihu.com/p/606469614) 未
+ 
