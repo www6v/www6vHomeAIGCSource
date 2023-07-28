@@ -1,5 +1,5 @@
 ---
-title: Redis[KV]-汇总
+title: Redis+缓存 汇总
 date: 2021-02-07 12:13:22
 tags:
   - 汇总
@@ -15,7 +15,7 @@ top: true
 ## 目录
 <!-- toc -->
 
-# 基础
+# Redis 基础
 ### overviw
 + {%  post_link  'redis'  %}
 + {%  post_link  'redisIO'  %}
@@ -50,13 +50,13 @@ top: true
 + {%  post_link  'redisNVM'  %}
 
 
-# 故障&优化
+# Redis 故障&优化
 + {%  post_link  'redisBigKey'  %} 
 + {% post_link 'redisNodeId' %}
 + {% post_link 'redisOptimize' %}
 + {%  post_link  'redisSLO'  %}
 
-# 应用
+# Redis 应用
 + {%  post_link  'redisUseCase'  %}
 + {%  post_link  'redisDistKey'  %}
 + {%  post_link  'redisReliability-1'  %}
@@ -64,7 +64,7 @@ top: true
 + {% post_link 'redisSlowResponse' %} 
 + {% post_link 'redisHotkey' %}
 
-# 学习资源
+# Redis 学习资源
 + {% post_link 'redisStudy' %}
 
 
