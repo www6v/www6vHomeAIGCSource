@@ -12,15 +12,15 @@ categories:
 <!-- more -->
 
 
-# 代码相关
+# 代码相关-简单任务 [1]
 
 + **注释**  
    你作为一名程序员，请解释一下下面这段代码
    
 + **防御性编程** 
    请为这段代码增加防御性编程的功能
-   
-+ 写单元测试   
+
++ 写单元测试 
 
 + **时间复杂度  time complexity**
    这段代码的时间复杂度是多少
@@ -50,16 +50,20 @@ print(newlist)
   - Convert this Python code to Javascript    
   - 请把下面这段python代码转换成Java代码 
   
-+ **Generating Dummy Data**
-  - Generate dummy data for a table called customers. Each customer should have an ID, first name, last name and city.
-  - I don't need a Javascript. Just give the data.
-  - Create a Python class for storing these objects.
+
+# 代码相关- 繁琐工作 [1]
 
 + Building API
   - I need an API built with express.js to return the list of products. Each product should have attributes like ID, title, description, price and imageUrl
   - modify the code and  retrieve the products from a MongoDB database
   - use TypeScript in this code
   - Generate this API using Python and FastAPI
+
+
++ **Generating Dummy Data**
+  - Generate dummy data for a table called customers. Each customer should have an ID, first name, last name and city.
+  - I don't need a Javascript. Just give the data.
+  - Create a Python class for storing these objects.
 
 
 + **SQL**
@@ -69,10 +73,17 @@ title（string）
 category(int)
   - write a query to retrieve the top 5 customers in Shanghai
   - Revise this query and join the customers table with the orders table to find out how much each cumster has spent. Then pick the top 5 who have spent the most.
- 
-    
+
++ 正则  [2]
+
++ CronJob [2]
+
+
+
 # 参考   
 1. [【ChatGPT】面向程序员的ChatGPT使用教程38种方式来提升生产力](https://www.bilibili.com/video/BV1Z84y1G7nY/) V
+2. [GitHub Copilot 实践课](https://time.geekbang.org/opencourse/videointro/100540901) 
+   03, 04, 06
 100. [Top 20 ChatGPT Prompts For Software Developers](https://www.geeksforgeeks.org/chatgpt-prompts-for-software-developers/) 未
 
 # 学习资源
