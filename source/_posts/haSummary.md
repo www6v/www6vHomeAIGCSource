@@ -1,5 +1,5 @@
 ---
-title: 高可用架构  汇总
+title: 高可用+容灾  汇总
 date: 2019-04-28 12:12:25
 tags:
   - 汇总
@@ -21,10 +21,6 @@ top: true
    - {% post_link  'splitBrain' %}
 + {% post_link  'tencentTCP3' %}
 
-### 容灾&多活
-+ {% post_link  'aliyunDisasterRecovery' %}
-+ {% post_link  'multiLive' %} 
-
 ### 中间件 
 + {% post_link  'kafkaReliability' %}
 + {% post_link  'kafkaElection' %}
@@ -37,4 +33,21 @@ top: true
 ### K8S  高可用
 + {% post_link  'k8sHA' %}
 + {% post_link  'k8sAvailable' %}
+
+# 容灾&多活
+### 服务&应用容灾
++ {% post_link  'multiLive' %} 
++ {% post_link  'istio-k8s-service' %} 
+
+### 数据容灾
++ {% post_link  'aliyunDB' %} 
++ {% post_link  'redisHA' %} 
+
+### 环境容灾
++ {% post_link  'aliyunDisasterRecovery' %}
++ {% post_link  'aliyunHybridCloud' %} 
+
+
+
+
 

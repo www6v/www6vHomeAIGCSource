@@ -25,6 +25,7 @@ top: true
 + {%  post_link  'redisError'  %}
 + {%  post_link  'redisCluster'  %}    
 + {%  post_link  'redisClusterSpec'  %}  
++ {%  post_link  'redisHA'  %}   
 
 ### 数据类型
 + {%  post_link  'redisRehash'  %}

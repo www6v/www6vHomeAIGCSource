@@ -210,7 +210,8 @@ state machine replication && primary-copy
 8. [Base: An Acid Alternative](https://queue.acm.org/detail.cfm?id=1394128)  Ebay模式  ***
 9. [如何选择分布式事务解决方案？](https://mp.weixin.qq.com/s/2AL3uJ5BG2X3Y2Vxg0XqnQ)   ali  ***
 10. {% post_link 'NoSQL' %}  self  一致性
-11. [《数据密集型应用系统设计》笔记五：第五章 数据复制](https://blog.csdn.net/weixin_43902592/article/details/103918630) 未
+11. [（建议收藏）万字长文总结分布式事务，总有一款适合你](https://zhuanlan.zhihu.com/p/461294722) *** 腾讯
+100. [《数据密集型应用系统设计》笔记五：第五章 数据复制](https://blog.csdn.net/weixin_43902592/article/details/103918630) 未
 
 ### 应用
 
