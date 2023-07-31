@@ -52,18 +52,22 @@ top: true
 
 
 # Redis 故障&优化
-+ {%  post_link  'redisBigKey'  %} 
-+ {% post_link 'redisNodeId' %}
-+ {% post_link 'redisOptimize' %}
-+ {%  post_link  'redisSLO'  %}
+- 常见问题
+  + {%  post_link  'redisBigKey'  %} 
+  + {% post_link 'redisOptimize' %}
+  + {%  post_link  'redisReliability-1'  %}
+  + {%  post_link  'redisDbConsistent'  %}
+  + {% post_link 'redisSlowResponse' %} 
+  + {% post_link 'redisHotkey' %}
+  + {% post_link 'redisHitRate' %}
+   
+- {% post_link 'redisNodeId' %}
 
 # Redis 应用
 + {%  post_link  'redisUseCase'  %}
 + {%  post_link  'redisDistKey'  %}
-+ {%  post_link  'redisReliability-1'  %}
-+ {%  post_link  'redisDbConsistent'  %}
-+ {% post_link 'redisSlowResponse' %} 
-+ {% post_link 'redisHotkey' %}
++ {%  post_link  'redisSLO'  %}
+
 
 # Redis 学习资源
 + {% post_link 'redisStudy' %}

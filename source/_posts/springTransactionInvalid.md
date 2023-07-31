@@ -16,7 +16,7 @@ categories:
 
 # Spring事务失效问题
 ###  spring事务失效 [1]
-	
+
 	- 场景：普通方法调用事务方法时，事务会失效
 	- 解决：要在普通方法(一般是最外层)上加上@Transactional
 
@@ -76,6 +76,7 @@ categories:
 1. [Spring 踩坑之@Transactional 神奇失效  小鱼儿](https://segmentfault.com/a/1190000014617571)
 2. [spring事务（注解 @Transactional ）失效的12种场景](https://blog.csdn.net/mccand1234/article/details/124571619) 
 3. [spring中12种@Transactional的失效场景(小结)](https://www.45fan.com/article.php?aid=1CO8aGBW5f63eGYH)
+100. [Spring @Async/@Transactional 失效的原因及解决方案](https://www.jianshu.com/p/9a0de6577ed7) 未
 
 
 
