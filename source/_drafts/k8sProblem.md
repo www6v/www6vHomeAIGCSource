@@ -63,9 +63,7 @@ sync && echo 3 > /proc/sys/vm/drop_caches
 
 
 4. [Kubernetes 常见问题排查与解决方案！（纯干货）](https://blog.csdn.net/alex_yangchuansheng/article/details/119224283) ***
-5. [Kubernetes 集群 troubleshooting](https://www.chenshaowen.com/blog/kubernetes-cluster-troubleshooting.html) 未
-6. [Kubernetes 应用 troubleshooting](https://www.chenshaowen.com/blog/kubernetes-app-troubleshooting.html) 未
+100. [Kubernetes 集群 troubleshooting](https://www.chenshaowen.com/blog/kubernetes-cluster-troubleshooting.html) 未
+101. [Kubernetes 应用 troubleshooting](https://www.chenshaowen.com/blog/kubernetes-app-troubleshooting.html) 未
 
-## Draft Here
-{% draft %}
-{% enddraft %}
+

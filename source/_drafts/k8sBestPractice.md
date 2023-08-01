@@ -54,6 +54,4 @@ categories:
 4. [kubernetes 最佳实践：处理容器数据磁盘被写满](https://tencentcloudcontainerteam.github.io/2019/06/08/kubernetes-best-practice-handle-disk-full/)
 
 
-## Draft Here
-{% draft %}
-{% enddraft %}
+

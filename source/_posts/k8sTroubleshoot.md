@@ -49,8 +49,10 @@ calico cpu memory 使用overload
 + 原因: 使用了full mesh的模式
 + 解决: 换成RR模式 和 ipip模式
 
-## Reference
+## 参考
 1. 模块六
 2. 模块八-Kubernetes 控制平面组件：生命周期管理和服务发现
 3. 模块九：生产化集群的管理   chapter5 
 4. 模块七
+100. [netshoot](https://github.com/www6v/netshoot) git
+     a Docker + Kubernetes network trouble-shooting swiss-army container 
