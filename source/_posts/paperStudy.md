@@ -42,3 +42,5 @@ categories:
 + [论文阅读小组](https://learn-sys.github.io/cn/reading/)   大佬们
 + [Elvis Zhang](http://blog.shunzi.tech/)  存储 数据库 方向，交大大佬
 + [ LoopJump ](http://loopjump.com/)   关注数据存储与计算
++ [the morning paper](https://blog.acolyer.org/)  *** 
+  Adrian Colyer,   over 1,000 papers,  computer science
