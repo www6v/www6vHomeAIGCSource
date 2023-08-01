@@ -11,13 +11,16 @@ categories:
 <p></p>
 <!-- more -->
 
-## Platform
+## 目录
+<!-- toc -->
+
+# Platform
 + 国外
   [Poe](https://poe.com/ChatGPT) ***
 + 国内
   [ChatGPT使用指南！](https://www.feijix.com/n/y0BnXI) *** 
 
-## Tools & Mix
+# Tools & Mix
 + GPT学习宝典
   [GPT  工具箱](https://gpt.candobear.com/toolbox)
   [Prompt 大全](https://gpt.candobear.com/prompt)
@@ -25,10 +28,10 @@ categories:
 + [AI 工具箱](https://www.ailookme.com)  *** 
 + [极客时间 AIGC 知识库](https://gp477l8icq.feishu.cn/wiki/JUXnwzSuviL5E9kh6jUc8FRinHe) *** 
 
-## 思维导图
+# 思维导图
 [albus](https://albus.org/)
 
-## 文档分析&科研
+# 文档分析&科研
 
 + 在线文档分析 
   Microsoft Edge Dev + new Bing  ***
@@ -44,11 +47,11 @@ categories:
   - [Chat with documents](https://chatdoc.com/)
   - [阅读文档的好帮手](https://chat2doc.cn/)  免费
 
-##  客户端
+#  客户端
 + ChatGPT 客户端
  windows， mac
 
-## Chrome plugin
+# Chrome plugin
 + WebChatGPT[instatlled]
 
 + AIPRM for ChatGPT[instatlled]
@@ -64,7 +67,7 @@ categories:
   [openai-translator](https://github.com/yetone/openai-translator)
   要注册账号, 需要api token
 
-## 创业
+# 创业
 
 + [GPT-3 Demo](https://gpt3demo.com/map)
   - 聊天机器人
@@ -73,7 +76,10 @@ categories:
   - 游戏
                 
 
-## 学习资料
+# 学习资料
+### Chatgpt
 [ChatGPT 从 0 到 1](https://time.geekbang.org/opencourse/videointro/100541101)  基础
 [ChatGPT 和预训练模型实战课](https://time.geekbang.org/opencourse/videointro/100541201) 
-                                
+
+### Code
+[GitHub Copilot 实践课](https://time.geekbang.org/opencourse/videointro/100540901)                                

@@ -12,6 +12,17 @@ categories:
 <!-- more -->
 
 
+
+## 目录
+<!-- toc -->
+
+
+# 工具
++ Copilot ***
++ AWS CodeWhispter
++ Cursor
++ tabnine 免费
+
 # 代码相关-简单任务 [1]
 
 + **注释**  
@@ -84,7 +95,7 @@ category(int)
 1. [【ChatGPT】面向程序员的ChatGPT使用教程38种方式来提升生产力](https://www.bilibili.com/video/BV1Z84y1G7nY/) V
 2. [GitHub Copilot 实践课](https://time.geekbang.org/opencourse/videointro/100540901) 
    03, 04, 06
+   [AICoder](https://github.com/www6v/AICoder) git
 100. [Top 20 ChatGPT Prompts For Software Developers](https://www.geeksforgeeks.org/chatgpt-prompts-for-software-developers/) 未
 
-# 学习资源
-[GitHub Copilot 实践课](https://time.geekbang.org/opencourse/videointro/100540901)
+
