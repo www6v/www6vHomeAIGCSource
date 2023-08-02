@@ -353,4 +353,14 @@ DC2机房业务客户端自动故障切换：
 - [同城双活-Redis篇](https://www.modb.pro/db/37775)
 - [饿了么实时双向复制工具](https://zhuanlan.zhihu.com/p/34958596)
 
+--------
+
 - [CKV+异地容灾探索和实践](https://zhuanlan.zhihu.com/p/449398741) *** 未
+
+- [干货 | 携程Redis跨IDC多向同步实践](https://mp.weixin.qq.com/s/jb_NnI6pnvJ2eWO6HUrWHg) 未
+- [干货 | 五大实例详解，携程 Redis 跨机房双向同步实践](https://mp.weixin.qq.com/s/54RX6nSGLBZJxQoaADf6Jw) 未
+
+- [阿里云数据库全新功能Redis读写分离，全维度技术解析](https://mp.weixin.qq.com/s/trFXXlrel0RmTOCCZjmsWQ) 未
+- [企业打开Redis的正确方式，来自阿里云云数据库团队的解读](https://mp.weixin.qq.com/s/LA7EaOnaxKjBSTOoCKJSmQ) 未
+  Figure 2：Redis异地多活架构方案示意图
+- https://github.com/ctripcorp/x-pipe  未
