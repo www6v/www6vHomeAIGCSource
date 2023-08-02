@@ -91,7 +91,16 @@ Qualitative research is characterized by its emergent and flexible nature, nonra
 定性研究的特点包括其不断涌现和灵活性，非随机和有目的性的样本选择，以及在自然环境中投入大量时间。定性研究的研究者需要具备一定的能力，如对模糊性的高容忍度，细致的观察技巧，善于提出问题，归纳思维能力和撰写报告的能力。这些能力对于有效进行定性研究并以全面的方式呈现研究结果至关重要。
 
 
+## 1.5. Six Common Qualitative Research Designs
+There are various approaches and designs within qualitative research, with authors proposing different classifications. Six common qualitative research designs include basic qualitative research, phenomenology, grounded theory, ethnography, narrative analysis, and qualitative case study. These designs share common attributes but have distinct focuses and variations in research question formulation, sample selection, data collection and analysis, and reporting. Researchers may also combine multiple designs, such as in an ethnographic case study.
 
 
+在定性研究中，存在着各种不同的方法和设计，不同的作者提出了不同的分类方式。其中六种常见的定性研究设计包括基础定性研究、现象学、扎根理论、民族志学、叙事分析和定性案例研究。这些设计具有共同的特点，但在研究问题的制定、样本选择、数据收集和分析以及报告方面存在着不同的重点和变化。研究者也可以结合多种设计，例如在民族志案例研究中。
 
+
+### 1.5.1. Basic Qualitative Research
+Basic qualitative research is the most common type of qualitative research in applied fields such as education, administration, health, social work, counseling, and business. It is characterized by a constructivist approach, where researchers aim to understand the meaning a phenomenon holds for those involved in it. The focus is on how individuals interpret their experiences, construct their world, and attribute meaning to their experiences. Data collection methods include interviews, observations, and document analysis. The analysis involves identifying recurrent patterns in the data, and the interpretation is based on the researcher's understanding of the participants' perspectives. The main goal of basic qualitative research is to uncover and interpret the constructed meanings of individuals' lives and worlds.
+
+
+在教育、行政管理、健康、社会工作、咨询和商业等应用领域，基础定性研究是最常见的定性研究类型。它以建构主义方法为特点，研究人员旨在理解现象对相关参与者的意义。研究关注个体如何解释他们的经历、构建他们的世界，并赋予经历以意义。数据收集方法包括访谈、观察和文件分析。分析过程涉及识别数据中的重复模式，并根据研究人员对参与者观点的理解进行解释。基础定性研究的主要目标是揭示和解释个体生活和世界中构建的意义。
 
