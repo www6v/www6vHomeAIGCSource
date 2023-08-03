@@ -33,16 +33,20 @@ categories:
   阿里提出： 大中台， 小前台
 
 #  业务中台
-###  技术中台 [1][2][3]
-
-{% asset_img   middleStage-it.jpg  技术中台 %}
-
 ###  业务中台
+
++ 阿里共享服务 [6]
+  淘宝 天猫  **共享** 商品，交易，店铺等服务
+{% asset_img   middleStage-biz-ali.jpeg  业务中台 %}
+
+
 + 京东业务中台 [5]
 {% asset_img   middleStage-biz.jpeg  业务中台 %}
 
-+ 阿里共享服务 [6]
-{% asset_img   middleStage-biz-ali.jpeg  业务中台 %}
+
+###  技术中台 [1][2][3]
+
+{% asset_img   middleStage-it.jpg  技术中台 %}
 
 # 数据中台
 ### 数据中台全景 
@@ -61,5 +65,4 @@ categories:
 5. [中小型电商相当适配：京东商城系统架构设计原则精炼](https://www.sohu.com/na/465557053_411876)
 6. [一文读懂数据中台架构体系](https://www.esensoft.com/industry-news/dx-24039.html) *** 
 7. [数据中台各种架构图](https://xie.infoq.cn/article/8147ffdb15528ce08008d8100)
-
 
