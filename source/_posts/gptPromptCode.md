@@ -20,7 +20,7 @@ categories:
 # 工具
 + Copilot ***
 + AWS CodeWhispter
-+ Cursor
++ Cursor ***
 + tabnine 免费
 
 # 代码相关-简单任务 [1]
@@ -89,6 +89,7 @@ category(int)
 
 + CronJob [2]
 
++ K8s
 
 
 # 参考   
@@ -96,6 +97,8 @@ category(int)
 2. [GitHub Copilot 实践课](https://time.geekbang.org/opencourse/videointro/100540901) 
    03, 04, 06
    [AICoder](https://github.com/www6v/AICoder) git
+3. [ChatGPT 帮我跑了一个完整的 DevOps 流水线，离了个大谱...](https://cloud.tencent.com/developer/article/2207540)
+   [Gin on K8s](https://github.com/www6v/AICoder/tree/master/Cursor/) git
 100. [Top 20 ChatGPT Prompts For Software Developers](https://www.geeksforgeeks.org/chatgpt-prompts-for-software-developers/) 未
 
 
