@@ -92,6 +92,15 @@ category(int)
 + K8s
 
 
+## 编程语言 vs 自然语言
+| 语言类型     | 执行原理                                            |
+| ------------ | --------------------------------------------------- |
+| C++语言      | C++语言 --> 编译器/链接器 --> 既定任务              |
+| Java语言     | Java语言 --> 编译器/虚拟机 --> 既定任务             |
+| Python语言   | Python语言 --> 解释器 --> 既定任务                  |
+| 人类自然语言 | 人类自然语言 --> LLMs --> 各种后端组件 --> 既定任务 |
+
+
 # 参考   
 1. [【ChatGPT】面向程序员的ChatGPT使用教程38种方式来提升生产力](https://www.bilibili.com/video/BV1Z84y1G7nY/) V
 2. [GitHub Copilot 实践课](https://time.geekbang.org/opencourse/videointro/100540901) 
@@ -100,5 +109,10 @@ category(int)
 3. [ChatGPT 帮我跑了一个完整的 DevOps 流水线，离了个大谱...](https://cloud.tencent.com/developer/article/2207540)
    [Gin on K8s](https://github.com/www6v/AICoder/tree/master/Cursor/) git
 100. [Top 20 ChatGPT Prompts For Software Developers](https://www.geeksforgeeks.org/chatgpt-prompts-for-software-developers/) 未
+
+
+
+  ```
+
 
 
