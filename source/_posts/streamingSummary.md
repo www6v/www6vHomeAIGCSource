@@ -39,8 +39,12 @@ top: true
 # Beam
 + {% post_link 'streamingBeam' %}
 
+# 批流一体
++ {% post_link 'streamingBatchIntegration' %}
+
 # 总结
 + {% post_link 'streamComputing' %}
+
 
 
 

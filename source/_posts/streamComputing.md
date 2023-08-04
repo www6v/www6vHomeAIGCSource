@@ -89,6 +89,6 @@ Windows[Where] | Tumbling<br> Sliding <br> Session| Sliding <br> batchDuration,w
 1. [Apache Flink状态管理和容错机制介绍](https://www.iteblog.com/archives/2417.html)
 2. [Streaming System 第二章：The What- Where- When- and How of Data Processing](https://yq.aliyun.com/articles/674450) 未
 3. [Streaming System 第三章：Watermarks](https://yq.aliyun.com/articles/682873) 未
-4. [大数据架构如何做到流批一体？](https://yq.aliyun.com/articles/706954) 未
+4. xxx
 5. <<Spark大数据处理技术>> 10.2节
 6. [Apache Beam是什么？](https://www.cnblogs.com/zlslch/p/7609417.html)
