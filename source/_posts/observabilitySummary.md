@@ -14,6 +14,7 @@ top: true
 
 ### Overview
 + {% post_link 'observability' %}
++ {% post_link 'observabilityBuilding' %}
 
 ### 统一模型
 + {% post_link 'observabilityOpenTelemetry' %}
