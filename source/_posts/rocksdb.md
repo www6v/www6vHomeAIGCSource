@@ -96,3 +96,6 @@ LSM-Tree 的读操作需要从新到旧（从上到下）一层一层查找，�
 4. [LSM-Tree 的写放大写放大、读放大、空间放大RockDB 写放大简单分析参考文档](https://cloud.tencent.com/developer/article/1352666?ivk_sa=1024320u)
 5. {% post_link 'rocksdbLsm'  %} self
 100. [字节跳动在 RocksDB 存储引擎上的改进实践](https://www.infoq.cn/article/u3leu3EmGJjWflQLtJHs) *** 未
+101. [Rocksdb 调优指南](https://www.cnblogs.com/lygin/p/17158774.html) 像是翻译 未
+102. [深入RocksDB原理](https://zhuanlan.zhihu.com/p/616209332) *** 未
+103. [【读读论文】RocksDB 发展回顾及展望 ](https://gaomf.cn/2021/11/28/Paper_RocksDB_Developemnt/)  论文 未
