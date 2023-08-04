@@ -2,13 +2,20 @@
 title: Zookeeper-总结
 date: 2015-03-26 22:22:29
 tags:
+  - Zookeeper
+categories:
+  - 中间件 
+  - Zookeeper
 ---
 
+<p></p>
+<!-- more -->
 
 
 
 
-
+## 目录
+<!-- toc -->
 
 #  读/写流程 [1]
 ###  写流程
@@ -32,7 +39,16 @@ HDFS NameNode HA
 ### 分布式锁
 案例比较少
 
-## 参考
+
+# 实现高可用 [2]
+### 主备切换
+
+### 集群选举
++ 最小节点获胜
++ 抢建唯一节点
++ 法官判决
+
+# 参考
 1. [深入浅出Zookeeper（一） Zookeeper架构及FastLeaderElection机制 ](http://www.jasongj.com/zookeeper/fastleaderelection/) *** 
 2. [浅析如何基于ZooKeeper实现高可用架构｜得物技术](https://www.jianshu.com/p/9ce2600dd139) 
 100. [ZooKeeper 核心通识](https://zhuanlan.zhihu.com/p/571732977) 未
