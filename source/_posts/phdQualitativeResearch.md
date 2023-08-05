@@ -104,3 +104,11 @@ Basic qualitative research is the most common type of qualitative research in ap
 
 在教育、行政管理、健康、社会工作、咨询和商业等应用领域，基础定性研究是最常见的定性研究类型。它以建构主义方法为特点，研究人员旨在理解现象对相关参与者的意义。研究关注个体如何解释他们的经历、构建他们的世界，并赋予经历以意义。数据收集方法包括访谈、观察和文件分析。分析过程涉及识别数据中的重复模式，并根据研究人员对参与者观点的理解进行解释。基础定性研究的主要目标是揭示和解释个体生活和世界中构建的意义。
 
+### 1.5.2. Phenomenology
+Phenomenology is a philosophy that underlies qualitative research, focusing on the experience itself and how it transforms into consciousness. It is interested in our "lived experience" rather than categorizing and simplifying phenomena. Phenomenological research is based on the assumption that there is an essence to shared experiences. The key task of a phenomenologist is to depict the essence or basic structure of a phenomenon, suspending prior beliefs to avoid interference. The study begins with a phenomenological interview, with the researcher exploring their own experiences to become aware of personal biases. The process of epoche, or refraining from judgment, is commonly undertaken by researchers. Other strategies unique to phenomenological research include phenomenological reduction, horizontalization, and imaginative variation. The end product is a composite description presenting the 'essence' of the phenomenon. There are variations in how a phenomenological study is conducted.
+
+
+现象学是一种哲学，它是定性研究的基础，关注的是经验本身以及它如何转化为意识。它对我们的"生活经验"感兴趣，而不是对现象进行分类和简化。现象学研究基于一个假设，即共享经验有其本质。现象学家的主要任务是描绘现象的本质或基本结构，暂停先前的信念以避免干扰。研究开始于现象学访谈，研究者探索自己的经验以意识到个人偏见。研究者通常会进行的过程包括epoche，即避免判断。现象学研究的其他独特策略包括现象学还原，横向化和想象变化。最终的产品是呈现现象'本质'的综合描述。现象学研究的进行方式有多种变化。
+
+
+
