@@ -18,6 +18,7 @@ categories:
 
 # 参考
 [vivo 服务端监控体系建设实践](https://zhuanlan.zhihu.com/p/594928812) ***
+[vivo 容器集群监控系统架构与实践](https://zhuanlan.zhihu.com/p/529671344)
 
 
 

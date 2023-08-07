@@ -30,9 +30,10 @@ categories:
 
 # 参考
 1. [什么是数据湖？](https://aws.amazon.com/cn/big-data/datalakes-and-analytics/what-is-a-data-lake/) AWS
-100. [[数据湖] 基于flink hudi的批流一体实践](https://zhuanlan.zhihu.com/p/523028640) 未
-101. [美团外卖实时数仓建设实践](https://tech.meituan.com/2021/08/26/data-warehouse-in-meituan-waimai.html) 未
-102. [大数据架构如何做到流批一体？](https://developer.aliyun.com/article/706954) 未
+2. [[数据湖] 基于flink hudi的批流一体实践](https://zhuanlan.zhihu.com/p/523028640) 腾讯 未
+3. [美团外卖实时数仓建设实践](https://tech.meituan.com/2021/08/26/data-warehouse-in-meituan-waimai.html)  美团 未
+4. [大数据架构如何做到流批一体？](https://developer.aliyun.com/article/706954) 未
+5. [vivo 实时计算平台建设实践](https://zhuanlan.zhihu.com/p/594928870)  vivo 未
 
 
 
