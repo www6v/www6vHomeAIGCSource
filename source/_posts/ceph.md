@@ -1,5 +1,5 @@
 ---
-title: Ceph
+title: Ceph 总结
 date: 2022-01-08 21:50:33
 tags:
   - 存储
@@ -12,7 +12,10 @@ categories:
 <p></p>
 <!-- more -->
 
-## ceph架构图
+## 目录
+<!-- toc -->
+
+## Ceph架构图
 {% asset_img   ceph-arch.png   ceph架构图 %}
 
 {% asset_img   ceph-arch1.png   ceph架构图 %}
@@ -88,7 +91,7 @@ categories:
 
 ## ceph支持的存储接口[7]
 {% asset_img   ceph-interface.png     ceph支持的存储接口 %}
- 
+
 
 ## 部署 & 工具
 + ceph ansible
