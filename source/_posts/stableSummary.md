@@ -18,7 +18,7 @@ top: true
 ## 总结
 + {% post_link  'stability' %}
 + {% post_link  'ratelimit' %}
-  - {% post_link  'Hystrix' %}
+  - {% post_link  'soaTolerateFramework' %}
   - {% post_link  'ratelimitSentinel' %}
 - [系统架构](../../../../categories/架构/系统架构/)  category
   + {% post_link  'available' %} 

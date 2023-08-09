@@ -25,10 +25,10 @@ categories:
 
 | 产品    | 技术                 |
 | ------- | -------------------- |
-| apisix[4]  | lua + Nginx          |
+| {% post_link  'apiGatawayApisix'  apisix%} self | lua + Nginx          |
 | Kong    | lua + Nginx          |
 | Zuul    | Spring Cloud Netflix |
-| Gateway[5] | Spring Cloud         |
+| {% post_link  'apiGatawaySpringGateway' Gateway %} self | Spring Cloud         |
 | Traefik | Golang               |
 
 
@@ -36,6 +36,4 @@ categories:
 + 1.[使用 API 网关构建微服务](https://www.infoq.cn/article/construct-micro-service-using-api-gateway/)
 + 2.[百亿规模API网关服务Shepherd的设计与实现](https://tech.meituan.com/2021/05/20/shepherd-api-gateway.html) 点评 未
 + 3.{% post_link 'k8sIngressNginx' %} self
-+ 4.{% post_link  'apiGatawayApisix' %} self
-+ 5.{% post_link  'apiGatawaySpringGateway' %} self
 

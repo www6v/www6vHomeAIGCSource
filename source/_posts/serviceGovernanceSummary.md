@@ -27,8 +27,8 @@ top: true
 
 ### 非功能性
 + {% post_link 'soaTolerate' %}
-+ {% post_link 'Hystrix' %}
-+ {% post_link 'timeout' %}
++ {% post_link 'soaTolerateFramework' %}
++ {% post_link 'soaTimeout' %}
 
 
 

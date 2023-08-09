@@ -95,7 +95,7 @@ categories:
 			- 压测 + 容量规划
 			- 熔断 && 降级
 参考: 
-15. {% post_link 'Hystrix' %}  self 
+15. {% post_link 'soaTolerateFramework' %}  self 
 16. {% post_link 'stability' %}  self
 
 ###	业务线程池满
