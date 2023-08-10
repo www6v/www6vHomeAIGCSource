@@ -92,6 +92,9 @@ category(int)
 + K8s
 
 
+# 运维 Ops [4]
+
+
 ## 编程语言 vs 自然语言
 | 语言类型     | 执行原理                                            |
 | ------------ | --------------------------------------------------- |
@@ -108,6 +111,7 @@ category(int)
    [AICoder](https://github.com/www6v/AICoder) git
 3. [ChatGPT 帮我跑了一个完整的 DevOps 流水线，离了个大谱...](https://cloud.tencent.com/developer/article/2207540)
    [Gin on K8s](https://github.com/www6v/AICoder/tree/master/Cursor/) git
+4. [PromptOps](https://www.promptops.com/)    
 100. [Top 20 ChatGPT Prompts For Software Developers](https://www.geeksforgeeks.org/chatgpt-prompts-for-software-developers/) 未
 
 

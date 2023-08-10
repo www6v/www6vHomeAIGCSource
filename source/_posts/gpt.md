@@ -18,7 +18,9 @@ categories:
 + 国外
   [Poe](https://poe.com/ChatGPT) ***
 + 国内
-  [ChatGPT使用指南！](https://www.feijix.com/n/y0BnXI) *** 
+  [实战云](https://saas.edu360.cn/system/chatgpt) gpt3.5  gpt4
+  [ChatGPT使用指南！](https://www.feijix.com/n/y0BnXI)   *** 
+  [灵犀百通](https://www.1888ai.com/base/chat)  gpt3.5
 
 # Tools & Mix
 + GPT学习宝典
@@ -41,10 +43,13 @@ categories:
 
 + [AI 工具箱](https://www.ailookme.com)  *** 
 
-# 思维导图
++ [ChatGPT Tutorial 101](https://gptdoc.sparkai.chat/)
+
+# 细分
+### 思维导图
 [albus](https://albus.org/)
 
-# 文档分析&科研
+### 文档分析&科研
 
 + 在线文档分析 
   Microsoft Edge Dev + new Bing  ***
@@ -53,12 +58,23 @@ categories:
   Skype + new Bing  ***
 
 + 本地文档分析
-  - chatpdf  收费  ***
-    [Chat with any PDF](https://www.chatpdf.com/) 总结文献
-  - [ChatPaper](https://chatpaper.org/)  中文
-    [ChatPaper](https://github.com/kaixindelele/ChatPaper) git
-  - [Chat with documents](https://chatdoc.com/)
-  - [阅读文档的好帮手](https://chat2doc.cn/)  免费
+  - VPN
+    - chatpdf  收费  ***
+      [Chat with any PDF](https://www.chatpdf.com/) 总结文献
+    - [Chat with documents](https://chatdoc.com/)
+
+  - 非VPN
+    - [ChatPaper](https://chatpaper.org/)  Paper 中文
+      [ChatPaper](https://github.com/kaixindelele/ChatPaper) git
+    - [阅读文档的好帮手](https://chat2doc.cn/)  收费
+    - [LightPDF AI Tools](https://lightpdf.com/chatdoc) *** 
+    - [docalysis](https://docalysis.com/files/hwylw4) *** 
+
+### 视频
+[BibiGPT](https://b.jimmylv.cn/)
+
+### 英语
+[callannie](https://callannie.ai/signin)
 
 #  客户端
 + ChatGPT 客户端
