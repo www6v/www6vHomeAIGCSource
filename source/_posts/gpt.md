@@ -1,5 +1,5 @@
 ---
-title: chatGPT
+title: ChatGPT 总结
 date: 2022-05-09 22:46:01
 tags:
   - AI
@@ -72,6 +72,7 @@ categories:
 
 ### 视频
 [BibiGPT](https://b.jimmylv.cn/)
+[Youtube tools](https://crucible.docnavigator.in/)
 
 ### 英语
 [callannie](https://callannie.ai/signin)
