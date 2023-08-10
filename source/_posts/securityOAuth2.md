@@ -12,18 +12,25 @@ categories:
 <!-- more -->
 
 
-# OAuth 2.0  授权类型 [1]
+## 目录
+<!-- toc -->
 
-+ [Authorization Code](https://oauth.net/2/grant-types/authorization-code/) 授权码 ***
+# OAuth 2.0  授权类型 [1][4]
 
-+ [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)
++ 授权码模式-用的多
+ [Authorization Code](https://oauth.net/2/grant-types/authorization-code/) 授权码 ***
+
++ 客户端模式
+  [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)
 
   The Client Credentials grant is used when applications request an access token to access their own resources, **not on behalf of a user**.
 
-+ [Refresh Token](https://oauth.net/2/grant-types/refresh-token/)  *** 
++ xxx
+  [Refresh Token](https://oauth.net/2/grant-types/refresh-token/)  *** 
   动态token
   
-+ Legacy: [Password Grant](https://oauth.net/2/grant-types/password/)
++ 密码模式-Legacy
+  [Password Grant](https://oauth.net/2/grant-types/password/)  
 
 # 基于OAuth2 的微服务参考架构 [3]
 
@@ -94,3 +101,4 @@ OAuth2 提供了**Access Token**来解决授权第三方客户端访问受保护
 1. [10 分钟理解什么是 OAuth 2.0 协议](https://deepzz.com/post/what-is-oauth2-protocol.html) ***
 2. [OAuth2.0 + OIDC 技术规范及应用场景](http://koca.szkingdom.com/forum/t/topic/139) ***
 3. <<12 | 架构案例：基于OAuth 2.0/JWT的微服务参考架构>>  杨波 ***
+4. [OAuth2.0的四种模式测试](https://java-family.cn/#/OAuth2.0/04-四种授权模式演示?id=oauth20的四种模式测试)
