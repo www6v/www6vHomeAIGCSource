@@ -32,7 +32,7 @@ categories:
 + 密码模式-Legacy
   [Password Grant](https://oauth.net/2/grant-types/password/)  
 
-# 基于OAuth2 的微服务参考架构 [3]
+# 基于OAuth2 的微服务 参考架构 [3]
 
 ### Overview
 
@@ -54,15 +54,38 @@ JWT 令牌颁发和管理，以及用户认证等功能。IDP 使用后台的 Lo
 ### 各大开放平台是如何使用 OAuth 2.0 的 [2]
 {%   asset_img   wechat-oauth2.jpg  微信   %}
 
+###  网关集成OAuth2.0 [5]
+{%   asset_img   gateway-oauth2.png     %}
+
 
 # OIDC [2]
 {%   asset_img   OIDC.jpg   %}
+
+### 什么是 OIDC
++ 什么是 OIDC？
+	- EU：End User
+	- RP：Relying Party
+	- OP：OpenID Provider
+	- ID Token
+	- UserInfo Endpoint
 
 OIDC 是 OpenID Connect 的简称，OIDC=(Identity, Authentication) + OAuth 2.0。它在 OAuth2 上构建了一个身份层，是一个基于 OAuth2 协议的身份认证标准协议。OAuth2 是一个授权协议，它无法提供完善的身份认证功能，OIDC 使用 OAuth2 的授权服务器来为第三方客户端提供用户的身份认证，并把对应的身份认证信息传递给客户端.
 
 OAuth2 提供了**Access Token**来解决授权第三方客户端访问受保护资源的问题；OIDC 在这个基础上提供了**ID Token** 来解决第三方客户端标识用户身份认证的问题。
 
+### OIDC 核心概念
++  OIDC 核心概念
+	- 主要术语
+	- OIDC 工作流程
+	- ID Token
+	- 认证
+		基于 Authorization Code 的认证请求
+		获取 ID Token
+		Implicit Flow 和 Hybrid Flow
+	- UserInfo Endpoint
 
+
+### OIDC 式例
 {% details  OIDC 式例 %}
 + 请求示例：
   POST /auth/realms/ccm/protocol/openid-connect/token HTTP/1.1
@@ -97,8 +120,10 @@ OAuth2 提供了**Access Token**来解决授权第三方客户端访问受保护
 
 {% enddetails  %}
 
-## 参考
+# 参考
 1. [10 分钟理解什么是 OAuth 2.0 协议](https://deepzz.com/post/what-is-oauth2-protocol.html) ***
 2. [OAuth2.0 + OIDC 技术规范及应用场景](http://koca.szkingdom.com/forum/t/topic/139) ***
 3. <<12 | 架构案例：基于OAuth 2.0/JWT的微服务参考架构>>  杨波 ***
 4. [OAuth2.0的四种模式测试](https://java-family.cn/#/OAuth2.0/04-四种授权模式演示?id=oauth20的四种模式测试)
+5. [07  网关集成OAuth2.0实现统一认证鉴权](https://java-family.cn/#/OAuth2.0/07-Spring-Cloud-Gateway%E9%9B%86%E6%88%90OAuth2.0)  代码
+
