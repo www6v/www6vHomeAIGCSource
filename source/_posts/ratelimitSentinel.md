@@ -1,11 +1,11 @@
 ---
-title: 限流-Sentinel
+title: 流量治理-Sentinel
 date: 2022-03-28 16:06:26
 tags:
-  - 限流  
+  - 流量治理  
 categories: 
-  - 稳定性  
-  - 限流  
+  - 服务治理
+  - 流量治理  
 ---
 
 

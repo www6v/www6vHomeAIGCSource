@@ -36,14 +36,21 @@ top: true
 ### 线程模型
 + {% post_link 'jsfThreadModel' %}
 
-### 容错
+### 容错&限流
 + {% post_link 'soaTolerate' %}
 + {% post_link 'soaTolerateFramework' %}
++ {% post_link  'ratelimit' %}
++ {% post_link  'ratelimitSentinel' %}
 + {% post_link 'soaTimeout' %}
 
 ## 安全
 + {% post_link 'soaAuth' %}
 + {% post_link 'securityOAuth2' %}
+
+
+
+
+
 
 
 
