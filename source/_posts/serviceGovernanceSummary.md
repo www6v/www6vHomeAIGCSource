@@ -26,8 +26,12 @@ top: true
 + {% post_link 'apiGatawaySpringGateway' %}
 + {% post_link 'apiGatewayGray' %}
 
-### Config
+
+
+### Config & Discovery
+
 + {% post_link 'config' %}
++ {% post_link 'soaDiscovery' %} 
 
 ### 负载均衡
 - {% post_link 'loadBalance' %}
@@ -48,6 +52,8 @@ top: true
 ## 安全
 + {% post_link 'soaAuth' %}
 + {% post_link 'securityOAuth2' %}
+
+
 
 
 

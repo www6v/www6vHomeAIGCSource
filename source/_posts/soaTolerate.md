@@ -17,6 +17,16 @@ categories:
 
 **关键词**： 容错, 降级, 隔离, 超时, 重试, 高可用, 监控, 开关
 
+
+# Overview
+   + 超时重试机制[self 1][self 2]
+   + 限流
+   + 熔断机制
+   + 隔离
+   + 降级（本地缓存）
+   + 流量调度、负载均衡
+     [微服务熔断与隔离](https://yq.aliyun.com/articles/7443?spm=5176.100238.yqhn2.2.XS3jCO)
+      
 # 降级
 
 **降级策略**   | 场景 |实现
@@ -109,3 +119,6 @@ categories:
 
 
 # 参考
+## self
+1.  {% post_link 'soaTolerate' %} self
+2.  {% post_link 'soaTimeout' %} self

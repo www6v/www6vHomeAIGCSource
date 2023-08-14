@@ -20,28 +20,14 @@ In short, the microservice architectural style [1] is an approach to developing 
 
 #  微服务相关的问题
 ###  API网关  
-+ {% post_link 'apiGateway'  %}  self
-      
+{% post_link 'serviceGovernanceSummary'  %}  self     
 
 ###  服务容错
-   + 超时重试机制[self 1][self 2]
-   + 限流
-   + 熔断机制
-   + 隔离
-   + 降级（本地缓存）
-   + 流量调度、负载均衡
-      [微服务熔断与隔离](https://yq.aliyun.com/articles/7443?spm=5176.100238.yqhn2.2.XS3jCO)
+{% post_link 'serviceGovernanceSummary'  %}  self
+
 
 ###  服务注册和发现
-<div style="text-align: center;">
-
-![service-find](https://user-images.githubusercontent.com/5608425/66263484-fa29fb00-e825-11e9-83aa-47bcb97d7580.png)
-服务注册和发现
-</div>
-
-模式
-+ Client-side Discovery  
-+ Server-side Discovery patterns
+{% post_link 'serviceGovernanceSummary'  %}  self
 
 ###  服务间调用
    [Micro Service Architecture](https://yobriefca.se/blog/2013/04/29/micro-service-architecture/)
@@ -181,8 +167,8 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 # 参考
 1. [Introduction to Microservices](https://www.nginx.com/blog/introduction-to-microservices/)  英文  
 2. [Introduction to Microservices](https://kb.cnblogs.com/page/521880/)  中文  优缺点
-3. [微服务（Microservice）那点事](https://yq.aliyun.com/articles/2764?spm=5176.100239.blogcont59193.8.R9MzN9) good
-4. [Pattern: Microservice Architecture](https://microservices.io/patterns/microservices.html)  good
+3. [微服务（Microservice）那点事](https://yq.aliyun.com/articles/2764?spm=5176.100239.blogcont59193.8.R9MzN9) ***
+4. [Pattern: Microservice Architecture](https://microservices.io/patterns/microservices.html)  ***
 5. [一致性](../../../2016/02/09/consistent/)  self
 6. [微服务：分解应用以实现可部署性和可扩展性](http://www.infoq.com/cn/articles/microservices-intro)  Chris Richardson
 7. [《Linux/Unix设计思想》随笔 ——Linux/Unix哲学概述](https://www.cnblogs.com/suter/p/3401952.html)  未
@@ -192,9 +178,7 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 11. [云原生时代，分布式系统设计必备知识图谱（内含22个知识点）](https://mp.weixin.qq.com/s?__biz=MzUzNzYxNjAzMg==&mid=2247486600&idx=1&sn=0ad92a1fe535f141fe2e8c87ffbd1229&chksm=fae50747cd928e51c05c41d2cc206069babbe9dfdba5957c52ac6e77cb754192169bb6b3e898&scene=0&xtrack=1#rd) 杨泽强（竹涧） ***
 12. [使用托管服务网格实现应用在多集群中的 GitOps 全自动化渐进式发布](https://www.servicemesher.com/blog/202003-gitops-progressive-delivery-with-asm/)  郝树伟 阿里云容器服务
 
-## self
-1. [分布式服务框架容错机制](../../../../2015/06/17/soaTolerate/) self
-2. [超时和重试总结](../../../../2016/01/17/timeout/) self
+
 
 
 
