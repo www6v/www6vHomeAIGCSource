@@ -18,7 +18,7 @@ categories:
 
 In short, the microservice architectural style [1] is an approach to developing a single application as a suite of **small services**, **each running in its own process** and **communicating with lightweight mechanisms**, often an HTTP resource API. These services are built around business capabilities and **independently deployable** by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.   --  [Martin Fowler]
 
-#  微服务相关的问题
+#  Core
 ###  API网关  
 {% post_link 'serviceGovernanceSummary'  %}  self     
 
@@ -63,18 +63,7 @@ In short, the microservice architectural style [1] is an approach to developing 
 + Multiple Services per Host patterns
 
 
-###   可观察性
-   [鹰眼跟踪、限流降级，EDAS的微服务解决之道](https://yq.aliyun.com/articles/60994?spm=5176.100239.blogcont61320.29.6SwFH6)
-   [可观察性](../../../../2019/08/31/observability/) self
-
-   <div style="text-align: center;">
-
-   ![apm-fault](https://user-images.githubusercontent.com/5608425/66256533-43942f00-e7c1-11e9-8fe8-80565025c792.png)
-   APM 故障
-   ![apm-tracing](https://user-images.githubusercontent.com/5608425/66256535-4727b600-e7c1-11e9-82c9-cd2222fce9bb.png)
-   APM 稳定性
-   </div>
-
+# Design
 ###   服务划分和组合
 
 > 微服务不是指"微小"的服务, 而是如何"拆分"服务,然后"组合"服务.
@@ -91,7 +80,7 @@ In short, the microservice architectural style [1] is an approach to developing 
     比如：电商的商品服务， 目录服务， 订单服务
 
 
-#  微服务设计模式 
+#  Design-微服务设计模式 
 ###  Overview     
 {% asset_img  'MicroservicePatternLanguage.jpg' %}
 
@@ -178,12 +167,7 @@ Smart endpoints and dumb pipes（强服务个体和轻量级通信）; 可组合
 11. [云原生时代，分布式系统设计必备知识图谱（内含22个知识点）](https://mp.weixin.qq.com/s?__biz=MzUzNzYxNjAzMg==&mid=2247486600&idx=1&sn=0ad92a1fe535f141fe2e8c87ffbd1229&chksm=fae50747cd928e51c05c41d2cc206069babbe9dfdba5957c52ac6e77cb754192169bb6b3e898&scene=0&xtrack=1#rd) 杨泽强（竹涧） ***
 12. [使用托管服务网格实现应用在多集群中的 GitOps 全自动化渐进式发布](https://www.servicemesher.com/blog/202003-gitops-progressive-delivery-with-asm/)  郝树伟 阿里云容器服务
 
-
-
-
-
-
-​             
+        
 
 
 

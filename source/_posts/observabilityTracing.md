@@ -11,13 +11,25 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
 
-##  APM 产品
-{% asset_img  apm1.JPG   APM产品比对 [5] %}
+#  APM 产品
+### APM产品比对 [5]
+{% asset_img  apm1.JPG    %}
 
-{% asset_img  apm.JPG   APM产品比对 [6] %}
+### APM产品比对 [6]
+{% asset_img  apm.JPG    %}
 
-## 参考
+# 使用 [9]
+###   APM 故障排查
+   ![apm-fault](https://user-images.githubusercontent.com/5608425/66256533-43942f00-e7c1-11e9-8fe8-80565025c792.png)
+      
+###    APM 稳定性指标
+   ![apm-tracing](https://user-images.githubusercontent.com/5608425/66256535-4727b600-e7c1-11e9-82c9-cd2222fce9bb.png)
+   
+   
+# 参考
 ##### 标准&原理
 1. [OpenTracing语义标准](https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md)  archived
 2. [opentracing文档中文版](https://wu-sheng.gitbooks.io/opentracing-io/content/pages/spec.html) archived
@@ -32,3 +44,13 @@ categories:
 
 ##### 使用
 8. [如何检测 Web 服务请求丢失问题](https://mp.weixin.qq.com/s/QA_BTF1D3GJJ7_nYQ6oAzQ) 问题排查 应用： Nginx tracing + Tomcat tracing
+9.   [鹰眼跟踪、限流降级，EDAS的微服务解决之道](https://yq.aliyun.com/articles/60994?spm=5176.100239.blogcont61320.29.6SwFH6)
+
+
+
+
+
+
+
+
+

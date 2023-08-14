@@ -37,6 +37,6 @@ categories:
 3. [如何在MQ中实现支持任意延迟的消息？](https://www.cnblogs.com/hzmark/p/mq-delay-msg.html)
 4. [延迟任务的实现总结](https://www.cnblogs.com/haoxinyue/p/6663720.html)  nick hao
 5. [rocketMq-延迟消息介绍](https://www.jianshu.com/p/33aa208ea058)   晴天哥_王志 *
-6. [RPC实战与核心原理进 - 20 | 详解时钟轮在RPC中的应用]()   何小锋
+6. 《20 | 详解时钟轮在RPC中的应用》 何小锋
 7. [时间轮原理及其在框架中的应用](https://zhuanlan.zhihu.com/p/488730353)  未
    Dubbo 心跳检测 
