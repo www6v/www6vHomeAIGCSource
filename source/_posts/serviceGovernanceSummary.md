@@ -42,6 +42,7 @@ top: true
 + {% post_link  'ratelimit' %}
 + {% post_link  'ratelimitSentinel' %}
 + {% post_link 'soaTimeout' %}
++ {% post_link 'soaGracefulStart' %} 
 
 ## 安全
 + {% post_link 'soaAuth' %}
