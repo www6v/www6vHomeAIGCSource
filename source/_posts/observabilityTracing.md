@@ -14,6 +14,9 @@ categories:
 ## 目录
 <!-- toc -->
 
+# 原理 [0]
+{% asset_img   tracing.JPG   %}
+
 #  APM 产品
 ### APM产品比对 [5]
 {% asset_img  apm1.JPG    %}
@@ -27,10 +30,11 @@ categories:
       
 ###    APM 稳定性指标
    ![apm-tracing](https://user-images.githubusercontent.com/5608425/66256535-4727b600-e7c1-11e9-82c9-cd2222fce9bb.png)
-   
-   
+
+
 # 参考
 ##### 标准&原理
+0. 《25 | 分布式Trace：横跨几十个分布式组件的慢请求要如何排查？》
 1. [OpenTracing语义标准](https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md)  archived
 2. [opentracing文档中文版](https://wu-sheng.gitbooks.io/opentracing-io/content/pages/spec.html) archived
 3. [Dapper，大规模分布式系统的跟踪系统](http://bigbully.github.io/Dapper-translation/)  论文
