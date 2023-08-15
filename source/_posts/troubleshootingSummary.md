@@ -44,6 +44,7 @@ top: true
   - 数据库
     + {% post_link  'tidbTroubleshooting' %}   
     + {% post_link  'mysqlBestPractice' %}
+    + {% post_link  'mysqlDeadLock    ' %}  ***
   - {% post_link  'splitBrain' %}
 
 
