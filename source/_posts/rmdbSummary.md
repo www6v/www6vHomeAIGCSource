@@ -19,7 +19,8 @@ top: true
 + {% post_link 'mysqlIndex'  %}
 + {% post_link 'mysqlTransaction' %}   
 + {% post_link 'mysqlLog' %}   
-+ {% post_link  'mysqlDeadLock    ' %}  
++ {% post_link  'mysqlDeadLock' %}  
++ {% post_link  'mysqlMasterSlaveDelay' %}  
 
 ## 分布式
 + {% post_link 'distributedDatabase'  %}
