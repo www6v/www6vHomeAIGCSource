@@ -23,21 +23,21 @@ categories:
 [蚂蚁财富研发工程师](http://monkeyhorse.cn/)  | 已失效
 [李小武，coding@alibaba。](http://blog.lichengwu.cn/) |  已失效
 [阿里人](http://www.blogjava.net/BlueDavy/)  | 2009停更
-[黄若慧 高级技术专家 淘宝文通](http://blog.zephyrleaves.net/) |
+[黄若慧 高级技术专家 淘宝文通](http://blog.zephyrleaves.net/) |已失效
 [Software Engineer @ Alibaba Middleware Team](https://www.sczyh30.com/) |2017停更
-[系统技术非业余研究](http://blog.yufeng.info/)   |
-[arebya](http://arebya.com/) 质量不高 |
+[系统技术非业余研究](http://blog.yufeng.info/)   |不写技术了
+[arebya](http://arebya.com/) 质量不高 |2018 停更
 [canal作者 agapple](https://agapple.iteye.com/) |  2016停更
-[阿里加多](https://www.jianshu.com/u/b230a86fb7ad) |
+[阿里加多](https://www.jianshu.com/u/b230a86fb7ad) |**更新-2023.01**
 [乒乓狂魔](https://yq.aliyun.com/users/6bmpl5rdwpqu4) |  已失效
-[冯嘉 rocketmq](https://yq.aliyun.com/users/ejn34jbxf5evs) |
-[木洛 阿里云技术专家，表格存储](https://yq.aliyun.com/users/jwbhxydfk6qyi/article) |
-[成喆 阿里云存储服务](https://yq.aliyun.com/users/u3vivzisyg2pc/) |
-[文意 阿里云存储服务产品](https://yq.aliyun.com/users/zh5kxxfngqw2m)  serverless 场景 |
-[scorpion 阿里云函数计算研发经理](https://yq.aliyun.com/users/fbt6ovijrs2zi) 函数计算 |
+[冯嘉 rocketmq](https://yq.aliyun.com/users/ejn34jbxf5evs) |已失效
+[木洛 阿里云技术专家，表格存储](https://yq.aliyun.com/users/jwbhxydfk6qyi/article) |已失效
+[成喆 阿里云存储服务](https://yq.aliyun.com/users/u3vivzisyg2pc/) |已失效
+[文意 阿里云存储服务产品](https://yq.aliyun.com/users/zh5kxxfngqw2m)  serverless 场景 |已失效
+[scorpion 阿里云函数计算研发经理](https://yq.aliyun.com/users/fbt6ovijrs2zi) 函数计算 |已失效
 [Freewill 阿里云的人 SDN ceph](https://www.cnblogs.com/bodhitree/default.html) |  2020 停更
-[阿里  周遥（玄胤）](http://www.seflerzhou.net) |
-入境繁华  蚂蚁金服中间件团队 <br> http://zhengjianglong.cn <br> http://blog.leanote.com/along |
+[阿里  周遥（玄胤）](http://www.seflerzhou.net) |一般
+入境繁华  蚂蚁金服中间件团队 <br> http://zhengjianglong.cn <br> http://blog.leanote.com/along |失效
 阿里人的博客 canel <br> http://agapple.iteye.com/ <br>  https://github.com/agapple   |  2016 停更
 [阿里 林昊](http://bluedavy.me/)     |  失效
 [阿里 丁奇 dba mysql](https://dinglin.iteye.com/) |  2016 停更 

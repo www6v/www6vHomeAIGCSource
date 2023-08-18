@@ -21,6 +21,7 @@ categories:
 | 阿里中间件技术博客 ***                                       |          |
 | [美团点评技术博客](https://tech.meituan.com) ***   | 看到 2020年 |
 | [pingcap](https://pingcap.com/blog-cn/) *** | |
+| [[得物技术](https://www.jianshu.com/u/5000b3e8bd79)](https://www.jianshu.com/u/5000b3e8bd79) | |
 | [数据库内核月报 淘宝数据库组](http://mysql.taobao.org/monthly/)   *** | |
 | SOFA 微信公众号 | |
 | [饿了么框架工具部- 知乎](https://zhuanlan.zhihu.com/p/28585781)  异地多活 压测 | 2018停更 |
