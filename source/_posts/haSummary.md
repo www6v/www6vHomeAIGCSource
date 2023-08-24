@@ -28,7 +28,7 @@ top: true
 
 ### 数据服务
 + {% post_link  'mysqlReliability' %}
-+ {% post_link  'dbTradeoff' %}
++ dbTradeoff
 
 ### K8S  高可用
 + {% post_link  'k8sHA' %}

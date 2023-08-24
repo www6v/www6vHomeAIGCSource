@@ -14,7 +14,7 @@ top: true
 
 ## LSM-Tree 存储引擎
 ### 原理
-+ {% post_link 'paperlsmTreeSurvey'  %}
++ paperlsmTreeSurvey  todo
 + {% post_link 'lsmTreeKeyValueSeparation'  %}   优化
 + {% post_link 'lsmTreeCompaction'  %}   优化
 
