@@ -16,19 +16,21 @@ categories:
 ## 目录
 <!-- toc -->
 
-# 数仓建模 [2]
+# 架构
 
-###  事实表
+{% asset_img 'arch.png' %}
 
-+ 事务事实表   
-+ 周期快照事实表 
-+ 累积快照事实表 
+{% asset_img 'arch1.png' %}
 
-###  维度表
+
 
 #  实时数仓-分层 [1]
 
 ### 数据源
+
+{% asset_img 'basic.png' %}
+
+
 
 ### 明细层
 
@@ -42,6 +44,8 @@ categories:
 + 汇总指标池
   按照统一的规范管理建设，形成可复用的汇总结果
 
+
+
 # 实时数仓-构建流程 [1]
 
 + 搭框架
@@ -54,7 +58,23 @@ categories:
   设计的时候，层次不能太多  
 
 
+
+# 数仓建模 [2]
+
+###  事实表
+
++ 事务事实表   
++ 周期快照事实表 
++ 累积快照事实表 
+
+###  维度表
+
+
+
+
+
 # 参考
+
 1. [美团外卖实时数仓建设实践](https://tech.meituan.com/2021/08/26/data-warehouse-in-meituan-waimai.html)  美团 
 2. [一篇文章搞懂数据仓库：三种事实表（设计原则，设计方法、对比）](https://notomato.blog.csdn.net/article/details/110635856)
 
