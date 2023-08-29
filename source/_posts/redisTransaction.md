@@ -24,11 +24,11 @@ categories:
 :-: | :-:
 一致性 C | 能保证
 隔离性 I | 能保证
-原子性 A | 命令语法无误时，能保证
+原子性 A | 能保证(命令语法无误时)
 持久性 D | 不能保证
 
  【redis  cluster 没有事务】
 
 ## 参考：
 31 | 事务机制:Redis能实现ACID属性吗?
-[[redis]redis集群不支持事务multi、exec](https://www.liangzl.com/get-article-detail-129391.html) 
+[[redis]redis集群不支持事务multi、exec](https://www.liangzl.com/get-article-detail-129391.html)   失效

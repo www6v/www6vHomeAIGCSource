@@ -23,6 +23,9 @@ categories:
 
 RDB和AOF共存时会优先加载AOF文件
 
+**【主从切换   优先加载  RDB  ->  速度】**
+**【redis重启 优先加载 AOF -> 数据完整性】**
+
 ### 开启
   ``` 
   aof-use-rdb-preamble no -> yes

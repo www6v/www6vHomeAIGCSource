@@ -1,5 +1,5 @@
 ---
-title: Redis Hotkey
+title: Redis 热点Hotkey
 date: 2022-06-03 21:48:24
 tags:
   - Redis
@@ -24,7 +24,7 @@ categories:
   + 机器
     packetbeat 抓包
     缺点:  运维部署和机器成本
-    
+  
 + 解决热点key [2]
   - 拆分复杂数据结构
   - 迁移热点key

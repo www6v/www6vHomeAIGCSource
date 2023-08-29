@@ -13,6 +13,8 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
 
 ### 什么时候触发 rehash？
 ，_dictExpandIfNeeded 函数中定义了三个扩容条件。
