@@ -31,7 +31,7 @@ ssl_session_timeout 10m; /// 10分钟
 ssl_protocols TLSv1.2;  /// 版本号
 ```
 
-### 非安全请求重定向：
+### 非安全请求重定向
 ``` nginx
 No redirect:  无重定向 
 Redirect： 301-302 -》 转到https站点 

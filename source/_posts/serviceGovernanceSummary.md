@@ -36,6 +36,7 @@ top: true
 ### 负载均衡
 - {% post_link 'loadBalance' %}
 - {% post_link 'nginx' %}
+- {% post_link 'nginxOptimize' %}
 
 ### 线程模型
 + {% post_link 'jsfThreadModel' %}
