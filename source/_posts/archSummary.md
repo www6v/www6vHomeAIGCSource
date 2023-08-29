@@ -16,6 +16,7 @@ top: true
 + {% post_link 'apiDesign'  %}
 + {% post_link 'cqrs'  %}
 + {% post_link 'ddd'  %}
++ {% post_link 'dddPractice'  %} 
 + {% post_link 'EAI'  %}
 + {% post_link 'DomainLogicAndSQL'  %}
 

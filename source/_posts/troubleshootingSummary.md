@@ -57,8 +57,8 @@ top: true
 
 ##### K8s
 + {% post_link  'k8sTroubleshoot' %}  
-+ {% post_link  'k8sProblem' %}     
-+ {% post_link  'k8sBestPractice' %}  
++ {% post_link  'k8sProblem' %}      ***
++ {% post_link  'k8sBestPractice' %}   ***
 
 ##### Basic
 + {% post_link  'tcpFault' %}

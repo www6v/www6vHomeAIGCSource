@@ -12,6 +12,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 ## Kubernetes问题排查
 #####  案例 - 某个应用的接口缓慢的问题  [2]
 + 现象: 
@@ -65,5 +68,4 @@ sync && echo 3 > /proc/sys/vm/drop_caches
 4. [Kubernetes 常见问题排查与解决方案！（纯干货）](https://blog.csdn.net/alex_yangchuansheng/article/details/119224283) ***
 100. [Kubernetes 集群 troubleshooting](https://www.chenshaowen.com/blog/kubernetes-cluster-troubleshooting.html) 未
 101. [Kubernetes 应用 troubleshooting](https://www.chenshaowen.com/blog/kubernetes-app-troubleshooting.html) 未
-
 

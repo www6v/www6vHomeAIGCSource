@@ -12,6 +12,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 ## kubectl get pod 返回状态
 
 {% asset_img   podStatus.png   700 500  返回状态 %}
