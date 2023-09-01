@@ -21,6 +21,8 @@ categories:
   [实战云](https://saas.edu360.cn/system/chatgpt) gpt3.5  gpt4
   [ChatGPT使用指南！](https://www.feijix.com/n/y0BnXI)   *** 
   [灵犀百通](https://www.1888ai.com/base/chat)  gpt3.5
+  [ChatGpt PLUS](https://gpt.91chat-ai.cn/chat) 
+  [文心一言](https://yiyan.baidu.com/)
 
 # Tools & Mix
 + GPT学习宝典
