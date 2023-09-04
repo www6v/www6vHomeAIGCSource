@@ -2,12 +2,10 @@
 title:  实时数仓
 date: 2022-07-18 11:46:42
 tags:
-  - 流式计算
+  - 实时数仓
 categories:
   - 大数据  
-  - 计算
-  - 流式计算
-  - flink
+  - 实时数仓
 ---
 
 <p></p>
@@ -68,22 +66,29 @@ categories:
 + 累积快照事实表 
 
 ###  维度表 DIM
-+ 星型模型
-  维表只和事实表关联，维表之间没有关联，查询性能好，但冗余度高
-  一般而言，我们都使用星型模型。
-+ 雪花模型
-  雪花模型是星型模式中的维度表进行规范化处理，进一步分解到附加表（维表）中冗余度小，但是查询性能差。
-  将一个维表拆成核心表和拓展表
++ 类型
+  + 星型模型
+    维表只和事实表关联，维表之间没有关联，查询性能好，但冗余度高
+    一般而言，我们都使用星型模型。
+  + 雪花模型
+    雪花模型是星型模式中的维度表进行规范化处理，进一步分解到附加表（维表）中冗余度小，但是查询性能差。
+    将一个维表拆成核心表和拓展表
 
++ 存储
+  + HBase
+  + Redis
+  + MySQL
 
 # 参考
-
 1. [美团外卖实时数仓建设实践](https://tech.meituan.com/2021/08/26/data-warehouse-in-meituan-waimai.html)  美团 
 2. [一篇文章搞懂数据仓库：三种事实表（设计原则，设计方法、对比）](https://notomato.blog.csdn.net/article/details/110635856)
 
 
-101. [美团买菜基于 Flink 的实时数仓建设](https://xie.infoq.cn/article/3c80a350e06d88e85d34f4008)  未
-102. [小米基于 Flink 的实时数仓建设实践](https://xie.infoq.cn/article/acf64bbe900ec426b8699f094) 未
+101. [FFA 2022 实时湖仓](https://flink-learning.org.cn/activity/detail/9075f73ecfd2b87c6c7fbe7d79ad58ca)  ***
+     [美团买菜基于 Flink 的实时数仓建设](https://xie.infoq.cn/article/3c80a350e06d88e85d34f4008)  未
+102. [FFA 2022 平台建设](https://flink-learning.org.cn/activity/detail/d3d092c45467c40fb8526c4ec2141be2)  ***
+     [小米基于 Flink 的实时数仓建设实践](https://xie.infoq.cn/article/acf64bbe900ec426b8699f094) 未
+     
 
 
 
