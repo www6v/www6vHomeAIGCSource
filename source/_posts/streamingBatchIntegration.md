@@ -35,8 +35,7 @@ categories:
 
 
 100. [[数据湖] 基于flink hudi的批流一体实践](https://zhuanlan.zhihu.com/p/523028640) 腾讯 未
-101. [大数据架构如何做到流批一体？](https://developer.aliyun.com/article/706954) 未
-102. [vivo 实时计算平台建设实践](https://zhuanlan.zhihu.com/p/594928870)  vivo 未
+
 
 
 

@@ -89,6 +89,9 @@ categories:
 102. [FFA 2022 平台建设](https://flink-learning.org.cn/activity/detail/d3d092c45467c40fb8526c4ec2141be2)  ***
      [小米基于 Flink 的实时数仓建设实践](https://xie.infoq.cn/article/acf64bbe900ec426b8699f094) 未
      
+     
+103. [大数据架构如何做到流批一体？](https://developer.aliyun.com/article/706954) 未
+104. [vivo 实时计算平台建设实践](https://zhuanlan.zhihu.com/p/594928870)  vivo 未
 
 
 
