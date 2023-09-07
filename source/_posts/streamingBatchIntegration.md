@@ -32,10 +32,7 @@ categories:
 
 1. [什么是数据湖？](https://aws.amazon.com/cn/big-data/datalakes-and-analytics/what-is-a-data-lake/) AWS
 
-
-
-100. [[数据湖] 基于flink hudi的批流一体实践](https://zhuanlan.zhihu.com/p/523028640) 腾讯 未
-
+100. [大数据架构如何做到流批一体？](https://developer.aliyun.com/article/706954)
 
 
 

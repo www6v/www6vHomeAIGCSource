@@ -16,9 +16,23 @@ categories:
 
 # 架构
 
+###   参考架构 - 美团 Doris [1]
+
 {% asset_img 'arch.png' %}
 
 {% asset_img 'arch1.png' %}
+
+
+
+### 参考架构 - 腾讯Hudi [3]
+
+{% asset_img 'tencent-arch.jpg' %}
+
+
+
+### 参考架构 - vivo Hudi  [4]
+
+{% asset_img 'vivo-arch.jpg' %}
 
 
 
@@ -82,16 +96,20 @@ categories:
 # 参考
 1. [美团外卖实时数仓建设实践](https://tech.meituan.com/2021/08/26/data-warehouse-in-meituan-waimai.html)  美团 
 2. [一篇文章搞懂数据仓库：三种事实表（设计原则，设计方法、对比）](https://notomato.blog.csdn.net/article/details/110635856)
+3. [[数据湖] 基于flink hudi的批流一体实践](https://zhuanlan.zhihu.com/p/523028640) 腾讯  
+4. [vivo 实时计算平台建设实践](https://zhuanlan.zhihu.com/p/594928870)  vivo 
 
 
-101. [FFA 2022 实时湖仓](https://flink-learning.org.cn/activity/detail/9075f73ecfd2b87c6c7fbe7d79ad58ca)  ***
-     [美团买菜基于 Flink 的实时数仓建设](https://xie.infoq.cn/article/3c80a350e06d88e85d34f4008)  未
-102. [FFA 2022 平台建设](https://flink-learning.org.cn/activity/detail/d3d092c45467c40fb8526c4ec2141be2)  ***
-     [小米基于 Flink 的实时数仓建设实践](https://xie.infoq.cn/article/acf64bbe900ec426b8699f094) 未
++ [FFA 2022 实时湖仓](https://flink-learning.org.cn/activity/detail/9075f73ecfd2b87c6c7fbe7d79ad58ca)  ***
+   + [美团买菜基于 Flink 的实时数仓建设](https://xie.infoq.cn/article/3c80a350e06d88e85d34f4008)  未
+   + [快手基于 Apache Flink 的实时数仓建设实践](https://flink-learning.org.cn/article/detail/de3aa90d2f02195e65e721c1f2a434e1)  *** 未
++ [FFA 2022 平台建设](https://flink-learning.org.cn/activity/detail/d3d092c45467c40fb8526c4ec2141be2)  ***
+   + [小米基于 Flink 的实时数仓建设实践](https://xie.infoq.cn/article/acf64bbe900ec426b8699f094) 未
      
      
-103. [大数据架构如何做到流批一体？](https://developer.aliyun.com/article/706954) 未
-104. [vivo 实时计算平台建设实践](https://zhuanlan.zhihu.com/p/594928870)  vivo 未
+
+
+
 
 
 
