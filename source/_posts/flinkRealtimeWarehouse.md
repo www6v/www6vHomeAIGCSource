@@ -16,7 +16,7 @@ categories:
 
 # 架构
 
-###   参考架构 - 美团 Doris [1]
+###   参考架构 - 美团 基于Doris [1]
 
 {% asset_img 'arch.png' %}
 
@@ -24,15 +24,39 @@ categories:
 
 
 
-### 参考架构 - 腾讯Hudi [3]
+### 参考架构-vivo 基于Hudi-Kappa架构   [4]
+
+{% asset_img 'vivo-arch.jpg' %}
+
+
+
+### 参考架构-快手 基于Kafka+Hive-Lambda架构   [6]
+
+{% asset_img 'kuaishou-arch.jpg' %}
+
+
+
+
+
+### 参考架构-腾讯 基于Hudi-Kappa架构  批流一体架构 [3]
 
 {% asset_img 'tencent-arch.jpg' %}
 
 
 
-### 参考架构 - vivo Hudi  [4]
+### Tradeoff [5]
 
-{% asset_img 'vivo-arch.jpg' %}
+总的来说，数据湖 替换 Kafka 的**优势**主要包括：
+
+- 实现存储层的**流批统一**
+- **中间层支持 OLAP 分析**
+- 完美支持高效**回溯**
+- 存储成本降低
+
+当然，也存在一定的**缺陷**，如：
+
+- 数据延迟从**实时**变成**近实时**
+- 对接其他数据系统需要额外开发工作
 
 
 
@@ -98,16 +122,16 @@ categories:
 2. [一篇文章搞懂数据仓库：三种事实表（设计原则，设计方法、对比）](https://notomato.blog.csdn.net/article/details/110635856)
 3. [[数据湖] 基于flink hudi的批流一体实践](https://zhuanlan.zhihu.com/p/523028640) 腾讯  
 4. [vivo 实时计算平台建设实践](https://zhuanlan.zhihu.com/p/594928870)  vivo 
+5. [Flink + Iceberg 全场景实时数仓的建设实践](https://zhuanlan.zhihu.com/p/347660549)  腾讯数据平台
 
 
 + [FFA 2022 实时湖仓](https://flink-learning.org.cn/activity/detail/9075f73ecfd2b87c6c7fbe7d79ad58ca)  ***
    + [美团买菜基于 Flink 的实时数仓建设](https://xie.infoq.cn/article/3c80a350e06d88e85d34f4008)  未
-   + [快手基于 Apache Flink 的实时数仓建设实践](https://flink-learning.org.cn/article/detail/de3aa90d2f02195e65e721c1f2a434e1)  *** 未
+   + 6. [快手基于 Apache Flink 的实时数仓建设实践](https://flink-learning.org.cn/article/detail/de3aa90d2f02195e65e721c1f2a434e1)  *** 未
 + [FFA 2022 平台建设](https://flink-learning.org.cn/activity/detail/d3d092c45467c40fb8526c4ec2141be2)  ***
    + [小米基于 Flink 的实时数仓建设实践](https://xie.infoq.cn/article/acf64bbe900ec426b8699f094) 未
      
      
-
 
 
 
