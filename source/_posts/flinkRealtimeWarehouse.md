@@ -15,36 +15,51 @@ categories:
 <!-- toc -->
 
 # 架构
+### 参考架构
 
-###   参考架构 - 美团 基于Doris [1]
+##### 参考架构-快手 基于Kafka+Hive-Lambda架构   [6]
+
+{% asset_img 'kuaishou-arch.jpg' %}
+
+
+##### 参考架构-vivo 基于Hudi-批流一体架构   [4]
+
+{% asset_img 'vivo-arch.jpg' %}
+
+
+##### 参考架构-腾讯 基于Hudi-批流一体架构 [3]
+
+{% asset_img 'tencent-arch.jpg' %}
+
+##### 美团 基于Doris [1] 
 
 {% asset_img 'arch.png' %}
 
 {% asset_img 'arch1.png' %}
 
+### 痛点 [5]
 
+#####  传统 T+1 任务
 
-### 参考架构-vivo 基于Hudi-Kappa架构   [4]
+- 海量的TB级 T+ 1 任务延迟导致下游数据产出时间不稳定。
+- 任务遇到故障重试恢复代价昂贵
+- 数据架构在处理去重和 exactly-once语义能力方面比较吃力
+- 架构复杂，涉及多个系统协调，靠调度系统来构建任务依赖关系
 
-{% asset_img 'vivo-arch.jpg' %}
+#####  Lambda 架构痛点
 
+- 同时维护**实时平台和离线平台两套引擎**，运维成本高
+- 实时离线两个平台需要维护两套框架不同但业务逻辑相同代码，开发成本高
+- 数据有两条不同链路，**容易造成数据的不一致性**
+- **数据更新成本大**，需要重跑链路
 
+#####  Kappa 架构痛点
 
-### 参考架构-快手 基于Kafka+Hive-Lambda架构   [6]
+- 对消息队列存储要求高，**消息队列的回溯能力不及离线存储**
+- **消息队列本身对数据存储有时效性**，**且当前无法使用 OLAP 引擎直接分析消息队列中的数据**
+- 全链路依赖消息队列的实时计算可能因为**数据的时序性**导致结果不正确
 
-{% asset_img 'kuaishou-arch.jpg' %}
-
-
-
-
-
-### 参考架构-腾讯 基于Hudi-Kappa架构  批流一体架构 [3]
-
-{% asset_img 'tencent-arch.jpg' %}
-
-
-
-### Tradeoff [5]
+### Tradeoff   总结 [5]
 
 总的来说，数据湖 替换 Kafka 的**优势**主要包括：
 
@@ -57,7 +72,6 @@ categories:
 
 - 数据延迟从**实时**变成**近实时**
 - 对接其他数据系统需要额外开发工作
-
 
 
 #  实时数仓-分层 [1]
@@ -127,7 +141,7 @@ categories:
 
 + [FFA 2022 实时湖仓](https://flink-learning.org.cn/activity/detail/9075f73ecfd2b87c6c7fbe7d79ad58ca)  ***
    + [美团买菜基于 Flink 的实时数仓建设](https://xie.infoq.cn/article/3c80a350e06d88e85d34f4008)  未
-   + 6. [快手基于 Apache Flink 的实时数仓建设实践](https://flink-learning.org.cn/article/detail/de3aa90d2f02195e65e721c1f2a434e1)  *** 未
+   + 6. [快手基于 Apache Flink 的实时数仓建设实践](https://flink-learning.org.cn/article/detail/de3aa90d2f02195e65e721c1f2a434e1)  *** 
 + [FFA 2022 平台建设](https://flink-learning.org.cn/activity/detail/d3d092c45467c40fb8526c4ec2141be2)  ***
    + [小米基于 Flink 的实时数仓建设实践](https://xie.infoq.cn/article/acf64bbe900ec426b8699f094) 未
      

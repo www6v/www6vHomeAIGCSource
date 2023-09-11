@@ -12,7 +12,10 @@ categories:
 <p></p>
 <!-- more -->
 
+
+
 ## 特性 [1] [2]
+
 + 基于快照的读写分离和回溯
 	**快照控制**：可实现使用完全相同的表快照的可重复查询，或者使用户轻松检查更改
 	**Time Travel**
@@ -35,16 +38,32 @@ categories:
 + 不强绑定计算存储引擎
 
 
+
+## 整体架构 [3]
++ 数据
+  普通的 Parquet 文件
++ 元数据
+	+ catalog
+      version-hint.txt 文件 	
+    + metadata file
+	  json 文件
+	+ manifestlist file  [snapshot]
+      以 snap- 开头的 avro 文件	
+ 	+ manifest file
+      16db143c,18ce4c4a 开头的 avro 文件
+ 	  
 ##  读写过程
 + 读写
 + 增量读
 + 实时小文件合并
 
 
+
 ## 参考
 
 1. [Flink + Iceberg 全场景实时数仓的建设实践](https://zhuanlan.zhihu.com/p/347660549)  腾讯数据平台
 2. [5分钟入门数据湖IceBerg](https://cloud.tencent.com/developer/article/2290397)
+3. [Iceberg 原理分析](https://zhuanlan.zhihu.com/p/488467438)
 
 [Iceberg实时湖仓数据分析性能优化](https://zhuanlan.zhihu.com/p/636273850)
 [数据湖Iceberg技术在小米的落地与场景应用](https://z.itpub.net/article/detail/7B5B8C89CC5244F94A0C5FDF7DC83DFB)
