@@ -11,13 +11,16 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 # 架构 [5]
 
 # 完整链路 [4]
 埋点 -> 使用app -> 数据上报 -> 数据模型 -> 行为分析 
 
 # 采集用户行为数据 [2]
-### 平台设置埋点 [6]
+### 平台设置埋点 [6] [10]
 
 ### 第三方统计工具
 百度统计
@@ -55,9 +58,9 @@ Heap
 
 ###  常用方法 [1] [2] [4]
 + 行为事件分析
-+ 用户留存分析 [7]
-+ 漏斗模型分析 [7]
-+ 用户行为路径分析 [7]
++ 用户留存分析 [7] [8]
++ 漏斗模型分析 [7] [9]
++ 用户行为路径分析 [7][11]
 + 页面点击分析
 + 福格模型分析
 + 用户分群分析
@@ -74,3 +77,7 @@ Heap
 6. [如何实现用户行为的动态采集与分析](https://www.infoq.cn/article/yGOh38XjpYdTKMJjzjoH)
 7. [如何基于 Apache Doris 构建简易高效的用户行为分析平台？](https://www.infoq.cn/article/ecmRgdfrjFl1U3hAd59b)
    [如何基于 Apache Doris 构建简易高效的用户行为分析平台？](https://www.infoq.cn/article/SoCIclCLD8f4vSzLB4dX)
+8. [用户行为分析模型实践（一）—— 路径分析模型](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247490504&idx=1&sn=9827b136fa5cfc81467cb1b795f7bc41) 
+9. [用户行为分析模型实践（二）—— 漏斗分析模型](https://xie.infoq.cn/article/f305ea8be1935540432aca0d0)
+10. [用户行为分析模型实践（三）——H5 通用分析模型](https://xie.infoq.cn/article/1163e5781f37b4e55a2c43c70)
+11. [基于Spark的用户行为路径分析的产品化实践](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247486360&idx=1&sn=85504543498dfc82e5e720b77faa602d)
