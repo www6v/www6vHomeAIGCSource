@@ -58,16 +58,37 @@ Heap
 
 ###  常用方法 [1] [2] [4]
 + 行为事件分析
-+ 用户留存分析 [7] [8]
-+ 漏斗模型分析 [7] [9]
-+ 用户行为路径分析 [7][11]
++ **用户留存分析** [7] [8]
++ **漏斗模型分析** [7] [9]
+  + 确定转化路径
+  + 分析流失原因
+  + 优化关键因子
++ **用户行为路径分析** [7][11]
 + 页面点击分析
 + 福格模型分析
 + 用户分群分析
   用户画像（基本属性、用户偏好、生活习惯、用户行为等）的标签信息将用户分群
 
 
+
+# 漏斗模型分析
+
+### 需求场景 [9]
+
+定位用户流失具体原因
+
+针对不同版本，转化率情况对比
+
+检测某个专题活动效果
+
+
+
+
+
+
+
 # 参考
+
 1. [用户行为分析](https://blog.csdn.net/Sake360/article/details/120350080)
 2. [用户研究：如何做用户行为分析？](https://baijiahao.baidu.com/s?id=1653670195355016641&wfr=spider&for=pc)
 3. [万字详解用户行为分析](https://blog.csdn.net/WindyQCF/article/details/123911538)
@@ -77,7 +98,7 @@ Heap
 6. [如何实现用户行为的动态采集与分析](https://www.infoq.cn/article/yGOh38XjpYdTKMJjzjoH)
 7. [如何基于 Apache Doris 构建简易高效的用户行为分析平台？](https://www.infoq.cn/article/ecmRgdfrjFl1U3hAd59b)
    [如何基于 Apache Doris 构建简易高效的用户行为分析平台？](https://www.infoq.cn/article/SoCIclCLD8f4vSzLB4dX)
-8. [用户行为分析模型实践（一）—— 路径分析模型](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247490504&idx=1&sn=9827b136fa5cfc81467cb1b795f7bc41) 
-9. [用户行为分析模型实践（二）—— 漏斗分析模型](https://xie.infoq.cn/article/f305ea8be1935540432aca0d0)
+8. [用户行为分析模型实践（一）—— 路径分析模型](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247490504&idx=1&sn=9827b136fa5cfc81467cb1b795f7bc41)  vivo
+9. [用户行为分析模型实践（二）—— 漏斗分析模型](https://xie.infoq.cn/article/f305ea8be1935540432aca0d0)  vivo
 10. [用户行为分析模型实践（三）——H5 通用分析模型](https://xie.infoq.cn/article/1163e5781f37b4e55a2c43c70)
 11. [基于Spark的用户行为路径分析的产品化实践](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247486360&idx=1&sn=85504543498dfc82e5e720b77faa602d)
