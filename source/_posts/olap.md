@@ -5,7 +5,6 @@ tags:
   - olap
 categories: 
   - 大数据 
-  - 计算 
   - olap 
 ---
 
