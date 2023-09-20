@@ -1,11 +1,11 @@
 ---
-title: ChatGPT 总结
+title: GPT 总结
 date: 2022-05-09 22:46:01
 tags:
   - AI
 categories:
   - AI
-  - chatgpt
+  - gpt
 ---
 
 <p></p>
@@ -23,6 +23,11 @@ categories:
   [灵犀百通](https://www.1888ai.com/base/chat)  gpt3.5
   [ChatGpt PLUS](https://gpt.91chat-ai.cn/chat) 
   [文心一言](https://yiyan.baidu.com/)
+
+# 模型
+  Chatgpt
+  LLaMA 
+  文心一言
 
 # Tools & Mix
 + GPT学习宝典

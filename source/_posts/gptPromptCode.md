@@ -18,10 +18,11 @@ categories:
 
 
 # 工具
-+ Copilot ***
++ Copilot *** - 收费
 + AWS CodeWhispter
 + Cursor ***
 + tabnine 免费
++ Code Llama  - 开源
 
 # 代码相关-简单任务 [1]
 
