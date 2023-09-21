@@ -38,8 +38,7 @@ top: true
 + {% post_link 'streamingBatchIntegration' %}
 + {% post_link 'userBehaviorAnalysis' %}
 + {% post_link 'olap' %}
-
-
++ {% post_link 'personProflie' %}
 
 # 计算
 + {% post_link 'bigDataComputing' %}
