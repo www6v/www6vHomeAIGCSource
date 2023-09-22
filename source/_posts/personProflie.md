@@ -35,6 +35,11 @@ categories:
 ID-Mapping [JanusGraph]
 
 
+# 应用场景
++ 精准广告营销
+  人群圈选，做定向投放
++ 个性化推荐  
+  千人千面
 
 # 参考
 
