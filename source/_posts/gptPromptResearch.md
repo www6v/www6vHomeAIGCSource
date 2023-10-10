@@ -1,11 +1,11 @@
 ---
-title: Chatgpt  Prompt-学术研究
+title: gpt  Prompt-学术研究
 date: 2022-07-11 12:21:52
 tags:
-  - chatgpt
+  - gpt
 categories:
   - AI  
-  - chatgpt
+  - gpt
 ---
 
 <p></p>

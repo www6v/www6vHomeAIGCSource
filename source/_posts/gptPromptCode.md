@@ -1,11 +1,11 @@
 ---
-title: chatgpt Prompt-Code
+title: gpt Prompt-Code
 date: 2021-05-28 12:12:45
 tags:
-  - chatgpt
+  - gpt
 categories:
   - AI 
-  - chatgpt
+  - gpt
 ---
 
 <p></p>
