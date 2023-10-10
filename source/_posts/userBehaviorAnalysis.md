@@ -120,3 +120,5 @@ categories:
 9. [用户行为分析模型实践（二）—— 漏斗分析模型](https://xie.infoq.cn/article/f305ea8be1935540432aca0d0)  vivo
 10. [用户行为分析模型实践（三）——H5 通用分析模型](https://xie.infoq.cn/article/1163e5781f37b4e55a2c43c70)
 11. [基于Spark的用户行为路径分析的产品化实践](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247486360&idx=1&sn=85504543498dfc82e5e720b77faa602d)
+100. [【分析框架】用户行为分析](https://zhuanlan.zhihu.com/p/146639831) *** 未
+101. [淘宝用户行为分析（附Python源码）](https://zhuanlan.zhihu.com/p/133962465) *** 未

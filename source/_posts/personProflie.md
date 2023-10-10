@@ -122,4 +122,5 @@ categories:
 
 1. [日处理数据量超10亿：友信金服基于Flink构建实时用户画像系统的实践](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247499260&idx=2&sn=5c6f1fb40cd90edd63ea7974284af09b)
 2. [网易大数据用户画像实践 ](https://mp.weixin.qq.com/s/jyiDWiK0zczEaZKY5Hy5xg)
-3. [用户画像技术及方法论](https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247500642&idx=1&sn=15b22586962cee5c58bb58d898c9a465)
+3. [用户画像技术及方法论](https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247500642&idx=1&sn=15b22586962cee5c58bb58d898c9a465) ***
+100. [实战案例：手把手教你构建电商用户画像(附代码）](https://zhuanlan.zhihu.com/p/466822319) 未
