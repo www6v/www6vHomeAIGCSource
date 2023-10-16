@@ -28,6 +28,7 @@ top: true
 + {% post_link 'k8sOperator' %} 
 + {% post_link 'k8sDeclarativeAPI' %} 
 + {% post_link 'k8sOperator-redis' %}
++ {% post_link 'k8sAdmissionWebhook' %} 
 
 ## Container Runtime
 + {% post_link 'k8sRuntime' %} 
