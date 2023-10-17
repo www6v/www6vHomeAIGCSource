@@ -12,6 +12,26 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
+# 特性
++ 列式数据库
++ 数据压缩
++ 支持SQL
++ 向量引擎
++ 实时的数据更新
+  使查询能够快速在主键中进行范围查找, 以增量的方式有序的存储在MergeTree中
++ 索引
+  按照主键对数据进行排序，对数据特定值或范围的查找。
++ 支持近似计算
++ 支持数据复制和数据完整性
+  副本， 故障后自动恢复
+
+# 限制
++ 没有完整的事务支持。
++ 稀疏索引使得ClickHouse不适合通过其键检索单行的点查询
+
 
 # 数据库引擎
 默认情况下，ClickHouse使用**Atomic**数据库引擎
@@ -67,10 +87,10 @@ categories:
 
 - [MaterializedView](https://clickhouse.com/docs/zh/engines/table-engines/special/materializedview#materializedview)
 
-  
-# 主键索引 [3]
+# 索引  
+## 主键索引 [3]
 
-# 稀疏索引 [4]
+## 稀疏索引 [4]
 
 
 # 参考
