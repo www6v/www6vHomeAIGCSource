@@ -63,6 +63,7 @@ top: true
 + {% post_link 'k8sAppMigrate' %} 
 + {% post_link 'k8sHA' %} 
 + {% post_link 'k8sAvailable' %} 
++ {% post_link 'k8sAvailableHealth' %} 
 + {% post_link 'linuxKernelParam' %} 
 + {% post_link 'k8sUpgrade' %} 
 
