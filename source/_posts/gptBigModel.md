@@ -20,11 +20,8 @@ categories:
 
 # 工具
 + langchain
-+ Transformers
-+ PEFT
-+ LLaMa
-+ ChatGLM
 + deepspeed
+
 
 # 原理
 + 正向传播
@@ -33,9 +30,8 @@ categories:
   梯度
 + embedding
 
-
 + Fine-tunning
-  + PEFT(Parameter-Efficient Fine-Tuning)
+  + PEFT(Parameter-Efficient Fine-Tuning)  PEFT
     + P-Turning
     + Adapter-Tuning [ 外挂]
     + LoRA [ 外挂] [效果比较好]
@@ -43,9 +39,12 @@ categories:
 
 + 预训练技术
 
-+ Transformer
+# 模型
++ Transformers
+  + Transformer
   + Attention
-
++ LLaMa
++ ChatGLM
 
 
 # Agent
@@ -72,4 +71,5 @@ categories:
 
 
 # 参考
+
 [LLM学习系列1：大模型架构要点总结](https://zhuanlan.zhihu.com/p/648050614)
