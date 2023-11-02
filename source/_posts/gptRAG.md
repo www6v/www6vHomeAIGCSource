@@ -1,6 +1,6 @@
 ---
 title:  GPT-RAG
-date: 2023-11-02 09:57:59
+date: 2022-11-02 09:57:59
 tags:
   - RAG
 categories: 
