@@ -16,6 +16,7 @@ categories:
 
 + 架构
   - 离线 index
+    LLamaIndex 构建和查询本地文档索引  
   - 在线 查询
   
 + 组件

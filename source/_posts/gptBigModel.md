@@ -47,21 +47,6 @@ categories:
 + ChatGLM
 
 
-# Agent
-+ 基础
-  ReACT 范式
-  
-+ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能力]
-
-+ 分类
-  + Action agents
-    Function Call， ReACT
-  + Simulation agents 
-    生成式智能体， CAMEL
-  + Automomous Agent
-    Auto-GPT， BabyAGI
-
-
 # 计算并行
 + 数据并行
 + 模型并行
