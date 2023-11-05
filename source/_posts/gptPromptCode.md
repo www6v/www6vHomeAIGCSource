@@ -2,10 +2,10 @@
 title: gpt Prompt-Code
 date: 2021-05-28 12:12:45
 tags:
-  - gpt
+  - prompt
 categories:
   - AI 
-  - gpt
+  - prompt
 ---
 
 <p></p>

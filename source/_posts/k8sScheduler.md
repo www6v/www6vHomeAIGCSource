@@ -97,3 +97,4 @@ categories:
 12. [descheduler 二次调度让 Kubernetes 负载更均衡](https://www.chenshaowen.com/blog/descheduler-makes-kubernetes-load-more-balanced.html)
 13. [Kubernetes 中 Descheduler 组件的使用与扩展](https://blog.tianfeiyu.com/2022/06/30/kubernetes_descheduler/)
 14. [Crane 调度器介绍——一款在 Kubernetes 集群间迁移应用的调度插件](https://cloudnative.to/blog/crane-scheduler/)
+15. [【腾讯云Finops Crane集训营】降本增效神器Crane实战记录](https://tencentcloud.csdn.net/64f7f5a9993dd34278ee1114.html)

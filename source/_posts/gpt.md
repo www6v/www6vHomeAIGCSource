@@ -1,5 +1,5 @@
 ---
-title: GPT 总结
+title: GPT-工具和应用
 date: 2022-05-09 22:46:01
 tags:
   - AI
@@ -24,17 +24,6 @@ categories:
   [ChatGpt PLUS](https://gpt.91chat-ai.cn/chat) 
   [文心一言](https://yiyan.baidu.com/)
 
-# 模型
-### 非开源
-  Chatgpt
-  文心一言
-  
-### 开源
-  LLaMA
-  Baichuan2
-  通义千问（Qwen-7B） 
-  ChatGLM
- 
 # Tools & Mix
 + GPT学习宝典
   - 聚合

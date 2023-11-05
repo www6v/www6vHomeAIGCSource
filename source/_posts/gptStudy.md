@@ -2,10 +2,11 @@
 title: GPT  学习资源
 date: 2022-08-01 16:53:02
 tags:
-  - AI
+  - gpt
 categories:
   - AI
   - gpt
+  - study
 ---
 
 <p></p>

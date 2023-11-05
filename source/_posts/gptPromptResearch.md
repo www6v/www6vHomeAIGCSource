@@ -2,10 +2,10 @@
 title: gpt  Prompt-学术研究
 date: 2022-07-11 12:21:52
 tags:
-  - gpt
+  - prompt
 categories:
   - AI  
-  - gpt
+  - prompt
 ---
 
 <p></p>

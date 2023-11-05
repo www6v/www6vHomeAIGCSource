@@ -39,13 +39,20 @@ categories:
 
 + 预训练技术
 
-# 模型
+# 模型  # 模型
 + Transformers
   + Transformer
   + Attention
-+ LLaMa
-+ ChatGLM
 
+### 非开源
+  Chatgpt
+  文心一言
+
+### 开源
+  LLaMA
+  Baichuan2
+  通义千问（Qwen-7B） 
+  ChatGLM
 
 # 计算并行
 + 数据并行
@@ -53,6 +60,8 @@ categories:
 + 张量并行
 
 # 大模型架构
+
+
 
 
 # 参考

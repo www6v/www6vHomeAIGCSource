@@ -24,10 +24,12 @@ categories:
   + Simulation agents 
     生成式智能体， CAMEL
   + Automomous Agent
-    Auto-GPT， BabyAGI
+    **AutoGPT**， BabyAGI
 
 
 # 参考
 1. 公开课
 2. 公开课
+3. [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)
+100. [AutoGPT与LLM Agent解析](https://zhuanlan.zhihu.com/p/622947810) *** 未
 
