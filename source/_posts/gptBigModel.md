@@ -11,6 +11,8 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
 
 # 应用
 + Prompt Template
@@ -39,7 +41,7 @@ categories:
 
 + 预训练技术
 
-# 模型  # 模型
+# 模型
 + Transformers
   + Transformer
   + Attention
@@ -54,7 +56,7 @@ categories:
   通义千问（Qwen-7B） 
   ChatGLM
 
-# 计算并行
+# LLM的分布式训练
 + 数据并行
 + 模型并行
 + 张量并行
@@ -67,3 +69,5 @@ categories:
 # 参考
 
 [LLM学习系列1：大模型架构要点总结](https://zhuanlan.zhihu.com/p/648050614)
+
+100. [主流大语言模型的技术原理细节](https://cloud.tencent.com/developer/article/2328541) *** 腾讯 未

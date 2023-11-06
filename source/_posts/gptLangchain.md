@@ -12,10 +12,17 @@ categories:
 <!-- more -->
 
 # Basic
-+ Model I/O 
++ Model I/O  
+  + Language models  [10]        
+     + LLM
+     + Chat Model
+     + Embedding [7]
   +  Prompts 
      + Prompt Template
+     + Few-shot example
      + Example Selectors [类比选择]
+       关键字  相似度  长度
+  + Output parsers
   + function call[2]
     
   
@@ -26,8 +33,14 @@ categories:
   + VectorStores
   + index
 
-+ Memory
-
++ Memory [10]
+  - 帮语言模型补充上下文
+  - ConversationBufferMemory
+  - ConversationBufferWindowMemory
+    窗口
+  - ConversationSummaryMemory
+  - VectorStoreRetrieverMemory
+  
 + Chains
   + 2大类
     Chain interface[Legacy]
@@ -37,9 +50,10 @@ categories:
     + Sequential- SequentialChain
     + Router
     + Transformation
- 
+
  + Agent
- 
+   - Plan-and-execute agents
+   
 # Function Call
 ``` python
 from langchain.chains.openai_functions.base import (
@@ -81,7 +95,10 @@ from langchain.chains.openai_functions.tagging import (
 2. [functioncall](https://github.com/www6v/pyExamples/blob/master/langchain/langchain-functioncall.py)
 3. [qaOnDoc](https://github.com/www6v/pyExamples/blob/master/langchain/langchain-qaOnDoc.py)
 4. [LangChain Cookbook Part 2: Use Cases](https://github.com/www6v/langchain-tutorials/blob/main/LangChain%20Cookbook%20Part%202%20-%20Use%20Cases.ipynb)
-
-100. https://github.com/kyrolabs/awesome-langchain
-101. https://github.com/Crossme0809/langchain-tutorials
+  10.公开课
+5. https://github.com/kyrolabs/awesome-langchain
+6. https://github.com/Crossme0809/langchain-tutorials
+7. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088)
+100. [一文入门最热的LLM应用开发框架LangChain](https://cloud.tencent.com/developer/article/2313918) 未
+101. [大模型LangChain框架基础与使用示例](https://cloud.tencent.com/developer/article/2331337) 未
 

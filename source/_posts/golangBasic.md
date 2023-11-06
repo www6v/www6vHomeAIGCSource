@@ -110,6 +110,7 @@ func new(Type) *Type
 4. xxx
 5. [golang 方法接收者](https://zhuanlan.zhihu.com/p/522568859)  mycode-go
 6. [你知道吗？Go新增加了三个内建函数 ](https://colobu.com/2023/05/28/go1-21-whats-new-builtin/)
+100. [Golang高性能编程实践](https://cloud.tencent.com/developer/article/2329450) *** 未
 
 
 
