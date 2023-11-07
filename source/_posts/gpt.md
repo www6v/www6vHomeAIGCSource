@@ -2,9 +2,9 @@
 title: GPT-工具和应用
 date: 2022-05-09 22:46:01
 tags:
-  - AI
+  - AIGC
 categories:
-  - AI
+  - AIGC
   - gpt
 ---
 

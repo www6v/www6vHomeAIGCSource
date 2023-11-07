@@ -4,7 +4,7 @@ date: 2022-11-02 09:57:59
 tags:
   - RAG
 categories: 
-  - AI
+  - AIGC
   - RAG  
 ---
 

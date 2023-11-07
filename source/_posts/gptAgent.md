@@ -2,9 +2,9 @@
 title: GPT-Agent
 date: 2022-11-02 10:55:27
 tags:
-  - GPT
+  - AIGC
 categories: 
-  - AI
+  - AIGC
   - Agent  
 ---
 

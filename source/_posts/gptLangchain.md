@@ -4,7 +4,7 @@ date: 2022-11-02 10:45:06
 tags:
   - GPT
 categories: 
-  - AI
+  - AIGC
   - Langchain  
 ---
 
@@ -95,7 +95,7 @@ from langchain.chains.openai_functions.tagging import (
 2. [functioncall](https://github.com/www6v/pyExamples/blob/master/langchain/langchain-functioncall.py)
 3. [qaOnDoc](https://github.com/www6v/pyExamples/blob/master/langchain/langchain-qaOnDoc.py)
 4. [LangChain Cookbook Part 2: Use Cases](https://github.com/www6v/langchain-tutorials/blob/main/LangChain%20Cookbook%20Part%202%20-%20Use%20Cases.ipynb)
-  10.公开课
+    10.公开课
 5. https://github.com/kyrolabs/awesome-langchain
 6. https://github.com/Crossme0809/langchain-tutorials
 7. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088)

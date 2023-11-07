@@ -4,7 +4,7 @@ date: 2022-10-30 19:10:21
 tags:
   - 大模型
 categories: 
-  - AI  
+  - AIGC
   - 大模型  
 ---
 

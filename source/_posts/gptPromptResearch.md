@@ -4,7 +4,7 @@ date: 2022-07-11 12:21:52
 tags:
   - prompt
 categories:
-  - AI  
+  - AIGC
   - prompt
 ---
 
