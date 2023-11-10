@@ -36,7 +36,7 @@ categories:
 + 跨模态Agents
   HuggingGPT
   
-# AutoGPT[3]
+# AutoGPT[3][6]
 
 AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 
@@ -47,12 +47,26 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 
 [本质上是prompt enginering]
 
+
+# 问题和局限性 [4]
++ 记忆召回问题
+  只是做简单的 embedding 相似性召回，很容易发现召回的结果不是很好
+  
++ 错误累积问题
+
++ 探索效率问题
+  中途引入人工的判断干预和反馈输入
+
++ 任务终止与结果验证
+  模型 agent 的工作如何终止也是一个挑战
+  
+
 # 参考
 
 1. 公开课
 2. 公开课
 3. [2023年新生代大模型Agents技术,ReAct,Self-Ask,Plan-and-execute,以及AutoGPT, HuggingGPT等应用](https://zhuanlan.zhihu.com/p/642357544) *** 论文
-
-100. [AutoGPT与LLM Agent解析](https://zhuanlan.zhihu.com/p/622947810) *** 未
-101. [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) git
+4. [AutoGPT与LLM Agent解析](https://zhuanlan.zhihu.com/p/622947810) *** 
+5. [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) git
+6. [带界面的 AutoGPT 产品](https://link.zhihu.com/?target=https%3A//godmode.space/)
 
