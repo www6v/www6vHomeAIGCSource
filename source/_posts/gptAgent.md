@@ -16,7 +16,7 @@ categories:
 
 ### 概念 [1][2]
   Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能力]
-  
+
 ### 类型  [3]
 + ReACT 范式
   把**融合了Reasoning和Acting**的一种范式，推理过程是浅显易懂，仅仅**包含thought-action-observation步骤**，很容易判断推理的过程的正确性，使用ReAct做决策甚至超过了强化学习.
@@ -43,5 +43,4 @@ categories:
 
 100. [AutoGPT与LLM Agent解析](https://zhuanlan.zhihu.com/p/622947810) *** 未
 101. [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) git
-
 

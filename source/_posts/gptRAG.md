@@ -35,9 +35,18 @@ categories:
 
 + 国外
   - Pinecone
+  
   - FAISS
   
+    [ANN]
   
+
+
+
+【向量的相对度算法
+1. 欧式距离
+2. 余弦
+3. ANN】
 
 # Langchain-Chatchat
 + 部署
