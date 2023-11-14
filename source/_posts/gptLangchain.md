@@ -89,6 +89,30 @@ from langchain.chains.openai_functions.tagging import (
 + Chatbots
 
 
+
+#  Chains
+
+``` python
+chain = load_summarize_chain(llm, chain_type="stuff", verbose=True)
+
+chain = load_summarize_chain(llm, chain_type="map_reduce", verbose=True)
+
+chain = load_summarize_chain(llm, chain_type="refine", verbose=True)
+
+chain = load_qa_chain(llm, chain_type="map_rerank", verbose=True, return_intermediate_steps=True)
+```
+
+
+
+| 链类型     | 整合方法                                                   | 优缺点                                        |
+| ---------- | ---------------------------------------------------------- | --------------------------------------------- |
+| stuff      | 将所有内容放入一个提示中，输入LLM                          | 简单、廉价、效果好/ 对输入文本有一定token限制 |
+| Map_reduce | 每个问题和文本块单独给语言模型，并将答案汇总生成最终结果   | 输入任意数量文本，且并行处理/ 速度慢，费token |
+| Refine     | 迭代处理多个文本，基于前一个文档答案构建下一个答案         | 用于组合信息，依次构建答案/ 速度慢，费token   |
+| Map_rerank | 每个文档单独调用LLM,并要求返回一个得分，然后选择最高的得分 | 需要告诉模型评分的规则/ 费token               |
+
+
+
 # 参考
 
 1. https://github.com/gkamradt/langchain-tutorials
