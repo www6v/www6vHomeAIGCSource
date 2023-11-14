@@ -22,7 +22,6 @@ categories:
 
 # 工具
 + langchain
-+ deepspeed
 
 
 # 原理
@@ -57,13 +56,22 @@ categories:
   ChatGLM
 
 # LLM的分布式训练
-+ 数据并行
-+ 模型并行
-+ 张量并行
+ + 分布式训练框架
+    + DeepSpeed
+    + Magatron
+
++ 预训练 3D并行
+   + 数据并行
+   + 模型并行
+   + 张量并行
 
 # 大模型架构
 
-
+#  分词
+### 单词分词法
+### 单字分词法
+### 子词分词法
+BPE - GPT系列
 
 
 # 参考
