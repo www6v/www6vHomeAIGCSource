@@ -5,7 +5,7 @@ tags:
   - Prompt
 categories: 
   - AIGC
-  - Prompt  
+  - prompt  
 ---
 
 <p></p>
