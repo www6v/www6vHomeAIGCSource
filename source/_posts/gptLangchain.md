@@ -90,7 +90,7 @@ from langchain.chains.openai_functions.tagging import (
 
 
 
-#  Chains [1] [8]
+#  Chains [1] [8][9]
 
 ``` python
 chain = load_summarize_chain(llm, chain_type="stuff", verbose=True)
@@ -111,6 +111,10 @@ chain = load_qa_chain(llm, chain_type="map_rerank", verbose=True, return_interme
 | Refine     | 迭代处理多个文本，基于前一个文档答案构建下一个答案         | 用于组合信息，依次构建答案/ 速度慢，费token   |
 | Map_rerank | 每个文档单独调用LLM,并要求返回一个得分，然后选择最高的得分 | 需要告诉模型评分的规则/ 费token               |
 
+{% asset_img   chains-type.jpg %}
+
+
+
 
 
 # 参考
@@ -124,6 +128,7 @@ chain = load_qa_chain(llm, chain_type="map_rerank", verbose=True, return_interme
 6. https://github.com/Crossme0809/langchain-tutorials
 7. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088)
 8. [吴恩达短课_LangChain](https://zhuanlan.zhihu.com/p/666656208)
+9. [精华笔记：吴恩达 x LangChain 《使用LangChain构建与数据对话的聊天机器人》（下）](https://zhuanlan.zhihu.com/p/651216604)
 100. [一文入门最热的LLM应用开发框架LangChain](https://cloud.tencent.com/developer/article/2313918) 未
 101. [大模型LangChain框架基础与使用示例](https://cloud.tencent.com/developer/article/2331337) 未
 
