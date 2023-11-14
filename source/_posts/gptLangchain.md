@@ -90,7 +90,7 @@ from langchain.chains.openai_functions.tagging import (
 
 
 
-#  Chains
+#  Chains [1] [8]
 
 ``` python
 chain = load_summarize_chain(llm, chain_type="stuff", verbose=True)
@@ -123,6 +123,7 @@ chain = load_qa_chain(llm, chain_type="map_rerank", verbose=True, return_interme
 5. https://github.com/kyrolabs/awesome-langchain
 6. https://github.com/Crossme0809/langchain-tutorials
 7. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088)
+8. [吴恩达短课_LangChain](https://zhuanlan.zhihu.com/p/666656208)
 100. [一文入门最热的LLM应用开发框架LangChain](https://cloud.tencent.com/developer/article/2313918) 未
 101. [大模型LangChain框架基础与使用示例](https://cloud.tencent.com/developer/article/2331337) 未
 
