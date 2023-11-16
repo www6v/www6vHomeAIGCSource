@@ -26,7 +26,9 @@ top:
 + {% post_link 'gptBigModelCOT' %}
 + {% post_link 'gptLangchain' %}
 + {% post_link 'gptRAG' %}
++ {% post_link 'gptFunctionCall' %} 
 + {% post_link 'gptStudy' %}
+
 
 
 
