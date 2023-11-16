@@ -62,9 +62,26 @@ categories:
 + rewrite
 + proxy_pass
 
+## 文件下载
+nginx.conf
+``` conf
+        location /file {
+            charset  gbk;
+            alias /home/hp/home/frontend/indicator/userlab.dat;
 
+            if ($request_filename ~* ^.*?\.(txt)$){
+                add_header Content-Disposition 'attachment';
+                add_header Content-Type: 'APPLICATION/OCTET-STREAM';
+            }
 
-## 参考:
+            autoindex on;
+            autoindex_exact_size   off;
+            autoindex_localtime    on;
+
+        }
+```
+
+## 参考
 
 1. [深入Nginx 思维导图](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651010416&idx=4&sn=dfa07f0e065d273b028e662e87e780ff&chksm=bdbecd238ac9443511c4e7eadf9e59cc9139fac25c52b44f7a93787b940826c5f61f06e10224&scene=27#wechat_redirect)
 
