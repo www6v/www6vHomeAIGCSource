@@ -1,5 +1,5 @@
 ---
-title: gpt  Prompt
+title: Prompt 总结
 date: 2021-05-26 22:50:04
 tags:
   - prompt

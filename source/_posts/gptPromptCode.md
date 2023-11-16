@@ -1,5 +1,5 @@
 ---
-title: gpt Prompt-Code
+title: Prompt-Code
 date: 2021-05-28 12:12:45
 tags:
   - prompt
