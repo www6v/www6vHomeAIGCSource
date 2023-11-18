@@ -14,7 +14,12 @@ categories:
 
 
 # 学习资料
+### 工程
++ [openai-cookbook](https://github.com/www6v/openai-cookbook)
+  [cookbook.openai](https://cookbook.openai.com/)
+
 ### Chatgpt
+
 + [ChatGPT 从 0 到 1](https://time.geekbang.org/opencourse/videointro/100541101)  基础
 + [ChatGPT 和预训练模型实战课](https://time.geekbang.org/opencourse/videointro/100541201) 
 

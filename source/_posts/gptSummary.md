@@ -20,10 +20,9 @@ top:
   + {% post_link 'gptPromptResearch' %}
   + {% post_link 'gptPromptCode' %}
   + {% post_link 'gptPrompt' %}
-
+  + {% post_link 'gptBigModelCOT' %}
 + {% post_link 'gpt' %}
 + {% post_link 'gptAgent' %}
-+ {% post_link 'gptBigModelCOT' %}
 + {% post_link 'gptLangchain' %}
 + {% post_link 'gptRAG' %}
 + {% post_link 'gptFunctionCall' %} 

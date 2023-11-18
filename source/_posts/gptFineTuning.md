@@ -12,3 +12,9 @@ categories:
 <!-- more -->
 
 
++ Fine-tunning
+  + PEFT(Parameter-Efficient Fine-Tuning)  PEFT
+    + P-Turning
+    + Adapter-Tuning [ 外挂]
+    + LoRA [ 外挂] [效果比较好]
+  + RLHF

@@ -1,5 +1,5 @@
 ---
-title: Prompt 总结
+title: Prompt-How to use
 date: 2021-05-26 22:50:04
 tags:
   - prompt
@@ -86,10 +86,8 @@ prompt =  定义角色+背景信息+任务目标+输出要求
 
 
 
-
-
-# Prompt Learning
-+ [Learn Prompting](https://learnprompting.org/zh-Hans/docs/intro) *** 
+# Prompt - How to use
++ [Learn Prompting](https://learnprompting.org/zh-Hans/docs/intro) *** **
 
 + [Chatgpt ShortCut](https://www.aishort.top/)
   [ChatGPT Shortcut ](https://github.com/rockbenben/ChatGPT-Shortcut)
@@ -97,9 +95,13 @@ prompt =  定义角色+背景信息+任务目标+输出要求
 + [ Awesome ChatGPT Prompts](https://prompts.chat/)  
 
 + [snackprompt.com](https://snackprompt.com/) ***
+
 + [flowgpt](https://flowgpt.com/) ***
+
 + [prompthero](https://prompthero.com/)
+
 + [publicprompts](https://publicprompts.art/)
+
 + [https://learningprompt.wiki/](https://learningprompt.wiki/) prompt 学习教程
 
 # 参考

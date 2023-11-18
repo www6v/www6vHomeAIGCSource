@@ -47,7 +47,7 @@ categories:
 
 + [ChatGPT Tutorial 101](https://gptdoc.sparkai.chat/)
 
-# 细分
+# 应用
 ### 思维导图
 [albus](https://albus.org/)
 

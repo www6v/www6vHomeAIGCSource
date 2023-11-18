@@ -15,4 +15,5 @@ categories:
 
 # 参考
 
-[Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
++ [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
++ [Prompt-Engineering-Guide ](https://github.com/www6v/Prompt-Engineering-Guide) ***

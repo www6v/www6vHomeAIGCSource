@@ -31,13 +31,6 @@ categories:
   梯度
 + embedding
 
-+ Fine-tunning
-  + PEFT(Parameter-Efficient Fine-Tuning)  PEFT
-    + P-Turning
-    + Adapter-Tuning [ 外挂]
-    + LoRA [ 外挂] [效果比较好]
-  + RLHF
-
 + 预训练技术
 
 # 模型
