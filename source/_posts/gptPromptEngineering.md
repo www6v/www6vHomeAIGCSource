@@ -10,3 +10,9 @@ categories:
 
 <p></p>
 <!-- more -->
+
+
+
+# 参考
+
+[Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)

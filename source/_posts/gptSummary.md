@@ -27,6 +27,7 @@ top:
 + {% post_link 'gptLangchain' %}
 + {% post_link 'gptRAG' %}
 + {% post_link 'gptFunctionCall' %} 
++ {% post_link 'gptFineTuning' %} 
 + {% post_link 'gptStudy' %}
 
 
