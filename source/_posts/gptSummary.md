@@ -15,6 +15,7 @@ top:
 
 
 + {% post_link 'gptBigModel' %}
++ {% post_link 'gptBigModelTraining' %}
 + Prompt
   + {% post_link 'gptPromptEngineering' %}
   + {% post_link 'gptPromptResearch' %}
@@ -28,6 +29,8 @@ top:
 + {% post_link 'gptFunctionCall' %} 
 + {% post_link 'gptFineTuning' %} 
 + {% post_link 'gptStudy' %}
+
+
 
 
 
