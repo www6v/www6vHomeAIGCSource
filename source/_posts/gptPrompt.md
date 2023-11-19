@@ -104,6 +104,10 @@ prompt =  定义角色+背景信息+任务目标+输出要求
 
 + [https://learningprompt.wiki/](https://learningprompt.wiki/) prompt 学习教程
 
++ [Prompt 大全](https://gpt.candobear.com/prompt)
+
++ [提示指令库](https://gp477l8icq.feishu.cn/wiki/ZYkUwbXgzi5eqYkHl0MceNrSnhb)  汇总
+  
 # 参考
 
 [学完这个视频，简历加一条：熟练掌握ChatGPT解决复杂问题｜ChatGPT使用教程](https://www.bilibili.com/video/BV1Lg4y1c7fk/)  *** 

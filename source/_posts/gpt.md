@@ -28,8 +28,6 @@ categories:
 + GPT学习宝典
   - 聚合
     - [GPT  工具箱](https://gpt.candobear.com/toolbox)
-  - prompt
-    - [Prompt 大全](https://gpt.candobear.com/prompt)
   - 教程
     - [学习资料](https://gpt.candobear.com/courses)
 
@@ -39,8 +37,6 @@ categories:
     - [AI主流工具精选](https://gp477l8icq.feishu.cn/wiki/RpabwPG9niFEu9kwJAQcAGxenDg)
     - [AI经典项目](https://gp477l8icq.feishu.cn/wiki/VJ9ewqfOgiyrbQksbyLcrODtnkb)
     - [AI导航站](https://gp477l8icq.feishu.cn/wiki/QVV6w3XstiR7hlkK53Bc8f9DnMf)
-  - prompt
-    - [提示指令库](https://gp477l8icq.feishu.cn/wiki/ZYkUwbXgzi5eqYkHl0MceNrSnhb)
   - [应用与变现案例](https://longalong.feishu.cn/wiki/wikcneAKpN3u473N7J9EAC4Ga0b)
 
 + [AI 工具箱](https://www.ailookme.com)  *** 
