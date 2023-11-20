@@ -12,10 +12,14 @@ categories:
 <!-- more -->
 
 
-# Agent
+## 目录
+<!-- toc -->
 
-### 概念 [1][2]
-  Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能力]
+# Agent
+### 架构图 [8] [1][2]
+{% asset_img 'agent-overview.jpg' %}
+
+Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能力]
 
 ### 类型  [3]
 + ReACT 范式
@@ -78,5 +82,5 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 5. [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) git
 6. [带界面的 AutoGPT 产品](https://link.zhihu.com/?target=https%3A//godmode.space/)
 7. [Assistant API详解与Agent开发实战-九天Hector](https://github.com/www6v/AIGC/tree/master/%E4%B9%9D%E5%A4%A9Hector/Assistant%20API%E8%AF%A6%E8%A7%A3%E4%B8%8EAgent%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98-%E4%B9%9D%E5%A4%A9Hector)
-100. [LLM Powered Autonomous Agents ](https://lilianweng.github.io/posts/2023-06-23-agent/) paper 未
+8. [LLM Powered Autonomous Agents ](https://lilianweng.github.io/posts/2023-06-23-agent/) paper 
 
