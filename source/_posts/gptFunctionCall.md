@@ -27,6 +27,12 @@ categories:
 
 
 
+### goal
+
+ The goal of the OpenAI Function APIs is to more reliably return valid and useful function calls than a generic text completion or chat API.
+
+
+
 # 参考
 
 1. [如何使用Chat Completions接口的函数调用功能](https://www.duidaima.com/Group/Topic/OtherTools/13709)

@@ -23,6 +23,7 @@ categories:
   + 本地知识库
   + Embedding 模型
   + 向量数据库
+  + Prompt Template
 
 
 

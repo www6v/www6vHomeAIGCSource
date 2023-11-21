@@ -59,7 +59,22 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
 + 跨模态Agents
   HuggingGPT
 
+
+# Langchain Agent
++ Conversational
++ OpenAI assistants
++ OpenAI functions
++ OpenAI Multi Functions Agent
++ OpenAI tools
+   OpenAI parallel function calling (a.k.a. tool calling)
++ ReAct
+  ZeroShotReactAgent
++ Self-ask with search
++ Structured tool chat
+
+
 # Example
+
 ### HuggingGPT 
 
 ### BabyAGI
