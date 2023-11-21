@@ -51,11 +51,21 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
   
 # 分类 [1][2][3]
 + Action agents
-    Function Call， ReACT
+    
+    - Function Call，
+    
+    - ReACT
+    
+      Thought: xxx
+      Action: xxx
+      Observation: xxx
+    
 + Simulation agents 
     生成式智能体， CAMEL，  Generative Agents
+    
 + Automomous Agent
     **AutoGPT**， BabyAGI
+    
 + 跨模态Agents
   HuggingGPT
 
