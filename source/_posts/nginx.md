@@ -64,15 +64,16 @@ categories:
 
 ## 文件下载
 nginx.conf
-``` conf
-        location /file {
+``` 
+        location /userlab.dat {
             charset  gbk;
-            alias /home/hp/home/frontend/indicator/userlab.dat;
+            # alias /home/hp/home/frontend/indicator/userlab.dat;
+
+            root /home/cms/indicator;
 
             if ($request_filename ~* ^.*?\.(txt)$){
-                add_header Content-Disposition 'attachment';
-                add_header Content-Type: 'APPLICATION/OCTET-STREAM';
-            }
+            add_header Content-Disposition 'attachment';
+            add_header Content-Type: 'APPLICATION/OCTET-STREAM';}
 
             autoindex on;
             autoindex_exact_size   off;
