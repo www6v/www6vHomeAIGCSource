@@ -41,17 +41,22 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
 
 
 # 类型  [3]
-+ ReACT 范式
++ ReACT 范式 [9]
   把**融合了Reasoning和Acting**的一种范式，推理过程是浅显易懂，仅仅**包含thought-action-observation步骤**，很容易判断推理的过程的正确性，使用ReAct做决策甚至超过了强化学习.
+  
   - chain-of-thought推理-问题
    事实幻想（fact hallucination）和错误传递（error propagation）
+  
 + Self-ask
+
+  Self-ask是一种follow-up的使用范式，仅仅包含follow-up, immediate answer步骤，至于follow-up多少个step，完全由它自己决定，估计这就是Self-ask的名字的由来。
+
 + Plan-and-execute agents
   本质上是先计划再执行，即先把用户的问题分解成一个个的子任务，然后再执行各个子任务，最后合并输出得到结果 
   
 # 分类 [1][2][3]
 + Action agents
-    
+  
     - Function Call，
     
     - ReACT
@@ -132,4 +137,5 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 6. [带界面的 AutoGPT 产品](https://link.zhihu.com/?target=https%3A//godmode.space/)
 7. [Assistant API详解与Agent开发实战-九天Hector](https://github.com/www6v/AIGC/tree/master/%E4%B9%9D%E5%A4%A9Hector/Assistant%20API%E8%AF%A6%E8%A7%A3%E4%B8%8EAgent%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98-%E4%B9%9D%E5%A4%A9Hector)
 8. [LLM Powered Autonomous Agents ](https://lilianweng.github.io/posts/2023-06-23-agent/) paper 
+9. [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) paper
 
