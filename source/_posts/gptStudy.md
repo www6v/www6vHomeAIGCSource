@@ -34,3 +34,6 @@ categories:
 
 ### Code
 + [GitHub Copilot 实践课](https://time.geekbang.org/opencourse/videointro/100540901)                                
+
+### 工业界
+[rocketmq-learning 社区](https://rocketmq-learning.com/)

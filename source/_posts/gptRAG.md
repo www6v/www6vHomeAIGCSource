@@ -43,9 +43,16 @@ categories:
 
 
 # RAG on Semi-structured data
-+ 分析pdf中图片 [6]
-+ 分析pdf中表格 [7]
+### 分析pdf中图片 [6]
 
+### 分析pdf中表格 [7]
+
+### 组件
++ pdf解析
+  unstructured
++ store
+ MultiVector Retriever- 元数据+数据
+ 
 # 向量数据库
 + 国产
   - Milvus
@@ -57,6 +64,7 @@ categories:
   - FAISS
     [ANN]
   
+
 【向量的相对度算法
 1. 欧式距离
 2. 余弦
@@ -81,4 +89,3 @@ categories:
 ### RAG on Semi-structured data
 6. [langchain-cookbook RAG](https://github.com/www6v/AIGC/blob/master/langchain-cookbook/Semi_structured_multi_modal_RAG_LLaMA2.ipynb)   解析pdf中的图片  运行有问题
 7. [Advanced-RAG semi_structured_data](https://github.com/www6v/AIGC/blob/master/Advanced-RAG/01_semi_structured_data.ipynb)   解析pdf中的表格，  运行没问题，能问表格中的数据
-    
