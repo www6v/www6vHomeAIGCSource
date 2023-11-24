@@ -55,12 +55,9 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
   本质上是先计划再执行，即先把用户的问题分解成一个个的子任务，然后再执行各个子任务，最后合并输出得到结果 
   
 # 分类 [1][2][3]
-+ Action agents
-  
-    - Function Call，
-    
++ Action agents  
+    - Function Call
     - ReACT
-    
       Thought: xxx
       Action: xxx
       Observation: xxx
@@ -69,10 +66,10 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
     生成式智能体， CAMEL，  Generative Agents
     
 + Automomous Agent
-    **AutoGPT**， BabyAGI
+    **AutoGPT**， **BabyAGI**
     
 + 跨模态Agents
-  HuggingGPT
+    HuggingGPT
 
 
 # Langchain Agent
@@ -92,7 +89,13 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
 
 ### HuggingGPT 
 
-### BabyAGI
+### BabyAGI  [AIGC]
+
+Plan-and-execute agents 
+
+The **planning** is almost always done **by an LLM**.
+
+The **execution** is usually done by a **separate agent (equipped with tools)**.
 
 ### AutoGPT[3][6]
 
