@@ -28,6 +28,7 @@ top:
 + {% post_link 'gptRAG' %}
 + {% post_link 'gptFunctionCall' %} 
 + {% post_link 'gptFineTuning' %} 
++ {% post_link 'gptFinGPT' %}  
 + {% post_link 'gptStudy' %}
 
 
