@@ -12,7 +12,7 @@ categories:
 <!-- more -->
 
 # Function Call
-### 调用顺序 [1][2]
+### 调用顺序  [0] [1][2]
 
 + Function Calling 整个功能的调用顺序大致如下
   - 声明函数：定义当前函数的名称，描述，以及对应的参数信息，并请求对应的接口；
@@ -20,8 +20,7 @@ categories:
   - 执行函数：根据对应的参数信息调用本地函数；
   - 上报结果：将本地函数执行的结果上报给 Chat 接口；
 
-
-{% asset_img 'functioncall.png' %}
+{% asset_img 'functioncall1.png' %}
 
 ### 代码 [2]
 
@@ -34,6 +33,7 @@ categories:
 
 
 # 参考
+0. [大模型开发(十一)：Chat Completions模型的Function calling功能详解](http://lihuaxi.xjx100.cn/news/1382737.html) 
 
 1. [如何使用Chat Completions接口的函数调用功能](https://www.duidaima.com/Group/Topic/OtherTools/13709)
 
