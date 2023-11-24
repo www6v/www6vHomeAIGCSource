@@ -43,14 +43,15 @@ categories:
   
 + Chains
   + 2大类
-    Chain interface[Legacy]
-    LangChain Expression Language (LCEL)
+    - Chain interface[Legacy]
+    - LangChain Expression Language (LCEL)
+      LCEL is a declarative way to compose chains.
   + Foundational
     + LLM
     + Sequential- SequentialChain
     + Router
     + Transformation
-
+  
  + Agent
    - Plan-and-execute agents
    
