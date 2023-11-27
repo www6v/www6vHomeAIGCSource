@@ -22,11 +22,23 @@ categories:
   梯度
 + embedding
 
-+ 预训练技术
 
-# 大模型架构
-+ Transformers
-  + Transformer
+
+# Training Pipeline[1]
+{% asset_img 'bigModelTrainingPipeline.jpg' %}
+
++ 预训练-->Base model
+  + 预训练技术
++ 微调-->SFT model
++ 模型对齐-->RLHF model
+
+# 大模型架构 [1][2]
+
+{% asset_img 'bigModelArch.jpg' %}
+
+{% asset_img 'bigModelArch1.jpg' %}
+
++ Transformer
   + Attention
 
 #  分词
@@ -37,6 +49,8 @@ BPE - GPT系列
 
 
 # 大模型
+###  排行榜 [4]
+
 ### 非开源
   Chatgpt
   文心一言
@@ -59,3 +73,5 @@ BPE - GPT系列
 2. [主流大语言模型的技术原理细节](https://cloud.tencent.com/developer/article/2328541) *** 腾讯     架构 + 训练 + 微调
 
 3. [Few-Shot, Zero-Shot & One-shot 的通俗理解](https://zhuanlan.zhihu.com/p/624793654) 
+
+4. [HuggingFaceH 大模型排行榜](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
