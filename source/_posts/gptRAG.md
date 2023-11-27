@@ -13,6 +13,9 @@ categories:
 
 
 
+## 目录
+<!-- toc -->
+
 
 
 
@@ -86,6 +89,9 @@ categories:
 
 
 
+#  Self-RAG
+
+
 
 
 # 参考
@@ -103,3 +109,8 @@ categories:
 ### RAG on Semi-structured data
 6. [langchain-cookbook RAG](https://github.com/www6v/AIGC/blob/master/langchain-cookbook/Semi_structured_multi_modal_RAG_LLaMA2.ipynb)   解析pdf中的图片  运行有问题
 7. [Advanced-RAG semi_structured_data](https://github.com/www6v/AIGC/blob/master/Advanced-RAG/01_semi_structured_data.ipynb)   解析pdf中的表格，  运行没问题，能问表格中的数据
+
+
+### Self-RAG
+8. [NLP（廿一）：从 RAG 到 Self-RAG —— LLM 的知识增强](https://zhuanlan.zhihu.com/p/661465330?utm_id=0) *** 
+9. [original implementation of SELF-RAG](https://github.com/www6v/self-rag)
