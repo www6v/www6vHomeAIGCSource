@@ -29,7 +29,12 @@ top:
 + {% post_link 'gptFunctionCall' %} 
 + {% post_link 'gptFineTuning' %} 
 + {% post_link 'gptFinGPT' %}  
++ {% post_link 'gptVectorStore' %}
 + {% post_link 'gptStudy' %}
+
+
+
+
 
 
 

@@ -26,11 +26,12 @@ categories:
 
 
 ### 大模型
-+ [尚硅谷×极客时间《AI 大模型实战训练营》大纲](https://shimo.im/docs/47kgM6NewnSO613V)
-+ [AI 大模型应用开发实战营1期大纲](https://shimo.im/docs/XKq42v7061SxZ2AN/read)
-+ [《AI 大模型全栈工程师》课程表（第 02 期） ](https://agiclass.feishu.cn/docx/DDzxdQZBooXw9Jx4DdWcLZjLnHd)
++ [尚硅谷×极客时间《AI 大模型实战训练营》大纲](https://shimo.im/docs/47kgM6NewnSO613V) 极客时间
++ [AI 大模型应用开发实战营1期大纲](https://shimo.im/docs/XKq42v7061SxZ2AN/read) 极客时间
++ [《AI 大模型微调训练营》大纲](https://w.1yb.co/KqBR58E)  极客时间
++ [《AI 大模型全栈工程师》课程表（第 02 期） ](https://agiclass.feishu.cn/docx/DDzxdQZBooXw9Jx4DdWcLZjLnHd)  知乎
 + [【清华 NLP X OpenBMB】大模型公开课｜带你从入门到实战](https://www.zhihu.com/education/video-course/1545850719483392000)  V ***
-+ [《AI 大模型微调训练营》大纲](https://w.1yb.co/KqBR58E)
+
 
 ### Code
 + [GitHub Copilot 实践课](https://time.geekbang.org/opencourse/videointro/100540901)                                
