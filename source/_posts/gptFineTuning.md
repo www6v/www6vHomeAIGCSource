@@ -29,7 +29,10 @@ categories:
 
 + PEFT(Parameter-Efficient Fine-Tuning)  PEFT
     + 引入重参数化（R）    
-      + LoRA [ 外挂] [效果比较好]
+      + LoRA: Low-Rank Adaptation of LLMs    
+        LoRA [ 外挂] [效果比较好]
+      + QLoRA: Efficient Finetuning of Quantized LLMs
+      + AdaLoRA: Adaptive Budget Allocation for PEFT      
     + 增加额外参数（A）
         + 软提示（Soft prompts） 
           + Prefix Tuning
@@ -39,6 +42,12 @@ categories:
         + Adapter-Tuning [ 外挂]
     + 选取一部分参数更新（S）
       + BitFit
+    + additive
+      + IA3  
+    
++ 统一微调框架
+    UniPELT
+
 
 # Training
 + Pretrain
@@ -50,8 +59,23 @@ categories:
   [本质  基于强化学习]  
   强化学习算法
 
+
+## ChatGPT 大模型训练技术解读 [1]
+
+- 基于人类反馈的强化学习微调技术 RLHF
+  - 使用有监督微调 Supervised Fine-tuning（SFT）预训练语言模型
+  - 训练奖励模型 Reward Model（RM）
+  - 使用强化学习算法微调语言模型
+
+## 工具 [1]
++ Hugging Face Transformers
++ Hugging Face PEFT
++ DeepSpeed
+
+
 # 参考
-1. https://github.com/huggingface/peft
+
+1. [AI 大模型微调训练营大纲](https://shimo.im/docs/KlkKv4XQDouwWRqd/read) 
 
 2. https://github.com/microsoft/LoRA
 
@@ -65,5 +89,8 @@ categories:
 5. [LLM微调实战](https://github.com/www6v/llm-action#llm%E5%BE%AE%E8%B0%83%E5%AE%9E%E6%88%98) 李国东  未
    5.1 [大模型参数高效微调技术实战（一）-PEFT概述](https://zhuanlan.zhihu.com/p/651744834)
    5.2 [大模型参数高效微调技术实战（五）-LoRA](https://zhuanlan.zhihu.com/p/649315197)
-   
-6. [PEFT](https://github.com/www6v/transformers-code/tree/master/03-PEFT)  未  bili
+
+
+100. [PEFT](https://github.com/www6v/transformers-code/tree/master/03-PEFT)  未  bili
+101. https://github.com/huggingface/peft
+
