@@ -28,6 +28,7 @@ categories:
 + 参数量和数据量之间的关系  
 
 
+
 # 预训练
 
 ###  预训练 [4]
@@ -79,3 +80,5 @@ LLaMA模型，尽管它的参数量只有650亿，但其性能与参数量为175
 3. [主流大语言模型的技术原理细节](https://cloud.tencent.com/developer/article/2328541) *** 腾讯     架构 + 训练 + 微调
 
 4. 大模型入门必看教程  九天Hector
+
+100. [第1章：DeepSpeed-Chat 模型训练实战](https://techdiylife.github.io/big-model-training/deepspeed/deepspeed-chat.html) 未
