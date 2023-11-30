@@ -15,6 +15,7 @@ top:
 
 
 + {% post_link 'gptBigModel' %}
++ {% post_link 'gptTransformer' %} 
 + {% post_link 'gptBigModelTraining' %}
 + Prompt
   + {% post_link 'gptPromptEngineering' %}

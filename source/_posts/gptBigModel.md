@@ -30,10 +30,6 @@ categories:
 
 {% asset_img 'bigModelArch1.jpg' %}
 
-+ Transformer
-  + Attention
-
-
 
 #  分词
 ### 单词分词法
