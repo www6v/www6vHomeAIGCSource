@@ -12,17 +12,25 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
 
-
+# Paper
++ [paper-reading](https://github.com/www6v/paper-reading) 李牧大神
+  + GPT-4
+  + Instruct GPT *** 
+  + 多模态
+  + Chain of Thought  *** 
+  + CLIP
+  + ViLT 
+  + GPT, GPT-2, GPT-3 精读  ***
+  + Transformer  *** 
++ [AI 大模型应用开发实战营1期大纲](https://shimo.im/docs/XKq42v7061SxZ2AN/read) 
+  基础篇 - 论文 *** 
+  
 # 工程
 + [openai-cookbook](https://github.com/www6v/openai-cookbook)
   [cookbook.openai](https://cookbook.openai.com/)
-
-# Chatgpt
-
-+ [ChatGPT 从 0 到 1](https://time.geekbang.org/opencourse/videointro/100541101)  基础
-+ [ChatGPT 和预训练模型实战课](https://time.geekbang.org/opencourse/videointro/100541201) 
-
 
 
 # 课程
@@ -31,6 +39,8 @@ categories:
 + [AI 大模型应用开发实战营1期大纲](https://shimo.im/docs/XKq42v7061SxZ2AN/read) 
 + [《AI 大模型微调训练营》大纲](https://w.1yb.co/KqBR58E)  
 + [GitHub Copilot 实践课](https://time.geekbang.org/opencourse/videointro/100540901)  
++ [ChatGPT 从 0 到 1](https://time.geekbang.org/opencourse/videointro/100541101)  基础
++ [ChatGPT 和预训练模型实战课](https://time.geekbang.org/opencourse/videointro/100541201) 
 
 ### 知乎
 + [《AI 大模型全栈工程师》课程表（第 02 期） ](https://agiclass.feishu.cn/docx/DDzxdQZBooXw9Jx4DdWcLZjLnHd)  
