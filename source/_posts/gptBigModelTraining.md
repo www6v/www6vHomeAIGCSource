@@ -76,6 +76,8 @@ LLaMA模型，尽管它的参数量只有650亿，但其性能与参数量为175
 1. [How to Train Really Large Models on Many GPUs? ](https://lilianweng.github.io/posts/2021-09-25-train-large/)
 
 2. [大模型训练入门实战](https://techdiylife.github.io/big-model-training/deepspeed/LLM-state-of-GPT.html)  *** 
+   [State of GPT](https://karpathy.ai/stateofgpt.pdf) 
+   [State of GPT：大神Andrej揭秘OpenAI大模型原理和训练过程 ](https://mp.weixin.qq.com/s/zmEGzm1cdXupNoqZ65h7yg)
 
 3. [主流大语言模型的技术原理细节](https://cloud.tencent.com/developer/article/2328541) *** 腾讯     架构 + 训练 + 微调
 
