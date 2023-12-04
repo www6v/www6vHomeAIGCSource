@@ -67,10 +67,12 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
     
 + Automomous Agent
     **AutoGPT**， **BabyAGI**,  **AutoGenI[Microsoft]**
+    MetaGPT，
     
 + 跨模态Agents
     HuggingGPT
 
++  ChatDev， AutoGen
 
 # Langchain Agent
 + Conversational

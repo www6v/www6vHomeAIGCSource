@@ -81,4 +81,6 @@ LLaMA模型，尽管它的参数量只有650亿，但其性能与参数量为175
 
 4. 大模型入门必看教程  九天Hector
 
-100. [第1章：DeepSpeed-Chat 模型训练实战](https://techdiylife.github.io/big-model-training/deepspeed/deepspeed-chat.html) 未
+5. [第1章：DeepSpeed-Chat 模型训练实战](https://techdiylife.github.io/big-model-training/deepspeed/deepspeed-chat.html)  Bili 未
+
+   [DeepSpeed-Chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)
