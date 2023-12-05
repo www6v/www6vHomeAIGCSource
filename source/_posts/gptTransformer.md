@@ -11,17 +11,30 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
 
-## Attention
+## Attention [3]
+### self-attention
+{% asset_img 'self-attention.jpg' %}
 
+aligment
 
-## Transformer
+## Transformer [2]
+### Encoder-Decoder架构 [1]
+{% asset_img 'Transformer_decoder.jpg' %}
+{% asset_img 'transformer_resideual_layer_norm_3.jpg' %}
 
+### self-attention
+
+### Multi-Head Attention
+
+###  Positional Encoding
 
 
 ## 参考
-[illustrated-transformer](http://jalammar.github.io/illustrated-transformer/)
-[Transformer - Attention is all you need](https://zhuanlan.zhihu.com/p/311156298)
-[超详细图解Self-Attention](https://zhuanlan.zhihu.com/p/410776234)
-[李宏毅《深度学习》- Self-attention 自注意力机制](https://blog.csdn.net/kkm09/article/details/120855658)
+1. [illustrated-transformer](http://jalammar.github.io/illustrated-transformer/) *** 
+2. [Transformer - Attention is all you need](https://zhuanlan.zhihu.com/p/311156298)
+3. [超详细图解Self-Attention](https://zhuanlan.zhihu.com/p/410776234) ***
+4. [李宏毅《深度学习》- Self-attention 自注意力机制](https://blog.csdn.net/kkm09/article/details/120855658)
 
