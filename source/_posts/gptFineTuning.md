@@ -49,7 +49,13 @@ categories:
     UniPELT
 
 
+
+{% asset_img 'overview.jpg' %}
+
+
+
 # Training
+
 + Pretrain
 
 + Supervised fine-tuning (SFT)
