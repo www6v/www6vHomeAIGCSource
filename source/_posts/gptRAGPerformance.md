@@ -19,6 +19,20 @@ categories:
 
 ### 分块参数
 
+### openai RAG 成功案例
+1. retrieval with consine similarity
+2. **HyDE retrieval**
+   FT Embeddings
+   **Chunk/embedding experiments**
+3. Reranking
+   Classification step
+4. Prompt engineering
+   **Tool use**
+   **Query expansion**
+
+{% asset_img 'openai-rag.jpg' %}
+
+
 # 参考
 
 1. [The Tech Buffet #12: Improve RAG Pipelines With These 3 Indexing Methods](https://thetechbuffet.substack.com/p/rag-indexing-methods)
