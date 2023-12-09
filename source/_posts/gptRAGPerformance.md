@@ -20,6 +20,8 @@ categories:
 ### 分块参数
 
 ### openai RAG 成功案例
+{% asset_img 'openai-rag.jpg' %}
+
 1. retrieval with consine similarity
 2. **HyDE retrieval**
    FT Embeddings
@@ -29,9 +31,6 @@ categories:
 4. Prompt engineering
    **Tool use**
    **Query expansion**
-
-{% asset_img 'openai-rag.jpg' %}
-
 
 # 参考
 
