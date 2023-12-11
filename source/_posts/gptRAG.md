@@ -1,5 +1,5 @@
 ---
-title:  GPT-RAG
+title: RAG
 date: 2022-11-02 09:57:59
 tags:
   - RAG

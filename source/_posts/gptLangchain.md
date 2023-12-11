@@ -1,5 +1,5 @@
 ---
-title: GPT - Langchain
+title: Langchain
 date: 2022-11-02 10:45:06
 tags:
   - GPT

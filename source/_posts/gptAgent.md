@@ -1,5 +1,5 @@
 ---
-title: GPT-Agent
+title: Agent
 date: 2022-11-02 10:55:27
 tags:
   - AIGC
