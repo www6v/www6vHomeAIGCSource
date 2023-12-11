@@ -71,7 +71,7 @@ categories:
 LLaMA模型，尽管它的参数量只有650亿，但其性能与参数量为1750亿的GPT-3模型相比也非常优秀。主要原因在于，LLaMA模型的训练数据量达到了1.4万亿，而GPT-3只有3000亿。
 
 # 参考
-0. [LLM学习系列1：大模型架构要点总结](https://zhuanlan.zhihu.com/p/648050614)
+0. [LLM学习系列1：大模型架构要点总结](https://zhuanlan.zhihu.com/p/648050614)  from ppt
 
 1. [How to Train Really Large Models on Many GPUs? ](https://lilianweng.github.io/posts/2021-09-25-train-large/)
 
@@ -86,3 +86,6 @@ LLaMA模型，尽管它的参数量只有650亿，但其性能与参数量为175
 5. [第1章：DeepSpeed-Chat 模型训练实战](https://techdiylife.github.io/big-model-training/deepspeed/deepspeed-chat.html)  Bili 未
 
    [DeepSpeed-Chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)
+   
+100. [[译] 如何训练一个企业级 GPT 助手（OpenAI，2023）](http://arthurchiao.art/blog/how-to-train-a-gpt-assistant-zh/) 未
+101. [[译] GPT 是如何工作的：200 行 Python 代码实现一个极简 GPT（2023）](http://arthurchiao.art/blog/gpt-as-a-finite-state-markov-chain-zh/)  未

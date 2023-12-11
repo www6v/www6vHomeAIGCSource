@@ -57,7 +57,15 @@ BPE - GPT系列
 + Zero-Shot 
 
 
+
+# GPU 
++ 显卡天梯榜[5]
+
++ 显卡
+显卡 = GPU +  显存
+
 # 参考
+
 1. [LLM学习系列1：大模型架构要点总结](https://zhuanlan.zhihu.com/p/648050614)
 
 2. [主流大语言模型的技术原理细节](https://cloud.tencent.com/developer/article/2328541) *** 腾讯     架构 + 训练 + 微调
@@ -66,3 +74,5 @@ BPE - GPT系列
 
 4. [HuggingFaceH 大模型排行榜](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
 
+5. [显卡天梯榜](https://topic.expreview.com/GPU)
+100. [[译][论文] 大语言模型（LLM）综述与实用指南（Amazon，2023）](http://arthurchiao.art/blog/llm-practical-guide-zh/) 未
