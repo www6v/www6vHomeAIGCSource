@@ -54,6 +54,17 @@ categories:
 
 
 
+#  Instruction Tuning[6]
++ Prompt vs. Instruction Tuning
+Prompt是去激发语言模型的**补全能力**，比如给出上半句生成下半句、或者做完形填空，都还是像在做language model任务.
+
+而Instruction Tuning则是激发语言模型的**理解能力**，通过给出更明显的指令/指示，让模型去理解并做出正确的action
+
+**Prompt tuning**都是针对**一个任务**的，比如做个情感分析任务的prompt tuning，精调完的模型只能用于情感分析任务，而经过**Instruction Tuning****多任务**精调后，可以用于其他任务的zero-shot
+
++  Instruction Tuning 指令微调
+  - Self Instruction
+
 # Training
 
 + Pretrain
@@ -66,7 +77,7 @@ categories:
   强化学习算法
 
 
-## ChatGPT 大模型训练技术解读 [1]
+## ChatGPT 训练  [1]
 
 - 基于人类反馈的强化学习微调技术 RLHF
   - 使用有监督微调 Supervised Fine-tuning（SFT）预训练语言模型
@@ -96,6 +107,7 @@ categories:
    5.1 [大模型参数高效微调技术实战（一）-PEFT概述](https://zhuanlan.zhihu.com/p/651744834)
    5.2 [大模型参数高效微调技术实战（五）-LoRA](https://zhuanlan.zhihu.com/p/649315197)
 
+6. [Instruction Tuning｜谷歌Quoc V.Le团队提出又一精调范式](https://zhuanlan.zhihu.com/p/408166011)
 
 100. [PEFT](https://github.com/www6v/transformers-code/tree/master/03-PEFT)  未  bili
 101. https://github.com/huggingface/peft
