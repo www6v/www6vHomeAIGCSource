@@ -19,7 +19,6 @@ categories:
 {% asset_img 'npl4Paragiam.jpg'  4种范式 %}
 
 
-
 # 原理
 
 + 正向传播
@@ -27,7 +26,6 @@ categories:
 + 反相传播
   梯度
 + embedding
-
 
 
 # 大模型架构 [1][2]
@@ -40,24 +38,9 @@ categories:
 # 大模型
 ###  排行榜 [4]
 
-### 非开源
-  Chatgpt
-  文心一言
-
-### 开源
-  LLaMA
-  Baichuan2
-  通义千问（Qwen-7B） 
-  ChatGLM
-
-
-
-
-
 # GPU 
 + 显卡天梯榜
  [显卡天梯榜](https://topic.expreview.com/GPU)
-
 
 + 显卡
 显卡 = GPU +  显存

@@ -17,7 +17,7 @@ categories:
 + 局部微调
   + PEFT(Parameter-Efficient Fine-Tuning)  PEFT
 
-### PEFT 分类 
+# PEFT 分类 
 
 {% asset_img 'category.png' %}
 
@@ -48,10 +48,7 @@ categories:
 + 统一微调框架
     UniPELT
 
-
-
 {% asset_img 'overview.jpg' %}
-
 
 
 #  Instruction Tuning[6]
@@ -65,26 +62,18 @@ Prompt是去激发语言模型的**补全能力**，比如给出上半句生成�
 +  Instruction Tuning 指令微调
   - Self Instruction
 
-# Training 
-
-+ Pretrain
-
-+ Supervised fine-tuning (SFT)
-  = Instruction Tuning
-  
-+ RLHF
-  [本质  基于强化学习]  
-  强化学习算法
-
-
 
 ## ChatGPT 训练  [1]
 
 - 基于人类反馈的强化学习微调技术 RLHF
   - 使用有监督微调 Supervised Fine-tuning（SFT）预训练语言模型
+    + Supervised fine-tuning (SFT)
+      = Instruction Tuning
   - 训练奖励模型 Reward Model（RM）
   - 使用强化学习算法微调语言模型
-
+    + RLHF
+      [本质  基于强化学习, 强化学习算法]  
+      
 ## 工具 [1]
 + Hugging Face Transformers
 + Hugging Face PEFT
@@ -95,7 +84,7 @@ Prompt是去激发语言模型的**补全能力**，比如给出上半句生成�
 
 1. [AI 大模型微调训练营大纲](https://shimo.im/docs/KlkKv4XQDouwWRqd/read) 
 
-2. https://github.com/microsoft/LoRA
+2. xxx
 
 3. [大模型干货教程看这一个就够了~2023年全网最硬核最全面的大模型公开课|大模型微调 | ChatGLM | LangChain](https://www.bilibili.com/video/BV1t8411D7v4?p=8) ***
 
