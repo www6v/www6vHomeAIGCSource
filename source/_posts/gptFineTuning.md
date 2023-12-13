@@ -60,21 +60,22 @@ Prompt是去激发语言模型的**补全能力**，比如给出上半句生成�
 
 而Instruction Tuning则是激发语言模型的**理解能力**，通过给出更明显的指令/指示，让模型去理解并做出正确的action
 
-**Prompt tuning**都是针对**一个任务**的，比如做个情感分析任务的prompt tuning，精调完的模型只能用于情感分析任务，而经过**Instruction Tuning****多任务**精调后，可以用于其他任务的zero-shot
+**Prompt tuning**都是针对**一个任务**的，比如做个情感分析任务的prompt tuning，精调完的模型只能用于情感分析任务，而经过**Instruction Tuning多任务**精调后，可以用于其他任务的zero-shot
 
 +  Instruction Tuning 指令微调
   - Self Instruction
 
-# Training
+# Training 
 
 + Pretrain
 
 + Supervised fine-tuning (SFT)
-  迁移学习方法
+  = Instruction Tuning
   
 + RLHF
   [本质  基于强化学习]  
   强化学习算法
+
 
 
 ## ChatGPT 训练  [1]
