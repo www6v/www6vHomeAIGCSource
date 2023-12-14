@@ -23,6 +23,8 @@ categories:
   - Pinecone
   - FAISS
     [ANN]
+  - Chroma
+  - Weaviate
   
 
 【向量的相对度算法
