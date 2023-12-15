@@ -63,5 +63,9 @@ At a high level, HyDE is an embedding technique that takes queries, generates a 
 
 2. [大语言模型应用中的文本分块策略](https://hustai.gitee.io/zh/posts/rag/Chunking-Strategies.html)
    [LLM 应用中的分块策略 ](https://yangfei.me/tutorials/chunking-strategies)
-   
+
 3. [Applying OpenAI's RAG Strategies](https://blog.langchain.dev/applying-openai-rag/)   *** 
+
+4. [A Survey of Techniques for Maximizing LLM Performance](https://www.youtube.com/watch?v=ahnGLM-RC1Y)  *** V
+
+   [A Survey of Techniques for Maximizing LLM Performance梳理](https://zhuanlan.zhihu.com/p/670880685) 
