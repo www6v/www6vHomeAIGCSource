@@ -19,6 +19,16 @@ categories:
 {% asset_img 'npl4Paragiam.jpg'  4种范式 %}
 
 
+# Scaling Law[5]
+### Scaling Law
+{% asset_img 'scalingLaw.jpg' %}
+
+### 参数量 vs 数据量
+{% asset_img 'paramVSdataSize.jpg' %}
+  
+### 参数量 vs 数据量
+{% asset_img 'computeVSDatasize.jpg' %}
+
 # 原理
 
 + 正向传播
@@ -51,6 +61,7 @@ categories:
 2. [主流大语言模型的技术原理细节](https://cloud.tencent.com/developer/article/2328541) *** 腾讯     架构 + 训练 + 微调
 3. [[综述]鹏飞大神的Pre-train, Prompt, and Predict [1]](https://zhuanlan.zhihu.com/p/396098543)
 4. [HuggingFaceH 大模型排行榜](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
+5. [解析大模型中的Scaling Law](https://zhuanlan.zhihu.com/p/667489780)
 
 
 100. [[译][论文] 大语言模型（LLM）综述与实用指南（Amazon，2023）](http://arthurchiao.art/blog/llm-practical-guide-zh/) 未

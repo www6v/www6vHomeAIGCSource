@@ -29,14 +29,16 @@ aligment
 
 transfomer 架构在GPU上的并行
 
-### self-attention
+### Self-attention
 
-### Multi-Head Attention
+### Multi-Head Attention(MHA)
 
 ###  Positional Encoding
 
+# 变体
+{% asset_img 'transformers.jpg' %}
 
-## 参考
+# 参考
 1. [illustrated-transformer](http://jalammar.github.io/illustrated-transformer/) *** 
 2. [Transformer - Attention is all you need](https://zhuanlan.zhihu.com/p/311156298)
 3. [超详细图解Self-Attention](https://zhuanlan.zhihu.com/p/410776234) ***

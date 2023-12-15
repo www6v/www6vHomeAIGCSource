@@ -15,17 +15,13 @@ categories:
 <!-- toc -->
 
 # 分布式训练 [1]
-
- + 分布式训练框架
-    + DeepSpeed
-    + Magatron
-
-+ 预训练 3D并行
+### 预训练 3D并行
    + 数据并行
    + 模型并行
    + 张量并行
-   
-+ 参数量和数据量之间的关系  
+
+   {% asset_img 'pararllelTraining.jpg' %}
+
 
 
 
@@ -74,7 +70,9 @@ LLaMA模型，尽管它的参数量只有650亿，但其性能与参数量为175
 + 单词分词法
 + 单字分词法
 + 子词分词法
-  BPE - GPT系列
+  BPE - GPT系列, WordPiece
+
+
 
 # 参考
 0. [LLM学习系列1：大模型架构要点总结](https://zhuanlan.zhihu.com/p/648050614)  from ppt
