@@ -50,11 +50,17 @@ At a high level, HyDE is an embedding technique that takes queries, generates a 
 2. **HyDE retrieval**
    Fine-tune Embeddings
    **Chunk/embedding experiments**
-3. Reranking
+3. **Reranking**
    Classification step
 4. Prompt engineering
    **Tool use**
    **Query expansion**
+
+### Query Transformations
++ Query expansion
+  Multi-query retriever 
++ HyDE
+
 
 # 参考
 
