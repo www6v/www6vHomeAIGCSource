@@ -47,20 +47,25 @@ At a high level, HyDE is an embedding technique that takes queries, generates a 
 {% asset_img 'openai-rag.jpg' %}
 
 1. retrieval with consine similarity
-2. **HyDE retrieval**
+2. **HyDE retrieval** [5]
    Fine-tune Embeddings
    **Chunk/embedding experiments**
-3. **Reranking**
+3. **Reranking** [6]
    Classification step
 4. Prompt engineering
    **Tool use**
-   **Query expansion**
+   **Query expansion**[5]
 
-### Query Transformations
-+ Query expansion
+### Query Transformations[5]
++ **Query expansion**
   Multi-query retriever 
-+ HyDE
++ **HyDE**
++ Step back prompting
+ [抽象prompting]
++ Rewrite-Retrieve-Read
 
+### Query Construction [4]
+{% asset_img 'structured_data_stacks.jpg' %}
 
 # 参考
 
@@ -72,6 +77,13 @@ At a high level, HyDE is an embedding technique that takes queries, generates a 
 
 3. [Applying OpenAI's RAG Strategies](https://blog.langchain.dev/applying-openai-rag/)   *** 
 
-4. [A Survey of Techniques for Maximizing LLM Performance](https://www.youtube.com/watch?v=ahnGLM-RC1Y)  *** V
+4. [Query Construction](https://blog.langchain.dev/query-construction/) ***
+
+5. [Query Transformations](https://blog.langchain.dev/query-transformations/)
+
+6. [Say Goodbye to Irrelevant Search Results: Cohere Rerank Is Here](https://txt.cohere.com/rerank/)
+   [Rerank](https://github.com/langchain-ai/langchain/tree/master/templates/rag-pinecone-rerank)
+
+100. [A Survey of Techniques for Maximizing LLM Performance](https://www.youtube.com/watch?v=ahnGLM-RC1Y)  *** V
 
    [A Survey of Techniques for Maximizing LLM Performance梳理](https://zhuanlan.zhihu.com/p/670880685) 
