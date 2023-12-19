@@ -37,7 +37,7 @@ top_k
 **BM25+FAAIS   好于 FAAIS相似度搜索**
 **FAAIS相似度搜索 好于 HyDE和上下文压缩**
 
-# embeding
+# Embeding
 **BGE** 优于 OpenAI ADA02
 
 + HyDE
@@ -50,7 +50,7 @@ At a high level, HyDE is an embedding technique that takes queries, generates a 
 2. **HyDE retrieval** [5]
    Fine-tune Embeddings
    **Chunk/embedding experiments**
-3. **Reranking** [6]
+3. **Reranking** [6][8]
    Classification step
 4. Prompt engineering
    **Tool use**
@@ -94,8 +94,13 @@ A **self-querying** retriever is one that, as the name suggests, has the  abilit
 
 6. [Say Goodbye to Irrelevant Search Results: Cohere Rerank Is Here](https://txt.cohere.com/rerank/)
    [Rerank](https://github.com/langchain-ai/langchain/tree/master/templates/rag-pinecone-rerank)
+   [Cohere Reranker](https://python.langchain.com/docs/integrations/retrievers/cohere-reranker)
    
 7. [self_query](https://github.com/langchain-ai/langchain/blob/master/docs/docs/modules/data_connection/retrievers/self_query.ipynb)
+
+8. [RAG Fusion](https://github.com/langchain-ai/langchain/blob/master/cookbook/rag_fusion.ipynb)
+   [Forget RAG, the Future is RAG-Fusion](https://towardsdatascience.com/forget-rag-the-future-is-rag-fusion-1147298d8ad1)
+
 
 100. [A Survey of Techniques for Maximizing LLM Performance](https://www.youtube.com/watch?v=ahnGLM-RC1Y)  *** V
 
