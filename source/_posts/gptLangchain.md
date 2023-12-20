@@ -31,8 +31,8 @@ categories:
   + Text Splitters
   + **Retrievers**
     - Ensemble Retriever [10]
-      The EnsembleRetriever takes a list of retrievers as input and ensemble the results of their get_relevant_documents() methods and rerank the results based on the Reciprocal Rank Fusion algorithm.
-      The most common pattern is to combine a sparse retriever (like BM25) with a dense retriever (like embedding similarity), because their strengths are complementary. It is also known as “hybrid search”.
+      The EnsembleRetriever takes a list of retrievers as input and ensemble the results of their get_relevant_documents() methods and **rerank the results based on the Reciprocal Rank Fusion algorithm**.
+      The most common pattern is to **combine a sparse retriever (like BM25) with a dense retriever (like embedding similarity)**, because their strengths are complementary. It is also known as “hybrid search”.
     VectoreStoreRetriever
   + VectorStores
   + index
