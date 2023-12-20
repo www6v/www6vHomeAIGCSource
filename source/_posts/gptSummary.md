@@ -19,6 +19,7 @@ top:
 + {% post_link 'gptFamily' %}  
 + {% post_link 'gptBigModelTraining' %}
 + {% post_link 'gptFineTuning' %} 
++ {% post_link 'gptFineTuningCode' %}  
 + {% post_link 'gptFinGPT' %}  
 
 ## Prompt

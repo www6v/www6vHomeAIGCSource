@@ -51,7 +51,7 @@ categories:
 {% asset_img 'overview.jpg' %}
 
 
-#  Instruction Tuning[6]
+#  Instruction Tuning[5]
 + Prompt vs. Instruction Tuning
 Prompt是去激发语言模型的**补全能力**，比如给出上半句生成下半句、或者做完形填空，都还是像在做language model任务.
 
@@ -81,7 +81,7 @@ Prompt是去激发语言模型的**补全能力**，比如给出上半句生成�
 
 
 # 参考
-
+### 原理
 1. [AI 大模型微调训练营大纲](https://shimo.im/docs/KlkKv4XQDouwWRqd/read) 
 
 2. xxx
@@ -93,12 +93,7 @@ Prompt是去激发语言模型的**补全能力**，比如给出上半句生成�
 
    4.2  [大模型参数高效微调技术原理综述（七）-最佳实践、总结](https://zhuanlan.zhihu.com/p/649755252)
 
-5. [LLM微调实战](https://github.com/www6v/llm-action#llm%E5%BE%AE%E8%B0%83%E5%AE%9E%E6%88%98) 李国东  未
-   5.1 [大模型参数高效微调技术实战（一）-PEFT概述](https://zhuanlan.zhihu.com/p/651744834)
-   5.2 [大模型参数高效微调技术实战（五）-LoRA](https://zhuanlan.zhihu.com/p/649315197)
+5. [Instruction Tuning｜谷歌Quoc V.Le团队提出又一精调范式](https://zhuanlan.zhihu.com/p/408166011)
 
-6. [Instruction Tuning｜谷歌Quoc V.Le团队提出又一精调范式](https://zhuanlan.zhihu.com/p/408166011)
 
-100. [PEFT](https://github.com/www6v/transformers-code/tree/master/03-PEFT)  未  bili
-101. https://github.com/huggingface/peft
 
