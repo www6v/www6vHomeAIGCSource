@@ -16,20 +16,24 @@ categories:
   + Language models  [10]        
      + LLM
      + Chat Model
-     + Embedding [7]
+     + **Embedding** [7]
   +  Prompts 
      + Prompt Template
      + Few-shot example
      + Example Selectors [类比选择]
        关键字  相似度  长度
   + Output parsers
-  + function call[2]
+  + **function call**[2]
     
   
 + Retrieval
   + Document Loaders
   + Text Splitters
-  + Retrievers-VectoreStoreRetriever
+  + **Retrievers**
+    - Ensemble Retriever [10]
+      The EnsembleRetriever takes a list of retrievers as input and ensemble the results of their get_relevant_documents() methods and rerank the results based on the Reciprocal Rank Fusion algorithm.
+      The most common pattern is to combine a sparse retriever (like BM25) with a dense retriever (like embedding similarity), because their strengths are complementary. It is also known as “hybrid search”.
+    VectoreStoreRetriever
   + VectorStores
   + index
 
@@ -130,6 +134,7 @@ chain = load_qa_chain(llm, chain_type="map_rerank", verbose=True, return_interme
 7. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088)
 8. [吴恩达短课_LangChain](https://zhuanlan.zhihu.com/p/666656208)
 9. [精华笔记：吴恩达 x LangChain 《使用LangChain构建与数据对话的聊天机器人》（下）](https://zhuanlan.zhihu.com/p/651216604)
+10. [ensemble](https://python.langchain.com/docs/modules/data_connection/retrievers/ensemble)
 100. [一文入门最热的LLM应用开发框架LangChain](https://cloud.tencent.com/developer/article/2313918) 未
 101. [大模型LangChain框架基础与使用示例](https://cloud.tencent.com/developer/article/2331337) 未
 

@@ -50,4 +50,5 @@ transfomer 架构在GPU上的并行
 4. [李宏毅《深度学习》- Self-attention 自注意力机制](https://blog.csdn.net/kkm09/article/details/120855658)
 5. [主流大语言模型的技术原理细节](https://cloud.tencent.com/developer/article/2328541)
 100. [Transformers from scratch](http://arthurchiao.art/blog/transformers-from-scratch-zh/) V, github 未
+101. [LLM Visualization](https://bbycroft.net/llm) ***  未
 
