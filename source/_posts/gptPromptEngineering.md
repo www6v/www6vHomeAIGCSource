@@ -14,6 +14,8 @@ categories:
 
 
 # 参考
++ [Prompt-Engineering-Guide ](https://github.com/www6v/Prompt-Engineering-Guide) *** git
 
-+ [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
-+ [Prompt-Engineering-Guide ](https://github.com/www6v/Prompt-Engineering-Guide) ***
++ [The Prompt Landscape](https://blog.langchain.dev/the-prompt-landscape/)  langchain
++ [Prompt Engineering ](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) paper
++ [Prompt Engineering Guide](https://www.promptingguide.ai/techniques) guide
