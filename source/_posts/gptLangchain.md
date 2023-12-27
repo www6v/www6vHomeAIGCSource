@@ -11,8 +11,12 @@ categories:
 <p></p>
 <!-- more -->
 
-# Basic
-+ Model I/O  
+## 目录
+<!-- toc -->
+
+# Modules
+## main modules
+###  Model I/O  
   + Language models  [10]        
      + LLM
      + Chat Model
@@ -26,26 +30,18 @@ categories:
   + **function call**[2]
     
   
-+ Retrieval
+###  Retrieval
   + Document Loaders
   + Text Splitters
-  + **Retrievers**
-    - Ensemble Retriever [10]
-      The EnsembleRetriever takes a list of retrievers as input and ensemble the results of their get_relevant_documents() methods and **rerank the results based on the Reciprocal Rank Fusion algorithm**.
-      The most common pattern is to **combine a sparse retriever (like BM25) with a dense retriever (like embedding similarity)**, because their strengths are complementary. It is also known as “hybrid search”.
-    VectoreStoreRetriever
+  + **Retrievers**[10]
   + VectorStores
   + index
 
-+ Memory [10]
-  - 帮语言模型补充上下文
-  - ConversationBufferMemory
-  - ConversationBufferWindowMemory
-    窗口
-  - ConversationSummaryMemory
-  - VectorStoreRetrieverMemory
-  
-+ Chains
+###  Agent
+   - Plan-and-execute agents
+
+## Additional modules
+###  Chains
   + 2大类
     - Chain interface[Legacy]
     - LangChain Expression Language (LCEL)
@@ -53,12 +49,40 @@ categories:
   + Foundational
     + LLM
     + Sequential- SequentialChain
-    + Router
+    + **Router**
     + Transformation
-  
- + Agent
-   - Plan-and-execute agents
-   
+
+
+###  Memory [10]
+  - 帮语言模型补充上下文
+  - ConversationBufferMemory
+  - ConversationBufferWindowMemory
+    窗口
+  - ConversationSummaryMemory
+  - VectorStoreRetrieverMemory
+
+# Retrievers[10]
+### MultiQueryRetriever
+The MultiQueryRetriever automates the process of prompt tuning by using an LLM to **generate multiple queries from different perspectives for a given user input query**. 
+
+### Contextual compression
+
+### Ensemble Retriever 
+The EnsembleRetriever takes a list of retrievers as input and ensemble the results of their get_relevant_documents() methods and **rerank the results based on the Reciprocal Rank Fusion algorithm**.
+The most common pattern is to **combine a sparse retriever (like BM25) with a dense retriever (like embedding similarity)**, because their strengths are complementary. It is also known as “hybrid search”.
+
+### MultiVector Retriever
+The methods to create multiple vectors per document include:
+    - Smaller chunks: split a document into smaller chunks, and embed those (this is ParentDocumentRetriever).
+    - Summary: create a summary for each document, embed that along with (or instead of) the document.
+    - Hypothetical questions: create hypothetical questions that each document would be appropriate to answer, embed those along with (or instead of) the document.
+
+### Parent Document Retriever
+chunks of data
+
+### Self-querying
+This allows the retriever to not only use the user-input query for **semantic similarity comparison** with the contents of stored documents but to also extract filters from the user query on **the metadata** of stored documents and to execute those filters.
+
 # Function Call
 ``` python
 from langchain.chains.openai_functions.base import (
@@ -134,7 +158,9 @@ chain = load_qa_chain(llm, chain_type="map_rerank", verbose=True, return_interme
 7. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088)
 8. [吴恩达短课_LangChain](https://zhuanlan.zhihu.com/p/666656208)
 9. [精华笔记：吴恩达 x LangChain 《使用LangChain构建与数据对话的聊天机器人》（下）](https://zhuanlan.zhihu.com/p/651216604)
-10. [ensemble](https://python.langchain.com/docs/modules/data_connection/retrievers/ensemble)
+10. [retrievers](https://python.langchain.com/docs/modules/data_connection/retrievers)
+
+
 100. [一文入门最热的LLM应用开发框架LangChain](https://cloud.tencent.com/developer/article/2313918) 未
 101. [大模型LangChain框架基础与使用示例](https://cloud.tencent.com/developer/article/2331337) 未
 
