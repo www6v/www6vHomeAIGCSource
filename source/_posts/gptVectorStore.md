@@ -16,9 +16,27 @@ categories:
 ## 目录
 <!-- toc -->
 
+# Embedding 
++ example [5]
+  - **降维**:   t-SNE  
+  - K-Means 聚类
+  - 文本搜索  相似度搜索
 
++ Embedding 价值 [6]
+  - **降维**
+    将这些高维数据映射到一个低维空间，大大减少了模型的复杂度。
+  - 捕捉语义信息 
+    Embedding不仅仅是降维，更重要的是，它能够捕捉到数据的语义信息。
+  - 泛化能力
+    由于Embedding能够捕捉到数据的一些内在规律，因此对于这些未见过的数据，Embedding仍然能够给出合理的表示
 
-
++ 应用 [6]
+  - 语义表示和语义相似度
+  - 词语关系和类比推理
+  - 上下文理解
+  - 文本分类和情感分析
+  - 机器翻译和生成模型
+  
 # 向量数据库
 + 国产
   - Milvus
@@ -63,3 +81,7 @@ categories:
 3. [Distance Metrics in Vector Search](https://weaviate.io/blog/distance-metrics-in-vector-search?ref=blog.langchain.dev)
 
 4. [Vector Similarity Explained](https://www.pinecone.io/learn/vector-similarity/)
+
+5. [embedding](https://github.com/www6v/openai-quickstart/blob/main/openai_api/embedding.ipynb) git
+
+6. 《AI 大模型应用开发实战营》 03-大模型开发基础：Embedding  

@@ -1,11 +1,11 @@
 ---
-title: AI 人工智能
+title: AI 应用场景
 date: 2021-08-11 10:34:46
 tags:
-  - AI
+  - 应用场景
 categories:
-  - AI
-  - Overview
+  - AIGC
+  - 应用场景
 ---
 
 <p></p>

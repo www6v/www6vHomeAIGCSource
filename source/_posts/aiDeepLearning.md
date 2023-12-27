@@ -2,10 +2,10 @@
 title: Deep Learning
 date: 2022-06-11 15:57:10
 tags:
-  - AI
+  - DeepLearning
 categories:
-  - AI
-  - Deep Learning
+  - AIGC
+  - DeepLearning
 ---
 
 <p></p>

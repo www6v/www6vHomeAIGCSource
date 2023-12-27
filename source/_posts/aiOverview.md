@@ -1,10 +1,11 @@
 ---
-title: 人工智能知识点
+title: 人工智能 知识点
 date: 2022-01-22 16:12:13
 tags:
-  - AI
+  - AIGC
 categories:
-  - AI
+  - AIGC
+  - basic
 ---
 
 <p></p>

@@ -2,10 +2,10 @@
 title: Machine Learning
 date: 2022-06-07 14:25:32
 tags:
-  - AI
+  - MachineLearning
 categories:
-  - AI
-  - Machine Learning
+  - AIGC
+  - MachineLearning
 ---
 
 <p></p>
@@ -32,7 +32,7 @@ categories:
     + 超平面
       - 低纬升到高纬
 
- 
+
   + Naive Bayes
   
   + 随机森林

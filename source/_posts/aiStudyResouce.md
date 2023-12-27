@@ -2,9 +2,9 @@
 title: 人工智能-学习资源
 date: 2022-01-22 19:29:53
 tags:
-  - AI
+  - 学习资源
 categories:
-  - AI
+  - AIGC
   - 学习资源
 ---
 
@@ -46,9 +46,9 @@ categories:
 + 李宏毅 台湾
 
 ## NLP & 大模型
-+ [沈向洋带你读论文——CV & NLP 专题](https://www.zhihu.com/education/video-course/1546509363711614976) V ***
-+ [中科院 宗成庆 自然语言处理公开课（64集）](https://www.bilibili.com/video/BV1Cb411T7Cd) V
-+ [2022年首发！B站讲的最好的【NLP自然语言处理】保姆级教程！](https://www.bilibili.com/video/BV1C14y147dp)  V  有实践
++ [沈向洋带你读论文——CV & NLP 专题](https://www.zhihu.com/education/video-course/1546509363711614976) V 
+
++ [2022年首发！B站讲的最好的【NLP自然语言处理】保姆级教程！](https://www.bilibili.com/video/BV1C14y147dp)  V  有实践  *** 
 + MLNLP第六期学术研讨会开始报名
 
 ## 知识图谱
