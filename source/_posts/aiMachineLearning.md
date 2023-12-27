@@ -57,7 +57,16 @@ categories:
 
 {% asset_img   scikit-learn.png     scikit-learn overview  %}
 
+
+
+## 按学习模型划分 [4]
+
+
+
 ## 参考
+
 1. [【机器学习算法】10种常见机器学习算法+Python代码](https://zhuanlan.zhihu.com/p/479973669)
 2. [机器学习--有监督--支持向量机SVM](https://www.jianshu.com/p/b8227eac1fa6)
 3. [Supervised learning](https://scikit-learn.org/stable/supervised_learning.html)
+
+4. [人工智能导论(6)——机器学习(Machine Learning)](https://blog.csdn.net/hustlei/article/details/121803226) ***
