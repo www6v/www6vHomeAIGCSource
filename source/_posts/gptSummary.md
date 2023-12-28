@@ -46,6 +46,7 @@ top:
 + {% post_link 'gptRAGPerformance' %}
 + {% post_link 'gptRAGPerformanceOpenAI' %} 
 + {% post_link 'gptFunctionCall' %} 
++ {% post_link 'gptLLMOps' %} 
 + {% post_link 'gptVectorStore' %}
 
 ## Study
