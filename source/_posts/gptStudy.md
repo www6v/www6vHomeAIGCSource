@@ -44,6 +44,8 @@ categories:
 
 ### 知乎
 + [《AI 大模型全栈工程师》课程表（第 02 期） ](https://agiclass.feishu.cn/docx/DDzxdQZBooXw9Jx4DdWcLZjLnHd)  
++ [AI Box专栏](https://www.zhihu.com/people/dou-hong-jian-44/posts)  中国人大  AI *** 
+  大模型survey
 
 ### 清华
 + [【清华 NLP X OpenBMB】大模型公开课｜带你从入门到实战](https://www.zhihu.com/education/video-course/1545850719483392000)  V ***

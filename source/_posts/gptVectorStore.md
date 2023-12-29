@@ -36,6 +36,9 @@ categories:
   - 上下文理解
   - 文本分类和情感分析
   - 机器翻译和生成模型
+
++ 天梯榜
+[mteb/leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
   
 # 向量数据库
 + 国产

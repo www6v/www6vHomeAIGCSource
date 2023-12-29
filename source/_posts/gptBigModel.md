@@ -66,6 +66,11 @@ categories:
 4.  [解析大模型中的Scaling Law](https://zhuanlan.zhihu.com/p/667489780)
 
 
-
+### 综述
 100. [[译][论文] 大语言模型（LLM）综述与实用指南（Amazon，2023）](http://arthurchiao.art/blog/llm-practical-guide-zh/) 未
 101. [通向AGI之路：大型语言模型（LLM）技术精要](https://zhuanlan.zhihu.com/p/597586623) *** 未
+102. [大语言模型综述](http://aibox.ruc.edu.cn/docs/2023-08/cb9badcb213f4c8b89d00d579eed4a4c.pdf) 中文  v10 
+     [大语言模型综述](https://github.com/RUCAIBox/LLMSurvey/blob/main/assets/LLM_Survey_Chinese.pdf) 中文
+     [A Survey of Large Language Models](https://arxiv.org/pdf/2303.18223.pdf) 英文
+     [LLMSurvey](https://github.com/www6v/LLMSurvey)  github
+     [[论文]大语言模型综述](https://zhuanlan.zhihu.com/p/630203554)     
