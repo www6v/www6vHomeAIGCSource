@@ -20,15 +20,16 @@ top:
 + {% post_link 'aiOverview' %}  
 
 ## Model
-
 + {% post_link 'gptBigModel' %}
 + {% post_link 'gptTransformer' %} 
 + {% post_link 'gptFamily' %}  
 + {% post_link 'gptBigModelTraining' %}
++ {% post_link 'gptFinGPT' %}  
+
+## FineTuning
 + {% post_link 'gptFineTuning' %} 
 + {% post_link 'gptFineTuningWhen' %}  
 + {% post_link 'gptFineTuningCode' %}  
-+ {% post_link 'gptFinGPT' %}  
 
 ## Prompt
   + {% post_link 'gptPromptEngineering' %}
@@ -37,15 +38,22 @@ top:
   + {% post_link 'gptPrompt' %}
   + {% post_link 'gptBigModelCOT' %}
 
+## RAG
++ {% post_link 'gptRAG' %}
++ {% post_link 'gptRAGPractice' %} 
++ {% post_link 'gptRAGPerformance' %}
++ {% post_link 'gptRAGPerformanceOpenAI' %} 
+
+## Langchain
++ {% post_link 'gptLangchain' %}
++ {% post_link 'gptRetrievers' %} 
+
+## Agent
++ {% post_link 'gptAgent' %}
++ {% post_link 'gptFunctionCall' %} 
 
 ## Application
 + {% post_link 'gpt' %}
-+ {% post_link 'gptAgent' %}
-+ {% post_link 'gptLangchain' %}
-+ {% post_link 'gptRAG' %}
-+ {% post_link 'gptRAGPerformance' %}
-+ {% post_link 'gptRAGPerformanceOpenAI' %} 
-+ {% post_link 'gptFunctionCall' %} 
 + {% post_link 'gptLLMOps' %} 
 + {% post_link 'gptVectorStore' %}
 
