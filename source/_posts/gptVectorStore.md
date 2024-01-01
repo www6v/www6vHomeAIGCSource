@@ -38,7 +38,7 @@ categories:
   - 机器翻译和生成模型
 
 + 天梯榜
-[mteb/leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
+  [mteb/leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
   
 # 向量数据库
 + 国产
@@ -88,3 +88,5 @@ categories:
 5. [embedding](https://github.com/www6v/openai-quickstart/blob/main/openai_api/embedding.ipynb) git
 
 6. 《AI 大模型应用开发实战营》 03-大模型开发基础：Embedding  
+
+100. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088) *** 未

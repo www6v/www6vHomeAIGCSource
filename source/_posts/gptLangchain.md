@@ -20,7 +20,7 @@ categories:
   + Language models  [10]        
      + LLM
      + Chat Model
-     + **Embedding** [7]
+     + **Embedding** 
   +  Prompts 
      + Prompt Template
      + Few-shot example
@@ -134,7 +134,7 @@ chain = load_qa_chain(llm, chain_type="map_rerank", verbose=True, return_interme
     10.公开课
 5. https://github.com/kyrolabs/awesome-langchain
 6. https://github.com/Crossme0809/langchain-tutorials
-7. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088)
+7. xxx
 8. [吴恩达短课_LangChain](https://zhuanlan.zhihu.com/p/666656208)
 9. [精华笔记：吴恩达 x LangChain 《使用LangChain构建与数据对话的聊天机器人》（下）](https://zhuanlan.zhihu.com/p/651216604)
 

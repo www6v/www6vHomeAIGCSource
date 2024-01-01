@@ -50,6 +50,7 @@ top:
 
 ## Agent
 + {% post_link 'gptAgent' %}
++ {% post_link 'gptAgentPractice' %} 
 + {% post_link 'gptFunctionCall' %} 
 
 ## Application

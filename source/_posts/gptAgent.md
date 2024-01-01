@@ -16,7 +16,7 @@ categories:
 <!-- toc -->
 
 
-# 架构图 [8] [1][2]
+# 架构图 [6] [1][2]
 {% asset_img 'agent-overview.jpg' %}
 
 Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能力]
@@ -41,7 +41,7 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
 
 
 # 类型  [3]
-+ ReACT 范式 [9]
++ ReACT 范式 [7]
   把**融合了Reasoning和Acting**的一种范式，推理过程是浅显易懂，仅仅**包含thought-action-observation步骤**，很容易判断推理的过程的正确性，使用ReAct做决策甚至超过了强化学习.
   
   - chain-of-thought推理-问题
@@ -74,17 +74,7 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
 
 +  ChatDev， AutoGen
 
-# Langchain Agent
-+ Conversational
-+ OpenAI assistants
-+ OpenAI functions
-+ OpenAI Multi Functions Agent
-+ OpenAI tools
-   OpenAI parallel function calling (a.k.a. tool calling)
-+ ReAct
-  ZeroShotReactAgent
-+ Self-ask with search
-+ Structured tool chat
+
 
 
 # Example
@@ -99,7 +89,7 @@ The **planning** is almost always done **by an LLM**.
 
 The **execution** is usually done by a **separate agent (equipped with tools)**.
 
-### AutoGPT[3][6]
+### AutoGPT[3][5]
 
 AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 
@@ -124,12 +114,7 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
   模型 agent 的工作如何终止也是一个挑战
   
 
-### Assistant API功能介绍 [7]
-从功能实现层面来说，Assistant API是截至目前最完整、性能最强大的AI应用开发API，具体功能如下：
-- 首先，Assistant API前所未有的能够**调用OpenAI各模型的各项能力**，包括可以调用Chat系列模型（即GPT系列模型）完成文本对话、调用DALL·E 3进行绘图、调用GPT-4-vision进行图像识别、以及调用Text-to-Speech模型进行语音转文字等，并且支持在一轮对话中调用不同模型；
-- 其次，Assistant API还**内置了代码解释器功能（Code interpreter）和海量文本信息提取功能（Knowledge retrieval）**同时也一如既往支持借助**Function calling**进行模型功能层面拓展，此外，非常重要的是，Assistant API还支持在一轮对话中调用多个工具；
-- 其三，此外对于开发者非常友好的一点是，Assistant API最小运行单元为持久化的线程对象（persistent Threads），因此在实际运行Assistant API时，不仅能可以精确控制每一步的执行过程，同时persistent Threads也会保留每轮对话的核心信息，并且当超出模型接收信息最大上下文限制时能够自动删除早期信息，从而实现对模型短期记忆的合理管理；
-- 其四，Assistant API还能够直**接连接OpenAI在线文档库**，即如果用户将外部文档保存在OpenAI云空间内，则可以在调用Assistant API时实时访问文档库中的任意文件，甚至可以在不同线程中调用不同的文档。而在借助Assistant API的Knowledge retrieval功能，则可以让大模型实时获取这些文件信息，并且合理管理短期记忆；
+
 
 
 # 参考
@@ -139,8 +124,9 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 3. [2023年新生代大模型Agents技术,ReAct,Self-Ask,Plan-and-execute,以及AutoGPT, HuggingGPT等应用](https://zhuanlan.zhihu.com/p/642357544) ***  论文+代码
 4. [AutoGPT与LLM Agent解析](https://zhuanlan.zhihu.com/p/622947810) *** 
 5. [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) git
-6. [带界面的 AutoGPT 产品](https://link.zhihu.com/?target=https%3A//godmode.space/)
-7. [Assistant API详解与Agent开发实战-九天Hector](https://github.com/www6v/AIGC/tree/master/%E4%B9%9D%E5%A4%A9Hector/Assistant%20API%E8%AF%A6%E8%A7%A3%E4%B8%8EAgent%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98-%E4%B9%9D%E5%A4%A9Hector)
-8. [LLM Powered Autonomous Agents ](https://lilianweng.github.io/posts/2023-06-23-agent/) paper 
-9. [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) paper
+   [带界面的 AutoGPT 产品](https://link.zhihu.com/?target=https%3A//godmode.space/)
+6. [LLM Powered Autonomous Agents ](https://lilianweng.github.io/posts/2023-06-23-agent/) paper 
+7. [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) paper
+100. [The Rise and Potential of Large Language Model Based Agents: A Survey](https://github.com/WooooDyy/LLM-Agent-Paper-List) *** 未
+101. [《综述：全新大语言模型驱动的Agent》](https://zhuanlan.zhihu.com/p/656676717)  *** 未
 
