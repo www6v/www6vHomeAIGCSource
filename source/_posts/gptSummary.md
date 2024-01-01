@@ -24,8 +24,11 @@ top:
 + {% post_link 'gptTransformer' %} 
 + {% post_link 'gptFamily' %}  
 + {% post_link 'gptLlama' %}   
-+ {% post_link 'gptBigModelTraining' %}
 + {% post_link 'gptFinGPT' %}  
+
+## Training & Inference
++ {% post_link 'gptBigModelTraining' %}
++ {% post_link 'gptInference' %}
 
 ## FineTuning
 + {% post_link 'gptFineTuning' %} 

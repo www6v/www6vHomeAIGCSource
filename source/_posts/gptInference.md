@@ -1,0 +1,22 @@
+---
+title: 推理
+date: 2023-01-01 22:58:43
+tags:
+---
+
+
+# 推理 框架[1]
+{% asset_img 'inference.jpg' %}
+
+# 推理 优化
+
+# 参考
+### 框架
+1. [探秘LLM应用开发](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA5MTIxNTY4MQ==&scene=1&album_id=2959126655292211206)   8-19
+
+100. https://github.com/www6v/llm-action/tree/main/inference
+101. https://www.zhihu.com/question/625415776/answer/3243562246
+
+### 优化
+101. https://lilianweng.github.io/posts/2023-01-10-inference-optimization/
+102. [一文探秘LLM应用开发(13)-模型部署与推理(优化理论) ](https://mp.weixin.qq.com/s/glPPSqHjsnDjC0DZSuuPzA) 
