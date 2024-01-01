@@ -58,6 +58,13 @@ categories:
 + 显卡
 显卡 = GPU +  显存
 
+#  垂类模式
++ 金融
+  FinGPT
++ 医疗
+  MedicalGPT   华驼
++ 法律
+ 
 # 参考
 
 1. [LLM学习系列1：大模型架构要点总结](https://zhuanlan.zhihu.com/p/648050614)

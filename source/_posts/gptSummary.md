@@ -23,6 +23,7 @@ top:
 + {% post_link 'gptBigModel' %}
 + {% post_link 'gptTransformer' %} 
 + {% post_link 'gptFamily' %}  
++ {% post_link 'gptLlama' %}   
 + {% post_link 'gptBigModelTraining' %}
 + {% post_link 'gptFinGPT' %}  
 
