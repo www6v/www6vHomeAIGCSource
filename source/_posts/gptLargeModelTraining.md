@@ -1,5 +1,5 @@
 ---
-title: 大模型训练
+title: 训练
 date: 2022-11-19 22:32:11
 tags:
   - train

@@ -52,7 +52,17 @@ This allows the retriever to not only use the user-input query for **semantic si
 
 
 
-# 参考
+# langchain vs. llamaindex [1]
 
+| langchain               | llamaindex                |
+| ----------------------- | ------------------------- |
+| Ensemble                | Hybrid Fusion             |
+| Rewrite-Retrieve-Read   | Query Rewriting           |
+|                         | AutoMerging               |
+| ParentDocumentRetrieval | Small-to-Big Retrieval    |
+|                         | Sentence Window Retrieval |
+
+# 参考
+1. [【高级RAG || 原理介绍】Llamaindex 5种高级RAG方法](https://www.bilibili.com/video/BV1qe411r78b/) V 
 10. [retrievers](https://python.langchain.com/docs/modules/data_connection/retrievers)
 

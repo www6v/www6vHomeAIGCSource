@@ -20,14 +20,14 @@ top:
 + {% post_link 'aiOverview' %}  
 
 ## Model
-+ {% post_link 'gptBigModel' %}
++ {% post_link 'gptLargeModel' %}
 + {% post_link 'gptTransformer' %} 
 + {% post_link 'gptFamily' %}  
 + {% post_link 'gptLlama' %}   
 + {% post_link 'gptFinGPT' %}  
 
 ## Training & Inference
-+ {% post_link 'gptBigModelTraining' %}
++ {% post_link 'gptLargeModelTraining' %}
 + {% post_link 'gptInference' %}
 
 ## FineTuning
@@ -40,7 +40,6 @@ top:
   + {% post_link 'gptPromptResearch' %}
   + {% post_link 'gptPromptCode' %}
   + {% post_link 'gptPrompt' %}
-  + {% post_link 'gptBigModelCOT' %}
 
 ## RAG
 + {% post_link 'gptRAG' %}
@@ -61,6 +60,7 @@ top:
 + {% post_link 'gpt' %}
 + {% post_link 'gptLLMOps' %} 
 + {% post_link 'gptVectorStore' %}
++ {% post_link 'gptNL2SQL' %} 
 
 ## Study
 + {% post_link 'gptStudy' %}
