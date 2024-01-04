@@ -24,7 +24,7 @@ top:
 + {% post_link 'gptTransformer' %} 
 + {% post_link 'gptFamily' %}  
 + {% post_link 'gptLlama' %}   
-+ {% post_link 'gptFinGPT' %}  
++ {% post_link 'gptLeaderBoard' %}  
 
 ## Training & Inference
 + {% post_link 'gptLargeModelTraining' %}
@@ -61,6 +61,8 @@ top:
 + {% post_link 'gptLLMOps' %} 
 + {% post_link 'gptVectorStore' %}
 + {% post_link 'gptNL2SQL' %} 
++ {% post_link 'gptLargeModelDomain' %} 
++ {% post_link 'gptFinGPT' %}   
 
 ## Study
 + {% post_link 'gptStudy' %}

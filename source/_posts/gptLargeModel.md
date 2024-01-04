@@ -46,26 +46,6 @@ categories:
 
 {% asset_img 'bigModelArch1.jpg' %}
 
-
-# 大模型
-###  排行榜 
-[HuggingFaceH 大模型排行榜](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
-[LLM Collection](https://www.promptingguide.ai/models/collection)
-
-# 显卡 
-+ 显卡天梯榜
- [显卡天梯榜](https://topic.expreview.com/GPU)
-
-+ 显卡
-显卡 = GPU +  显存
-
-#  垂类模式
-+ 金融
-  FinGPT
-+ 医疗
-  MedicalGPT   华驼
-+ 法律
-
 # 参考
 
 1. [LLM学习系列1：大模型架构要点总结](https://zhuanlan.zhihu.com/p/648050614)

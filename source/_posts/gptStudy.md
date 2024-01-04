@@ -27,7 +27,9 @@ categories:
   + Transformer  *** 
 + [AI 大模型应用开发实战营1期大纲](https://shimo.im/docs/XKq42v7061SxZ2AN/read) 
   基础篇 - 论文 *** 
-  
++ [LLM/ChatGPT与多模态必读论文150篇(已更至第101篇)](https://blog.csdn.net/v_JULY_v/article/details/129508065) 
+
+
 # 工程
 + [openai-cookbook](https://github.com/www6v/openai-cookbook)
   [cookbook.openai](https://cookbook.openai.com/)
