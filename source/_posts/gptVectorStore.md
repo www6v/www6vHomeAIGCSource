@@ -53,7 +53,10 @@ categories:
   - Chroma
   - Weaviate
   
-# 向量的相对度算法[3]
+# 向量数据库-索引方式 [7]
+{% asset_img 'index.jpg' %}
+
+# 向量的相似度算法[3]
 + Cosine Similarity * 
 余弦
 + Dot Product *
@@ -62,8 +65,6 @@ categories:
 + Manhattan (L1 Norm or Taxicab Distance) *
 + Hamming *
 + ANN
-
-
 
 ### 比较[4]
 
@@ -88,5 +89,6 @@ categories:
 5. [embedding](https://github.com/www6v/openai-quickstart/blob/main/openai_api/embedding.ipynb) git
 
 6. 《AI 大模型应用开发实战营》 03-大模型开发基础：Embedding  
+7. [向量数据库（第 1 部分）：每个数据库有何不同？](https://www.modb.pro/db/1694527960317513728)
 
 100. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088) *** 未
