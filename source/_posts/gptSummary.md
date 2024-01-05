@@ -34,6 +34,7 @@ top:
 + {% post_link 'gptFineTuning' %} 
 + {% post_link 'gptFineTuningWhen' %}  
 + {% post_link 'gptFineTuningCode' %}  
++ {% post_link 'gptFineTuningLora' %} 
 
 ## Prompt
   + {% post_link 'gptPromptEngineering' %}
