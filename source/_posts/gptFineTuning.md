@@ -95,5 +95,7 @@ Prompt是去激发语言模型的**补全能力**，比如给出上半句生成�
 
 5. [Instruction Tuning｜谷歌Quoc V.Le团队提出又一精调范式](https://zhuanlan.zhihu.com/p/408166011)
 
+100. [LLM高效参数微调方法：从Prefix Tuning、Prompt Tuning、P-Tuning V1/V2到LoRA、QLoRA(含对模型量化的解释)](https://blog.csdn.net/v_JULY_v/article/details/132116949) *** 未
+
 
 
