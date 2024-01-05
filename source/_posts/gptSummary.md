@@ -28,6 +28,7 @@ top:
 
 ## Training & Inference
 + {% post_link 'gptLargeModelTraining' %}
++ {% post_link 'gptTrainParallelism' %} 
 + {% post_link 'gptInference' %}
 
 ## FineTuning

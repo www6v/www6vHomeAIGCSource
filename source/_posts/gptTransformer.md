@@ -51,4 +51,8 @@ transfomer 架构在GPU上的并行
 5. [主流大语言模型的技术原理细节](https://cloud.tencent.com/developer/article/2328541)
 100. [Transformers from scratch](http://arthurchiao.art/blog/transformers-from-scratch-zh/) V, github 未
 101. [LLM Visualization](https://bbycroft.net/llm) ***  未
+102. [Transformer通俗笔记：从Word2Vec、Seq2Seq逐步理解到GPT、BERT](https://blog.csdn.net/v_JULY_v/article/details/127411638) ***
+103. [从零实现Transformer的简易版与强大版：从300多行到3000多行](https://blog.csdn.net/v_JULY_v/article/details/130090649)
+104. [一文通透各种注意力：从多头注意力MHA到分组查询注意力GQA、多查询注意力MQA](https://blog.csdn.net/v_JULY_v/article/details/134228287)
+105. [一文通透位置编码：从标准位置编码、旋转位置编码RoPE到ALiBi、LLaMA 2 Long](https://blog.csdn.net/v_JULY_v/article/details/134085503)
 
