@@ -24,6 +24,7 @@ top:
 + {% post_link 'gptTransformer' %} 
 + {% post_link 'gptFamily' %}  
 + {% post_link 'gptLlama' %}   
++ {% post_link 'gptChatGLM' %}   
 + {% post_link 'gptLeaderBoard' %}  
 
 ## Training & Inference
@@ -36,6 +37,8 @@ top:
 + {% post_link 'gptFineTuningWhen' %}  
 + {% post_link 'gptFineTuningCode' %}  
 + {% post_link 'gptFineTuningLora' %} 
++ {% post_link 'gptPromptTuning' %} 
++ {% post_link 'gptInstructTuning' %} 
 
 ## Prompt
   + {% post_link 'gptPromptEngineering' %}
