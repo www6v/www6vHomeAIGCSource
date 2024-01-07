@@ -1,6 +1,6 @@
 ---
 title: Instruct Tuning
-date: 2024-01-06 19:09:20
+date: 2023-01-06 19:09:20
 tags:
   - Instruct-Tuning
 categories: 
