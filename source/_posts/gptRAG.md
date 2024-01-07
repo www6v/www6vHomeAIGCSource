@@ -42,3 +42,6 @@ categories:
 3. [NLP（廿一）：从 RAG 到 Self-RAG —— LLM 的知识增强](https://zhuanlan.zhihu.com/p/661465330?utm_id=0) *** 
 4. [original implementation of SELF-RAG](https://github.com/www6v/self-rag)
 
+5. [LlamaHub](https://llamahub.ai/) 未  
+   Mix and match our Data Loaders and Agent Tools to build custom RAG apps or use our LlamaPacks as a starting point for your retrieval use cases.
+

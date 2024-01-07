@@ -13,4 +13,5 @@ categories:
 
 
 
-[第十一课：ChatGLM](https://www.bilibili.com/video/BV1ju411T74Y/)
+[第十一课：ChatGLM](https://www.bilibili.com/video/BV1ju411T74Y/) V
+[ChatGLM两代的部署/微调/实现：从基座GLM、ChatGLM的LoRA/P-Tuning微调、6B源码解读到ChatGLM2的微调与实现](https://blog.csdn.net/v_JULY_v/article/details/129880836)
