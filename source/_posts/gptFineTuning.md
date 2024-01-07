@@ -50,19 +50,6 @@ categories:
 
 {% asset_img 'overview.jpg' %}
 
-
-#  Instruction Tuning[5]
-+ Prompt vs. Instruction Tuning
-Prompt是去激发语言模型的**补全能力**，比如给出上半句生成下半句、或者做完形填空，都还是像在做language model任务.
-
-而Instruction Tuning则是激发语言模型的**理解能力**，通过给出更明显的指令/指示，让模型去理解并做出正确的action
-
-**Prompt tuning**都是针对**一个任务**的，比如做个情感分析任务的prompt tuning，精调完的模型只能用于情感分析任务，而经过**Instruction Tuning多任务**精调后，可以用于其他任务的zero-shot
-
-+  Instruction Tuning 指令微调
-  - Self Instruction
-
-
 ## ChatGPT 训练  [1]
 
 - 基于人类反馈的强化学习微调技术 RLHF
@@ -93,7 +80,7 @@ Prompt是去激发语言模型的**补全能力**，比如给出上半句生成�
 
    4.2  [大模型参数高效微调技术原理综述（七）-最佳实践、总结](https://zhuanlan.zhihu.com/p/649755252)
 
-5. [Instruction Tuning｜谷歌Quoc V.Le团队提出又一精调范式](https://zhuanlan.zhihu.com/p/408166011)
+5. xxx
 
 100. [LLM高效参数微调方法：从Prefix Tuning、Prompt Tuning、P-Tuning V1/V2到LoRA、QLoRA(含对模型量化的解释)](https://blog.csdn.net/v_JULY_v/article/details/132116949) *** 未
 
