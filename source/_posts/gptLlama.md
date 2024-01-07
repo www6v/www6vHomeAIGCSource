@@ -21,3 +21,4 @@ categories:
 [[译][论文] LLaMA 2：开放基础和微调聊天模型](http://arthurchiao.art/blog/llama2-paper-zh/)
 https://github.com/www6v/Llama2-Chinese
 [Llama中文社区](https://llama.family/)
+《千帆增强版 Llama 2-提升大模型对话指令遵循能力》
