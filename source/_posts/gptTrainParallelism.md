@@ -33,3 +33,10 @@ categories:
 
 101. [大模型并行训练指南：通俗理解Megatron-DeepSpeed之模型并行与数据并行](https://blog.csdn.net/v_JULY_v/article/details/132462452) 未
 
+102. [全网最全-混合精度训练原理](https://zhuanlan.zhihu.com/p/441591808) 未
+
+103. [全网最全-超大模型+分布式训练架构和经典论文](https://zhuanlan.zhihu.com/p/450854172) 未
+
+104. [分布式训练硬核技术——通信原语](https://zhuanlan.zhihu.com/p/465967735) 未
+
+105. [图解大模型训练之：流水线并行（Pipeline Parallelism），以Gpipe为例](https://zhuanlan.zhihu.com/p/613196255)  系列文章 未

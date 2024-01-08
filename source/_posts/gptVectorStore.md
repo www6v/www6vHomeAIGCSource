@@ -92,3 +92,5 @@ categories:
 7. [向量数据库（第 1 部分）：每个数据库有何不同？](https://www.modb.pro/db/1694527960317513728)
 
 100. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088) *** 未
+
+101. [一文通透Text Embedding模型：从text2vec、openai-ada-002到m3e、bge](https://blog.csdn.net/v_JULY_v/article/details/135311471) 未

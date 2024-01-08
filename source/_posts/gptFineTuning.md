@@ -11,6 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 # 分类
 + 全量微调
 
@@ -50,8 +53,7 @@ categories:
 
 {% asset_img 'overview.jpg' %}
 
-## ChatGPT 训练  [1]
-
+# ChatGPT 训练  [1]
 - 基于人类反馈的强化学习微调技术 RLHF
   - 使用有监督微调 Supervised Fine-tuning（SFT）预训练语言模型
     + Supervised fine-tuning (SFT)
@@ -61,11 +63,7 @@ categories:
     + RLHF
       [本质  基于强化学习, 强化学习算法]  
       
-## 工具 [1]
-+ Hugging Face Transformers
-+ Hugging Face PEFT
-+ DeepSpeed
-
+# 微调指令的生成 [5][6]
 
 # 参考
 ### 原理
@@ -80,7 +78,9 @@ categories:
 
    4.2  [大模型参数高效微调技术原理综述（七）-最佳实践、总结](https://zhuanlan.zhihu.com/p/649755252)
 
-5. xxx
+5. [大模型SFT微调指令数据的生成](https://zhuanlan.zhihu.com/p/650596719)
+
+6. [让ChatGPT生成训练ChatGPT的训练数据](https://zhuanlan.zhihu.com/p/618334308)
 
 100. [LLM高效参数微调方法：从Prefix Tuning、Prompt Tuning、P-Tuning V1/V2到LoRA、QLoRA(含对模型量化的解释)](https://blog.csdn.net/v_JULY_v/article/details/132116949) *** 未
 
