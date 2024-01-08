@@ -31,6 +31,7 @@ top:
 + {% post_link 'gptLargeModelTraining' %}
 + {% post_link 'gptTrainParallelism' %} 
 + {% post_link 'gptInference' %}
++ {% post_link 'gptDataSet' %} 
 
 ## FineTuning
 + {% post_link 'gptFineTuning' %} 
