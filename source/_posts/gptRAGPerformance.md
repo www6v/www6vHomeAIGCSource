@@ -17,14 +17,25 @@ categories:
 <!-- toc -->
 
 
+#  索引方式  [1]
+### Smaller chunks
+Indexing by **small data chunks**
+1. 按子部分索引数据块：将文本块拆分为较小的部分，如句子，进行多次索引。这有助于
+处理复杂文本块，减少噪音输出，确保更准确匹配用户查询。
+
+### Hypothetical questions
+Indexing by **the questions the document answers**
+2. 按文本块回答的问题索引数据块：让LLM生成与拆分的文本块相关的假设性问题，并用
+于索引。这种方法保持用户查询与数据核心内容一致，降低模糊性。
+
+### Summary
+Indexing by **the summary of the document**
+ 
+3. 按文本块摘要索引数据块：类似于第二种方法，使用块摘要而不是回答的假设问题来创
+建索引。特别适用于文本块中包含多余信息或与用户查询无关的情况。
+
 
 # 分块
-
-### 分块策略  [1]
-1. Indexing by **small data chunks**
-2. Indexing by **the questions the document answers**
-3. Indexing by **the summary of the document**
-
 ### 分块参数
 chuck_size, ,chunk overlap
 top_k
