@@ -1,5 +1,5 @@
 ---
-title:  Fine-Tuning
+title:  Fine-Tuning 原理
 date: 2022-11-18 23:31:46
 tags:
   - AIGC

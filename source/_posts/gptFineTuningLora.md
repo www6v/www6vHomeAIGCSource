@@ -18,13 +18,13 @@ categories:
     Langboat/bloom-1b4-zh 
   - 数据集
     shibing624/alpaca-zh
-    
+  
 + 稍复杂[1]
   - 基座模型 
     bloomz-560m 
   - 数据集
     ought/raft
- 
+
 # Lora 参数 
 + LoraConfig [2]
 ``` python
@@ -80,7 +80,7 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
    [bloom Lora](https://github.com/www6v/llm-action/blob/main/train/peft/clm/peft_lora_clm.ipynb) git
    
 2. [【手把手带你实战HuggingFace Transformers-高效微调篇】LoRA 原理与实战](https://www.bilibili.com/video/BV13w411y7fq/) V
-    [bloom Lora](https://github.com/www6v/transformers-code/blob/master/03-PEFT/21-lora/chatbot_lora.ipynb)   git   origin运行有问题
-    [bloom Lora](https://github.com/www6v/transformers-code/blob/master/03-PEFT/21-lora/chatbot_lora%5Bworkable%5D.ipynb)  修改过可以在colab运行的代码
+    [bloom Lora-origin](https://github.com/www6v/transformers-code/blob/master/03-PEFT/21-lora/chatbot_lora.ipynb)  [bloom Lora-origin](https://colab.research.google.com/github/www6v/transformers-code/blob/master/03-PEFT/21-lora/chatbot_lora.ipynb) git   origin运行有问题
+    [bloom Lora-modify](https://github.com/www6v/transformers-code/blob/master/03-PEFT/21-lora/chatbot_lora%5Bworkable%5D.ipynb)  [bloom Lora-modify](https://colab.research.google.com/drive/1SNy35_CJOobe4AxAecMZJo4LX1TjXvTm) 修改过可以在colab运行的代码
 
 100. [Finetuning LLMs with LoRA and QLoRA: Insights from Hundreds of Experiments](https://lightning.ai/pages/community/lora-insights/) ***
