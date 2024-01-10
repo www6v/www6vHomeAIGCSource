@@ -84,3 +84,4 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
     [bloom Lora-modify](https://github.com/www6v/transformers-code/blob/master/03-PEFT/21-lora/chatbot_lora%5Bworkable%5D.ipynb)  [bloom Lora-modify](https://colab.research.google.com/drive/1SNy35_CJOobe4AxAecMZJo4LX1TjXvTm) 修改过可以在colab运行的代码
 
 100. [Finetuning LLMs with LoRA and QLoRA: Insights from Hundreds of Experiments](https://lightning.ai/pages/community/lora-insights/) ***
+     [几百次大模型LoRA和QLoRA 微调实践的经验分享](https://www.bilibili.com/video/BV16u4y1a7MH/) V
