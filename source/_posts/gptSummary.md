@@ -56,7 +56,8 @@ top:
 ## Langchain
 + {% post_link 'gptLangchain' %}
 + {% post_link 'gptRetrievers' %} 
-
++ {% post_link 'gptLangchainApp' %} 
+ 
 ## Agent
 + {% post_link 'gptAgent' %}
 + {% post_link 'gptAgentPractice' %} 

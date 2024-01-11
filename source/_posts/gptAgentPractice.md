@@ -15,22 +15,6 @@ categories:
 
 <!-- toc -->
 
-# Langchain Agent
-+ Conversational
-+ OpenAI assistants
-+ OpenAI functions
-+ OpenAI Multi Functions Agent
-+ OpenAI tools
-   OpenAI parallel function calling (a.k.a. tool calling)
-+ ReAct
-  ZeroShotReactAgent
-+ Self-ask with search
-+ Structured tool chat
-
-
-
-
-
 # Assistant API功能介绍 [7]
 从功能实现层面来说，Assistant API是截至目前最完整、性能最强大的AI应用开发API，具体功能如下：
 - 首先，Assistant API前所未有的能够**调用OpenAI各模型的各项能力**，包括可以调用Chat系列模型（即GPT系列模型）完成文本对话、调用DALL·E 3进行绘图、调用GPT-4-vision进行图像识别、以及调用Text-to-Speech模型进行语音转文字等，并且支持在一轮对话中调用不同模型；
