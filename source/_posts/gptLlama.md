@@ -22,3 +22,5 @@ categories:
 https://github.com/www6v/Llama2-Chinese
 [Llama中文社区](https://llama.family/)
 《千帆增强版 Llama 2-提升大模型对话指令遵循能力》
+
+[从0到1复现斯坦福羊驼（Stanford Alpaca 7B）](https://zhuanlan.zhihu.com/p/618321077)
