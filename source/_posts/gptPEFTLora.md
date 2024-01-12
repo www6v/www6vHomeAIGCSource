@@ -1,11 +1,11 @@
 ---
-title: Fine-tuning Lora
+title: PEFT Lora
 date: 2023-01-05 12:04:14
 tags:
-  - AIGC
+  - PEFT
 categories:
   - AIGC  
-  - Fine-Tuning
+  - PEFT
 ---
 
 <p></p>

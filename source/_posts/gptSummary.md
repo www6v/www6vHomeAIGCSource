@@ -36,8 +36,9 @@ top:
 ## FineTuning
 + {% post_link 'gptFineTuning' %} 
 + {% post_link 'gptFineTuningWhen' %}  
-+ {% post_link 'gptFineTuningCode' %}  
-+ {% post_link 'gptFineTuningLora' %} 
++ {% post_link 'gptFineTuningPEFT' %}  
++ {% post_link 'gptPEFTLora' %} 
++ {% post_link 'gptPEFTQLora' %} 
 + {% post_link 'gptPromptTuning' %} 
 + {% post_link 'gptInstructTuning' %} 
 
@@ -57,7 +58,7 @@ top:
 + {% post_link 'gptLangchain' %}
 + {% post_link 'gptRetrievers' %} 
 + {% post_link 'gptLangchainApp' %} 
- 
+
 ## Agent
 + {% post_link 'gptAgent' %}
 + {% post_link 'gptAgentPractice' %} 
