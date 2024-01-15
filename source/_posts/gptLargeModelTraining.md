@@ -73,7 +73,4 @@ LLaMA模型，尽管它的参数量只有650亿，但其性能与参数量为175
 
 4. 大模型入门必看教程  九天Hector
 
-100. [[译] 如何训练一个企业级 GPT 助手（OpenAI，2023）](http://arthurchiao.art/blog/how-to-train-a-gpt-assistant-zh/) 未
-101. [[译] GPT 是如何工作的：200 行 Python 代码实现一个极简 GPT（2023）](http://arthurchiao.art/blog/gpt-as-a-finite-state-markov-chain-zh/)  未
-102. [【LLM】从零开始训练大模型](https://zhuanlan.zhihu.com/p/636270877) ***  未
-103. [【Falcon Paper】我们是靠洗数据洗败 LLaMA 的！](https://zhuanlan.zhihu.com/p/637996787) 未
+

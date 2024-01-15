@@ -29,6 +29,7 @@ top:
 
 ## Training & Inference
 + {% post_link 'gptLargeModelTraining' %}
++ {% post_link 'gptLargeModelTrainingPractice' %} 
 + {% post_link 'gptTrainParallelism' %} 
 + {% post_link 'gptInference' %}
 + {% post_link 'gptDataSet' %} 
