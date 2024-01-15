@@ -17,6 +17,17 @@ categories:
 # 推理 框架[1.1]
 {% asset_img 'inference.jpg' %}
 
++ server 云端
+vLLM，TensorRT， deepspeed
+
++ pc/edge 移动端
+ llama.cpp
+ mlc-llm
+ ollama
+ 
++ 服务 Server
+  Triton Server
+  
 # 推理 优化
 ### 模型压缩 [2.1]
 剪枝（Pruning）
