@@ -33,8 +33,10 @@ categories:
   - Docker 
 
 
-# RAG on Semi-structured data
-### 分析PDF中图片 [6]
+# 多模态RAG-多向量检索器 [8]
+### semi-structured (tables + text) RAG
+### multi-modal (text + tables + images) RAG
+##### 分析PDF中图片 [6]
 **Option 1** 
 * Use multimodal embeddings **(such as [CLIP](https://openai.com/research/clip))** to embed images and text
 * Retrieve both using similarity search
@@ -50,15 +52,15 @@ categories:
 * Embed and retrieve image summaries with a reference to the raw image 
 * Pass **raw images and text chunks** to a multimodal LLM for answer synthesis   
 
-### 分析pdf中表格 [7]
+##### 分析pdf中表格 [7]
 
-### 组件
+##### 组件
 + pdf解析
   unstructured
 + store
  MultiVector Retriever- 元数据+数据
 
-
+###  private multi-modal (text + tables + images)  RAG
 
 # 参考
 ### RAG on Text data
@@ -77,9 +79,7 @@ categories:
    [Multi-Vector Retriever for RAG on tables, text, and images](https://blog.langchain.dev/semi-structured-multi-modal-rag/)
 7. [Advanced-RAG semi_structured_data](https://github.com/www6v/AIGC/blob/master/Advanced-RAG/01_semi_structured_data.ipynb)   解析pdf中的表格，  运行没问题，能问表格中的数据
 
-
-
-
+8. [检索增强生成（RAG）有什么好的优化方案？](https://www.zhihu.com/question/628651389/answer/3321989558) 
 
 100. [LlamaHub](https://llamahub.ai/) 未  
       Mix and match our Data Loaders and Agent Tools to build custom RAG apps or use our LlamaPacks as a starting point for your retrieval use cases.
