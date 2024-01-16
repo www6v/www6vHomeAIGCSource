@@ -23,6 +23,14 @@ categories:
   - 本研究方法部分的Western Blot是如何实施的？
   - 总结下本论文Introduction部分在写作方面，有哪些**词汇和句式**值得在SCI论文写作中积累借鉴
 
+# Tools
++ [Seamless for science](https://app.seaml.es/) bibi1
+  abstract
++ [scispace](https://typeset.io/)  bibi1
+  润色 判重
++ [txyz](https://www.txyz.ai/) 
+  
+
 
 # 参考
 [整合chatGPT的新必应（NewBing chat）简直就是科研神器！](https://www.bilibili.com/video/BV18M4y1C7HY/)
