@@ -23,6 +23,13 @@ categories:
 - 其四，Assistant API还能够直**接连接OpenAI在线文档库**，即如果用户将外部文档保存在OpenAI云空间内，则可以在调用Assistant API时实时访问文档库中的任意文件，甚至可以在不同线程中调用不同的文档。而在借助Assistant API的Knowledge retrieval功能，则可以让大模型实时获取这些文件信息，并且合理管理短期记忆；
 
 
+# Agent-function call[1]
+{% asset_img 'xtuner-agent.png' %}
+
+
 
 # 参考
+1. [xtuner](https://github.com/InternLM/tutorial/blob/main/xtuner/README.md) 4【补充】用 MS-Agent 数据集 赋予 LLM 以 Agent 能力
+2. [(4)XTuner 大模型单卡低成本微调实战](https://www.bilibili.com/video/BV1yK4y1B75J/)
+
 7. [Assistant API详解与Agent开发实战-九天Hector](https://github.com/www6v/AIGC/tree/master/%E4%B9%9D%E5%A4%A9Hector/Assistant%20API%E8%AF%A6%E8%A7%A3%E4%B8%8EAgent%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98-%E4%B9%9D%E5%A4%A9Hector)
