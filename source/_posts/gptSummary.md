@@ -26,6 +26,7 @@ top:
 + {% post_link 'gptLlama' %}   
 + {% post_link 'gptChatGLM' %}   
 + {% post_link 'gptLeaderBoard' %}  
++ {% post_link 'gptMultimodal' %}  
 
 ## Training & Inference
 + {% post_link 'gptLargeModelTraining' %}
