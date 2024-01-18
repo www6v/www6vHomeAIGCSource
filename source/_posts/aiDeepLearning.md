@@ -27,6 +27,7 @@ categories:
 然后根据这个前向传播的结果算出所有权重的梯度，然后再把这个梯度呢 转换成一个update的值，去update每个权重。 
 
 ## 参考
-[系统论文阅读研讨会week9：机器学习系统（一）](https://www.bilibili.com/video/BV1GA41157mJ/) ***
-[W9：机器学习系统（一）](https://learn-sys.github.io/cn/reading/) ***  对应的PPT
+1. [系统论文阅读研讨会week9：机器学习系统（一）](https://www.bilibili.com/video/BV1GA41157mJ/) ***
+2. [W9：机器学习系统（一）](https://learn-sys.github.io/cn/reading/) ***  对应的PPT
+100. [吴恩达：28张图全解深度学习知识](https://zhuanlan.zhihu.com/p/461925341)
 
