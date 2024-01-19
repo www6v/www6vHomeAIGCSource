@@ -76,6 +76,7 @@ top:
 
 ## Study
 + {% post_link 'gptStudy' %}
++ {% post_link 'gptStudyPaper' %}
 + {% post_link 'aiStudyResouce' %} 
 
 
