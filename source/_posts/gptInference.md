@@ -44,6 +44,17 @@ vLLM，TensorRT， deepspeed
 量化（Quantization）
 低秩分解（Low-Rank Factorization）
 
+# 推理实战 [3]
+### 模型转换
+{% asset_img  'convert.png' %}
+### TurboMind 推理+命令行本地对话
+{% asset_img  'infer.png' %}
+### TurboMind推理+API服务
++ 启动服务
+{% asset_img  'infer-api.png' %}
++ Client访问服务
+{% asset_img  'infer-api-client.png' %}
+
 # 参考
 ### 框架
 1.1. [探秘LLM应用开发](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA5MTIxNTY4MQ==&scene=1&album_id=2959126655292211206)   8-19
@@ -55,5 +66,8 @@ vLLM，TensorRT， deepspeed
 2.1. [一文探秘LLM应用开发(13)-模型部署与推理(优化理论) ](https://mp.weixin.qq.com/s/glPPSqHjsnDjC0DZSuuPzA) 
 2.2 https://lilianweng.github.io/posts/2023-01-10-inference-optimization/
 103. [大语言模型推理性能优化综述](https://zhuanlan.zhihu.com/p/656485997)
-104. [(5)LMDeploy 大模型量化部署实践](https://www.bilibili.com/video/BV1iW4y1A77P/) V
 
+
+### 实战
+3. [lmdeploy 量化部署](https://github.com/InternLM/tutorial/blob/main/lmdeploy/lmdeploy.md)
+   [(5)LMDeploy 大模型量化部署实践](https://www.bilibili.com/video/BV1iW4y1A77P/) V
