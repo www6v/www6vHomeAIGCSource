@@ -23,7 +23,9 @@ categories:
 - 其四，Assistant API还能够直**接连接OpenAI在线文档库**，即如果用户将外部文档保存在OpenAI云空间内，则可以在调用Assistant API时实时访问文档库中的任意文件，甚至可以在不同线程中调用不同的文档。而在借助Assistant API的Knowledge retrieval功能，则可以让大模型实时获取这些文件信息，并且合理管理短期记忆；
 
 
-# Agent-function call[1]
+# 基于微调的Agent-function call[1][2]
+{% asset_img 'dirs.JPG' %}
+
 {% asset_img 'xtuner-agent.png' %}
 
 
