@@ -92,9 +92,11 @@ Voyage + big-reranker-large
    文中的第二阶段就是指Reranker
 
 100. [A Survey of Techniques for Maximizing LLM Performance](https://www.youtube.com/watch?v=ahnGLM-RC1Y)  *** V
+
     [A Survey of Techniques for Maximizing LLM Performance梳理](https://zhuanlan.zhihu.com/p/670880685) 
 
 101. [A Cheat Sheet and Some Recipes For Building Advanced RAG](https://blog.llamaindex.ai/a-cheat-sheet-and-some-recipes-for-building-advanced-rag-803a9d94c41b)
      [LlamaIndex官方年度巨献：高清大图纵览高级 RAG技术，强烈推荐收藏 ](https://mp.weixin.qq.com/s/KM8c3PUww1SOK1dbLjn1Tw) *** 看图
 
 102. [Advanced RAG Techniques: an Illustrated Overview](https://pub.towardsai.net/advanced-rag-techniques-an-illustrated-overview-04d193d8fec6) 
+     [最全的RAG技术概览 ](https://mp.weixin.qq.com/s/CO7hMv4RW7OE6zwUmVfp5A)
