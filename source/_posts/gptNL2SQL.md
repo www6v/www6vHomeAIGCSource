@@ -23,3 +23,6 @@ https://github.com/www6v/nl2sql-
 
 百度千帆-ppt
 QCon-ppt
+
+[语义解析 (Text-to-SQL) 技术研究及应用 上篇 ](https://mp.weixin.qq.com/s?__biz=MzUxNzk5MTU3OQ==&mid=2247487028&idx=1&sn=7b6767878b7f6b891fc69e408f248ef1)
+[语义解析 (Text-to-SQL) 技术研究及应用 下篇 ](https://mp.weixin.qq.com/s/5lTLW5OOuRMo2zjbzMxr_Q)

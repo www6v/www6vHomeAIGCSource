@@ -94,3 +94,6 @@ categories:
 100. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088) *** 未
 
 101. [一文通透Text Embedding模型：从text2vec、openai-ada-002到m3e、bge](https://blog.csdn.net/v_JULY_v/article/details/135311471) 未
+
+102. [Meta向量数据库Faiss介绍](https://zhuanlan.zhihu.com/p/646832642) 未
+
