@@ -127,6 +127,4 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
    [带界面的 AutoGPT 产品](https://link.zhihu.com/?target=https%3A//godmode.space/)
 6. [LLM Powered Autonomous Agents ](https://lilianweng.github.io/posts/2023-06-23-agent/) paper 
 7. [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) paper
-100. [The Rise and Potential of Large Language Model Based Agents: A Survey](https://github.com/WooooDyy/LLM-Agent-Paper-List) *** 未
-101. [《综述：全新大语言模型驱动的Agent》](https://zhuanlan.zhihu.com/p/656676717)  *** 未
 

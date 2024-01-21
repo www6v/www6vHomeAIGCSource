@@ -65,6 +65,7 @@ top:
 + {% post_link 'gptAgent' %}
 + {% post_link 'gptAgentPractice' %} 
 + {% post_link 'gptFunctionCall' %} 
++ {% post_link 'gptMultiAgents' %}  
 
 ## Application
 + {% post_link 'gpt' %}
