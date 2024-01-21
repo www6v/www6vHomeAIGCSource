@@ -83,3 +83,5 @@ GPT-3 在下游任务的评估与预测时，提供了三种不同的方法：
 1. [GPT / GPT-2 / GPT-3 / InstructGPT 进化之路](https://zhuanlan.zhihu.com/p/609716668) ***
 
 2. [Few-Shot, Zero-Shot & One-shot 的通俗理解](https://zhuanlan.zhihu.com/p/624793654)
+
+100. [[Transformer 101系列] ChatGPT是怎么炼成的?](https://zhuanlan.zhihu.com/p/642282717) 未

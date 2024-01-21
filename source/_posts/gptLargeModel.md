@@ -61,4 +61,6 @@ categories:
      [大语言模型综述](https://github.com/RUCAIBox/LLMSurvey/blob/main/assets/LLM_Survey_Chinese.pdf) 中文
      [A Survey of Large Language Models](https://arxiv.org/pdf/2303.18223.pdf) 英文
      [LLMSurvey](https://github.com/www6v/LLMSurvey)  github
-     [[论文]大语言模型综述](https://zhuanlan.zhihu.com/p/630203554)     
+     [[论文]大语言模型综述](https://zhuanlan.zhihu.com/p/630203554)         
+103. [[Transformer 101系列] 初探LLM基座模型](https://zhuanlan.zhihu.com/p/640784855)   
+104. [LLM从0开始预训练系列：2、大模型技术报告总结（GPT/PaLM/GLM/LLaMA/Skywork）](https://zhuanlan.zhihu.com/p/664046612) 
