@@ -21,6 +21,7 @@ categories:
 5.  [从0到1复现斯坦福羊驼（Stanford Alpaca 7B）](https://zhuanlan.zhihu.com/p/618321077)  
     GPUs: 8 卡 A800 80GB GPUs
 6. [我想学大模型，应该从哪个模型开始？LLaMA生态家谱整理和分析 ](https://mp.weixin.qq.com/s?__biz=MzUyOTA5OTcwMg==&mid=2247485019&idx=1&sn=e3417472c0c1f98aede498fbe905e1a0&)
+7. [NLP（九）：LLaMA, Alpaca, ColossalChat 系列模型研究](https://zhuanlan.zhihu.com/p/618695885)
 7. https://github.com/www6v/Llama2-Chinese
 8. [Llama中文社区](https://llama.family/)
 

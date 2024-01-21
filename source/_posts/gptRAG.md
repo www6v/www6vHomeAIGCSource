@@ -35,9 +35,10 @@ categories:
 
 ### 综述
 2. [https://zhuanlan.zhihu.com/p/673910600](https://zhuanlan.zhihu.com/p/673910600)
+3. [NLP（廿一）：从 RAG 到 Self-RAG —— LLM 的知识增强](https://zhuanlan.zhihu.com/p/661465330?utm_id=0) *** 
+
 
 ### Self-RAG
-3. [NLP（廿一）：从 RAG 到 Self-RAG —— LLM 的知识增强](https://zhuanlan.zhihu.com/p/661465330?utm_id=0) *** 
 4. [original implementation of SELF-RAG](https://github.com/www6v/self-rag)
 
 100. [高级检索增强生成技术(RAG)全面指南：原理、分块、编码、索引、微调、Agent、展望](https://zhuanlan.zhihu.com/p/673922981) 未
