@@ -1,5 +1,5 @@
 ---
-title: Langchain  App
+title: Langchain  Agent
 date: 2023-01-11 17:08:21
 tags:
   - GPT
@@ -36,11 +36,16 @@ It utilizes **Ollama the LLM, GPT4All for embeddings, and Chroma for the vectors
 This template implements a version of
 "GPT Researcher" that you can use as a starting point for a **research agent**.
 
+
+
+# LangGraph[5]
+
 # 参考
+
 1. [Langchain Apps](https://github.com/www6v/langchain-app) Project Code
 2. [LangChain Agents 保姆级教程 | 动画演示 讲清 核心模块 Agents | Code 讲解 | Demo 演示](https://www.bilibili.com/video/BV1JV411F7Yj/)
 3. ["Research Assistant": Exploring UXs Besides Chat](https://blog.langchain.dev/exploring-uxs-besides-chat-with-research-assistant/)
 4. [Building a Research Assistant from Scratch](https://www.youtube.com/watch?v=DjuXACWYkkU) 
-
+5. [LangGraph](https://blog.langchain.dev/langgraph/)
 100. [gpt-researcher](https://github.com/www6v/gpt-researcher/)
 

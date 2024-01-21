@@ -59,7 +59,7 @@ top:
 ## Langchain
 + {% post_link 'gptLangchain' %}
 + {% post_link 'gptRetrievers' %} 
-+ {% post_link 'gptLangchainApp' %} 
++ {% post_link 'gptLangchainAgent' %} 
 
 ## Agent
 + {% post_link 'gptAgent' %}

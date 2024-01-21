@@ -30,7 +30,16 @@ categories:
 
 
 
+
+# multi-agnt 
++ CrewAI - OpenAI
++ AutoGPT
++ AutoGen
++ MetaGPT
+
+
 # 参考
+
 1. [xtuner](https://github.com/InternLM/tutorial/blob/main/xtuner/README.md) 4【补充】用 MS-Agent 数据集 赋予 LLM 以 Agent 能力
 2. [(4)XTuner 大模型单卡低成本微调实战](https://www.bilibili.com/video/BV1yK4y1B75J/)
 
