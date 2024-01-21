@@ -26,3 +26,10 @@ QCon-ppt
 
 [语义解析 (Text-to-SQL) 技术研究及应用 上篇 ](https://mp.weixin.qq.com/s?__biz=MzUxNzk5MTU3OQ==&mid=2247487028&idx=1&sn=7b6767878b7f6b891fc69e408f248ef1)
 [语义解析 (Text-to-SQL) 技术研究及应用 下篇 ](https://mp.weixin.qq.com/s/5lTLW5OOuRMo2zjbzMxr_Q)
+
+
+
+[LLM在中文Text2SQL的实践](https://zhuanlan.zhihu.com/p/670509396)
+[LLM在中文Text2SQL任务上的优化V2.0](https://zhuanlan.zhihu.com/p/673474672)
+[LLM在中文Text2SQL任务上的优化V1.0](https://zhuanlan.zhihu.com/p/670913902)
+
