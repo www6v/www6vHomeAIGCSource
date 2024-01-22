@@ -107,9 +107,6 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 3. 这些 Command 都是可扩展的，每一种命令代表一种外部能力(比如爬虫、Google搜索，也包括GPT的能力)，通过这些 Command 调用返回的 Result 又会成为到 Command Prompt 的组成元素，
 4. 回到第 1 步往复循环，直到拿到最终结果结果（状态为“compelete”）
 
-[本质上是prompt enginering]
-
-
 # 问题和局限性 [4]
 + 记忆召回问题
   只是做简单的 embedding 相似性召回，很容易发现召回的结果不是很好
@@ -123,11 +120,7 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
   模型 agent 的工作如何终止也是一个挑战
   
 
-
-
-
 # 参考
-
 1. 公开课
 2. 公开课
 3. [2023年新生代大模型Agents技术,ReAct,Self-Ask,Plan-and-execute,以及AutoGPT, HuggingGPT等应用](https://zhuanlan.zhihu.com/p/642357544) ***  论文+代码
