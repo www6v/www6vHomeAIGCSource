@@ -14,10 +14,8 @@ categories:
 ## 目录
 <!-- toc -->
 
-# NPL范式[3]
-{% asset_img 'npl4Paragiam.jpg'  4种范式 %}
 
-# Scaling Law[4]
+# Scaling Law[3]
 ### Scaling Law
 {% asset_img 'scalingLaw.jpg' %}
 
@@ -50,9 +48,7 @@ categories:
 
 1. [LLM学习系列1：大模型架构要点总结](https://zhuanlan.zhihu.com/p/648050614)
 2. [主流大语言模型的技术原理细节](https://cloud.tencent.com/developer/article/2328541) *** 腾讯     架构 + 训练 + 微调
-3. [[综述]鹏飞大神的Pre-train, Prompt, and Predict [1]](https://zhuanlan.zhihu.com/p/396098543)
-4.  [解析大模型中的Scaling Law](https://zhuanlan.zhihu.com/p/667489780)
-
+3. [解析大模型中的Scaling Law](https://zhuanlan.zhihu.com/p/667489780)
 
 ### 综述
 100. [[译][论文] 大语言模型（LLM）综述与实用指南（Amazon，2023）](http://arthurchiao.art/blog/llm-practical-guide-zh/) 未
