@@ -74,3 +74,5 @@ categories:
 
 101. [【LLM系列之FLAN-T5/PaLM】Scaling Instruction-Finetuned Language Models](https://zhuanlan.zhihu.com/p/629461665)
 
+102. [如何优化大模型的In-Context Learning效果？](https://zhuanlan.zhihu.com/p/597036814)
+
