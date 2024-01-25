@@ -13,3 +13,5 @@ categories:
 
 
 [[Transformer 101系列] 多模态的大一统之路](https://zhuanlan.zhihu.com/p/643969218)
+
+[DeepMind出手！多模态小样本打败精调](https://zhuanlan.zhihu.com/p/511517344)

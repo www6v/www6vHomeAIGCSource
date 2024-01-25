@@ -27,6 +27,7 @@ top:
 + {% post_link 'gptChatGLM' %}   
 + {% post_link 'gptLeaderBoard' %}  
 + {% post_link 'gptMultimodal' %}  
++ {% post_link 'gptImpossibleTriangle' %}  
 
 ## Training & Inference
 + {% post_link 'gptLargeModelTraining' %}
