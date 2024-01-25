@@ -40,8 +40,9 @@ top:
 + {% post_link 'gptFineTuning' %} 
 + {% post_link 'gptFineTuningWhen' %}  
 + {% post_link 'gptFineTuningPEFT' %}  
-+ {% post_link 'gptPEFTLora' %} 
-+ {% post_link 'gptPEFTQLora' %} 
+  + {% post_link 'gptPEFTLora' %} 
+  + {% post_link 'gptPEFTQLora' %} 
+  + {% post_link 'gptPromptTuningPractice' %}  
 + {% post_link 'gptPromptTuning' %} 
 + {% post_link 'gptInstructTuning' %} 
 
