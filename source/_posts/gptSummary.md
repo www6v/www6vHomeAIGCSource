@@ -42,7 +42,8 @@ top:
 + {% post_link 'gptFineTuningPEFT' %}  
   + {% post_link 'gptPEFTLora' %} 
   + {% post_link 'gptPEFTQLora' %} 
-  + {% post_link 'gptPromptTuningPractice' %}  
+  + {% post_link 'gptPromptTuningPractice' %}    
++ {% post_link 'gptFineTuningBert' %}    
 + {% post_link 'gptPromptTuning' %} 
 + {% post_link 'gptInstructTuning' %} 
 
