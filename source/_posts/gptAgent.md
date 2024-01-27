@@ -16,12 +16,13 @@ categories:
 <!-- toc -->
 
 
-# 架构图 [6] [1][2]
+# 架构图  
 {% asset_img 'agent-overview.jpg' %}
 
-Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能力]
+### 组件   [1][2]
+Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能力] 
 
-###  Planning
+###  Planning [6]
 + Task Decomposition
   - CoT 
   - ToT
@@ -31,23 +32,25 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
   + Reflexion 
   + Chain of Hindsight 
 
-### Memory
+### Memory [6]
 + Types of Memory
   - **Sensory memory** as learning **embedding representations for raw inputs, including text, image or other modalities**;
   - **Short-term memory** as **in-context learning**. It is short and finite, as it is restricted by the finite context window length of Transformer.
   - **Long-term memory** as the external **vector store** that the agent can attend to at query time, accessible via fast retrieval.
 
-### Tool Use
+### Tool Use [6]
 + 让 agent 选择合适的工具 [8]
    - 可以 retrieve 相关示例来做 **few-shot prompt**。
    - 也可以进一步 **fine tune 特定模型**，例如之前的 Toolformer。
 
++ Research
+  + **TALM** (Tool Augmented Language Models; Parisi et al. 2022) [6]
+  + **Toolformer** (Schick et al. 2023)   [6]
+  + **Gorilla** [8]
 
-+ Framework
-  + **Toolformer** 
-  +  Gorilla [8]
-
-
++ Production  [6]
+  - ChatGPT **Plugins** 
+  - OpenAI API **function calling**
 
 # 类型  [3]
 + ReACT 范式 [7]
@@ -83,11 +86,7 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
 
 +  ChatDev， AutoGen
 
-
-
-
 # Example
-
 ### HuggingGPT 
 
 ### BabyAGI  [AIGC]
@@ -119,6 +118,35 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 + 任务终止与结果验证
   模型 agent 的工作如何终止也是一个挑战
   
+# 挑战 [8]
+### 如何让 agent 选择合适的工具
++ Toolformer - fine tune
++ Gorilla - retrieval，fine tune
+
+### 不必要的工具使用
+“Human Input”也写成一种工具，让模型来主动发起对人类的提问
+[Human as a tool](https://python.langchain.com/docs/integrations/tools/human_tools)
+
+### Agent 返回的格式不稳定
+这里常见的做法是让 LLM **按照 json 这类常见的 schema 来返回**，一般稳定性会高一些（相比“Action:”这种）。
+此外自动修复重试也很实用，可以利用 LangChain 里的 **output parsers** 来帮助完成。
+
+### 记住之前的操作，避免重复
+AutoGPT - retrieval 结合近期操作记录
+
+### 处理超长的 observation
+需要用一些工具从中**提取有用信息**，或者**放到外部存储中再借助 retrieval 来使用**。
+
+### 专注于目标
+简单的做法是**在 prompt 结尾处再把目标加上**，引起 agent 的注意。
+另外像 BabyAGI，HuggingGPT 这种把 **planning 和 execution 分开**的做法也是很有用。**拆分的比较细**的任务往往步骤比较短，也不容易丢失目标。
+
+### 结果评估
++ **评估最终结果**是否正确
++ **过程的细化评估**
+  - 选择的中间步骤是否正确。
+  - 生成 action 的 input 是否正确。
+  - 生成的步骤序列是否合理高效。
 
 # 参考
 1. 公开课

@@ -25,6 +25,6 @@ categories:
 [清华P-tuning v2、谷歌SPoT｜Prompt可以超过精调了吗？](https://zhuanlan.zhihu.com/p/423306405)
 
 
-[第七课：Prompt Tuning](https://www.bilibili.com/video/BV1Wg4y1K77R/) *** V
+[第七课：Prompt Tuning](https://www.bilibili.com/video/BV1Wg4y1K77R/) ***  V  有ppt
 [清华博后带你轻松吃透Prompt Tuning顶会大模型论文](https://www.bilibili.com/video/BV18P411E7VK/) V
 
