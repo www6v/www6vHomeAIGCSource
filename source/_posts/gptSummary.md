@@ -66,10 +66,11 @@ top:
 
 ## Agent
 + {% post_link 'gptAgent' %}
-+ {% post_link 'gptAgentPractice' %} 
-+ {% post_link 'gptFunctionCall' %} 
 + {% post_link 'gptMultiAgents' %}  
-+ {% post_link 'gptToolformer' %}   
++ {% post_link 'gptAgentPractice' %} 
++ Tools
+  + {% post_link 'gptFunctionCall' %} 
+  + {% post_link 'gptAgentTool' %}  
 
 ## Application
 + {% post_link 'gpt' %}

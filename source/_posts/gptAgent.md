@@ -54,13 +54,11 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
 
 # 类型  [3]
 + ReACT 范式 [7]
-  把**融合了Reasoning和Acting**的一种范式，推理过程是浅显易懂，仅仅**包含thought-action-observation步骤**，很容易判断推理的过程的正确性，使用ReAct做决策甚至超过了强化学习.
-  
+  把**融合了Reasoning和Acting**的一种范式，推理过程是浅显易懂，仅仅**包含thought-action-observation步骤**，很容易判断推理的过程的正确性，使用ReAct做决策甚至超过了强化学习.  
   - chain-of-thought推理-问题
    事实幻想（fact hallucination）和错误传递（error propagation）
   
 + Self-ask
-
   Self-ask是一种follow-up的使用范式，仅仅包含follow-up, immediate answer步骤，至于follow-up多少个step，完全由它自己决定，估计这就是Self-ask的名字的由来。
 
 + Plan-and-execute agents
