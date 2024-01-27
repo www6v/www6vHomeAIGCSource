@@ -11,6 +11,10 @@ categories:
 <p></p>
 <!-- more -->
 
+# Overview
+[ToolLearningPapers](https://github.com/thunlp/ToolLearningPapers) git 
+[Tool Learning with Foundation Models](https://arxiv.org/pdf/2304.08354.pdf) paper
+
 # Gorilla
 
 [Gorilla：链接海量API的大型语言模型](https://apposcmf8kb5033.pc.xiaoe-tech.com/live_pc/l_64a7d5afe4b09d7237a04b5b) V
