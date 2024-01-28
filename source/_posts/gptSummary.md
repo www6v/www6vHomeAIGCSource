@@ -43,6 +43,7 @@ top:
   + {% post_link 'gptPEFTLora' %} 
   + {% post_link 'gptPEFTQLora' %} 
   + {% post_link 'gptPromptTuningPractice' %}    
+  + {% post_link 'gptPEFTPtuning' %}  
 + {% post_link 'gptFineTuningBert' %}    
 + {% post_link 'gptPromptTuning' %} 
 + {% post_link 'gptInstructTuning' %} 
