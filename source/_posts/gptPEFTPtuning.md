@@ -23,8 +23,13 @@ categories:
   - chatglm的学习率
     LR=2e-2
 
-# 参考
+### 学习率
++ 改的特别大
+  模型训练的时候会震荡
++ 改的特别小
+   模型训练的时候会收敛非常慢
 
+# 参考
 1. [train_pt2.sh](https://github.com/www6v/fine-tuning-lab/blob/agiclass-v1/chatglm/train_pt2.sh) git   基于法律文本的chatglm的p-tuning
    [train_pt2.sh](https://github.com/www6v/fine-tuning-lab/blob/agiclass-v1/chatglm2/train_pt2.sh) git   基于法律文本的chatglm-2的P-tuning v2
    [十一、小参数量微调](https://github.com/www6v/fullStackLLM/blob/master/08-fine-tuning/peft/index.ipynb)
