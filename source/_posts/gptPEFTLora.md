@@ -12,7 +12,24 @@ categories:
 <!-- more -->
 
 
-## 基于bloom的微调
+
+## 目录
+<!-- toc -->
+
+# 基于LLaMA的SFT
++ 版本
+  + deepspeed的版本  [3.1]
+  + AutoGPTQ的版本  0.6.0 -> git下载到本地安装
++ 代码错误
+  + use_flash_attention_2 相关的错误 [3.2]
++ 脚本 [3.3]
+  - modescope 下载 shakechen/Llama-2-7b-chat-hf
+  - 单卡训练
+    1个epoch 差不多7小时
+
+{% asset_img 'llama-lora.png' %}
+
+# 基于bloom的微调
 + 简单基础  [2]
   - 基座模型  
     Langboat/bloom-1b4-zh 
@@ -82,6 +99,11 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
 2. [【手把手带你实战HuggingFace Transformers-高效微调篇】LoRA 原理与实战](https://www.bilibili.com/video/BV13w411y7fq/) V
     [bloom Lora-origin](https://github.com/www6v/transformers-code/blob/master/03-PEFT/21-lora/chatbot_lora.ipynb)  [bloom Lora-origin](https://colab.research.google.com/github/www6v/transformers-code/blob/master/03-PEFT/21-lora/chatbot_lora.ipynb) git   origin运行有问题
     [bloom Lora-modify](https://github.com/www6v/transformers-code/blob/master/03-PEFT/21-lora/chatbot_lora%5Bworkable%5D.ipynb)  [bloom Lora-modify](https://colab.research.google.com/drive/1SNy35_CJOobe4AxAecMZJo4LX1TjXvTm) 修改过可以在colab运行的代码
+
+3. [Llama2-Chinese](https://github.com/www6v/Llama2-Chinese/tree/ww-workable) 模型微调-> lora SFT
+3.1 [requirements.txt](https://github.com/www6v/Llama2-Chinese/blob/ww-workable/requirements.txt)
+3.2 [finetune_clm_lora.py](https://github.com/www6v/Llama2-Chinese/blob/ww-workable/train/sft/finetune_clm_lora.py#L460C18-L460C19)  注释掉第360行   
+3.3 [train/sft/finetune_lora.sh](https://github.com/www6v/Llama2-Chinese/blob/ww-workable/train/sft/finetune_lora.sh)
 
 1xx. [Finetuning LLMs with LoRA and QLoRA: Insights from Hundreds of Experiments](https://lightning.ai/pages/community/lora-insights/) ***
      [几百次大模型LoRA和QLoRA 微调实践的经验分享](https://www.bilibili.com/video/BV16u4y1a7MH/) V
