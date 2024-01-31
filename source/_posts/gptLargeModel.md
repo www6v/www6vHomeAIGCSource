@@ -15,16 +15,6 @@ categories:
 <!-- toc -->
 
 
-# Scaling Law[3]
-### Scaling Law
-{% asset_img 'scalingLaw.jpg' %}
-
-### 参数量 vs 数据量
-{% asset_img 'paramVSdataSize.jpg' %}
-
-### 参数量 vs 数据量
-{% asset_img 'computeVSDatasize.jpg' %}
-
 # 神经网络
 + 正向传播
   损失函数  
@@ -48,8 +38,7 @@ categories:
 
 1. [LLM学习系列1：大模型架构要点总结](https://zhuanlan.zhihu.com/p/648050614)
 2. [主流大语言模型的技术原理细节](https://cloud.tencent.com/developer/article/2328541) *** 腾讯     架构 + 训练 + 微调
-3. [解析大模型中的Scaling Law](https://zhuanlan.zhihu.com/p/667489780)
-200. [论文阅读，大模型的缩放定律，Scaling Laws for Neural Language Models](https://zhuanlan.zhihu.com/p/663296750)
+
 
 ### 综述
 100. [[译][论文] 大语言模型（LLM）综述与实用指南（Amazon，2023）](http://arthurchiao.art/blog/llm-practical-guide-zh/) 未

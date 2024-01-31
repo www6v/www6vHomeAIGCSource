@@ -46,4 +46,5 @@ categories:
     GPUs: 8 卡 A800 80GB GPUs
 
 1xx. [Llama中文社区](https://llama.family/)
+2xx. [ Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) git
 

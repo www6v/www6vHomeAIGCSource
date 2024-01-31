@@ -42,7 +42,7 @@ categories:
     - Read-overhead 
     - Update-overhead 
     - Memory-overhead
- 
+
 # 范式
 ### pretrain, finetune 范式[3]
 第三阶段范式
@@ -53,9 +53,26 @@ categories:
 根据不可能三角形， pretrain, finetune 范式[3] 向pretrain, prompt, predict 范式[3]的迁移是受大模型大小的影响
 
 
+# Scaling Law[10]
+### Scaling Law
+{% asset_img 'scalingLaw.jpg' %}
+
+### 参数量 vs 数据量
+{% asset_img 'paramVSdataSize.jpg' %}
+
+### 参数量 vs 数据量
+{% asset_img 'computeVSDatasize.jpg' %}
+
 
 # 参考
+### 不可能三角
 1. [预训练模型的下一步？突破Impossible Triangle](https://zhuanlan.zhihu.com/p/501381510)
 2. [Impossible Triangle: What’s Next for Pre-trained Language Models?](https://arxiv.org/pdf/2204.06130.pdf)
 3. [微软朱晨光：预训练模型下一步怎么走？突破PLM的「不可能三角」](https://blog.csdn.net/zandaoguang/article/details/124395479)
-3. {% post_link 'gptPromptTuning' %} self
+4. {% post_link 'gptPromptTuning' %} self
+
+
+### Scaling Law
+10. [解析大模型中的Scaling Law](https://zhuanlan.zhihu.com/p/667489780)
+1xx. [论文阅读，大模型的缩放定律，Scaling Laws for Neural Language Models](https://zhuanlan.zhihu.com/p/663296750)
+2xx. [Training Compute-Optimal Large Language Models 简读 ](https://finisky.github.io/training-compute-optimal-large-language-models-summary/)
