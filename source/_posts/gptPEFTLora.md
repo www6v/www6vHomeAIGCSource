@@ -27,7 +27,21 @@ categories:
   - 单卡训练
     1个epoch 差不多7小时
 
+
+
++ checkpoint 生成文件
+
 {% asset_img 'llama-lora.png' %}
+
+{% asset_img 'llama-lora1.png' %}
+
++ 模型生成文件
+
+{% asset_img 'model1.png' %}
+
+{% asset_img 'model2.png' %}
+
+
 
 # 基于bloom的微调
 + 简单基础  [2]
