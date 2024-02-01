@@ -44,7 +44,10 @@ categories:
 1xx. [[译][论文] LLaMA 2：开放基础和微调聊天模型](http://arthurchiao.art/blog/llama2-paper-zh/)
 1xx.  [从0到1复现斯坦福羊驼（Stanford Alpaca 7B）](https://zhuanlan.zhihu.com/p/618321077) 
     GPUs: 8 卡 A800 80GB GPUs
+1xx. [Llama2技术细节&开源影响](https://zhuanlan.zhihu.com/p/644671690)
 
 1xx. [Llama中文社区](https://llama.family/)
 2xx. [ Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) git
+
+
 

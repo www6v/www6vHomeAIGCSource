@@ -32,7 +32,8 @@ categories:
 + LawGPT_zh
 
 # 参考
-[医疗金融法律大模型：从ChatDoctor到BloombergGPT/FinGPT/FinBERT、ChatLaw/LawGPT_zh](https://blog.csdn.net/v_JULY_v/article/details/131550529?spm=1001.2014.3001.5502)
-{% post_link 'gptLeaderBoard' %} self
-[训练中文垂类大模型：Lawyer LLaMA ](https://finisky.github.io/lawyer-llama-summary/)
+1xx. [医疗金融法律大模型：从ChatDoctor到BloombergGPT/FinGPT/FinBERT、ChatLaw/LawGPT_zh](https://blog.csdn.net/v_JULY_v/article/details/131550529?spm=1001.2014.3001.5502)
+1xx. {% post_link 'gptLeaderBoard' %} self
+1xx. [训练中文垂类大模型：Lawyer LLaMA ](https://finisky.github.io/lawyer-llama-summary/)
+1xx. [垂直领域大模型的一些思考及开源模型汇总](https://zhuanlan.zhihu.com/p/642611747)
 
