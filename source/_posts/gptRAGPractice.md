@@ -65,6 +65,12 @@ categories:
 
 # Vector+KG RAG[15][16]
 
+# Data processing[17]
+长文本   变成   QA pair
++ 规则匹配
++ 利用LLM抽取
++ 人工处理
+
 # 参考
 ### 文本
 1. [Langchain-Chatchat ](https://github.com/chatchat-space/Langchain-Chatchat) master
@@ -93,6 +99,8 @@ categories:
 15. [Enhanced QA Integrating Unstructured Knowledge Graph Using Neo4j and LangChain](https://neo4j.com/developer-blog/unstructured-knowledge-graph-neo4j-langchain/)  
 
 16. [Using a Knowledge Graph to implement a DevOps RAG application](https://blog.langchain.dev/using-a-knowledge-graph-to-implement-a-devops-rag-application/)
+
+17. <<大模型结合 RAG 构建客服场景自动问答系统>>  NVIDIA大模型日系列活动  
 
 100. [LlamaHub](https://llamahub.ai/) 未  
       Mix and match our Data Loaders and Agent Tools to build custom RAG apps or use our LlamaPacks as a starting point for your retrieval use cases.

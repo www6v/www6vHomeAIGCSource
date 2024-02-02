@@ -29,3 +29,6 @@ categories:
 [使LLM善假于物: Toolformer ](https://finisky.github.io/toolformer-summary/)
 [清华博士带你搞懂大模型自学工具使用（Toolformer)【OpenBMB论文速读】第 7 期](https://www.bilibili.com/video/BV18s4y1u7nJ/) V 有思维导图
 [Prompt Engineering ](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/#external-apis)
+
+
+[LLM能够自己制作工具了：详解Large Language Models as Tool Makers](https://zhuanlan.zhihu.com/p/633654195)

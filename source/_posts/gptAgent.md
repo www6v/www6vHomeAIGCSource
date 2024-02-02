@@ -19,7 +19,7 @@ categories:
 # 架构图  
 {% asset_img 'agent-overview.jpg' %}
 
-### 组件   [1][2]
+### 组件  [6]
 Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能力] 
 
 ###  Planning [6]
@@ -28,8 +28,8 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
   - ToT
 
 + Self-Reflection
-  + ReAct 
-  + Reflexion 
+  + ReAct [20]
+  + Reflexion [21][22]
   + Chain of Hindsight 
 
 ### Memory [6]
@@ -52,8 +52,8 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
   - ChatGPT **Plugins** 
   - OpenAI API **function calling**
 
-# 类型  [3]
-+ ReACT 范式 [7]
+# Patterns  [3]
++ ReACT 范式 [20]
   把**融合了Reasoning和Acting**的一种范式，推理过程是浅显易懂，仅仅**包含thought-action-observation步骤**，很容易判断推理的过程的正确性，使用ReAct做决策甚至超过了强化学习.  
   - chain-of-thought推理-问题
    事实幻想（fact hallucination）和错误传递（error propagation）
@@ -64,7 +64,7 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
 + Plan-and-execute agents
   本质上是先计划再执行，即先把用户的问题分解成一个个的子任务，然后再执行各个子任务，最后合并输出得到结果 
   
-# 分类 [1][2][3]
+# Agent分类 [1][2][3]
 + Action agents  
     - Function Call
     - ReACT
@@ -76,27 +76,23 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
     生成式智能体， CAMEL，  Generative Agents
     
 + Automomous Agent
-    **AutoGPT**， **BabyAGI**,  **AutoGen[Microsoft]**
-    MetaGPT，
+    **AutoGPT**， **BabyAGI**,  **AutoGen**
+    **MetaGPT**
     
 + 跨模态Agents
     HuggingGPT
 
 +  ChatDev， AutoGen
 
-# Example
+## Example
 ### HuggingGPT 
 
 ### BabyAGI  [AIGC]
-
 Plan-and-execute agents 
-
 The **planning** is almost always done **by an LLM**.
-
 The **execution** is usually done by a **separate agent (equipped with tools)**.
 
 ### AutoGPT[3][5]
-
 AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 
 1. AutoGPT 会基于一定策略自动组装 Command Prompt，这些首次会包含用户输入的 Name, Role和Goals 
@@ -154,7 +150,16 @@ AutoGPT - retrieval 结合近期操作记录
 5. [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) git
    [带界面的 AutoGPT 产品](https://link.zhihu.com/?target=https%3A//godmode.space/)
 6. [LLM Powered Autonomous Agents ](https://lilianweng.github.io/posts/2023-06-23-agent/) paper 
-7. [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) paper
+7. xxx
 8. [LLM 全栈开发指南补遗](https://zhuanlan.zhihu.com/p/633033220)  Agents  ***
    [Harrison Chase: Agents](https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/chase-agents/)  ***
+   
+### Planning
+20. [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) paper
+21. [【论文阅读】Reflexion: 大模型如何从错误经验中学习？](https://zhuanlan.zhihu.com/p/639254455)
+22. [Reflexion: 带言语强化学习的语言智体](https://zhuanlan.zhihu.com/p/671508578)
+2xx. [ReWOO: 高效增强语言模型中解偶观测和推理](https://zhuanlan.zhihu.com/p/671491031)
 
+3xx. [智体AI在多模态交互领域的综述（上）](https://zhuanlan.zhihu.com/p/678203245)
+3xx. [智体AI在多模态交互领域的综述（下）](https://zhuanlan.zhihu.com/p/678222381)
+3xx. [个人LLM智体的综述](https://zhuanlan.zhihu.com/p/678238642)
