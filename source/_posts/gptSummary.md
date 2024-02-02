@@ -33,6 +33,7 @@ top:
 + {% post_link 'gptLargeModelTraining' %}
 + {% post_link 'gptLargeModelTrainingPractice' %} 
 + {% post_link 'gptTrainParallelism' %} 
++ {% post_link 'gptInferenceFramework' %} 
 + {% post_link 'gptInference' %}
 + {% post_link 'gptPrecision' %}
 + {% post_link 'gptDataSet' %} 
