@@ -1,5 +1,5 @@
 ---
-title: 训练-实战
+title: 训练Train-实战
 date: 2023-01-15 10:18:14
 tags:
   - train

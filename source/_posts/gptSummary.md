@@ -37,6 +37,7 @@ top:
 + {% post_link 'gptInference' %}
 + {% post_link 'gptPrecision' %}
 + {% post_link 'gptDataSet' %} 
++ {% post_link 'gptContinualPretraining' %}   
 
 ## FineTuning
 + {% post_link 'gptFineTuning' %} 
