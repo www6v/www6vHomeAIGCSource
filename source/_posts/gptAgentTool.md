@@ -25,11 +25,6 @@ categories:
 [大猩猩（Gorilla）🦍，连接大量 API 的大型语言模型，能成为未来AI应用的核心么？](https://zhuanlan.zhihu.com/p/632583909)
 [Gorilla：与大规模API相连的大型语言模型](https://zhuanlan.zhihu.com/p/640697382)
 
-# Toolformer
-[使LLM善假于物: Toolformer ](https://finisky.github.io/toolformer-summary/)
-[清华博士带你搞懂大模型自学工具使用（Toolformer)【论文速读】](https://www.bilibili.com/video/BV18s4y1u7nJ/) V 有思维导图
-[Prompt Engineering ](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/#external-apis)
-
 # Others
 [LLM能够自己制作工具了：详解Large Language Models as Tool Makers](https://zhuanlan.zhihu.com/p/633654195)
 [THUNLP成员领读EMNLP大模型工具创造新框架“CREATOR”](https://www.bilibili.com/video/BV1EN4y1q7Zn/) V 有思维导图 

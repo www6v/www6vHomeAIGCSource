@@ -27,7 +27,8 @@ top:
 + {% post_link 'gptChatGLM' %}   
 + {% post_link 'gptLeaderBoard' %}  
 + {% post_link 'gptMultimodal' %}  
-+ {% post_link 'gptImpossibleTriangle' %}  
++ {% post_link 'gptImpossibleTriangle' %} 
++ {% post_link 'gptEmergent' %}   
 
 ## Training & Inference
 + {% post_link 'gptLargeModelTraining' %}
@@ -75,6 +76,7 @@ top:
 + Tools
   + {% post_link 'gptFunctionCall' %} 
   + {% post_link 'gptAgentTool' %}  
+  + {% post_link 'gptToolformer' %}  
 
 ## Application
 + {% post_link 'gpt' %}

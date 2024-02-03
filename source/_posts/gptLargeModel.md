@@ -28,6 +28,3 @@ categories:
 1xx. [LLM从0开始预训练系列：2、大模型技术报告总结（GPT/PaLM/GLM/LLaMA/Skywork）](https://zhuanlan.zhihu.com/p/664046612) 
 
 1xx. [高效大语言模型：综述](https://zhuanlan.zhihu.com/p/671710012)  *** 大模型各个维度的优化
-
-1xx. [清华博士带你思考大语言模型LLM的涌现现象（Emergent）](https://www.bilibili.com/video/BV1qX4y1i78J/)  有脑图
-    Emergent Abilities of Large Language Models （https://arxiv.org/abs/2206.07682）
