@@ -107,6 +107,7 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
 ```
 
 # 参考
+### bloom
 1. [大模型参数高效微调技术实战（五）-LoRA](https://zhuanlan.zhihu.com/p/649315197)
    [bloom Lora](https://github.com/www6v/llm-action/blob/main/train/peft/clm/peft_lora_clm.ipynb) git
    
@@ -114,15 +115,20 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
     [bloom Lora-origin](https://github.com/www6v/transformers-code/blob/master/03-PEFT/21-lora/chatbot_lora.ipynb)  [bloom Lora-origin](https://colab.research.google.com/github/www6v/transformers-code/blob/master/03-PEFT/21-lora/chatbot_lora.ipynb) git   origin运行有问题
     [bloom Lora-modify](https://github.com/www6v/transformers-code/blob/master/03-PEFT/21-lora/chatbot_lora%5Bworkable%5D.ipynb)  [bloom Lora-modify](https://colab.research.google.com/drive/1SNy35_CJOobe4AxAecMZJo4LX1TjXvTm) 修改过可以在colab运行的代码
 
+### LLaMA
 3. [Llama2-Chinese](https://github.com/www6v/Llama2-Chinese/tree/ww-workable) 模型微调-> lora SFT
 3.1 [requirements.txt](https://github.com/www6v/Llama2-Chinese/blob/ww-workable/requirements.txt)
 3.2 [finetune_clm_lora.py](https://github.com/www6v/Llama2-Chinese/blob/ww-workable/train/sft/finetune_clm_lora.py#L460C18-L460C19)  注释掉第360行   
 3.3 [train/sft/finetune_lora.sh](https://github.com/www6v/Llama2-Chinese/blob/ww-workable/train/sft/finetune_lora.sh)
 
-1xx. [Finetuning LLMs with LoRA and QLoRA: Insights from Hundreds of Experiments](https://lightning.ai/pages/community/lora-insights/) ***
-     [几百次大模型LoRA和QLoRA 微调实践的经验分享](https://www.bilibili.com/video/BV16u4y1a7MH/) V
-     
+### ChatGLM
 1xx. [train_lora.sh](https://github.com/www6v/fine-tuning-lab/blob/agiclass-v1/chatglm/train_lora.sh)  基于法律文本的chatglm的lora
 [train_lora.sh](https://github.com/www6v/fine-tuning-lab/blob/agiclass-v1/chatglm2/train_lora.sh)  基于法律文本的chatglm-2的lora
 [十一、小参数量微调](https://github.com/www6v/fullStackLLM/blob/master/08-fine-tuning/peft/index.ipynb)
 bili有相关的总结的视频
+
+1xx. [ChatGLM-Tuning](https://github.com/mymusise/ChatGLM-Tuning) 卢老师推荐
+
+### others
+1xx. [Finetuning LLMs with LoRA and QLoRA: Insights from Hundreds of Experiments](https://lightning.ai/pages/community/lora-insights/) ***
+     [几百次大模型LoRA和QLoRA 微调实践的经验分享](https://www.bilibili.com/video/BV16u4y1a7MH/) V
