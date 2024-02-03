@@ -20,37 +20,44 @@ top:
 + {% post_link 'aiOverview' %}  
 
 ## Model
-+ {% post_link 'gptLargeModel' %}
-+ {% post_link 'gptTransformer' %} 
-+ {% post_link 'gptFamily' %}  
-+ {% post_link 'gptLlama' %}   
-+ {% post_link 'gptChatGLM' %}   
-+ {% post_link 'gptLeaderBoard' %}  
++ 基础
+  + {% post_link 'gptLargeModel' %}
+  + {% post_link 'gptTransformer' %} 
++ 基座模型
+  + {% post_link 'gptFamily' %}  
+  + {% post_link 'gptLlama' %}   
+  + {% post_link 'gptChatGLM' %}   
+  + {% post_link 'gptLeaderBoard' %}  
 + {% post_link 'gptMultimodal' %}  
 + {% post_link 'gptImpossibleTriangle' %} 
 + {% post_link 'gptEmergent' %}   
 
 ## Training & Inference
-+ {% post_link 'gptLargeModelTraining' %}
-+ {% post_link 'gptLargeModelTrainingPractice' %} 
-+ {% post_link 'gptTrainParallelism' %} 
-+ {% post_link 'gptInferenceFramework' %} 
-+ {% post_link 'gptInference' %}
-+ {% post_link 'gptPrecision' %}
++ 训练
+  + {% post_link 'gptLargeModelTraining' %}
+  + {% post_link 'gptLargeModelTrainingPractice' %} 
+  + {% post_link 'gptTrainParallelism' %}
+  + {% post_link 'gptContinualPretraining' %}  
+  + {% post_link 'gptPrecision' %}
++ 推理 
+  + {% post_link 'gptInferenceFramework' %} 
+  + {% post_link 'gptInference' %}
 + {% post_link 'gptDataSet' %} 
-+ {% post_link 'gptContinualPretraining' %}   
-
+ 
 ## FineTuning
-+ {% post_link 'gptFineTuning' %} 
-+ {% post_link 'gptFineTuningWhen' %}  
-+ {% post_link 'gptFineTuningPEFT' %}  
-  + {% post_link 'gptPEFTLora' %} 
-  + {% post_link 'gptPEFTQLora' %} 
-  + {% post_link 'gptPromptTuningPractice' %}    
-  + {% post_link 'gptPEFTPtuning' %}  
-+ {% post_link 'gptFineTuningBert' %}    
-+ {% post_link 'gptPromptTuning' %} 
-+ {% post_link 'gptInstructTuning' %} 
++ 基础
+  + {% post_link 'gptFineTuning' %} 
+  + {% post_link 'gptFineTuningWhen' %}  
+  + {% post_link 'gptPromptTuning' %} 
+  + {% post_link 'gptInstructTuning' %} 
++ 实战
+  + {% post_link 'gptFineTuningPEFT' %}  
+    + {% post_link 'gptPEFTLora' %} 
+    + {% post_link 'gptPEFTQLora' %} 
+    + {% post_link 'gptPromptTuningPractice' %}    
+    + {% post_link 'gptPEFTPtuning' %}  
+  + {% post_link 'gptFineTuningBert' %}    
+
 
 ## Prompt
   + {% post_link 'gptPromptEngineering' %}

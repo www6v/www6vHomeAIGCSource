@@ -82,7 +82,9 @@ categories:
 
 6. [让ChatGPT生成训练ChatGPT的训练数据](https://zhuanlan.zhihu.com/p/618334308)
 
-100. [LLM高效参数微调方法：从Prefix Tuning、Prompt Tuning、P-Tuning V1/V2到LoRA、QLoRA(含对模型量化的解释)](https://blog.csdn.net/v_JULY_v/article/details/132116949) *** 未
+1xx. [LLM高效参数微调方法：从Prefix Tuning、Prompt Tuning、P-Tuning V1/V2到LoRA、QLoRA(含对模型量化的解释)](https://blog.csdn.net/v_JULY_v/article/details/132116949) *** 未
+1xx. [大模型参数高效微调技术原理及实践](https://aicarrier.feishu.cn/file/H1YvbRyacopEs6xzgZ8c9DDcnIh) pdf
+   [如何高效微调大模型？技术原理与最佳实践揭秘！](https://www.bilibili.com/video/BV1qw411c7Hd/) V
 
 
 
