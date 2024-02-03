@@ -14,10 +14,17 @@ categories:
 ## 目录
 <!-- toc -->
 
+# 神经网络
++ 正向传播
+  损失函数  
+  
++ 反相传播
+  梯度
+  
 # Attention [3]
 {% asset_img 'self-attention.jpg' %}
 
-### Attention 优化[4]
+### 优化[4]
 {% asset_img 'attentions.jpg' %}
 
 # Transformer [2]
@@ -35,18 +42,33 @@ aligment
 
 ###  Positional Encoding
 
-# Transformer 优化点
+### Layer Normalization
+  - Post-LN
+  - Pre-LN
+  - Sandwich-LN
+    layerNorm是针对序列数据提出的一种归一化方法，主要在layer维度进行归一化，即对整个序列进行归一化。
+
+
+# 大模型
+### 架构 [6][7]
+{% asset_img 'bigModelArch.jpg' %}
+
+{% asset_img 'bigModelArch1.jpg' %}
+
+###  优化点
 {% asset_img 'transformers.jpg' %}
 
-# 关注点[5]
-### Mask attention 的策略不同
-- bert  [双向都能看到]
-- chatgpt  [只能看到单项的]
-- chatglm  [左边像bert, 右边像gpt]
-### 训练任务目标不同
-- bert [mask掉一个次, 在原位置把它预测出来]
-- gpt [预测下一个词]
-- chatglm [用gpt的方式来做bert的任务] 
+### 关注点[5]
++ **Mask attention 的策略不同**
+  - bert  [双向都能看到]
+  - chatgpt  [只能看到单项的]
+  - chatglm  [左边像bert, 右边像gpt]
+  
++ **训练任务目标不同**
+  - bert [mask掉一个次, 在原位置把它预测出来]
+  - gpt [预测下一个词]
+  - chatglm [用gpt的方式来做bert的任务] 
+
 
 # 参考
 1. [illustrated-transformer](http://jalammar.github.io/illustrated-transformer/) *** 
@@ -56,9 +78,13 @@ aligment
 4. [主流大语言模型的技术原理细节](https://cloud.tencent.com/developer/article/2328541)  *** [架构]+训练+微调
 5. [基于ChatGLM对话系统实战](https://www.bilibili.com/video/BV1gY4y1d7nk/)
 
-200. [第一课：Transformer](https://www.bilibili.com/video/BV16h4y1W7us/) ***  华为 
-201. [LLM Visualization](https://bbycroft.net/llm) ***  可视化 未
-202. [Transformer通俗笔记：从Word2Vec、Seq2Seq逐步理解到GPT、BERT](https://blog.csdn.net/v_JULY_v/article/details/127411638) *** 未
+
+6. [LLM学习系列1：大模型架构要点总结](https://zhuanlan.zhihu.com/p/648050614)
+7. [主流大语言模型的技术原理细节](https://cloud.tencent.com/developer/article/2328541) *** 腾讯     架构 + 训练 + 微调
+
+2xx. [第一课：Transformer](https://www.bilibili.com/video/BV16h4y1W7us/) ***  华为 
+2xx. [LLM Visualization](https://bbycroft.net/llm) ***  可视化 
+2xx. [Transformer通俗笔记：从Word2Vec、Seq2Seq逐步理解到GPT、BERT](https://blog.csdn.net/v_JULY_v/article/details/127411638) *** 
 
 
 ### Attention
@@ -73,7 +99,6 @@ aligment
 1xx. [一文通透位置编码：从标准位置编码、旋转位置编码RoPE到ALiBi、LLaMA 2 Long](https://blog.csdn.net/v_JULY_v/article/details/134085503)
 
 1xx.[深入解析随机 Transformer [译]](https://baoyu.io/translations/llm/the-random-transformer) *** 
-
 
 
 
