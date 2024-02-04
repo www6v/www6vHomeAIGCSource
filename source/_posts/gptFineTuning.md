@@ -31,20 +31,23 @@ categories:
   + [本质   基于有监督学习]
 
 + PEFT(Parameter-Efficient Fine-Tuning)  PEFT
-    + 引入重参数化（R）    
-      + LoRA: Low-Rank Adaptation of LLMs    
-        LoRA [ 外挂] [效果比较好]
+    + **引入重参数化（R）**    
+      + **LoRA**: Low-Rank Adaptation of LLMs    
+        LoRA   【 并联方式的外挂】 [效果比较好]
       + QLoRA: Efficient Finetuning of Quantized LLMs
       + AdaLoRA: Adaptive Budget Allocation for PEFT      
+      
     + 增加额外参数（A）
-        + 软提示（Soft prompts） 
-          + Prefix Tuning
+        + **软提示（Soft prompts）** 
+          + **Prefix Tuning**
             增加一个可被训练的Embedding层
           + Prompt Tuning
-          + P-Turning
-        + Adapter-Tuning [ 外挂]
+          + **P-Turning**        
+        + Adapter-Tuning   【 串联方式的外挂】       
+          
     + 选取一部分参数更新（S）
       + BitFit
+      
     + additive
       + IA3  
     

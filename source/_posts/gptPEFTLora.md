@@ -106,6 +106,15 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
 }
 ```
 
+# 最佳实践
++ 秩r的大小[卢老师]
+  - 模型如果是垂直类的大模型
+    eg. 私有数据
+    **r设置大点**
+  - 模型如果是通用类的大模型
+    eg. 运维大模型
+    **r设置小点**
+    
 # 参考
 ### bloom
 1. [大模型参数高效微调技术实战（五）-LoRA](https://zhuanlan.zhihu.com/p/649315197)

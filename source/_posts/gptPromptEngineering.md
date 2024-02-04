@@ -61,6 +61,16 @@ Self-Ask
    使用外部工具
 ### Test changes systematically
 
+
+
+# 优点vs 缺点
+### 优点
+简单  容易上手
+### 缺点
+- 上限有限  
+- 模型适配
+  prompt要适配每个模型
+
 # 参考
 1. [Prompt engineering](https://platform.openai.com/docs/guides/prompt-engineering)  openai
 2. [Prompt Engineering ](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) paper
