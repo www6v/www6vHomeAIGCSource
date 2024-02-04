@@ -38,6 +38,8 @@ categories:
 1xx. <<千帆增强版 Llama 2-提升大模型对话指令遵循能力>>
 
 ### 基座
+1xx. [Llama 2详解](https://zhuanlan.zhihu.com/p/649756898)  *** 
+    [Llama 2 模型结构解析](https://www.bilibili.com/video/BV12h4y1N7C8/) *** V
 1xx. [第十五课：LLaMA](https://www.bilibili.com/video/BV1nN41157a9/)  *** 华为  V
 1xx. [第十六课：LLaMA2](https://www.bilibili.com/video/BV1Me411z7ZV/) *** 华为  V
 1xx. [[译][论文] LLaMA：开放和高效的基础语言模型集](http://arthurchiao.art/blog/llama-paper-zh/)
@@ -45,6 +47,7 @@ categories:
 1xx.  [从0到1复现斯坦福羊驼（Stanford Alpaca 7B）](https://zhuanlan.zhihu.com/p/618321077) 
     GPUs: 8 卡 A800 80GB GPUs
 1xx. [Llama2技术细节&开源影响](https://zhuanlan.zhihu.com/p/644671690)
+
 
 1xx. [Llama中文社区](https://llama.family/)
 2xx. [ Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) git
