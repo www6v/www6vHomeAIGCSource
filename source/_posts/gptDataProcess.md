@@ -14,7 +14,7 @@ categories:
 ## 目录
 <!-- toc -->
 
-# 数据处理
+# 数据处理 [1]
 {% asset_img  'data_process.png' %}
 
 ### 质量过滤
@@ -33,6 +33,8 @@ categories:
 + Unigram 词元分析
 
 # 参考
+1. 《大规模语言模型》 
+
 1xx. [大模型时代下数据的重要性](https://zhuanlan.zhihu.com/p/639207933) 综述
 
 1xx. [数据为王: Textbooks Are All You Need ](https://finisky.github.io/textbooks-are-all-you-need-summary/)
