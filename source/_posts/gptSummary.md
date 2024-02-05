@@ -44,6 +44,7 @@ top:
   + {% post_link 'gptInferenceFramework' %} 
   + {% post_link 'gptInference' %}
 + {% post_link 'gptDataSet' %} 
++ {% post_link 'gptDataProcess' %}  
 
 ## FineTuning
 + 基础

@@ -29,31 +29,3 @@ categories:
 ### SFT数据集
 [开源SFT数据集整理](https://github.com/chaoswork/sft_datasets)
 
-
-# 数据处理
-{% asset_img  'data_process.png' %}
-
-### 质量过滤
-+ 基于分类器的方法
-+ 基于启发 式的方法
-### 冗余去除
-可以在**句子级**、**文档级**和**数据集级**等不同粒度上去重
-在实践中应该 共同使用这三个级别的去重
-
-### 隐私消除
-### 词元切分
-
-# 参考
-[数据为王：大模型预训练中的数据处理及思考—The RefinedWeb Dataset for Falcon LLM论文解读](https://zhuanlan.zhihu.com/p/641013454)
-
-[大模型时代下数据的重要性](https://zhuanlan.zhihu.com/p/639207933)
-
-[大模型研发核心：数据工程、自动化评估及与知识图谱的结合](https://hub.baai.ac.cn/view/28740)
-
-[哈工大｜15种NLP数据增强方法总结与对比](https://zhuanlan.zhihu.com/p/420295576)
-
-[数据为王: Textbooks Are All You Need ](https://finisky.github.io/textbooks-are-all-you-need-summary/)
-
-[如何从数据集中自动识别高质量的指令数据-IFD指标的使用](https://zhuanlan.zhihu.com/p/658128530)
-
-[大模型微调技巧 | 高质量指令数据筛选方法-MoDS](https://zhuanlan.zhihu.com/p/671183709)
