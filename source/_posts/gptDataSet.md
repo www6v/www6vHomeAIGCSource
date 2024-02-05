@@ -29,6 +29,20 @@ categories:
 ### SFT数据集
 [开源SFT数据集整理](https://github.com/chaoswork/sft_datasets)
 
+
+# 数据处理
+{% asset_img  'data_process.png' %}
+
+### 质量过滤
++ 基于分类器的方法
++ 基于启发 式的方法
+### 冗余去除
+可以在**句子级**、**文档级**和**数据集级**等不同粒度上去重
+在实践中应该 共同使用这三个级别的去重
+
+### 隐私消除
+### 词元切分
+
 # 参考
 [数据为王：大模型预训练中的数据处理及思考—The RefinedWeb Dataset for Falcon LLM论文解读](https://zhuanlan.zhihu.com/p/641013454)
 
