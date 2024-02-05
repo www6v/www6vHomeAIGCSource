@@ -17,7 +17,8 @@ top:
 + {% post_link 'aiDeepLearning' %}
 + {% post_link 'aiMachineLearning' %}
 + {% post_link 'ai' %} 
-+ {% post_link 'aiOverview' %}  
++ {% post_link 'aiOverview' %}
++ {% post_link 'gptNLPTask' %}   
 
 ## Model
 + 基础
@@ -43,7 +44,7 @@ top:
   + {% post_link 'gptInferenceFramework' %} 
   + {% post_link 'gptInference' %}
 + {% post_link 'gptDataSet' %} 
- 
+
 ## FineTuning
 + 基础
   + {% post_link 'gptFineTuning' %} 

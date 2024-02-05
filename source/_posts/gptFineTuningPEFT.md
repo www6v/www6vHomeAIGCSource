@@ -42,15 +42,6 @@ class TaskType(str, enum.Enum):
   Token 分类任务（Token Classification），对句子中的每个词进行分类。如: 识别句子的语法成分（名词、动词、形容词）或命名实体（人、地点、组织）。
 
 
-# NLP任务
-+ 文本摘要 text summarization
-+ 信息提取 information extraction
-+ 问答 question answering
-+ 文本分类 text classification
-+ 对话 conversation
-+ 代码生成 code generation
-+ 推理 reasoning
-
 # 参考
 1. [大模型参数高效微调技术实战（一）-PEFT概述](https://zhuanlan.zhihu.com/p/651744834)
 100. [LLM微调实战](https://github.com/www6v/llm-action#llm%E5%BE%AE%E8%B0%83%E5%AE%9E%E6%88%98) 李国东 
