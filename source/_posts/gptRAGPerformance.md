@@ -103,3 +103,5 @@ Voyage + big-reranker-large
      [最全的RAG技术概览 ](https://mp.weixin.qq.com/s/CO7hMv4RW7OE6zwUmVfp5A)
      
 1xx. [文本分割的五个层次 [译]](https://baoyu.io/translations/rag/5-levels-of-text-splitting)
+
+1xx. [大模型RAG问答技术架构及核心模块回顾：从Embedding、prompt-embedding到Reranker ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648406795&idx=1&sn=00ea4aab819eed3d622287fa1d32816f) ***
