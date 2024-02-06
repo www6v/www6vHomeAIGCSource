@@ -39,3 +39,5 @@ categories:
 [MiniGPT4Qwen](https://github.com/Coobiw/MiniGPT4Qwen) git
 [多模态大模型实战-MiniGPT4Qwen系列1：3090+2小时+通义千问=个人版双语多模态大模型](https://zhuanlan.zhihu.com/p/664612306)
 
+[多模大语言模型综述](https://arxiv.org/abs/2306.13549)
+

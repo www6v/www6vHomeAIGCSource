@@ -70,9 +70,11 @@ categories:
 
 4. [Instruction Tuning｜谷歌Quoc V.Le团队提出又一精调范式](https://zhuanlan.zhihu.com/p/408166011)
 
-100. [June 2023, A Stage Review of Instruction Tuning](https://yaofu.notion.site/June-2023-A-Stage-Review-of-Instruction-Tuning-f59dbfc36e2d4e12a33443bd6b2012c2)
+1xx. [June 2023, A Stage Review of Instruction Tuning](https://yaofu.notion.site/June-2023-A-Stage-Review-of-Instruction-Tuning-f59dbfc36e2d4e12a33443bd6b2012c2)
 
-101. [【LLM系列之FLAN-T5/PaLM】Scaling Instruction-Finetuned Language Models](https://zhuanlan.zhihu.com/p/629461665)
+1xx. [【LLM系列之FLAN-T5/PaLM】Scaling Instruction-Finetuned Language Models](https://zhuanlan.zhihu.com/p/629461665)
 
-102. [如何优化大模型的In-Context Learning效果？](https://zhuanlan.zhihu.com/p/597036814)
+1xx. [如何优化大模型的In-Context Learning效果？](https://zhuanlan.zhihu.com/p/597036814)
+
+1xx. [大语言模型指令微调综述](https://arxiv.org/abs/2308.10792)
 

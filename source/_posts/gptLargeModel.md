@@ -28,3 +28,4 @@ categories:
 1xx. [LLM从0开始预训练系列：2、大模型技术报告总结（GPT/PaLM/GLM/LLaMA/Skywork）](https://zhuanlan.zhihu.com/p/664046612) 
 
 1xx. [高效大语言模型：综述](https://zhuanlan.zhihu.com/p/671710012)  *** 大模型各个维度的优化
+1xx. [必看的十二个大模型前沿综述：兼论HALO大模型幻觉检测与缓解方案及Google小模型预测大模型训练不稳定的探索 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403847&idx=1&sn=9af731e9f8418a2d869f5464530c8bd6) 12个综述

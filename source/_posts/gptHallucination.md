@@ -31,3 +31,7 @@ categories:
 
 1xx. [也看缓解大模型幻觉的多阶段RAG框架：加入混合检索、过程理由生成与验证的方案 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648405983&idx=2&sn=95dc9c7a12bed99b63c775d4b90519d8)
 
+1xx. [大模型幻觉综述](https://arxiv.org/abs/2309.01219)
+   [大模型幻觉综述](https://arxiv.org/abs/2309.05922)
+   
+1xx. [网络安全领域微调模型SecGPT：兼看大模型幻觉的度量方式、评估benchmark及RAG增强不同方式 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648405791&idx=2&sn=d7dada69e6d5ab5fba1333d234b947ef) 大模型幻觉综述

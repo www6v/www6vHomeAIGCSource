@@ -31,5 +31,7 @@ categories:
 1xx. [Gorilla：与大规模API相连的大型语言模型](https://zhuanlan.zhihu.com/p/640697382)
 
 ### Others
-1xx. [LLM能够自己制作工具了：详解Large Language Models as Tool Makers](https://zhuanlan.zhihu.com/p/633654195)
+1xx. [LLM能够自己制作工具了：详解Large Language Models as Tool Makers](https://zhuanlan.zhihu.com/p/633654195)  ToolMaker
 1xx. [THUNLP成员领读EMNLP大模型工具创造新框架“CREATOR”](https://www.bilibili.com/video/BV1EN4y1q7Zn/) V 有思维导图 
+
+1xx. [基于llama7B的文本嵌入模型ANGLE：兼看Agent微调数据的生成方案](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404626&idx=1&sn=da5ac106548dd30f14a57a5ce4d90f08)  AgentTuning

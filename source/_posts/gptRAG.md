@@ -57,4 +57,5 @@ Self-RAG 则是更加主动和智能的实现方式，主要步骤概括如下�
 1xx. [构建企业级 RAG 系统的高级指南 [译]](https://baoyu.io/translations/rag/mastering-rag-how-to-architect-an-enterprise-rag-system)
 1xx. [面向大语言模型的检索增强生成技术：综述 [译]](https://baoyu.io/translations/ai-paper/2312.10997-retrieval-augmented-generation-for-large-language-models-a-survey)
 1xx. [在构建检索增强型生成系统时的七大挑战 [译]](https://baoyu.io/translations/ai-paper/2401.05856v1-seven-failure-points-when-engineering-a-retrieval-augmented-generation-system)
+1xx. [大模型RAG问答行业最佳案例及微调、推理双阶段实现模式：基于模块化(Modular)RAG自定义RAG Flow ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648407638&idx=1&sn=5c167b4a11bc483f5790ef1e0340d670)
 

@@ -95,8 +95,9 @@ top:
 + {% post_link 'gptLLMOps' %} 
 + {% post_link 'gptVectorStore' %}
 + {% post_link 'gptNL2SQL' %} 
-+ {% post_link 'gptLargeModelDomain' %} 
-+ {% post_link 'gptFinGPT' %}   
++ 垂类模型
+  + {% post_link 'gptLargeModelDomain' %} 
+  + {% post_link 'gptFinance' %}   
 
 ## Study
 + {% post_link 'gptStudy' %}
