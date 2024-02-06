@@ -44,8 +44,9 @@ top:
 + 推理 
   + {% post_link 'gptInferenceFramework' %} 
   + {% post_link 'gptInference' %}
-+ {% post_link 'gptDataSet' %} 
-+ {% post_link 'gptDataProcess' %}  
++ Data
+  + {% post_link 'gptDataSet' %} 
+  + {% post_link 'gptDataProcess' %}  
 
 ## FineTuning
 + 基础
@@ -60,7 +61,8 @@ top:
     + {% post_link 'gptPromptTuningPractice' %}    
     + {% post_link 'gptPEFTPtuning' %}  
   + {% post_link 'gptFineTuningBert' %}    
-
++ Data
+  + {% post_link 'gptSTFData' %}  
 
 ## Prompt
   + {% post_link 'gptPromptEngineering' %}
