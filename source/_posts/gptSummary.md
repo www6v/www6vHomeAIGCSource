@@ -97,8 +97,10 @@ top:
 + {% post_link 'gptVectorStore' %}
 + {% post_link 'gptNL2SQL' %} 
 + 垂类模型
-  + {% post_link 'gptLargeModelDomain' %} 
-  + {% post_link 'gptFinance' %}   
+  + {% post_link 'gptDomain' %} 
+  + {% post_link 'gptDomainFinance' %}   
+  + {% post_link 'gptDomainMed' %}   
+  + {% post_link 'gptDomainLaw' %}    
 
 ## Study
 + {% post_link 'gptStudy' %}

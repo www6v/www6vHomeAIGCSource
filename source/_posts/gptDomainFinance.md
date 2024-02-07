@@ -1,15 +1,22 @@
 ---
-title: FinGTP
+title: 金融大模型
 date: 2022-11-24 11:14:43
 tags:
-  - FinGTP
+  - 金融大模型
 categories: 
   - AIGC
-  - FinGTP  
+  - 金融大模型
 ---
 
 <p></p>
 <!-- more -->
+
+
+
+# 金融大模型 
++  BloombergGPT(未开源)
++  FinGPT  哥大  
++  FinBERT
 
 # FinGPT
 + Model:
