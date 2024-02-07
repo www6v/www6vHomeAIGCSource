@@ -33,5 +33,7 @@ categories:
 
 1xx. [大模型幻觉综述](https://arxiv.org/abs/2309.01219)
    [大模型幻觉综述](https://arxiv.org/abs/2309.05922)
-   
+
 1xx. [网络安全领域微调模型SecGPT：兼看大模型幻觉的度量方式、评估benchmark及RAG增强不同方式 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648405791&idx=2&sn=d7dada69e6d5ab5fba1333d234b947ef) 大模型幻觉综述
+
+1xx. [大模型前沿热点最新综述：大模型微调遗忘、Agent智能体、幻觉及RAG检索增强模型推介](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403602&idx=1&sn=f2365b05630094f8d0de7ff784abe233) 大模型微调遗忘

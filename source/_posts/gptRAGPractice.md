@@ -71,6 +71,20 @@ categories:
 + 利用LLM抽取
 + 人工处理
 
+# 框架 [18]
+1）**LangChain**： https://github.com/langchain-ai/langchain/
+2）QAnything： https://github.com/netease-youdao/QAnything/tree/master
+3）**LlamaIndex**： https://github.com/run-llama/llama_index/
+4）**langchainchat**： https://github.com/chatchat-space/Langchain-Chatchat/releases/tag/v0.2.8
+5) **FastGPT** ：https://github.com/labring/FastGPT
+6）langchain4j ：https://github.com/langchain4j/langchain4j
+7）**Unstructured** ：https://github.com/Unstructured-IO/unstructured
+8）GPT-RAG ：https://github.com/Azure/GPT-RAG
+9）Quivr ：https://github.com/StanGirard/quivr
+10）**Dify** ：https://github.com/langgenius/dify
+11）Verba ：https://github.com/weaviate/Verba
+12）danswer：https://github.com/danswer-ai/danswer
+
 # 参考
 ### 文本
 1. [Langchain-Chatchat ](https://github.com/chatchat-space/Langchain-Chatchat) master
@@ -95,13 +109,20 @@ categories:
 
 14. [Private Semi-structured and Multi-modal RAG w/ LLaMA2 and LLaVA](https://github.com/www6v/AIGC/blob/master/langchain-cookbook/Semi_structured_multi_modal_RAG_LLaMA2.ipynb)  code 多模态- 解析pdf中的图片  运行有问题 
     [Private Semi-structured and Multi-modal RAG w/ LLaMA2 and LLaVA](https://github.com/langchain-ai/langchain/blob/master/cookbook/Semi_structured_multi_modal_RAG_LLaMA2.ipynb)
-  
+
+### 知识图谱
 15. [Enhanced QA Integrating Unstructured Knowledge Graph Using Neo4j and LangChain](https://neo4j.com/developer-blog/unstructured-knowledge-graph-neo4j-langchain/)  
 
 16. [Using a Knowledge Graph to implement a DevOps RAG application](https://blog.langchain.dev/using-a-knowledge-graph-to-implement-a-devops-rag-application/)
 
+### xxx
 17. <<大模型结合 RAG 构建客服场景自动问答系统>>  NVIDIA大模型日系列活动  
 
-100. [LlamaHub](https://llamahub.ai/) 未  
+18. [大模型RAG问答研发真实图鉴：一周出Demo，半年用不好，缝补之路漫漫 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648407281&idx=2&sn=f39b46cad1787123b485d76dff33bc93)
+
+1xx. [LlamaHub](https://llamahub.ai/)   
       Mix and match our Data Loaders and Agent Tools to build custom RAG apps or use our LlamaPacks as a starting point for your retrieval use cases.
 
+1xx. [再看业界大模型行业问答的困难及若干业界实践：兼看智能客服常用路线及多场景prompt ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404338&idx=1&sn=3c8f8c44ac7a1d925216b40833525b25)
+
+1xx. [RAG探索之路的血泪史及曙光](https://zhuanlan.zhihu.com/p/664921095)  腾讯
