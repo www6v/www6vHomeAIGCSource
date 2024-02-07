@@ -33,6 +33,7 @@ top:
 + {% post_link 'gptImpossibleTriangle' %} 
 + {% post_link 'gptEmergent' %}   
 + {% post_link 'gptHallucination' %}    
++ {% post_link 'gptEval' %}     
 
 ## Training & Inference
 + 训练

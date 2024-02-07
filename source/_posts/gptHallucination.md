@@ -37,3 +37,5 @@ categories:
 1xx. [网络安全领域微调模型SecGPT：兼看大模型幻觉的度量方式、评估benchmark及RAG增强不同方式 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648405791&idx=2&sn=d7dada69e6d5ab5fba1333d234b947ef) 大模型幻觉综述
 
 1xx. [大模型前沿热点最新综述：大模型微调遗忘、Agent智能体、幻觉及RAG检索增强模型推介](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403602&idx=1&sn=f2365b05630094f8d0de7ff784abe233) 大模型微调遗忘
+
+1xx. [值得一读的大模型生成幻觉研究综述：大模型幻觉的起因、评估以及减轻策略总结 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403341&idx=1&sn=86cdaaf2c3a73439d2591a2f3dd0b9e0)
