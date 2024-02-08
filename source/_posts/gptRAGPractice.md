@@ -126,3 +126,5 @@ categories:
 1xx. [再看业界大模型行业问答的困难及若干业界实践：兼看智能客服常用路线及多场景prompt ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404338&idx=1&sn=3c8f8c44ac7a1d925216b40833525b25)
 
 1xx. [RAG探索之路的血泪史及曙光](https://zhuanlan.zhihu.com/p/664921095)  腾讯
+
+1xx. [阿里面向企业数字化的文档智能技术与应用](https://mp.weixin.qq.com/s/d2Nns1qashMbcXPMG-4McQ)

@@ -37,16 +37,6 @@ Self-Ask
 # Automatic Prompt Design [2]
 + Automatic Chain-of-Thought (Auto-CoT) [3]
 
-# CoT[4]
-+ CoT(Chain of Thought)
-  - CoT-SC(Self Consistency)
-  
-+ ToT(Tree of Thoughts)
-  分为了Thought Decomposition，Thought Generator，State Evaluator，Search algorithms
-
-+ GoT(Graph of Thoughts)
-
-+ AoT(Algorithm of Thoughts)
 
 # Six strategies for getting better results[1]
 ### Write clear instructions
@@ -76,7 +66,7 @@ Self-Ask
 2. [Prompt Engineering ](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) paper
 3. [Prompt Engineering Guide](https://www.promptingguide.ai/techniques) guide
    [Prompt-Engineering-Guide ](https://github.com/www6v/Prompt-Engineering-Guide) *** git
-4. [2023年能够解决复杂问题的思维链技术：Cot，ToT，GoT，AoT](https://zhuanlan.zhihu.com/p/654034193)
+
 1xx. [The Prompt Landscape](https://blog.langchain.dev/the-prompt-landscape/)  langchain
 1xx. [CometLLM - suite of LLMOps tools - track and visualize LLM prompts and chains](https://colab.research.google.com/github/comet-ml/comet-llm/blob/main/examples/CometLLM_Prompts.ipynb)
 1xx. [大模型 PUA 指南：来自 Google Meta Microsoft 等大厂](https://zhuanlan.zhihu.com/p/671915693) 
