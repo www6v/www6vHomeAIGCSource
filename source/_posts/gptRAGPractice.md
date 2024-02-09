@@ -128,3 +128,5 @@ categories:
 1xx. [RAG探索之路的血泪史及曙光](https://zhuanlan.zhihu.com/p/664921095)  腾讯
 
 1xx. [阿里面向企业数字化的文档智能技术与应用](https://mp.weixin.qq.com/s/d2Nns1qashMbcXPMG-4McQ)
+
+1xx. [再看RAG在真实金融文档问答场景的实践方案：SMP2023 金融大模型挑战赛的两种代表实现思路](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404651&idx=2&sn=335db95e104a5b09e33ac2245bae4fd2)

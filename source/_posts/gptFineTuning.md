@@ -44,7 +44,7 @@ categories:
           + Prompt Tuning
           + **P-Turning**        
         + Adapter-Tuning   【 串联方式的外挂】       
-          
+        
     + 选取一部分参数更新（S）
       + BitFit
       
@@ -88,6 +88,8 @@ categories:
 1xx. [LLM高效参数微调方法：从Prefix Tuning、Prompt Tuning、P-Tuning V1/V2到LoRA、QLoRA(含对模型量化的解释)](https://blog.csdn.net/v_JULY_v/article/details/132116949) *** 未
 1xx. [大模型参数高效微调技术原理及实践](https://aicarrier.feishu.cn/file/H1YvbRyacopEs6xzgZ8c9DDcnIh) pdf
    [如何高效微调大模型？技术原理与最佳实践揭秘！](https://www.bilibili.com/video/BV1qw411c7Hd/) V
+1xx. [7月末关于大模型微调数据工程与评估的技术综述：从数据构造方案到模型评估范式的论文梳理指引 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402136&idx=1&sn=554331e397015c4da95fb0d0929f5aa1) 对齐-论文集
+   [AlignLLMHumanSurvey](https://github.com/GaryYufei/AlignLLMHumanSurvey) git
 
 
 
