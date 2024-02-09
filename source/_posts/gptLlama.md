@@ -47,10 +47,13 @@ categories:
 1xx.  [从0到1复现斯坦福羊驼（Stanford Alpaca 7B）](https://zhuanlan.zhihu.com/p/618321077) 
     GPUs: 8 卡 A800 80GB GPUs
 1xx. [Llama2技术细节&开源影响](https://zhuanlan.zhihu.com/p/644671690)
+1xx. [也谈凌晨刷屏的Llama2开源可商用模型：从其数据构造、模型架构和评估方式等方面的一些总结与发现 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401927&idx=1&sn=3dddcb5c1d8b3c246a8b7529502fdcf0)
+1xx. [再看Llama2的实际体验与民间评测：从现有公开在线测试地址到几个测试例子看初步效果分析 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401959&idx=1&sn=582fa45cd00035bac621336f47cce252)
 
 
 1xx. [Llama中文社区](https://llama.family/)
 2xx. [ Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) git
+
 
 
 
