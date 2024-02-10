@@ -82,3 +82,5 @@ categories:
 # 参考
 1. [清华博士带你思考大语言模型LLM的涌现现象（Emergent）](https://www.bilibili.com/video/BV1qX4y1i78J/)  有脑图
     Emergent Abilities of Large Language Models （https://arxiv.org/abs/2206.07682）
+    
+100. [再谈ChatGPT等大模型的涌现能力：关于涌现能力的定义、测试方法及分析工作总结 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399147&idx=1&sn=6e6d416db50d9708c900ee3b5416bba3)

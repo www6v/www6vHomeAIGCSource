@@ -27,3 +27,5 @@ categories:
 
 
 
++ 其他
+  [大规模语言模型训练必备数据集-The Pile：涵盖22类、800GB的多样性文本数据集概述 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399359&idx=1&sn=502c65376e14b20a7dc1ceb35c62141d)

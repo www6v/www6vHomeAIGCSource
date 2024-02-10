@@ -13,7 +13,7 @@ categories:
 
 ## 目录
 <!-- toc -->
-  
+
 # 推理 优化
 ### overview[2.2]
 有几种方法可以在内存中**降低推理成本**或/和**加快推理速度**。
@@ -34,14 +34,19 @@ categories:
 
 
 # 参考
-### 优化
+### 综述
 2.1. [一文探秘LLM应用开发(13)-模型部署与推理(优化理论) ](https://mp.weixin.qq.com/s/glPPSqHjsnDjC0DZSuuPzA) 
 2.2 https://lilianweng.github.io/posts/2023-01-10-inference-optimization/
+1xx. [大语言模型推理性能优化综述](https://zhuanlan.zhihu.com/p/656485997)
+1xx. [NLP（十八）：LLM 的推理优化技术纵览](https://zhuanlan.zhihu.com/p/642412124) *** 
+
+### kv cache
 2.3. [NLP（二十）：漫谈 KV Cache 优化方法，深度理解 StreamingLLM](https://zhuanlan.zhihu.com/p/659770503) ***
 2.4. [大模型推理加速：看图学KV Cache](https://zhuanlan.zhihu.com/p/662498827) ***
 
-103. [大语言模型推理性能优化综述](https://zhuanlan.zhihu.com/p/656485997)
-104. [NLP（十八）：LLM 的推理优化技术纵览](https://zhuanlan.zhihu.com/p/642412124) *** 
+### 量化
+1xx. [NLP大模型压缩关键技术解读：用于大型Transformer的8-bit矩阵乘法原理及其简单实现](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399136&idx=1&sn=bd0a7237940c2ac800e06ae6d247349e)
+   [大规模 Transformer 模型 8 比特矩阵乘简介 - 基于 Hugging Face Transformers、Accelerate 以及 bitsandbytes ](https://huggingface.co/blog/zh/hf-bitsandbytes-integration)
 
 
 
