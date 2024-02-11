@@ -68,7 +68,6 @@ top:
 ## Prompt
   + {% post_link 'gptPromptEngineering' %}
   + {% post_link 'gptCOT' %} 
-  + {% post_link 'gptPromptResearch' %}
   + {% post_link 'gptPromptCode' %}
   + {% post_link 'gptPrompt' %}
 

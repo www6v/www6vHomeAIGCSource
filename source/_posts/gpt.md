@@ -47,27 +47,6 @@ categories:
 ### 思维导图
 [albus](https://albus.org/)
 
-### 文档分析&科研
-
-+ 在线文档分析 
-  Microsoft Edge Dev + new Bing  ***
-
-+ 文献查找 + 润色
-  Skype + new Bing  ***
-
-+ 本地文档分析
-  - VPN
-    - chatpdf  收费  ***
-      [Chat with any PDF](https://www.chatpdf.com/) 总结文献
-    - [Chat with documents](https://chatdoc.com/)
-
-  - 非VPN
-    - [ChatPaper](https://chatpaper.org/)  Paper 中文
-      [ChatPaper](https://github.com/kaixindelele/ChatPaper) git
-    - [阅读文档的好帮手](https://chat2doc.cn/)  收费
-    - [LightPDF AI Tools](https://lightpdf.com/chatdoc) *** 
-    - [docalysis](https://docalysis.com/files/hwylw4) *** 
-
 ### 视频
 [BibiGPT](https://b.jimmylv.cn/)
 [Youtube tools](https://crucible.docnavigator.in/)
