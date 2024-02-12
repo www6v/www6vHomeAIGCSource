@@ -32,8 +32,26 @@ categories:
 + WordPiece
 + Unigram 词元分析
 
+
+
+# 千帆Llama 2中文增强技术介绍-SFT[2]
+### 数据增强
++ Self-instruct
++ wizard [3]
+
+### 数据精简
++ 低质量过滤
++ 相似数据过滤
+
+### 数据配比
++ 领域数据
++ 多语言数据
+
 # 参考
+
 1. 《大规模语言模型》 
+2. 《千帆增强版 Llama 2》 百度
+3. [如何构造复杂多样的微调指令数据：WizardLM复杂指令构造思想与实验分析工作总结 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401462&idx=1&sn=764f0302918174cea29ae22ac5760033) 
 
 1xx. [大模型时代下数据的重要性](https://zhuanlan.zhihu.com/p/639207933) 综述
 
@@ -43,8 +61,9 @@ categories:
 
 1xx. [大模型微调究竟需要多少数据：从三个现有代表工作看几组结论及一点思考 ](https://mp.weixin.qq.com/s/c50HrOfKOqgqGPVRHf6EpA)
    <<LIMa：Less Is More for Alignment>>
+
 ###  指令数据
-1xx. [如何从数据集中自动识别高质量的指令数据-IFD指标的使用](https://zhuanlan.zhihu.com/p/658128530)
+20. [如何从数据集中自动识别高质量的指令数据-IFD指标的使用](https://zhuanlan.zhihu.com/p/658128530)
 
 1xx. [大模型微调技巧 | 高质量指令数据筛选方法-MoDS](https://zhuanlan.zhihu.com/p/671183709)
 
