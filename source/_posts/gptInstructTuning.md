@@ -77,4 +77,5 @@ categories:
 1xx. [如何优化大模型的In-Context Learning效果？](https://zhuanlan.zhihu.com/p/597036814)
 
 1xx. [大语言模型指令微调综述](https://arxiv.org/abs/2308.10792)
+    [一篇关于LLM指令微调的综述](https://zhuanlan.zhihu.com/p/654054370)
 
