@@ -73,6 +73,8 @@ categories:
 
 ### 构造通用和金融指令数据
 {%  asset_img  'data.jpeg'  %}
++ Self-Instruct[5]
++ Evol-Instruct[5]
 
 # 参考
 
@@ -80,15 +82,28 @@ categories:
 2. 《千帆增强版 Llama 2》 百度 有ppt
 3. [如何构造复杂多样的微调指令数据：WizardLM复杂指令构造思想与实验分析工作总结 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401462&idx=1&sn=764f0302918174cea29ae22ac5760033) 
 4. 《金融行业实战：度小满轩辕金融大模型应用探索与开发实践》 百度  有ppt
+5. {% post_link 'gptInstructTuning' %}
+### overview
+1xx. [Data-centric Artificial Intelligence: A Survey](https://zhuanlan.zhihu.com/p/620890799)
+   [机器学习数据工程的概述](https://cloud.tencent.com/developer/article/2359824)
 
 1xx. [大模型时代下数据的重要性](https://zhuanlan.zhihu.com/p/639207933) 综述
 
+1xx. [大模型研发核心：数据工程、自动化评估及与知识图谱的结合](https://hub.baai.ac.cn/view/28740)
+   [大模型研发核心：数据工程、自动化评估及与知识图谱的结合 ](https://mp.weixin.qq.com/s/SvDnQD886E3DBtw8k9asgg)
+   
+### 
 1xx. [数据为王: Textbooks Are All You Need ](https://finisky.github.io/textbooks-are-all-you-need-summary/)
 
 1xx. [数据为王：大模型预训练中的数据处理及思考—The RefinedWeb Dataset for Falcon LLM论文解读](https://zhuanlan.zhihu.com/p/641013454)
 
 1xx. [大模型微调究竟需要多少数据：从三个现有代表工作看几组结论及一点思考 ](https://mp.weixin.qq.com/s/c50HrOfKOqgqGPVRHf6EpA)
    <<LIMa：Less Is More for Alignment>>
+
+1xx. [再谈大模型的预训数据清洗与微调数据生成：RedPajama数据处理框架与entity-centric指令生成方法解读 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402104&idx=1&sn=7d4924b2a5a840e4ff3de43299248b1d)
+    llama数据的复现项目SlimPajama
+
+1xx. [“超越LLama 65B”的Falcon40B语言模型为什么好：再看精细化的数据清洗的重要性 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401484&idx=1&sn=c49b5ca5fc962ca757d3a082b74f037a) 
 
 ###  指令数据
 20. [如何从数据集中自动识别高质量的指令数据-IFD指标的使用](https://zhuanlan.zhihu.com/p/658128530)
@@ -98,14 +113,8 @@ categories:
 ### 其他
 1xx. [哈工大｜15种NLP数据增强方法总结与对比](https://zhuanlan.zhihu.com/p/420295576)
 
-1xx. [大模型研发核心：数据工程、自动化评估及与知识图谱的结合](https://hub.baai.ac.cn/view/28740)
-   [大模型研发核心：数据工程、自动化评估及与知识图谱的结合 ](https://mp.weixin.qq.com/s/SvDnQD886E3DBtw8k9asgg)
-
-
 
 1xx. [再看大模型预训数据质量如何评估：困惑度、错误L2范数和记忆化三种度量方法的效果对比分析研究](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403976&idx=1&sn=694db5e2b3085b1610e8d19daa93a474)
 
-1xx. [再谈大模型的预训数据清洗与微调数据生成：RedPajama数据处理框架与entity-centric指令生成方法解读 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402104&idx=1&sn=7d4924b2a5a840e4ff3de43299248b1d)
-    llama数据的复现项目SlimPajama
-    
-1xx. [“超越LLama 65B”的Falcon40B语言模型为什么好：再看精细化的数据清洗的重要性 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401484&idx=1&sn=c49b5ca5fc962ca757d3a082b74f037a)    
+1xx. [InsTag：大语言模型监督微调数据标签标注工具](https://developer.aliyun.com/article/1311807)
+   [InsTag指令打标工具](https://www.modelscope.cn/studios/lukeminglkm/instagger_demo/summary) demo
