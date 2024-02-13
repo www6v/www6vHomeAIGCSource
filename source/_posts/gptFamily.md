@@ -79,9 +79,22 @@ GPT-3 在下游任务的评估与预测时，提供了三种不同的方法：
 4. InstructGPT 在**真实性**，**丰富度**上表现更好；
 5. InstructGPT 对有害结果的生成控制的更好，但是对于**“偏见”没有明显改善**；
 
+
+# ChatGPT 训练  [3]
+- 基于人类反馈的强化学习微调技术 RLHF
+  - 使用有监督微调 Supervised Fine-tuning（SFT）预训练语言模型
+    + Supervised fine-tuning (SFT)
+      = Instruction Tuning
+  - 训练奖励模型 Reward Model（RM）
+  - 使用强化学习算法微调语言模型
+    + RLHF
+      [本质  基于强化学习, 强化学习算法]  
+
 # 参考
 1. [GPT / GPT-2 / GPT-3 / InstructGPT 进化之路](https://zhuanlan.zhihu.com/p/609716668) ***
 
 2. [Few-Shot, Zero-Shot & One-shot 的通俗理解](https://zhuanlan.zhihu.com/p/624793654)
 
-100. [[Transformer 101系列] ChatGPT是怎么炼成的?](https://zhuanlan.zhihu.com/p/642282717) 未
+3. [AI 大模型微调训练营大纲](https://shimo.im/docs/KlkKv4XQDouwWRqd/read) 
+
+1xx. [[Transformer 101系列] ChatGPT是怎么炼成的?](https://zhuanlan.zhihu.com/p/642282717) 未

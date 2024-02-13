@@ -1,11 +1,11 @@
 ---
-title:  Fine-Tuning 原理
+title:  SFT-PEFT
 date: 2022-11-18 23:31:46
 tags:
-  - AIGC
+  - PEFT
 categories:
   - AIGC  
-  - Fine-Tuning
+  - PEFT
 ---
 
 <p></p>
@@ -56,21 +56,10 @@ categories:
 
 {% asset_img 'overview.jpg' %}
 
-# ChatGPT 训练  [1]
-- 基于人类反馈的强化学习微调技术 RLHF
-  - 使用有监督微调 Supervised Fine-tuning（SFT）预训练语言模型
-    + Supervised fine-tuning (SFT)
-      = Instruction Tuning
-  - 训练奖励模型 Reward Model（RM）
-  - 使用强化学习算法微调语言模型
-    + RLHF
-      [本质  基于强化学习, 强化学习算法]  
-      
-# 微调指令的生成 [5][6]
 
 # 参考
 ### 原理
-1. [AI 大模型微调训练营大纲](https://shimo.im/docs/KlkKv4XQDouwWRqd/read) 
+1. xxx
 
 2. xxx
 
@@ -81,9 +70,6 @@ categories:
 
    4.2  [大模型参数高效微调技术原理综述（七）-最佳实践、总结](https://zhuanlan.zhihu.com/p/649755252)
 
-5. [大模型SFT微调指令数据的生成](https://zhuanlan.zhihu.com/p/650596719)
-
-6. [让ChatGPT生成训练ChatGPT的训练数据](https://zhuanlan.zhihu.com/p/618334308)
 
 1xx. [LLM高效参数微调方法：从Prefix Tuning、Prompt Tuning、P-Tuning V1/V2到LoRA、QLoRA(含对模型量化的解释)](https://blog.csdn.net/v_JULY_v/article/details/132116949) *** 未
 1xx. [大模型参数高效微调技术原理及实践](https://aicarrier.feishu.cn/file/H1YvbRyacopEs6xzgZ8c9DDcnIh) pdf
