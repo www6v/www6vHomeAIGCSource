@@ -24,6 +24,7 @@ top:
 + 基础
   + {% post_link 'gptLargeModel' %}
   + {% post_link 'gptTransformer' %} 
+  + {% post_link 'gptTransformerCode' %}  
 + 基座模型
   + {% post_link 'gptFamily' %}  
   + {% post_link 'gptLlama' %}   
