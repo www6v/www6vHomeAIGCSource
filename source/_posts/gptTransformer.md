@@ -91,10 +91,6 @@ aligment
 1xx. [李宏毅《深度学习》- Self-attention 自注意力机制](https://blog.csdn.net/kkm09/article/details/120855658)
 1xx. [一文通透各种注意力：从多头注意力MHA到分组查询注意力GQA、多查询注意力MQA](https://blog.csdn.net/v_JULY_v/article/details/134228287)
 
-### Transformer 实现
-1xx. [Transformers from scratch](http://arthurchiao.art/blog/transformers-from-scratch-zh/) V, github 未
-1xx. [从零实现Transformer的简易版与强大版：从300多行到3000多行](https://blog.csdn.net/v_JULY_v/article/details/130090649)
-
 ### 位置编码
 1xx. [一文通透位置编码：从标准位置编码、旋转位置编码RoPE到ALiBi、LLaMA 2 Long](https://blog.csdn.net/v_JULY_v/article/details/134085503)
 
