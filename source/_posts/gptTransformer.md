@@ -96,7 +96,9 @@ aligment
 
 1xx.[深入解析随机 Transformer [译]](https://baoyu.io/translations/llm/the-random-transformer) *** 
 
-
+### 其他
+1xx. [[Transformer 101系列] 初探LLM基座模型](https://zhuanlan.zhihu.com/p/640784855)   
+1xx. [LLM从0开始预训练系列：2、大模型技术报告总结（GPT/PaLM/GLM/LLaMA/Skywork）](https://zhuanlan.zhihu.com/p/664046612) 
 
 
 
