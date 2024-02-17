@@ -31,12 +31,33 @@ categories:
 
 ### 3D并行
 
+# ZeRO [4]
+{% asset_img 'zero.png' %}
+
+### 策略1: naive DP的通信量
+通信量是**2X**
+显存占用**16X**
+
+### 策略2: Zero-1方案
+总的通信量为**2X，跟naive DP一致**
+显存方面 约为**策略1的 1/4**
+
+### 策略3: ZeRo-2方案
+通信量也是**2X, 跟naive DP一致**
+显存方面  约为**naive DP的1/8**
+
+### 策略4: ZeRo-3方案
+总的通信量为，为**naive DP的1.5倍**，增加50%通信量
+显存方面  约为**naive DP的1/32**
+
 # 参考
 1. [How to Train Really Large Models on Many GPUs? ](https://lilianweng.github.io/posts/2021-09-25-train-large/)
 
 2. [大模型分布式训练的并行策略](https://finisky.github.io/how-to-train-large-language-model/)
 
 3. [大模型并行训练指南：通俗理解Megatron-DeepSpeed之模型并行与数据并行](https://blog.csdn.net/v_JULY_v/article/details/132462452) 
+
+4. [[Transformer 101系列] LLM分布式训练面面观](https://zhuanlan.zhihu.com/p/664604792)
 
 
 1xx. [第1章：DeepSpeed-Chat 模型训练实战](https://techdiylife.github.io/big-model-training/deepspeed/deepspeed-chat.html)  Bili 
@@ -50,6 +71,6 @@ categories:
 
 1xx. [全网最全-超大模型+分布式训练架构和经典论文](https://zhuanlan.zhihu.com/p/450854172) 未
 
-1xx. [[Transformer 101系列] LLM分布式训练面面观](https://zhuanlan.zhihu.com/p/664604792)
-
 1xx. [大模型流水线并行（Pipeline）实战](https://zhuanlan.zhihu.com/p/636488690)
+
+1xx. [【深度学习】【分布式训练】DeepSpeed：AllReduce与ZeRO-DP](https://zhuanlan.zhihu.com/p/610587671)

@@ -93,4 +93,6 @@ todo
      [A Survey of Large Language Models](https://arxiv.org/pdf/2303.18223.pdf) 英文
      [LLMSurvey](https://github.com/www6v/LLMSurvey)  github
      [[论文]大语言模型综述](https://zhuanlan.zhihu.com/p/630203554) 
+     [详谈大模型训练中的数据收集、处理与模型影响：A Survey of Large Language Models工作中的数据总结](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648400817&idx=1&sn=c1ed1c9c87bf2526e02d21d84429c5cf)
+     
 

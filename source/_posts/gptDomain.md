@@ -24,6 +24,7 @@ categories:
 1xx. [层出不穷的垂域微调大模型非最全汇总：12大领域、57个领域微调模型概述及对垂直行业问答的一些讨论 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403459&idx=2&sn=0219fc098c208e36cd32940e71089fd2)
     [Awesome-Domain-LLM](https://github.com/www6v/Awesome-Domain-LLM)
 1xx. [医疗金融法律大模型：从ChatDoctor到BloombergGPT/FinGPT/FinBERT、ChatLaw/LawGPT_zh](https://blog.csdn.net/v_JULY_v/article/details/131550529?spm=1001.2014.3001.5502)
+1xx. [再谈垂直领域大模型及今日前沿速递：金融领域FinBERT、BloombergGPT以及法律领域微调模型LawGPT_zh](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648400666&idx=1&sn=bc47e8c4eca6fc4baaded42fa3c6bd77)
 
 
 1xx. {% post_link 'gptLeaderBoard' %} self

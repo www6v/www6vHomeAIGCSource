@@ -106,9 +106,12 @@ top:
 
 ## Study
 + {% post_link 'gptStudy' %}
-+ {% post_link 'gptStudyPaper' %}
 + {% post_link 'aiStudyResouce' %} 
+
+## Research
 + {% post_link 'gptPaperTools' %} 
++ {% post_link 'gptStudyPaper' %}
+
 
 
 

@@ -34,3 +34,7 @@ categories:
 
 # 参考
 1. [SFT微调的数据组合及训练策略如何影响大模型性能：4个经典问题及实验结论分享 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404728&idx=2&sn=1cb2203648271720d421c963ebcc03b3)
+
+
+
+1xx. [再看大模型微调与应用：3大行业18个开源垂直微调模型、微调数据、工具资源及有趣的AIGC应用集合](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401381&idx=1&sn=c24d896aab990ffdf30107a7c6c1ea4f) 二 三

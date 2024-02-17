@@ -45,6 +45,7 @@ Loss Scale 主要是为了**解决 fp16 underflow**的问题。
 1. [混合精度](https://www.bilibili.com/video/BV1R94y1g78L?p=6)  *** V
 2. [浅谈混合精度训练](https://zhuanlan.zhihu.com/p/103685761)
 1xx. [全网最全-混合精度训练原理](https://zhuanlan.zhihu.com/p/441591808)  *** 
+1xx. [【深度学习】混合精度训练与显存分析](https://zhuanlan.zhihu.com/p/608634079)
 
 ### 代码
 20. [半精度训练与LLaMA2训练实战](https://www.bilibili.com/video/BV1CB4y1R78v/) 有代码

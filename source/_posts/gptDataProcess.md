@@ -107,6 +107,8 @@ categories:
 
 1xx. [“超越LLama 65B”的Falcon40B语言模型为什么好：再看精细化的数据清洗的重要性 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401484&idx=1&sn=c49b5ca5fc962ca757d3a082b74f037a) 
 
+1xx. [面向大模型微调的instruction指令自动化生成技术：SELF-INSTRUCT指令自动化生成框架工作介绍](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399792&idx=1&sn=c70e1d13b68399b0c19cfbf658f35d77)
+
 ###  指令数据
 20. [大模型SFT微调指令数据的生成](https://zhuanlan.zhihu.com/p/650596719)
 
@@ -125,3 +127,7 @@ categories:
 
 1xx. [InsTag：大语言模型监督微调数据标签标注工具](https://developer.aliyun.com/article/1311807)
    [InsTag指令打标工具](https://www.modelscope.cn/studios/lukeminglkm/instagger_demo/summary) demo
+
+
+
+1xx. [开源大模型如何更好地适应中文场景：LLAMA扩充词表、BLOOM裁剪词表基本原理与开源实现](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648400849&idx=1&sn=58006756cccde4d06d273df59e2c8dd8)
