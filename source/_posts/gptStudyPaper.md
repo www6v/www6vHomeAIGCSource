@@ -44,3 +44,5 @@ categories:
 
 # 参考
 1. [大模型时代下做科研的四个思路【论文精读·52】](https://www.bilibili.com/video/BV1oX4y1d7X6)
+
+1xx. [AI Agent & 大模型经典论文推荐](https://zhuanlan.zhihu.com/p/673788545)
