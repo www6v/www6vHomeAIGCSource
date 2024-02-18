@@ -13,12 +13,15 @@ top:
 <p></p>
 <!-- more -->
 
-# Basic
+## Basic
 + {% post_link 'aiDeepLearning' %}
 + {% post_link 'aiMachineLearning' %}
 + {% post_link 'ai' %} 
 + {% post_link 'aiOverview' %}
-+ {% post_link 'gptNLPTask' %}   
+ 
+## NLP
++ {% post_link 'gptNLPTask' %}  
++ {% post_link 'gptDocSimilarity' %}  
 
 ## Model
 + 基础
@@ -111,7 +114,6 @@ top:
 ## Research
 + {% post_link 'gptPaperTools' %} 
 + {% post_link 'gptStudyPaper' %}
-
 
 
 
