@@ -21,7 +21,11 @@ categories:
 ### 关注点 [2]
 + **领域相关数据**  是Continue PreTrain的关键
 + **混合通用数据**以**缓解模型遗忘通用能力**
-+ todo
++ **领域模型Continue PreTrain**时可以同步加入**SFT数据**，即MIP，Multi-Task Instruction PreTraining
++ 仅用SFT做领域模型时，**资源有限**就用在**Chat模型基础上训练**，**资源充足**就在**Base模型上训练**。（**资源=数据+显卡**）
++在Chat模型上进行SFT时，请一定**遵循Chat模型原有的系统指令&数据输入格式**。
++ 领域评测集时必要内容，建议有两份，一份选择题形式自动评测、一份开放形式人工评测。
+
 
 # 参考
 1. [领域微调大模型入局的自我和解：领域微调大模型若一定要做，则务必想的若干个前提条件 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401405&idx=1&sn=59baf4a22d9a9abeb42599ac91e11a79)

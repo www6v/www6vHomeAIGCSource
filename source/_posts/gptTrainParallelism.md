@@ -29,8 +29,6 @@ categories:
 #####   流水线并行 [3]
 {% asset_img 'pipeline.png' %}
 
-### 3D并行
-
 # ZeRO [4]
 {% asset_img 'zero.png' %}
 
@@ -50,18 +48,25 @@ categories:
 总的通信量为，为**naive DP的1.5倍**，增加50%通信量
 显存方面  约为**naive DP的1/32**
 
+# 多维混合并行[5]
+### DP + PP
+### 3D 并行（DP + PP + TP）
+### ZeRO-DP + PP + TP
+
+
 # 参考
 1. [How to Train Really Large Models on Many GPUs? ](https://lilianweng.github.io/posts/2021-09-25-train-large/)
 
-2. [大模型分布式训练的并行策略](https://finisky.github.io/how-to-train-large-language-model/)
+2. [大模型分布式训练的并行策略](https://finisky.github.io/how-to-train-large-language-model/) *
 
-3. [大模型并行训练指南：通俗理解Megatron-DeepSpeed之模型并行与数据并行](https://blog.csdn.net/v_JULY_v/article/details/132462452) 
+3. [大模型并行训练指南：通俗理解Megatron-DeepSpeed之模型并行与数据并行](https://blog.csdn.net/v_JULY_v/article/details/132462452)  ***
 
-4. [[Transformer 101系列] LLM分布式训练面面观](https://zhuanlan.zhihu.com/p/664604792)
+4. [[Transformer 101系列] LLM分布式训练面面观](https://zhuanlan.zhihu.com/p/664604792) ***
+
+5. [大模型分布式训练并行技术（六）-多维混合并行](https://zhuanlan.zhihu.com/p/661279318)
 
 
-1xx. [第1章：DeepSpeed-Chat 模型训练实战](https://techdiylife.github.io/big-model-training/deepspeed/deepspeed-chat.html)  Bili 
-      [DeepSpeed-Chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)
+1xx. [大模型分布式训练并行技术（一）-概述](https://zhuanlan.zhihu.com/p/598714869)
 
 1xx. [分布式训练硬核技术——通信原语](https://zhuanlan.zhihu.com/p/465967735) 
 
@@ -69,8 +74,12 @@ categories:
 
 1xx. [图解大模型训练之：张量模型并行(TP)，Megatron-LM](https://zhuanlan.zhihu.com/p/622212228) ***
 
-1xx. [全网最全-超大模型+分布式训练架构和经典论文](https://zhuanlan.zhihu.com/p/450854172) 未
-
 1xx. [大模型流水线并行（Pipeline）实战](https://zhuanlan.zhihu.com/p/636488690)
 
+1xx. [全网最全-超大模型+分布式训练架构和经典论文](https://zhuanlan.zhihu.com/p/450854172) 未
+
 1xx. [【深度学习】【分布式训练】DeepSpeed：AllReduce与ZeRO-DP](https://zhuanlan.zhihu.com/p/610587671)
+
+### 其他
+1xx. [第1章：DeepSpeed-Chat 模型训练实战](https://techdiylife.github.io/big-model-training/deepspeed/deepspeed-chat.html)  Bili 
+      [DeepSpeed-Chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)

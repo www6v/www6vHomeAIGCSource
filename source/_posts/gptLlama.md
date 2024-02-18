@@ -92,9 +92,7 @@ Llama2采用了Llama 1中的大部分预训练设置和模型架构。使用RMSN
 1xx. [Llama2技术细节&开源影响](https://zhuanlan.zhihu.com/p/644671690)
 1xx. [再看Llama2的实际体验与民间评测：从现有公开在线测试地址到几个测试例子看初步效果分析 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401959&idx=1&sn=582fa45cd00035bac621336f47cce252)
 
-
 1xx. [Llama中文社区](https://llama.family/)
-2xx. [ Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) git
 
 
 

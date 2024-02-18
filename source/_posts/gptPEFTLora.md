@@ -130,6 +130,9 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
 3.2 [finetune_clm_lora.py](https://github.com/www6v/Llama2-Chinese/blob/ww-workable/train/sft/finetune_clm_lora.py#L460C18-L460C19)  注释掉第360行   
 3.3 [train/sft/finetune_lora.sh](https://github.com/www6v/Llama2-Chinese/blob/ww-workable/train/sft/finetune_lora.sh)
 
+1xx. [ Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) git
+   [中文LLaMA&Alpaca大语言模型词表扩充+预训练+指令精调](https://zhuanlan.zhihu.com/p/631360711)
+
 ### ChatGLM
 1xx. [train_lora.sh](https://github.com/www6v/fine-tuning-lab/blob/agiclass-v1/chatglm/train_lora.sh)  基于法律文本的chatglm的lora
 [train_lora.sh](https://github.com/www6v/fine-tuning-lab/blob/agiclass-v1/chatglm2/train_lora.sh)  基于法律文本的chatglm-2的lora
