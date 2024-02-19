@@ -18,7 +18,7 @@ top:
 + {% post_link 'aiMachineLearning' %}
 + {% post_link 'ai' %} 
 + {% post_link 'aiOverview' %}
- 
+
 ## NLP
 + {% post_link 'gptNLPTask' %}  
 + {% post_link 'gptDocSimilarity' %}  
@@ -47,6 +47,7 @@ top:
   + {% post_link 'gptTrainParallelism' %}
   + {% post_link 'gptContinualPretraining' %}  
   + {% post_link 'gptPrecision' %}
+  + {% post_link 'gptQuantization' %} 
 + 推理 
   + {% post_link 'gptInferenceFramework' %} 
   + {% post_link 'gptInference' %}

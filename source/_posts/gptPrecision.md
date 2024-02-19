@@ -40,6 +40,12 @@ Loss Scale 主要是为了**解决 fp16 underflow**的问题。
   padding=left
   改为padding=right
 
+``` python
+import torch
+model = AutoModelForCausalLM.from_pretrained("D:/Pretrained_models/modelscope/Llama-2-7b-ms", low_cpu_mem_usage=True, torch_dtype=torch.half, device_map="auto")
+```
+  
+
 # 参考
 ### 原理
 1. [混合精度](https://www.bilibili.com/video/BV1R94y1g78L?p=6)  *** V
@@ -48,7 +54,8 @@ Loss Scale 主要是为了**解决 fp16 underflow**的问题。
 1xx. [【深度学习】混合精度训练与显存分析](https://zhuanlan.zhihu.com/p/608634079)
 
 ### 代码
+
 20. [半精度训练与LLaMA2训练实战](https://www.bilibili.com/video/BV1CB4y1R78v/) 有代码
-1xx. [低精度训练与大模型下载](https://www.bilibili.com/video/BV1y34y1M7t1/) 有代码
+    [llama2_lora_16bit.ipynb](https://github.com/www6v/transformers-code/blob/master/04-Kbit%20Training/25-16bits_training/llama2_lora_16bit.ipynb)
 1xx. [PyTorch的自动混合精度（AMP）](https://zhuanlan.zhihu.com/p/165152789) 
 1xx. [混合精度](https://tensorflow.google.cn/guide/mixed_precision?hl=zh-cn)
