@@ -44,13 +44,14 @@ top:
 + 训练
   + {% post_link 'gptLargeModelTraining' %}
   + {% post_link 'gptLargeModelTrainingPractice' %} 
-  + {% post_link 'gptTrainParallelism' %}
   + {% post_link 'gptContinualPretraining' %}  
-  + {% post_link 'gptPrecision' %}
-  + {% post_link 'gptQuantization' %} 
 + 推理 
   + {% post_link 'gptInferenceFramework' %} 
++ 优化
+  + {% post_link 'gptTrainParallelism' %}
   + {% post_link 'gptInference' %}
+  + {% post_link 'gptQuantization' %}   
+  + {% post_link 'gptPrecision' %} 
 + Data
   + {% post_link 'gptDataSet' %} 
   + {% post_link 'gptDataProcess' %}  

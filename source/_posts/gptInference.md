@@ -23,12 +23,14 @@ categories:
 - **网络压缩技术**，如**修剪、量化、蒸馏**。较小的模型，无论是参数数量还是位宽，应该需要更少的内存并且运行更快。
 - 针对目标模型架构的特定改进。许多**架构变化**，特别是针对注意力层的变化，有助于提高Transformer解码速度。
 
-
 ### 模型压缩 [2.1]
-剪枝（Pruning）
-知识蒸馏（Knowledge Distillation，KD）
-量化（Quantization）
-低秩分解（Low-Rank Factorization）
+
+{% asset_img 'compress.png' %}
+
++ 剪枝（Pruning）
++ 知识蒸馏（Knowledge Distillation，KD）
++ 量化（Quantization）
++ 低秩分解（Low-Rank Factorization）
 
 ### KV Cache[2.3][2.4]
 
@@ -44,9 +46,7 @@ categories:
 2.3. [NLP（二十）：漫谈 KV Cache 优化方法，深度理解 StreamingLLM](https://zhuanlan.zhihu.com/p/659770503) ***
 2.4. [大模型推理加速：看图学KV Cache](https://zhuanlan.zhihu.com/p/662498827) ***
 
-### 量化
-1xx. [NLP大模型压缩关键技术解读：用于大型Transformer的8-bit矩阵乘法原理及其简单实现](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399136&idx=1&sn=bd0a7237940c2ac800e06ae6d247349e)
-   [大规模 Transformer 模型 8 比特矩阵乘简介 - 基于 Hugging Face Transformers、Accelerate 以及 bitsandbytes ](https://huggingface.co/blog/zh/hf-bitsandbytes-integration)
+
 
 
 

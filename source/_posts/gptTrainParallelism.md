@@ -15,44 +15,59 @@ categories:
 <!-- toc -->
 
 
-# 分布式训练 [1]
+# 分布式并行 [1]
 {% asset_img 'pararllelTraining.jpg' %}
 
 ### 数据并行
+
++ PyTorch DDP
 
 ### 模型并行 
 **张量并行**与**流水线并行**都属于**模型并行**，
 区别在于对模型参数的切分“方向”不同：
 **张量并行**把模型的**每层进行切分 (intra-layer)**，而**流水线并行**则**按层进行切分 (inter-layer) 并在不同设备处理**。[2]
+
+
 ##### 张量并行 [3]
  {% asset_img 'tensor.png' %}
+ 
++ Megatron-LM（1D）
++ Colossal-AI（2D、2.5D、3D）
+ 
 #####   流水线并行 [3]
 {% asset_img 'pipeline.png' %}
 
-# ZeRO [4]
++ GPipe
++ PipeDream
+
+### 优化器相关的并行 
+##### ZeRO [4]
 {% asset_img 'zero.png' %}
 
-### 策略1: naive DP的通信量
++ 策略1: naive DP的通信量
 通信量是**2X**
 显存占用**16X**
 
-### 策略2: Zero-1方案
++ 策略2: Zero-1方案
 总的通信量为**2X，跟naive DP一致**
 显存方面 约为**策略1的 1/4**
 
-### 策略3: ZeRo-2方案
++ 策略3: ZeRo-2方案
 通信量也是**2X, 跟naive DP一致**
 显存方面  约为**naive DP的1/8**
 
-### 策略4: ZeRo-3方案
++ 策略4: ZeRo-3方案
 总的通信量为，为**naive DP的1.5倍**，增加50%通信量
 显存方面  约为**naive DP的1/32**
 
-# 多维混合并行[5]
-### DP + PP
-### 3D 并行（DP + PP + TP）
-### ZeRO-DP + PP + TP
+##### PyTorch FSDP [7]
+FairScale 说 **FSDP 相当于 ZeRO3 的优化**
 
+
+### 多维混合并行[5]
+##### DP + PP
+##### 3D 并行（DP + PP + TP）
+##### ZeRO-DP + PP + TP
 
 
 # 框架
@@ -73,6 +88,10 @@ categories:
 4. [[Transformer 101系列] LLM分布式训练面面观](https://zhuanlan.zhihu.com/p/664604792) ***
 
 5. [大模型分布式训练并行技术（六）-多维混合并行](https://zhuanlan.zhihu.com/p/661279318)
+
+6. [上半年大模型遍地开花，大模型发展中有哪些经验和教训？](https://www.zhihu.com/question/601594836/answer/3032763174) 分布式训练框架
+
+7. [FSDP 深度解析：2023 年了，大模型训练还要不要用 PyTorch 的 FSDP ？](https://zhuanlan.zhihu.com/p/644133265)
 
 
 1xx. [大模型分布式训练并行技术（一）-概述](https://zhuanlan.zhihu.com/p/598714869)
