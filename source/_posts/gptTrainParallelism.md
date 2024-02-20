@@ -54,7 +54,16 @@ categories:
 ### ZeRO-DP + PP + TP
 
 
+
+# 框架
++ Megatron-LM（张量并行）
++ DeepSpeed（Zero-DP）
++ Colossal-AI（高维模型并行，如2D、2.5D、3D）
++ Alpa（自动并行）
+
+
 # 参考
+
 1. [How to Train Really Large Models on Many GPUs? ](https://lilianweng.github.io/posts/2021-09-25-train-large/)
 
 2. [大模型分布式训练的并行策略](https://finisky.github.io/how-to-train-large-language-model/) *

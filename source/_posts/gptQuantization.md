@@ -34,9 +34,12 @@ categories:
    - dynamic quantization (weights quantized with activations read/stored in floating point and quantized for compute)
    - static quantization (weights quantized, activations quantized, calibration required post training)    **->PTQ**
    - static quantization aware training (weights quantized, activations quantized, quantization numerics modeled during training)   **->QAT**
-  
-  
-### 量化推理
+
+
+# PTQ
+### LLM.int8() [6]
+### GPTQ [6]
+### AWQ [7]
 
 # 实战-PTQ[1]
 ###  量化与8bit模型训练
@@ -57,9 +60,11 @@ model = AutoModelForCausalLM.from_pretrained("D:/Pretrained_models/modelscope/Ll
    [llama2_lora_8bit.ipynb](https://github.com/www6v/transformers-code/blob/master/04-Kbit%20Training/26-8bits_training/llama2_lora_8bit.ipynb)
 2. [大模型训练｜概念篇](https://zhuanlan.zhihu.com/p/649460612)
 3. << An Introduction to Quantization of Large Language Model >> 
-4. [pytorch Quantization](https://pytorch.org/docs/stable/quantization.html)
+4. 4.1[pytorch Quantization](https://pytorch.org/docs/stable/quantization.html)
+   4.2 [Introduction to Quantization on PyTorch](https://pytorch.org/blog/introduction-to-quantization-on-pytorch/) 
 5. [目前针对大模型进行量化的方法有哪些？](https://www.zhihu.com/question/627484732/answer/3261671478)
+6. [大模型量化技术原理-LLM.int8()、GPTQ](https://zhuanlan.zhihu.com/p/680212402)
+7. [大模型量化技术原理-AWQ、AutoAWQ](https://zhuanlan.zhihu.com/p/681578090)
 
 1xx. [神经网络低比特量化中训练和推理是如何实现的？](https://www.zhihu.com/question/510246227)
-
 
