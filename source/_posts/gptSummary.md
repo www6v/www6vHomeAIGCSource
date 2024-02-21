@@ -45,6 +45,7 @@ top:
   + {% post_link 'gptLargeModelTraining' %}
   + {% post_link 'gptLargeModelTrainingPractice' %} 
   + {% post_link 'gptContinualPretraining' %}  
+  + {% post_link 'gptChineseLlama' %}   
 + 推理 
   + {% post_link 'gptInferenceFramework' %} 
 + 优化

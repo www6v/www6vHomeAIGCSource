@@ -31,7 +31,7 @@ vLLM，TensorRT， deepspeed
 
 
 
-# lmdeploy-推理实战 [3]
+# 实战  lmdeploy-推理部署 [10]
 ### 模型转换
 {% asset_img  'convert.png' %}
 ### TurboMind 推理+命令行本地对话
@@ -42,6 +42,8 @@ vLLM，TensorRT， deepspeed
 + Client访问服务
 {% asset_img  'infer-api-client.png' %}
 
+# 实战-vllm推理部署[11]
+
 # 参考
 ### 框架
 1.1. [探秘LLM应用开发](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA5MTIxNTY4MQ==&scene=1&album_id=2959126655292211206)   8-19
@@ -51,8 +53,10 @@ vLLM，TensorRT， deepspeed
 
 
 ### 实战
-3. [lmdeploy 量化部署](https://github.com/InternLM/tutorial/blob/main/lmdeploy/lmdeploy.md)
+10. [lmdeploy 量化部署](https://github.com/InternLM/tutorial/blob/main/lmdeploy/lmdeploy.md)
    [(5)LMDeploy 大模型量化部署实践](https://www.bilibili.com/video/BV1iW4y1A77P/) V
+   
+11. [Atom-7B-Chat vllm推理部署](https://github.com/LlamaFamily/Llama2-Chinese/blob/main/inference-speed/GPU/vllm_example/README.md) 
    
 
 1xx. [TensorRT-LLM保姆级教程（一）-快速入门](https://zhuanlan.zhihu.com/p/666849728)
