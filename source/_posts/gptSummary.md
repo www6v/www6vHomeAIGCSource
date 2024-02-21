@@ -55,6 +55,7 @@ top:
 + Data
   + {% post_link 'gptDataSet' %} 
   + {% post_link 'gptDataProcess' %}  
+  + {% post_link 'gptSelfInstruct' %}   
 
 ## FineTuning
 + 基础

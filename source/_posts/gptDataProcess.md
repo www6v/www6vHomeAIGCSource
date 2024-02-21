@@ -77,14 +77,12 @@ categories:
 + Evol-Instruct[5]
 
 
-# 微调指令的生成 [20][21]
-
 # 参考
 1. 《大规模语言模型》 
 2. 《千帆增强版 Llama 2》 百度 有ppt
 3. [如何构造复杂多样的微调指令数据：WizardLM复杂指令构造思想与实验分析工作总结 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401462&idx=1&sn=764f0302918174cea29ae22ac5760033) 
 4. 《金融行业实战：度小满轩辕金融大模型应用探索与开发实践》 百度  有ppt
-5. {% post_link 'gptInstructTuning' %}
+5. {% post_link 'gptInstructTuning' %} self
 ### overview
 1xx. [Data-centric Artificial Intelligence: A Survey](https://zhuanlan.zhihu.com/p/620890799)
    [机器学习数据工程的概述](https://cloud.tencent.com/developer/article/2359824)
@@ -107,14 +105,9 @@ categories:
 
 1xx. [“超越LLama 65B”的Falcon40B语言模型为什么好：再看精细化的数据清洗的重要性 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401484&idx=1&sn=c49b5ca5fc962ca757d3a082b74f037a) 
 
-1xx. [面向大模型微调的instruction指令自动化生成技术：SELF-INSTRUCT指令自动化生成框架工作介绍](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399792&idx=1&sn=c70e1d13b68399b0c19cfbf658f35d77)
+1xx. [也看大模型训练语料如何清洗：Common Crawl概述、代表性清洗方案及代码实现          ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399885&idx=1&sn=4f49c5148715c38aa4eaee3080435f17)
 
 ###  指令数据
-20. [大模型SFT微调指令数据的生成](https://zhuanlan.zhihu.com/p/650596719)
-
-21. [让ChatGPT生成训练ChatGPT的训练数据](https://zhuanlan.zhihu.com/p/618334308)
-
-
 1xx. [如何从数据集中自动识别高质量的指令数据-IFD指标的使用](https://zhuanlan.zhihu.com/p/658128530)
 
 1xx. [大模型微调技巧 | 高质量指令数据筛选方法-MoDS](https://zhuanlan.zhihu.com/p/671183709)
