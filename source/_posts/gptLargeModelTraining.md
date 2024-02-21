@@ -73,6 +73,7 @@ LLaMA模型，尽管它的参数量只有650亿，但其性能与参数量为175
 
 4. 大模型入门必看教程  九天Hector
 
-100. [NLP（二）：浅谈分词](https://zhuanlan.zhihu.com/p/458452872)
-101. [语言模型预训练基础知识总结：标准数据流pipleline、tokenizer的认识以及常见编码模型范式 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399532&idx=1&sn=31b7bc5a4f3114d8215da0edc2559e47)
+1xx. [大模型词表扩充必备工具SentencePiece](https://zhuanlan.zhihu.com/p/630696264)
+1xx. [NLP（二）：浅谈分词](https://zhuanlan.zhihu.com/p/458452872)
+1xx. [语言模型预训练基础知识总结：标准数据流pipleline、tokenizer的认识以及常见编码模型范式 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399532&idx=1&sn=31b7bc5a4f3114d8215da0edc2559e47)
 
