@@ -26,7 +26,7 @@ categories:
 + 量化分类 [3][5]
   + Quantization-Aware Training (QAT)  
     **Need more data and time, More accurate**
-  + Quantization-Aware Fine-tuning，QAF   
+  + Quantization-Aware Fine-tuning(QAF)   [9]
   + Post-Training Quantization (PTQ)  
     **Need fewer data and time, Less accurate**
 
@@ -49,7 +49,29 @@ model = AutoModelForCausalLM.from_pretrained("D:/Pretrained_models/modelscope/Ll
                                              torch_dtype=torch.half, device_map="auto", load_in_8bit=True)
 ```
 
+# 实战2-量化推理 量化推理 [8]
++ Training的模型
+{% asset_img 'dirs.png' %}
+
++ 合并后的模型
+{% asset_img 'dir.png' %}
+
++ 4bit量化推理
+{% asset_img 'xtuner-chat.png' %}
+
+> Training的时候要用tmux
+``` shell
+$ tmux new -s finetune
+$ tmux attach -t finetune
+$ ctcl +b , D
+```
+
+> 16bit量化推理慢,  要用4bit量化推理
+
+
+
 # 低精度训练方法[chat]
+
 + 半精度浮点数（FP16）训练
 + 混合精度训练（Mixed Precision Training）
 + 量化训练（Quantization Training）
@@ -65,6 +87,10 @@ model = AutoModelForCausalLM.from_pretrained("D:/Pretrained_models/modelscope/Ll
 5. [目前针对大模型进行量化的方法有哪些？](https://www.zhihu.com/question/627484732/answer/3261671478)
 6. [大模型量化技术原理-LLM.int8()、GPTQ](https://zhuanlan.zhihu.com/p/680212402)
 7. [大模型量化技术原理-AWQ、AutoAWQ](https://zhuanlan.zhihu.com/p/681578090)
+
+8. [internLM fine-tuning on xtuner](https://github.com/www6v/tutorial/tree/main/xtuner)   
+   [(4)XTuner 大模型单卡低成本微调实战](https://www.bilibili.com/video/BV1yK4y1B75J/) V
+9. {% post_link 'gptPEFTQLora' %}   self
 
 1xx. [神经网络低比特量化中训练和推理是如何实现的？](https://www.zhihu.com/question/510246227)
 
