@@ -28,7 +28,7 @@ $ pip install . -i https://pypi.tuna.tsinghua.edu.cn/simple  --trusted-host pypi
 $ pip install torch==1.13.1
 ```
 # 代码、模型、数据集准备
-### 代码准备
+### 代码准备 [5]
 ``` shell
 # 3e2f2529
 git clone https://github.com/ymcui/Chinese-LLaMA-Alpaca.git
@@ -165,12 +165,108 @@ drwxr-xr-x 3 root root 4.0K Feb 21 19:38 ../
 ```
 
 ### 指令精调
+修改模型精调脚本run_sft.sh
+``` 
+pretrained_model=/root/internLM/llamazh/pt_merged/book-merge-hf  #
+chinese_tokenizer_path=/root/internLM/Chinese-LLaMA-Alpaca-main/scripts/merge_tokenizer/merged_tokenizer_hf #
+dataset_dir=/root/internLM/Chinese-LLaMA-Alpaca-main/data #
+per_device_train_batch_size=1
+per_device_eval_batch_size=1
+training_steps=100
+gradient_accumulation_steps=1
+output_dir=/root/internLM/llamazh/sft_output  #
+#peft_model=path/to/peft/model/dir
+validation_file=/root/internLM/llm-action-main/train/chinese-llama-alpaca/alpaca_eval.json  #
+RANDOM=1000
+deepspeed_config_file=ds_zero2_no_offload.json
+```
 
+
+```
+> sh run_sft.sh 
+```
+{% asset_img  'sft-1.png' %}
+{% asset_img  'sft-2.png' %}
+{% asset_img  'sft-result1.png' %}
+{% asset_img  'sft-result2.png' %}
+
+
+模型输出文件：
+``` shell
+$ ls -al -h /root/internLM/llamazh/sft_output/lora
+total 819M
+drwxr-xr-x 2 root root 4.0K Feb 23 15:29 .
+drwxr-xr-x 3 root root 4.0K Feb 23 15:29 ..
+-rw-r--r-- 1 root root  501 Feb 23 15:29 adapter_config.json
+-rw-r--r-- 1 root root 819M Feb 23 15:29 adapter_model.bin
+
+```
+
+### 将多个LoRA权重与基础模型合并
+
+``` python
+$ python merge_llama_with_chinese_lora.py \
+     --base_model /root/internLM/model/skyline2006/llama-7b \
+     --tokenizer_path /root/internLM/llamazh/output_dir,/root/internLM/llamazh/sft_output \
+     --lora_model /root/internLM/llamazh/output_dir/lora/,/root/internLM/llamazh/sft_output/lora \
+     --output_type huggingface \
+     --output_dir /root/internLM/llamazh/all_output
+```
+
+```
+$ ll  /root/internLM/llamazh/all_output
+total 13449132
+drwxr-xr-x 2 root root       4096 Feb 23 16:38 ./
+drwxr-xr-x 7 root root       4096 Feb 23 16:38 ../
+-rw-r--r-- 1 root root         21 Feb 23 16:38 added_tokens.json
+-rw-r--r-- 1 root root        598 Feb 23 16:38 config.json
+-rw-r--r-- 1 root root        132 Feb 23 16:38 generation_config.json
+-rw-r--r-- 1 root root 9943340890 Feb 23 16:38 pytorch_model-00001-of-00002.bin
+-rw-r--r-- 1 root root 3827767515 Feb 23 16:38 pytorch_model-00002-of-00002.bin
+-rw-r--r-- 1 root root      26788 Feb 23 16:38 pytorch_model.bin.index.json
+-rw-r--r-- 1 root root        435 Feb 23 16:38 special_tokens_map.json
+-rw-r--r-- 1 root root     757958 Feb 23 16:38 tokenizer.model
+-rw-r--r-- 1 root root        747 Feb 23 16:38 tokenizer_config.json
+```
+
+# 模型推理
+``` python
+$ python inference_hf.py \
+     --base_model /root/internLM/llamazh/all_output \
+     --with_prompt \
+     --interactive
+```
+
+``` python
+$ python inference_hf.py      --base_model /root/internLM/llamazh/all_output      --with_prompt      --in
+teractive
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:26<00:00, 13.09s/it]
+Vocab of the base model: 49954
+Vocab of the tokenizer: 49954
+Start inference with instruction mode.
+=====================================================================================
++ 该模式下仅支持单轮问答，无多轮对话能力。
++ 如要进行多轮对话，请使用llama.cpp或llamachat工具。
+-------------------------------------------------------------------------------------
++ This mode only supports single-turn QA.
++ If you want to experience multi-turn dialogue, please use llama.cpp or llamachat.
+=====================================================================================
+Input:who are you？
+Response:  I am 10 years old, my name is Lilly.
+```
+
+# 结语
+整个训练流程:
+词表扩充+预训练(继续预训练)  ->  输出lora模型 
+指令精调sft   ->  输出lora模型
+合并2个lora模型，在进行推理
 
 # 参考
 1. [中文LLaMA&Alpaca大语言模型词表扩充+预训练+指令精调](https://zhuanlan.zhihu.com/p/631360711)
 2. [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca/)
 [中文文档](https://github.com/ymcui/Chinese-LLaMA-Alpaca/wiki)
 [预训练脚本](https://github.com/ymcui/Chinese-LLaMA-Alpaca/wiki/%E9%A2%84%E8%AE%AD%E7%BB%83%E8%84%9A%E6%9C%AC)
-3. [DataSet](https://github.com/shjwudp/shu)
+3. [继续预训练 DataSet](https://github.com/shjwudp/shu)
 4. [llama-7b](https://www.modelscope.cn/models/skyline2006/llama-7b/summary) 基础模型
+5. [chinese-llama-alpaca](https://github.com/www6v/AIGC/tree/master/chinese-llama-alpaca)  git 代码以这个为主
+   [chinese-llama-alpaca](https://github.com/www6v/llm-action/tree/main/train/chinese-llama-alpaca) 参考这个代码，有很多遗漏的文件，都补齐了，已提交到AIGC
