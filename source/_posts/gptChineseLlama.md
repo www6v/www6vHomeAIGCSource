@@ -84,6 +84,89 @@ sh run_pt.sh
 模型输出文件：
 {% asset_img  'result.png' %}
 
+
+### 将 LoRA 权重与基础模型合并
+``` shell
+python merge_llama_with_chinese_lora.py \
+    --base_model /root/internLM/model/skyline2006/llama-7b \
+    --tokenizer_path /root/internLM/Chinese-LLaMA-Alpaca-main/scripts/merge_tokenizer/merged_tokenizer_hf  \
+    --lora_model /root/internLM/llamazh/output_dir/lora/ \
+    --output_type huggingface \
+    --output_dir /root/internLM/llamazh/pt_merged/book-merge-hf
+```
+
+``` shell
+# 合并LLaMA和LoRA后的权重
+$ ll -h /root/internLM/llamazh/pt_merged/book-merge-hf
+total 13G
+drwxr-xr-x 2 root root 4.0K Feb 23 10:48 ./
+drwxr-xr-x 3 root root 4.0K Feb 23 10:47 ../
+-rw-r--r-- 1 root root  598 Feb 23 10:47 config.json
+-rw-r--r-- 1 root root  132 Feb 23 10:47 generation_config.json
+-rw-r--r-- 1 root root 9.3G Feb 23 10:48 pytorch_model-00001-of-00002.bin
+-rw-r--r-- 1 root root 3.6G Feb 23 10:48 pytorch_model-00002-of-00002.bin
+-rw-r--r-- 1 root root  27K Feb 23 10:48 pytorch_model.bin.index.json
+-rw-r--r-- 1 root root  411 Feb 23 10:47 special_tokens_map.json
+-rw-r--r-- 1 root root 741K Feb 23 10:47 tokenizer.model
+-rw-r--r-- 1 root root  727 Feb 23 10:47 tokenizer_config.json
+
+# 原始llama权重
+ll -h /root/internLM/model/skyline2006/llama-7b
+total 13G
+drwxr-xr-x 2 root root 4.0K Feb 21 20:04 ./
+drwxr-xr-x 3 root root 4.0K Feb 21 19:38 ../
+-rw-r--r-- 1 root root   43 Feb 21 19:38 .mdl
+-rw------- 1 root root 3.6K Feb 21 20:04 .msc
+-rw-r--r-- 1 root root   36 Feb 21 20:04 .mv
+-rw------- 1 root root  11K Feb 21 19:39 LICENSE
+-rw------- 1 root root 9.0K Feb 21 20:04 README.md
+-rw------- 1 root root  22M Feb 21 19:38 alpaca_data.json
+-rw------- 1 root root  427 Feb 21 19:38 config.json
+-rw------- 1 root root  302 Feb 21 19:39 configuration.json
+-rw------- 1 root root 1.2K Feb 21 19:39 default_offload_opt_param.json
+-rw------- 1 root root  124 Feb 21 19:39 generation_config.json
+-rw------- 1 root root 387M Feb 21 19:40 pytorch_model-00001-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:42 pytorch_model-00002-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:44 pytorch_model-00003-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:47 pytorch_model-00004-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:50 pytorch_model-00005-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:51 pytorch_model-00006-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:53 pytorch_model-00007-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:55 pytorch_model-00008-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:55 pytorch_model-00009-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:56 pytorch_model-00010-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:56 pytorch_model-00011-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:56 pytorch_model-00012-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:57 pytorch_model-00013-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:57 pytorch_model-00014-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:58 pytorch_model-00015-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:59 pytorch_model-00016-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:59 pytorch_model-00017-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:59 pytorch_model-00018-of-00033.bin
+-rw------- 1 root root 387M Feb 21 19:59 pytorch_model-00019-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:00 pytorch_model-00020-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:00 pytorch_model-00021-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:00 pytorch_model-00022-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:01 pytorch_model-00023-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:01 pytorch_model-00024-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:01 pytorch_model-00025-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:01 pytorch_model-00026-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:02 pytorch_model-00027-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:02 pytorch_model-00028-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:02 pytorch_model-00029-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:03 pytorch_model-00030-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:03 pytorch_model-00031-of-00033.bin
+-rw------- 1 root root 387M Feb 21 20:03 pytorch_model-00032-of-00033.bin
+-rw------- 1 root root 501M Feb 21 20:04 pytorch_model-00033-of-00033.bin
+-rw------- 1 root root  25K Feb 21 20:04 pytorch_model.bin.index.json
+-rw------- 1 root root    2 Feb 21 20:04 special_tokens_map.json
+-rw------- 1 root root 489K Feb 21 20:04 tokenizer.model
+-rw------- 1 root root  141 Feb 21 20:04 tokenizer_config.json
+```
+
+### 指令精调
+
+
 # 参考
 1. [中文LLaMA&Alpaca大语言模型词表扩充+预训练+指令精调](https://zhuanlan.zhihu.com/p/631360711)
 2. [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca/)
