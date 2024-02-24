@@ -51,36 +51,12 @@ Llama2采用了Llama 1中的大部分预训练设置和模型架构。使用RMSN
 + GQA技术
 + 完整的RLHF链条
 
----
-
-# LLaMA 分支[1]
-
-| 项目                            | 描述                                                         | 数据集                                  |
-| ------------------------------- | ------------------------------------------------------------ | --------------------------------------- |
-| LLaMa                           | 基座模型                                                     | 公开可用的数据集(1T token)              |
-| Stanford Alpaca                 | 结合英文语料通过Self Instruct方式微调LLaMA 7B                | Self Instruct from davinci-003 API(52K) |
-| Vicuna-13B                      | 通过ShareGPT.com的7万条对话数据微调LLaMA(Alpaca基础之上, 多轮对话和长序列, full fine-tune) | 用户共享对话(70K sample)                |
-| BELLE                           | 结合中文语料通过Self Instruct方式微调BLOOMZ-7B或LLaMA        |                                         |
-| Chinese-LLaMA/Chinese-Alpaca    | 通过中文数据预训练/指令微调LLaMA                             |                                         |
-| 姜子牙系列模型Ziya-LLaMA-13B-v1 | 基于LLaMA-13B的中英文模型                                    |                                         |
-| ChatLLaMA(英文版)               | LLaMA的RLHF版                                                |                                         |
-| ColossalChat                    | 通过self-instruct技术指令微调LLaMA且加上RLHF                 |                                         |
-
-
 
 # 参考
-### 分支
-1. [LLaMA的解读与其微调：Alpaca-LoRA/Vicuna/BELLE/中文LLaMA/姜子牙/LLaMA 2](https://blog.csdn.net/v_JULY_v/article/details/129709105) ***
-   1xx. [我想学大模型，应该从哪个模型开始？LLaMA生态家谱整理和分析 ](https://mp.weixin.qq.com/s?__biz=MzUyOTA5OTcwMg==&mid=2247485019&idx=1&sn=e3417472c0c1f98aede498fbe905e1a0&)
-   1xx. [NLP（九）：LLaMA, Alpaca, ColossalChat 系列模型研究](https://zhuanlan.zhihu.com/p/618695885)
-   1xx. https://github.com/www6v/Llama2-Chinese
-   1xx.  [从0到1复现斯坦福羊驼（Stanford Alpaca 7B）](https://zhuanlan.zhihu.com/p/618321077) 
-    GPUs: 8 卡 A800 80GB GPUs
-   1xx. <<千帆增强版 Llama 2-提升大模型对话指令遵循能力>>    
-   
 ### LLaMA
 20. [[译][论文] LLaMA：开放和高效的基础语言模型集](http://arthurchiao.art/blog/llama-paper-zh/)
 1xx. [第十五课：LLaMA](https://www.bilibili.com/video/BV1nN41157a9/)  *** 华为  V
+1xx. [Meta最新语言模型LLaMA论文研读：小参数+大数据的开放、高效基础语言模型阅读笔记 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399298&idx=1&sn=dd83c4f42c68a89f8199f990e7570586)
 
 ### LLaMA2
 30. [也谈凌晨刷屏的Llama2开源可商用模型：从其数据构造、模型架构和评估方式等方面的一些总结与发现 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401927&idx=1&sn=3dddcb5c1d8b3c246a8b7529502fdcf0)

@@ -32,6 +32,7 @@ top:
 + 基座模型
   + {% post_link 'gptFamily' %}  
   + {% post_link 'gptLlama' %}   
+  + {% post_link 'gptLlamaFamily' %}   
   + {% post_link 'gptChatGLM' %}   
   + {% post_link 'gptLeaderBoard' %}  
 + {% post_link 'gptMultimodal' %}  
