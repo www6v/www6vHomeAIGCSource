@@ -41,7 +41,6 @@ categories:
  通用模块组件，能用在各个领域， baseline
 + Dataset,  evaluation and survey
 
-
 # 参考
 1. [大模型时代下做科研的四个思路【论文精读·52】](https://www.bilibili.com/video/BV1oX4y1d7X6)
 

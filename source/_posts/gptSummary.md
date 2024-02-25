@@ -120,6 +120,7 @@ top:
 ## Research
 + {% post_link 'gptPaperTools' %} 
 + {% post_link 'gptStudyPaper' %}
++ {% post_link 'gptSurveyList' %} 
 
 
 
