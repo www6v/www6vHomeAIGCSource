@@ -54,12 +54,6 @@ LLaMA模型，尽管它的参数量只有650亿，但其性能与参数量为175
     已经⽣成的词的情况下确定下⼀个词的概率分布，然后再根据⽣成式的⽅式来根据这个
     分布⽣成下⼀个词**
 
-###  tokenizer 分词  
-+ 单词分词法
-+ 单字分词法
-+ 子词分词法
-  BPE [GPT系列], WordPiece
-
 # 参考
 0. [LLM学习系列1：大模型架构要点总结](https://zhuanlan.zhihu.com/p/648050614)  from ppt
 
@@ -73,7 +67,5 @@ LLaMA模型，尽管它的参数量只有650亿，但其性能与参数量为175
 
 4. 大模型入门必看教程  九天Hector
 
-1xx. [大模型词表扩充必备工具SentencePiece](https://zhuanlan.zhihu.com/p/630696264)
-1xx. [NLP（二）：浅谈分词](https://zhuanlan.zhihu.com/p/458452872)
 1xx. [语言模型预训练基础知识总结：标准数据流pipleline、tokenizer的认识以及常见编码模型范式 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399532&idx=1&sn=31b7bc5a4f3114d8215da0edc2559e47)
 

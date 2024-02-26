@@ -58,6 +58,7 @@ top:
   + {% post_link 'gptDataSet' %} 
   + {% post_link 'gptDataProcess' %}  
   + {% post_link 'gptSelfInstruct' %}   
+  + {% post_link 'gptTrainTokenizer' %}   
 
 ## FineTuning
 + 基础
