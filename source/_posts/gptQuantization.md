@@ -84,7 +84,7 @@ $ ctcl +b , D
 3. << An Introduction to Quantization of Large Language Model >> 
 4. 4.1[pytorch Quantization](https://pytorch.org/docs/stable/quantization.html)
    4.2 [Introduction to Quantization on PyTorch](https://pytorch.org/blog/introduction-to-quantization-on-pytorch/) 
-5. [目前针对大模型进行量化的方法有哪些？](https://www.zhihu.com/question/627484732/answer/3261671478)
+5. [大模型量化概述](https://zhuanlan.zhihu.com/p/662881352)
 6. [大模型量化技术原理-LLM.int8()、GPTQ](https://zhuanlan.zhihu.com/p/680212402)
 7. [大模型量化技术原理-AWQ、AutoAWQ](https://zhuanlan.zhihu.com/p/681578090)
 
