@@ -76,7 +76,7 @@ categories:
 - Challenges and Applications of Large Language Models, 2023.07 [[paper]](https://arxiv.org/abs/2307.10169) *** 
 
 - A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT, 2023.02 [[paper]](https://arxiv.org/abs/2302.09419) ***
- 
+
 - A Survey of Large Language Models, 2023.11 [[paper]](https://arxiv.org/abs/2303.18223)[[project]](https://github.com/RUCAIBox/LLMSurvey)  ***
 
 - A Comprehensive Overview of Large Language Models *
@@ -94,7 +94,7 @@ categories:
 - The future of gpt: A taxonomy of existing chatgpt research, current challenges, and possible future directions, 2023.04 [[paper]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4413921)
 
 - A Review on Large Language Models: Architectures, Applications, Taxonomies, Open Issues and Challenges, 2023.10 [[paper]](https://www.techrxiv.org/doi/full/10.36227/techrxiv.24171183.v1)
- 
+
 - Understanding LLMs: A Comprehensive Overview from Training to Inference, 2024.01 [[paper]](https://arxiv.org/pdf/2401.02038.pdf)
 
 ---
@@ -247,16 +247,17 @@ categories:
 
 
 ### Visual LLM
-- Vision-Language Instruction Tuning: A Review and Analysis, 2023,11 [[paper]](https://arxiv.org/abs/2311.08172)[[project]](https://github.com/palchenli/VL-Instruction-Tuning)
-- How to Bridge the Gap between Modalities: A Comprehensive Survey on Multimodal Large Language Model, 2023.11 [[paper]](https://arxiv.org/pdf/2311.07594.pdf)
+- Vision-Language Instruction Tuning: A Review and Analysis, 2023,11 [[paper]](https://arxiv.org/abs/2311.08172)[[project]](https://github.com/palchenli/VL-Instruction-Tuning) ***
+ 
+- How to Bridge the Gap between Modalities: A Comprehensive Survey on Multimodal Large Language Model, 2023.11 [[paper]](https://arxiv.org/pdf/2311.07594.pdf) *
   
-- A Survey on Multimodal Large Language Models, 2023.06 [[paper]](https://arxiv.org/abs/2306.13549)[[project]](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)
+- A Survey on Multimodal Large Language Models, 2023.06  [[paper]](https://arxiv.org/abs/2306.13549) [[project]](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) ***
 
-- Multimodal Large Language Models: A Survey, 2023.11 [[paper]](https://arxiv.org/pdf/2311.13165.pdf)
+- Multimodal Large Language Models: A Survey, 2023.11 [[paper]](https://arxiv.org/pdf/2311.13165.pdf) **
 
-- Large Language Models Meet Computer Vision: A Brief Survey, 2023.11 [[paper]](https://arxiv.org/pdf/2311.16673.pdf)
+- Large Language Models Meet Computer Vision: A Brief Survey, 2023.11 [[paper]](https://arxiv.org/pdf/2311.16673.pdf) *
 
-- Foundational Models Defining a New Era in Vision: A Survey and Outlook, 2023.07 [[paper]](https://arxiv.org/pdf/2307.13721.pdf)[[project]](https://github.com/awaisrauf/Awesome-CV-Foundational-Models)
+- Foundational Models Defining a New Era in Vision: A Survey and Outlook, 2023.07 [[paper]](https://arxiv.org/pdf/2307.13721.pdf)[[project]](https://github.com/awaisrauf/Awesome-CV-Foundational-Models) ***
 
 - Video Understanding with Large Language Models: A Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2312.17432.pdf) [[project]](https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding)
 
