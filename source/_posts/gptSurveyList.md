@@ -14,17 +14,17 @@ categories:
 # Awesome-LLM-Survey
 
 - [Awesome-LLM-Survey](#awesome-llm-survey)
-  - [General Survey](#general-survey)
+  - [General Survey](#general-survey) *** 
   - [Training of LLM](#training-of-llm)
-    - [Instruction Tuning](#instruction-tuning)
-    - [Human Alignment for LLM](#human-alignment-for-llm)
+    - [Instruction Tuning](#instruction-tuning) *** 
+    - [Human Alignment for LLM](#human-alignment-for-llm) * 
   - [Prompt of LLM](#prompt-of-llm)
-    - [Chain of Thought for LLM](#chain-of-thought-for-llm)
-    - [Prompt Engineering for LLM](#prompt-engineering-for-llm)
-    - [Retrieval-Augmented LLM](#retrieval-augmented-llm)
+    - [Chain of Thought for LLM](#chain-of-thought-for-llm) *** 
+    - [Prompt Engineering for LLM](#prompt-engineering-for-llm) * 
+    - [Retrieval-Augmented LLM](#retrieval-augmented-llm) *** 
   - [Challenge of LLM](#challenge-of-llm)
-    - [Hallucination in LLM](#hallucination-in-llm)
-    - [Compression for LLM](#compression-for-llm)
+    - [Hallucination in LLM](#hallucination-in-llm) ***
+    - [Compression for LLM](#compression-for-llm) ***
     - [Evaluation of LLM](#evaluation-of-llm)
     - [Reasoning with LLM](#reasoning-with-llm)
 
@@ -35,12 +35,12 @@ categories:
     - [Knowledge for LLM](#knowledge-for-llm)
     - [Self-Correction for LLM](#self-correction-for-llm)
     
-    - [Tool Using of LLM](#tool-using-of-llm)
+    - [Tool Using of LLM](#tool-using-of-llm) ***
     
-    - [Agent of LLM](#agent-of-llm)
+    - [Agent of LLM](#agent-of-llm) ***
     
-    - [Efficiency of LLM](#efficiency-of-llm)
-    - [Data of LLM](#data-of-llm)
+    - [Efficiency of LLM](#efficiency-of-llm) *** 
+    - [Data of LLM](#data-of-llm) ***
     
     - [Continual Learning of LLM](#continual-learning-of-llm)
   - [Mulitmodal of LLM](#mulitmodal-of-llm)
@@ -49,7 +49,7 @@ categories:
 
   - [LLM for Domain Application](#llm-for-domain-application)
     - [LLM for Health](#llm-for-health)
-    - [LLM for Finance](#llm-for-finance)
+    - [LLM for Finance](#llm-for-finance) ***
     - [LLM for Education](#llm-for-education)
     - [LLM for Law](#llm-for-law)
     - [LLM for Mental Health](#llm-for-mental-health)
@@ -73,21 +73,28 @@ categories:
 ---
 
 ## General Survey
-- A Survey of Large Language Models, 2023.11 [[paper]](https://arxiv.org/abs/2303.18223)[[project]](https://github.com/RUCAIBox/LLMSurvey)
+- Challenges and Applications of Large Language Models, 2023.07 [[paper]](https://arxiv.org/abs/2307.10169) *** 
+
+- A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT, 2023.02 [[paper]](https://arxiv.org/abs/2302.09419) ***
+ 
+- A Survey of Large Language Models, 2023.11 [[paper]](https://arxiv.org/abs/2303.18223)[[project]](https://github.com/RUCAIBox/LLMSurvey)  ***
+
+- A Comprehensive Overview of Large Language Models *
+
+- Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing
+
+- Pre-Trained Models: Past, Present and Future
 
 - A Survey of GPT-3 Family Large Language Models Including ChatGPT and GPT-4, 2023.10 [[paper]](https://arxiv.org/pdf/2310.12321.pdf)
 
-- Challenges and Applications of Large Language Models, 2023.07 [[paper]](https://arxiv.org/abs/2307.10169)
-
 - Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond, 2023.04  [[paper]](https://arxiv.org/abs/2304.13712)[[project]](https://github.com/Mooler0410/LLMsPracticalGuide)
-
-- A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT, 2023.02 [[paper]](https://arxiv.org/abs/2302.09419)
 
 - Large language models: a comprehensive survey of its applications, challenges, limitations, and future prospects, 2023.12 [[paper]](https://www.techrxiv.org/doi/full/10.36227/techrxiv.23589741.v4) [[project]](https://github.com/anas-zafar/LLM-Survey)
 
 - The future of gpt: A taxonomy of existing chatgpt research, current challenges, and possible future directions, 2023.04 [[paper]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4413921)
 
 - A Review on Large Language Models: Architectures, Applications, Taxonomies, Open Issues and Challenges, 2023.10 [[paper]](https://www.techrxiv.org/doi/full/10.36227/techrxiv.24171183.v1)
+ 
 - Understanding LLMs: A Comprehensive Overview from Training to Inference, 2024.01 [[paper]](https://arxiv.org/pdf/2401.02038.pdf)
 
 ---
@@ -106,7 +113,7 @@ categories:
   
 - From Instructions to Intrinsic Human Values -- A Survey of Alignment Goals for Big Model, 2023.08 [[paper]](https://arxiv.org/abs/2308.12014)[[project]](https://github.com/ValueCompass/Alignment-Goal-Survey)
   
-- Aligning Large Language Models with Human: A Survey, 2023.07 [[paper]](https://arxiv.org/abs/2307.12966)[[project]](https://github.com/GaryYufei/AlignLLMHumanSurvey)
+- Aligning Large Language Models with Human: A Survey, 2023.07 [[paper]](https://arxiv.org/abs/2307.12966)[[project]](https://github.com/GaryYufei/AlignLLMHumanSurvey) ***
 
 ---
 
@@ -117,7 +124,7 @@ categories:
 - Towards Better Chain-of-Thought Prompting Strategies: A Survey, 2023.10 [[paper]](https://arxiv.org/pdf/2310.04959.pdf)
   
 - A Survey of Chain of Thought Reasoning: Advances, Frontiers and Future, 2023.09 [[paper]](https://arxiv.org/abs/2309.06256)[[project]](https://github.com/zchuz/CoT-Reasoning-Survey)
- 
+
 - Igniting Language Intelligence: The Hitchhiker's Guide From Chain-of-Thought Reasoning to Language Agents, 2023.11 [[paper]](https://arxiv.org/pdf/2311.11797.pdf) [[project]](https://github.com/Zoeyyao27/CoT-Igniting-Agent)
   
 
@@ -130,8 +137,8 @@ categories:
 
 ### Retrieval-Augmented LLM
 - A Survey on Retrieval-Augmented Text Generation, 2022.02 [[paper]](https://arxiv.org/abs/2202.01110)
- 
-- Retrieval-Augmented Generation for Large Language Models: A Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2312.10997.pdf) [[project]](https://github.com/Tongji-KGLLM/RAG-Survey)
+
+- Retrieval-Augmented Generation for Large Language Models: A Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2312.10997.pdf) [[project]](https://github.com/Tongji-KGLLM/RAG-Survey) ***
 
 ---
 
@@ -141,7 +148,7 @@ categories:
 ### Hallucination in LLM
 - Can Knowledge Graphs Reduce Hallucinations in LLMs? : A Survey, 2023.11 [[paper]](https://arxiv.org/pdf/2311.07914)
   
-- A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions, 2023.11 [[paper]](https://arxiv.org/pdf/2311.05232)[[project]](https://github.com/LuckyyySTA/Awesome-LLM-hallucination)
+- A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions, 2023.11 [[paper]](https://arxiv.org/pdf/2311.05232)[[project]](https://github.com/LuckyyySTA/Awesome-LLM-hallucination) ***
   
 - A Survey of Hallucination in “Large” Foundation Models, 2023.09  [[paper]](https://arxiv.org/paper/2309.05922)[[project]](https://github.com/vr25/hallucination-foundation-model-survey)
   
@@ -158,14 +165,14 @@ categories:
 - A Comprehensive Survey of Compression Algorithms for Language Models, 2024.01 [[paper](https://arxiv.org/pdf/2401.15347.pdf)]
 
 ### Evaluation of LLM
-- Evaluating Large Language Models: A Comprehensive Survey, 2023.10 [[paper]](https://arxiv.org/pdf/2310.19736.pdf)[[project]](https://github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers)
+- Evaluating Large Language Models: A Comprehensive Survey, 2023.10 [[paper]](https://arxiv.org/pdf/2310.19736.pdf)[[project]](https://github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers) ***
   
-- A Survey on Evaluation of Large Language Models, 2023.07 [[paper]](https://arxiv.org/abs/2307.03109)[[project]](https://llm-eval.github.io/)
+- A Survey on Evaluation of Large Language Models, 2023.07 [[paper]](https://arxiv.org/abs/2307.03109)[[project]](https://llm-eval.github.io/) ***
 
 ### Reasoning with LLM
 - Reasoning with Language Model Prompting: A Survey, 2022.12 [[paper]](https://arxiv.org/abs/2212.09597)[[project]](https://github.com/zjunlp/Prompt4ReasoningPapers)
 
-- A Survey of Reasoning with Foundation Models, 2023.12 [[papaer]](https://arxiv.org/pdf/2312.11562.pdf)[[project]](https://github.com/reasoning-survey/Awesome-Reasoning-Foundation-Models)
+- A Survey of Reasoning with Foundation Models, 2023.12 [[papaer]] (https://arxiv.org/pdf/2312.11562.pdf)[[project]](https://github.com/reasoning-survey/Awesome-Reasoning-Foundation-Models) ***
 
 
 
@@ -203,30 +210,33 @@ categories:
   
 - Augmented Language Models: a Survey, 2023.02 [[paper]](https://arxiv.org/abs/2302.07842) ***
 
-
+- Tool Learning with Foundation Models
 
 ### Agent of LLM
 - A Survey on Large Language Model based Autonomous Agents, 2023.08 [[paper]](https://arxiv.org/abs/2308.11432)[[project]](https://github.com/Paitesanshi/LLM-Agent-Survey) ***
- 
+
 - The Rise and Potential of Large Language Model Based Agents: A Survey, 2023.09 [[paper]](https://arxiv.org/abs/2309.07864)[[project]](https://github.com/WooooDyy/LLM-Agent-Paper-List) ***
- 
+
 - Large Language Models Empowered Agent-based Modeling and Simulation: A Survey and Perspectives, 2023.12 [[paper]](https://arxiv.org/pdf/2312.11970.pdf)
 
 
 
 ### Efficiency of LLM
+- Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning ***
+- The Power of Scale for Parameter-Efficient Prompt Tuning
+
 - The Efficiency Spectrum of Large Language Models: An Algorithmic Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2310.10844.pdf)[[project]](https://github.com/tding1/Efficient-LLM-Survey)
- 
+
 - Efficient Large Language Models: A Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2312.03863)[[project]](https://github.com/AIoT-MLSys-Lab/Efficient-LLMs-Survey)
- 
+
 - Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment, 2023.12 [[paper]](https://arxiv.org/pdf/2312.12148.pdf)
- 
+
 - A Survey on Hardware Accelerators for Large Language Models, 2024.01 [[paper](https://arxiv.org/pdf/2401.09890.pdf)]
 
 ### Data of LLM
 - Data Management For Large Language Models: A Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2312.01700)[[project]](https://github.com/ZigeW/data_management_LLM)
 
-
+- Data-centric Artificial Intelligence: A Survey
 
 ### Continual Learning of LLM
 - Continual Learning with Pre-Trained Models: A Survey, 2024.01 [[paper]](https://arxiv.org/pdf/2401.16386) [[project]](https://github.com/sun-hailong/LAMDA-PILOT)
@@ -243,9 +253,9 @@ categories:
 - A Survey on Multimodal Large Language Models, 2023.06 [[paper]](https://arxiv.org/abs/2306.13549)[[project]](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)
 
 - Multimodal Large Language Models: A Survey, 2023.11 [[paper]](https://arxiv.org/pdf/2311.13165.pdf)
- 
+
 - Large Language Models Meet Computer Vision: A Brief Survey, 2023.11 [[paper]](https://arxiv.org/pdf/2311.16673.pdf)
- 
+
 - Foundational Models Defining a New Era in Vision: A Survey and Outlook, 2023.07 [[paper]](https://arxiv.org/pdf/2307.13721.pdf)[[project]](https://github.com/awaisrauf/Awesome-CV-Foundational-Models)
 
 - Video Understanding with Large Language Models: A Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2312.17432.pdf) [[project]](https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding)
@@ -254,6 +264,8 @@ categories:
 ---
 
 ## LLM for Domain Application
+### domain
+- Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey
 
 ### LLM for Health
 - A Survey of Large Language Models in Medicine: Progress, Application, and Challenge, 2023.11 [[paper]](https://arxiv.org/pdf/2311.05112)[[project]](https://github.com/AI-in-Health/MedLLMsPracticalGuide)
