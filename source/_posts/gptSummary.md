@@ -54,12 +54,18 @@ top:
   + {% post_link 'gptInference' %}
   + {% post_link 'gptQuantization' %}   
   + {% post_link 'gptPrecision' %} 
-+ Data
+
+
+## Data
++ DataSet
   + {% post_link 'gptDataSet' %} 
+  + {% post_link 'gptSTFData' %}  
++ DataProcess
   + {% post_link 'gptDataProcess' %}  
   + {% post_link 'gptSelfInstruct' %}   
   + {% post_link 'gptTrainTokenizer' %}   
-
+  + {% post_link 'gptDataRefinedWeb' %}    
+ 
 ## FineTuning
 + 基础
   + {% post_link 'gptFineTuning' %} 
@@ -73,8 +79,6 @@ top:
     + {% post_link 'gptPromptTuningPractice' %}    
     + {% post_link 'gptPEFTPtuning' %}  
   + {% post_link 'gptFineTuningBert' %}    
-+ Data
-  + {% post_link 'gptSTFData' %}  
 
 ## Prompt
   + {% post_link 'gptPromptEngineering' %}
