@@ -14,7 +14,8 @@ categories:
 ## 目录
 <!-- toc -->
 
-# 数据处理[通用] [1]
+# 数据处理 pipeline
+## 数据处理[通用] [1]
 {% asset_img  'data_process.png' %}
 
 ### 质量过滤
@@ -32,6 +33,19 @@ categories:
 + WordPiece
 + Unigram 词元分析
 
+
+## 数据处理[20]
+{% asset_img 'pipeline.webp' %}
+### 数据标记
++ 包标签
++ 半监督标签
++ 主动学习
++ 数据编程
++ 远程监督
+
+### 数据准备
+
+### 数据增强
 
 # 案例
 ## 千帆Llama 2中文增强技术介绍-SFT[2]
@@ -83,8 +97,10 @@ categories:
 3. [如何构造复杂多样的微调指令数据：WizardLM复杂指令构造思想与实验分析工作总结 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401462&idx=1&sn=764f0302918174cea29ae22ac5760033) 
 4. 《金融行业实战：度小满轩辕金融大模型应用探索与开发实践》 百度  有ppt
 5. {% post_link 'gptInstructTuning' %} self
+
+
 ### overview
-1xx. [Data-centric Artificial Intelligence: A Survey](https://zhuanlan.zhihu.com/p/620890799)
+20. [Data-centric Artificial Intelligence: A Survey](https://zhuanlan.zhihu.com/p/620890799)
    [机器学习数据工程的概述](https://cloud.tencent.com/developer/article/2359824)
 
 1xx. [大模型时代下数据的重要性](https://zhuanlan.zhihu.com/p/639207933) 综述
@@ -92,7 +108,7 @@ categories:
 1xx. [大模型研发核心：数据工程、自动化评估及与知识图谱的结合](https://hub.baai.ac.cn/view/28740)
    [大模型研发核心：数据工程、自动化评估及与知识图谱的结合 ](https://mp.weixin.qq.com/s/SvDnQD886E3DBtw8k9asgg)
 
-### 
+###  数量->scaling law   |  质量->多样性, 复杂度
 1xx. [数据为王: Textbooks Are All You Need ](https://finisky.github.io/textbooks-are-all-you-need-summary/)
 
 1xx. [数据为王：大模型预训练中的数据处理及思考—The RefinedWeb Dataset for Falcon LLM论文解读](https://zhuanlan.zhihu.com/p/641013454)
@@ -112,15 +128,15 @@ categories:
 
 1xx. [大模型微调技巧 | 高质量指令数据筛选方法-MoDS](https://zhuanlan.zhihu.com/p/671183709)
 
-### 其他
-1xx. [哈工大｜15种NLP数据增强方法总结与对比](https://zhuanlan.zhihu.com/p/420295576)
-
-
-1xx. [再看大模型预训数据质量如何评估：困惑度、错误L2范数和记忆化三种度量方法的效果对比分析研究](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403976&idx=1&sn=694db5e2b3085b1610e8d19daa93a474)
-
+###  数据标签
 1xx. [InsTag：大语言模型监督微调数据标签标注工具](https://developer.aliyun.com/article/1311807)
    [InsTag指令打标工具](https://www.modelscope.cn/studios/lukeminglkm/instagger_demo/summary) demo
 
+### 数据增强
+1xx. [哈工大｜15种NLP数据增强方法总结与对比](https://zhuanlan.zhihu.com/p/420295576)
+
+### 数据质量
+1xx. [再看大模型预训数据质量如何评估：困惑度、错误L2范数和记忆化三种度量方法的效果对比分析研究](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403976&idx=1&sn=694db5e2b3085b1610e8d19daa93a474)
 
 
 1xx. [开源大模型如何更好地适应中文场景：LLAMA扩充词表、BLOOM裁剪词表基本原理与开源实现](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648400849&idx=1&sn=58006756cccde4d06d273df59e2c8dd8)
