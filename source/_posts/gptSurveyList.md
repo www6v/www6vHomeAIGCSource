@@ -223,11 +223,12 @@ categories:
 
 ### Efficiency of LLM
 - Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning ***
+
 - The Power of Scale for Parameter-Efficient Prompt Tuning
 
-- The Efficiency Spectrum of Large Language Models: An Algorithmic Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2310.10844.pdf)[[project]](https://github.com/tding1/Efficient-LLM-Survey)
+- Efficient Large Language Models: A Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2312.03863)[[project]](https://github.com/AIoT-MLSys-Lab/Efficient-LLMs-Survey) ***
 
-- Efficient Large Language Models: A Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2312.03863)[[project]](https://github.com/AIoT-MLSys-Lab/Efficient-LLMs-Survey)
+- The Efficiency Spectrum of Large Language Models: An Algorithmic Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2310.10844.pdf)[[project]](https://github.com/tding1/Efficient-LLM-Survey)
 
 - Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment, 2023.12 [[paper]](https://arxiv.org/pdf/2312.12148.pdf)
 
@@ -247,8 +248,10 @@ categories:
 
 
 ### Visual LLM
+- MM-LLMs: Recent Advances in MultiModal Large Language Models, 2024.02 ***
+
 - Vision-Language Instruction Tuning: A Review and Analysis, 2023,11 [[paper]](https://arxiv.org/abs/2311.08172)[[project]](https://github.com/palchenli/VL-Instruction-Tuning) ***
- 
+
 - How to Bridge the Gap between Modalities: A Comprehensive Survey on Multimodal Large Language Model, 2023.11 [[paper]](https://arxiv.org/pdf/2311.07594.pdf) *
   
 - A Survey on Multimodal Large Language Models, 2023.06  [[paper]](https://arxiv.org/abs/2306.13549) [[project]](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) ***
@@ -281,6 +284,8 @@ categories:
 
 ### LLM for Finance
 - Large Language Models in Finance: A Survey, 2023.09 [[paper]](https://arxiv.org/abs/2311.10723)
+
+- A Survey of Large Language Models in Finance (FinLLMs) *** 
 
 ### LLM for Education
 - ChatGPT and Beyond: The Generative AI Revolution in Education, 2023.11 [[paper]](https://arxiv.org/pdf/2311.15198)
