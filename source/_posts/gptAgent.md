@@ -153,13 +153,12 @@ AutoGPT - retrieval 结合近期操作记录
 7. xxx
 8. [LLM 全栈开发指南补遗](https://zhuanlan.zhihu.com/p/633033220)  Agents  ***
    [Harrison Chase: Agents](https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/chase-agents/)  ***
+1xx. [智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT](https://blog.csdn.net/v_JULY_v/article/details/135868163?spm=1001.2014.3001.5502)   
    
 ### Planning
 20. [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) paper
 21. [【论文阅读】Reflexion: 大模型如何从错误经验中学习？](https://zhuanlan.zhihu.com/p/639254455)
 22. [Reflexion: 带言语强化学习的语言智体](https://zhuanlan.zhihu.com/p/671508578)
+2xx. [引领语言智能：从思维链推理到语言智能体的探索指南 [译]](https://baoyu.io/translations/ai-paper/2311.11797-igniting-language-intelligence-the-hitchhikers-guide-from-chain-of-thought-reasoning-to-language-agents) paper
 2xx. [ReWOO: 高效增强语言模型中解偶观测和推理](https://zhuanlan.zhihu.com/p/671491031)
 
-3xx. [智体AI在多模态交互领域的综述（上）](https://zhuanlan.zhihu.com/p/678203245)
-3xx. [智体AI在多模态交互领域的综述（下）](https://zhuanlan.zhihu.com/p/678222381)
-3xx. [个人LLM智体的综述](https://zhuanlan.zhihu.com/p/678238642)
