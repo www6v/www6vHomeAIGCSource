@@ -32,7 +32,7 @@ categories:
 ###  visually prompted models
   - Foundational 
     SAM
-  
+
 ###  heterogeneous  models
 
 # 架构 [1]
@@ -59,6 +59,7 @@ categories:
     [视觉大模型的全面解析](https://blog.csdn.net/qq_45368632/article/details/132180645)
     [基础模型定义视觉的新时代：综述和展望](https://zhuanlan.zhihu.com/p/655135848)
     
+
 1xx. [AI之MLM：《MM-LLMs: Recent Advances in MultiModal Large Language Models多模态大语言模型的最新进展》翻译与解读](https://blog.csdn.net/qq_41185868/article/details/135877268)
    [腾讯发布的多模态大模型（MM-LLM）的最新综述、从26个最新的多模态大模型中归纳最佳实践](https://zhuanlan.zhihu.com/p/680487634)
    [多模态大模型最新完整综述 MM-LLMs](https://zhuanlan.zhihu.com/p/680955430)

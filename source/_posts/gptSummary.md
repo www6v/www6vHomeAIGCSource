@@ -35,7 +35,6 @@ top:
   + {% post_link 'gptLlamaFamily' %}   
   + {% post_link 'gptChatGLM' %}   
   + {% post_link 'gptLeaderBoard' %}  
-+ {% post_link 'gptMultimodal' %}  
 + {% post_link 'gptImpossibleTriangle' %} 
 + {% post_link 'gptEmergent' %}   
 + {% post_link 'gptHallucination' %}    
@@ -65,7 +64,7 @@ top:
   + {% post_link 'gptSelfInstruct' %}   
   + {% post_link 'gptTrainTokenizer' %}   
   + {% post_link 'gptDataRefinedWeb' %}    
- 
+
 ## FineTuning
 + 基础
   + {% post_link 'gptFineTuning' %} 
@@ -86,7 +85,15 @@ top:
   + {% post_link 'gptPromptCode' %}
   + {% post_link 'gptPrompt' %}
 
+
+## Multimodal
++ {% post_link 'gptMultimodal' %} 
++ {% post_link 'gptMultimodalCLIP' %}  
++ {% post_link 'gptMultimodalSAM' %}   
++ {% post_link 'gptMultimodalVit' %}   
+
 ## RAG
+
 + {% post_link 'gptRAG' %}
 + {% post_link 'gptRAGPractice' %} 
 + {% post_link 'gptRAGPerformance' %}
