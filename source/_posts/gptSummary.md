@@ -98,6 +98,7 @@ top:
 + {% post_link 'gptRAGPractice' %} 
 + {% post_link 'gptRAGPerformance' %}
 + {% post_link 'gptRAGPerformanceOpenAI' %} 
++ {% post_link 'gptRAGSelfReflective' %} 
 
 ## Langchain
 + {% post_link 'gptLangchain' %}
