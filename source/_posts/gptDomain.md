@@ -92,3 +92,4 @@ LLM（Large Language Models）的领域专业化可以理解为将广泛训练�
 
 
 1xx. {% post_link 'gptLeaderBoard' %} self
+1xx. [Awesome-Domain-LLM](https://github.com/www6v/Awesome-Domain-LLM)  git 全
