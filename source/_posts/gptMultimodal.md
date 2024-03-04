@@ -74,9 +74,7 @@ categories:
 
 1xx. [多模大语言模型综述](https://arxiv.org/abs/2306.13549)
 
-### single
-1xx. [DeepMind出手！多模态小样本打败精调](https://zhuanlan.zhihu.com/p/511517344)
-
+### chat
 1xx. [[论文阅读] 双子座：一个功能强大的多模态模型系列，Gemini: A Family of Highly Capable Multimodal Models](https://zhuanlan.zhihu.com/p/670821058)
 
 1xx. [166页超长论文阅读，大多模态模型的黎明：GPT-4V的初步探索，The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision) [上]](https://zhuanlan.zhihu.com/p/663655741)
@@ -85,10 +83,13 @@ categories:
 
 1xx. [基于视觉指令调整的多模态聊天机器人 LLaVA](https://apposcmf8kb5033.pc.xiaoe-tech.com/live_pc/l_64a7d4fde4b0d1e42e7fc7e6)  V
 
+### other
+1xx. [DeepMind出手！多模态小样本打败精调](https://zhuanlan.zhihu.com/p/511517344)
+
+### agent
 1xx. [WebVoyager：借助强大多模态模型，开创全新的网络智能体 [译]](https://baoyu.io/translations/ai-paper/2401.13919-webvoyager-building-an-end-to-end-web-agent-with-large-multimodal-models)
 
-1xx. [MiniGPT4Qwen](https://github.com/Coobiw/MiniGPT4Qwen) git
-[多模态大模型实战-MiniGPT4Qwen系列1：3090+2小时+通义千问=个人版双语多模态大模型](https://zhuanlan.zhihu.com/p/664612306)
+
 
 
 

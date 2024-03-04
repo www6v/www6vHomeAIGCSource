@@ -88,6 +88,7 @@ top:
 
 ## Multimodal
 + {% post_link 'gptMultimodal' %} 
++ {% post_link 'gptMultimodalPretrain' %}  
 + {% post_link 'gptMultimodalCLIP' %}  
 + {% post_link 'gptMultimodalSAM' %}   
 + {% post_link 'gptMultimodalVit' %}   
