@@ -213,6 +213,8 @@ categories:
 - Tool Learning with Foundation Models
 
 ### Agent of LLM
+- Understanding the planning of LLM agents: A survey, 2024 
+
 - A Survey on Large Language Model based Autonomous Agents, 2023.08 [[paper]](https://arxiv.org/abs/2308.11432)[[project]](https://github.com/Paitesanshi/LLM-Agent-Survey) ***
 
 - The Rise and Potential of Large Language Model Based Agents: A Survey, 2023.09 [[paper]](https://arxiv.org/abs/2309.07864)[[project]](https://github.com/WooooDyy/LLM-Agent-Paper-List) ***

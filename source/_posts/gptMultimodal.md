@@ -11,7 +11,7 @@ categories:
 <p></p>
 <!-- more -->
 
-# 分类 [1]
+# 基础模型分类 [1]
 {% asset_img  'pattern.webp' %}
 
 {% asset_img  'pattern1.webp' %}
