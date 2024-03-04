@@ -80,7 +80,10 @@ LLM（Large Language Models）的领域专业化可以理解为将广泛训练�
 
 # 参考
 0. 《Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey》
+   [目前有哪些方式训练一个领域的大语言模型？ Beyond One-Model-Fits-All A Survey of Domain Specialization LLM](https://zhuanlan.zhihu.com/p/635480023)
+   
 1. [领域微调大模型入局的自我和解：领域微调大模型若一定要做，则务必想的若干个前提条件 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401405&idx=1&sn=59baf4a22d9a9abeb42599ac91e11a79)
+
 2. [领域大模型-训练Trick&落地思考](https://zhuanlan.zhihu.com/p/648798461)
 
 
@@ -89,7 +92,6 @@ LLM（Large Language Models）的领域专业化可以理解为将广泛训练�
     [Awesome-Domain-LLM](https://github.com/www6v/Awesome-Domain-LLM)
 1xx. [医疗金融法律大模型：从ChatDoctor到BloombergGPT/FinGPT/FinBERT、ChatLaw/LawGPT_zh](https://blog.csdn.net/v_JULY_v/article/details/131550529?spm=1001.2014.3001.5502)
 1xx. [再谈垂直领域大模型及今日前沿速递：金融领域FinBERT、BloombergGPT以及法律领域微调模型LawGPT_zh](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648400666&idx=1&sn=bc47e8c4eca6fc4baaded42fa3c6bd77)
-
 
 1xx. {% post_link 'gptLeaderBoard' %} self
 1xx. [Awesome-Domain-LLM](https://github.com/www6v/Awesome-Domain-LLM)  git 全
