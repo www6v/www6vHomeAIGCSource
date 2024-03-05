@@ -110,7 +110,8 @@ top:
 + {% post_link 'gptAgent' %}
 + {% post_link 'gptMultiAgents' %}  
 + {% post_link 'gptAgentPractice' %} 
-+ {% post_link 'gptAgentPlanAndExecute' %}  
++ {% post_link 'gptAgentPlanAndExecute' %}
++ {% post_link 'gptAgentList' %} 
 + Multimodal Agent
   + {% post_link 'gptAgentMultimodal' %}  
   + {% post_link 'gptAgentWeb' %}   
