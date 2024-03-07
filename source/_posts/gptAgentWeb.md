@@ -16,8 +16,24 @@ categories:
 
 Performing specific tasks on behalf of users in a web scenario is known as the web navigation problem [390]. Agents interpret user instructions, break them down into multiple basic operations, and interact with computers. This often includes web tasks such as filling out forms, online shopping, and sending emails. Agents need to possess the ability to understand instructions within complex web scenarios, adapt to changes (such as noisy text and dynamic HTML web pages), and generalize successful operations [391]. In this way, agents can achieve accessibility and automation when dealing with unseen tasks in the future [435], ultimately freeing humans from repeated interactions with computer UIs. Agents trained through reinforcement learning can effectively mimic human behavior using predefined actions like typing, searching, navigating to the next page, etc. They perform well in basic tasks such as online shopping [392] and search engine retrieval [90], which have been widely explored. However, agents without LLM capabilities may struggle to adapt to the more realistic and complex scenarios in the real-world Internet. In dynamic, content-rich web pages such as online forums or online business management [391], agents often face challenges in performance. In order to enable successful interactions between agents and more realistic web pages, some researchers [393; 394] have started to leverage the powerful HTML reading and understanding abilities of LLMs. By designing prompts, they attempt to make agents understand the entire HTML source code and predict more reasonable next action steps. Mind2Web [389] combines multiple LLMs fine-tuned for HTML, allowing them to summarize verbose HTML code [388] in real-world scenarios and extract valuable information. Furthermore, WebGum [390] empowers agents with visual perception abilities by employing a multimodal corpus containing HTML screenshots. It simultaneously fine-tunes the LLM and a visual encoder, deepening the agent’s comprehensive understanding of web pages.
 
+# papers [2]
+
+**In web scenarios**
+- [2023/10] **OpenAgents: An Open Platform for Language Agents in the Wild.** *XLang Lab (The University of Hong Kong) arXiv.* [[paper](https://arxiv.org/abs/2310.10634)] [[project page](https://docs.xlang.ai)] [[code](https://github.com/xlang-ai/OpenAgents)] [[demo](https://chat.xlang.ai)]
+- [2023/07] **WebArena: A Realistic Web Environment for Building Autonomous Agents.** *Shuyan Zhou (CMU) et al. arXiv.* [[paper](https://arxiv.org/abs/2307.13854)] [[code](https://webarena.dev/)] *
+- [2023/07] **A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis.** *Izzeddin Gur (DeepMind) et al. arXiv.* [[paper](https://arxiv.org/abs/2307.12856)]
+- [2023/06] **SYNAPSE: Leveraging Few-Shot Exemplars for
+Human-Level Computer Control.** *Longtao Zheng (Nanyang Technological University) et al. arXiv.* [[paper](https://arxiv.org/abs/2306.07863)] [[code](https://github.com/ltzheng/synapse)] *
+- [2023/06] **Mind2Web: Towards a Generalist Agent for the Web.** *Xiang Deng (The Ohio State University) et al. arXiv.* [[paper](https://arxiv.org/abs/2306.06070)] [[code](https://osu-nlp-group.github.io/Mind2Web/)]
+- [2023/05] **Multimodal Web Navigation with Instruction-Finetuned Foundation Models.** *Hiroki Furuta (The University of Tokyo) et al. arXiv.* [[paper](https://arxiv.org/abs/2305.11854)]
+- [2023/03] **Language Models can Solve Computer Tasks.** *Geunwoo Kim (University of California) et al. arXiv.* [[paper](https://arxiv.org/abs/2303.17491)] [[code](https://github.com/posgnu/rci-agent)]
+- [2022/07] **WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents.** *Shunyu Yao (Princeton University) et al. arXiv.* [[paper](https://arxiv.org/abs/2207.01206)] [[code](https://webshop-pnlp.github.io/)] *
+- [2021/12] **WebGPT: Browser-assisted question-answering with human feedback.** *Reiichiro Nakano (OpenAI) et al. arXiv.* [[paper](https://arxiv.org/abs/2112.09332)]
+- [2023/05] **Agents: An Open-source Framework for Autonomous Language Agents.** *Wangchunshu Zhou (AIWaves) et al. arXiv.* [[paper](https://arxiv.org/pdf/2309.07870.pdf)] [[code](https://github.com/aiwaves-cn/agents)]
+
 # 参考
-1. 《The Rise and Potential of Large Language Model Based Agents: A Survey》
+1. 《The Rise and Potential of Large Language Model Based Agents: A Survey》、
+2. [The Rise and Potential of Large Language Model Based Agents: A Survey](https://github.com/woooodyy/llm-agent-paper-list) git
 1xx. [Multimodal Web Navigation with Instruction-Finetuned Foundation Models](https://sites.google.com/view/mm-webnav/)
 1xx. [Google DeepMind｜具备规划长程上下文理解和程序合成能力的真实世界WebAgent](https://hub.baai.ac.cn/view/28104)
 1xx. [LLMs-Agent 论文: WebAgent, 2023, Izzeddin Gur et al., Google DeepMind.](https://zhuanlan.zhihu.com/p/662146234)
