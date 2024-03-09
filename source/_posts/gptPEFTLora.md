@@ -130,10 +130,11 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
 3.2 [finetune_clm_lora.py](https://github.com/www6v/Llama2-Chinese/blob/ww-workable/train/sft/finetune_clm_lora.py#L460C18-L460C19)  注释掉第360行   
 3.3 [train/sft/finetune_lora.sh](https://github.com/www6v/Llama2-Chinese/blob/ww-workable/train/sft/finetune_lora.sh)
 
-1xx. [ Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) git
-   [中文LLaMA&Alpaca大语言模型词表扩充+预训练+指令精调](https://zhuanlan.zhihu.com/p/631360711)
+1xx. [Using LangSmith to Support Fine-tuning](https://blog.langchain.dev/using-langsmith-to-support-fine-tuning-of-open-source-llms/)
+    [LangSmith + LLaMA Fine-tuning Guide](https://colab.research.google.com/drive/1tpywvzwOS74YndNXhI8NUaEfPeqOc7ub?usp=sharing&ref=blog.langchain.dev#scrollTo=v1tOYeVGtQKJ)
 
 ### ChatGLM
+
 1xx. [train_lora.sh](https://github.com/www6v/fine-tuning-lab/blob/agiclass-v1/chatglm/train_lora.sh)  基于法律文本的chatglm的lora
 [train_lora.sh](https://github.com/www6v/fine-tuning-lab/blob/agiclass-v1/chatglm2/train_lora.sh)  基于法律文本的chatglm-2的lora
 [十一、小参数量微调](https://github.com/www6v/fullStackLLM/blob/master/08-fine-tuning/peft/index.ipynb)
