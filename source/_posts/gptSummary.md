@@ -71,6 +71,7 @@ top:
   + {% post_link 'gptFineTuningWhen' %}  
   + {% post_link 'gptPromptTuning' %} 
   + {% post_link 'gptInstructTuning' %} 
+  + {% post_link 'gptInstructTuningSurvey' %}  
 + 实战
   + {% post_link 'gptFineTuningPEFT' %}  
     + {% post_link 'gptPEFTLora' %} 
