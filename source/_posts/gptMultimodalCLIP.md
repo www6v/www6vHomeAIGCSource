@@ -11,6 +11,10 @@ categories:
 <p></p>
 <!-- more -->
 
+# CLIP
+英文全称是**Contrastive Language-Image Pre-training**
+
+# 参考
 1xx. [神器CLIP：连接文本和图像，打造可迁移的视觉模型](https://zhuanlan.zhihu.com/p/493489688)
 1xx. [【CLIP系列Paper解读】CLIP: Learning Transferable Visual Models From Natural Language Supervision](https://zhuanlan.zhihu.com/p/486857682)
 1xx. [关于多模态经典之作CLIP，还有哪些细节是你不知道的](https://zhuanlan.zhihu.com/p/660476765)
@@ -19,7 +23,4 @@ categories:
 1xx. [openai多模态大模型：clip详解及实战](https://blog.csdn.net/lsb2002/article/details/132275132)
 
 
-
-
-
-
+1xx. [CLIP：多模态领域革命者](https://zhuanlan.zhihu.com/p/555314976)

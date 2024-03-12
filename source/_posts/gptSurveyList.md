@@ -250,7 +250,11 @@ categories:
 
 
 ### Visual LLM
-- MM-LLMs: Recent Advances in MultiModal Large Language Models, 2024.02 ***
+- Multimodal Foundation Models: From Specialists to General-Purpose Assistants *** microsoft
+
+- Foundational Models Defining a New Era in Vision: A Survey and Outlook ***  大学
+ 
+- MM-LLMs: Recent Advances in MultiModal Large Language Models, 2024.02 *** 腾讯
 
 - Vision-Language Instruction Tuning: A Review and Analysis, 2023,11 [[paper]](https://arxiv.org/abs/2311.08172)[[project]](https://github.com/palchenli/VL-Instruction-Tuning) ***
 

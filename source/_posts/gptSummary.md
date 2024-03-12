@@ -89,9 +89,10 @@ top:
 ## Multimodal
 + {% post_link 'gptMultimodal' %} 
 + {% post_link 'gptMultimodalPretrain' %}  
-+ {% post_link 'gptMultimodalCLIP' %}  
-+ {% post_link 'gptMultimodalSAM' %}   
-+ {% post_link 'gptMultimodalVit' %}   
++ 基础模型  
+	+ {% post_link 'gptMultimodalCLIP' %}  
+	+ {% post_link 'gptMultimodalSAM' %}   
+	+ {% post_link 'gptMultimodalVit' %}   
 
 ## RAG
 

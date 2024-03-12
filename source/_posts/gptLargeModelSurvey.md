@@ -96,3 +96,4 @@ todo
      [详谈大模型训练中的数据收集、处理与模型影响：A Survey of Large Language Models工作中的数据总结](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648400817&idx=1&sn=c1ed1c9c87bf2526e02d21d84429c5cf)
      
 
+1xx. [43页预训练模型综述（清华、复旦、人大）](https://zhuanlan.zhihu.com/p/381282229)

@@ -1,5 +1,5 @@
 ---
-title: 多模态
+title: 多模态 综述
 date: 2023-01-18 09:48:37
 tags:
   - multimodal
@@ -10,6 +10,9 @@ categories:
 
 <p></p>
 <!-- more -->
+
+## 目录
+<!-- toc -->
 
 # 基础模型分类 [1]
 {% asset_img  'pattern.webp' %}
@@ -38,8 +41,6 @@ categories:
 # 架构 [1]
 {% asset_img  'arch.webp' %}
 
-# CLIP
-英文全称是**Contrastive Language-Image Pre-training**
 
 # 其他
 + 对比
@@ -54,16 +55,24 @@ categories:
   - 行为识别（Action Recognition）
   
 # 参考
-### overview
-1. 《Foundational Models Defining a New Era in Vision: A Survey and Outlook》
+### survey
+1. 《Foundational Models Defining a New Era in Vision: A Survey and Outlook》大学
     [视觉大模型的全面解析](https://blog.csdn.net/qq_45368632/article/details/132180645)
     [基础模型定义视觉的新时代：综述和展望](https://zhuanlan.zhihu.com/p/655135848)
-    
+    [万字长文带你全面解读视觉大模型](https://zhuanlan.zhihu.com/p/648578542)
+
+1xx. 《Multimodal Foundation Models:From Specialists to General-Purpose Assistants》  microsoft
+   [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://blog.csdn.net/qq_41200212/article/details/134663233)   
+   [AGI之MFM：《Multimodal Foundation Models: From Specialists to General-Purpose Assistants多模态基础模型：从专家到通用助](https://blog.csdn.net/qq_41185868/article/details/133594461)
 
 1xx. [AI之MLM：《MM-LLMs: Recent Advances in MultiModal Large Language Models多模态大语言模型的最新进展》翻译与解读](https://blog.csdn.net/qq_41185868/article/details/135877268)
    [腾讯发布的多模态大模型（MM-LLM）的最新综述、从26个最新的多模态大模型中归纳最佳实践](https://zhuanlan.zhihu.com/p/680487634)
    [多模态大模型最新完整综述 MM-LLMs](https://zhuanlan.zhihu.com/p/680955430)
 [mm-llms](https://mm-llms.github.io/archives/) 腾讯
+
+### Overview
+1xx. [MLLM首篇综述 | 一文全览多模态大模型的前世、今生和未来](https://cloud.tencent.com/developer/article/2322835)
+   [A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
 
 1xx. [[Transformer 101系列] 多模态的大一统之路](https://zhuanlan.zhihu.com/p/643969218)
 
@@ -72,7 +81,6 @@ categories:
 
 1xx. [写在多模态征服一切之前（未来数据和模型应该是什么样的？）](https://zhuanlan.zhihu.com/p/667942680)
 
-1xx. [多模大语言模型综述](https://arxiv.org/abs/2306.13549)
 
 ### chat
 1xx. [[论文阅读] 双子座：一个功能强大的多模态模型系列，Gemini: A Family of Highly Capable Multimodal Models](https://zhuanlan.zhihu.com/p/670821058)
@@ -85,8 +93,16 @@ categories:
 
 ### other
 1xx. [DeepMind出手！多模态小样本打败精调](https://zhuanlan.zhihu.com/p/511517344)
+1xx. [大模型系列04 -文本图像生成](https://zhuanlan.zhihu.com/p/669757416)
+
+
+
+1xx. [基于LLMs的多模态大模型（Flamingo, BLIP-2，KOSMOS-1，ScienceQA）](https://blog.csdn.net/qq_39388410/article/details/130757157)
+
+
 
 ### agent
+
 1xx. [WebVoyager：借助强大多模态模型，开创全新的网络智能体 [译]](https://baoyu.io/translations/ai-paper/2401.13919-webvoyager-building-an-end-to-end-web-agent-with-large-multimodal-models)
 
 
