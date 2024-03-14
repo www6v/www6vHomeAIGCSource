@@ -136,6 +136,10 @@ categories:
 - Towards Better Chain-of-Thought Prompting Strategies: A Survey, 2023.10 [[paper]](https://arxiv.org/pdf/2310.04959.pdf)
 
 ### Retrieval-Augmented LLM
+- Retrieving Multimodal Information for Augmented Generation: A Survey  *** 
+
+- Retrieval-Augmented Generation for AI-Generated Content: A Survey *** 
+
 - A Survey on Retrieval-Augmented Text Generation, 2022.02 [[paper]](https://arxiv.org/abs/2202.01110)
 
 - Retrieval-Augmented Generation for Large Language Models: A Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2312.10997.pdf) [[project]](https://github.com/Tongji-KGLLM/RAG-Survey) ***
@@ -250,13 +254,15 @@ categories:
 
 
 ### Visual LLM
-- Multimodal Foundation Models: From Specialists to General-Purpose Assistants *** microsoft
+- An Empirical Study of Training End-to-End Vision-and-Language Transformers, 2022.03 *** microsoft +
 
-- Foundational Models Defining a New Era in Vision: A Survey and Outlook ***  大学
- 
-- MM-LLMs: Recent Advances in MultiModal Large Language Models, 2024.02 *** 腾讯
+- Multimodal Foundation Models: From Specialists to General-Purpose Assistants, 2023.09 *** microsoft +
 
-- Vision-Language Instruction Tuning: A Review and Analysis, 2023,11 [[paper]](https://arxiv.org/abs/2311.08172)[[project]](https://github.com/palchenli/VL-Instruction-Tuning) ***
+- Foundational Models Defining a New Era in Vision: A Survey and Outlook, 2023.07 ***  大学 +
+
+- MM-LLMs: Recent Advances in MultiModal Large Language Models, 2024.02 *** 腾讯  +
+
+- Vision-Language Instruction Tuning: A Review and Analysis, 2023,11 [[paper]](https://arxiv.org/abs/2311.08172)[[project]](https://github.com/palchenli/VL-Instruction-Tuning) *** + 
 
 - How to Bridge the Gap between Modalities: A Comprehensive Survey on Multimodal Large Language Model, 2023.11 [[paper]](https://arxiv.org/pdf/2311.07594.pdf) *
   
@@ -266,13 +272,12 @@ categories:
 
 - Large Language Models Meet Computer Vision: A Brief Survey, 2023.11 [[paper]](https://arxiv.org/pdf/2311.16673.pdf) *
 
-- Foundational Models Defining a New Era in Vision: A Survey and Outlook, 2023.07 [[paper]](https://arxiv.org/pdf/2307.13721.pdf)[[project]](https://github.com/awaisrauf/Awesome-CV-Foundational-Models) ***
+- Foundational Models Defining a New Era in Vision: A Survey and Outlook, 2023.07 [[paper]](https://arxiv.org/pdf/2307.13721.pdf)[[project]](https://github.com/awaisrauf/Awesome-CV-Foundational-Models) ***  + 
 
 - Video Understanding with Large Language Models: A Survey, 2023.12 [[paper]](https://arxiv.org/pdf/2312.17432.pdf) [[project]](https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding)
 
 
 ---
-
 ## LLM for Domain Application
 ### domain
 - Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey
