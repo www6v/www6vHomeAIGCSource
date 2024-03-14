@@ -22,24 +22,30 @@ categories:
  分析pdf中表格 
 
 ### multi-modal (text + tables + images) RAG [13] 
+分析PDF中图片
++ **Option 1** [代码] [基于CLIP]
+	* Use multimodal embeddings **(such as [CLIP](https://openai.com/research/clip))** to embed images and text
+	* Retrieve both using similarity search
+	* Pass **raw images and text chunks** to a multimodal LLM for answer synthesis 
+   {选项1：对文本和表格生成summary，然后应用多模态embedding模型把文本/表格summary、原始图片转化成embedding存入多向量检索器。对话时，根据query召回原始文本/表格/图像。然后将其喂给多模态LLM生成应答结果。}[10]
+   
++ **Option 2** [代码] 
+	* Use a multimodal LLM (such as [GPT4-V](https://openai.com/research/gpt-4v-system-card), [LLaVA](https://llava.hliu.cc/), or [FUYU-8b](https://www.adept.ai/blog/fuyu-8b)) to produce **text summaries from images**
+	* Embed and retrieve text 
+	* Pass text chunks to an LLM for answer synthesis 
+  【将图片转成摘要，和其他文本信息整合在文本粒度进行检索】[15]
+   {选项2：首先应用多模态大模型（GPT4-V、LLaVA、FUYU-8b）生成图片summary。然后对文本/表格/图片summary进行向量化存入多向量检索器中。当生成应答的多模态大模型不具备时，可根据query召回原始文本/表格+图片summary。}[10]
+
++ Option 3 
+	* Use a multimodal LLM (such as [GPT4-V](https://openai.com/research/gpt-4v-system-card), [LLaVA](https://llava.hliu.cc/), or [FUYU-8b](https://www.adept.ai/blog/fuyu-8b)) to produce text summaries from images
+	* Embed and retrieve image summaries with a reference to the raw image 
+	* Pass **raw images and text chunks** to a multimodal LLM for answer synthesis  
+   【实际模型输入使用的是图片】
+   【图片概要依然是用于检索（GPT-4V，LLaVA，FUYU-8b）】[15]
+    {选项3：前置阶段同选项2相同。对话时，根据query召回原始文本/表格/图片。构造完整Prompt，访问多模态大模型生成应答结果。}[10]
 
 ###  private multi-modal (text + tables + images)  RAG [14]
 
-分析PDF中图片
-**Option 1** 
-* Use multimodal embeddings **(such as [CLIP](https://openai.com/research/clip))** to embed images and text
-* Retrieve both using similarity search
-* Pass **raw images and text chunks** to a multimodal LLM for answer synthesis 
-
-**Option 2** 
-* Use a multimodal LLM (such as [GPT4-V](https://openai.com/research/gpt-4v-system-card), [LLaVA](https://llava.hliu.cc/), or [FUYU-8b](https://www.adept.ai/blog/fuyu-8b)) to produce **text summaries from images**
-* Embed and retrieve text 
-* Pass text chunks to an LLM for answer synthesis 
-
-**Option 3** 
-* Use a multimodal LLM (such as [GPT4-V](https://openai.com/research/gpt-4v-system-card), [LLaVA](https://llava.hliu.cc/), or [FUYU-8b](https://www.adept.ai/blog/fuyu-8b)) to produce text summaries from images
-* Embed and retrieve image summaries with a reference to the raw image 
-* Pass **raw images and text chunks** to a multimodal LLM for answer synthesis  
 
 ### 组件
 + pdf解析
@@ -72,4 +78,4 @@ categories:
     [Private Semi-structured and Multi-modal RAG w/ LLaMA2 and LLaVA](https://github.com/langchain-ai/langchain/blob/master/cookbook/Semi_structured_multi_modal_RAG_LLaMA2.ipynb)
     
     
-1xx. [langchain的multi model RAG-以多模态pdf文件为例子](https://zhuanlan.zhihu.com/p/665814914)
+15. [langchain的multi model RAG-以多模态pdf文件为例子](https://zhuanlan.zhihu.com/p/665814914)
