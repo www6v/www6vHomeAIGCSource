@@ -29,16 +29,14 @@ categories:
 {% asset_img 'rag-vs-ft.jpg' %}
 
 
-
-# 多模态+RAG[3][5]
-
-
-
 # 参考
 1. [Deconstructing RAG](https://blog.langchain.dev/deconstructing-rag/) ***
 
 ### 综述
 2. [LLM之RAG理论（二）| RAG综述论文详解](https://zhuanlan.zhihu.com/p/673910600)
+   [同济大学发布最新检索增强(RAG)的LLM生成技术综述](https://cloud.tencent.com/developer/article/2373340)
+   [大语言模型的检索增强生成 (RAG) 方法](https://www.promptingguide.ai/zh/research/rag)
+   
 3. [NLP（廿一）：从 RAG 到 Self-RAG —— LLM 的知识增强](https://zhuanlan.zhihu.com/p/661465330?utm_id=0) *** 
 
 
@@ -49,14 +47,13 @@ categories:
 
 
 
-### 多模态
-5. [万字综述：2023年多模态检索增强生成技术(mRAG)最新进展与趋势-图片、代码、图谱、视频、声音、文本](https://zhuanlan.zhihu.com/p/665078079) 
-
 ### 评估
 1xx. [再看大模型RAG检索增强如何评估：RAGAS开源自动化评估框架](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404511&idx=2&sn=fefb78c1d920cb5b437f2e3da9935637)
 1xx. [大模型RAG检索增强问答如何评估：噪声、拒答、反事实、信息整合四大能力评测任务探索 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404476&idx=2&sn=d07b27dc9162ab0aaec3108004e4cfbe)
 
 
+
+XXX
 
 1xx. [高级检索增强生成技术(RAG)全面指南：原理、分块、编码、索引、微调、Agent、展望](https://zhuanlan.zhihu.com/p/673922981) 
 1xx. [知识密集型自然语言处理任务的检索增强生成技术研究 [译]](https://baoyu.io/translations/ai-paper/2005.11401-retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks)

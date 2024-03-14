@@ -90,7 +90,7 @@ top:
 ## Multimodal
 + {% post_link 'gptMultimodal' %} 
 + {% post_link 'gptMultimodalPretrain' %}  
-+ 基础模型  
++ backbone 
 	+ {% post_link 'gptMultimodalCLIP' %}  
 	+ {% post_link 'gptMultimodalSAM' %}   
 	+ {% post_link 'gptMultimodalVit' %}   
@@ -102,6 +102,7 @@ top:
 + {% post_link 'gptRAGPerformance' %}
 + {% post_link 'gptRAGPerformanceOpenAI' %} 
 + {% post_link 'gptRAGSelfReflective' %} 
++ {% post_link 'gptRAGMultimodal' %}  
 
 ## Langchain
 + {% post_link 'gptLangchain' %}
