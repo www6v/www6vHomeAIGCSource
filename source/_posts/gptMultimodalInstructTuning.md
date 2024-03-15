@@ -13,6 +13,10 @@ categories:
 
 
 # 参考
+1xx. 《Vision-Language Instruction Tuning: A Review and Analysis》 *** 腾讯
+
+1xx. 《Instruction Tuning for Large Language Models: A Survey》 第5节
+
 1xx. [【LMM 015】LAMM：多模态指令微调数据集，框架和基准](https://datac.blog.csdn.net/article/details/135434897)
 
 1xx. [Talk | ACL'23 杰出论文，MultiIntruct：通过多模态指令集微调提升VLM的零样本学习](https://www.bilibili.com/video/BV12p4y1M7RV/)

@@ -38,13 +38,19 @@ MiniGPT-4 增加了一个**投影层**，将**编码的视觉特征与 Vicuna �
   	- LAION   
 
 ### CURATING A **HIGH-QUALITY ALIGNMENT DATASET** FOR VISION-LANGUAGE DOMAIN.
-+ Create a dataset with detailed, human-perfered descriptions[2]
++ Create a dataset with detailed, human-perfered descriptions[2][1]
   + model  generates descriptions
+    在初始阶段，我们使用从第一个预训练阶段得到的模型来**生成输入图像的描述**。      
   + polishing and filtering by chatgpt
+    上述自动生成的图片说明包含**噪音或不连贯的描述**，例如单词或句子重复，句子支离破碎或内容不相关。为了解决这些问题，我们采用了**ChatGPT**，通过以下提示对描述进行**修补**
   + further polishing and filtering by rules & human
-
+    完成后处理阶段后，我们会手动验证每张图片说明的正确性，以保证其高质量。
+    
 ### SECOND-STAGE **FINETUNING**
 + 第二阶段：使用一个较小但高质量的图像-文本数据集对预训练模型进行微调，并设计了对话模板，以提高生成的可靠性和可用性。
+
+
+【blip2能识别图像，但是对话能力比较弱，不能说出图像中的细节。在pre-train阶段获取视觉语言知识， 在fine-tuning 阶段获取对话能力】  [2]
 
 # 参考
 ### 原理
