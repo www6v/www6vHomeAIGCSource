@@ -95,6 +95,7 @@ top:
 	+ {% post_link 'gptMultimodalCLIP' %}  
 	+ {% post_link 'gptMultimodalSAM' %}   
 	+ {% post_link 'gptMultimodalVit' %}   
+	+ {% post_link 'gptMultimodalBlip' %}    
 + chat
     + {% post_link 'gptMultimodalLlava' %}  
     + {% post_link 'gptMultimodalMinigpt4' %}   
