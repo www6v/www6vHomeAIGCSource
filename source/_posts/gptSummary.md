@@ -90,13 +90,14 @@ top:
 ## Multimodal
 + {% post_link 'gptMultimodal' %} 
 + {% post_link 'gptMultimodalPretrain' %}  
++ {% post_link 'gptMultimodalInstructTuning' %}  
 + backbone 
 	+ {% post_link 'gptMultimodalCLIP' %}  
 	+ {% post_link 'gptMultimodalSAM' %}   
 	+ {% post_link 'gptMultimodalVit' %}   
 + chat
-    + {% post_link 'gptMultimodalLlava' %}   
-
+    + {% post_link 'gptMultimodalLlava' %}  
+    + {% post_link 'gptMultimodalMinigpt4' %}   
 
 ## RAG
 
