@@ -42,6 +42,13 @@ categories:
 {% asset_img  'arch.webp' %}
 
 
+# 总结 [10]
+{% asset_img  'multimodal.webp' %}
+
+# Model Architecture[2]
+{% asset_img  'multimodalArach.png' %}
+
+
 # 其他
 + 对比
   - [CNN  更深的网络]
@@ -61,19 +68,22 @@ categories:
     [基础模型定义视觉的新时代：综述和展望](https://zhuanlan.zhihu.com/p/655135848)
     [万字长文带你全面解读视觉大模型](https://zhuanlan.zhihu.com/p/648578542)
 
-1xx. 《Multimodal Foundation Models:From Specialists to General-Purpose Assistants》  microsoft
-   [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://blog.csdn.net/qq_41200212/article/details/134663233)   
-   [AGI之MFM：《Multimodal Foundation Models: From Specialists to General-Purpose Assistants多模态基础模型：从专家到通用助](https://blog.csdn.net/qq_41185868/article/details/133594461)
-
-1xx. [AI之MLM：《MM-LLMs: Recent Advances in MultiModal Large Language Models多模态大语言模型的最新进展》翻译与解读](https://blog.csdn.net/qq_41185868/article/details/135877268)
+2. [AI之MLM：《MM-LLMs: Recent Advances in MultiModal Large Language Models多模态大语言模型的最新进展》翻译与解读](https://blog.csdn.net/qq_41185868/article/details/135877268) 翻译
    [腾讯发布的多模态大模型（MM-LLM）的最新综述、从26个最新的多模态大模型中归纳最佳实践](https://zhuanlan.zhihu.com/p/680487634)
    [多模态大模型最新完整综述 MM-LLMs](https://zhuanlan.zhihu.com/p/680955430)
 [mm-llms](https://mm-llms.github.io/archives/) 腾讯
 
+1xx. 《Multimodal Foundation Models:From Specialists to General-Purpose Assistants》  microsoft
+   [AGI之MFM：《Multimodal Foundation Models: From Specialists to General-Purpose Assistants多模态基础模型：从专家到通用助](https://blog.csdn.net/qq_41185868/article/details/133594461) 翻译
+   [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://blog.csdn.net/qq_41200212/article/details/134663233)   
+
+
 1xx. [MLLM首篇综述 | 一文全览多模态大模型的前世、今生和未来](https://cloud.tencent.com/developer/article/2322835)
    [A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
-   
+
 ### Overview
+10. [多模态大模型 CLIP, BLIP, BLIP2, LLaVA, miniGPT4, InstructBLIP 系列解读](https://zhuanlan.zhihu.com/p/653902791) ***
+
 1xx. [[Transformer 101系列] 多模态的大一统之路](https://zhuanlan.zhihu.com/p/643969218)  *** 
 
 1xx. [Multimodality and Large Multimodal Models (LMMs)](https://huyenchip.com/2023/10/10/multimodal.html)
@@ -87,9 +97,6 @@ categories:
 
 1xx. [166页超长论文阅读，大多模态模型的黎明：GPT-4V的初步探索，The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision) [上]](https://zhuanlan.zhihu.com/p/663655741)
 
-1xx. [使用大型语言模型为MiniGPT-4构建视觉语言理解能力](https://apposcmf8kb5033.pc.xiaoe-tech.com/live_pc/l_64a7d282e4b007b201a34052) V
-
-1xx. [基于视觉指令调整的多模态聊天机器人 LLaVA](https://apposcmf8kb5033.pc.xiaoe-tech.com/live_pc/l_64a7d4fde4b0d1e42e7fc7e6)  V
 
 ### other
 1xx. [DeepMind出手！多模态小样本打败精调](https://zhuanlan.zhihu.com/p/511517344)

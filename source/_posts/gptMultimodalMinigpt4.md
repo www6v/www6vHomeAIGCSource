@@ -58,6 +58,7 @@ MiniGPT-4 增加了一个**投影层**，将**编码的视觉特征与 Vicuna �
 2. [MiniGPT-4、表格推理、代码生成、生成式推理-来自斯坦福、北大、阿卜杜拉、达摩院的四位论文一作思辨大模型](https://www.bilibili.com/video/BV1n24y1F7kv/) V
 1xx. [miniGPT4：多模态图文理解训练](https://www.bilibili.com/video/BV12Q4y1b7nY/) V
 1xx. [MiniGPT-4实现原理及其核心BLIP2模型实践：从代表性图文对数据集、BLIP2模型结构到调用实践 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648400402&idx=1&sn=efd84698e6a207b2035995ec2e255417)
+1xx. [使用大型语言模型为MiniGPT-4构建视觉语言理解能力](https://apposcmf8kb5033.pc.xiaoe-tech.com/live_pc/l_64a7d282e4b007b201a34052) V
 
 ### 实战
 1xx. [大杀器，多模态大模型MiniGPT-4入坑指南](https://zhuanlan.zhihu.com/p/627671257)
