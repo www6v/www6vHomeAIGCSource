@@ -49,6 +49,18 @@ categories:
 {% asset_img  'multimodalArach.png' %}
 
 
+
+# 视觉理解 [3]
+
+{% asset_img  'understanding.png' %}
+
+{% asset_img  'understanding-method.png' %}
+
+
+# 视觉生成 [3]
+{% asset_img  'generation.png' %}
+
+
 # 其他
 + 对比
   - [CNN  更深的网络]
@@ -71,9 +83,9 @@ categories:
 2. [AI之MLM：《MM-LLMs: Recent Advances in MultiModal Large Language Models多模态大语言模型的最新进展》翻译与解读](https://blog.csdn.net/qq_41185868/article/details/135877268) 翻译
    [腾讯发布的多模态大模型（MM-LLM）的最新综述、从26个最新的多模态大模型中归纳最佳实践](https://zhuanlan.zhihu.com/p/680487634)
    [多模态大模型最新完整综述 MM-LLMs](https://zhuanlan.zhihu.com/p/680955430)
-[mm-llms](https://mm-llms.github.io/archives/) 腾讯
+   [mm-llms](https://mm-llms.github.io/archives/) 腾讯
 
-1xx. 《Multimodal Foundation Models:From Specialists to General-Purpose Assistants》  microsoft
+3. 《Multimodal Foundation Models:From Specialists to General-Purpose Assistants》  microsoft
    [AGI之MFM：《Multimodal Foundation Models: From Specialists to General-Purpose Assistants多模态基础模型：从专家到通用助](https://blog.csdn.net/qq_41185868/article/details/133594461) 翻译
    [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://blog.csdn.net/qq_41200212/article/details/134663233)   
 
@@ -103,13 +115,11 @@ categories:
 1xx. [大模型系列04 -文本图像生成](https://zhuanlan.zhihu.com/p/669757416)
 
 
-
 1xx. [基于LLMs的多模态大模型（Flamingo, BLIP-2，KOSMOS-1，ScienceQA）](https://blog.csdn.net/qq_39388410/article/details/130757157)
 
 
 
 ### agent
-
 1xx. [WebVoyager：借助强大多模态模型，开创全新的网络智能体 [译]](https://baoyu.io/translations/ai-paper/2401.13919-webvoyager-building-an-end-to-end-web-agent-with-large-multimodal-models)
 
 
