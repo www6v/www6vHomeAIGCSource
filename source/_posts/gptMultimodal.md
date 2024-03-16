@@ -50,17 +50,6 @@ categories:
 
 
 
-# 视觉理解 [3]
-
-{% asset_img  'understanding.png' %}
-
-{% asset_img  'understanding-method.png' %}
-
-
-# 视觉生成 [3]
-{% asset_img  'generation.png' %}
-
-
 # 其他
 + 对比
   - [CNN  更深的网络]
@@ -85,18 +74,12 @@ categories:
    [多模态大模型最新完整综述 MM-LLMs](https://zhuanlan.zhihu.com/p/680955430)
    [mm-llms](https://mm-llms.github.io/archives/) 腾讯
 
-3. 《Multimodal Foundation Models:From Specialists to General-Purpose Assistants》  microsoft
-   [AGI之MFM：《Multimodal Foundation Models: From Specialists to General-Purpose Assistants多模态基础模型：从专家到通用助](https://blog.csdn.net/qq_41185868/article/details/133594461) 翻译
-   [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://blog.csdn.net/qq_41200212/article/details/134663233)   
-
 
 1xx. [MLLM首篇综述 | 一文全览多模态大模型的前世、今生和未来](https://cloud.tencent.com/developer/article/2322835)
    [A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
 
 ### Overview
 10. [多模态大模型 CLIP, BLIP, BLIP2, LLaVA, miniGPT4, InstructBLIP 系列解读](https://zhuanlan.zhihu.com/p/653902791) ***
-
-1xx. [[Transformer 101系列] 多模态的大一统之路](https://zhuanlan.zhihu.com/p/643969218)  *** 
 
 1xx. [Multimodality and Large Multimodal Models (LMMs)](https://huyenchip.com/2023/10/10/multimodal.html)
    [多模态和多模态大模型 (LMM)[译]](https://baoyu.io/translations/lmm/multimodality-and-large-multimodal-models)

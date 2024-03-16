@@ -89,6 +89,7 @@ top:
 
 ## Multimodal
 + {% post_link 'gptMultimodal' %} 
++ {% post_link 'gptMultimodalSurvey' %} 
 + {% post_link 'gptMultimodalPretrain' %}  
 + {% post_link 'gptMultimodalInstructTuning' %}  
 + backbone 
