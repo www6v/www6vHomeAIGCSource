@@ -86,6 +86,7 @@ categories:
 
 1xx. [写在多模态征服一切之前（未来数据和模型应该是什么样的？）](https://zhuanlan.zhihu.com/p/667942680)
 
+1xx. [多模态论文串讲](https://blog.csdn.net/qq_52038588/article/details/133893013) ***
 
 ### chat
 1xx. [[论文阅读] 双子座：一个功能强大的多模态模型系列，Gemini: A Family of Highly Capable Multimodal Models](https://zhuanlan.zhihu.com/p/670821058)

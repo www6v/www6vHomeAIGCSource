@@ -135,7 +135,7 @@ categories:
 
 1xx. [大模型研发核心：数据工程、自动化评估及与知识图谱的结合](https://hub.baai.ac.cn/view/28740)
    [大模型研发核心：数据工程、自动化评估及与知识图谱的结合 ](https://mp.weixin.qq.com/s/SvDnQD886E3DBtw8k9asgg)
-   
+
 1xx. [符尧：别卷大模型训练了，来卷数据吧！【干货十足】](https://blog.csdn.net/qq_16949707/article/details/133875958) 看最后的5个结论   
 
 50. {% post_link 'gptInstructTuning' %} self
@@ -155,6 +155,8 @@ categories:
 
 ### 数量->scaling law  
 1xx. [数据为王: Textbooks Are All You Need ](https://finisky.github.io/textbooks-are-all-you-need-summary/)   以小博大  打破传统语言模型缩放定律 
+1xx. [Textbooks Are All You Need II: phi-1.5 technical report 精读与翻译](https://zhuanlan.zhihu.com/p/673021932) 
+1xx. [小模型的惊人能力: Phi-2](https://zhuanlan.zhihu.com/p/672066480)
 
 
 ###  指令数据
@@ -171,5 +173,4 @@ categories:
 
 ### 数据质量
 1xx. [再看大模型预训数据质量如何评估：困惑度、错误L2范数和记忆化三种度量方法的效果对比分析研究](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403976&idx=1&sn=694db5e2b3085b1610e8d19daa93a474)
-
 

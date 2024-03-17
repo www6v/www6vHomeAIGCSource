@@ -70,5 +70,5 @@ MultiInstruct [43] build a comprehensive instruction dataset that covers 62 dive
 
 1xx. [【ACL2023】MultiInstruct: Improving Multi-Modal Zero-Shot Learning via Instruction Tuning](https://blog.csdn.net/qq_45978862/article/details/132008907)
 
-
+1xx. [[NeurIPS2023] LAMM：多模态指令微调数据集、框架、评测基准](https://zhuanlan.zhihu.com/p/678489834)
 
