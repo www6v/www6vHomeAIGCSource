@@ -62,8 +62,9 @@ top:
 + DataProcess
   + {% post_link 'gptDataProcess' %}  
   + {% post_link 'gptSelfInstruct' %}   
-  + {% post_link 'gptTrainTokenizer' %}   
-  + {% post_link 'gptDataRefinedWeb' %}    
+  + {% post_link 'gptDataWizard' %} 
+  + {% post_link 'gptDataRefinedWeb' %}  
+  + {% post_link 'gptTrainTokenizer' %}     
 
 ## FineTuning
 + 基础

@@ -148,10 +148,7 @@ categories:
    [GPT-3 训练语料 Common Crawl 处理流程](https://zhuanlan.zhihu.com/p/610659484?utm_id=0)
 
 ###    质量->多样性, 复杂度
-20. [如何构造复杂多样的微调指令数据：WizardLM复杂指令构造思想与实验分析工作总结 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401462&idx=1&sn=764f0302918174cea29ae22ac5760033) 
-
-1xx. [大模型微调究竟需要多少数据：从三个现有代表工作看几组结论及一点思考 ](https://mp.weixin.qq.com/s/c50HrOfKOqgqGPVRHf6EpA)
-     **指令格式的多样性**
+20. {% post_link 'gptDataWizard' %}   self 
 
 ### 数量->scaling law  
 1xx. [数据为王: Textbooks Are All You Need ](https://finisky.github.io/textbooks-are-all-you-need-summary/)   以小博大  打破传统语言模型缩放定律 
