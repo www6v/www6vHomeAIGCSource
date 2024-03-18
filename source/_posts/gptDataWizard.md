@@ -1,5 +1,5 @@
 ---
-title: Wizard[多样性 复杂度]
+title: (多样性 复杂度)Wizard
 date: 2023-03-18 18:57:23
 tags:
   - dataProcess
@@ -22,7 +22,8 @@ categories:
    + In-Breadth Evolving提示 [广度]
      + 目的
        旨在提高**主题覆盖率**、**技能覆盖率**和整体数据集的**多样性**
-      
+     
+
 2）响应生成
 
 3）消除进化
@@ -31,8 +32,8 @@ categories:
 # 参考
 ###   质量-> 多样性, 复杂度
 1. [如何构造复杂多样的微调指令数据：WizardLM复杂指令构造思想与实验分析工作总结 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401462&idx=1&sn=764f0302918174cea29ae22ac5760033) 
-  [WizardLM](https://github.com/nlpxucan/WizardLM) git 
-  
+    [WizardLM](https://github.com/nlpxucan/WizardLM) git 
+
 1xx. [大模型微调究竟需要多少数据：从三个现有代表工作看几组结论及一点思考 ](https://mp.weixin.qq.com/s/c50HrOfKOqgqGPVRHf6EpA)
      **指令格式的多样性**
      《LIMA: Less Is More for Alignment》

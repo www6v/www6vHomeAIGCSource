@@ -150,12 +150,6 @@ categories:
 ###    质量->多样性, 复杂度
 20. {% post_link 'gptDataWizard' %}   self 
 
-### 数量->scaling law  
-1xx. [数据为王: Textbooks Are All You Need ](https://finisky.github.io/textbooks-are-all-you-need-summary/)   以小博大  打破传统语言模型缩放定律 
-1xx. [Textbooks Are All You Need II: phi-1.5 technical report 精读与翻译](https://zhuanlan.zhihu.com/p/673021932) 
-1xx. [小模型的惊人能力: Phi-2](https://zhuanlan.zhihu.com/p/672066480)
-
-
 ###  指令数据
 1xx. [如何从数据集中自动识别高质量的指令数据-IFD指标的使用](https://zhuanlan.zhihu.com/p/658128530)
 

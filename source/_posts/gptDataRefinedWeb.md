@@ -1,5 +1,5 @@
 ---
-title: RefinedWeb
+title: (质量过滤)RefinedWeb, Textbooks
 date: 2024-02-27 17:19:38
 tags:
   - dataProcess
@@ -30,6 +30,7 @@ categories:
 ### 去重（Deduplication）
 
 # 参考
+### RefinedWeb
 1. [数据为王：大模型预训练中的数据处理及思考—The RefinedWeb Dataset for Falcon LLM论文解读](https://zhuanlan.zhihu.com/p/641013454)
 
 1xx. [“超越LLama 65B”的Falcon40B语言模型为什么好：再看精细化的数据清洗的重要性 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401484&idx=1&sn=c49b5ca5fc962ca757d3a082b74f037a) 
@@ -37,3 +38,10 @@ categories:
 
 1xx. [再谈大模型的预训数据清洗与微调数据生成：RedPajama数据处理框架与entity-centric指令生成方法解读 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402104&idx=1&sn=7d4924b2a5a840e4ff3de43299248b1d)
     llama数据的复现项目SlimPajama
+
+
+
+### Textbooks   数量->scaling law  
+1xx. [数据为王: Textbooks Are All You Need ](https://finisky.github.io/textbooks-are-all-you-need-summary/)   以小博大  打破传统语言模型缩放定律 
+1xx. [Textbooks Are All You Need II: phi-1.5 technical report 精读与翻译](https://zhuanlan.zhihu.com/p/673021932) 
+1xx. [小模型的惊人能力: Phi-2](https://zhuanlan.zhihu.com/p/672066480)

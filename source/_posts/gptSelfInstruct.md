@@ -1,5 +1,5 @@
 ---
-title: SELF-INSTRUCT
+title: (多样性)SELF-INSTRUCT
 date: 2023-02-21 14:21:23
 tags:
   - STF
