@@ -1,5 +1,5 @@
 ---
-title: RAG 性能
+title: (原理)RAG 性能
 date: 2022-12-07 09:44:24
 tags:
   - RAG
@@ -92,7 +92,6 @@ Voyage + big-reranker-large
    文中的第二阶段就是指Reranker
 
 1xx. [A Survey of Techniques for Maximizing LLM Performance](https://www.youtube.com/watch?v=ahnGLM-RC1Y)  *** V
-
     [A Survey of Techniques for Maximizing LLM Performance梳理](https://zhuanlan.zhihu.com/p/670880685) 
 
 1xx. [A Cheat Sheet and Some Recipes For Building Advanced RAG](https://blog.llamaindex.ai/a-cheat-sheet-and-some-recipes-for-building-advanced-rag-803a9d94c41b)

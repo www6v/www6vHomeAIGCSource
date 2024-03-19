@@ -1,5 +1,5 @@
 ---
-title: Chinese LLaMA 实战 
+title: (实战)Chinese-LLaMA PT+SFT
 date: 2023-02-21 21:27:19
 tags:
   - train

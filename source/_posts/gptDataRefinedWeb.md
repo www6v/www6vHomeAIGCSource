@@ -39,7 +39,7 @@ categories:
 1xx. [再谈大模型的预训数据清洗与微调数据生成：RedPajama数据处理框架与entity-centric指令生成方法解读 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402104&idx=1&sn=7d4924b2a5a840e4ff3de43299248b1d)
     llama数据的复现项目SlimPajama
 
-
+1xx. [【Falcon Paper】我们是靠洗数据洗败 LLaMA 的！](https://zhuanlan.zhihu.com/p/637996787) 未
 
 ### Textbooks   数量->scaling law  
 1xx. [数据为王: Textbooks Are All You Need ](https://finisky.github.io/textbooks-are-all-you-need-summary/)   以小博大  打破传统语言模型缩放定律 

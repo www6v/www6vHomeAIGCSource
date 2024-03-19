@@ -1,5 +1,5 @@
 ---
-title: 训练-并行 
+title: (原理)分布式并行Training 
 date: 2023-01-06 05:51:54
 tags:
   - train
@@ -30,10 +30,10 @@ categories:
 
 ##### 张量并行 [3]
  {% asset_img 'tensor.png' %}
- 
+
 + Megatron-LM（1D）
 + Colossal-AI（2D、2.5D、3D）
- 
+
 #####   流水线并行 [3]
 {% asset_img 'pipeline.png' %}
 

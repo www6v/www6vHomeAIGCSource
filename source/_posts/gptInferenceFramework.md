@@ -1,5 +1,5 @@
 ---
-title: 推理-框架
+title: (实战)推理-框架
 date: 2023-02-02 11:14:35
 tags:
   - Inference
@@ -54,10 +54,10 @@ vLLM，TensorRT， deepspeed
 
 ### 实战
 10. [lmdeploy 量化部署](https://github.com/InternLM/tutorial/blob/main/lmdeploy/lmdeploy.md)
-   [(5)LMDeploy 大模型量化部署实践](https://www.bilibili.com/video/BV1iW4y1A77P/) V
+      [(5)LMDeploy 大模型量化部署实践](https://www.bilibili.com/video/BV1iW4y1A77P/) V
    
 11. [Atom-7B-Chat vllm推理部署](https://github.com/LlamaFamily/Llama2-Chinese/blob/main/inference-speed/GPU/vllm_example/README.md) 
-   
+
 
 1xx. [TensorRT-LLM保姆级教程（一）-快速入门](https://zhuanlan.zhihu.com/p/666849728)
 1xx. [TensorRT-LLM保姆级教程（二）-离线环境搭建、模型量化及推理](https://zhuanlan.zhihu.com/p/667572720)

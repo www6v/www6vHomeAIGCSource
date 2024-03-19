@@ -1,5 +1,5 @@
 ---
-title: 混合精度 
+title: (原理|实战)混合精度 
 date: 2024-02-01 22:29:42
 tags:
   - Precision
@@ -44,7 +44,7 @@ Loss Scale 主要是为了**解决 fp16 underflow**的问题。
 import torch
 model = AutoModelForCausalLM.from_pretrained("D:/Pretrained_models/modelscope/Llama-2-7b-ms", low_cpu_mem_usage=True, torch_dtype=torch.half, device_map="auto")
 ```
-  
+
 
 # 参考
 ### 原理
@@ -57,5 +57,5 @@ model = AutoModelForCausalLM.from_pretrained("D:/Pretrained_models/modelscope/Ll
 
 20. [半精度训练与LLaMA2训练实战](https://www.bilibili.com/video/BV1CB4y1R78v/) 有代码
     [llama2_lora_16bit.ipynb](https://github.com/www6v/transformers-code/blob/master/04-Kbit%20Training/25-16bits_training/llama2_lora_16bit.ipynb)
-1xx. [PyTorch的自动混合精度（AMP）](https://zhuanlan.zhihu.com/p/165152789) 
-1xx. [混合精度](https://tensorflow.google.cn/guide/mixed_precision?hl=zh-cn)
+    1xx. [PyTorch的自动混合精度（AMP）](https://zhuanlan.zhihu.com/p/165152789) 
+    1xx. [混合精度](https://tensorflow.google.cn/guide/mixed_precision?hl=zh-cn)

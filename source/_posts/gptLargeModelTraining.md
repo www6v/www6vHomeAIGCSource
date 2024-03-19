@@ -1,5 +1,5 @@
 ---
-title: 训练
+title: (原理)Training 
 date: 2022-11-19 22:32:11
 tags:
   - train

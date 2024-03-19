@@ -1,5 +1,5 @@
 ---
-title: 涌现现象（Emergent） 
+title: (原理)涌现现象 
 date: 2023-02-03 22:11:09
 tags:
   - Emergent

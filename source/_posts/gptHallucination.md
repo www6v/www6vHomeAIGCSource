@@ -1,5 +1,5 @@
 ---
-title: 幻觉问题
+title: (原理)幻觉问题
 date: 2023-02-06 16:43:35
 tags:
   - Hallucination 
