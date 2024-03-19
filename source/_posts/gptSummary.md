@@ -61,6 +61,7 @@ top:
   + {% post_link 'gptSTFData' %}  
 + DataProcess
   + {% post_link 'gptDataProcess' %}  
+  + {% post_link 'gptDataProcessPractice' %}  
   + {% post_link 'gptSelfInstruct' %}   
   + {% post_link 'gptDataWizard' %} 
   + {% post_link 'gptDataRefinedWeb' %}  
