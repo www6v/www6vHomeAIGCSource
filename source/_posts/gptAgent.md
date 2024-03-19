@@ -1,5 +1,5 @@
 ---
-title: Agent 原理
+title: (原理)Agent 
 date: 2022-11-02 10:55:27
 tags:
   - AIGC
@@ -153,7 +153,7 @@ AutoGPT - retrieval 结合近期操作记录
 7. xxx
 8. [LLM 全栈开发指南补遗](https://zhuanlan.zhihu.com/p/633033220)  Agents  ***
    [Harrison Chase: Agents](https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/chase-agents/)  ***
-1xx. [智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT](https://blog.csdn.net/v_JULY_v/article/details/135868163?spm=1001.2014.3001.5502)   
+   1xx. [智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT](https://blog.csdn.net/v_JULY_v/article/details/135868163?spm=1001.2014.3001.5502)   
    
 ### Planning
 20. [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) paper

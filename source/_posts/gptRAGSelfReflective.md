@@ -1,5 +1,5 @@
 ---
-title:  Self-Reflective RAG
+title:  (原理|实战)Self-Reflective RAG
 date: 2023-03-02 17:12:22
 tags:
   - RAG

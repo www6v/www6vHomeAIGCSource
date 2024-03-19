@@ -1,5 +1,5 @@
 ---
-title:  Plan-And-Execute Agent
+title:  (原理|实战)Plan-And-Execute Agent
 date: 2023-03-02 09:31:47
 tags:
   - Agent

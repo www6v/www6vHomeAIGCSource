@@ -1,5 +1,5 @@
 ---
-title: 多模态 综述
+title: (综述)多模态 
 date: 2023-01-18 09:48:37
 tags:
   - multimodal

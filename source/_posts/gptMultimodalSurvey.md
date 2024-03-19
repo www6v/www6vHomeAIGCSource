@@ -1,5 +1,5 @@
 ---
-title: 多模态  Survey
+title: (Survey)多模态  
 date: 2023-03-16 12:45:30
 tags:
   - multimodal

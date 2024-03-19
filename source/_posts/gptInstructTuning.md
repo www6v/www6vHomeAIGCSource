@@ -1,5 +1,5 @@
 ---
-title: Instruct Tuning 原理
+title: (原理)Instruct Tuning 
 date: 2023-01-06 19:09:20
 tags:
   - Instruct-Tuning
@@ -75,5 +75,4 @@ categories:
 1xx. [【LLM系列之FLAN-T5/PaLM】Scaling Instruction-Finetuned Language Models](https://zhuanlan.zhihu.com/p/629461665)
 
 1xx. [如何优化大模型的In-Context Learning效果？](https://zhuanlan.zhihu.com/p/597036814)
-
 

@@ -1,5 +1,5 @@
 ---
-title: Fine-Tuning 时机
+title: (原理)Fine-Tuning 时机
 date: 2022-12-28 03:06:21
 tags:
   - AIGC

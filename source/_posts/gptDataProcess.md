@@ -124,10 +124,10 @@ categories:
 
 # 参考
 1. 《大规模语言模型》 
-2. 《Data-centric Artificial Intelligence: A Survey》
+2. 《Data-centric Artificial Intelligence: A Survey》 大学
    [Data-centric Artificial Intelligence: A Survey](https://zhuanlan.zhihu.com/p/620890799)
     [机器学习数据工程的概述](https://cloud.tencent.com/developer/article/2359824)
-3. 《Data Management For Large Language Models: A Survey》
+3. 《Data Management For Large Language Models: A Survey》huawei
     [大模型的数据管理——论文精读](https://blog.csdn.net/weixin_60760661/article/details/136058893)   
     [Data Management for LLM](https://github.com/www6v/data_management_LLM)
 

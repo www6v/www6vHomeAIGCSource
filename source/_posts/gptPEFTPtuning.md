@@ -1,5 +1,5 @@
 ---
-title: PEFT P-Tuning
+title: (实战)PEFT P-Tuning
 date: 2024-01-28 19:04:02
 tags:
   - PEFT

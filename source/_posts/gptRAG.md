@@ -1,5 +1,5 @@
 ---
-title: RAG 原理
+title: (综述)RAG
 date: 2022-11-02 09:57:59
 tags:
   - RAG
