@@ -1,5 +1,5 @@
 ---
-title: CLIP
+title: (对比学习)CLIP
 date: 2023-02-29 15:56:58
 tags:
   - multimodal
