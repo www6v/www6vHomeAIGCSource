@@ -49,4 +49,6 @@ BLIP-2设计了两阶段的训练策略，以使视觉编码器能学会提取�
 1xx. [MiniGPT-4实现原理及其核心BLIP2模型实践：从代表性图文对数据集、BLIP2模型结构到调用实践](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648400402&idx=1&sn=efd84698e6a207b2035995ec2e255417) *
 
 ### Flamingo
-
+[[论文速览]Flamingo: a Visual Language Model for Few-Shot Learning[2204.14198]](https://www.bilibili.com/video/BV1pu411G7ce) V
+[Otter  on OpenFlamingo](https://github.com/Luodian/Otter) git
+[open_flamingo](https://github.com/mlfoundations/open_flamingo) git
