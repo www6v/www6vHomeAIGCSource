@@ -47,7 +47,8 @@ top:
   + {% post_link 'gptContinualPretraining' %}  
   + {% post_link 'gptChineseLlama' %}   
 + 推理 
-  + {% post_link 'gptInferenceFramework' %} 
+  + {% post_link 'gptInferFramework' %} 
+  + {% post_link 'gptInferFrameworkPractice' %} 
 + 优化
   + {% post_link 'gptTrainParallelism' %}
   + {% post_link 'gptInference' %}
