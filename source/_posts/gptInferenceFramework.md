@@ -42,14 +42,25 @@ vLLM，TensorRT， deepspeed
 + Client访问服务
 {% asset_img  'infer-api-client.png' %}
 
-# 实战-vllm推理部署[11]
+# 实战-vLLM推理部署[11]
+
+# vLLM[2]
+### page attention 
+   memory sharing
 
 # 参考
 ### 框架
 1.1. [探秘LLM应用开发](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA5MTIxNTY4MQ==&scene=1&album_id=2959126655292211206)   8-19
 
-1xx. https://github.com/www6v/llm-action/tree/main/inference
-1xx. https://www.zhihu.com/question/625415776/answer/3243562246
+2. [VLLM ——高效GPU训练框架](https://www.bilibili.com/video/BV1cP41187wY/) V
+
+1xx. [一文探秘LLM应用开发(18)-模型部署与推理(框架工具-Triton Server、RayLLM、OpenLLM)](https://mp.weixin.qq.com/s?__biz=MzA5MTIxNTY4MQ==&mid=2461142079&idx=1&sn=07d9033203c0064408fe0af33d1f9414)
+
+1xx. [一文探秘LLM应用开发(16)-模型部署与推理(框架工具-TGI，vLLM，TensorRT-LLM，DS-MII) ](https://mp.weixin.qq.com/s?__biz=MzA5MTIxNTY4MQ==&mid=2461142012&idx=1&sn=dafb0b676cdf6d41fd9bd54f9b6a82d3)
+
+1xx. [llm-action  inference](https://github.com/www6v/llm-action/tree/main/inference) git
+
+1xx. [大模型推理框架概述](https://zhuanlan.zhihu.com/p/659792625)
 
 
 ### 实战
@@ -57,6 +68,7 @@ vLLM，TensorRT， deepspeed
       [(5)LMDeploy 大模型量化部署实践](https://www.bilibili.com/video/BV1iW4y1A77P/) V
    
 11. [Atom-7B-Chat vllm推理部署](https://github.com/LlamaFamily/Llama2-Chinese/blob/main/inference-speed/GPU/vllm_example/README.md) 
+
 
 
 1xx. [TensorRT-LLM保姆级教程（一）-快速入门](https://zhuanlan.zhihu.com/p/666849728)
