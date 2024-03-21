@@ -134,7 +134,8 @@ chain = load_qa_chain(llm, chain_type="map_rerank", verbose=True, return_interme
     10.公开课
 5. https://github.com/kyrolabs/awesome-langchain
 6. https://github.com/Crossme0809/langchain-tutorials
-7. [Templates](https://github.com/langchain-ai/langchain/blob/master/templates/docs/INDEX.md) ***
+7. [Templates](https://github.com/langchain-ai/langchain/blob/master/templates/docs/INDEX.md) *** docs
+   [templates](https://templates.langchain.com/) webui
 8. [吴恩达短课_LangChain](https://zhuanlan.zhihu.com/p/666656208)
 9. [精华笔记：吴恩达 x LangChain 《使用LangChain构建与数据对话的聊天机器人》（下）](https://zhuanlan.zhihu.com/p/651216604)
 
