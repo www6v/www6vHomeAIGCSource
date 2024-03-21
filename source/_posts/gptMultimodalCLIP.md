@@ -24,3 +24,8 @@ categories:
 
 
 1xx. [CLIP：多模态领域革命者](https://zhuanlan.zhihu.com/p/555314976)
+
+
+### 实战
+1xx. [open_clip](https://github.com/mlfoundations/open_clip)
+1xx. langchain 中有CLIP的实现

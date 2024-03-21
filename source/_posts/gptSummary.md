@@ -111,6 +111,7 @@ top:
 + {% post_link 'gptRAGPerformanceOpenAI' %} 
 + {% post_link 'gptRAGSelfReflective' %} 
 + {% post_link 'gptRAGMultimodal' %}  
++ {% post_link 'gptRAGMultimodalPractice' %}   
 
 ## Langchain
 + {% post_link 'gptLangchain' %}
