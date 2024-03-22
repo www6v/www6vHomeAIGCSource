@@ -52,7 +52,8 @@ top:
 + 优化
   + {% post_link 'gptTrainParallelism' %}
   + {% post_link 'gptInference' %}
-  + {% post_link 'gptQuantization' %}   
+  + {% post_link 'gptQuantization' %} 
+  + {% post_link 'gptQuantizationPractice' %}  
   + {% post_link 'gptPrecision' %} 
 
 

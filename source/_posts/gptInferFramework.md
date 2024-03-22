@@ -28,37 +28,31 @@ vLLM，TensorRT， deepspeed
 + 服务 Server
   Triton Server
 
-# vLLM[2]
-### page attention 
+# vLLM
+### key features [5]
++ **page attention**[2] 
    memory sharing
-
-
++  Continuous **batching** of incoming requests
++ Quantization: 
+   - **GPTQ**
+   - **AWQ**
+   - SqueezeLLM
+   - **FP8 KV Cache**
 
 # TensorRT-LLM
-### key features
+### key features [4]
 + Flash Attention
-+ MMHA
-+ Quantization
++ MHA/MQA/GQA
++ **Quantization**
+  - Weight-Only
+  - SmoothQuant
+  - **GPTQ**
+  - **AWQ**
+  - FP8
++ Paged **KV Cache** for the Attention
 + Multi-GPU Multi-Node
-+ TP/PP
-+ In-flight Batching
-
-
-### Quantization
-+ QAT Expensive
-+ PTQ More feasible than QAT
-
-
-
-### Quantization[3]
-
-|                   | Weight only quant | smoothquant(PTQ ) | fp8(PTQ ) |
-| ----------------- | ----------------- | ----------------- | --------- |
-| Latency Reduction | **                | ***(best)         | ***(best) |
-| Modal Acc         | **                | *                 | ***(best) |
-| Memory Saving     | **                | ***(best)         | ***(best) |
-| Ease of use       | ***(best)         | **                | *         |
-
++ **TP(Tensor Parallelism)/PP(Pipeline Parallelism)**
++ In-flight **Batching**
 
 
 # 参考
@@ -67,7 +61,11 @@ vLLM，TensorRT， deepspeed
 
 2. [VLLM ——高效GPU训练框架](https://www.bilibili.com/video/BV1cP41187wY/) V
 
-3. [大语言模型推理：低精度最佳实践](https://www.bilibili.com/video/BV1h44y1c72B) V
+3. xx
+
+4. [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM/) git
+
+5. [vllm](https://github.com/vllm-project/vllm) git
 
 1xx. [一文探秘LLM应用开发(18)-模型部署与推理(框架工具-Triton Server、RayLLM、OpenLLM)](https://mp.weixin.qq.com/s?__biz=MzA5MTIxNTY4MQ==&mid=2461142079&idx=1&sn=07d9033203c0064408fe0af33d1f9414)
 
