@@ -15,7 +15,7 @@ categories:
 <!-- toc -->
 
 
-# 实战  lmdeploy-推理部署 [10]
+#  lmdeploy-推理部署 [10]
 ### 模型转换
 {% asset_img  'convert.png' %}
 ### TurboMind 推理+命令行本地对话
@@ -26,12 +26,15 @@ categories:
 + Client访问服务
 {% asset_img  'infer-api-client.png' %}
 
-# 实战-vLLM推理部署[11]
+# vLLM 推理部署[11]
 
+# TensorRT-LLM 推理部署
+[基于docker的部署]
 
+# Triton 推理部署
+[基于k8s的部署]
 
 # 参考
-### 实战
 10. [lmdeploy 量化部署](https://github.com/InternLM/tutorial/blob/main/lmdeploy/lmdeploy.md)
       [(5)LMDeploy 大模型量化部署实践](https://www.bilibili.com/video/BV1iW4y1A77P/) V
    
