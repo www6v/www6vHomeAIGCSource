@@ -39,27 +39,29 @@ categories:
 + QAT -> Expensive
 + PTQ -> More feasible than QAT
 
-# PTQ
-### LLM.int8() [6]
-### GPTQ [6]
-### AWQ [7]
+# PTQ 分类
+### Weight Quantization  [10]
+- LLM.int8() [6]
+- GPTQ [6]
+- AWQ [7]
+
+### Weight and Activation Quantization [10]
+- SmoothQuant[8]
+
+### 比较[1]
+
+|                   | Weight only quant | smoothquant(PTQ ) | fp8(PTQ ) |
+| ----------------- | ----------------- | ----------------- | --------- |
+| Latency Reduction | ★★                | ★★★(best)         | ★★★(best) |
+| Modal Acc         | ★★                | ★                 | ★★★(best) |
+| Memory Saving     | ★★                | ★★★(best)         | ★★★(best) |
+| Ease of use       | ★★★(best)         | ★★                | ★         |
 
 # 低精度训练方法[chat]
 
 + 半精度浮点数（FP16）训练
 + 混合精度训练（Mixed Precision Training）
 + 量化训练（Quantization Training）
-
-
-### Quantization[1]
-
-|                   | Weight only quant | smoothquant(PTQ ) | fp8(PTQ ) |
-| ----------------- | ----------------- | ----------------- | --------- |
-| Latency Reduction | **                | ***(best)         | ***(best) |
-| Modal Acc         | **                | *                 | ***(best) |
-| Memory Saving     | **                | ***(best)         | ***(best) |
-| Ease of use       | ***(best)         | **                | *         |
-
 
 # 参考
 1. [大语言模型推理：低精度最佳实践](https://www.bilibili.com/video/BV1h44y1c72B) V
@@ -71,9 +73,10 @@ categories:
 6. [大模型量化技术原理-LLM.int8()、GPTQ](https://zhuanlan.zhihu.com/p/680212402)
 7. [大模型量化技术原理-AWQ、AutoAWQ](https://zhuanlan.zhihu.com/p/681578090)
 
-8. xxx
+8. [大模型量化技术原理-SmoothQuant ](https://juejin.cn/post/7330079146515611687)
 9. {% post_link 'gptPEFTQLora' %}   self
- 
+10. 《A Survey on Model Compression for Large Language Models》
+
 
 1xx. [神经网络低比特量化中训练和推理是如何实现的？](https://www.zhihu.com/question/510246227)
 

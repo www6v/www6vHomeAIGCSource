@@ -38,7 +38,7 @@ categories:
 # 参考
 ### 综述
 2.1. [一文探秘LLM应用开发(13)-模型部署与推理(优化理论) ](https://mp.weixin.qq.com/s/glPPSqHjsnDjC0DZSuuPzA) 
-2.2 https://lilianweng.github.io/posts/2023-01-10-inference-optimization/
+2.2   [Large Transformer Model Inference Optimization ](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/)
 1xx. [大语言模型推理性能优化综述](https://zhuanlan.zhihu.com/p/656485997)
 1xx. [NLP（十八）：LLM 的推理优化技术纵览](https://zhuanlan.zhihu.com/p/642412124) *** 
 
