@@ -46,15 +46,16 @@ top:
   + {% post_link 'gptLargeModelTrainingPractice' %} 
   + {% post_link 'gptContinualPretraining' %}  
   + {% post_link 'gptChineseLlama' %}   
+  + {% post_link 'gptTrainParallelism' %}    
+  + {% post_link 'gptPrecision' %} 
 + 推理 
   + {% post_link 'gptInferFramework' %} 
   + {% post_link 'gptInferFrameworkPractice' %} 
-+ 优化
-  + {% post_link 'gptTrainParallelism' %}
   + {% post_link 'gptInference' %}
++ 模型压缩
   + {% post_link 'gptQuantization' %} 
   + {% post_link 'gptQuantizationPractice' %}  
-  + {% post_link 'gptPrecision' %} 
+
 
 
 ## Data
