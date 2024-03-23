@@ -40,30 +40,6 @@ categories:
 + GPipe
 + PipeDream
 
-### 优化器相关的并行 
-##### ZeRO [4]
-{% asset_img 'zero.png' %}
-
-+ 策略1: naive DP的通信量
-通信量是**2X**
-显存占用**16X**
-
-+ 策略2: Zero-1方案
-总的通信量为**2X，跟naive DP一致**
-显存方面 约为**策略1的 1/4**
-
-+ 策略3: ZeRo-2方案
-通信量也是**2X, 跟naive DP一致**
-显存方面  约为**naive DP的1/8**
-
-+ 策略4: ZeRo-3方案
-总的通信量为，为**naive DP的1.5倍**，增加50%通信量
-显存方面  约为**naive DP的1/32**
-
-##### PyTorch FSDP [7]
-FairScale 说 **FSDP 相当于 ZeRO3 的优化**
-
-
 ### 多维混合并行[5]
 ##### DP + PP
 ##### 3D 并行（DP + PP + TP）
@@ -91,8 +67,6 @@ FairScale 说 **FSDP 相当于 ZeRO3 的优化**
 
 6. [上半年大模型遍地开花，大模型发展中有哪些经验和教训？](https://www.zhihu.com/question/601594836/answer/3032763174) 分布式训练框架
 
-7. [FSDP 深度解析：2023 年了，大模型训练还要不要用 PyTorch 的 FSDP ？](https://zhuanlan.zhihu.com/p/644133265)
-
 
 1xx. [大模型分布式训练并行技术（一）-概述](https://zhuanlan.zhihu.com/p/598714869)
 
@@ -105,8 +79,6 @@ FairScale 说 **FSDP 相当于 ZeRO3 的优化**
 1xx. [大模型流水线并行（Pipeline）实战](https://zhuanlan.zhihu.com/p/636488690)
 
 1xx. [全网最全-超大模型+分布式训练架构和经典论文](https://zhuanlan.zhihu.com/p/450854172) 未
-
-1xx. [【深度学习】【分布式训练】DeepSpeed：AllReduce与ZeRO-DP](https://zhuanlan.zhihu.com/p/610587671)
 
 ### 其他
 1xx. [第1章：DeepSpeed-Chat 模型训练实战](https://techdiylife.github.io/big-model-training/deepspeed/deepspeed-chat.html)  Bili 
