@@ -14,6 +14,9 @@ categories:
 ## 目录
 <!-- toc -->
 
+# 目的[3]
+为了**加快训练时间**、**减少网络训练时候所占用的内存**，并且保存训练出来的模型精度持平的条件下，业界提出越来越多的混合精度训练的方法
+
 # 使用的混合精度原因
 {%  asset_img  'solution.png'  %}
 
@@ -50,7 +53,7 @@ model = AutoModelForCausalLM.from_pretrained("D:/Pretrained_models/modelscope/Ll
 ### 原理
 1. [混合精度](https://www.bilibili.com/video/BV1R94y1g78L?p=6)  *** V
 2. [浅谈混合精度训练](https://zhuanlan.zhihu.com/p/103685761)
-1xx. [全网最全-混合精度训练原理](https://zhuanlan.zhihu.com/p/441591808)  *** 
+3. [全网最全-混合精度训练原理](https://zhuanlan.zhihu.com/p/441591808)  *** 
 1xx. [【深度学习】混合精度训练与显存分析](https://zhuanlan.zhihu.com/p/608634079)
 
 ### 代码
