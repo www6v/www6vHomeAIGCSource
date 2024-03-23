@@ -18,9 +18,8 @@ categories:
 # 分布式并行 [1]
 {% asset_img 'pararllelTraining.jpg' %}
 
-### 数据并行
-
-+ PyTorch DDP
+### 数据并行 [4]
+数据并行可以分为**中心化方式**的和**无中心化方式**的，对应于pytorch里面的**DataParallel**和**DistributedDataParallel(DDP)**
 
 ### 模型并行 
 **张量并行**与**流水线并行**都属于**模型并行**，
@@ -54,7 +53,7 @@ categories:
 
 
 # 参考
-
+### 
 1. [How to Train Really Large Models on Many GPUs? ](https://lilianweng.github.io/posts/2021-09-25-train-large/)
 
 2. [大模型分布式训练的并行策略](https://finisky.github.io/how-to-train-large-language-model/) *
@@ -76,9 +75,11 @@ categories:
 
 1xx. [图解大模型训练之：张量模型并行(TP)，Megatron-LM](https://zhuanlan.zhihu.com/p/622212228) ***
 
-1xx. [大模型流水线并行（Pipeline）实战](https://zhuanlan.zhihu.com/p/636488690)
 
 1xx. [全网最全-超大模型+分布式训练架构和经典论文](https://zhuanlan.zhihu.com/p/450854172) 未
+
+### 实战
+1xx. [大模型流水线并行（Pipeline）实战](https://zhuanlan.zhihu.com/p/636488690)
 
 ### 其他
 1xx. [第1章：DeepSpeed-Chat 模型训练实战](https://techdiylife.github.io/big-model-training/deepspeed/deepspeed-chat.html)  Bili 
