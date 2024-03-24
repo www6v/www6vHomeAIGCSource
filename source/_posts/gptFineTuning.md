@@ -32,18 +32,25 @@ categories:
 
 + PEFT(Parameter-Efficient Fine-Tuning)  PEFT
     + **引入重参数化（R）**    
-      + **LoRA**: Low-Rank Adaptation of LLMs    
+      + **LoRA** [2021 Microsoft]
+        Low-Rank Adaptation of LLMs    
         LoRA   【 并联方式的外挂】 [效果比较好]
-      + QLoRA: Efficient Finetuning of Quantized LLMs
-      + AdaLoRA: Adaptive Budget Allocation for PEFT      
+      + QLoRA [2023 University of Washington]
+         Efficient Finetuning of Quantized LLMs
+      + AdaLoRA [2023 Microsoft]
+       Adaptive Budget Allocation for PEFT      
       
     + 增加额外参数（A）
         + **软提示（Soft prompts）** 
-          + **Prefix Tuning**
+          + Prefix Tuning[2021 Stanford]
             增加一个可被训练的Embedding层
-          + Prompt Tuning
-          + **P-Turning**        
-        + Adapter-Tuning   【 串联方式的外挂】       
+            【难实现】
+          + **Prompt Tuning** [2021 Google]
+            【简化版本的Prefix Tuning】
+          + **P-Turning v1** [2021 Tsinghua]
+          + **P-Turning v2** [2022 Tsinghua]    
+        + Adapter-Tuning[2019 Google]   
+          【 串联方式的外挂】       
         
     + 选取一部分参数更新（S）
       + BitFit
