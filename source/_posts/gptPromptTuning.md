@@ -1,5 +1,5 @@
 ---
-title: Prompt Tuning
+title: (原理)Prompt Tuning
 date: 2023-01-06 19:06:15
 tags:
   - Prompt-Tuning

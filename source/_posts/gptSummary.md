@@ -72,18 +72,22 @@ top:
   + {% post_link 'gptTrainTokenizer' %}     
 
 ## FineTuning
-+ 基础
++ PEFT
   + {% post_link 'gptFineTuning' %} 
   + {% post_link 'gptFineTuningWhen' %}  
-  + {% post_link 'gptPromptTuning' %} 
-  + {% post_link 'gptInstructTuning' %} 
-  + {% post_link 'gptInstructTuningSurvey' %}  
-+ 实战
   + {% post_link 'gptFineTuningPEFT' %}  
-    + {% post_link 'gptPEFTLora' %} 
-    + {% post_link 'gptPEFTQLora' %} 
-    + {% post_link 'gptPromptTuningPractice' %}    
-    + {% post_link 'gptPEFTPtuning' %}  
++ Soft Prompt
+  + {% post_link 'gptPromptTuning' %} 
+  + {% post_link 'gptPEFTPtuning' %}  
+  + {% post_link 'gptPEFTPtuningPractice' %}  
+  + {% post_link 'gptPromptTuningPractice' %}   
++ Lora
+  + {% post_link 'gptPEFTLora' %} 
+  + {% post_link 'gptPEFTQLora' %} 
++ Instruct Tuning
+  + {% post_link 'gptInstructTuning' %}  
+  + {% post_link 'gptInstructTuningSurvey' %}  
++ BERT
   + {% post_link 'gptFineTuningBert' %}    
 
 ## Prompt
