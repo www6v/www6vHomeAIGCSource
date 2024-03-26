@@ -40,10 +40,10 @@ categories:
 + PTQ -> More feasible than QAT
 
 # PTQ 分类
-### Weight Quantization  [10]
-- LLM.int8() [6]
-- GPTQ [6]
-- AWQ [6]
+### Weight Quantization  [10][6]
+- LLM.int8() 
+- GPTQ 
+- AWQ
 
 ### Weight and Activation Quantization [10]
 - SmoothQuant[8]
@@ -76,7 +76,7 @@ categories:
 3. << An Introduction to Quantization of Large Language Model >> 
 4. 4.1[pytorch Quantization](https://pytorch.org/docs/stable/quantization.html)
    4.2 [Introduction to Quantization on PyTorch](https://pytorch.org/blog/introduction-to-quantization-on-pytorch/) 
-5. [大模型量化概述](https://zhuanlan.zhihu.com/p/662881352)
+5. [大模型量化概述](https://zhuanlan.zhihu.com/p/662881352)  ***
 6. {% post_link 'gptQuantizationWeight' %} self
 7. xxx
 8. [大模型量化技术原理-SmoothQuant ](https://juejin.cn/post/7330079146515611687)
@@ -86,8 +86,7 @@ categories:
 
 1xx. [神经网络低比特量化中训练和推理是如何实现的？](https://www.zhihu.com/question/510246227)
 
-1xx. [NLP大模型压缩关键技术解读：用于大型Transformer的8-bit矩阵乘法原理及其简单实现](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399136&idx=1&sn=bd0a7237940c2ac800e06ae6d247349e)
-   [大规模 Transformer 模型 8 比特矩阵乘简介 - 基于 Hugging Face Transformers、Accelerate 以及 bitsandbytes ](https://huggingface.co/blog/zh/hf-bitsandbytes-integration)
+
 
    
 
