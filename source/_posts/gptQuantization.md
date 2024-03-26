@@ -1,5 +1,5 @@
 ---
-title: (原理)模型压缩-量化
+title: (原理)模型压缩-量化概述
 date: 2023-02-19 17:00:25
 tags:
   - 量化
@@ -43,7 +43,7 @@ categories:
 ### Weight Quantization  [10]
 - LLM.int8() [6]
 - GPTQ [6]
-- AWQ [7]
+- AWQ [6]
 
 ### Weight and Activation Quantization [10]
 - SmoothQuant[8]
@@ -63,16 +63,22 @@ categories:
 + 混合精度训练（Mixed Precision Training）
 + 量化训练（Quantization Training）
 
+
+
+
+
+
+
 # 参考
+
 1. [大语言模型推理：低精度最佳实践](https://www.bilibili.com/video/BV1h44y1c72B) V
 2. [大模型训练｜概念篇](https://zhuanlan.zhihu.com/p/649460612)
 3. << An Introduction to Quantization of Large Language Model >> 
 4. 4.1[pytorch Quantization](https://pytorch.org/docs/stable/quantization.html)
    4.2 [Introduction to Quantization on PyTorch](https://pytorch.org/blog/introduction-to-quantization-on-pytorch/) 
 5. [大模型量化概述](https://zhuanlan.zhihu.com/p/662881352)
-6. [大模型量化技术原理-LLM.int8()、GPTQ](https://zhuanlan.zhihu.com/p/680212402)
-7. [大模型量化技术原理-AWQ、AutoAWQ](https://zhuanlan.zhihu.com/p/681578090)
-
+6. {% post_link 'gptQuantizationWeight' %} self
+7. xxx
 8. [大模型量化技术原理-SmoothQuant ](https://juejin.cn/post/7330079146515611687)
 9. {% post_link 'gptPEFTQLora' %}   self
 10. 《A Survey on Model Compression for Large Language Models》

@@ -56,6 +56,7 @@ top:
   + {% post_link 'gptInference' %}
 + 模型压缩
   + {% post_link 'gptQuantization' %} 
+  + {% post_link 'gptQuantizationWeight' %} 
   + {% post_link 'gptQuantizationPractice' %}  
 
 
