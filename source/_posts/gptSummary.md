@@ -14,10 +14,13 @@ top:
 <!-- more -->
 
 ## Basic
-+ {% post_link 'aiDeepLearning' %}
-+ {% post_link 'aiMachineLearning' %}
 + {% post_link 'ai' %} 
 + {% post_link 'aiOverview' %}
++ {% post_link 'aiMachineLearning' %}
+
+## DeepLearning
++ {% post_link 'aiDeepLearning' %}
++ {% post_link 'gptPytorch' %} 
 
 ## NLP
 + {% post_link 'gptNLPTask' %}  
