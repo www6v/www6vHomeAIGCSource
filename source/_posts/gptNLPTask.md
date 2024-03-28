@@ -25,5 +25,5 @@ categories:
 + **推理** reasoning
 
 
-
-
+# 参考
+[关于ChatGPT解锁NLP任务的一次总结汇报：从应用变化、14类NLP任务使用案例看选型思考](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399456&idx=1&sn=af2ee30aee9e7f6ed441b8335de033b1)

@@ -30,3 +30,5 @@ categories:
 3. [ds_config_zero3.json](https://github.com/www6v/LLM-quickstart/blob/main/deepspeed/config/ds_config_zero3.json)
 4. [ds_config_zero3.json](https://github.com/LlamaFamily/Llama-Chinese/blob/main/train/pretrain/ds_config_zero3.json)
 
+1xx. [NLP大规模语言模型微调实践：DeepSpeed+Transformers实现简单快捷上手百亿参数模型微调 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399768&idx=1&sn=3be1a2e9d8753c06b65f474c289b710f) FLAN-T5  + DeepSpeed
+
