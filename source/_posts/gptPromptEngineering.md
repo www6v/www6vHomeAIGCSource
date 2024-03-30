@@ -1,5 +1,5 @@
 ---
-title: Prompt Engineering
+title: (原理)Prompt Engineering   
 date: 2022-11-10 15:48:39
 tags:
   - Prompt
@@ -67,12 +67,21 @@ Self-Ask
 3. [Prompt Engineering Guide](https://www.promptingguide.ai/techniques) guide
    [Prompt-Engineering-Guide ](https://github.com/www6v/Prompt-Engineering-Guide) *** git
 
+1xx. [[论文阅读] Prompt Engineering综述](https://zhuanlan.zhihu.com/p/682352630)
+
 1xx. [The Prompt Landscape](https://blog.langchain.dev/the-prompt-landscape/)  langchain
+
 1xx. [CometLLM - suite of LLMOps tools - track and visualize LLM prompts and chains](https://colab.research.google.com/github/comet-ml/comet-llm/blob/main/examples/CometLLM_Prompts.ipynb)
+
 1xx. [大模型 PUA 指南：来自 Google Meta Microsoft 等大厂](https://zhuanlan.zhihu.com/p/671915693) 
+
 1xx. [NLP（十三）：Prompt Engineering 面面观](https://zhuanlan.zhihu.com/p/632369186)
+
 1xx. [ prompt-engineering](https://github.com/brexhq/prompt-engineering?tab=readme-ov-file) git
+
 1xx. [Chain-of-Thought Prompting 简读 ](https://finisky.github.io/chain-of-thought-prompting-summary/)
+
+
 
 ### 案例
 200. [运维大模型探索之 Text2PromQL 问答机器人 ](https://mp.weixin.qq.com/s/nXoZJ4xfgihA2mnBQ8EdIQ)     架构图， 最后两个重点总结   未

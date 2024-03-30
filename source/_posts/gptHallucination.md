@@ -39,3 +39,10 @@ categories:
 1xx. [大模型前沿热点最新综述：大模型微调遗忘、Agent智能体、幻觉及RAG检索增强模型推介](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403602&idx=1&sn=f2365b05630094f8d0de7ff784abe233) 大模型微调遗忘
 
 1xx. [值得一读的大模型生成幻觉研究综述：大模型幻觉的起因、评估以及减轻策略总结 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403341&idx=1&sn=86cdaaf2c3a73439d2591a2f3dd0b9e0)
+
+1xx. [大模型的幻觉问题调研: LLM Hallucination Survey](https://zhuanlan.zhihu.com/p/642648601)
+   [人工智能海洋中的塞壬之歌：大型语言模型LLM中的幻觉研究综述（一） ](https://mp.weixin.qq.com/s?__biz=MzU5NDg2MjgxMg==&mid=2247485189&idx=1&sn=95d6eb333dde007f262a2955b90bc7ec)
+   [大型语言模型的幻觉研究｜减轻及避免大模型LLM幻觉（二）](https://mp.weixin.qq.com/s/eGMwNz0F1dQsNDnsLNYr8Q)
+   
+   
+1xx. [LLM之幻觉（一）：大语言模型幻觉解决方案综述](https://mp.weixin.qq.com/s/N7NOsLHr8HYCMp5XGCBDjg)
