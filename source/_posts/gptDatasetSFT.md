@@ -1,5 +1,5 @@
 ---
-title:  (原理)SFT 数据
+title:  (原理)SFT 数据集
 date: 2023-02-06 19:04:41
 tags:
   - SFT

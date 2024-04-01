@@ -33,3 +33,4 @@ categories:
    
  ### Overview  
 1xx. [[Transformer 101系列] 多模态的大一统之路](https://zhuanlan.zhihu.com/p/643969218)  *** 
+1xx. [图文多模态大模型综述](https://zhuanlan.zhihu.com/p/662889725)

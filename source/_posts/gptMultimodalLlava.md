@@ -33,3 +33,5 @@ categories:
 
 1xx. [【LMM 006】LLaVA-Plus：可以学习如何使用工具的多模态Agent](https://datac.blog.csdn.net/article/details/135329898)
 
+1xx. [[LLaVA系列]📒CLIP/LLaVA/LLaVA1.5/VILA笔记](https://zhuanlan.zhihu.com/p/683137074)
+
