@@ -1,5 +1,5 @@
 ---
-title: (原理)多模态 预训练
+title: (原理)多模态预训练 概述
 date: 2023-03-04 13:23:20
 tags:
   - multimodal

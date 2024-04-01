@@ -67,8 +67,11 @@ top:
 
 ## Data
 + DataSet
+  + {% post_link 'gptDatasetSurvey' %} 
   + {% post_link 'gptDataSet' %} 
-  + {% post_link 'gptSTFData' %}  
+  + {% post_link 'gptDatasetSFT' %}  
+  + {% post_link 'gptDatasetMulitmodal' %}   
+  
 + DataProcess
   + {% post_link 'gptDataProcess' %}  
   + {% post_link 'gptDataProcessPractice' %}  
@@ -107,7 +110,7 @@ top:
 + {% post_link 'gptMultimodal' %} 
 + {% post_link 'gptMultimodalSurvey' %} 
 + {% post_link 'gptMultimodalPretrain' %}  
-+ {% post_link 'gptMultimodalInstructTuning' %}  
++ {% post_link 'gptMultimodalInstructTuning' %}   
 + backbone 
 	+ {% post_link 'gptMultimodalCLIP' %}  
 	+ {% post_link 'gptMultimodalSAM' %}   
@@ -124,8 +127,9 @@ top:
 + {% post_link 'gptRAGPerformance' %}
 + {% post_link 'gptRAGPerformanceOpenAI' %} 
 + {% post_link 'gptRAGSelfReflective' %} 
-+ {% post_link 'gptRAGMultimodal' %}  
-+ {% post_link 'gptRAGMultimodalPractice' %}   
++ Multimodal RAG
+  + {% post_link 'gptRAGMultimodal' %}  
+  + {% post_link 'gptRAGMultimodalPractice' %}   
 
 ## Langchain
 + {% post_link 'gptLangchain' %}

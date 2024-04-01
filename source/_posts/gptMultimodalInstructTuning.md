@@ -1,5 +1,5 @@
 ---
-title: (综述)多模态-InstructTuning
+title: (综述)多模态InstructTuning-Dataset,Method
 date: 2023-03-15 16:09:00
 tags:
   - multimodal

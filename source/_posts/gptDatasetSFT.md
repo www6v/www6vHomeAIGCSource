@@ -1,11 +1,11 @@
 ---
-title:  STF 数据
+title:  (原理)SFT 数据
 date: 2023-02-06 19:04:41
 tags:
-  - STF
+  - SFT
 categories:
   - AIGC  
-  - STF
+  - SFT
 ---
 
 <p></p>
@@ -14,7 +14,7 @@ categories:
 ## 目录
 <!-- toc -->
 
-# STF 数据组合[1]
+# SFT 数据组合[1]
 《HOW ABILITIES IN LARGE LANGUAGE MODELS ARE AFFECTED BY SUPERVISED FINE-TUNING DATA COM- POSITION》
 ### 问题
 1、推理、编码和通用能力如何随SFT数据量而变化？
