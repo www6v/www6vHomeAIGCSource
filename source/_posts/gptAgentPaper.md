@@ -21,3 +21,5 @@ categories:
 1xx. [ LLM-Agents-Papers](https://github.com/www6v/LLM-Agents-Papers)
 
 1xx. [AGI新突破！52篇论文尽览大模型Agent最新研究进展！](https://www.bilibili.com/read/cv27126779/)
+
+1xx. [AI Agent & 大模型经典论文推荐](https://zhuanlan.zhihu.com/p/673788545)  *** 

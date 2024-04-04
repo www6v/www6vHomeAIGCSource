@@ -84,21 +84,7 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
 
 +  ChatDev， AutoGen
 
-## Example
-### HuggingGPT 
 
-### BabyAGI  [AIGC]
-Plan-and-execute agents 
-The **planning** is almost always done **by an LLM**.
-The **execution** is usually done by a **separate agent (equipped with tools)**.
-
-### AutoGPT[3][5]
-AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
-
-1. AutoGPT 会基于一定策略自动组装 Command Prompt，这些首次会包含用户输入的 Name, Role和Goals 
-2. Command Prompt 的目标不是为了拿到最终结果，而是通过 GPT Chat API(Thinking 的过程)返回下一步的 Command (包含name和arguments, 如`browser_website(url = "www.baidu.com")` )
-3. 这些 Command 都是可扩展的，每一种命令代表一种外部能力(比如爬虫、Google搜索，也包括GPT的能力)，通过这些 Command 调用返回的 Result 又会成为到 Command Prompt 的组成元素，
-4. 回到第 1 步往复循环，直到拿到最终结果结果（状态为“compelete”）
 
 # 问题和局限性 [4]
 + 记忆召回问题
@@ -147,14 +133,15 @@ AutoGPT - retrieval 结合近期操作记录
 2. 公开课
 3. [2023年新生代大模型Agents技术,ReAct,Self-Ask,Plan-and-execute,以及AutoGPT, HuggingGPT等应用](https://zhuanlan.zhihu.com/p/642357544) ***  论文+代码
 4. [AutoGPT与LLM Agent解析](https://zhuanlan.zhihu.com/p/622947810) *** 
-5. [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) git
-   [带界面的 AutoGPT 产品](https://link.zhihu.com/?target=https%3A//godmode.space/)
+5. xxx
 6. [LLM Powered Autonomous Agents ](https://lilianweng.github.io/posts/2023-06-23-agent/) paper 
 7. xxx
 8. [LLM 全栈开发指南补遗](https://zhuanlan.zhihu.com/p/633033220)  Agents  ***
    [Harrison Chase: Agents](https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/chase-agents/)  ***
-   1xx. [智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT](https://blog.csdn.net/v_JULY_v/article/details/135868163?spm=1001.2014.3001.5502)   
-   
+
+1xx. [智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT](https://blog.csdn.net/v_JULY_v/article/details/135868163?spm=1001.2014.3001.5502)   
+1xx. [AI Agent 应该更有趣还是更有用？](https://zhuanlan.zhihu.com/p/689816790)  ***
+
 ### Planning
 20. [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) paper
 21. [【论文阅读】Reflexion: 大模型如何从错误经验中学习？](https://zhuanlan.zhihu.com/p/639254455)

@@ -108,9 +108,14 @@ categories:
 ###  数据标签
 1xx. [InsTag：大语言模型监督微调数据标签标注工具](https://developer.aliyun.com/article/1311807)
    [InsTag指令打标工具](https://www.modelscope.cn/studios/lukeminglkm/instagger_demo/summary) demo
-
+1xx.  [如何利用大模型进行数据标注与知识蒸馏：兼看ActiveRAG上下文去噪的大模型RAG问答范式](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648408650&idx=2&sn=ef8424969be749489188ebd810800f08)
+   大模型用于数据标注
+   《Large Language Models for Data Annotation: A Survey》
+   
 ### 数据增强
 1xx. [哈工大｜15种NLP数据增强方法总结与对比](https://zhuanlan.zhihu.com/p/420295576)
+1xx. 《Large Language Models for Data Annotation: A Survey》
+    
 
 ### 数据质量
 1xx. [再看大模型预训数据质量如何评估：困惑度、错误L2范数和记忆化三种度量方法的效果对比分析研究](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403976&idx=1&sn=694db5e2b3085b1610e8d19daa93a474)

@@ -107,16 +107,20 @@ top:
 
 
 ## Multimodal
-+ {% post_link 'gptMultimodal' %} 
-+ {% post_link 'gptMultimodalSurvey' %} 
-+ {% post_link 'gptMultimodalPretrain' %}  
-+ {% post_link 'gptMultimodalInstructTuning' %}   
-+ backbone 
++ Survey
+  + {% post_link 'gptMultimodal' %} 
+  + {% post_link 'gptMultimodalSurvey' %}
++ Train  
+  + {% post_link 'gptMultimodalPretrain' %}  
+  + {% post_link 'gptMultimodalInstructTuning' %} 
++ 系列
+  + {% post_link 'gptMultimodalSeries' %}   
+  + backbone 
 	+ {% post_link 'gptMultimodalCLIP' %}  
 	+ {% post_link 'gptMultimodalSAM' %}   
 	+ {% post_link 'gptMultimodalVit' %}   
 	+ {% post_link 'gptMultimodalBlip' %}    
-+ chat
+  + chat
     + {% post_link 'gptMultimodalLlava' %}  
     + {% post_link 'gptMultimodalMinigpt4' %}   
 

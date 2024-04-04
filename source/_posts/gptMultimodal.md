@@ -42,21 +42,27 @@ categories:
 {% asset_img  'arch.webp' %}
 
 
-# 总结 [10]
-{% asset_img  'multimodal.webp' %}
-
 # Model Architecture[2]
 {% asset_img  'multimodalArach1.jpg' %}
 
-对于图像，通常有四种可选编码器:NFNet-F6 (Brock等人，2021)、ViT (Dosovitskiy等人，2020)、CLIP ViT (Radford等人，2021)和Eva-CLIP ViT (Fang等人，2023)。
++ Modality Encoder模态编码器
+	对于图像，通常有四种可选编码器:NFNet-F6 (Brock等人，2021)、ViT (Dosovitskiy等人，2020)、CLIP ViT (Radford等人，2021)和Eva-CLIP ViT (Fang等人，2023)。
+	- **NFNet-F6**是一种无归一化器的ResNet (He et al.， 2016)，展示了一种自适应梯度裁剪技术，允许在广泛增强的数据集上进行训练，同时实现SOTA级别的图像识别。
+	- **ViT**将Transformer (Vaswani et al.， 2017)应用于图像，首先将图像划分为小patch。然后进行线性投影使patch展平，然后通过多个Transformer块进行编码。
+	- **CLIP ViT**在文本和图像之间建立连接，包括一个ViT和一个文本编码器。它利用大量的文本-图像对，通过对比学习来优化ViT，将配对的文本和图像视为正样本，其他为负样本。
+	- 它的**Eva版本**稳定了大规模CLIP的训练和优化过程，为扩展和加速昂贵的多模态基础模型训练提供了新的方向。对于视频，可以均匀采样到5帧，并经过与图像相同的预处理。
 
-- **NFNet-F6**是一种无归一化器的ResNet (He et al.， 2016)，展示了一种自适应梯度裁剪技术，允许在广泛增强的数据集上进行训练，同时实现SOTA级别的图像识别。
-- **ViT**将Transformer (Vaswani et al.， 2017)应用于图像，首先将图像划分为小patch。然后进行线性投影使patch展平，然后通过多个Transformer块进行编码。
-- **CLIP ViT**在文本和图像之间建立连接，包括一个ViT和一个文本编码器。它利用大量的文本-图像对，通过对比学习来优化ViT，将配对的文本和图像视为正样本，其他为负样本。
-- 它的**Eva版本**稳定了大规模CLIP的训练和优化过程，为扩展和加速昂贵的多模态基础模型训练提供了新的方向。对于视频，可以均匀采样到5帧，并经过与图像相同的预处理。
 
 
-{% asset_img  'multimodalArach.png' %}
++ Input Projector输入投影器
+	**输入投影器**可以直接通过线性投影器或多层感知器(MLP)来实现，即交替使用几个线性投影器和非线性激活函数。
+	还有更复杂的实现，如交叉注意Cross-attention、Q-Former (Li et al.， 2023c)或P-Former (Jian et al.， 2023)。
+	- **Cross-attention**使用一组可训练向量作为查询，并使用编码特征FX作为键将特征序列压缩到固定长度。然后将压缩后的表示直接输入LLM (Bai等人，2023b)或进一步用于X-text交叉注意融合(Alayrac等人，2022)。
+	- **Q-Former**从FX中提取相关特征，然后将选中的特征作为提示PX。
+	- 同时，P-Former生成“参考提示”，对Q-Former生成的提示施加对齐约束。然而，Q-和P-Former都需要单独的PT进程进行初始化。
+
+
+{% asset_img  'multimodalArch.jpg' %}
 
 
 # 其他
@@ -87,15 +93,6 @@ categories:
 1xx. [MLLM首篇综述 | 一文全览多模态大模型的前世、今生和未来](https://cloud.tencent.com/developer/article/2322835)
    [A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
 
-### Overview
-10. [多模态大模型 CLIP, BLIP, BLIP2, LLaVA, miniGPT4, InstructBLIP 系列解读](https://zhuanlan.zhihu.com/p/653902791) ***
-
-1xx. [Multimodality and Large Multimodal Models (LMMs)](https://huyenchip.com/2023/10/10/multimodal.html)
-   [多模态和多模态大模型 (LMM)[译]](https://baoyu.io/translations/lmm/multimodality-and-large-multimodal-models)
-
-1xx. [写在多模态征服一切之前（未来数据和模型应该是什么样的？）](https://zhuanlan.zhihu.com/p/667942680)
-
-1xx. [多模态论文串讲](https://blog.csdn.net/qq_52038588/article/details/133893013) ***
 
 ### chat
 1xx. [[论文阅读] 双子座：一个功能强大的多模态模型系列，Gemini: A Family of Highly Capable Multimodal Models](https://zhuanlan.zhihu.com/p/670821058)
@@ -108,11 +105,6 @@ categories:
 1xx. [大模型系列04 -文本图像生成](https://zhuanlan.zhihu.com/p/669757416)
 
 
-1xx. [Qwen-VL：突破视觉与语言融合的多模态模型，GPT4V的国产化替代](https://zhuanlan.zhihu.com/p/660662864)
-1xx. [Qwen-VL: 一个通用的视觉语言模型,用于理解、定位、文本阅读等](https://zhuanlan.zhihu.com/p/657385270)
-
-### agent
-1xx. [WebVoyager：借助强大多模态模型，开创全新的网络智能体 [译]](https://baoyu.io/translations/ai-paper/2401.13919-webvoyager-building-an-end-to-end-web-agent-with-large-multimodal-models)
 
 
 

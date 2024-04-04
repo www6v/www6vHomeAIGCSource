@@ -94,16 +94,33 @@ categories:
 
 
 
+# HuggingGPT 
 
+# BabyAGI  [AIGC]
+Plan-and-execute agents 
+The **planning** is almost always done **by an LLM**.
+The **execution** is usually done by a **separate agent (equipped with tools)**.
 
+# AutoGPT[10][11]
+AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 
+1. AutoGPT 会基于一定策略自动组装 Command Prompt，这些首次会包含用户输入的 Name, Role和Goals 
+2. Command Prompt 的目标不是为了拿到最终结果，而是通过 GPT Chat API(Thinking 的过程)返回下一步的 Command (包含name和arguments, 如`browser_website(url = "www.baidu.com")` )
+3. 这些 Command 都是可扩展的，每一种命令代表一种外部能力(比如爬虫、Google搜索，也包括GPT的能力)，通过这些 Command 调用返回的 Result 又会成为到 Command Prompt 的组成元素，
+4. 回到第 1 步往复循环，直到拿到最终结果结果（状态为“compelete”）
 
+# 其他
 + AutoLabel - 自助数据标注
 
 # 参考
+1. [awesome-ai-agents](https://github.com/www6v/awesome-ai-agents) git list
+2. [DecryptPrompt](https://github.com/www6v/DecryptPrompt)  ***  git list
+3. [AIGCLINK](https://space.bilibili.com/471000665/video?tid=0&pn=1&keyword=&order=pubdate) V
 
-[awesome-ai-agents](https://github.com/www6v/awesome-ai-agents) git list
+1xx. [「Agent」通俗易懂地聊聊AI Agent（附66个开源+44个闭源Agent项目）](https://zhuanlan.zhihu.com/p/664281311)
 
-[DecryptPrompt](https://github.com/www6v/DecryptPrompt)  ***  git list
-
-[AIGCLINK](https://space.bilibili.com/471000665/video?tid=0&pn=1&keyword=&order=pubdate) V
+#### xxx
+10. [2023年新生代大模型Agents技术,ReAct,Self-Ask,Plan-and-execute,以及AutoGPT, HuggingGPT等应用](https://zhuanlan.zhihu.com/p/642357544) ***  论文+代码
+11. [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) git
+      [带界面的 AutoGPT 产品](https://link.zhihu.com/?target=https%3A//godmode.space/)
+      
