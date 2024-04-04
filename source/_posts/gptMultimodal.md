@@ -57,9 +57,19 @@ categories:
 + Input Projector输入投影器
 	**输入投影器**可以直接通过线性投影器或多层感知器(MLP)来实现，即交替使用几个线性投影器和非线性激活函数。
 	还有更复杂的实现，如交叉注意Cross-attention、Q-Former (Li et al.， 2023c)或P-Former (Jian et al.， 2023)。
-	- **Cross-attention**使用一组可训练向量作为查询，并使用编码特征FX作为键将特征序列压缩到固定长度。然后将压缩后的表示直接输入LLM (Bai等人，2023b)或进一步用于X-text交叉注意融合(Alayrac等人，2022)。
+	
+	- **Cross-attention**使用一组可训练向量作为查询，并使用编码特征FX作为键将特征序列压缩到固定长度。然后将压缩后的表示直接输入LLM (Bai等人，2023b)或进一步用于X-text交叉注意融合(Alayrac等人，2022)。 
 	- **Q-Former**从FX中提取相关特征，然后将选中的特征作为提示PX。
 	- 同时，P-Former生成“参考提示”，对Q-Former生成的提示施加对齐约束。然而，Q-和P-Former都需要单独的PT进程进行初始化。
+	
+	| Input Projector输入投影器 |                                           |
+	| ------------------------- | ----------------------------------------- |
+	| Cross-attention           | Flamingo, Owl, Qwen-VL                    |
+	| Q-Former                  | BLIP2, InstructBLIP, MiniGPT-4, MiniGPT-5 |
+	| MLP                       | CogVLM , LLaVa1.5                         |
+	| Linear Project            | LLaVa, PaLI-x                             |
+	
+	
 
 
 {% asset_img  'multimodalArch.jpg' %}
