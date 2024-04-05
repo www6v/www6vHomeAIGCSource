@@ -63,6 +63,8 @@ DocOwl1.5由mPLUG-Owl2初始化，使用**ViT/L-14作为视觉编码器**，并�
 
 1xx. [MiniGPT-4实现原理及其核心BLIP2模型实践：从代表性图文对数据集、BLIP2模型结构到调用实践](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648400402&idx=1&sn=efd84698e6a207b2035995ec2e255417) *
 
+1xx. [BLIP2：下一代多模态模型的雏形](https://zhuanlan.zhihu.com/p/606364639)
+
 ### Flamingo
 1xx. [[论文速览]Flamingo: a Visual Language Model for Few-Shot Learning[2204.14198]](https://www.bilibili.com/video/BV1pu411G7ce) V
 1xx. [Otter  on OpenFlamingo](https://github.com/Luodian/Otter) git

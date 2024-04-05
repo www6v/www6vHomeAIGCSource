@@ -11,6 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+
+<!-- toc -->
 
 # Cognitive Architecture [2]
 + Cognitive architectures for RAG [1]
@@ -18,7 +21,7 @@ categories:
 # Corrective RAG
 
 
-#  Self-RAG [3]  # SELF-RAG
+#  Self-RAG [3] 
 Self-RAG 则是更加主动和智能的实现方式，主要步骤概括如下：
 1. 判断是否需要额外检索事实性信息（retrieve on demand），仅当有需要时才召回
 2. 平行处理每个片段：生产prompt+一个片段的生成结果
