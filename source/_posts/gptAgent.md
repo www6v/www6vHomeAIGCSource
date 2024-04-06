@@ -128,6 +128,8 @@ AutoGPT - retrieval 结合近期操作记录
   - 生成 action 的 input 是否正确。
   - 生成的步骤序列是否合理高效。
 
+
+
 # 参考
 1. 公开课
 2. 公开课
@@ -140,7 +142,7 @@ AutoGPT - retrieval 结合近期操作记录
    [Harrison Chase: Agents](https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/chase-agents/)  ***
 
 1xx. [智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT](https://blog.csdn.net/v_JULY_v/article/details/135868163?spm=1001.2014.3001.5502)   
-1xx. [AI Agent 应该更有趣还是更有用？](https://zhuanlan.zhihu.com/p/689816790)  ***
+
 
 ### Planning
 20. [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) paper

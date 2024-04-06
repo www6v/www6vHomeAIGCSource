@@ -141,18 +141,22 @@ top:
 + {% post_link 'gptLangchainAgent' %} 
 
 ## Agent
-+ {% post_link 'gptAgent' %}
-+ {% post_link 'gptMultiAgents' %}  
-+ {% post_link 'gptAgentPractice' %} 
-+ {% post_link 'gptAgentPlanAndExecute' %}
-+ {% post_link 'gptAgentList' %} 
-+ Multimodal Agent
-  + {% post_link 'gptAgentMultimodal' %}  
-  + {% post_link 'gptAgentWeb' %}   
-+ Tools
++ Overview
+  + {% post_link 'gptAgent' %}
+  + {% post_link 'gptAgentCategory' %}
+  + {% post_link 'gptAgentList' %}  
+  + {% post_link 'gptAgentPractice' %} 
++ Multi-agent collaboration
+  + {% post_link 'gptMultiAgents' %}  
++ Planning
+  + {% post_link 'gptAgentPlanAndExecute' %}
++ Tool use
   + {% post_link 'gptFunctionCall' %} 
   + {% post_link 'gptAgentTool' %}  
   + {% post_link 'gptToolformer' %}  
++ Multimodal Agent
+  + {% post_link 'gptAgentMultimodal' %}  
+  + {% post_link 'gptAgentWeb' %}   
 
 ## Application
 + {% post_link 'gpt' %}
