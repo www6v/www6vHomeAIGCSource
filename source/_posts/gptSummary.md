@@ -146,10 +146,12 @@ top:
   + {% post_link 'gptAgentCategory' %}
   + {% post_link 'gptAgentList' %}  
   + {% post_link 'gptAgentPractice' %} 
-+ Multi-agent collaboration
-  + {% post_link 'gptMultiAgents' %}  
++ Reflection
+  + {% post_link 'gptAgentReflection' %}  
 + Planning
   + {% post_link 'gptAgentPlanAndExecute' %}
++ Multi-agent collaboration
+  + {% post_link 'gptMultiAgents' %}  
 + Tool use
   + {% post_link 'gptFunctionCall' %} 
   + {% post_link 'gptAgentTool' %}  

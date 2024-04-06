@@ -27,9 +27,9 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
   - CoT 
   - ToT
 
-+ Self-Reflection
-  + ReAct [20]
-  + Reflexion [21][22]
++ Self-Reflection [20]
+  + ReAct 
+  + Reflexion 
   + Chain of Hindsight 
 
 ### Memory [6]
@@ -143,11 +143,10 @@ AutoGPT - retrieval 结合近期操作记录
 
 1xx. [智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT](https://blog.csdn.net/v_JULY_v/article/details/135868163?spm=1001.2014.3001.5502)   
 
-
 ### Planning
-20. [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) paper
-21. [【论文阅读】Reflexion: 大模型如何从错误经验中学习？](https://zhuanlan.zhihu.com/p/639254455)
-22. [Reflexion: 带言语强化学习的语言智体](https://zhuanlan.zhihu.com/p/671508578)
+20. {% post_link 'gptAgentReflection' %}
+
+
 2xx. [引领语言智能：从思维链推理到语言智能体的探索指南 [译]](https://baoyu.io/translations/ai-paper/2311.11797-igniting-language-intelligence-the-hitchhikers-guide-from-chain-of-thought-reasoning-to-language-agents) paper
 2xx. [ReWOO: 高效增强语言模型中解偶观测和推理](https://zhuanlan.zhihu.com/p/671491031)
 
