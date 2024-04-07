@@ -99,12 +99,6 @@ top:
 + BERT
   + {% post_link 'gptFineTuningBert' %}    
 
-## Prompt
-  + {% post_link 'gptPromptEngineering' %}
-  + {% post_link 'gptCOT' %} 
-  + {% post_link 'gptPromptCode' %}
-  + {% post_link 'gptPrompt' %}
-
 
 ## Multimodal
 + Survey
@@ -125,20 +119,16 @@ top:
     + {% post_link 'gptMultimodalMinigpt4' %}   
 
 ## RAG
-
-+ {% post_link 'gptRAG' %}
-+ {% post_link 'gptRAGPractice' %} 
-+ {% post_link 'gptRAGPerformance' %}
-+ {% post_link 'gptRAGPerformanceOpenAI' %} 
-+ {% post_link 'gptRAGSelfReflective' %} 
++ 综述
+  + {% post_link 'gptRAG' %}
+  + {% post_link 'gptRAGPractice' %}
++ 性能 & pattern
+  + {% post_link 'gptRAGPerformance' %}
+  + {% post_link 'gptRAGPerformanceOpenAI' %} 
+  + {% post_link 'gptRAGSelfReflective' %} 
 + Multimodal RAG
   + {% post_link 'gptRAGMultimodal' %}  
   + {% post_link 'gptRAGMultimodalPractice' %}   
-
-## Langchain
-+ {% post_link 'gptLangchain' %}
-+ {% post_link 'gptRetrievers' %} 
-+ {% post_link 'gptLangchainAgent' %} 
 
 ## Agent
 + Overview
@@ -170,6 +160,17 @@ top:
   + {% post_link 'gptDomainFinance' %}   
   + {% post_link 'gptDomainMed' %}   
   + {% post_link 'gptDomainLaw' %}    
+
+## Prompt
+  + {% post_link 'gptPromptEngineering' %}
+  + {% post_link 'gptCOT' %} 
+  + {% post_link 'gptPromptCode' %}
+  + {% post_link 'gptPrompt' %}
+
+## Langchain
++ {% post_link 'gptLangchain' %}
++ {% post_link 'gptRetrievers' %} 
++ {% post_link 'gptLangchainAgent' %} 
 
 ## Study
 + {% post_link 'gptStudy' %}
