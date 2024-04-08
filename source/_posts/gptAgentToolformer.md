@@ -11,8 +11,14 @@ categories:
 <p></p>
 <!-- more -->
 
+# 论文
++ 论文地址
+ [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761)  
+
++ 开源地址
+[Implementation of Toolformer](https://github.com/lucidrains/toolformer-pytorch)  git
+
 # Toolformer[1]
-  - 🔗 文章：Toolformer: Language Models Can Teach Themselves to Use Tools https://arxiv.org/abs/2302.04761
   - 🔑关键词和摘要
     - Keywords: Large-scale PLMs,  Tool Learning
     - xxx

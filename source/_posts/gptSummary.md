@@ -147,7 +147,7 @@ top:
   + {% post_link 'gptAgentTool' %}  
   + {% post_link 'gptAgentToolGorilla' %}   
   + {% post_link 'gptAgentTuning' %}   
-  + {% post_link 'gptToolformer' %}  
+  + {% post_link 'gptAgentToolformer' %}  
 + Multimodal Agent
   + {% post_link 'gptAgentMultimodal' %}  
   + {% post_link 'gptAgentWeb' %}   
