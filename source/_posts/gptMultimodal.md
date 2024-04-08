@@ -67,7 +67,7 @@ categories:
 	| Cross-attention           | Flamingo, Owl, Qwen-VL                    |
 	| Q-Former                  | BLIP2, InstructBLIP, MiniGPT-4, MiniGPT-5 |
 	| MLP                       | CogVLM , LLaVa1.5                         |
-	| Linear Project            | LLaVa, PaLI-x                             |
+	| Linear Project            | LLaVa, PaLI-x,  MiniGPT-v2                |
 	
 	
 

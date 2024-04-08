@@ -30,8 +30,10 @@ categories:
 2. 《Retrieving Multimodal Information for Augmented Generation: A Survey》
    [万字综述：2023年多模态检索增强生成技术(mRAG)最新进展与趋势-图片、代码、图谱、视频、声音、文本](https://zhuanlan.zhihu.com/p/665078079) 
    [多模态RAG综述](https://zhuanlan.zhihu.com/p/678812531)
+   
+1xx. [朴素多模态RAG如何实现？兼看RAG上下文过滤方案FILCO及202402大模型早报 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648409004&idx=2&sn=7f36d3ff5e170442486a5d413373c563)    多模态RAG 两种实现方式
 
-### xxx
+### 文档智能
 10. [值得一看的文档理解前沿方案及版式分析开源数据：三种模式、九大数据集 ](https://mp.weixin.qq.com/s/FsjoUUFssMv2UkbxM-IJ3A)
 11. [Monkey](https://github.com/Yuliang-Liu/Monkey)
     [Monkey Demo](http://vlrlab-monkey.xyz:7684/)
