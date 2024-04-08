@@ -12,9 +12,7 @@ categories:
 <!-- more -->
 
 
-
 # 参考
-
 《Tool Learning with Foundation Models》 
 1xx. [ToolLearningPapers](https://github.com/thunlp/ToolLearningPapers) git 
 1xx. [Tool Learning with Foundation Models](https://arxiv.org/pdf/2304.08354.pdf) paper
@@ -25,14 +23,7 @@ categories:
 1xx. [Augmented Language Models（增强语言模型）](https://blog.csdn.net/qq_39388410/article/details/130798125)
 1xx. [增强语言模型（ALM）之综述篇](https://zhuanlan.zhihu.com/p/611492200)
 
-《Gorilla》 
-1xx. [Gorilla: Large Language Model Connected with Massive APIs](https://ar5iv.labs.arxiv.org/html/2305.15334) paper
-1xx. [Gorilla：链接海量API的大型语言模型](https://apposcmf8kb5033.pc.xiaoe-tech.com/live_pc/l_64a7d5afe4b09d7237a04b5b) V
-1xx. [gorilla](https://github.com/ShishirPatil/gorilla) git
-1xx. [Gorilla: Large Language Model Connected with Massive APIs](https://gorilla.cs.berkeley.edu/)
-1xx. [Gorilla blog](https://gorilla.cs.berkeley.edu/blog.html)
-1xx. [大猩猩（Gorilla）🦍，连接大量 API 的大型语言模型，能成为未来AI应用的核心么？](https://zhuanlan.zhihu.com/p/632583909)
-1xx. [Gorilla：与大规模API相连的大型语言模型](https://zhuanlan.zhihu.com/p/640697382)
+
 
 ### Others
 1xx. [LLM能够自己制作工具了：详解Large Language Models as Tool Makers](https://zhuanlan.zhihu.com/p/633654195)  ToolMaker

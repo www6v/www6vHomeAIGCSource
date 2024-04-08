@@ -145,6 +145,7 @@ top:
 + Tool use
   + {% post_link 'gptFunctionCall' %} 
   + {% post_link 'gptAgentTool' %}  
+  + {% post_link 'gptAgentToolGorilla' %}   
   + {% post_link 'gptAgentTuning' %}   
   + {% post_link 'gptToolformer' %}  
 + Multimodal Agent
