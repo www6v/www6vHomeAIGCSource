@@ -41,6 +41,8 @@ Self-RAG 则是更加主动和智能的实现方式，主要步骤概括如下�
 1xx. [Corrective Retrieval Augmented Generation](https://arxiv.org/pdf/2401.15884.pdf) Figure 2
 1xx. [Corrective RAG (CRAG)](https://github.com/langchain-ai/langgraph/blob/main/examples/rag/langgraph_crag.ipynb) git
 
+1xx. 【社区第十三讲】 老刘说NLP线上交流
+
 ### SELF-RAG
 1xx. [SELF-RAG: LEARNING TO RETRIEVE, GENERATE, AND
 CRITIQUE THROUGH SELF-REFLECTION](https://arxiv.org/pdf/2310.11511.pdf) Figure 1
@@ -50,3 +52,4 @@ CRITIQUE THROUGH SELF-REFLECTION](https://arxiv.org/pdf/2310.11511.pdf) Figure 1
 
 ### Self-RAG
 1xx. [original implementation of SELF-RAG](https://github.com/www6v/self-rag)
+
