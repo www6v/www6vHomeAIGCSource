@@ -66,6 +66,8 @@ Self-Ask
 2. [Prompt Engineering ](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) paper
 3. [Prompt Engineering Guide](https://www.promptingguide.ai/techniques) guide
    [Prompt-Engineering-Guide ](https://github.com/www6v/Prompt-Engineering-Guide) *** git
+   
+1xx.   【社区第十三讲】 老刘说NLP线上交流  *** 很全 
 
 1xx. [[论文阅读] Prompt Engineering综述](https://zhuanlan.zhihu.com/p/682352630)
 
