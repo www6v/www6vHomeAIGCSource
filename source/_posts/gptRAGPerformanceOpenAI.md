@@ -47,7 +47,17 @@ categories:
 A **self-querying** retriever is one that, as the name suggests, has the  ability to query itself. Specifically, given any natural language query, the retriever uses a query-constructing LLM chain to write a **structured query** and then applies that structured query to its underlying  VectorStore. This allows the retriever to not only use the user-input  query for semantic similarity comparison with the contents of stored  documents but to also **extract filters from the user query on the  metadata of stored documents and to execute those filters**.
 
 
+# Advanced RAG
+### 架构 [1]
+  - 离线 index
+  - 在线 查询
+
+{% asset_img 'rag.jpg' %}
+
+
 # 参考
+1. [Deconstructing RAG](https://blog.langchain.dev/deconstructing-rag/) ***
+
 3. [Applying OpenAI's RAG Strategies](https://blog.langchain.dev/applying-openai-rag/)   *** 
 
 4. [Query Construction](https://blog.langchain.dev/query-construction/) ***
