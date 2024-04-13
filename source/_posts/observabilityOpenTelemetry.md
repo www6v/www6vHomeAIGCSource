@@ -14,7 +14,7 @@ categories:
 
 
 ## 参考
-[可观测性技术生态和 OpenTelemetry 原理及实践，陈一枭](https://www.bilibili.com/video/BV18K4y1M7bL)  *** 
+[可观测性技术生态和 OpenTelemetry 原理及实践，陈一枭](https://www.bilibili.com/video/BV18K4y1M7bL)  V *** 
 [OpenTelemetry 可观测性的未来](https://lib.jimmysong.io/opentelemetry-obervability/) Jimmy Song - Ted Young *** 
 
 
