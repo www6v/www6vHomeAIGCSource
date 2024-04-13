@@ -16,8 +16,21 @@ categories:
 ## 目录
 <!-- toc -->
 
+# Overview
 
-#  索引方式  [1][2]
+
+{% asset_img 'advanced-rag.JPG' %}
+
+
+# Embedding
++ HyDE
+At a high level, HyDE is an embedding technique that takes queries, **generates a hypothetical answer**, and then embeds that generated document and uses that as the final example.
+
+> 最佳实践
+**BGE** 优于 OpenAI ADA02
+
+# 索引
+##  索引方式  [1][2]
 ### Smaller chunks
 Indexing by **small data chunks**
 按子部分索引数据块：将文本块拆分为较小的部分，如句子，进行多次索引。这有助于
@@ -35,7 +48,7 @@ Indexing by **the summary of the document**
 建索引。特别适用于文本块中包含多余信息或与用户查询无关的情况。
 
 
-# 分块[3]
+## 分块[3]
 ### 分块参数
 chuck_size, ,chunk overlap
 top_k
@@ -51,14 +64,9 @@ top_k
 **BM25+FAAIS   好于 FAAIS相似度搜索**
 **FAAIS相似度搜索 好于 HyDE和上下文压缩**
 
-# Embedding
-+ HyDE
-At a high level, HyDE is an embedding technique that takes queries, **generates a hypothetical answer**, and then embeds that generated document and uses that as the final example.
 
-> 最佳实践
-**BGE** 优于 OpenAI ADA02
-
-# Reranker
+# Post-Retrieval
+## Reranker
 ### 什么是Reranker [6]
 A reranking model — also known as a **cross-encoder** — is a type of model that,** given a query and document pair, will output a similarity score.** 
 
@@ -68,6 +76,9 @@ A reranking model — also known as a **cross-encoder** — is a type of model t
 ### 优秀的组合 [5]
 OpenAI + CohereRerank
 Voyage + big-reranker-large
+
+## Fusion
+
 
 # 参考
 1. [3种高级索引方法，有效提升RAG性能](https://www.bilibili.com/video/BV1dH4y1C7Ck/) V
