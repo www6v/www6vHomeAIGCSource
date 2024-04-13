@@ -13,17 +13,19 @@ top: true
 <!-- more -->
 
 ## 原理
-+ [istio](../../../../2019/07/02/istio/)
-+ [istio 控制面ControlPanel](../../../../2022/01/14/istioControlPanel/) 
-+ [Istio流量管理](../../../../2019/11/21/istioTrafficManagement/)
-+ [istio数据面](../../../../2019/11/21/istioDataplane/) 
-+ {% post_link 'istioDataplaneAmbient' %}
-+ [Istio、Kubernetes和Spring Cloud中服务的比对](../../../../2019/07/20/istio-k8s-service/)    
-+ [Istio知识图谱](../../../../2019/11/18/istioKnowledgeMap/)
++ {% post_link 'istio' %}
++ 控制面
+	+ {% post_link 'istioControlPanel' %}
+	+ {% post_link 'istioTrafficManagement' %}
++ 数据面
+	+ {% post_link 'istioDataplane' %}
+	+ {% post_link 'istioDataplaneAmbient' %}
++ {% post_link 'istio-k8s-service' %} 
++ {% post_link 'istioKnowledgeMap' %} 
 
 ## 实践
-+ [istio常用命令](../../../../2019/07/15/istioCommand/)
-+ [istio安装 + Bookinfo示例](../../../../2019/07/02/istioSetup-bookinfo/)
-+ [SpringCloud迁移到istio](../../../../2022/01/06/istioMigrateFromSpringCloud/)
-+ [Istio Service Failover](../../../../2022/02/06/istioServiceFailover/)
++ {% post_link 'istioCommand' %} 
++ {% post_link 'istioSetup-bookinfo' %} 
++ {% post_link 'istioMigrateFromSpringCloud' %} 
++ {% post_link 'istioServiceFailover' %} 
 
