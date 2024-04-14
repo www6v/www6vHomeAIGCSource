@@ -11,7 +11,8 @@ categories:
 <p></p>
 <!-- more -->
 
-
+## 目录
+<!-- toc -->
 
 ##  Metric 之 Prometheus [9]
 
@@ -62,10 +63,10 @@ categories:
 ##### 存储层
 7. [Prometheus 存储层的演进](https://cloud.tencent.com/developer/article/1847798)  ***
 ##### Metric
-8. [深入剖析Kubernetes - 48 | Prometheus、Metrics Server与Kubernetes监控体系]() 张磊
-9. [微服务架构实战160讲 第七模块 ：微服务监控告警Prometheus架构和实践 119.监控模式分类]() 杨波 partial
+8. 《48 | Prometheus、Metrics Server与Kubernetes监控体系》 深入剖析Kubernetes  张磊
+9. 《第七模块 ：微服务监控告警Prometheus架构和实践 119.监控模式分类》 微服务架构实战160讲  杨波 partial
 ##### 服务发现机制
-10. [kubernetes架构师课程](https://www.bilibili.com/video/BV16t4y1w7r6) ***
+10. [kubernetes架构师课程](https://www.bilibili.com/video/BV16t4y1w7r6?p=159) 159 V ***
 11. [prometheus服务发现](https://www.cnblogs.com/punchlinux/p/16773486.html)
 
 

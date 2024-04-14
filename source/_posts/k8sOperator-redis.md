@@ -35,5 +35,5 @@ $ kubectl create -f deploy/example/persistent.yaml
 
 ## 参考
 [redis-cluster-operator](https://github.com/ucloud/redis-cluster-operator) 
-[kubernetes架构师课程](https://www.bilibili.com/video/BV16t4y1w7r6?p=129)
+[kubernetes架构师课程](https://www.bilibili.com/video/BV16t4y1w7r6?p=129)  129 V *** 
 
