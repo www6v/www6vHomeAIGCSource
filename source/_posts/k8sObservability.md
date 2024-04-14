@@ -11,6 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 ## Kubernetes可观察性 [1]
 {% asset_img k8sObserver.png  Kubernetes可观察性 %}
 
@@ -202,8 +205,7 @@ spec:
 {% enddetails %}
 
 ## 参考
-
 1. [第12 章 ： 可观测性：监控与日志](https://edu.aliyun.com/lesson_1651_18360#_18360)
 2. [Prometheus监控k8s](https://www.jianshu.com/p/e76053b6f3f5)     Prometheus监控方案
 3. [fluentd-elasticsearch](https://github.com/kubernetes/kubernetes/tree/release-1.23/cluster/addons/fluentd-elasticsearch) EFK监控方案
-4. [kubernetes架构师课程](https://www.bilibili.com/video/BV16t4y1w7r6?p=143)
+4. [kubernetes架构师课程](https://www.bilibili.com/video/BV16t4y1w7r6?p=143)  V 143 ***
