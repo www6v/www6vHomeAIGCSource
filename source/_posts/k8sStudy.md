@@ -17,8 +17,8 @@ categories:
 [Kubernetes 指南](https://feisky.xyz/kubernetes-handbook/)   ***
 [SDN](https://sdn.feisky.xyz/) ***
 
-[倪朋飞 微软](https://feisky.xyz/)  
-[倪朋飞@知乎 微软](https://www.zhihu.com/people/feisky/posts)  
+[倪朋飞 微软](https://feisky.xyz/)   2021 停更
+[倪朋飞@知乎 微软](https://www.zhihu.com/people/feisky/posts)  2021 停更
 
 ##### 宋净超-Jimmy Song
 [Kubernetes Handbook——Kubernetes 中文指南/云原生应用架构实战手册](https://jimmysong.io/kubernetes-handbook/)    ***  
@@ -29,33 +29,33 @@ categories:
 
 ##### others
 [ArthurChiao's Blog](http://arthurchiao.art/categories/) cliumn , bpf, network  ***
-[wei.luo](https://www.yuque.com/wei.luo/cni)  network  *** 
-[云原生实验室](https://icloudnative.io)   米开朗基杨 @知乎 ，腾讯云开发者社区， ***
-[傲小剑  service mesh](https://skyao.io/#posts)  service mesh ***
 [赵化冰@ZTE](https://zhaohuabing.com/)  service mesh ***
-[draveness](https://draveness.me/)   golang, k8s  ***
-[Vermouth](http://www.xuyasong.com/?page_id=1827) Prometheus, Kubernetes, ETCD *** 2020 停更
 [崔秀龙](https://blog.fleeto.us/) service mesh **
+[傲小剑  service mesh](https://skyao.io/#posts)  service mesh ***
+[draveness](https://draveness.me/)   golang, k8s  ***
+[云原生实验室](https://icloudnative.io)   米开朗基杨 @知乎 ，腾讯云开发者社区， **
+
 [morven](https://morven.life/) Kubernetes, go **
-[刘超的通俗云计算  网易云首席架构](https://www.cnblogs.com/popsuper1982/) *
-[陈鹏](https://imroc.io/) 腾讯云工程师 k8s  失效
-[钟华 腾讯云](https://imfox.io/)  失效
+[Vermouth](http://www.xuyasong.com/?page_id=1827) Prometheus, Kubernetes, ETCD *** 2020 停更
 [cizixs@蚂蚁金服](https://cizixs.com/)  2018 停更
 [Kubernetes 学习笔记](https://www.huweihuang.com/kubernetes-notes/) 胡伟煌  2018 停更
 
+# K8s 网络课程
+[wei.luo](https://www.yuque.com/wei.luo/cni)  network  *** 
+
 ## 公司
 ##### 团队分享
+[DaoCloud 道客](https://www.zhihu.com/org/daocloud-3)  知乎 干货多 *** 
+[青云QingCloud 知乎](https://zhuanlan.zhihu.com/qingcloud)  知乎 干货少 *
 [腾讯云容器团队](https://tencentcloudcontainerteam.github.io/)  k8s  2020停更
-[腾讯云容器服务团队的专栏](https://cloud.tencent.com/developer/column/1075/tag-0)
-[青云QingCloud 知乎](https://zhuanlan.zhihu.com/qingcloud)  知乎 干货少
-[DaoCloud 道客](https://www.zhihu.com/org/daocloud-3)  知乎 干货多
+[腾讯云容器服务团队的专栏](https://cloud.tencent.com/developer/column/1075/tag-0)   2021停更
 
 ##### 公司落地
 [唯品会Noah云平台实现内幕披露](https://mp.weixin.qq.com/s/hV8oT13J4DFtpe7JsxSONA)
 [点评]
 
 ## 公开课
-##### CNCF × Alibaba 云原生技术公开课  
+##### CNCF × Alibaba 云原生技术公开课  ***
 [CNCF × Alibaba 云原生技术公开课](https://edu.aliyun.com/course/1651)  video+text+ppt  seen (30章节)
 [阿里云-K8s 资源全汇总 | K8s 大咖带你 31 堂课从零入门 K8s](https://developer.aliyun.com/article/765059?utm_content=g_1000142140)   
 [阿里云-云原生技术公开课](https://edu.aliyun.com/roadmap/cloudnative?spm=a2c6h.12873581.1367615.1.e9cf115eVcBAsC)    
@@ -95,6 +95,12 @@ prometheus， 监控大图
   Kata Containers， gVisor
 + 第30 章 ： 理解RuntimeClass与使用多容器运行时 
 
+ 
+##### 腾讯云-云原生正发声 ***
+[云原生技术实践 | 16位专家视频讲解合集（抢新年限定红包封面）](https://mp.weixin.qq.com/s/7RoYOX9PBp79bwsLmTiOsQ)
+[云原生正发声](https://cloud.tencent.com/developer/special/cloudnative)
+[【云原生正发声】直播PPT汇总](https://docs.qq.com/doc/DRmtFZkFNRlpqeVdR)
+
 ##### 华为云云原生王者课程集训营（黄金-->钻石-->王者）
 [华为云云原生王者课程集训营](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIzNzU5NTYzMA==&action=getalbum&album_id=2082025559781376005&scene=173&from_msgid=2247494514&from_itemidx=1&count=3&nolastread=1#wechat_redirect) - (黄金+钻石)  文字稿 
 [华为云云原生王者之路钻石集训营--学习笔记](https://zhuanlan.zhihu.com/p/400092006) good
@@ -105,11 +111,6 @@ prometheus， 监控大图
 
 ##### 华为云-Cloud Native Lives
 [华为云-Cloud Native Lives](https://bbs.huaweicloud.com/webinar/100009)  
-
-##### 腾讯云-云原生正发声
-[云原生技术实践 | 16位专家视频讲解合集（抢新年限定红包封面）](https://mp.weixin.qq.com/s/7RoYOX9PBp79bwsLmTiOsQ)
-[云原生正发声](https://cloud.tencent.com/developer/special/cloudnative)
-[【云原生正发声】直播PPT汇总](https://docs.qq.com/doc/DRmtFZkFNRlpqeVdR)
 
 
 ## kube-study platform
