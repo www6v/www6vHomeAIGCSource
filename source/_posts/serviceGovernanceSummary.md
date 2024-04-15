@@ -42,11 +42,13 @@ top: true
 + {% post_link 'jsfThreadModel' %}
 
 ### 容错&限流
-+ {% post_link 'soaTolerate' %}
-+ {% post_link 'soaTolerateFramework' %}
-+ {% post_link  'ratelimit' %}
-+ {% post_link  'ratelimitSentinel' %}
-+ {% post_link 'soaTimeout' %}
++ 容错
+    + {% post_link 'soaTolerate' %}
+    + {% post_link 'soaTolerateFramework' %}
+	+ {% post_link 'soaTimeout' %}
++ 限流
+    + {% post_link  'ratelimit' %}
+    + {% post_link  'ratelimitSentinel' %}
 + {% post_link 'soaGracefulStart' %} 
 + {% post_link 'soaGracefulClose' %} 
 

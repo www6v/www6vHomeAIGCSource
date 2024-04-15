@@ -37,12 +37,12 @@ Pilot Design Overview (来自 [Istio old_pilot_repo](https://github.com/istio/ol
 
 #####  流量管理模型
 
-+ VirtualService 
++ **VirtualService** 
 定义了一系列针对指定服务的流量**路由规则**; 
 将流量路由到给定目标地址;
 通常和目标规则（DestinationRule）成对出现;
 
-+ DestinationRule
++ **DestinationRule**
 定义虚拟服务路由**目标地址**的**真实地址**，即**子集（subset）**；
 设置**负载均衡方式**： round robin（默认），随机，权重，最少请求数；
 
@@ -53,7 +53,7 @@ Pilot Design Overview (来自 [Istio old_pilot_repo](https://github.com/istio/ol
      - 添加超时重试等策略
      - 扩展网格
 
-+ Gateway  
++ **Gateway**  
 描述了一个负载均衡器，用于承载网格边缘的进入和发出连接。
 
 + EnvoyFilter 
@@ -63,7 +63,7 @@ Pilot Design Overview (来自 [Istio old_pilot_repo](https://github.com/istio/ol
 调整Envoy代理接管的端口和协议；
 限制Envoy代理可访问的服务；
 
-+ 总结：
+**总结**
 管理内部流量：VirtualService + DestinationRule
 管理外部流量：Gateway
 管理服务：ServiceEntry
@@ -71,13 +71,13 @@ Pilot Design Overview (来自 [Istio old_pilot_repo](https://github.com/istio/ol
 #####  灰度发布
 {% asset_img  istio-gray.jpg  istio灰度发布  %}
 
-## 参考:
+## 参考
 1. [Istio流量管理实现机制深度解析](https://zhaohuabing.com/post/2018-09-25-istio-traffic-management-impl-intro/)  赵化冰
 2. [腾讯云容器团队内部Istio专题分享](https://mp.weixin.qq.com/s/NjMncH84uEl_PywOFFMlFA) 腾讯云 钟华
 3. [极客时间 《Service Mesh实战 - 核心功能之流量控制：Istio是如何实现流量控制功能的？》](https://time.geekbang.org/course/intro/100049401) 马若飞
 
----
-官方Examples 0-5  G
+
+### 官方Examples 0-5  G
 
 0. [流量管理](https://preliminary.istio.io/zh/docs/concepts/traffic-management)  istio官网 引
 1. [配置请求路由](https://preliminary.istio.io/zh/docs/tasks/traffic-management/request-routing/) done
@@ -85,3 +85,7 @@ Pilot Design Overview (来自 [Istio old_pilot_repo](https://github.com/istio/ol
 3. [TCP 流量转移](https://preliminary.istio.io/zh/docs/tasks/traffic-management/tcp-traffic-shifting/) done ,验证有点问题
 4. [设置请求超时](https://preliminary.istio.io/zh/docs/tasks/traffic-management/request-timeouts/) done
 5. [熔断](https://preliminary.istio.io/zh/docs/tasks/traffic-management/circuit-breaking/) done
+
+
+###  最佳实践
+[流量管理最佳实践](https://istio.io/latest/zh/docs/ops/best-practices/traffic-management/)
