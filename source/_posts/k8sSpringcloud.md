@@ -27,3 +27,5 @@ categories:
    
 2. [SpringCloud微服务电商系统在Kubernetes集群中上线详细教程](https://blog.csdn.net/web18484626332/article/details/126516371)
    用的都是Deployment ，需要部署成StatefulSet
+   
+1xx. [kubernetes架构师课程](https://www.bilibili.com/video/BV16t4y1w7r6/?p=195) P195-P200 V 
