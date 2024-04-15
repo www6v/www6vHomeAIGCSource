@@ -2,7 +2,6 @@
 title: istio安装 + Bookinfo示例
 date: 2019-07-02 15:24:50
 tags:
-  - 分布式
   - istio
 categories: 
   - 云原生

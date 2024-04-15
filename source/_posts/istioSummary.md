@@ -25,7 +25,9 @@ top: true
 
 ## 实践
 + {% post_link 'istioCommand' %} 
-+ {% post_link 'istioSetup-bookinfo' %} 
-+ {% post_link 'istioMigrateFromSpringCloud' %} 
++ {% post_link 'istioSetup-bookinfo' %}   
 + {% post_link 'istioServiceFailover' %} 
++ 集成
+	+ {% post_link 'istioMigrateFromSpringCloud' %} 
+	+ {% post_link 'istioSpringcloud' %} 
 

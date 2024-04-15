@@ -60,12 +60,16 @@ top: true
 + {% post_link 'k8sObservability' %} 
 
 ## 生产化
-+ {% post_link 'k8sAppMigrate' %} 
-+ {% post_link 'k8sHA' %} 
-+ {% post_link 'k8sAvailable' %} 
-+ {% post_link 'k8sAvailableHealth' %} 
++ Available
+    + {% post_link 'k8sHA' %} 
+    + {% post_link 'k8sAvailable' %} 
+    + {% post_link 'k8sAvailableHealth' %} 
++ 集成 
+    + {% post_link 'k8sAppMigrate' %} 
+    + {% post_link 'k8sSpringcloud' %}  
 + {% post_link 'linuxKernelParam' %} 
 + {% post_link 'k8sUpgrade' %} 
+
 
 ## PaaS 
 + {% post_link 'k8sPaaS' %} 

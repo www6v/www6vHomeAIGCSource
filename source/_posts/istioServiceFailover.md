@@ -14,10 +14,8 @@ categories:
 {% asset_img  failover.JPG  Istio Service Failover  %}
 
 ## 参考
-[基于云原生技术的服务最大化可用性，白西原（乐天创研）](https://www.bilibili.com/video/BV11P4y1p7kz?spm_id_from=333.880.my_history.page.click)
+1. [基于云原生技术的服务最大化可用性，白西原（乐天创研）](https://www.bilibili.com/video/BV11P4y1p7kz?spm_id_from=333.880.my_history.page.click)
+   ppt在‘云原生社区’的 gitlab中
 
-[ppt](https://www.aliyundrive.com/s/dXxngxjTkZE)
-
-[Open Source Service Mesh Hub – Technical Overview](https://www.solo.io/blog/open-source-service-mesh-hub-technical-overview/)
-
+1xx. [Open Source Service Mesh Hub – Technical Overview](https://www.solo.io/blog/open-source-service-mesh-hub-technical-overview/)
 
