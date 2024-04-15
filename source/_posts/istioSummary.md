@@ -24,6 +24,7 @@ top: true
 + {% post_link 'istioKnowledgeMap' %} 
 
 ## 实践
++ {% post_link 'istioGray' %}  
 + {% post_link 'istioCommand' %} 
 + {% post_link 'istioSetup-bookinfo' %}   
 + {% post_link 'istioServiceFailover' %} 

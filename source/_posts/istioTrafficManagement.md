@@ -68,8 +68,6 @@ Pilot Design Overview (来自 [Istio old_pilot_repo](https://github.com/istio/ol
 管理外部流量：Gateway
 管理服务：ServiceEntry
 
-#####  灰度发布
-{% asset_img  istio-gray.jpg  istio灰度发布  %}
 
 ## 参考
 1. [Istio流量管理实现机制深度解析](https://zhaohuabing.com/post/2018-09-25-istio-traffic-management-impl-intro/)  赵化冰

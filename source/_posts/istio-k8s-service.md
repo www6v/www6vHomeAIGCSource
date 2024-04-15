@@ -12,6 +12,8 @@ categories:
 <p></p>
 <!-- more -->
 
+### k8s vs. istio
+
 特性 | k8s-服务编排,资源调度 | istio-流量管理
 :-: | :-: | :-: 
 定义          |  Service<br> Deployment<br> Endpoint | Service<br> 服务版本 <br> 服务实例
@@ -29,7 +31,7 @@ categories:
 
 
 
------
+### spring Cloud  vs.  spring Cloud alibaba vs.  istio
 
 特性 | spring Cloud-服务治理<br>（Chassis模式） | spring Cloud alibaba-Paas全栈| istio组件-流量管理<br>（SideCar模式）
 :-: | :-: | :-: | :-:
@@ -47,7 +49,8 @@ categories:
 **流量管理-灰度发布**                 | Nepxion Discovery等 非原生| | 原生支持
 **流量管理-异地容灾**                 | x | x |  集群感知
 
------
+
+###  Istio Gateway vs. 阿里云Ingress Controller vs. NGINX Ingress Controller[4]
 
 | 特性                        | Istio Gateway                                  | 阿里云Ingress Controller               | NGINX Ingress Controller               |
 | --------------------------- | ---------------------------------------------- | -------------------------------------- | -------------------------------------- |
@@ -59,20 +62,23 @@ categories:
 | 路由规则粒度                | service下的不同pod                             | service                                | service                                |
 | 支持的协议                  | HTTP1.1/HTTP2/gRPC/TCP<br/>/Websockets/MongoDB | HTTP1.1/HTTP2/gRPC<br/>/TCP/Websockets | HTTP1.1/HTTP2/gRPC<br/>/TCP/Websockets |
 
------
 
+### SpringCloud With Kubernetes[3]
 <div style="text-align: center;">
 
-![SpringCloud With Kubernetes](https://user-images.githubusercontent.com/5608425/64624730-aa6e3480-d41d-11e9-84eb-2278bdb952e1.jpg)  SpringCloud With Kubernetes
-
-![SpringCloud .vs Kubernetes](https://user-images.githubusercontent.com/5608425/64624734-ab06cb00-d41d-11e9-8ceb-ed1b5436eec7.jpg)
-SpringCloud .vs Kubernetes
+![SpringCloud With Kubernetes](https://user-images.githubusercontent.com/5608425/64624730-aa6e3480-d41d-11e9-84eb-2278bdb952e1.jpg)  
 </div>
 
-## 参考:
+### SpringCloud .vs Kubernetes[3]
+<div style="text-align: center;">
+
+![SpringCloud .vs Kubernetes](https://user-images.githubusercontent.com/5608425/64624734-ab06cb00-d41d-11e9-8ceb-ed1b5436eec7.jpg)
+</div>
+
+## 参考
 1. 《分布式系统的技术栈》 左耳听风
 2. [厉害了，Spring Cloud Alibaba 发布 GA 版本！](https://blog.csdn.net/zl1zl2zl3/article/details/89790643)
 3. [一篇囊括微服务服务拆分的一切：前提，时机，方法，规范，选型](https://www.cnblogs.com/popsuper1982/p/9634578.html)
 4. [Istio Gateway与Kubernetes Ingress Controller对比](https://yq.aliyun.com/articles/636511)  灰度例子
-5. [Service Mesh 高可用在企业级生产中的实践](https://www.servicemesher.com/blog/baidu-service-mesh-ha-practice/)  百度 罗广明 未
+1xx.   [Service Mesh 高可用在企业级生产中的实践](https://blog.csdn.net/weixin_38754564/article/details/106233191) 百度 罗广明 未
     Service Mesh与Spring Cloud的结合

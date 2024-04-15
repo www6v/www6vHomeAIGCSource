@@ -24,8 +24,6 @@ top: true
 + {% post_link 'apiGateway' %}
 + {% post_link 'apiGatawayApisix' %}
 + {% post_link 'apiGatawaySpringGateway' %}
-+ {% post_link 'apiGatewayGray' %}
-
 
 
 ### Config & Discovery
@@ -58,6 +56,11 @@ top: true
 
 + {% post_link 'springTransactionInvalid' %}
 + {% post_link 'springTransaction' %}
+
+### 灰度发布
++ {% post_link 'apiGatewayGray' %}
++ {% post_link 'k8sIngressNginx' %} 
++ {% post_link 'istioGray' %}  
 
 ### 安全
 + {% post_link 'soaAuth' %}
