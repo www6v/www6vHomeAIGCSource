@@ -26,7 +26,7 @@ categories:
 {% asset_img 'moduleRAG.webp' %}
 
 ### indexing
-  - chunk优化
+  - **chunk优化**
     - small-to-big
       用小块做索引，但召回大块
     - sliding window
@@ -35,25 +35,25 @@ categories:
       例如使用知识图谱进行文档内容的组织，根据文档结构进行层级组织
 
 ### pre-retrival阶段
-  - query-routing
+  - **query-routing**
     - Metadata Router/ Filter  问题的分发
     - Semantic Router  意图分类
       [semantic-router](https://github.com/aurelio-labs/semantic-router/) git
-  -  query-expansion  
+  -  **query-expansion**  
      - Multi-Query 一变多
      - Sub-Query 拆分子query
      - CoVe
-  -  query transformer
+  -  **query transformer**
      - query rewrite改写
      - HyDE
      - Step-back Prompting
-  -  query construction  
+  -  **query construction**  
      - text-cypher  
      - text2sql 
      - 将结构化知识利用起来
      
 ### Retrieval
-  - Retriver Selection 检索方式的选择
+  - **Retriver Selection** 检索方式的选择
      - Sparse Retriever
        稀疏检索（es字符串匹配）
      - Dense Retriever
@@ -63,7 +63,7 @@ categories:
      -  adapter
 
 ### post-retrieval 包括一些后处理的模块
-  - rerank重排
+  - **rerank重排**
     - Rule-base Rerank  基于规则的
     - Model-base Rerank 基于模型的
       基于大模型llm本身的
@@ -82,7 +82,7 @@ categories:
   - Scheduling
   - Fusion
   - 则包括对各个模块之间的执行和通信进行管理
-  
+
 # 参考
 
 ### 综述
