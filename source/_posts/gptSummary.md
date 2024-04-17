@@ -32,6 +32,7 @@ top:
   + {% post_link 'gptLargeModel' %} 
   + {% post_link 'gptTransformer' %} 
   + {% post_link 'gptTransformerCode' %}  
+  + {% post_link 'gptEmbedding' %}   
   + {% post_link 'gptTemperature' %}  
 + 基座模型
   + {% post_link 'gptFamily' %}  

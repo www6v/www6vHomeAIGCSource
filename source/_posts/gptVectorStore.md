@@ -16,29 +16,7 @@ categories:
 ## 目录
 <!-- toc -->
 
-# Embedding 
-+ example [5]
-  - **降维**:   t-SNE  
-  - K-Means 聚类
-  - 文本搜索  相似度搜索
 
-+ Embedding 价值 [6]
-  - **降维**
-    将这些高维数据映射到一个低维空间，大大减少了模型的复杂度。
-  - 捕捉语义信息 
-    Embedding不仅仅是降维，更重要的是，它能够捕捉到数据的语义信息。
-  - 泛化能力
-    由于Embedding能够捕捉到数据的一些内在规律，因此对于这些未见过的数据，Embedding仍然能够给出合理的表示
-
-+ 应用 [6]
-  - 语义表示和语义相似度
-  - 词语关系和类比推理
-  - 上下文理解
-  - 文本分类和情感分析
-  - 机器翻译和生成模型
-
-+ 天梯榜
-  [mteb/leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
   
 # 向量数据库
 + 国产
@@ -86,14 +64,13 @@ categories:
 
 4. [Vector Similarity Explained](https://www.pinecone.io/learn/vector-similarity/)
 
-5. [embedding](https://github.com/www6v/openai-quickstart/blob/main/openai_api/embedding.ipynb) git
+5. xxx
 
-6. 《AI 大模型应用开发实战营》 03-大模型开发基础：Embedding  
+6. xxx
+
 7. [向量数据库（第 1 部分）：每个数据库有何不同？](https://www.modb.pro/db/1694527960317513728)
 
-100. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088) *** 未
+1xx. [微信向量检索分析一体化数仓探索：OLAP For Embedding](https://cloud.tencent.com/developer/article/2352088) *** 
 
-101. [一文通透Text Embedding模型：从text2vec、openai-ada-002到m3e、bge](https://blog.csdn.net/v_JULY_v/article/details/135311471) 未
-
-102. [Meta向量数据库Faiss介绍](https://zhuanlan.zhihu.com/p/646832642) 未
+1xx. [Meta向量数据库Faiss介绍](https://zhuanlan.zhihu.com/p/646832642) 
 
