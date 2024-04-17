@@ -50,3 +50,7 @@ categories:
 
 
 
+1xx. [[Awesome-LLM-Inference]🔥第三期：30篇，LLM推理论文集-500页PDF](https://zhuanlan.zhihu.com/p/669777159)
+
+1xx. [[Awesome-LLM-Inference]🔥第二期: 20篇，LLM推理论文集-300页PDF](https://zhuanlan.zhihu.com/p/658091768)
+
