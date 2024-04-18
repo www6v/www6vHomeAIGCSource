@@ -125,7 +125,8 @@ top:
   + {% post_link 'gptRAGPractice' %}
 + 性能 & pattern
   + {% post_link 'gptRAGPerformance' %}
-  + {% post_link 'gptRAGPerformanceOpenAI' %} 
+  + {% post_link 'gptRAGOpenAI' %} 
+  + {% post_link 'gptRAGBaichuan' %}  
   + {% post_link 'gptRAGSelfReflective' %} 
 + Multimodal RAG
   + {% post_link 'gptRAGMultimodal' %}  

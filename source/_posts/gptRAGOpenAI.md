@@ -1,5 +1,5 @@
 ---
-title:  (原理)RAG 性能[OpenAI案例]
+title:  (原理)RAG OpenAI案例
 date: 2022-12-27 11:11:05
 tags:
   - RAG
@@ -10,6 +10,9 @@ categories:
 
 <p></p>
 <!-- more -->
+
+## 目录
+<!-- toc -->
 
 # OpenAI RAG 案例[3]
 {% asset_img 'openai-rag.jpg' %}
