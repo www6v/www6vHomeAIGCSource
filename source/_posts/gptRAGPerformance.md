@@ -71,7 +71,7 @@ top_k
 # Post-Retrieval
 ## Reranker
 ### 什么是Reranker [22]
-A reranking model — also known as a **cross-encoder** — is a type of model that,** given a query and document pair, will output a similarity score.** 
+A reranking model — also known as a **cross-encoder** — is a type of model that,**given a query and document pair, will output a similarity score.** 
 
 ### BGE Ranker [20]
 **交叉编码器**将对查询和答案实时计算相关性分数，这比**向量模型(即双编码器)**更准确，但比向量模型更耗时。 因此，它可以用来对嵌入模型返回的前k个文档重新排序。 我们在多语言数据上训练了交叉编码器，数据格式与向量模型相同，因此您可以根据我们的示例 轻松地对其进行微调。 
@@ -79,6 +79,9 @@ A reranking model — also known as a **cross-encoder** — is a type of model t
 ### 优秀的组合 [21]
 OpenAI + CohereRerank
 Voyage + big-reranker-large
+
+### BCE[24]
+中文效果比BGE好[老刘说nlp]
 
 ## Fusion[23]
 其思想在于通过生成多个用户查询和重新排序结果来解决RAG固有的约束；利用倒数排序融合（RRF）和自定义向量评分加权，生成全面准确的结果。
@@ -97,34 +100,36 @@ Voyage + big-reranker-large
      
 ### index
 11. [3种高级索引方法，有效提升RAG性能](https://www.bilibili.com/video/BV1dH4y1C7Ck/) V
-   [The Tech Buffet #12: Improve RAG Pipelines With These 3 Indexing Methods](https://thetechbuffet.substack.com/p/rag-indexing-methods)
-   [How To Optimize Your RAG Pipelines](https://newsletter.theaiedge.io/p/how-to-optimize-your-rag-pipelines)
+      [The Tech Buffet #12: Improve RAG Pipelines With These 3 Indexing Methods](https://thetechbuffet.substack.com/p/rag-indexing-methods)
+      [How To Optimize Your RAG Pipelines](https://newsletter.theaiedge.io/p/how-to-optimize-your-rag-pipelines)
 
 12.  [【RAG实战】 Multi-Vector-Retrieval实现三种高级索引方法](https://www.bilibili.com/video/BV1Vu4y1H72s/) V
     [MultiVectorRetriever](https://github.com/www6v/AIGC/blob/master/retriever%2Bindex/MultiVectorRetriever)  git 
-   [MultiVector Retriever](https://python.langchain.com/docs/modules/data_connection/retrievers/multi_vector)
+      [MultiVector Retriever](https://python.langchain.com/docs/modules/data_connection/retrievers/multi_vector)
 
 
 13. [大语言模型应用中的文本分块策略](https://hustai.gitee.io/zh/posts/rag/Chunking-Strategies.html)
-   [LLM 应用中的分块策略 ](https://yangfei.me/tutorials/chunking-strategies)
+      [LLM 应用中的分块策略 ](https://yangfei.me/tutorials/chunking-strategies)
 
 1xx. [文本分割的五个层次 [译]](https://baoyu.io/translations/rag/5-levels-of-text-splitting)
 
 ### Post-Retrieval
 20. [BGE Reranker](https://github.com/FlagOpen/FlagEmbedding/blob/master/README_zh.md)
-   [transformers二次开发——bge-reranker模型微调流程](https://www.bilibili.com/video/BV1sQ4y137Ft/) V
+      [transformers二次开发——bge-reranker模型微调流程](https://www.bilibili.com/video/BV1sQ4y137Ft/) V
    
 21. [提升RAG——选择最佳Embedding和重新排名模型 ](https://luxiangdong.com/2023/11/06/rerank-ev/#) 
-   [Boosting RAG: Picking the Best Embedding & Reranker models](https://blog.llamaindex.ai/boosting-rag-picking-the-best-embedding-reranker-models-42d079022e83)
+      [Boosting RAG: Picking the Best Embedding & Reranker models](https://blog.llamaindex.ai/boosting-rag-picking-the-best-embedding-reranker-models-42d079022e83)
    
 22. [Rerankers and Two-Stage Retrieval](https://www.pinecone.io/learn/series/rag/rerankers/)   
-   文中的第二阶段就是指Reranker
+      文中的第二阶段就是指Reranker
 
 23. [RAG Fusion](https://github.com/langchain-ai/langchain/blob/master/cookbook/rag_fusion.ipynb) git
-   [Forget RAG, the Future is RAG-Fusion](https://towardsdatascience.com/forget-rag-the-future-is-rag-fusion-1147298d8ad1)
-   [忘记RAG，未来是RAG-Fusion](https://blog.csdn.net/lichunericli/article/details/135451681)
-   [再谈大模型RAG问答中的三个现实问题：兼看RAG-Fusion多query融合策略、回答引文生成策略及相关数据集概述](https://mp.weixin.qq.com/s/NFjn8pUsQaSx85nhBphORA)
-   
+      [Forget RAG, the Future is RAG-Fusion](https://towardsdatascience.com/forget-rag-the-future-is-rag-fusion-1147298d8ad1)
+      [忘记RAG，未来是RAG-Fusion](https://blog.csdn.net/lichunericli/article/details/135451681)
+      [再谈大模型RAG问答中的三个现实问题：兼看RAG-Fusion多query融合策略、回答引文生成策略及相关数据集概述](https://mp.weixin.qq.com/s/NFjn8pUsQaSx85nhBphORA)
+
+24. [youdao RerankerModal](https://github.com/netease-youdao/BCEmbedding) BCE
+
 1xx. [A Survey of Techniques for Maximizing LLM Performance](https://www.youtube.com/watch?v=ahnGLM-RC1Y)  *** V
     [A Survey of Techniques for Maximizing LLM Performance梳理](https://zhuanlan.zhihu.com/p/670880685) 
 
