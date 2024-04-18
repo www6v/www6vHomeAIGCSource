@@ -131,6 +131,7 @@ top:
 + Multimodal RAG
   + {% post_link 'gptRAGMultimodal' %}  
   + {% post_link 'gptRAGMultimodalPractice' %}   
+  + {% post_link 'gptDocumentAI' %}   
 
 ## Agent
 + Overview

@@ -101,9 +101,12 @@ categories:
 
 1xx. [北大最新综述精读：RAG在AIGC中的前世今生，覆盖300篇论文！](https://mp.weixin.qq.com/s/FKv9glaGZD0qbLmB2zg6bg)
    [最新RAG综述来了！北京大学发布AIGC的检索增强技术综述](https://mp.weixin.qq.com/s?__biz=MzkzODMxNTkzNg==&mid=2247484337&idx=1&sn=484db46f6a974cb26b7659096b31cdd8)
-   
+
 ### Modular RAG
 10. [Sematic router 让LLM更加快速做出决策](https://www.bilibili.com/video/BV1H64y1E75Y/)
+
+11. [如何使用LLMs：Chain of Verification (CoVe)](https://zhuanlan.zhihu.com/p/669977863)
+    [Chain of Verification (CoVe) — Understanding & Implementation](https://sourajit16-02-93.medium.com/chain-of-verification-cove-understanding-implementation-e7338c7f4cb5)
 
 ### 评估
 1xx. [再看大模型RAG检索增强如何评估：RAGAS开源自动化评估框架](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404511&idx=2&sn=fefb78c1d920cb5b437f2e3da9935637)
