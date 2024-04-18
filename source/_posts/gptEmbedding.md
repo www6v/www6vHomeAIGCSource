@@ -38,7 +38,7 @@ categories:
 
 # 天梯榜
   [mteb/leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
-  
+
 # example[7]
 + m3e模型
 + bge模型
@@ -52,3 +52,6 @@ categories:
 7. [一文通透Text Embedding模型：从text2vec、openai-ada-002到m3e、bge](https://blog.csdn.net/v_JULY_v/article/details/135311471) 
 
 1xx. [如何选取RAG中的embedding模型](https://www.bilibili.com/video/BV1Hk4y1X7aG/)
+   [huggingface embedding模型排行榜](https://huggingface.co/spaces/mteb/leaderboard)
+   [Sentence Bert](https://arxiv.org/pdf/1908.10084.pdf)  
+   [Demo Repo](https://github.com/blackinkkkxi/RAG_langchain)  git

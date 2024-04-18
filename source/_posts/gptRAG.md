@@ -37,7 +37,7 @@ categories:
 ### pre-retrival阶段
   - **query-routing**
     - Metadata Router/ Filter  问题的分发
-    - Semantic Router  意图分类
+    - Semantic Router  意图分类 [10]
       [semantic-router](https://github.com/aurelio-labs/semantic-router/) git
   -  **query-expansion**  
      - Multi-Query 一变多
@@ -101,17 +101,16 @@ categories:
 
 1xx. [北大最新综述精读：RAG在AIGC中的前世今生，覆盖300篇论文！](https://mp.weixin.qq.com/s/FKv9glaGZD0qbLmB2zg6bg)
    [最新RAG综述来了！北京大学发布AIGC的检索增强技术综述](https://mp.weixin.qq.com/s?__biz=MzkzODMxNTkzNg==&mid=2247484337&idx=1&sn=484db46f6a974cb26b7659096b31cdd8)
+   
+### Modular RAG
+10. [Sematic router 让LLM更加快速做出决策](https://www.bilibili.com/video/BV1H64y1E75Y/)
 
 ### 评估
 1xx. [再看大模型RAG检索增强如何评估：RAGAS开源自动化评估框架](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404511&idx=2&sn=fefb78c1d920cb5b437f2e3da9935637)
 1xx. [大模型RAG检索增强问答如何评估：噪声、拒答、反事实、信息整合四大能力评测任务探索 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404476&idx=2&sn=d07b27dc9162ab0aaec3108004e4cfbe)
 
 
-
 XXX
-
-   
-
 1xx. [知识密集型自然语言处理任务的检索增强生成技术研究 [译]](https://baoyu.io/translations/ai-paper/2005.11401-retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks)
 1xx. [构建企业级 RAG 系统的高级指南 [译]](https://baoyu.io/translations/rag/mastering-rag-how-to-architect-an-enterprise-rag-system)
 1xx. [在构建检索增强型生成系统时的七大挑战 [译]](https://baoyu.io/translations/ai-paper/2401.05856v1-seven-failure-points-when-engineering-a-retrieval-augmented-generation-system)
