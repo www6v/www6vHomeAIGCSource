@@ -76,3 +76,5 @@ categories:
 
 1xx. [如何优化大模型的In-Context Learning效果？](https://zhuanlan.zhihu.com/p/597036814)
 
+1xx. [Instruction Tuning（FLAN、instructGPT、chatGPT）](https://nakaizura.blog.csdn.net/article/details/128265846)
+

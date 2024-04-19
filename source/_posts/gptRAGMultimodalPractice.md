@@ -88,3 +88,9 @@ categories:
     OpenCLIP(image embedding) + Gemini(answer synthesis)
 34. [rag-chroma-multi-modal-multi-vector](https://github.com/langchain-ai/langchain/tree/master/templates/rag-chroma-multi-modal-multi-vector) 
     GPT-4V(image summaries embedding) + GPT-4V (answer synthesis)
+    
+### llamaindex
+1xx. [朴素多模态RAG如何实现？兼看RAG上下文过滤方案FILCO及202402大模型早报 ](https://mp.weixin.qq.com/s/93CdvD8FLZjaA7E724bf7g)
+1xx. [Advanced Multi-Modal Retrieval using GPT4V and Multi-Modal Index/Retriever](https://docs.llamaindex.ai/en/stable/examples/multi_modal/gpt4v_multi_modal_retrieval/)
+1xx. [Multimodal RAG pipeline with LlamaIndex and Neo4j](https://www.llamaindex.ai/blog/multimodal-rag-pipeline-with-llamaindex-and-neo4j-a2c542eb0206)
+1xx. [neo4j_llama_multimodal.ipynb](https://github.com/tomasonjo/blogs/blob/master/llm/neo4j_llama_multimodal.ipynb) git

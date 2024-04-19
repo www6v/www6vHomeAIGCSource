@@ -80,3 +80,4 @@ categories:
 1. [清华博士带你搞懂大模型自学工具使用（Toolformer)【论文速读】](https://www.bilibili.com/video/BV18s4y1u7nJ/) V 有思维导图
 1xx. [使LLM善假于物: Toolformer ](https://finisky.github.io/toolformer-summary/)
 1xx. [Prompt Engineering ](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/#external-apis)
+1xx. [Toolformer and Tool Learning（LLMs如何使用工具）](https://nakaizura.blog.csdn.net/article/details/130817902)

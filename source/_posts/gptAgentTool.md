@@ -1,5 +1,5 @@
 ---
-title: Agent-Tools
+title: (原理)Agent-Tools
 date: 2023-01-27 16:32:24
 tags:
   - agent
@@ -37,7 +37,7 @@ categories:
 
 ### Tool-augmented Learning
 + Toolformer   
-{% post_link 'gptAgentToolformer' %}
+  {% post_link 'gptAgentToolformer' %}
   
 ### Tool-oriented Learning
 + ToolMaker[10]
@@ -67,7 +67,7 @@ categories:
     [TaskMatrix](https://github.com/chenfei-wu/TaskMatrix)
     
     
-  
+
 ### Others
 《Augmented Language Models》 
 1xx. [Augmented Language Models（增强语言模型）](https://blog.csdn.net/qq_39388410/article/details/130798125)
