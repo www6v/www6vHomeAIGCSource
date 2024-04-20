@@ -44,7 +44,7 @@ categories:
 + CREATOR[11]
 + ToolLLM [12]
 + Visual ChatGPT[13]
-+ HuggingGPT
++ HuggingGPT[14]
 + Gorilla 
 {% post_link 'gptAgentToolGorilla' %} 
 
@@ -65,7 +65,8 @@ categories:
 
 13. 《Visual ChatGPT: Talking, Drawing and Editing with Visual Foundation Models》
     [TaskMatrix](https://github.com/chenfei-wu/TaskMatrix)
-    
+  
+14. [LLMs的自动化工具系统（HuggingGPT、AutoGPT、WebGPT、WebCPM）](https://nakaizura.blog.csdn.net/article/details/130856470)  
     
 
 ### Others

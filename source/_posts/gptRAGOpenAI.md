@@ -61,6 +61,8 @@ A **self-querying** retriever is one that, as the name suggests, has the  abilit
 # 参考
 1. [Deconstructing RAG](https://blog.langchain.dev/deconstructing-rag/) ***
 
+2. xxx
+
 3. [Applying OpenAI's RAG Strategies](https://blog.langchain.dev/applying-openai-rag/)   *** 
 
 4. [Query Construction](https://blog.langchain.dev/query-construction/) ***
