@@ -1,5 +1,5 @@
 ---
-title: Query Rewrite
+title: Query Transformation
 date: 2023-04-20 22:51:05
 tags:
   - RAG
@@ -11,10 +11,23 @@ categories:
 <p></p>
 <!-- more -->
 
+# query rewrite
+[论文](https://arxiv.org/pdf/2305.14283.pdf)**使用LLM重写用户查询**，而不是直接使用原始用户查询进行检索。
+因为对于LLM 而言，**原始查询不可能总是最佳检索结果**，可以让LLM重写查询。
+
+[Repo](https://github.com/langchain-ai/langchain/blob/master/cookbook/rewrite.ipynb) git
+
+# Step-back Prompting
+
+# HyDE
 
 # 参考
-### query 改写
+
 1xx. [知识图谱用于细粒度大模型幻觉评估：兼论Langchain-RAG问答中的问题改写范式 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648406156&idx=1&sn=d91a4df105c4fc4c9523f7141bc1c24d)
   RAG:  rewrite , Step back prompting, fusion 
+  
+1xx. [Query Transformations](https://blog.langchain.dev/query-transformations/)  
+
 1xx. [业界总结｜搜索中的Query理解](https://zhuanlan.zhihu.com/p/393914267) ***
+
 1xx. [智能扩充机器人的“标准问”库之Query生成](https://zhuanlan.zhihu.com/p/149429784)

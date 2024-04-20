@@ -128,7 +128,7 @@ top:
   + {% post_link 'gptRAGOpenAI' %} 
   + {% post_link 'gptRAGBaichuan' %}  
   + {% post_link 'gptRAGSelfReflective' %} 
-  + {% post_link 'gptQueryRewrite' %}  
+  + {% post_link 'gptQueryTransformation' %}  
 + Multimodal RAG
   + {% post_link 'gptRAGMultimodal' %}  
   + {% post_link 'gptRAGMultimodalPractice' %}   
