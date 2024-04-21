@@ -1,5 +1,5 @@
 ---
-title: (原理)RAG 性能
+title: (原理)Advanced RAG
 date: 2022-12-07 09:44:24
 tags:
   - RAG
@@ -59,7 +59,12 @@ top_k
 > 最佳实践
   按**逻辑分块**可以明显提升**检索器的准确率**
 
-# 检索器 Retriever
+
+# pre-retrival阶段
+### query transformer[30]
+
+# Retrieval
+### 检索器 Retriever
 + Ensemble Retriever
 最常见的模式是将**稀疏检索器（如BM25）**与**密集检索器（如嵌入相似度）**结合起来，因为它们的优势是互补的。这也被称为“混合搜索”。**稀疏检索器**擅长基于**关键词查找**相关文档，而**密集检索器**擅长基于**语义相似性查找**相关文档。
 
@@ -113,6 +118,7 @@ Voyage + big-reranker-large
 
 1xx. [文本分割的五个层次 [译]](https://baoyu.io/translations/rag/5-levels-of-text-splitting)
 
+
 ### Post-Retrieval
 20. [BGE Reranker](https://github.com/FlagOpen/FlagEmbedding/blob/master/README_zh.md)
       [transformers二次开发——bge-reranker模型微调流程](https://www.bilibili.com/video/BV1sQ4y137Ft/) V
@@ -129,6 +135,11 @@ Voyage + big-reranker-large
       [再谈大模型RAG问答中的三个现实问题：兼看RAG-Fusion多query融合策略、回答引文生成策略及相关数据集概述](https://mp.weixin.qq.com/s/NFjn8pUsQaSx85nhBphORA)
 
 24. [youdao RerankerModal](https://github.com/netease-youdao/BCEmbedding) BCE
+
+
+### query transformer
+30. {% post_link 'gptQueryTransformation' %}  self
+
 
 1xx. [A Survey of Techniques for Maximizing LLM Performance](https://www.youtube.com/watch?v=ahnGLM-RC1Y)  *** V
     [A Survey of Techniques for Maximizing LLM Performance梳理](https://zhuanlan.zhihu.com/p/670880685) 

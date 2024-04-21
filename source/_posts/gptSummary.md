@@ -123,7 +123,7 @@ top:
 + 综述
   + {% post_link 'gptRAG' %}
   + {% post_link 'gptRAGPractice' %}
-+ 性能 & pattern
++ 案例 & pattern
   + {% post_link 'gptRAGPerformance' %}
   + {% post_link 'gptRAGOpenAI' %} 
   + {% post_link 'gptRAGBaichuan' %}  

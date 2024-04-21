@@ -1,5 +1,5 @@
 ---
-title: RAG Baichuan案例
+title: (原理)RAG Baichuan案例
 date: 2023-04-18 14:26:22
 tags:
   - RAG
