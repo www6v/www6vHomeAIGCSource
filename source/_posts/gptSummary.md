@@ -123,10 +123,12 @@ top:
 + 综述
   + {% post_link 'gptRAG' %}
   + {% post_link 'gptRAGPractice' %}
-+ 案例 & pattern
-  + {% post_link 'gptRAGPerformance' %}
++ 案例 
   + {% post_link 'gptRAGOpenAI' %} 
-  + {% post_link 'gptRAGBaichuan' %}  
+  + {% post_link 'gptRAGBaichuan' %}   
++ pattern
+  + {% post_link 'gptRAGModularRAG' %} 
+  + {% post_link 'gptRAGPerformance' %}
   + {% post_link 'gptRAGSelfReflective' %} 
   + {% post_link 'gptQueryTransformation' %}  
 + Multimodal RAG
