@@ -105,7 +105,10 @@ top_k
 
 
 # pre-retrival阶段
-### query transformer[30]
+### query transformer 查询转换 [30][1]
+
+### query-routing 查询路由 [1]
+LlamaIndex和LangChain都支持查询路由器
 
 # Retrieval
 ### 检索器 Retriever
@@ -134,6 +137,17 @@ Voyage + big-reranker-large
 
 ## Fusion[23]
 其思想在于通过生成多个用户查询和重新排序结果来解决RAG固有的约束；利用倒数排序融合（RRF）和自定义向量评分加权，生成全面准确的结果。
+
+
+# Encoder and LLM fine-tuning
+### Encoder fine-tuning[40]
+
+### Ranker fine-tuning[41]
+
+它的工作方式如下：将查询和检索到的前k个文本块传递给交叉编码器，并用SEP令牌分隔，并将其微调为输出1表示相关块，输出0表示不相关。
+
+### LLM fine-tuning[42]
+
 
 # 参考
 ### Overview
@@ -183,6 +197,14 @@ Voyage + big-reranker-large
 
 ### query transformer
 30. {% post_link 'gptQueryTransformation' %}  self
+
+
+### fine-tuning
+40. [Finetune Embeddings](https://docs.llamaindex.ai/en/stable/examples/finetuning/embeddings/finetune_embedding/) notebook
+
+41. [How to Finetune a cross-encoder using LLamaIndex](https://docs.llamaindex.ai/en/stable/examples/finetuning/cross_encoder_finetuning/cross_encoder_finetuning/) notebook
+
+42. [Fine Tuning GPT-3.5-Turbo](https://docs.llamaindex.ai/en/stable/examples/finetuning/openai_fine_tuning/) notebook
 
 
 1xx. [A Survey of Techniques for Maximizing LLM Performance](https://www.youtube.com/watch?v=ahnGLM-RC1Y)  *** V

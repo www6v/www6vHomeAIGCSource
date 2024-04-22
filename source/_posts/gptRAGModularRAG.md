@@ -49,8 +49,9 @@ categories:
        稀疏检索（es字符串匹配）
      - Dense Retriever
        稠密检索（向量化检索）
-  - Retriever Fine-tuning  检索的微调
+  - Retriever Fine-tuning  检索的微调  [12] #
      -  SFT
+        【embedding tuning】
      -  adapter
 
 ### post-retrieval 包括一些后处理的模块
@@ -66,15 +67,26 @@ categories:
 
 ### Generation阶段
   - Generator Selection
-  - Generator Fine-tuning
+    - Cloud API-base Generator
+    - On-Premises 
+  - Generator Fine-tuning  [12] #
+    - SFT 
+    - Distillation
+    - Dual FT
+      Fine-tuning both Generator and Retriever to align their preferences
+      RA-DIT
   - 则包括对底层基础模型的一些事情，比如基于cloud-api，还是进行SFT微调。
-
+    【Generator 指的就是LLM】
+    
 ### orchestraction阶段
   - Scheduling
   - Fusion
+    - Possibility Ensemble
+    - RRF (Reciprocal Rank Fusion )
   - 则包括对各个模块之间的执行和通信进行管理
 
 
+>  #符号   Modular RAG 相对 advanced RAG 的特殊阶段
 
 # 参考
 ### Modular RAG
@@ -86,3 +98,5 @@ categories:
     
 11. [如何使用LLMs：Chain of Verification (CoVe)](https://zhuanlan.zhihu.com/p/669977863)
     [Chain of Verification (CoVe) — Understanding & Implementation](https://sourajit16-02-93.medium.com/chain-of-verification-cove-understanding-implementation-e7338c7f4cb5)
+    
+12.  {% post_link 'gptRAGPerformance' %}   
