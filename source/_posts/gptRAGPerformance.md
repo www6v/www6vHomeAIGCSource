@@ -33,25 +33,69 @@ At a high level, HyDE is an embedding technique that takes queries, **generates 
 **BGE** 优于 OpenAI ADA02
 
 # 索引
-##  索引方式  [11][12]
-### Smaller chunks
+##  索引方式  
+### Smaller chunks [11][12] 
 Indexing by **small data chunks**
 按子部分索引数据块：将文本块拆分为较小的部分，如句子，进行多次索引。这有助于
 处理复杂文本块，减少噪音输出，确保更准确匹配用户查询。
 
-### Hypothetical questions
+### Hypothetical questions [11][12]
 Indexing by **the questions the document answers**
 按文本块回答的问题索引数据块：让LLM生成与拆分的文本块相关的假设性问题，并用
 于索引。这种方法保持用户查询与数据核心内容一致，降低模糊性。
 
-### Summary
+### Summary [11][12]
 Indexing by **the summary of the document**
 
 按文本块摘要索引数据块：类似于第二种方法，使用块摘要而不是回答的假设问题来创
 建索引。特别适用于文本块中包含多余信息或与用户查询无关的情况。
 
+### 向量存储索引[1]
++ 近似最近邻实现（如聚类、树或HNSW算法）
+  Faiss、nmslib、annoy
++ LlamaIndex
 
+### 层次索引[1]
++ 创建**两个索引**—一个由摘要组成，另一个由文档块组成，并分两步检索，首先通过摘要过滤掉相关文档，然后只在这个相关组内检索。
+
+### 假设问题和HyDE[1]
+
+### 上下文丰富[1]
++ 句子窗口检索
+  为了在获取最相关的单个句子后更好地对找到的上下文进行推理，我们**将上下文窗口在检索到的句子之前和之后扩展了k个句子，然后将此扩展的上下文发送给LLM**。
++ 自动合并检索器（又名**父文档检索器**）
+  
+### 融合检索或混合搜索[1]
+基于关键字的老式搜索—稀疏检索算法（如tf-idf或搜索行业标准BM25）和现代语义或向量搜索，并将其组合到一个检索结果中。
+
++ Reciprocal Rank Fusion (RRF)算法
+  对检索到的结果进行重新排序以获得最终输出
++ 实现
+  LangChain  - Ensemble Retriever类
+  
 ## 分块[13]
+### 分块方法
++ 固定大小分块
++ 内容感知分块
+  - 句子分块
+  	- 直接分割
+    	按句点（“.”）和换行符分割句子
+  	- NLTK 
+    	<code>from langchain.text_splitter import NLTKTextSplitter</code>
+  	- spaCy
+    	<code>from langchain.text_splitter import SpacyTextSplitter</code>
+  - 递归分块
+    使用一组分隔符以分层和迭代的方式将输入文本划分为更小的块
+    <code>from langchain.text_splitter import RecursiveCharacterTextSplitter</code>
+  - 专门分块
+    - Markdown
+    - LaTex
+
+### 分块优化
++ 预处理数据
++ 选择块大小范围
++ 评估每个块大小的性能
+
 ### 分块参数
 chuck_size, ,chunk overlap
 top_k
