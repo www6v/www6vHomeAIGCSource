@@ -66,7 +66,7 @@ top:
 
 
 
-## Data
+## Data *
 + DataSet
   + {% post_link 'gptDatasetSurvey' %} 
   + {% post_link 'gptDataSet' %} 
@@ -94,18 +94,18 @@ top:
 + Lora
   + {% post_link 'gptPEFTLora' %} 
   + {% post_link 'gptPEFTQLora' %} 
-+ Instruct Tuning
++ Instruct Tuning *
   + {% post_link 'gptInstructTuning' %}  
   + {% post_link 'gptInstructTuningSurvey' %}  
 + BERT
   + {% post_link 'gptFineTuningBert' %}    
 
 
-## Multimodal
+## Multimodal *
 + Survey
   + {% post_link 'gptMultimodal' %} 
   + {% post_link 'gptMultimodalSurvey' %}
-+ Train  
++ Train  *
   + {% post_link 'gptMultimodalPretrain' %}  
   + {% post_link 'gptMultimodalInstructTuning' %} 
 + 系列
@@ -119,24 +119,24 @@ top:
     + {% post_link 'gptMultimodalLlava' %}  
     + {% post_link 'gptMultimodalMinigpt4' %}   
 
-## RAG
+## RAG *
 + 综述
   + {% post_link 'gptRAG' %}
   + {% post_link 'gptRAGPractice' %}
 + 案例 
   + {% post_link 'gptRAGOpenAI' %} 
   + {% post_link 'gptRAGBaichuan' %}   
-+ pattern
++ pattern *
   + {% post_link 'gptRAGModularRAG' %} 
   + {% post_link 'gptRAGPerformance' %}
   + {% post_link 'gptRAGSelfReflective' %} 
   + {% post_link 'gptQueryTransformation' %}  
-+ Multimodal RAG
++ Multimodal RAG  *
   + {% post_link 'gptRAGMultimodal' %}  
   + {% post_link 'gptRAGMultimodalPractice' %}   
   + {% post_link 'gptDocumentAI' %}   
 
-## Agent
+## Agent *
 + Overview
   + {% post_link 'gptAgent' %}
   + {% post_link 'gptAgentCategory' %}
@@ -148,13 +148,13 @@ top:
   + {% post_link 'gptAgentPlanAndExecute' %}
 + Multi-agent collaboration
   + {% post_link 'gptMultiAgents' %}  
-+ Tool use
++ Tool use  *
   + {% post_link 'gptFunctionCall' %} 
   + {% post_link 'gptAgentTool' %}  
   + {% post_link 'gptAgentToolGorilla' %}   
   + {% post_link 'gptAgentTuning' %}   
   + {% post_link 'gptAgentToolformer' %}  
-+ Multimodal Agent
++ Multimodal Agent  *
   + {% post_link 'gptAgentMultimodal' %}  
   + {% post_link 'gptAgentWeb' %}   
 
