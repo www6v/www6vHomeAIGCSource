@@ -29,12 +29,14 @@ categories:
 4、组成数据量会影响性能，而组成比例的影响则微乎其微。
 
 
-# SFT数据集
-[开源SFT数据集整理](https://github.com/chaoswork/sft_datasets)
-
 # 参考
 1. [SFT微调的数据组合及训练策略如何影响大模型性能：4个经典问题及实验结论分享 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404728&idx=2&sn=1cb2203648271720d421c963ebcc03b3)
 
 
 
 1xx. [再看大模型微调与应用：3大行业18个开源垂直微调模型、微调数据、工具资源及有趣的AIGC应用集合](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401381&idx=1&sn=c24d896aab990ffdf30107a7c6c1ea4f) 二 三
+
+
+1xx. [也谈大模型研发中的微调数据规模评估与质量问题：数据规模大小的影响评估、数据主要问题及清洗项目](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648400009&idx=1&sn=f72c0a9cb7c19184995156c3ef169b74)
+
+1xx. [也谈微调数据质量、多样性规模对大模型性能的影响与评估方案：Belle项目开源实验工作报告介绍 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648400342&idx=1&sn=d344ced5035fc804f490b00469746fc8)

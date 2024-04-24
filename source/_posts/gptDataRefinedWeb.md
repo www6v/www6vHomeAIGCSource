@@ -45,3 +45,7 @@ categories:
 1xx. [数据为王: Textbooks Are All You Need ](https://finisky.github.io/textbooks-are-all-you-need-summary/)   以小博大  打破传统语言模型缩放定律 
 1xx. [Textbooks Are All You Need II: phi-1.5 technical report 精读与翻译](https://zhuanlan.zhihu.com/p/673021932) 
 1xx. [小模型的惊人能力: Phi-2](https://zhuanlan.zhihu.com/p/672066480)
+
+### 其他
+1xx. [再看多语种大模型预训数据如何清洗：兼论文档结构信息对大模型问答的重要性及实现思路 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403821&idx=1&sn=7b96e0db09f05888078019cd20bc8390)
+二、再看训练数据集如何清洗：多语种开源训练数据集CulturaX

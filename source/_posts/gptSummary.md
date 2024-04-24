@@ -67,12 +67,14 @@ top:
 
 
 ## Data *
++ List
+  + {% post_link 'gptDataSet' %} 
+  + {% post_link 'gptDataSetPretrainList' %} 
+  + {% post_link 'gptDatasetSFTList' %}  
 + DataSet
   + {% post_link 'gptDatasetSurvey' %} 
-  + {% post_link 'gptDataSet' %} 
   + {% post_link 'gptDatasetSFT' %}  
   + {% post_link 'gptDatasetMulitmodal' %}   
-  
 + DataProcess
   + {% post_link 'gptDataProcess' %}  
   + {% post_link 'gptDataProcessPractice' %}  
