@@ -105,21 +105,14 @@ categories:
 ###    质量->多样性, 复杂度
 20. {% post_link 'gptDataWizard' %}   self 
 
-###  指令数据
+###  指令数据-高质量
 1xx. [如何从数据集中自动识别高质量的指令数据-IFD指标的使用](https://zhuanlan.zhihu.com/p/658128530)
 
 1xx. [大模型微调技巧 | 高质量指令数据筛选方法-MoDS](https://zhuanlan.zhihu.com/p/671183709)
 
-###  数据标签
-1xx. [InsTag：大语言模型监督微调数据标签标注工具](https://developer.aliyun.com/article/1311807)
-   [InsTag指令打标工具](https://www.modelscope.cn/studios/lukeminglkm/instagger_demo/summary) demo
-1xx.  [如何利用大模型进行数据标注与知识蒸馏：兼看ActiveRAG上下文去噪的大模型RAG问答范式](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648408650&idx=2&sn=ef8424969be749489188ebd810800f08)
-   大模型用于数据标注
-   《Large Language Models for Data Annotation: A Survey》
 
 ### 数据增强
 1xx. [哈工大｜15种NLP数据增强方法总结与对比](https://zhuanlan.zhihu.com/p/420295576)
-1xx. 《Large Language Models for Data Annotation: A Survey》
     
 
 ### 数据质量

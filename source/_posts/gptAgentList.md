@@ -109,8 +109,6 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 3. 这些 Command 都是可扩展的，每一种命令代表一种外部能力(比如爬虫、Google搜索，也包括GPT的能力)，通过这些 Command 调用返回的 Result 又会成为到 Command Prompt 的组成元素，
 4. 回到第 1 步往复循环，直到拿到最终结果结果（状态为“compelete”）
 
-# 其他
-+ AutoLabel - 自助数据标注
 
 # 参考
 1. [awesome-ai-agents](https://github.com/www6v/awesome-ai-agents) git list
@@ -123,4 +121,3 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 10. [2023年新生代大模型Agents技术,ReAct,Self-Ask,Plan-and-execute,以及AutoGPT, HuggingGPT等应用](https://zhuanlan.zhihu.com/p/642357544) ***  论文+代码
 11. [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) git
       [带界面的 AutoGPT 产品](https://link.zhihu.com/?target=https%3A//godmode.space/)
-      

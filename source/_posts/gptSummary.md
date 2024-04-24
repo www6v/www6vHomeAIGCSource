@@ -78,6 +78,7 @@ top:
 + DataProcess
   + {% post_link 'gptDataProcess' %}  
   + {% post_link 'gptDataProcessPractice' %}  
+  + {% post_link 'gptDataProcessAnnotation' %}   
   + {% post_link 'gptSelfInstruct' %}   
   + {% post_link 'gptDataWizard' %} 
   + {% post_link 'gptDataRefinedWeb' %}  
