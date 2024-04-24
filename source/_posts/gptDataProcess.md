@@ -93,7 +93,12 @@ categories:
 1xx. [大模型研发核心：数据工程、自动化评估及与知识图谱的结合](https://hub.baai.ac.cn/view/28740)
    [大模型研发核心：数据工程、自动化评估及与知识图谱的结合 ](https://mp.weixin.qq.com/s/SvDnQD886E3DBtw8k9asgg)
 
-1xx. [符尧：别卷大模型训练了，来卷数据吧！【干货十足】](https://blog.csdn.net/qq_16949707/article/details/133875958) 看最后的5个结论   
+1xx. [符尧：别卷大模型训练了，来卷数据吧！【干货十足】](https://blog.csdn.net/qq_16949707/article/details/133875958) 看最后的5个结论 
+
+1xx. [值得一看的大模型预训练数据选择策略总结：兼读20240229大模型进展早报 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648409027&idx=1&sn=4083853fd0bfb1790d8df6b4414b6583)
+《A Survey on Data Selectionfor Language Models》
+
+《When Scaling Meets LLM Finetuning: The Effect of Data， Model and Finetuning Method»
 
 50. {% post_link 'gptInstructTuning' %} self
 
@@ -111,7 +116,7 @@ categories:
 1xx.  [如何利用大模型进行数据标注与知识蒸馏：兼看ActiveRAG上下文去噪的大模型RAG问答范式](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648408650&idx=2&sn=ef8424969be749489188ebd810800f08)
    大模型用于数据标注
    《Large Language Models for Data Annotation: A Survey》
-   
+
 ### 数据增强
 1xx. [哈工大｜15种NLP数据增强方法总结与对比](https://zhuanlan.zhihu.com/p/420295576)
 1xx. 《Large Language Models for Data Annotation: A Survey》

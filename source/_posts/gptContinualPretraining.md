@@ -43,6 +43,8 @@ categories:
    warmup  +  学习率
 1xx. [Don't stop pretraining，继续预训练！](https://blog.csdn.net/Kaiyuan_sjtu/article/details/120695507)
 
+1xx. 《Investigating Continual Pretraining in Large Language Models: Insights and Implications》
+    [值得一看的大模型预训练数据选择策略总结：兼读20240229大模型进展早报](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648409027&idx=1&sn=4083853fd0bfb1790d8df6b4414b6583&chksm=83839096b4f41980e8277f34650c2029a45e853adfc2b412ea386952751e44d29e75f0048d12&scene=178&cur_album_id=3343133676745932807#rd)
 
 
 
