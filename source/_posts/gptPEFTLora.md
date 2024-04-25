@@ -135,10 +135,11 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
 
 ### ChatGLM
 
-1xx. [train_lora.sh](https://github.com/www6v/fine-tuning-lab/blob/agiclass-v1/chatglm/train_lora.sh)  基于法律文本的chatglm的lora
-[train_lora.sh](https://github.com/www6v/fine-tuning-lab/blob/agiclass-v1/chatglm2/train_lora.sh)  基于法律文本的chatglm-2的lora
-[十一、小参数量微调](https://github.com/www6v/fullStackLLM/blob/master/08-fine-tuning/peft/index.ipynb)
-bili有相关的总结的视频
+1xx. 《13-基于 ChatGLM2的 Fine-tuning 实战》 AI 大模型全栈工程师培养计划  2期
+	[train_lora.sh](https://github.com/www6v/fine-tuning-lab/blob/agiclass-v1/chatglm/train_lora.sh)  基于法律文本的chatglm的lora
+	[train_lora.sh](https://github.com/www6v/fine-tuning-lab/blob/agiclass-v1/chatglm2/train_lora.sh)  基于法律文本的chatglm-2的lora
+	[课件](https://github.com/www6v/fullStackLLM/blob/master/08-fine-tuning/peft/index.ipynb) 
+	bili有相关的总结的视频
 
 1xx. [ChatGLM-Tuning](https://github.com/mymusise/ChatGLM-Tuning) 卢老师推荐
 
