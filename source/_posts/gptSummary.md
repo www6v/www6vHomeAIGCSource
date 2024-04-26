@@ -71,16 +71,17 @@ top:
   + {% post_link 'gptDataSet' %} 
   + {% post_link 'gptDataSetPretrainList' %} 
   + {% post_link 'gptDatasetSFTList' %}  
-+ DataSet
-  + {% post_link 'gptDatasetSurvey' %} 
-  + {% post_link 'gptDatasetSFT' %}  
   + {% post_link 'gptDatasetMulitmodal' %}   
 + DataProcess
+  + {% post_link 'gptDatasetSurvey' %} 
   + {% post_link 'gptDataProcess' %}  
   + {% post_link 'gptDataProcessPractice' %}  
-  + {% post_link 'gptDataProcessAnnotation' %}   
+  + {% post_link 'gptDataProcessAnnotation' %}  
++ SFT 
   + {% post_link 'gptSelfInstruct' %}   
   + {% post_link 'gptDataWizard' %} 
+  + {% post_link 'gptDatasetSFT' %}  
++ Pretrain  
   + {% post_link 'gptDataRefinedWeb' %}  
   + {% post_link 'gptTrainTokenizer' %}     
 
