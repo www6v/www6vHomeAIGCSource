@@ -89,3 +89,6 @@ categories:
 1xx. [阿里面向企业数字化的文档智能技术与应用](https://mp.weixin.qq.com/s/d2Nns1qashMbcXPMG-4McQ)
 
 1xx. [再看RAG在真实金融文档问答场景的实践方案：SMP2023 金融大模型挑战赛的两种代表实现思路](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404651&idx=2&sn=335db95e104a5b09e33ac2245bae4fd2)
+
+1xx. [温故而知新:大模型RAG问答研发的7个失分点及MOE专家组合模型的若干浅析 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648407056&idx=1&sn=0a0ce93a9199a2eae36493a515e42181)
+   《Seven Failure Points When Engineering a Retrieval Augmented Generation System》

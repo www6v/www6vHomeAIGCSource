@@ -46,4 +46,9 @@ categories:
      《LIMA: Less Is More for Alignment》
      《MAYBE ONLY 0.5% DATA IS NEEDED》
 
+
+1xx. [LESS 实践：用少量的数据进行目标指令微调](https://zhuanlan.zhihu.com/p/686687923)
+
+1xx. [LESS：仅选择5%有影响力的数据优于全量数据集进行目标指令微调](https://zhuanlan.zhihu.com/p/686007325)
+
 1xx. [【论文笔记】LIMA: Less Is More for Alignment](https://blog.csdn.net/jinniulema/article/details/133915276)

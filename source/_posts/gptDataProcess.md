@@ -1,5 +1,5 @@
 ---
-title: (原理)数据处理
+title: (Survey)数据处理
 date: 2023-02-05 18:12:12
 tags:
   - dataProcess
@@ -97,8 +97,6 @@ categories:
 
 1xx. [值得一看的大模型预训练数据选择策略总结：兼读20240229大模型进展早报 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648409027&idx=1&sn=4083853fd0bfb1790d8df6b4414b6583)
 《A Survey on Data Selectionfor Language Models》
-
-《When Scaling Meets LLM Finetuning: The Effect of Data， Model and Finetuning Method»
 
 50. {% post_link 'gptInstructTuning' %} self
 

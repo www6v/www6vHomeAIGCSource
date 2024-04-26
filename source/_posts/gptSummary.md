@@ -81,6 +81,7 @@ top:
   + {% post_link 'gptSelfInstruct' %}   
   + {% post_link 'gptDataWizard' %} 
   + {% post_link 'gptDatasetSFT' %}  
+  + {% post_link 'gptDataSFTScaling' %}  
 + Pretrain  
   + {% post_link 'gptDataRefinedWeb' %}  
   + {% post_link 'gptTrainTokenizer' %}     
