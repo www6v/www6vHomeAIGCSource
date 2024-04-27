@@ -52,6 +52,13 @@ Llama2采用了Llama 1中的大部分预训练设置和模型架构。使用RMSN
 + 完整的RLHF链条
 
 
+# LLaMA3
++ 技术点
+  - GQA
+  - BBPE
+  - 数据合成
+  - 模型的最优化
+
 # 参考
 ### LLaMA
 20. [[译][论文] LLaMA：开放和高效的基础语言模型集](http://arthurchiao.art/blog/llama-paper-zh/)
@@ -68,6 +75,12 @@ Llama2采用了Llama 1中的大部分预训练设置和模型架构。使用RMSN
 1xx. [Llama2技术细节&开源影响](https://zhuanlan.zhihu.com/p/644671690)
 1xx. [再看Llama2的实际体验与民间评测：从现有公开在线测试地址到几个测试例子看初步效果分析 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401959&idx=1&sn=582fa45cd00035bac621336f47cce252)
 1xx. [关于大模型行业问答落地的技术方案再思考：兼看Llama2中文汉化的成立性、实现路线以及代表项目](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402689&idx=1&sn=a1847ea36cde32bd386f85f41cf197b9)
+
+
+# LLaMA3
+《llama3》 卢老师
+
+
 
 1xx. [Llama中文社区](https://llama.family/)
 
