@@ -1,5 +1,5 @@
 ---
-title: (多样 复杂)Wizard
+title: (原理)Wizard
 date: 2023-03-18 18:57:23
 tags:
   - dataProcess
@@ -32,23 +32,11 @@ categories:
 3）消除进化
    即过滤未能进化的指令
 
-
-# LIMA [2]
-当扩大数据量而不同时扩大提示多样性时，收益会大大减少，而在优化数据质量时，收益会大大增加。
-
 # 参考
-###   质量-> 多样性, 复杂度
+### 质量-> 多样性, 复杂度
 1. [如何构造复杂多样的微调指令数据：WizardLM复杂指令构造思想与实验分析工作总结 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648401462&idx=1&sn=764f0302918174cea29ae22ac5760033) 
     [WizardLM](https://github.com/nlpxucan/WizardLM) git 
 
-2. [大模型微调究竟需要多少数据：从三个现有代表工作看几组结论及一点思考 ](https://mp.weixin.qq.com/s/c50HrOfKOqgqGPVRHf6EpA)
-     **指令格式的多样性**
-     《LIMA: Less Is More for Alignment》
-     《MAYBE ONLY 0.5% DATA IS NEEDED》
 
 
-1xx. [LESS 实践：用少量的数据进行目标指令微调](https://zhuanlan.zhihu.com/p/686687923)
 
-1xx. [LESS：仅选择5%有影响力的数据优于全量数据集进行目标指令微调](https://zhuanlan.zhihu.com/p/686007325)
-
-1xx. [【论文笔记】LIMA: Less Is More for Alignment](https://blog.csdn.net/jinniulema/article/details/133915276)

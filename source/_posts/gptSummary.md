@@ -76,15 +76,24 @@ top:
   + {% post_link 'gptDatasetSurvey' %} 
   + {% post_link 'gptDataProcess' %}  
   + {% post_link 'gptDataProcessPractice' %}  
-  + {% post_link 'gptDataProcessAnnotation' %}  
-+ SFT 
-  + {% post_link 'gptSelfInstruct' %}   
-  + {% post_link 'gptDataWizard' %} 
-  + {% post_link 'gptDatasetSFT' %}  
-  + {% post_link 'gptDataSFTScaling' %}  
-+ Pretrain  
-  + {% post_link 'gptDataRefinedWeb' %}  
-  + {% post_link 'gptTrainTokenizer' %}     
+  + {% post_link 'gptDataProcessAnnotation' %}
++ Data Management
+    + {% post_link 'gptDataManagement' %}  
+    + Pretrain  
+      + {% post_link 'gptDataRefinedWeb' %}  
+      + {% post_link 'gptTrainTokenizer' %}  
+    + SFT 
+      - Data Quality
+        - Instruction Quality
+          + {% post_link 'gptDataSFTQuality' %} 
+        - Instruction Diversity
+          + {% post_link 'gptSelfInstruct' %} 
+        - Instruction Complexity  
+          + {% post_link 'gptDataWizard' %} 
+      - Task composition
+        + {% post_link 'gptDatasetSFT' %}   
+      + {% post_link 'gptDataSFTScaling' %}  
+
 
 ## FineTuning
 + PEFT
