@@ -13,8 +13,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www6v.github.io/www6vHomeHexo/
-root: /www6vHomeHexo
+url: https://www6v.github.io/www6vHomeAIGC/
+root: /www6vHomeAIGC
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -87,7 +87,7 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://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@github.com/www6v/www6vHomeHexo.git
+  repo: https://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@github.com/www6v/www6vHomeAIGC.git
 
 
 # hexo-tag-details plugin
