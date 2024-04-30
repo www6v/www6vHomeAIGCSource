@@ -144,7 +144,7 @@ AutoGPT - retrieval 结合近期操作记录
 1xx. [智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT](https://blog.csdn.net/v_JULY_v/article/details/135868163?spm=1001.2014.3001.5502)   
 
 ### Planning
-20. {% post_link 'gptAgentReflection' %}
+20. {% post_link 'gptAgentReflection' %} self
 
 
 2xx. [引领语言智能：从思维链推理到语言智能体的探索指南 [译]](https://baoyu.io/translations/ai-paper/2311.11797-igniting-language-intelligence-the-hitchhikers-guide-from-chain-of-thought-reasoning-to-language-agents) paper
