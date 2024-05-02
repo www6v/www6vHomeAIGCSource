@@ -76,7 +76,9 @@ categories:
 1xx. [图解大模型训练之：张量模型并行(TP)，Megatron-LM](https://zhuanlan.zhihu.com/p/622212228) ***
 
 
-1xx. [全网最全-超大模型+分布式训练架构和经典论文](https://zhuanlan.zhihu.com/p/450854172) 未
+1xx. [全网最全-超大模型+分布式训练架构和经典论文](https://zhuanlan.zhihu.com/p/450854172) 
+
+1xx. [大规模训练系列之技术挑战](https://zhuanlan.zhihu.com/p/350707888)
 
 ### 实战
 1xx. [大模型流水线并行（Pipeline）实战](https://zhuanlan.zhihu.com/p/636488690)

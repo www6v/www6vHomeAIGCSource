@@ -69,3 +69,6 @@ LLaMA模型，尽管它的参数量只有650亿，但其性能与参数量为175
 
 1xx. [语言模型预训练基础知识总结：标准数据流pipleline、tokenizer的认识以及常见编码模型范式 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399532&idx=1&sn=31b7bc5a4f3114d8215da0edc2559e47)
 
+
+1xx. [从头预训练大模型实践经验](https://zhuanlan.zhihu.com/p/651316650)  *** 
+[Current Best Practices for Training LLMs from Scratch](https://wandb.ai/site/wp-content/uploads/2023/09/Current-Best-Practices-for-Training-LLMs-from-Scratch-Final.pdf)  原文

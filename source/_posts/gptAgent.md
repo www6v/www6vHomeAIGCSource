@@ -142,6 +142,11 @@ AutoGPT - retrieval 结合近期操作记录
    [Harrison Chase: Agents](https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/chase-agents/)  ***
 
 1xx. [智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT](https://blog.csdn.net/v_JULY_v/article/details/135868163?spm=1001.2014.3001.5502)   
+1xx. [基于大语言模型多智体的综述：进步和挑战](https://zhuanlan.zhihu.com/p/685286305) 综述
+
+1xx. [LLM-based Agents survey 基于大语言模型多智能代理简单综述及展望](https://zhuanlan.zhihu.com/p/648376562)
+
+1xx. [LLM Agent 现状和一些思考 （202401）](https://zhuanlan.zhihu.com/p/679032270)
 
 ### Planning
 20. {% post_link 'gptAgentReflection' %} self

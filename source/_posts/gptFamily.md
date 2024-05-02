@@ -97,4 +97,6 @@ GPT-3 在下游任务的评估与预测时，提供了三种不同的方法：
 
 3. [AI 大模型微调训练营大纲](https://shimo.im/docs/KlkKv4XQDouwWRqd/read) 
 
+1xx. [万字拆解！追溯ChatGPT各项能力的起源 ](https://mp.weixin.qq.com/s/VYv8BRgGnp9ZTuXxaSuFwg) 符尧
+
 1xx. [[Transformer 101系列] ChatGPT是怎么炼成的?](https://zhuanlan.zhihu.com/p/642282717) 未

@@ -90,6 +90,7 @@ aligment
 1xx. [LLM Visualization](https://bbycroft.net/llm) ***  可视化 
 1xx. [Transformer通俗笔记：从Word2Vec、Seq2Seq逐步理解到GPT、BERT](https://blog.csdn.net/v_JULY_v/article/details/127411638) *** 
 1xx. [深入解析随机 Transformer [译]](https://baoyu.io/translations/llm/the-random-transformer) *** 
+1xx. [Transformers from Scratch](https://e2eml.school/transformers.html)
 
 ### Normalization
 20. [Normalization归一化：batch normalization vs layer nomalization](https://www.bilibili.com/video/BV1tk4y1F7b6/)

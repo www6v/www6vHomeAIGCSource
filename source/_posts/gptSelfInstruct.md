@@ -53,7 +53,11 @@ categories:
 
 3. 《第二章 大模型训练与微调研发背后的数据艺术》 LLM大语言模型算法特训  那位科技 *** 
     **SELF-INSTRUCT**， Baize， **Evol-instruct**， **Self-QA**， Ultra-chat
-    
+
+1xx. [ACL2023 | 大模型如何快速构建指令遵循数据集？self-instruct：用175条种子数据追上InstructGPT001效果](https://blog.csdn.net/qq_16949707/article/details/131266543)
+
+1xx. [self-instruct](https://github.com/yizhongw/self-instruct/) git
+
 
 1xx. [大模型SFT微调指令数据的生成](https://zhuanlan.zhihu.com/p/650596719)
    SELF-INSTRUCT， Wizard， Backtranslation
@@ -61,5 +65,5 @@ categories:
 1xx. [让ChatGPT生成训练ChatGPT的训练数据](https://zhuanlan.zhihu.com/p/618334308)
    BELLE
 
-1xx. [self-instruct](https://github.com/yizhongw/self-instruct/) git
+
 

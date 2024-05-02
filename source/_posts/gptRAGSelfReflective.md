@@ -37,6 +37,9 @@ Self-RAG 则是更加主动和智能的实现方式，主要步骤概括如下�
 
 3. [NLP（廿一）：从 RAG 到 Self-RAG —— LLM 的知识增强](https://zhuanlan.zhihu.com/p/661465330?utm_id=0) *** 
 
+
+1xx. [写的太通透了！大模型自省式 RAG 与 LangGraph 的实践！](https://blog.csdn.net/2301_78285120/article/details/136103211)
+
 ### Corrective RAG
 1xx. [Corrective Retrieval Augmented Generation](https://arxiv.org/pdf/2401.15884.pdf) Figure 2
 1xx. [Corrective RAG (CRAG)](https://github.com/langchain-ai/langgraph/blob/main/examples/rag/langgraph_crag.ipynb) git
