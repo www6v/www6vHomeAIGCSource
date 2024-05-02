@@ -55,3 +55,6 @@ categories:
    [huggingface embedding模型排行榜](https://huggingface.co/spaces/mteb/leaderboard)
    [Sentence Bert](https://arxiv.org/pdf/1908.10084.pdf)  
    [Demo Repo](https://github.com/blackinkkkxi/RAG_langchain)  git
+   
+1xx. [引入任务Instruction指令的句子向量化方案：Instructor的实现思路及训练数据集构造方案](https://mp.weixin.qq.com/s/qIh07eU8_lYL2gBVzTFzKA)
+   [Repo](https://github.com/xlang-ai/instructor-embedding) git

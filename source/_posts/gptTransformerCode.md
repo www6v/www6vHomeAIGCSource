@@ -22,4 +22,7 @@ categories:
 
 1xx. [[译] Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）](http://arthurchiao.art/blog/transformers-from-scratch-zh/) V, github 
     Transformers from scratch
+    
 1xx. [从零实现Transformer的简易版与强大版：从300多行到3000多行](https://blog.csdn.net/v_JULY_v/article/details/130090649)
+
+1xx. [Transformer源码详解（Pytorch版本）](https://zhuanlan.zhihu.com/p/398039366)

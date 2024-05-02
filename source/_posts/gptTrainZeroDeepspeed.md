@@ -77,4 +77,6 @@ FairScale 说 **FSDP 相当于 ZeRO3 的优化**
 
 1xx. [图解大模型训练之：数据并行下篇( DeepSpeed ZeRO，零冗余优化)](https://zhuanlan.zhihu.com/p/618865052)
 
+1xx. [图解大模型训练之：数据并行上篇(DP, DDP与ZeRO)](https://zhuanlan.zhihu.com/p/617133971)
+
 1xx. [Deepspeed大模型分布式框架精讲](https://www.bilibili.com/video/BV1mc411y7jW/)  V 原理+实操    *** 

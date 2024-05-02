@@ -86,7 +86,10 @@ Self-Ask
 
 1xx. [ChatGPT应用端的Prompt解析：从概念、基本构成、常见任务、构造策略到开源工具与数据集 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399405&idx=1&sn=75cc058ff83467aa6bf107cf69335e71)
 
+1xx. [AutoPrompt Repo](https://github.com/Eladlev/AutoPrompt) git
+
 ### 案例
+
 200. [运维大模型探索之 Text2PromQL 问答机器人 ](https://mp.weixin.qq.com/s/nXoZJ4xfgihA2mnBQ8EdIQ)     架构图， 最后两个重点总结   未
 
 

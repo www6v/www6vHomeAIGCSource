@@ -90,10 +90,10 @@ todo
 # 参考
 1. [大语言模型综述](http://aibox.ruc.edu.cn/docs/2023-08/cb9badcb213f4c8b89d00d579eed4a4c.pdf) 中文  v10 
      [大语言模型综述](https://github.com/RUCAIBox/LLMSurvey/blob/main/assets/LLM_Survey_Chinese.pdf) 中文
-     [A Survey of Large Language Models](https://arxiv.org/pdf/2303.18223.pdf) 英文
-     [LLMSurvey](https://github.com/www6v/LLMSurvey)  github
+     [LLMSurvey Repo](https://github.com/www6v/LLMSurvey)  git
      [[论文]大语言模型综述](https://zhuanlan.zhihu.com/p/630203554) 
      [详谈大模型训练中的数据收集、处理与模型影响：A Survey of Large Language Models工作中的数据总结](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648400817&idx=1&sn=c1ed1c9c87bf2526e02d21d84429c5cf)
+     [大模型综述-A Survey of Large Language Models](https://zhuanlan.zhihu.com/p/662673023)
 
 1xx. [值得一看的大模型最新综述：兼看多语种大模型微调数据集Aya ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648408221&idx=1&sn=2874583ed668ae0b89889c81a4ab8d79)
 
