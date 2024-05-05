@@ -54,6 +54,3 @@ categories:
     [大模型的数据管理——论文精读](https://blog.csdn.net/weixin_60760661/article/details/136058893)   
     [Data Management for LLM](https://github.com/www6v/data_management_LLM)
     
-###  指令数据-高质量
-1xx. [如何从数据集中自动识别高质量的指令数据-IFD指标的使用](https://zhuanlan.zhihu.com/p/658128530)
-1xx. [大模型微调技巧 | 高质量指令数据筛选方法-MoDS](https://zhuanlan.zhihu.com/p/671183709)

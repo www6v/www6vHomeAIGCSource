@@ -51,16 +51,14 @@ categories:
 2. 《Data-centric Artificial Intelligence: A Survey》 大学
    [Data-centric Artificial Intelligence: A Survey](https://zhuanlan.zhihu.com/p/620890799)
     [机器学习数据工程的概述](https://cloud.tencent.com/developer/article/2359824)
-    
+   
+
 1xx. [大模型时代下数据的重要性](https://zhuanlan.zhihu.com/p/639207933) 综述
 
 1xx. [大模型研发核心：数据工程、自动化评估及与知识图谱的结合](https://hub.baai.ac.cn/view/28740)
    [大模型研发核心：数据工程、自动化评估及与知识图谱的结合 ](https://mp.weixin.qq.com/s/SvDnQD886E3DBtw8k9asgg)
 
 1xx. [符尧：别卷大模型训练了，来卷数据吧！【干货十足】](https://blog.csdn.net/qq_16949707/article/details/133875958) 看最后的5个结论 
-
-1xx. [值得一看的大模型预训练数据选择策略总结：兼读20240229大模型进展早报 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648409027&idx=1&sn=4083853fd0bfb1790d8df6b4414b6583)
-《A Survey on Data Selection for Language Models》
 
 50. {% post_link 'gptInstructTuning' %} self
 

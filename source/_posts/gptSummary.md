@@ -93,6 +93,7 @@ top:
       - Task composition
         + {% post_link 'gptDatasetSFT' %}   
       + {% post_link 'gptDataSFTScaling' %}  
+      + {% post_link 'gptDataSelection' %} 
 
 
 ## FineTuning
