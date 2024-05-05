@@ -22,5 +22,9 @@ categories:
 《A Survey on Data Selection for Language Models》
 
 1xx. [如何从数据集中自动识别高质量的指令数据-IFD指标的使用](https://zhuanlan.zhihu.com/p/658128530)
+   《From Quantity to Quality: Boosting LLM Performance with Self-Guided Data Selection for Instruction Tuning》
+   ChatLaw就这么训的
 
 1xx. [大模型微调技巧 | 高质量指令数据筛选方法-MoDS](https://zhuanlan.zhihu.com/p/671183709)
+   《MoDS: Model-oriented Data Selection for Instruction Tuning》
+    质量筛选， 多样性筛选，必要性筛选
