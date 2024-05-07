@@ -15,7 +15,7 @@ categories:
 
 <!-- toc -->
 
-# Assistant API功能介绍 [7]
+# Assistant API功能介绍 [3]
 从功能实现层面来说，Assistant API是截至目前最完整、性能最强大的AI应用开发API，具体功能如下：
 - 首先，Assistant API前所未有的能够**调用OpenAI各模型的各项能力**，包括可以调用Chat系列模型（即GPT系列模型）完成文本对话、调用DALL·E 3进行绘图、调用GPT-4-vision进行图像识别、以及调用Text-to-Speech模型进行语音转文字等，并且支持在一轮对话中调用不同模型；
 - 其次，Assistant API还**内置了代码解释器功能（Code interpreter）和海量文本信息提取功能（Knowledge retrieval）**同时也一如既往支持借助**Function calling**进行模型功能层面拓展，此外，非常重要的是，Assistant API还支持在一轮对话中调用多个工具；
@@ -29,18 +29,9 @@ categories:
 {% asset_img 'xtuner-agent.png' %}
 
 
-
-
-# multi-agnt 
-+ CrewAI - OpenAI
-+ AutoGPT
-+ AutoGen
-+ MetaGPT
-
-
 # 参考
 
 1. [xtuner](https://github.com/InternLM/tutorial/blob/main/xtuner/README.md) 4【补充】用 MS-Agent 数据集 赋予 LLM 以 Agent 能力
 2. [(4)XTuner 大模型单卡低成本微调实战](https://www.bilibili.com/video/BV1yK4y1B75J/)
 
-7. [Assistant API详解与Agent开发实战-九天Hector](https://github.com/www6v/AIGC/tree/master/%E4%B9%9D%E5%A4%A9Hector/Assistant%20API%E8%AF%A6%E8%A7%A3%E4%B8%8EAgent%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98-%E4%B9%9D%E5%A4%A9Hector)
+3. [Assistant API详解与Agent开发实战-九天Hector](https://github.com/www6v/AIGC/tree/master/%E4%B9%9D%E5%A4%A9Hector/Assistant%20API%E8%AF%A6%E8%A7%A3%E4%B8%8EAgent%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98-%E4%B9%9D%E5%A4%A9Hector)

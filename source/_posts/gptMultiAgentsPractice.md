@@ -1,5 +1,5 @@
 ---
-title: (实战)MultiAgents
+title: (实战)Multi Agents
 date: 2023-05-07 16:14:30
 tags:
   - Agents
@@ -11,7 +11,10 @@ categories:
 <p></p>
 <!-- more -->
 
-# Multi-Agent[1]
+## 目录
+<!-- toc -->
+
+#  LangGraph [1]
 ### Agent Supervisor
 [Agent Supervisor Repo](https://github.com/langchain-ai/langgraph/blob/main/examples/multi_agent/agent_supervisor.ipynb) git
 
@@ -20,6 +23,15 @@ categories:
 
 ### Hierarchical Agent Teams
 [Hierarchical Agent Teams](https://github.com/langchain-ai/langgraph/blob/main/examples/multi_agent/hierarchical_agent_teams.ipynb) git
+
+
+
+# Framework
++ LangGraph
++ AutoGPT
++ AutoGen
++ MetaGPT
++ CrewAI - OpenAI
 
 # 参考
 1. [LangGraph: Multi-Agent Workflows](https://blog.langchain.dev/langgraph-multi-agent-workflows/)
