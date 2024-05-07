@@ -163,6 +163,7 @@ top:
   + {% post_link 'gptAgentPlanAndExecute' %}
 + Multi-agent collaboration
   + {% post_link 'gptMultiAgents' %}  
+  + {% post_link 'gptMultiAgentsPractice' %}   
 + Tool use  *
   + {% post_link 'gptFunctionCall' %} 
   + {% post_link 'gptAgentTool' %}  
