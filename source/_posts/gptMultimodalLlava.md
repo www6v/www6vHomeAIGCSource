@@ -1,5 +1,5 @@
 ---
-title: 多模态  LLaVa
+title: (原理|实战)多模态  LLaVa
 date: 2023-03-14 23:02:17
 tags:
   - multimodal
@@ -37,3 +37,7 @@ categories:
 1xx. [【LMM 002】LLaVA-1.5：大型语言和视觉助手](https://datac.blog.csdn.net/article/details/135329602)
 
 1xx. [【LMM 006】LLaVA-Plus：可以学习如何使用工具的多模态Agent](https://datac.blog.csdn.net/article/details/135329898)
+
+### 微调llava 实战
+[XTuner 微调 LLM：1.8B、多模态、Agent (更新撰写中)](https://github.com/InternLM/Tutorial/blob/camp2/xtuner/readme.md)
+[XTuner多模态训练与测试](https://github.com/InternLM/Tutorial/blob/camp2/xtuner/llava/xtuner_llava.md)

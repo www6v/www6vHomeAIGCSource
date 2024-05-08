@@ -1,5 +1,5 @@
 ---
-title: MiniGPT4
+title: (原理|实战)MiniGPT4
 date: 2023-03-15 15:56:48
 tags:
   - multimodal
