@@ -25,6 +25,7 @@ categories:
 12. [LLaVAR：增强的视觉指令微调](https://zhuanlan.zhihu.com/p/670175648)
     [LLaVAR: Enhanced Visual Instruction Tuning for Text-rich Image Understanding](https://llavar.github.io/)
     
-    
 1xx. [加速 Document AI (文档智能) 发展](https://huggingface.co/blog/zh/document-ai)
     [加速 Document AI (文档智能) 发展](https://baijiahao.baidu.com/s?id=1755096032832674219&wfr=spider&for=pc)
+
+1xx. [阿里面向企业数字化的文档智能技术与应用](https://mp.weixin.qq.com/s/d2Nns1qashMbcXPMG-4McQ)

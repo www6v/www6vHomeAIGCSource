@@ -138,6 +138,7 @@ top:
 + 综述
   + {% post_link 'gptRAG' %}
   + {% post_link 'gptRAGPractice' %}
+  + {% post_link 'gptRAGFramework' %} 
 + 案例 
   + {% post_link 'gptRAGOpenAI' %} 
   + {% post_link 'gptRAGBaichuan' %}   
