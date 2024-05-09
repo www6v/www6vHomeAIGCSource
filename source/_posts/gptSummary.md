@@ -135,10 +135,11 @@ top:
     + {% post_link 'gptMultimodalMinigpt4' %}   
 
 ## RAG *
-+ 综述
++ RAG
   + {% post_link 'gptRAG' %}
   + {% post_link 'gptRAGPractice' %}
   + {% post_link 'gptRAGFramework' %} 
+  + {% post_link 'gptRAGOptimize' %} 
 + 案例 
   + {% post_link 'gptRAGOpenAI' %} 
   + {% post_link 'gptRAGBaichuan' %}   
