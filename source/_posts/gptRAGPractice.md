@@ -45,22 +45,39 @@ categories:
 ### 架构
 {% asset_img 'arch.JPG' %}
 
+### chuck
+**段落**
+句子
+token
+
+### 数据格式
+{"id": xxx, "病情描述": "xxx",  "治疗方案": "xxx" }
+
+### 改写query
++ HyDE
++ RAG Fusion -> Generate Similar query
+  用户的查询不精准，要扩充query, 用大模型改写
+
 ### 召回模型
 + bert模型
   - **sbert**
-    - **2个bert模型**，共享参数，s1,s2向量化后做相似度计算
+    - **2个bert模型**，共享参数，s1,s2向量化后做**相似度**计算
     - **速度快**
+    - 相似度
+      欧式距离
   - 在百万语料上训练
     - **语料格式**   
       [s1][s2] 0 - 无关
       [s1][s2] 1-类似
-   
+
++ 根据query, 召回id和value整条记录
+
 ### 排序模型 
 + bert模型
   - 1个ber模型
   - **速度慢**
   - **格式**
-    - s1[sep]s2  -> 经过softmax，产生2分类，0-1
+    - query[sep]s2  -> 经过softmax，产生2分类，0-1
   - 也要训练
     - 同**召回模型训练方式**
 
