@@ -159,9 +159,11 @@ top:
   + {% post_link 'gptAgentCategory' %}
   + {% post_link 'gptAgentList' %}  
   + {% post_link 'gptAgentPractice' %} 
+  + {% post_link 'gptAgentChallenge' %} 
 + Reflection
   + {% post_link 'gptAgentReflection' %}  
 + Planning
+  + {% post_link 'gptAgentPlanning' %}     
   + {% post_link 'gptAgentPlanAndExecute' %}
 + Multi-agent collaboration
   + {% post_link 'gptMultiAgents' %}  

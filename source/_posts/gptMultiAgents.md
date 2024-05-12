@@ -55,3 +55,5 @@ multi-Agent系统中引入一个专门的**协调Agent**，负责整合和组织
 2. [《综述：全新大语言模型驱动的Agent》](https://zhuanlan.zhihu.com/p/656676717)  *** 4.2
 100. [The Rise and Potential of Large Language Model Based Agents: A Survey](https://github.com/WooooDyy/LLM-Agent-Paper-List) *** 未
 
+
+1xx. [基于大语言模型多智体的综述：进步和挑战](https://zhuanlan.zhihu.com/p/685286305) 综述
