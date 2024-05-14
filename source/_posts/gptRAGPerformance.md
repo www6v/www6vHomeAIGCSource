@@ -121,19 +121,8 @@ LlamaIndex和LangChain都支持查询路由器
 
 
 # Post-Retrieval
-## Reranker
-### 什么是Reranker [22]
-A reranking model — also known as a **cross-encoder** — is a type of model that,**given a query and document pair, will output a similarity score.** 
+## Reranker[20]
 
-### BGE Ranker [20]
-**交叉编码器**将对查询和答案实时计算相关性分数，这比**向量模型(即双编码器)**更准确，但比向量模型更耗时。 因此，它可以用来对嵌入模型返回的前k个文档重新排序。 我们在多语言数据上训练了交叉编码器，数据格式与向量模型相同，因此您可以根据我们的示例 轻松地对其进行微调。 
-
-### 优秀的组合 [21]
-OpenAI + CohereRerank
-Voyage + big-reranker-large
-
-### BCE[24]
-中文效果比BGE好[老刘说nlp]
 
 ## Fusion[23]
 其思想在于通过生成多个用户查询和重新排序结果来解决RAG固有的约束；利用倒数排序融合（RRF）和自定义向量评分加权，生成全面准确的结果。
@@ -178,21 +167,13 @@ Voyage + big-reranker-large
 
 
 ### Post-Retrieval
-20. [BGE Reranker](https://github.com/FlagOpen/FlagEmbedding/blob/master/README_zh.md)
-      [transformers二次开发——bge-reranker模型微调流程](https://www.bilibili.com/video/BV1sQ4y137Ft/) V
-   
-21. [提升RAG——选择最佳Embedding和重新排名模型 ](https://luxiangdong.com/2023/11/06/rerank-ev/#) 
-      [Boosting RAG: Picking the Best Embedding & Reranker models](https://blog.llamaindex.ai/boosting-rag-picking-the-best-embedding-reranker-models-42d079022e83)
-   
-22. [Rerankers and Two-Stage Retrieval](https://www.pinecone.io/learn/series/rag/rerankers/)   
-      文中的第二阶段就是指Reranker
-
+20. {% post_link 'gptRAGRerank' %} self
 23. [RAG Fusion](https://github.com/langchain-ai/langchain/blob/master/cookbook/rag_fusion.ipynb) git
       [Forget RAG, the Future is RAG-Fusion](https://towardsdatascience.com/forget-rag-the-future-is-rag-fusion-1147298d8ad1)
       [忘记RAG，未来是RAG-Fusion](https://blog.csdn.net/lichunericli/article/details/135451681)
       [再谈大模型RAG问答中的三个现实问题：兼看RAG-Fusion多query融合策略、回答引文生成策略及相关数据集概述](https://mp.weixin.qq.com/s/NFjn8pUsQaSx85nhBphORA)
 
-24. [youdao RerankerModal](https://github.com/netease-youdao/BCEmbedding) BCE
+
 
 # pre-retrival
 30. {% post_link 'gptQueryTransformation' %}  self
