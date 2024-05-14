@@ -14,7 +14,7 @@ categories:
 ## 目录
 <!-- toc -->
 
-# Modular RAG[4]
+# Modular RAG[1]
 {% asset_img 'moduleRAG.webp' %}
 
 ### indexing
@@ -27,13 +27,13 @@ categories:
       例如使用知识图谱进行文档内容的组织，根据文档结构进行层级组织
 
 ### pre-retrival阶段
-  - **query-routing**
+  - **query-routing** [2]
     - Metadata Router/ Filter  问题的分发
-    - Semantic Router  意图分类 [10]
+    - Semantic Router  意图分类 
   -  **query-expansion**  
      - Multi-Query 一变多
      - Sub-Query 拆分子query
-     - CoVe[11]
+     - CoVe[3]
   -  **query transformer** 
      - query rewrite改写
      - HyDE
@@ -49,7 +49,7 @@ categories:
        稀疏检索（es字符串匹配）
      - Dense Retriever
        稠密检索（向量化检索）
-  - Retriever Fine-tuning  检索的微调  [12] #
+  - Retriever Fine-tuning  检索的微调  [4] #
      -  SFT
         【embedding tuning】
      -  adapter
@@ -69,7 +69,7 @@ categories:
   - Generator Selection
     - Cloud API-base Generator
     - On-Premises 
-  - Generator Fine-tuning  [12] #
+  - Generator Fine-tuning  [4] #
     - SFT 
     - Distillation
     - Dual FT
@@ -90,13 +90,12 @@ categories:
 
 # 参考
 ### Modular RAG
-4. [值得一看的大模型RAG问答总括性梳理：模块化(Modular)RAG范式的定义、构成及机遇 ](https://mp.weixin.qq.com/s/j07PkTCoxBzAhkyON1puPg)
+1. [值得一看的大模型RAG问答总括性梳理：模块化(Modular)RAG范式的定义、构成及机遇 ](https://mp.weixin.qq.com/s/j07PkTCoxBzAhkyON1puPg)
 1xx. [大模型RAG问答行业最佳案例及微调、推理双阶段实现模式：基于模块化(Modular)RAG自定义RAG Flow ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648407638&idx=1&sn=5c167b4a11bc483f5790ef1e0340d670)
 
-10. [Sematic router 让LLM更加快速做出决策](https://www.bilibili.com/video/BV1H64y1E75Y/) V
-    [semantic-router](https://github.com/aurelio-labs/semantic-router/) git
+2. {% post_link 'gptRAGRouting' %}  self
     
-11. [如何使用LLMs：Chain of Verification (CoVe)](https://zhuanlan.zhihu.com/p/669977863)
+3. [如何使用LLMs：Chain of Verification (CoVe)](https://zhuanlan.zhihu.com/p/669977863)
     [Chain of Verification (CoVe) — Understanding & Implementation](https://sourajit16-02-93.medium.com/chain-of-verification-cove-understanding-implementation-e7338c7f4cb5)
     
-12.  {% post_link 'gptRAGPerformance' %}   
+4.  {% post_link 'gptRAGPerformance' %}  self 

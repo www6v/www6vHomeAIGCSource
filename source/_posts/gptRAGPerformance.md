@@ -107,7 +107,7 @@ top_k
 # pre-retrival阶段
 ### query transformer 查询转换 [30][1]
 
-### query-routing 查询路由 [1]
+### query-routing 查询路由  [31][1]
 LlamaIndex和LangChain都支持查询路由器
 
 # Retrieval
@@ -194,9 +194,9 @@ Voyage + big-reranker-large
 
 24. [youdao RerankerModal](https://github.com/netease-youdao/BCEmbedding) BCE
 
-
-### query transformer
+# pre-retrival
 30. {% post_link 'gptQueryTransformation' %}  self
+31. {% post_link 'gptRAGRouting' %}  self
 
 
 ### fine-tuning
