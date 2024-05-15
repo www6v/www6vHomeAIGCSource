@@ -1,5 +1,5 @@
 ---
-title:  (原理|实战)Plan-And-Execute Agent
+title:  (原理|实战)Plan&Execute,ReWOO 
 date: 2023-03-02 09:31:47
 tags:
   - Agent
@@ -58,10 +58,11 @@ Reasoning by Large Language Models](https://arxiv.org/pdf/2305.04091.pdf)  Figur
 
 
 ### ReWOO
-10. [ReWOO: Decoupling Reasoning from Observations
-for Efficient Augmented Language Models](https://arxiv.org/pdf/2305.18323.pdf)
-11. [Reasoning without Observation](https://github.com/langchain-ai/langgraph/blob/main/examples/rewoo/rewoo.ipynb)
+10. [ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models](https://arxiv.org/pdf/2305.18323.pdf)
+11. [Reasoning without Observation](https://github.com/langchain-ai/langgraph/blob/main/examples/rewoo/rewoo.ipynb) git
+    [ReWoo Agent框架代码实现](https://www.bilibili.com/video/BV1Au4m1N7ix/) V
 1xx.  [ReWOO: 高效增强语言模型中解偶观测和推理](https://zhuanlan.zhihu.com/p/671491031)
+
 
 ### LLMCompiler
 20. [An LLM Compiler for Parallel Function Calling](https://arxiv.org/pdf/2312.04511v1.pdf)
