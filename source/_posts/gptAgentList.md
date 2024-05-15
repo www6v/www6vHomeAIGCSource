@@ -40,7 +40,7 @@ categories:
 | **LangGraph** [video](https://www.bilibili.com/video/BV1VN4y1n7bt/) *** | flow engineering          |                                                              |                                                              |
 |**XAgent** [video](https://www.bilibili.com/video/BV1D34y1M74F)|**双循环，人可参与**|autogpt，babyagi - 没法收敛，有时候会不可控<br/>metagpt，chatdev sop优化- 有一定的局限性，通用性不够好[面壁智能]|[code](https://github.com/OpenBMB/XAgent)![GitHub Badge][XAgent]|
 | Agents [video](https://www.bilibili.com/video/BV1C8411k7UL) paper | single agent\|multi agent | 基于SOP                                                      | [code](https://github.com/aiwaves-cn/agents)                 |
-|                                                              |                           |                                                              |                                                              |
+| phidata |                           | Memory, knowledge and tools for LLMs | [code](https://github.com/phidatahq/phidata) |
 |MiniAGI [video](https://www.bilibili.com/video/BV1Hh4y1k7Jz)||simple general-purpose autonomous agent based on the OpenAI API|[code](https://github.com/muellerberndt/mini-agi)|
 |AL Legion||An LLM-powered autonomous agent platform|[code](https://github.com/eumemic/ai-legion)|
 

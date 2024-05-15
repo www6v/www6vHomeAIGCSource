@@ -15,15 +15,15 @@ categories:
 # Types[1]
 {% asset_img  'plans.webp' %}
 
-### 任务分解
++ **任务分解** 
 
-### 多计划选择
++ 多计划选择
 
-### 外部规划器辅助规划
++ 外部规划器辅助规划
 
-### 反思和提炼[20] 
++ **反思和提炼**[20] 
 
-### 记忆增强规划
++ 记忆增强规划
 
 # 任务分解
 + ReACT 范式 [2]
@@ -47,6 +47,9 @@ categories:
 
 1xx. [AI Agent规划能力全面拆解](https://mp.weixin.qq.com/s/NhpJMmIcnF57qEuUkxD4kQ)
 
-2xx. [引领语言智能：从思维链推理到语言智能体的探索指南 [译]](https://baoyu.io/translations/ai-paper/2311.11797-igniting-language-intelligence-the-hitchhikers-guide-from-chain-of-thought-reasoning-to-language-agents) paper
+1xx. [引领语言智能：从思维链推理到语言智能体的探索指南 [译]](https://baoyu.io/translations/ai-paper/2311.11797-igniting-language-intelligence-the-hitchhikers-guide-from-chain-of-thought-reasoning-to-language-agents) paper
 
-2xx. [ReWOO: 高效增强语言模型中解偶观测和推理](https://zhuanlan.zhihu.com/p/671491031)
+1xx. [ReWOO: 高效增强语言模型中解偶观测和推理](https://zhuanlan.zhihu.com/p/671491031)
+
+1xx. [2023年大语言模型智能体规划技术(LLM Agent Planning)研究进展汇总](https://mp.weixin.qq.com/s?__biz=Mzg5NTc2OTcyOQ==&mid=2247488040&idx=1&sn=f404a5fc2b0380eac00564046abc77d5)
+

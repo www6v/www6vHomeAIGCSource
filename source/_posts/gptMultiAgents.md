@@ -51,9 +51,15 @@ multi-Agent系统中引入一个专门的**协调Agent**，负责整合和组织
 基于 LLM 的多个代理的交互场景。在合作互动中，代理以无序或有序的方式进行协作，以实现共同目标。在对抗式交互中，代理以针锋相对的方式展开竞争，以提高各自的性能。
 
 # 参考
-1. [NLP（廿二）：LLM 时代的 multi-agent 系统](https://zhuanlan.zhihu.com/p/665644399?)
-2. [《综述：全新大语言模型驱动的Agent》](https://zhuanlan.zhihu.com/p/656676717)  *** 4.2
-100. [The Rise and Potential of Large Language Model Based Agents: A Survey](https://github.com/WooooDyy/LLM-Agent-Paper-List) *** 未
-
-
+### survey
 1xx. [基于大语言模型多智体的综述：进步和挑战](https://zhuanlan.zhihu.com/p/685286305) 综述
+1xx. [万字综述：大语言模型多智能体(LLM Multi-Agents)进展与挑战](https://mp.weixin.qq.com/s?__biz=Mzg5NTc2OTcyOQ==&mid=2247488353&idx=2&sn=374e8671df71ce7c60d2570aacc9fcf6)
+
+1xx. [LLM-Agent-Paper-List](https://github.com/WooooDyy/LLM-Agent-Paper-List) ***  git
+
+2. [《综述：全新大语言模型驱动的Agent》](https://zhuanlan.zhihu.com/p/656676717)  *** 4.2
+
+### xxx
+1. [NLP（廿二）：LLM 时代的 multi-agent 系统](https://zhuanlan.zhihu.com/p/665644399?)
+
+1xx. [MetaGPT-ICLR2024: 高效人类工作流(SOPs)融入多Agent协作，显著提升软件工程效率！](https://mp.weixin.qq.com/s?__biz=Mzg5NTc2OTcyOQ==&mid=2247487550&idx=1&sn=28c8147920595f385bec3d3b05911ae7)
