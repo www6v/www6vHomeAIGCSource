@@ -53,9 +53,13 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
   - OpenAI API **function calling**
 
 
-
-
-
+# Agentic Reasoning Design Patterns[10]
++ robust technology
+  - Reflection：让 Agent 审视和修正自己生成的输出；
+  - Tool Use：LLM 生成代码、调用 API 等进行实际操作；
++ emerging technology
+  - Planning：让 Agent 分解复杂任务并按计划执行；
+  - Multiagent Collaboration：多个 Agent 扮演不同角色合作完成任务；
 
 # 参考
 ### Overview
@@ -76,6 +80,6 @@ Agent = LLM + plan[规划能力] + memory[记忆能力] +Tools[工具使用能�
 1xx. [AutoGPT与LLM Agent解析](https://zhuanlan.zhihu.com/p/622947810) *** 
 
 ### xxx
-[吴恩达红杉美国 AI 峰会谈 Agent Workflow 以及 4 种主流设计模式，相比 LLM 更强调迭代与对话 ](https://mp.weixin.qq.com/s/4ky_OSLrHh2MxdT3AjqW1Q)
-[深度｜盘点 3 种 OpenAI 等硅谷 AI 大厂在研 Agent 类型](https://mp.weixin.qq.com/s/DyXv9nxFQJYUrAFr22BCCA)
-[Agent落地范式本质上是工程及产品设计上的花活：兼看文档图表理解的几个关键问题](https://mp.weixin.qq.com/s/8k2Qo5vIJ2Gvm9QLFtZA4Q)
+10. [吴恩达红杉美国 AI 峰会谈 Agent Workflow 以及 4 种主流设计模式，相比 LLM 更强调迭代与对话 ](https://mp.weixin.qq.com/s/4ky_OSLrHh2MxdT3AjqW1Q)
+1xx. [深度｜盘点 3 种 OpenAI 等硅谷 AI 大厂在研 Agent 类型](https://mp.weixin.qq.com/s/DyXv9nxFQJYUrAFr22BCCA)
+1xx. [Agent落地范式本质上是工程及产品设计上的花活：兼看文档图表理解的几个关键问题](https://mp.weixin.qq.com/s/8k2Qo5vIJ2Gvm9QLFtZA4Q)
