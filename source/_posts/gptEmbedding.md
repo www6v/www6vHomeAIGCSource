@@ -55,6 +55,13 @@ categories:
    [huggingface embedding模型排行榜](https://huggingface.co/spaces/mteb/leaderboard)
    [Sentence Bert](https://arxiv.org/pdf/1908.10084.pdf)  
    [Demo Repo](https://github.com/blackinkkkxi/RAG_langchain)  git
-   
+
 1xx. [引入任务Instruction指令的句子向量化方案：Instructor的实现思路及训练数据集构造方案](https://mp.weixin.qq.com/s/qIh07eU8_lYL2gBVzTFzKA)
    [Repo](https://github.com/xlang-ai/instructor-embedding) git
+   
+1xx. [也看利用大模型进行RAG文本嵌入训练数据生成：兼看面向NLP任务的开源指令微调数据集 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648406715&idx=1&sn=a680597afdb7d5439a11302c7911795f)        《Improving Text Embeddings with Large Language Models》
+
+1xx. [如何提高LLMs的文本表征(Text Embedding)能力?](https://zhuanlan.zhihu.com/p/676589001)
+    《Improving Text Embeddings with Large Language Models》
+    
+1xx. [文本转向量教程s2——认识文本转向量方法（sbert本质和推理加速）](https://www.bilibili.com/video/BV1ex4y1S7u5/?p=2)   V 
