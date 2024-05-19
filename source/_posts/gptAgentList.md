@@ -128,9 +128,16 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 3. 这些 Command 都是可扩展的，每一种命令代表一种外部能力(比如爬虫、Google搜索，也包括GPT的能力)，通过这些 Command 调用返回的 Result 又会成为到 Command Prompt 的组成元素，
 4. 回到第 1 步往复循环，直到拿到最终结果结果（状态为“compelete”）
 
+# Platform[20]
+### 字节 Coze[21,22]
+优势:  有RAG，结构化数据
+劣势:  只能发布到飞书，微信
+
+### 百度 AppBuilder
+
+### Dify
 
 # 参考
-
 1. [awesome-ai-agents](https://github.com/www6v/awesome-ai-agents) git list
 2. [DecryptPrompt](https://github.com/www6v/DecryptPrompt)  ***  git list
 3. [AIGCLINK](https://space.bilibili.com/471000665/video?tid=0&pn=1&keyword=&order=pubdate) V
@@ -141,3 +148,8 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 10. [2023年新生代大模型Agents技术,ReAct,Self-Ask,Plan-and-execute,以及AutoGPT, HuggingGPT等应用](https://zhuanlan.zhihu.com/p/642357544) ***  论文+代码
 11. 公开课
 12. 公开课
+
+### Platform
+20. [AgentBuilder 中小企业如何选择：coze、dify、appbuilder、毕晟](https://www.bilibili.com/video/BV1Bm411B79m/) V
+21. [COZE：中小企业均可0门槛创建业务agent](https://www.bilibili.com/video/BV1DA4m1w72p/) V
+22. [利用Coze 实现吴恩达的4种 AI Agent 设计模式](https://mp.weixin.qq.com/s/WDkYZF9-JRhzM467Uf8lUA)
