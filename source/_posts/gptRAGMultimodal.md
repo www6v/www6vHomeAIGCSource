@@ -29,3 +29,4 @@ categories:
 
 1xx. [朴素多模态RAG如何实现？兼看RAG上下文过滤方案FILCO及202402大模型早报 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648409004&idx=2&sn=7f36d3ff5e170442486a5d413373c563)    多模态RAG 两种实现方式
 
+1xx. [视觉的跨界 Wiki-LLaVA | lmage + Question 的奇妙反应，生成多模态大型语言模型（MLLMs）！](https://mp.weixin.qq.com/s/9xU7OOBqee4sM_TZuzQ-Ew)

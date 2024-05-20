@@ -57,7 +57,9 @@ RAGFlow 的最大特色，就是多样化的文档智能处理，因此它没有
 3. 智能文档处理的**可视化和可解释性**；
 4. RAGFlow 是一个完整的 RAG 系统，而目前开源的 RAG，大都忽视了 RAG 本身的最大优势之一：可以让 LLM 以可控的方式回答问题，或者换种说法：有理有据、消除幻觉。
 
-# QAnything[3]
+# QAnything 
+### Bcembedding模型 [3,4]
+### Rerank [3,4]
 
 # 参考
 0. [大模型RAG问答研发真实图鉴：一周出Demo，半年用不好，缝补之路漫漫 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648407281&idx=2&sn=f39b46cad1787123b485d76dff33bc93)
@@ -66,8 +68,9 @@ RAGFlow 的最大特色，就是多样化的文档智能处理，因此它没有
 2. [检索增强生成引擎 RAGFlow 正式开源！](https://www.infoq.cn/article/hjJM3kV620iDoYYOBtPs)
 
 3. [有道QAnything背后的故事：关于RAG的一点经验分享](https://www.bilibili.com/video/BV1HF4m1w7rY/) V
-
-
+4. [有道QAnything背后的故事---关于RAG的一点经验分享](https://mp.weixin.qq.com/s/FUex1Q984-IhQ-FoLZTf5Q)
+   
+   [公众号有其他文章]
 
 
 1xx. [LlamaHub](https://llamahub.ai/)   

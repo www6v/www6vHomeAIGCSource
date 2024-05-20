@@ -50,6 +50,8 @@ categories:
 
 1xx. [写在多模态征服一切之前（未来数据和模型应该是什么样的？）](https://zhuanlan.zhihu.com/p/667942680)
 
-
+### single
 1xx. [Qwen-VL：突破视觉与语言融合的多模态模型，GPT4V的国产化替代](https://zhuanlan.zhihu.com/p/660662864)
 1xx. [Qwen-VL: 一个通用的视觉语言模型,用于理解、定位、文本阅读等](https://zhuanlan.zhihu.com/p/657385270)
+
+1xx. [InternVL：开源社区最强的多模态大模型](https://zhuanlan.zhihu.com/p/675877376)
