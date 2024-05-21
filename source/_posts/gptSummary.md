@@ -149,7 +149,8 @@ top:
   + {% post_link 'gptRAGSelfReflective' %} 
 + module 
   + {% post_link 'gptQueryTransformation' %}  
-  + {% post_link 'gptRAGRouting' %}   
+  + {% post_link 'gptRAGRouting' %} 
+  + {% post_link 'gptRAGIndex' %}   
   + {% post_link 'gptRAGRerank' %}   
 + Multimodal RAG  *
   + {% post_link 'gptRAGMultimodal' %}  

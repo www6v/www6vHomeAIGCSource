@@ -26,30 +26,11 @@ categories:
 
 
 # Embedding
-+ HyDE
-At a high level, HyDE is an embedding technique that takes queries, **generates a hypothetical answer**, and then embeds that generated document and uses that as the final example.
-
 > 最佳实践
 **BGE** 优于 OpenAI ADA02
 
 # 索引
 ##  索引方式  
-### Smaller chunks [11][12] 
-Indexing by **small data chunks**
-按子部分索引数据块：将文本块拆分为较小的部分，如句子，进行多次索引。这有助于
-处理复杂文本块，减少噪音输出，确保更准确匹配用户查询。
-
-### Hypothetical questions [11][12]
-Indexing by **the questions the document answers**
-按文本块回答的问题索引数据块：让LLM生成与拆分的文本块相关的假设性问题，并用
-于索引。这种方法保持用户查询与数据核心内容一致，降低模糊性。
-
-### Summary [11][12]
-Indexing by **the summary of the document**
-
-按文本块摘要索引数据块：类似于第二种方法，使用块摘要而不是回答的假设问题来创
-建索引。特别适用于文本块中包含多余信息或与用户查询无关的情况。
-
 ### 向量存储索引[1]
 + 近似最近邻实现（如聚类、树或HNSW算法）
   Faiss、nmslib、annoy
@@ -73,35 +54,7 @@ Indexing by **the summary of the document**
 + 实现
   LangChain  - Ensemble Retriever类
   
-## 分块[13]
-### 分块方法
-+ 固定大小分块
-+ 内容感知分块
-  - 句子分块
-  	- 直接分割
-    	按句点（“.”）和换行符分割句子
-  	- NLTK 
-    	<code>from langchain.text_splitter import NLTKTextSplitter</code>
-  	- spaCy
-    	<code>from langchain.text_splitter import SpacyTextSplitter</code>
-  - 递归分块
-    使用一组分隔符以分层和迭代的方式将输入文本划分为更小的块
-    <code>from langchain.text_splitter import RecursiveCharacterTextSplitter</code>
-  - 专门分块
-    - Markdown
-    - LaTex
-
-### 分块优化
-+ 预处理数据
-+ 选择块大小范围
-+ 评估每个块大小的性能
-
-### 分块参数
-chuck_size, ,chunk overlap
-top_k
-
-> 最佳实践
-  按**逻辑分块**可以明显提升**检索器的准确率**
+## 分块 [1]
 
 
 # pre-retrival阶段
@@ -150,22 +103,6 @@ LlamaIndex和LangChain都支持查询路由器
      [LlamaIndex官方年度巨献：高清大图纵览高级 RAG技术，强烈推荐收藏 ](https://mp.weixin.qq.com/s/KM8c3PUww1SOK1dbLjn1Tw) *** 看图
      [构建高级 RAG 的指南和技巧 [译]](https://baoyu.io/translations/rag/a-cheat-sheet-and-some-recipes-for-building-advanced-rag)
      
-### index
-11. [3种高级索引方法，有效提升RAG性能](https://www.bilibili.com/video/BV1dH4y1C7Ck/) V
-      [The Tech Buffet #12: Improve RAG Pipelines With These 3 Indexing Methods](https://thetechbuffet.substack.com/p/rag-indexing-methods)
-      [How To Optimize Your RAG Pipelines](https://newsletter.theaiedge.io/p/how-to-optimize-your-rag-pipelines)
-
-12.  [【RAG实战】 Multi-Vector-Retrieval实现三种高级索引方法](https://www.bilibili.com/video/BV1Vu4y1H72s/) V
-    [MultiVectorRetriever](https://github.com/www6v/AIGC/blob/master/retriever%2Bindex/MultiVectorRetriever)  git 
-      [MultiVector Retriever](https://python.langchain.com/docs/modules/data_connection/retrievers/multi_vector)
-
-
-13. [大语言模型应用中的文本分块策略](https://hustai.gitee.io/zh/posts/rag/Chunking-Strategies.html)
-      [LLM 应用中的分块策略 ](https://yangfei.me/tutorials/chunking-strategies)
-
-1xx. [文本分割的五个层次 [译]](https://baoyu.io/translations/rag/5-levels-of-text-splitting)
-
-
 ### Post-Retrieval
 20. {% post_link 'gptRAGRerank' %} self
 23. [RAG Fusion](https://github.com/langchain-ai/langchain/blob/master/cookbook/rag_fusion.ipynb) git

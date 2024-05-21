@@ -1,5 +1,5 @@
 ---
-title: RAG Rerank
+title: (原理|实战)RAG Rerank
 date: 2023-05-14 18:23:41
 tags:
   - RAG
@@ -11,11 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
 
-
-
-
- 
 #  Reranker [22]
 A reranking model — also known as a **cross-encoder** — is a type of model that,**given a query and document pair, will output a similarity score.** 
 
@@ -45,3 +43,7 @@ Voyage + big-reranker-large
 22. [Rerankers and Two-Stage Retrieval](https://www.pinecone.io/learn/series/rag/rerankers/)     ***          文中的第二阶段就是指Reranker
 
 24. [youdao RerankerModal](https://github.com/netease-youdao/BCEmbedding) BCE
+
+
+1xx. [一文详看Langchain框架中的RAG多阶段优化策略：从问题转换到查询路由再到生成优化](https://mp.weixin.qq.com/s/pK2BRLrWpEKKIPFhUtGvcg)
+   [rag-from-scratch Repo](https://github.com/langchain-ai/rag-from-scratch) git
