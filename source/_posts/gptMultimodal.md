@@ -102,7 +102,7 @@ categories:
 
 1xx. [MLLM首篇综述 | 一文全览多模态大模型的前世、今生和未来](https://cloud.tencent.com/developer/article/2322835)
    [A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
-
+   [多模态大语言模型全面综述：架构，训练，数据，评估，扩展，应用，挑战，机遇](https://mp.weixin.qq.com/s/V5aiWUYh14q00jAn2O6VKA)
 
 ### chat
 1xx. [[论文阅读] 双子座：一个功能强大的多模态模型系列，Gemini: A Family of Highly Capable Multimodal Models](https://zhuanlan.zhihu.com/p/670821058)

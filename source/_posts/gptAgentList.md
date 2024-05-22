@@ -1,5 +1,5 @@
 ---
-title: (Survey)Agent List
+title: (List)Agent 开源 产品 平台
 date: 2023-03-05 16:48:28
 tags:
   - Agent
@@ -153,3 +153,9 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 20. [AgentBuilder 中小企业如何选择：coze、dify、appbuilder、毕晟](https://www.bilibili.com/video/BV1Bm411B79m/) V
 21. [COZE：中小企业均可0门槛创建业务agent](https://www.bilibili.com/video/BV1DA4m1w72p/) V
 22. [利用Coze 实现吴恩达的4种 AI Agent 设计模式](https://mp.weixin.qq.com/s/WDkYZF9-JRhzM467Uf8lUA)
+
+
+###  产品 &调研
+1xx. [2024 年最完整的 AI Agents 清单来了，涉及 13 个领域，上百个 Agents！ ](https://mp.weixin.qq.com/s/RrymA1NwHzz9Q34wITZo6w)  开源 闭源 ***
+1xx. [全球AI Agent大盘点，大语言模型创业一定要参考的60个AI智能体](https://mp.weixin.qq.com/s/v_BvcMqd-FpwRbOD09MR0A)
+1xx. [大模型时代的APP--2024年 AI Agent行业报告](https://mp.weixin.qq.com/s/KbDOBkmYsTiwkjg2-YoRrQ) ***

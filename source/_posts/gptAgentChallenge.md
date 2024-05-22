@@ -66,5 +66,8 @@ AutoGPT - retrieval 结合近期操作记录
    [Harrison Chase: Agents](https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/chase-agents/)  ***
    
    
+
 1xx. [LLM Agent 现状和一些思考 （202401）](https://zhuanlan.zhihu.com/p/679032270)
    当前 Agent 的缺陷和挑战
+   
+1xx. [Agent开发者坦白：窘境中前行](https://mp.weixin.qq.com/s/kCXZN7Wli-RCvZXRb6mF7g)

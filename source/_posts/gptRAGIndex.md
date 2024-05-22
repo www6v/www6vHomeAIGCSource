@@ -100,3 +100,5 @@ Indexing by **the summary of the document**
       [LLM 应用中的分块策略 ](https://yangfei.me/tutorials/chunking-strategies)
 
 1xx. [文本分割的五个层次 [译]](https://baoyu.io/translations/rag/5-levels-of-text-splitting)
+
+1xx. [ChunkViz v0.1](https://chunkviz.up.railway.app/)  可视化
