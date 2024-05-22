@@ -18,7 +18,7 @@ categories:
 # Cognitive Architecture [2]
 + Cognitive architectures for RAG [1]
 
-# Corrective RAG
+# CRAG
 
 
 #  Self-RAG [3] 
@@ -35,23 +35,23 @@ Self-RAG 则是更加主动和智能的实现方式，主要步骤概括如下�
 
 2. [OpenAI's Bet on a Cognitive Architecture](https://blog.langchain.dev/openais-bet-on-a-cognitive-architecture/)
 
-3. [NLP（廿一）：从 RAG 到 Self-RAG —— LLM 的知识增强](https://zhuanlan.zhihu.com/p/661465330?utm_id=0) *** 
+
 
 
 1xx. [写的太通透了！大模型自省式 RAG 与 LangGraph 的实践！](https://blog.csdn.net/2301_78285120/article/details/136103211)
 
-### Corrective RAG
+### CRAG
 1xx. [Corrective Retrieval Augmented Generation](https://arxiv.org/pdf/2401.15884.pdf) Figure 2
 1xx. [Corrective RAG (CRAG)](https://github.com/langchain-ai/langgraph/blob/main/examples/rag/langgraph_crag.ipynb) git
 
 1xx. 【社区第十三讲】 老刘说NLP线上交流
 
 ### SELF-RAG
+3. [NLP（廿一）：从 RAG 到 Self-RAG —— LLM 的知识增强](https://zhuanlan.zhihu.com/p/661465330?utm_id=0) *** 
+
 1xx. [SELF-RAG: LEARNING TO RETRIEVE, GENERATE, AND
 CRITIQUE THROUGH SELF-REFLECTION](https://arxiv.org/pdf/2310.11511.pdf) Figure 1
 1xx. [Self-RAG](https://github.com/langchain-ai/langgraph/blob/main/examples/rag/langgraph_self_rag.ipynb) git
-
-
 
 ### Self-RAG
 1xx. [original implementation of SELF-RAG](https://github.com/www6v/self-rag)

@@ -135,23 +135,23 @@ top:
     + {% post_link 'gptMultimodalMinigpt4' %}   
 
 ## RAG *
-+ RAG
++ Overview
   + {% post_link 'gptRAG' %}
+  + {% post_link 'gptRAGModularRAG' %} 
+  + {% post_link 'gptRAGPerformance' %}
++ 实战
   + {% post_link 'gptRAGPractice' %}
   + {% post_link 'gptRAGFramework' %} 
   + {% post_link 'gptRAGOptimize' %} 
 + 案例 
   + {% post_link 'gptRAGOpenAI' %} 
   + {% post_link 'gptRAGBaichuan' %}   
-+ pattern *
-  + {% post_link 'gptRAGModularRAG' %} 
-  + {% post_link 'gptRAGPerformance' %}
-  + {% post_link 'gptRAGSelfReflective' %} 
-+ module 
++ phase 
   + {% post_link 'gptQueryTransformation' %}  
   + {% post_link 'gptRAGRouting' %} 
   + {% post_link 'gptRAGIndex' %}   
   + {% post_link 'gptRAGRerank' %}   
+  + {% post_link 'gptRAGSelfReflective' %} 
 + Multimodal RAG  *
   + {% post_link 'gptRAGMultimodal' %}  
   + {% post_link 'gptRAGMultimodalPractice' %}   
