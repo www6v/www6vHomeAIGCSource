@@ -1,5 +1,5 @@
 ---
-title: 排行榜
+title: 大模型 排行榜
 date: 2023-01-04 11:14:49
 tags:
   - leaderBoard
@@ -35,10 +35,3 @@ categories:
 + 政务 12
 + 运维 7
 
-
-# 显卡 
-+ 显卡天梯榜
- [显卡天梯榜](https://topic.expreview.com/GPU)
-
-+ 显卡
-显卡 = GPU +  显存
