@@ -52,10 +52,11 @@ top:
   + {% post_link 'gptLargeModelTrainingPractice' %} 
   + {% post_link 'gptContinualPretraining' %}  
   + {% post_link 'gptChineseLlama' %}   
-  + {% post_link 'gptTrainParallelism' %}    
-  + {% post_link 'gptTrainZeroDeepspeed' %}    
-  + {% post_link 'gptTrainDeepspeedPractice' %}     
   + {% post_link 'gptPrecision' %} 
+  + 分布式
+    + {% post_link 'gptTrainParallelism' %}    
+    + {% post_link 'gptTrainZeroDeepspeed' %}    
+    + {% post_link 'gptTrainDeepspeedPractice' %}    
 + 推理 
   + {% post_link 'gptInferFramework' %} 
   + {% post_link 'gptInferFrameworkPractice' %} 
@@ -64,7 +65,8 @@ top:
   + {% post_link 'gptQuantization' %} 
   + {% post_link 'gptQuantizationWeight' %} 
   + {% post_link 'gptQuantizationPractice' %}  
-
++ 平台
+  + {% post_link 'gptLLamaFactory' %} 
 
 
 ## Data *
