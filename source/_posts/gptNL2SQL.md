@@ -29,10 +29,13 @@ QCon-ppt
 1xx. [LLM在中文Text2SQL任务上的优化V2.0](https://zhuanlan.zhihu.com/p/673474672)
 1xx. [LLM在中文Text2SQL任务上的优化V1.0](https://zhuanlan.zhihu.com/p/670913902)
 
-1xx. [也看大模型与数据库查询分析的落地结合：C3 Text2SQL方案及Data-Copilot数据自动化编排机制的实现思想阅读 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402400&idx=1&sn=fe122657b35f27090aaca9c144d1d23b) 
-***
+1xx. [也看大模型与数据库查询分析的落地结合：C3 Text2SQL方案及Data-Copilot数据自动化编排机制的实现思想阅读 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402400&idx=1&sn=fe122657b35f27090aaca9c144d1d23b) ***
+
+
 1xx. [C3: Zero-shot Text-to-SQL with ChatGPT笔记](https://zhuanlan.zhihu.com/p/668557045)
 1xx. [C3SQL  ](https://github.com/bigbigwatermalon/C3SQL) git
 
 1xx. [大模型再总结及ChatSQL实践案例分享：大模型训练数据及工具的5张脑图总结及ChatSQL开源项目实现解析 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402424&idx=1&sn=e2d26821b6e9a5a2871e0ddbca565c30)
 
+### Project
+[DB-GPT Repo](https://github.com/eosphoros-ai/DB-GPT) git

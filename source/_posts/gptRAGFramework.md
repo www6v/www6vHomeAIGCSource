@@ -68,11 +68,13 @@ RAGFlow 的最大特色，就是多样化的文档智能处理，因此它没有
 2. [检索增强生成引擎 RAGFlow 正式开源！](https://www.infoq.cn/article/hjJM3kV620iDoYYOBtPs)
 
 3. [有道QAnything背后的故事：关于RAG的一点经验分享](https://www.bilibili.com/video/BV1HF4m1w7rY/) V
-4. [有道QAnything背后的故事---关于RAG的一点经验分享](https://mp.weixin.qq.com/s/FUex1Q984-IhQ-FoLZTf5Q)
-   
+4. [有道QAnything背后的故事---关于RAG的一点经验分享](https://mp.weixin.qq.com/s/FUex1Q984-IhQ-FoLZTf5Q)   
    [公众号有其他文章]
 
-
+1xx. [大模型RAG问答开源框架的两个风向:兼看大模型安全的学术评测](https://mp.weixin.qq.com/s/ZoI4Dscm9f9m5-q4Dq4bag)
+   RAGFlow - 引入文档理解及溯源机制
+   QAnything - 优化embeddding+召回侧方向的
+   
 1xx. [LlamaHub](https://llamahub.ai/)   
       Mix and match our Data Loaders and Agent Tools to build custom RAG apps or use our LlamaPacks as a starting point for your retrieval use cases.
       

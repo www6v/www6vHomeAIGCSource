@@ -73,7 +73,7 @@ Indexing by **the summary of the document**
 
 > 相关的: 父级documents的索引
 
-### 层级性索引-RAPTOR
+### 层级性索引-RAPTOR[2]
 【raptor 效果也很好，就是需要总结，看总结的咋样了】
 【raptor 原文是对 chunk 聚类，然后每个聚类做总结】
 
@@ -83,6 +83,8 @@ Indexing by **the summary of the document**
 
 1. [一文详看Langchain框架中的RAG多阶段优化策略：从问题转换到查询路由再到生成优化](https://mp.weixin.qq.com/s/pK2BRLrWpEKKIPFhUtGvcg)
    [rag-from-scratch Repo](https://github.com/langchain-ai/rag-from-scratch) git   
+   
+2. [基于RAPTOR实现高质量长上下文的RAG ](https://mp.weixin.qq.com/s/SeOG15Z2RJmiJ5sAP91B4w)   未
 
 ### 
 11. [3种高级索引方法，有效提升RAG性能](https://www.bilibili.com/video/BV1dH4y1C7Ck/) V
