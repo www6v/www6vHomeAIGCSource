@@ -26,6 +26,7 @@ top:
 ## NLP
 + {% post_link 'gptNLPTask' %}  
 + {% post_link 'gptDocSimilarity' %}  
++ {% post_link 'gptDialogue' %}  
 
 ## Model
 + 基础
