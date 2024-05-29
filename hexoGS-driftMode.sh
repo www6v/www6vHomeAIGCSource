@@ -2,5 +2,5 @@
 
 hexo clean
 hexo g  
-hexo s --draft
+hexo s --draft -p 5000
 
