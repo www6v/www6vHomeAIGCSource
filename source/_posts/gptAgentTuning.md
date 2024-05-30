@@ -19,8 +19,6 @@ categories:
 1xx. [AgentTuning解读](https://zhuanlan.zhihu.com/p/663362992?utm_id=0)
 
 ### AgentTuning 实战
-1xx. [单卡 3 小时训练专属大模型 Agent：基于 LLaMA Factory 实战](https://zhuanlan.zhihu.com/p/678989191)
-
 1xx. [2024年大模型Agent tuning关键技术Fireact, Agent-FLAN, AgentOhana, Agent LUMOS, STE, ETO,MoE, DebateGPT等](https://zhuanlan.zhihu.com/p/690012170)
 
 

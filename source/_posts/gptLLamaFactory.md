@@ -11,7 +11,7 @@ categories:
 <p></p>
 <!-- more -->
 
-# 安装
+# 推理llama3[1]
 ### LLaMA-Factory 安装
 ``` shell
 # 安装llamafactory-cli命令
@@ -49,7 +49,10 @@ $ llamafactory-cli webchat examples/inference/llama3.yaml
 
 
 # 参考
-[LLaMA-Factory QuickStart](https://zhuanlan.zhihu.com/p/695287607)
+1. [LLaMA-Factory QuickStart](https://zhuanlan.zhihu.com/p/695287607)
+
+1xx. [单卡 3 小时训练专属大模型 Agent：基于 LLaMA Factory 实战](https://zhuanlan.zhihu.com/p/678989191)
+1xx. [LLaMA-Factory微调多模态大语言模型教程](https://zhuanlan.zhihu.com/p/699777943)
 
 
 
