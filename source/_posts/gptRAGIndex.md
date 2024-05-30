@@ -86,6 +86,8 @@ Indexing by **the summary of the document**
    
 2. [基于RAPTOR实现高质量长上下文的RAG ](https://mp.weixin.qq.com/s/SeOG15Z2RJmiJ5sAP91B4w)   未
 
+1xx. [20240205大模型进展早报：兼看引入chunk层级结构的大模型RAG的思路：RAPTOR ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648407870&idx=1&sn=8073f0fc8edc0897e3627f26478063c3) RAPTOR
+
 ### 
 11. [3种高级索引方法，有效提升RAG性能](https://www.bilibili.com/video/BV1dH4y1C7Ck/) V
       [The Tech Buffet #12: Improve RAG Pipelines With These 3 Indexing Methods](https://thetechbuffet.substack.com/p/rag-indexing-methods)
@@ -104,3 +106,5 @@ Indexing by **the summary of the document**
 1xx. [文本分割的五个层次 [译]](https://baoyu.io/translations/rag/5-levels-of-text-splitting)
 
 1xx. [ChunkViz v0.1](https://chunkviz.up.railway.app/)  可视化
+
+

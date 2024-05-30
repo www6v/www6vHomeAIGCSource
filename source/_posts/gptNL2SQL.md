@@ -37,5 +37,9 @@ QCon-ppt
 
 1xx. [大模型再总结及ChatSQL实践案例分享：大模型训练数据及工具的5张脑图总结及ChatSQL开源项目实现解析 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402424&idx=1&sn=e2d26821b6e9a5a2871e0ddbca565c30)
 
+1xx. [大模型Text2SQL主流数据集及可用实践项目：兼看利用大模型进行5W1H新闻要素提取 ](https://mp.weixin.qq.com/s/Ffm8ooH8je2553IcLkJBmw)
+   问题2:关于Text2sql当前的可用项目及数据集
+   https://github.com/www6v/Awesome-Text2SQL
+   
 ### Project
 [DB-GPT Repo](https://github.com/eosphoros-ai/DB-GPT) git

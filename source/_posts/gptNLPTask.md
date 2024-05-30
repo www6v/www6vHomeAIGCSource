@@ -1,5 +1,5 @@
 ---
-title: NLP 任务
+title: NLP+LLM 
 date: 2023-02-05 16:37:13
 tags:
   - NLP
@@ -11,6 +11,8 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
 
 # NLP任务
 {% asset_img 'NLP_tasks.jpg' %}
@@ -25,5 +27,12 @@ categories:
 + **推理** reasoning
 
 
+# NLP+LLM[1]
+
 # 参考
-[关于ChatGPT解锁NLP任务的一次总结汇报：从应用变化、14类NLP任务使用案例看选型思考](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399456&idx=1&sn=af2ee30aee9e7f6ed441b8335de033b1)
+1. [有趣的两个RAG大模型问答新优化思路：兼看大模型与NLP的结合范式 ](https://mp.weixin.qq.com/s/dRlkv24vTCeUiVvRGmDdQg)
+大模型时代的NLP的一些结合方式
+《Large Language Models Meet NLP: A Survey》
+
+1xx. [关于ChatGPT解锁NLP任务的一次总结汇报：从应用变化、14类NLP任务使用案例看选型思考](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648399456&idx=1&sn=af2ee30aee9e7f6ed441b8335de033b1)
+

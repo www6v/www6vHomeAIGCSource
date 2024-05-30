@@ -144,6 +144,9 @@ AutoGPT 的核心逻辑是一个 Prompt Loop，步骤如下
 
 1xx. [「Agent」通俗易懂地聊聊AI Agent（附66个开源+44个闭源Agent项目）](https://zhuanlan.zhihu.com/p/664281311)
 
+1xx. [主流Agent框架及金融Agent-FinRobot：兼看面向实体增强的细粒度实体描述知识库项目 ](https://mp.weixin.qq.com/s/IubrsvB0ypn8KC-_SMPvLQ)
+   Agent-FinRobot  基于autogen 实现
+
 ### xxx
 10. [2023年新生代大模型Agents技术,ReAct,Self-Ask,Plan-and-execute,以及AutoGPT, HuggingGPT等应用](https://zhuanlan.zhihu.com/p/642357544) ***  论文+代码
 11. 公开课

@@ -21,5 +21,7 @@ categories:
 ### AgentTuning 实战
 1xx. [2024年大模型Agent tuning关键技术Fireact, Agent-FLAN, AgentOhana, Agent LUMOS, STE, ETO,MoE, DebateGPT等](https://zhuanlan.zhihu.com/p/690012170)
 
+1xx. [Agent-FLAN 技术报告——社区翻译版 ](https://mp.weixin.qq.com/s/UCO_m38QcWdCoT_DIFc96A)
+
 
 
