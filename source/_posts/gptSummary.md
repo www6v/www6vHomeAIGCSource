@@ -61,6 +61,7 @@ top:
 + 推理 
   + {% post_link 'gptInferFramework' %} 
   + {% post_link 'gptInferFrameworkPractice' %} 
+  + {% post_link 'gptInfervLLM' %}  
   + {% post_link 'gptInference' %}
 + 模型压缩
   + {% post_link 'gptQuantization' %} 
