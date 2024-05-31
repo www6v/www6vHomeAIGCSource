@@ -145,8 +145,9 @@ top:
   + {% post_link 'gptRAGPerformance' %}
 + 实战
   + {% post_link 'gptRAGPractice' %}
+  + {% post_link 'gptRAGOptimize' %}
   + {% post_link 'gptRAGFramework' %} 
-  + {% post_link 'gptRAGOptimize' %} 
+  + {% post_link 'gptRAGchatchat' %}   
 + 案例 
   + {% post_link 'gptRAGOpenAI' %} 
   + {% post_link 'gptRAGBaichuan' %}   
