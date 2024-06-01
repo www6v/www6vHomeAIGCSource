@@ -32,7 +32,7 @@ categories:
 + 量化（Quantization）
 + 低秩分解（Low-Rank Factorization）
 
-### KV Cache[2.3][2.4]
+### KV Cache
 
 
 # 参考
@@ -42,15 +42,9 @@ categories:
 1xx. [大语言模型推理性能优化综述](https://zhuanlan.zhihu.com/p/656485997)
 1xx. [NLP（十八）：LLM 的推理优化技术纵览](https://zhuanlan.zhihu.com/p/642412124) *** 
 
-### kv cache
-2.3. [NLP（二十）：漫谈 KV Cache 优化方法，深度理解 StreamingLLM](https://zhuanlan.zhihu.com/p/659770503) ***
-2.4. [大模型推理加速：看图学KV Cache](https://zhuanlan.zhihu.com/p/662498827) ***
 
-
-
-
-
+### Awesome-LLM-Inference
+1xx. [Awesome-LLM-Inference Repo](https://github.com/DefTruth/Awesome-LLM-Inference) git
 1xx. [[Awesome-LLM-Inference]🔥第三期：30篇，LLM推理论文集-500页PDF](https://zhuanlan.zhihu.com/p/669777159)
-
 1xx. [[Awesome-LLM-Inference]🔥第二期: 20篇，LLM推理论文集-300页PDF](https://zhuanlan.zhihu.com/p/658091768)
 

@@ -63,6 +63,7 @@ top:
   + {% post_link 'gptInferFrameworkPractice' %} 
   + {% post_link 'gptInfervLLM' %}  
   + {% post_link 'gptInference' %}
+  + {% post_link 'gptInferKVCache' %}  
 + 模型压缩
   + {% post_link 'gptQuantization' %} 
   + {% post_link 'gptQuantizationWeight' %} 
