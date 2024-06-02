@@ -29,28 +29,11 @@ vLLM，TensorRT， deepspeed
   Triton Server
 
 
-
-# TensorRT-LLM
-### key features [2]
-+ Flash Attention
-+ MHA/MQA/GQA
-+ **Quantization**
-  - Weight-Only
-  - SmoothQuant
-  - **GPTQ**
-  - **AWQ**
-  - FP8
-+ Paged **KV Cache** for the Attention
-+ Multi-GPU Multi-Node
-+ **TP(Tensor Parallelism)/PP(Pipeline Parallelism)**
-+ In-flight **Batching**
-
-
 # 参考
 
 1.1. [探秘LLM应用开发](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA5MTIxNTY4MQ==&scene=1&album_id=2959126655292211206)   8-19
 
-2. [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM/) git
+
 
 1xx. [一文探秘LLM应用开发(18)-模型部署与推理(框架工具-Triton Server、RayLLM、OpenLLM)](https://mp.weixin.qq.com/s?__biz=MzA5MTIxNTY4MQ==&mid=2461142079&idx=1&sn=07d9033203c0064408fe0af33d1f9414)
 

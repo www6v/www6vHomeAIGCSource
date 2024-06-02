@@ -62,15 +62,13 @@ top:
   + {% post_link 'gptInferFramework' %} 
   + {% post_link 'gptInferFrameworkPractice' %} 
   + {% post_link 'gptInfervLLM' %}  
+  + {% post_link 'gptInferTensorRT' %}  
   + {% post_link 'gptInference' %}
   + {% post_link 'gptInferKVCache' %}  
 + 模型压缩
   + {% post_link 'gptQuantization' %} 
   + {% post_link 'gptQuantizationWeight' %} 
   + {% post_link 'gptQuantizationPractice' %}  
-+ 平台
-  + {% post_link 'gptLLamaFactory' %} 
-
 
 ## Data *
 + List
@@ -120,7 +118,8 @@ top:
   + {% post_link 'gptInstructTuningSurvey' %}  
 + BERT
   + {% post_link 'gptFineTuningBert' %}    
-
++ 平台
+  + {% post_link 'gptLLamaFactory' %} 
 
 ## Multimodal *
 + Survey

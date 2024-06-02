@@ -11,6 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 # 推理llama3[1]
 ### LLaMA-Factory 安装
 ``` shell
@@ -49,24 +52,28 @@ $ llamafactory-cli webchat examples/inference/llama3.yaml
 
 
 
-# Agent推理
+# Agent Tuning[2]
 
 ### 环境准备
 ``` shell
+# source code
 git clone -b v0.7.1  https://github.com/hiyouga/LLaMA-Factory.git
 git switch -c v0.7.1
 cd LLaMA-Factory
 
+# package 安装
 conda create -n llama_factory python=3.10
 conda activate llama_factory
 pip install llmtuner==0.5.1
 
+# 环境变量
 export CUDA_VISIBLE_DEVICES=0 # 使用第一块 GPU
 export USE_MODELSCOPE_HUB=1 # 使用魔搭社区下载渠道
 
 # 阿里云必须加这句，不然页面会报异常
 $ export GRADIO_ROOT_PATH=/${JUPYTER_NAME}/proxy/7860/
 
+# 启动
 python -m llmtuner.webui.interface
 ```
 
@@ -80,6 +87,7 @@ pip install modelscope -U
 
 
 
++ 训练脚本
 ``` shell
 # 训练轮数 1.0
 
@@ -111,10 +119,24 @@ CUDA_VISIBLE_DEVICES=0 python src/train_bash.py \
     --plot_loss True 
 ```
 
++ 训练配置
+{% asset_img  'agentTuningUI.png' %}
+
+
++ 训练结果
+{% asset_img  'agentTuningUI-result.png' %}
+
++ 效果展示
+工具调用 - 查询天气
+【1个epoch好像有点问题】
+{% asset_img  'agentTuningUI-chat.png' %}
+
+
 # 参考
 1. [LLaMA-Factory QuickStart](https://zhuanlan.zhihu.com/p/695287607)
 
-1xx. [单卡 3 小时训练专属大模型 Agent：基于 LLaMA Factory 实战](https://zhuanlan.zhihu.com/p/678989191)
+2. [单卡 3 小时训练专属大模型 Agent：基于 LLaMA Factory 实战](https://zhuanlan.zhihu.com/p/678989191)
+
 1xx. [LLaMA-Factory微调多模态大语言模型教程](https://zhuanlan.zhihu.com/p/699777943)
 
 
