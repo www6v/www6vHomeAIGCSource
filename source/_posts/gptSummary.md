@@ -170,6 +170,7 @@ top:
   + {% post_link 'gptAgentList' %}  
   + {% post_link 'gptAgentPractice' %} 
   + {% post_link 'gptAgentChallenge' %} 
+  + {% post_link 'gptAgentMemory' %}  
 + Reflection
   + {% post_link 'gptAgentReflection' %}  
 + Planning
