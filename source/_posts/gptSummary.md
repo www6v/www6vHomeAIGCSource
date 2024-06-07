@@ -144,6 +144,7 @@ top:
   + {% post_link 'gptRAG' %}
   + {% post_link 'gptRAGModularRAG' %} 
   + {% post_link 'gptRAGPerformance' %}
+  + {% post_link 'gptRAGEval' %} 
 + 实战
   + {% post_link 'gptRAGPractice' %}
   + {% post_link 'gptRAGOptimize' %}
@@ -179,6 +180,7 @@ top:
 + Multi-agent collaboration
   + {% post_link 'gptMultiAgents' %}  
   + {% post_link 'gptMultiAgentsPractice' %}   
+  + {% post_link 'gptAgentAutogen' %}   
 + Tool use  *
   + {% post_link 'gptFunctionCall' %} 
   + {% post_link 'gptAgentTool' %}  

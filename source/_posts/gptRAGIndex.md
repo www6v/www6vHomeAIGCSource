@@ -107,4 +107,5 @@ Indexing by **the summary of the document**
 
 1xx. [ChunkViz v0.1](https://chunkviz.up.railway.app/)  可视化
 
-
+1xx. [大模型文档理解前沿动向-细粒度多页文档理解：兼看文本切分组件semchunk ](https://mp.weixin.qq.com/s/Ytu6B0Me7BDwueud9djFHg)
+    问题2:关于一个快速文档语义切分组件semchunk

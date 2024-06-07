@@ -53,6 +53,10 @@ categories:
 
 1xx. [清华发布工具学习框架，让ChatGPT操控地图、股票查询，贾维斯已来？](https://blog.csdn.net/xixiaoyaoww/article/details/130278978)
 
+1xx. [回顾大模型在工具使用上的技术总结：兼看图检索增强生成方案-GRAG ](https://mp.weixin.qq.com/s/yZYGqAKIqDfGYF2YUckiiw)
+   《Tool Learning with Large Language Models: A Survey》
+   问题2:关于大模型使用工具的调研整理
+
 ### xxx
 10. [LLM能够自己制作工具了：详解Large Language Models as Tool Makers](https://zhuanlan.zhihu.com/p/633654195)  
 

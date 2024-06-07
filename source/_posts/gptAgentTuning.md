@@ -23,5 +23,6 @@ categories:
 
 1xx. [Agent-FLAN 技术报告——社区翻译版 ](https://mp.weixin.qq.com/s/UCO_m38QcWdCoT_DIFc96A)
 
+1xx. [LLM 大模型学习必知必会系列(九)：Agent微调最佳实践，用消费级显卡训练属于自己的Agent！](https://cloud.tencent.com/developer/article/2421687)
 
 
