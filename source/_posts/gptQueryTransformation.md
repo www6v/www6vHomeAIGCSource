@@ -65,8 +65,9 @@ At a high level, HyDE is an embedding technique that takes queries, **generates 
    [rag-from-scratch Repo](https://github.com/langchain-ai/rag-from-scratch) git
    [RAG(检索增强） 从入门到精通 虚拟文档嵌入（Hyde)](https://www.bilibili.com/video/BV1Vx421U7a4/) V
    
+
 1xx. [业界总结｜搜索中的Query理解](https://zhuanlan.zhihu.com/p/393914267) ***
 
 1xx. [智能扩充机器人的“标准问”库之Query生成](https://zhuanlan.zhihu.com/p/149429784)
 
-
+1xx. [前沿重器[38] | 微软新文query2doc：用大模型做query检索拓展](https://mp.weixin.qq.com/s?__biz=MzIzMzYwNzY2NQ==&mid=2247489295&idx=1&sn=fcb269e47dc27fcaf31201aa1c75dafb)

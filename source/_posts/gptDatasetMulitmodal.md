@@ -1,5 +1,5 @@
 ---
-title: (list)多模态  数据集 
+title: (survey)多模态  数据集 
 date: 2023-04-01 15:09:17
 tags:
   - dataset
@@ -10,6 +10,13 @@ categories:
 
 <p></p>
 <!-- more -->
+
+## 目录
+<!-- toc -->
+
+# Survey[0]
++  Pre-training
++  Adaptation
 
 # Pre-training数据集
 + LAION[1]
@@ -32,6 +39,10 @@ categories:
 + MultiIntruct
 
 # 参考
+### survey
+0. [多模态模型大常用数据集及处理策略：兼看Chatlaw法律问答中的知识图谱融合思路 ](https://mp.weixin.qq.com/s/_fi2odhKITs4fs7MbWpWaw)
+《A Survey of Multimodal Large Language Model from A Data-centric Perspective》
+
 ### 预训练数据集
 1. [多模态数据集收集](https://zhuanlan.zhihu.com/p/686757824)
 
@@ -51,5 +62,4 @@ categories:
 
 1xx. [Talk | ACL'23 杰出论文，MultiIntruct：通过多模态指令集微调提升VLM的零样本学习](https://www.bilibili.com/video/BV12p4y1M7RV/)
 1xx. [【ACL2023】MultiInstruct: Improving Multi-Modal Zero-Shot Learning via Instruction Tuning](https://blog.csdn.net/qq_45978862/article/details/132008907)
-
 

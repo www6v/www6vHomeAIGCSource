@@ -53,7 +53,7 @@ categories:
     Q-TOD
   - ODD -> TOD
     UniDS
-    
+  
 + fusion between dialogue modal and language model(model)
   **LLM as DM**
   【LLM本身有对话的能力，需要被激发出来】【instruction tuning】
@@ -65,3 +65,4 @@ categories:
 3. [人工智能如何在多轮对话中进行意图理解——祝凯华](https://www.bilibili.com/video/BV1Yt4y1S75w/) V
 4. [基于大模型对话系统的前世今生](https://www.bilibili.com/video/BV1Mb4y137yB/)  V
    《An Survey of the Evolution of Language Model-Based Dialogue Systems》
+5. [前沿重器[37] | 大模型对任务型对话的作用研究](https://mp.weixin.qq.com/s?__biz=MzIzMzYwNzY2NQ==&mid=2247489281&idx=1&sn=0273bf49530a93df16ecf5cb5fbc8f65)
