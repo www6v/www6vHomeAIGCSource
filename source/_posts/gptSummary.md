@@ -47,7 +47,7 @@ top:
 + {% post_link 'gptHallucination' %}    
 + {% post_link 'gptEval' %}     
 
-## Training & Inference
+## Training 
 + 训练
   + {% post_link 'gptLargeModelTraining' %}
   + {% post_link 'gptLargeModelTrainingPractice' %} 
@@ -57,18 +57,21 @@ top:
   + 分布式
     + {% post_link 'gptTrainParallelism' %}    
     + {% post_link 'gptTrainZeroDeepspeed' %}    
-    + {% post_link 'gptTrainDeepspeedPractice' %}    
-+ 推理 
+    + {% post_link 'gptTrainDeepspeedPractice' %} 
+
+## Inference
++ 框架
   + {% post_link 'gptInferFramework' %} 
   + {% post_link 'gptInferFrameworkPractice' %} 
   + {% post_link 'gptInfervLLM' %}  
   + {% post_link 'gptInferTensorRT' %}  
++ 优化
   + {% post_link 'gptInference' %}
   + {% post_link 'gptInferKVCache' %}  
-+ 模型压缩
-  + {% post_link 'gptQuantization' %} 
-  + {% post_link 'gptQuantizationWeight' %} 
-  + {% post_link 'gptQuantizationPractice' %}  
+  + 模型压缩
+    + {% post_link 'gptQuantization' %} 
+    + {% post_link 'gptQuantizationWeight' %} 
+    + {% post_link 'gptQuantizationPractice' %}  
 
 ## Data *
 + List
