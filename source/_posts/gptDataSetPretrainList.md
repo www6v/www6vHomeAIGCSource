@@ -20,4 +20,6 @@ categories:
   - [大模型再总结及ChatSQL实践案例分享：大模型训练数据及工具的5张脑图总结及ChatSQL开源项目实现解析](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402424&idx=1&sn=e2d26821b6e9a5a2871e0ddbca565c30)
     3、RLFH强化与预训练数据集 
  - [大模型研发必备：两大开源可用且清洗过的中文文本语料库及大模型FLOPS、参数量快速估计工具推荐 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403405&idx=1&sn=cb53c35efda2b771b4c1f289ae97c1d3)           书生·万卷1.0 ,    wudao数据集
+ - [大规模中文开源文本训练数据集的几点启发：兼看两个知识图谱与大模型的练手竞赛 ](https://mp.weixin.qq.com/s/JDkKlD9IKvagCYucPey6UQ)
+    万卷数据集   wudao数据集  MVBNC数据集  OpenNewsArchive
 

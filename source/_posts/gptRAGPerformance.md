@@ -110,8 +110,8 @@ LlamaIndex和LangChain都支持查询路由器
       [忘记RAG，未来是RAG-Fusion](https://blog.csdn.net/lichunericli/article/details/135451681)
       [再谈大模型RAG问答中的三个现实问题：兼看RAG-Fusion多query融合策略、回答引文生成策略及相关数据集概述](https://mp.weixin.qq.com/s/NFjn8pUsQaSx85nhBphORA)
 
-
-
+1xx. [传统RAG破局者：混合检索助力新纪元](https://mp.weixin.qq.com/s/xu6z0zRQxQF2iOEvG-Sysg)
+     四、混合检索的原理   六、何时使用混合检索？
 # pre-retrival
 30. {% post_link 'gptQueryTransformation' %}  self
 31. {% post_link 'gptRAGRouting' %}  self
