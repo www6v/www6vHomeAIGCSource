@@ -63,7 +63,8 @@ top:
 + 框架
   + {% post_link 'gptInferFramework' %} 
   + {% post_link 'gptInferFrameworkPractice' %} 
-  + {% post_link 'gptInfervLLM' %}  
+  + {% post_link 'gptInfervLLM' %} 
+  + {% post_link 'gptInfervLLMPractice' %}  
   + {% post_link 'gptInferTensorRT' %}  
   + {% post_link 'gptInferRay' %}   
 + 优化
