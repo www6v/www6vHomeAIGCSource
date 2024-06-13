@@ -70,6 +70,7 @@ top:
 + 优化
   + {% post_link 'gptInference' %}
   + {% post_link 'gptInferKVCache' %}  
+  + {% post_link 'gptFlashAttention' %}  
   + 模型压缩
     + {% post_link 'gptQuantization' %} 
     + {% post_link 'gptQuantizationWeight' %} 
