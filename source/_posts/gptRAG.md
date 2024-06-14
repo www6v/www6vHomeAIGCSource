@@ -20,6 +20,7 @@ categories:
 
 # RAG vs FT [2]
 {% asset_img 'rag-vs-ft.jpg' %}
+todo:  有中文翻译的图片
 
 
 
