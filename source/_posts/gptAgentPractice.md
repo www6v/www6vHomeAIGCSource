@@ -44,3 +44,5 @@ categories:
 4. [Lagent & AgentLego 智能体应用搭建](https://github.com/InternLM/Tutorial/tree/camp2/agent)
    [Lagent：轻量级智能体框架](https://github.com/InternLM/Tutorial/blob/camp2/agent/lagent.md)
    [AgentLego：组装智能体“乐高”](https://github.com/InternLM/Tutorial/blob/camp2/agent/agentlego.md)
+   
+1xx. [使用Qwen-Agent将上下文记忆扩展到百万量级](https://qwenlm.github.io/zh/blog/qwen-agent-2405/)
