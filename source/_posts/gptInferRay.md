@@ -59,10 +59,4 @@ categories:
 
 1xx. [Ray 1.0 架构解读](https://zhuanlan.zhihu.com/p/344736949)
 
-### 实战
 
-[Serve a Large Language Model with vLLM](https://docs.ray.io/en/master/serve/tutorials/vllm-example.html)
-
-[Invalid device id when using pytorch dataparallel！](https://stackoverflow.com/questions/60750288/invalid-device-id-when-using-pytorch-dataparallel)  运行时碰到的异常
-
-[GitHub - ray-project/langchain-ray: Examples on how to use LangChain and Ray](https://github.com/ray-project/langchain-ray/tree/main) git

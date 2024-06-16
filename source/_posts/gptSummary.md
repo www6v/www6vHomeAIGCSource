@@ -67,6 +67,7 @@ top:
   + {% post_link 'gptInfervLLMPractice' %}  
   + {% post_link 'gptInferTensorRT' %}  
   + {% post_link 'gptInferRay' %}   
+  + {% post_link 'gptInferRayPractice' %}   
 + 优化
   + {% post_link 'gptInference' %}
   + {% post_link 'gptInferKVCache' %}  
