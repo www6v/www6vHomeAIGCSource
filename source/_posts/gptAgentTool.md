@@ -57,6 +57,9 @@ categories:
    《Tool Learning with Large Language Models: A Survey》
    问题2:关于大模型使用工具的调研整理
 
+1xx. [一篇大模型Agent工具使用全面研究综述](https://mp.weixin.qq.com/s/pPkrHHkmVC29e_c2U8YEGg)
+    《Tool Learning with Large Language Models: A Survey》
+    
 ### xxx
 10. [LLM能够自己制作工具了：详解Large Language Models as Tool Makers](https://zhuanlan.zhihu.com/p/633654195)  
 
