@@ -29,6 +29,11 @@ categories:
 
 + 异常[11]
 
+# 实战3[20]
++ 脚本
+vllm   0.2.3 -> 报异常
+vllm  0.3.3 -> 报另一个异常
+
 
 # 参考
 ### 实战1
@@ -41,7 +46,11 @@ categories:
 
 11. [报错:RuntimeError: CUDA error: no kernel image is available for execution on the device](https://blog.csdn.net/zh515858237/article/details/135262401)
 
+### 实战3
+20. [Ray vLLM Interence](https://github.com/asprenger/ray_vllm_inference)
+
+
 1xx. [GitHub - ray-project/langchain-ray: Examples on how to use LangChain and Ray](https://github.com/ray-project/langchain-ray/tree/main) git
 
-1xx. [Ray vLLM Interence](https://github.com/asprenger/ray_vllm_inference)
+
 
