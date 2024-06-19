@@ -155,8 +155,11 @@ top:
 + 实战
   + {% post_link 'gptRAGPractice' %}
   + {% post_link 'gptRAGOptimize' %}
-  + {% post_link 'gptRAGFramework' %} 
-  + {% post_link 'gptRAGchatchat' %}   
+  + framework
+      + {% post_link 'gptRAGFramework' %} 
+      + {% post_link 'gptRAGchatchat' %}   
+      + {% post_link 'gptRAGQanything' %}   
+      + {% post_link 'gptRAGRAGflow' %}   
 + 案例 
   + {% post_link 'gptRAGOpenAI' %} 
   + {% post_link 'gptRAGBaichuan' %}   
