@@ -152,6 +152,7 @@ top:
   + {% post_link 'gptRAGModularRAG' %} 
   + {% post_link 'gptRAGPerformance' %}
   + {% post_link 'gptRAGEval' %} 
+  + {% post_link 'gptRAGKG' %} 
 + 实战
   + {% post_link 'gptRAGPractice' %}
   + {% post_link 'gptRAGOptimize' %}

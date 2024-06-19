@@ -41,7 +41,7 @@ categories:
   - 优势
     - 相比传统 Embedding，大幅提升**召回精准度**。
     - 使用传统 NLP 在专项问题处理上，相比 LLM 提供更好的精度和性能。
- 
+
 +  知识库存储选型
    - Vector Store
      - 分片:  区分**层级结构**
@@ -72,7 +72,7 @@ categories:
     Embedding, Retrieval
 2. [LLM+Embedding构建问答系统的局限性及优化方案](https://zhuanlan.zhihu.com/p/641132245)
    基于关键词Embedding的入库和搜索的流程图,  结合传统nlp任务    
-1xx. [基于大语言模型构建知识问答系统](https://zhuanlan.zhihu.com/p/627655485)
+   1xx. [基于大语言模型构建知识问答系统](https://zhuanlan.zhihu.com/p/627655485)
 
 3. [再看业界大模型行业问答的困难及若干业界实践：兼看智能客服常用路线及多场景prompt ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404338&idx=1&sn=3c8f8c44ac7a1d925216b40833525b25)
    问题 优化
@@ -95,3 +95,9 @@ categories:
 
 ### xxx
 1xx. [再看RAG在真实金融文档问答场景的实践方案：SMP2023 金融大模型挑战赛的两种代表实现思路](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404651&idx=2&sn=335db95e104a5b09e33ac2245bae4fd2)
+
+
+### xxx
+1xx. [知识密集型自然语言处理任务的检索增强生成技术研究 [译]](https://baoyu.io/translations/ai-paper/2005.11401-retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks)
+1xx. [构建企业级 RAG 系统的高级指南 [译]](https://baoyu.io/translations/rag/mastering-rag-how-to-architect-an-enterprise-rag-system)
+1xx. [在构建检索增强型生成系统时的七大挑战 [译]](https://baoyu.io/translations/ai-paper/2401.05856v1-seven-failure-points-when-engineering-a-retrieval-augmented-generation-system)
