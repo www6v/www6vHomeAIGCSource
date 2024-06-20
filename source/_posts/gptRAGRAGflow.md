@@ -28,3 +28,6 @@ RAGFlow 的最大特色，就是多样化的文档智能处理，因此它没有
 1. [RAGFlow：采用OCR和深度文档理解结合的新一代 RAG 引擎](https://www.bilibili.com/video/BV12T42117VT/) V
 2. [检索增强生成引擎 RAGFlow 正式开源！](https://www.infoq.cn/article/hjJM3kV620iDoYYOBtPs)
 1xx. [7.8K Star RAG 引擎：基于深度文档理解，最大程度降低幻觉、无限上下文快速完成 “大海捞针” 测试！](https://mp.weixin.qq.com/s/8qms4nxVsX43WSWolXgx7w)
+
+1xx.  [RAGFlow Demo](http://demo.ragflow.io/)
+    [ragflow Repo](https://github.com/infiniflow/ragflow) git

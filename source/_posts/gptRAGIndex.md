@@ -77,7 +77,13 @@ Indexing by **the summary of the document**
 【raptor 效果也很好，就是需要总结，看总结的咋样了】
 【raptor 原文是对 chunk 聚类，然后每个聚类做总结】
 
+【ragflow 使用了RAPTOR】
+
 ### 做token到text级-ColBERT
+
+### spRAG [3]
+【这个 spRAG 的 rse 比子母 chunk 要灵活一点,   试了一下 】
+AutoContext在嵌入各个文本块之前，先自动将文档级别的上下文信息注入到每个块中。RSE对检索到的相关文本块进行聚类，将内容相似或语义相关的块归为一组。然后，它会根据查询的需求，智能地选择和组合这些块，形成长度适当、信息相关的文本段。
 
 # 参考
 
@@ -86,7 +92,12 @@ Indexing by **the summary of the document**
    
 2. [基于RAPTOR实现高质量长上下文的RAG ](https://mp.weixin.qq.com/s/SeOG15Z2RJmiJ5sAP91B4w)   未
 
+3. [20240520大模型&KG&RAG进展回顾：spRAG优化策略、电信领域大模型及手语生成大模型](https://mp.weixin.qq.com/s/1a-h9CBZtRARG7_sOK9g8Q) 未
+   RAPTOR  spRAG 
+
 1xx. [20240205大模型进展早报：兼看引入chunk层级结构的大模型RAG的思路：RAPTOR ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648407870&idx=1&sn=8073f0fc8edc0897e3627f26478063c3) RAPTOR
+
+
 
 ### 
 11. [3种高级索引方法，有效提升RAG性能](https://www.bilibili.com/video/BV1dH4y1C7Ck/) V

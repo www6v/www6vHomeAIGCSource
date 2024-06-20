@@ -64,8 +64,14 @@ categories:
   - 开放领域问答（Open-domain Question Answering，ODQA）
 
 
-# NLP+LLM[1]
-
+# NLP+LLM
+### 大模型用于NLP的范式 [1]
++ 用于NLP的LLM分类法
+  - 包括参数冻结范式（a）
+    zero-shot  few-shot 
+  - 参数调整范式（b）
+    【PEFT 全参数】
+    
 # 参考
 1.《Large Language Models Meet NLP: A Survey》 
   [有趣的两个RAG大模型问答新优化思路：兼看大模型与NLP的结合范式 ](https://mp.weixin.qq.com/s/dRlkv24vTCeUiVvRGmDdQg)
