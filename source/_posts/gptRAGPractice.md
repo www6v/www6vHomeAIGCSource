@@ -15,12 +15,10 @@ categories:
 <!-- toc -->
 
 
-# Vector+KG RAG[15][16]
-
 # Data processing[17]
 长文本   变成   QA pair
 + 规则匹配
-+ 利用LLM抽取
++ **利用LLM抽取**
 + 人工处理
 
 # 医疗问答RAG[20]
@@ -56,7 +54,7 @@ token
 
 ### 排序模型 
 + bert模型
-  - 1个ber模型
+  - 1个bert模型
   - **速度慢**
   - **格式**
     - query[sep]s2  -> 经过softmax，产生2分类，0-1
@@ -71,11 +69,6 @@ token
 + 综合归纳的作用
 
 # 参考
-### 知识图谱
-15. [Enhanced QA Integrating Unstructured Knowledge Graph Using Neo4j and LangChain](https://neo4j.com/developer-blog/unstructured-knowledge-graph-neo4j-langchain/)  
-
-16. [Using a Knowledge Graph to implement a DevOps RAG application](https://blog.langchain.dev/using-a-knowledge-graph-to-implement-a-devops-rag-application/)
-
 ### xxx
 17. <<大模型结合 RAG 构建客服场景自动问答系统>>  NVIDIA大模型日系列活动  
 

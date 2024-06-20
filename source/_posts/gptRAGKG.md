@@ -11,10 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
-
+### Vector+KG RAG[15][16]
 
 ### RAG 多跳问题
-
 
 
 # 参考
@@ -27,6 +26,10 @@ categories:
 
 1xx. [MultiHop-RAG：多跳查询的基准检索增强生成_rag多跳查询-CSDN博客](https://blog.csdn.net/qq_36931982/article/details/139118215)
 
-### LLM+KG
+### LLM+KG  知识图谱
+15. [Enhanced QA Integrating Unstructured Knowledge Graph Using Neo4j and LangChain](https://neo4j.com/developer-blog/unstructured-knowledge-graph-neo4j-langchain/)  
 
-[大模型辅助图谱构建的4个策略对比：兼看大模型与知识图谱结合的3个综述 ](https://mp.weixin.qq.com/s/buV1j4DtDiVavtGCJIsedQ)
+16. [Using a Knowledge Graph to implement a DevOps RAG application](https://blog.langchain.dev/using-a-knowledge-graph-to-implement-a-devops-rag-application/)
+
+
+1xx. [大模型辅助图谱构建的4个策略对比：兼看大模型与知识图谱结合的3个综述 ](https://mp.weixin.qq.com/s/buV1j4DtDiVavtGCJIsedQ)
