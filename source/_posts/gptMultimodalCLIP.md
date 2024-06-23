@@ -1,5 +1,5 @@
 ---
-title: (对比学习)CLIP
+title: (原理|实战)CLIP
 date: 2023-02-29 15:56:58
 tags:
   - multimodal
@@ -38,18 +38,36 @@ categories:
   当你喂给CLIP一张图时，不管这张图片它是否有见过，CLIP都不会生成一个全新的标签，而是去全集标签中找一个最相似的给你。
 
 
+# 实战[10]
+
 # 参考
 1. [关于多模态经典之作CLIP，还有哪些细节是你不知道的](https://zhuanlan.zhihu.com/p/660476765) 代码
    
+
 1xx. [神器CLIP：连接文本和图像，打造可迁移的视觉模型](https://zhuanlan.zhihu.com/p/493489688) ***
+
 1xx. [【CLIP系列Paper解读】CLIP: Learning Transferable Visual Models From Natural Language Supervision](https://zhuanlan.zhihu.com/p/486857682) ***
+
 1xx. [CLIP 模型解读](https://zhuanlan.zhihu.com/p/646790176)
+
 1xx. [详解CLIP (一) | 打通文本-图像预训练实现ImageNet的zero-shot分类，比肩全监督训练的ResNet50/101](https://zhuanlan.zhihu.com/p/521151393)
+
 1xx. [openai多模态大模型：clip详解及实战](https://blog.csdn.net/lsb2002/article/details/132275132)
+
 1xx. [CLIP：多模态领域革命者](https://zhuanlan.zhihu.com/p/555314976)
 
 
 ### 实战
+10. [【多模态】复现OpenAI的CLIP模型](https://www.bilibili.com/video/BV13K421v7Ar/) V
+   clip on  resnet [mnist] 
+   [mnist-clip Repo](https://github.com/owenliang/mnist-clip) git
+
 1xx. [open_clip Repo](https://github.com/mlfoundations/open_clip) git
+   [Interacting with open_clip](https://colab.research.google.com/drive/1TEUe2j2oXi-sKiteGYUhsCtdvXocI24w#scrollTo=YPHN7PJgKOzb)
+   Training CLIP
+
 1xx. [Chinese-CLIP Repo](https://github.com/www6v/Chinese-CLIP) git
+
 1xx. langchain 中有CLIP的实现
+
+
