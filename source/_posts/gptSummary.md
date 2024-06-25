@@ -139,9 +139,10 @@ top:
   + {% post_link 'gptMultimodalSeries' %}   
   + backbone 
 	+ {% post_link 'gptMultimodalCLIP' %}  
+	+ {% post_link 'gptMultimodalCLIPPractice' %}   
 	+ {% post_link 'gptMultimodalSAM' %}   
 	+ {% post_link 'gptMultimodalVit' %}   
-	+ {% post_link 'gptMultimodalBlip' %}    
+  + {% post_link 'gptMultimodalBlip' %}    
   + chat
     + {% post_link 'gptMultimodalLlava' %}  
     + {% post_link 'gptMultimodalMinigpt4' %}   
