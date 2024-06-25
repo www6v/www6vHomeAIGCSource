@@ -168,8 +168,10 @@ top:
   + {% post_link 'gptQueryTransformation' %}  
   + {% post_link 'gptRAGRouting' %} 
   + {% post_link 'gptRAGIndex' %}   
-  + {% post_link 'gptRAGRerank' %}   
-  + {% post_link 'gptRAGSelfReflective' %} 
+  + {% post_link 'gptRAGRerank' %} 
+  + Agentic RAG
+    + {% post_link 'gptAgenticRAG' %}  
+    + {% post_link 'gptRAGSelfReflective' %} 
 + Multimodal RAG  *
   + {% post_link 'gptRAGMultimodal' %}  
   + {% post_link 'gptRAGMultimodalPractice' %}   

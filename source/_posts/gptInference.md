@@ -90,9 +90,13 @@ Speculative Sampling ***
 
 1xx. [NLP（十八）：LLM 的推理优化技术纵览](https://zhuanlan.zhihu.com/p/642412124) *** 
 
-1xx. [3万字详细解析清华大学最新综述工作：大模型高效推理综述](https://mp.weixin.qq.com/s/U9ESiWehnoKc9SnDz7DVKg)
+1xx. 《A Survey on Efficient Inference for Large Language Models》 
+[3万字详细解析清华大学最新综述工作：大模型高效推理综述](https://mp.weixin.qq.com/s/U9ESiWehnoKc9SnDz7DVKg) 翻译
+[无穹Paper | 如何加速大模型推理？一图读懂大语言模型高效推理技术](https://mp.weixin.qq.com/s/V1dXQquifP7uHGU7QxP-Lg) 
+
 
 ### Awesome-LLM-Inference
+
 10. [Awesome-LLM-Inference Repo](https://github.com/DefTruth/Awesome-LLM-Inference) git
 1xx. [[Awesome-LLM-Inference]🔥第三期：30篇，LLM推理论文集-500页PDF](https://zhuanlan.zhihu.com/p/669777159)
 1xx. [[Awesome-LLM-Inference]🔥第二期: 20篇，LLM推理论文集-300页PDF](https://zhuanlan.zhihu.com/p/658091768)

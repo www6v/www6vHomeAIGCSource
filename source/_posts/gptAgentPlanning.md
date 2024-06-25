@@ -39,7 +39,9 @@ categories:
   Self-ask是一种follow-up的使用范式，仅仅包含follow-up, immediate answer步骤，至于follow-up多少个step，完全由它自己决定，估计这就是Self-ask的名字的由来。
 
 # 参考
-1. [大语言模型智能体规划能力综述: 分类、任务分解、选择、反思、记忆增强 ](https://mp.weixin.qq.com/s/1POXDVJDv3ob1HqpKjb3Mg) 翻译
+1. 《Understanding the planning of LLM agents: A survey》
+   [大语言模型智能体规划能力综述: 分类、任务分解、选择、反思、记忆增强 ](https://mp.weixin.qq.com/s/1POXDVJDv3ob1HqpKjb3Mg) 翻译
+  [Agent四大范式 | 综述：全面理解Agent工作原理](https://zhuanlan.zhihu.com/p/693264551)
 
 2. [2023年新生代大模型Agents技术,ReAct,Self-Ask,Plan-and-execute,以及AutoGPT, HuggingGPT等应用](https://zhuanlan.zhihu.com/p/642357544) ***  论文+代码
 
