@@ -14,9 +14,16 @@ categories:
 ## 目录
 <!-- toc -->
 
+# 论文
++ 论文地址
+ 《Foundational Models Defining a New Era in Vision: A Survey and Outlook》大学
+
+
 # 基础模型分类 [1]
++ 分类
 {% asset_img  'pattern.webp' %}
 
++ 分类
 {% asset_img  'pattern1.webp' %}
 
 ### textually prompted models 
@@ -41,6 +48,14 @@ categories:
 # 架构 [1]
 {% asset_img  'arch.webp' %}
 
+---
+
+# 论文
++ 论文地址
+ 《MM-LLMs: Recent Advances in MultiModal Large Language Models》  腾讯
+
++ 开源地址
+  [mm-llms](https://mm-llms.github.io/archives/) 腾讯
 
 # Model Architecture[2]
 {% asset_img  'multimodalArach1.jpg' %}
@@ -74,6 +89,19 @@ categories:
 
 {% asset_img  'multimodalArch.jpg' %}
 
+---
+
+# 论文
++ 论文地址
+   [A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
+
++ 开源地址
+  [Repo](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)
+
+# Arch [3]
+{% asset_img  'arch2.png' %}
+
+---
 
 # 其他
 + 对比
@@ -94,14 +122,13 @@ categories:
     [基础模型定义视觉的新时代：综述和展望](https://zhuanlan.zhihu.com/p/655135848)
     [万字长文带你全面解读视觉大模型](https://zhuanlan.zhihu.com/p/648578542)
 
-2. [AI之MLM：《MM-LLMs: Recent Advances in MultiModal Large Language Models多模态大语言模型的最新进展》翻译与解读](https://blog.csdn.net/qq_41185868/article/details/135877268) 翻译
+2. 《MM-LLMs: Recent Advances in MultiModal Large Language Models》
+   [AI之MLM：《MM-LLMs: Recent Advances in MultiModal Large Language Models多模态大语言模型的最新进展》翻译与解读](https://blog.csdn.net/qq_41185868/article/details/135877268) 翻译
    [腾讯发布的多模态大模型（MM-LLM）的最新综述、从26个最新的多模态大模型中归纳最佳实践](https://zhuanlan.zhihu.com/p/680487634)
    [多模态大模型最新完整综述 MM-LLMs](https://zhuanlan.zhihu.com/p/680955430)
-   [mm-llms](https://mm-llms.github.io/archives/) 腾讯
-
-
-1xx. [MLLM首篇综述 | 一文全览多模态大模型的前世、今生和未来](https://cloud.tencent.com/developer/article/2322835)
-   [A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
+   
+3. 《A Survey on Multimodal Large Language Models》  中国科学技术大学
+   [MLLM首篇综述 | 一文全览多模态大模型的前世、今生和未来](https://cloud.tencent.com/developer/article/2322835)
    [多模态大语言模型全面综述：架构，训练，数据，评估，扩展，应用，挑战，机遇](https://mp.weixin.qq.com/s/V5aiWUYh14q00jAn2O6VKA)
 
 ### chat

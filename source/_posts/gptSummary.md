@@ -132,20 +132,22 @@ top:
 + Survey
   + {% post_link 'gptMultimodal' %} 
   + {% post_link 'gptMultimodalSurvey' %}
+  + {% post_link 'gptMultimodalSeries' %}  
 + Train  *
   + {% post_link 'gptMultimodalPretrain' %}  
-  + {% post_link 'gptMultimodalInstructTuning' %} 
-+ 系列
-  + {% post_link 'gptMultimodalSeries' %}   
-  + backbone 
+  + {% post_link 'gptMultimodalInstructTuning' %}  
++ 视觉理解
 	+ {% post_link 'gptMultimodalCLIP' %}  
 	+ {% post_link 'gptMultimodalCLIPPractice' %}   
 	+ {% post_link 'gptMultimodalSAM' %}   
 	+ {% post_link 'gptMultimodalVit' %}   
-  + {% post_link 'gptMultimodalBlip' %}    
-  + chat
++ 端到端训练LLM 
+    + {% post_link 'gptMultimodalBlip' %} 
     + {% post_link 'gptMultimodalLlava' %}  
-    + {% post_link 'gptMultimodalMinigpt4' %}   
+    + {% post_link 'gptMultimodalMinigpt4' %}    
++ Multimodal Agent*
+  + {% post_link 'gptAgentMultimodal' %}  
+  + {% post_link 'gptAgentWeb' %}  
 
 ## RAG *
 + Overview
@@ -201,10 +203,7 @@ top:
   + {% post_link 'gptAgentToolGorilla' %}   
   + {% post_link 'gptAgentTuning' %}   
   + {% post_link 'gptAgentToolformer' %}  
-+ Multimodal Agent  *
-  + {% post_link 'gptAgentMultimodal' %}  
-  + {% post_link 'gptAgentWeb' %}   
-
+ 
 ## Application
 + {% post_link 'gpt' %}
 + {% post_link 'gptLLMOps' %} 
