@@ -34,6 +34,8 @@ categories:
 + MM-ReAct 
 + HuggingGPT, Chameleon
 
++ Visual ChatGPT
+
 # 参考
 ### 综述
 1. [2024年大型多模态智能体(Large Multimodal Agents)综述：组件, 分类，协作，评估，应用，展望](https://mp.weixin.qq.com/s?__biz=Mzg5NTc2OTcyOQ==&mid=2247488499&idx=1&sn=ac8c5092ddc8fd724965d12aff3f9392) ***
@@ -44,8 +46,12 @@ categories:
 
 
 ### xxx
-10. [多模态 Agents：用大模型语言模型串联多模态专家](https://www.bilibili.com/video/BV1mM411X7Zn/)
-    
+10. [多模态 Agents：用大模型语言模型串联多模态专家](https://www.bilibili.com/video/BV1mM411X7Zn/) V
+
+### 多模态Agent
+1xx. {% post_link 'gptMultimodal' %} self
+1xx. {% post_link 'gptMultimodalSurvey' %} self
+
 
 ### App Agent 
 1xx. [AppAgent源码分析&思考](https://zhuanlan.zhihu.com/p/677071947)

@@ -93,13 +93,21 @@ categories:
 
 # 论文
 + 论文地址
-   [A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
+   [A Survey on Multimodal Large Language Models](https://arxiv.org/pdf/2306.13549v1)
+   [A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549) 中国科学技术大学   腾讯
 
 + 开源地址
   [Repo](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)
 
-# Arch [3]
+# Arch [3.2]
 {% asset_img  'arch2.png' %}
+
+# 类型[3.1]
++ 本文将最近具有代表性的MLLM分为4种主要类型：
+  - **多模态指令调整（MIT）**
+  - 多模态上下文学习（M-ICL）
+  - 多模态思想链（M-CoT）
+  - **LLM辅助视觉推理（LAVR）**【类似agent】
 
 ---
 
@@ -117,7 +125,7 @@ categories:
   
 # 参考
 ### survey
-1. 《Foundational Models Defining a New Era in Vision: A Survey and Outlook》大学
+1. 《Foundational Models Defining a New Era in Vision: A Survey and Outlook》
     [视觉大模型的全面解析](https://blog.csdn.net/qq_45368632/article/details/132180645)
     [基础模型定义视觉的新时代：综述和展望](https://zhuanlan.zhihu.com/p/655135848)
     [万字长文带你全面解读视觉大模型](https://zhuanlan.zhihu.com/p/648578542)
@@ -127,9 +135,9 @@ categories:
    [腾讯发布的多模态大模型（MM-LLM）的最新综述、从26个最新的多模态大模型中归纳最佳实践](https://zhuanlan.zhihu.com/p/680487634)
    [多模态大模型最新完整综述 MM-LLMs](https://zhuanlan.zhihu.com/p/680955430)
    
-3. 《A Survey on Multimodal Large Language Models》  中国科学技术大学
-   [MLLM首篇综述 | 一文全览多模态大模型的前世、今生和未来](https://cloud.tencent.com/developer/article/2322835)
-   [多模态大语言模型全面综述：架构，训练，数据，评估，扩展，应用，挑战，机遇](https://mp.weixin.qq.com/s/V5aiWUYh14q00jAn2O6VKA)
+3. 《A Survey on Multimodal Large Language Models》  v1 v2版本
+   3.1 [MLLM首篇综述 | 一文全览多模态大模型的前世、今生和未来](https://cloud.tencent.com/developer/article/2322835)  v1版本
+   3.2 [多模态大语言模型全面综述：架构，训练，数据，评估，扩展，应用，挑战，机遇](https://mp.weixin.qq.com/s/V5aiWUYh14q00jAn2O6VKA)  v2版本
 
 ### chat
 1xx. [[论文阅读] 双子座：一个功能强大的多模态模型系列，Gemini: A Family of Highly Capable Multimodal Models](https://zhuanlan.zhihu.com/p/670821058)

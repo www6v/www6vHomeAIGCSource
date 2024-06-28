@@ -21,6 +21,10 @@ categories:
 22. [Reflexion: 带言语强化学习的语言智体](https://zhuanlan.zhihu.com/p/671508578)
       1xx. [Reflection Agents](https://blog.langchain.dev/reflection-agents/)
       [LangGraph：Reflection Agents 实战](https://www.bilibili.com/video/BV1KJ4m1a7rZ/) V
-      
+    
 ### xxx
 [Agent四大范式 | CRITIC：吴恩达力推Agent设计范式](https://zhuanlan.zhihu.com/p/691370751)
+
+
+###  Practice
+[Translation Agent: Agentic translation using reflection workflow](https://github.com/andrewyng/translation-agent)

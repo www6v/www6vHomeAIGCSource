@@ -63,3 +63,5 @@ multi-Agent系统中引入一个专门的**协调Agent**，负责整合和组织
 1. [NLP（廿二）：LLM 时代的 multi-agent 系统](https://zhuanlan.zhihu.com/p/665644399?)
 
 1xx. [MetaGPT-ICLR2024: 高效人类工作流(SOPs)融入多Agent协作，显著提升软件工程效率！](https://mp.weixin.qq.com/s?__biz=Mzg5NTc2OTcyOQ==&mid=2247487550&idx=1&sn=28c8147920595f385bec3d3b05911ae7)
+
+1xx. [多Agent系统与任务规划、记忆管理和区块链](https://zhuanlan.zhihu.com/p/696039197)

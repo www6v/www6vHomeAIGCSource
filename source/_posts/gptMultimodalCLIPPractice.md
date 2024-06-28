@@ -101,3 +101,4 @@ python -m training.main \
 
 1xx. langchain 中有CLIP的实现
 
+1xx. [GitHub - jina-ai/clip-as-service: Scalable embedding, reasoning, ranking for images and sentences with CLIP](https://github.com/jina-ai/clip-as-service) git
