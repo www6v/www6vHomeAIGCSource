@@ -140,7 +140,9 @@ top:
 	+ {% post_link 'gptMultimodalCLIP' %}  
 	+ {% post_link 'gptMultimodalCLIPPractice' %}   
 	+ {% post_link 'gptMultimodalSAM' %}   
-	+ {% post_link 'gptMultimodalVit' %}   
+	+ {% post_link 'gptMultimodalVit' %} 
++ 生成
+  + {% post_link 'gptMultimodalDiffusion' %}    
 + 端到端训练LLM 
     + {% post_link 'gptMultimodalBlip' %} 
     + {% post_link 'gptMultimodalLlava' %}  
@@ -203,7 +205,7 @@ top:
   + {% post_link 'gptAgentToolGorilla' %}   
   + {% post_link 'gptAgentTuning' %}   
   + {% post_link 'gptAgentToolformer' %}  
- 
+
 ## Application
 + {% post_link 'gpt' %}
 + {% post_link 'gptLLMOps' %} 
