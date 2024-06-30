@@ -32,9 +32,10 @@ categories:
 {% asset_img  'tasks.JPG' %}
 
 + MM-ReAct 
-+ HuggingGPT, Chameleon
++ HuggingGPT[21, 22] 
++ Chameleon
 
-+ Visual ChatGPT
++ Visual ChatGPT [20]
 
 # 参考
 ### 综述
@@ -52,14 +53,13 @@ categories:
 1xx. {% post_link 'gptMultimodal' %} self
 1xx. {% post_link 'gptMultimodalSurvey' %} self
 
-
-### App Agent 
-1xx. [AppAgent源码分析&思考](https://zhuanlan.zhihu.com/p/677071947)
-https://github.com/mnotgod96/AppAgent
-https://icoz69.github.io/
-
-1xx. [【LLM-agent】MOBILE-AGENT: 具有视觉感知能力的自治多模移动设备agent](https://zhuanlan.zhihu.com/p/681424409)
-   https://github.com/X-PLUG/MobileAgent
+### xxx
+20. 《Visual ChatGPT: Talking, Drawing and Editing with Visual Foundation Models》
+[Visual ChatGPT](https://github.com/chenfei-wu/TaskMatrix) git
 
 
+21.  [LLMs的自动化工具系统（HuggingGPT、AutoGPT、WebGPT、WebCPM）](https://nakaizura.blog.csdn.net/article/details/130856470)  
 
+22. [HuggingGPT](https://github.com/microsoft/JARVIS) git
+    [hugginggpt in langchain](https://github.com/langchain-ai/langchain/blob/master/cookbook/hugginggpt.ipynb) git
+    [langchain-huggingGPT](https://github.com/camille-vanhoffelen/langchain-huggingGPT) git

@@ -44,9 +44,9 @@ categories:
 + CREATOR[11]
 + ToolLLM [12]
 + Visual ChatGPT[13]
-+ HuggingGPT[14]
++ HuggingGPT[13]
 + Gorilla 
-{% post_link 'gptAgentToolGorilla' %} 
+  {% post_link 'gptAgentToolGorilla' %} 
 
 # 参考
 1. [大模型工具学习权威综述，BMTools 背后的论文！](https://zhuanlan.zhihu.com/p/624459759)
@@ -70,11 +70,8 @@ categories:
 [ToolBench ](https://github.com/OpenBMB/ToolBench) git
 [论文阅读：ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs](https://blog.csdn.net/Dbox_boom/article/details/134815624)
 
-13. 《Visual ChatGPT: Talking, Drawing and Editing with Visual Foundation Models》
-    [TaskMatrix](https://github.com/chenfei-wu/TaskMatrix)
+13. {% post_link 'gptAgentMultimodal' %} self
   
-14. [LLMs的自动化工具系统（HuggingGPT、AutoGPT、WebGPT、WebCPM）](https://nakaizura.blog.csdn.net/article/details/130856470)  
-    
 
 ### Others
 《Augmented Language Models》 

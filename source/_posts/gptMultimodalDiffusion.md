@@ -38,6 +38,7 @@ categories:
 1. [论文阅读：Diffusion Model-Based Image Editing: A Survey](https://blog.csdn.net/huzimu_/article/details/136547375)
    [Repo](https://github.com/SiatMMLab/Awesome-Diffusion-Model-Based-Image-Editing-Methods) git
    
+
 1xx.
 《A Survey of Multimodal-Guided Image Editing with Text-to-Image Diffusion Models》
 [A Survey of Multimodal-Guided Image Editing with Text-to-Image Diffusion Models](https://github.com/xinchengshuai/Awesome-Image-Editing)
@@ -49,3 +50,7 @@ categories:
 
 ### Framework
 10. [Repo diffusers](https://github.com/huggingface/diffusers/tree/main/examples) git
+
+### 《LLMs Meet Multimodal Generation and Editing: A Survey》
+Image Generation， Image Editing
+[Repo](https://github.com/YingqingHe/Awesome-LLMs-meet-Multimodal-Generation)

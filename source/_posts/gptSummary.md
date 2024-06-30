@@ -150,6 +150,7 @@ top:
 + Multimodal Agent*
   + {% post_link 'gptAgentMultimodal' %}  
   + {% post_link 'gptAgentWeb' %}  
+  + {% post_link 'gptAgentMultimodalApp' %}  
 
 ## RAG *
 + Overview
