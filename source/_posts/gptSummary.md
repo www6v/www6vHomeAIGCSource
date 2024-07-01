@@ -22,6 +22,7 @@ top:
 + {% post_link 'aiDeepLearning' %}
 + {% post_link 'gptPytorch' %} 
 + {% post_link 'gptGPU' %} 
++ {% post_link 'gptGPUComputing' %} 
 
 ## NLP
 + {% post_link 'gptNLPTask' %}  
