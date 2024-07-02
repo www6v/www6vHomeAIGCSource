@@ -44,6 +44,7 @@ todo:  有中文翻译的图片
 
 1xx.  《A Survey on RAG Meets LLMs: Towards Retrieval-Augmented Large Language Models》 
 [百度最新大模型RAG综述 | RAG 与 LLM 的融合调查：面向检索增强型大型语言模型](https://mp.weixin.qq.com/s/AqBPzewJm8dKwjz5BBu-Ag)
+[一文看懂RAG的各种套路 | 综述：当RAG遇到大语言模型](https://mp.weixin.qq.com/s/h8z4eXsemPMeL2oI_8VnvQ)
 
 1xx. [行业大模型落地的一些有趣调研总结：兼看大模型RAG问答四大技术综述](https://mp.weixin.qq.com/s/jgyIOOzRWAgilcW4HfufNQ) 四大综述
 

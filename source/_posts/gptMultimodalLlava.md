@@ -67,3 +67,4 @@ categories:
 [XTuner 微调 LLM：1.8B、多模态、Agent (更新撰写中)](https://github.com/InternLM/Tutorial/blob/camp2/xtuner/readme.md)
 [XTuner多模态训练与测试](https://github.com/InternLM/Tutorial/blob/camp2/xtuner/llava/xtuner_llava.md)
 
+[LLaMA-Factory  llava1_5_lora_sft](https://github.com/hiyouga/LLaMA-Factory/blob/main/examples/train_lora/llava1_5_lora_sft.yaml) git

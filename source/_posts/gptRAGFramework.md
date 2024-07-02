@@ -61,3 +61,4 @@ categories:
 1xx. [LlamaHub](https://llamahub.ai/)   
       Mix and match our Data Loaders and Agent Tools to build custom RAG apps or use our LlamaPacks as a starting point for your retrieval use cases.
       
+1xx. [FlashRAG：可能是最全的、最快搭建RAG的开源框架 ](https://mp.weixin.qq.com/s/XRfSqYwvuGB6sDJzRm0QVA)
