@@ -84,6 +84,12 @@ python -m training.main \
     --model RN50          # 模型
 ```
 
+# Chinese-CLIP
+### 方法[20]
+{% asset_img  'chinese-clip.webp' %}
+
+我们的核心方法在于把训练分为**两阶段**（如上图所示），**第一阶段**和LiT是一致的，**冻结图像塔**，**让文本塔表示接近图像塔表示**。当训练继续但下游精度不能再产生显著提升，即下游零样本检索的精度，我们就把训练切换到**第二阶段**，即**解除图像塔的参数冻结，继续用contrastive tuning预训练**，同样直到下游精度没有显著提升。**后者的意义在于让图像塔能拟合中文世界的图像数据的分布，学习中文世界的知识**。更多实验参数欢迎查看论文的附录部分。
+
 
 # 参考
 ### 实战
@@ -96,9 +102,20 @@ python -m training.main \
 11. [open_clip Repo](https://github.com/mlfoundations/open_clip) git
     [Interacting with open_clip](https://colab.research.google.com/drive/1TEUe2j2oXi-sKiteGYUhsCtdvXocI24w#scrollTo=YPHN7PJgKOzb)
     
+### Chinese-CLIP
+20. [中文CLIP模型卷土重来，这次加量不加价！](https://zhuanlan.zhihu.com/p/580546929) 论文
+
+1xx. [【已重新开源】CLIP的中文副本？说不定有惊喜呢](https://zhuanlan.zhihu.com/p/539374033)
 
 1xx. [Chinese-CLIP Repo](https://github.com/www6v/Chinese-CLIP) git
 
+1xx. [中文CLIP文到图搜索应用](https://modelscope.cn/studios/iic/chinese_clip_applications/summary) demo
+
+1xx. [AIGC之图片生成——基于clip内容检索](https://zhuanlan.zhihu.com/p/680405647)
+[clip_retrieval](https://github.com/liangwq/Chatglm_lora_multi-gpu/tree/main/APP_example/clip_retrieval) git  
+[demos Repo](https://github.com/liangwq/Chatglm_lora_multi-gpu)  readme有解释
+
+### xxx
 1xx. langchain 中有CLIP的实现
 
 1xx. [GitHub - jina-ai/clip-as-service: Scalable embedding, reasoning, ranking for images and sentences with CLIP](https://github.com/jina-ai/clip-as-service) git
