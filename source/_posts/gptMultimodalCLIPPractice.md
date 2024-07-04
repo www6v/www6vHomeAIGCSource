@@ -11,6 +11,8 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
 
 # CLIP Training [9]
 ```
@@ -59,7 +61,7 @@ loss = (loss_i + loss_t)/2
 - **按列计算Loss**，在每一列的范围内做softmax，然后计算cross_entropy（蓝色格子部分是真值）。这样计算Loss的意义是：对于每一段文字，我们都希望找到和它最相似的图片。
 - **最后将这两个Loss相加取平均**，代表我们在模型优化过程中**考虑了“图片->文字”和“文字->图片”的双向关系**。
 
-# Demo[10]
+# Simple Demo[10]
 【基于clip on  resnet,   数据集为mnist中的<数字文本，数字图片>对】
 
 # open_clip[11]
@@ -90,6 +92,16 @@ python -m training.main \
 
 我们的核心方法在于把训练分为**两阶段**（如上图所示），**第一阶段**和LiT是一致的，**冻结图像塔**，**让文本塔表示接近图像塔表示**。当训练继续但下游精度不能再产生显著提升，即下游零样本检索的精度，我们就把训练切换到**第二阶段**，即**解除图像塔的参数冻结，继续用contrastive tuning预训练**，同样直到下游精度没有显著提升。**后者的意义在于让图像塔能拟合中文世界的图像数据的分布，学习中文世界的知识**。更多实验参数欢迎查看论文的附录部分。
 
+### demo[21]
+代码都看过
+``` python
+# 图片库特征抽取代码
+python3 extract_embeddings.py 
+# 图片特征在faiss向量数据库建立索引   
+python3 build_index.py
+# 可视化应用界面 
+streamlit run app.py
+```
 
 # 参考
 ### 实战
@@ -105,15 +117,15 @@ python -m training.main \
 ### Chinese-CLIP
 20. [中文CLIP模型卷土重来，这次加量不加价！](https://zhuanlan.zhihu.com/p/580546929) 论文
 
+21. [AIGC之图片生成——基于clip内容检索](https://zhuanlan.zhihu.com/p/680405647)
+[clip_retrieval](https://github.com/liangwq/Chatglm_lora_multi-gpu/tree/main/APP_example/clip_retrieval) git  
+[demos Repo](https://github.com/liangwq/Chatglm_lora_multi-gpu)  readme有解释
+
 1xx. [【已重新开源】CLIP的中文副本？说不定有惊喜呢](https://zhuanlan.zhihu.com/p/539374033)
 
 1xx. [Chinese-CLIP Repo](https://github.com/www6v/Chinese-CLIP) git
 
 1xx. [中文CLIP文到图搜索应用](https://modelscope.cn/studios/iic/chinese_clip_applications/summary) demo
-
-1xx. [AIGC之图片生成——基于clip内容检索](https://zhuanlan.zhihu.com/p/680405647)
-[clip_retrieval](https://github.com/liangwq/Chatglm_lora_multi-gpu/tree/main/APP_example/clip_retrieval) git  
-[demos Repo](https://github.com/liangwq/Chatglm_lora_multi-gpu)  readme有解释
 
 ### xxx
 1xx. langchain 中有CLIP的实现
