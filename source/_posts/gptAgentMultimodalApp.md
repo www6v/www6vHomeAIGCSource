@@ -1,5 +1,5 @@
 ---
-title: App Agent 
+title: Agent - UI-assistants
 date: 2023-06-30 21:12:35
 tags:
   - AIGC
@@ -23,4 +23,6 @@ https://icoz69.github.io/
    https://github.com/X-PLUG/MobileAgent
 
 
+
+1xx. https://github.com/OpenAdaptAI/OpenAdapt
 
