@@ -143,7 +143,9 @@ top:
 	+ {% post_link 'gptMultimodalSAM' %}   
 	+ {% post_link 'gptMultimodalVit' %} 
 + 生成
-  + {% post_link 'gptMultimodalDiffusion' %}    
+  + {% post_link 'gptMultimodalDiffusion' %}   
+  + {% post_link 'gptDiffusionImageEdit' %}   
+  + {% post_link 'gptDiffusionDreambooth' %}   
 + 端到端训练LLM 
     + {% post_link 'gptMultimodalBlip' %} 
     + {% post_link 'gptMultimodalLlava' %}  
