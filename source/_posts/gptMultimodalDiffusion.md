@@ -16,10 +16,16 @@ categories:
 
 
 # Framework
-+ diffusers [10]
- - controlnet
- - dreambooth
- - instruct_pix2pix
+### diffusers [10]
+  - controlnet
+  - dreambooth
+  - instruct_pix2pix
+
+
+### stable-diffusion-webui
++ stable-diffusion-webui-colab[11]
+
++ stable-diffusion-webui [阿里serverless]
 
 # 参考
 ### InstructPix2Pix
@@ -29,4 +35,8 @@ categories:
 
 ### Framework
 10. [Repo diffusers](https://github.com/huggingface/diffusers/tree/main/examples) git
-
+11.  [可白嫖且很香—轻轻松松在colab上部署Stable Diffusion大模型！](https://www.bilibili.com/video/BV1QS421A7zF/) V
+   [stable-diffusion-webui-colab Repo](https://github.com/camenduru/stable-diffusion-webui-colab) git
+   [Install the WebUI Colab to Google Drive ](https://github.com/camenduru/stable-diffusion-webui-colab/tree/drive) git 运行这3个脚本
+   
+   
