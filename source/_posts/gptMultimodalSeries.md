@@ -11,34 +11,42 @@ categories:
 <p></p>
 <!-- more -->
 
-# 模块独立
-### CLIP
+## 目录
+<!-- toc -->
 
-### ViLT
+# Stage1: 模块独立[2]
+{% asset_img  'stage1.webp' %}
 
-### ALBEF
+### model
++ CLIP
++ ViLT
++ ALBEF
 
+#  Stage2: 模块共享[2]
 
-#  模块共享
-### VLMO
+### model
++ VLMO
++ BLIP
++ BLIP2
++ BEiTv3
 
-### BLIP
+# Stage3: 范式统一[2]
+### model
++ Unified-IO
++ Uni-Perceiver
++ PaLi
 
-### BLIP2
-
-### BEiTv3
-
-
-# 总结 [10]
+# 总结 [1]
 {% asset_img  'multimodal.webp' %}
 
 # 参考
 ### Overview
-10. [多模态大模型 CLIP, BLIP, BLIP2, LLaVA, miniGPT4, InstructBLIP 系列解读](https://zhuanlan.zhihu.com/p/653902791) ***
+1. [多模态大模型 CLIP, BLIP, BLIP2, LLaVA, miniGPT4, InstructBLIP 系列解读](https://zhuanlan.zhihu.com/p/653902791) ***
 
-1xx. [[Transformer 101系列] 多模态的大一统之路](https://zhuanlan.zhihu.com/p/643969218)  *** 
+2. [[Transformer 101系列] 多模态的大一统之路](https://zhuanlan.zhihu.com/p/643969218)  *** 
 
 1xx. [多模态论文串讲](https://blog.csdn.net/qq_52038588/article/details/133893013) ***
+   [多模态论文串讲：ALBEF & VLMo & BLIP & CoCa & Beit V3](https://blog.csdn.net/qq_40168949/article/details/130374733)
 
 
 1xx. [图生文多模态大模型开源项目回顾：兼看20240307大模型进展早报](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648409338&idx=1&sn=5445ff1e9bedc561393b6da63fdf71f9)
