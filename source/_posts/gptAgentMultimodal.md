@@ -94,9 +94,7 @@ categories:
 # 参考
 ### 综述
 1. [2024年大型多模态智能体(Large Multimodal Agents)综述：组件, 分类，协作，评估，应用，展望](https://mp.weixin.qq.com/s?__biz=Mzg5NTc2OTcyOQ==&mid=2247488499&idx=1&sn=ac8c5092ddc8fd724965d12aff3f9392) ***
-
-
-1xx. [个人LLM智体的综述](https://zhuanlan.zhihu.com/p/678238642)  
+ 
 1xx. [智体AI在多模态交互领域的综述（上）](https://zhuanlan.zhihu.com/p/678203245)
 1xx. [智体AI在多模态交互领域的综述（下）](https://zhuanlan.zhihu.com/p/678222381)
 
@@ -119,4 +117,5 @@ categories:
     [hugginggpt in langchain](https://github.com/langchain-ai/langchain/blob/master/cookbook/hugginggpt.ipynb) git
     [langchain-huggingGPT](https://github.com/camille-vanhoffelen/langchain-huggingGPT) git
     
+
 1xx. [Visual Programming——实现通用人工智能的另一种方式 ](https://mp.weixin.qq.com/s/VXe6CHI_29Rw8xaOjfbqOQ) 2022  best paper

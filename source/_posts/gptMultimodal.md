@@ -145,10 +145,6 @@ categories:
 1xx. [166页超长论文阅读，大多模态模型的黎明：GPT-4V的初步探索，The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision) [上]](https://zhuanlan.zhihu.com/p/663655741)
 
 
-### other
-1xx. [DeepMind出手！多模态小样本打败精调](https://zhuanlan.zhihu.com/p/511517344)
-1xx. [大模型系列04 -文本图像生成](https://zhuanlan.zhihu.com/p/669757416)
-
 
 
 

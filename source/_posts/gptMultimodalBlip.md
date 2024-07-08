@@ -11,6 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 # BLIP-2
 ### Overview [1]
 用一个Qformer来提取图像特征（等同与Flamingo的perceiver resampler），然后用cross- attention进行多模态交互，此时视觉编码器和LLM都会被冻结，**只训练Qformer**，而在下游任务微调时，可以再解锁视觉编码器，让它跟Qformer一起训练
@@ -42,13 +45,7 @@ BLIP-2设计了两阶段的训练策略，以使视觉编码器能学会提取�
       类似DETR，通过设计多个Perceiver Resampler来生成**64个固定长度的tokens**，主要作用在于可以**从图像中提取固定长度的特征向量**，能够解决图像甚至多帧视频的**feature map不一致的问题**。【图像和文本对齐】
   - XAttn-Dense：在每一层LLM上都会增加**corss- attention**以入到**LLM中与视觉向量进行交互**，**融合多模态信息**。【融合】
 
-# 其他
-### mPLUG-DocOwl1.5  [20]
-DocOwl1.5由mPLUG-Owl2初始化，使用**ViT/L-14作为视觉编码器**，并使用带有模态自适应模块的7B大模型作为**解码器**。
-每个子图像由ViT/L-14编码为1,024个特征，然后由**H-Reducer缩减为256个特征**。
 
-### TextMonkey [20]
-为了减少图像特征的冗余，继承了**Qwen-VL**中的图像**重采样器**，在每个窗口中都会使用。
 
 # 参考
 ### blip2
@@ -67,8 +64,8 @@ DocOwl1.5由mPLUG-Owl2初始化，使用**ViT/L-14作为视觉编码器**，并�
 
 ### Flamingo
 1xx. [[论文速览]Flamingo: a Visual Language Model for Few-Shot Learning[2204.14198]](https://www.bilibili.com/video/BV1pu411G7ce) V
+1xx.  [DeepMind出手！多模态小样本打败精调](https://zhuanlan.zhihu.com/p/511517344)
 1xx. [Otter  on OpenFlamingo](https://github.com/Luodian/Otter) git
 1xx. [open_flamingo](https://github.com/mlfoundations/open_flamingo) git
 
-### 其他
-20. [也看跨模态大模型遇见文档理解：mPLUG-DocOwl1.5及TextMonkey方案中的数据工程 ](https://mp.weixin.qq.com/s/1MSOZfbKcPW1BTT4f9XvQg) 
+
