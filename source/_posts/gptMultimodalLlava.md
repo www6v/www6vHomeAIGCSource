@@ -71,6 +71,7 @@ categories:
 
 
 # 参考
+### basic
 1. [【LMM 001】LLaVA：大型语言和视觉助手](https://datac.blog.csdn.net/article/details/135329498)
 
 2. [miniGPT-4的同期工作: 微软LLaVa模型论文笔记](https://zhuanlan.zhihu.com/p/625723805)
@@ -79,7 +80,7 @@ categories:
 
 1xx. [基于视觉指令调整的多模态聊天机器人 LLaVA｜AI新青年讲座·大型语言模型专场](https://apposcmf8kb5033.pc.xiaoe-tech.com/live_pc/l_64a7d4fde4b0d1e42e7fc7e6) V
 
-### Agent 方向
+### 演化方向 - Agent 
 1xx. [《LLaVA-Plus: Learning to Use Tools for Creating Multimodal Agents》 ](https://arxiv.org/pdf/2311.05437)
     https://llava-vl.github.io/llava-plus/
    [一篇文章搞懂LLaVA-Plus](https://zhuanlan.zhihu.com/p/679038553)
@@ -88,9 +89,12 @@ categories:
 1xx. 《LLaVA-Interactive: An All-in-One Demo for Image Chat, Segmentation, Generation and Editing》 Chat + Segmentation + Editing  
     [LLaVA-Interactive](https://llava-vl.github.io/llava-interactive/)
    【LLaVA + 交互】
-   
-###  实战 - 微调llava 
-[XTuner 微调 LLM：1.8B、多模态、Agent (更新撰写中)](https://github.com/InternLM/Tutorial/blob/camp2/xtuner/readme.md)
-[XTuner多模态训练与测试](https://github.com/InternLM/Tutorial/blob/camp2/xtuner/llava/xtuner_llava.md)
 
-[LLaMA-Factory  llava1_5_lora_sft](https://github.com/hiyouga/LLaMA-Factory/blob/main/examples/train_lora/llava1_5_lora_sft.yaml) git
+###  实战 - 微调llava 
+1xx. [XTuner 微调 LLM：1.8B、多模态、Agent (更新撰写中)](https://github.com/InternLM/Tutorial/blob/camp2/xtuner/readme.md)
+1xx. [XTuner多模态训练与测试](https://github.com/InternLM/Tutorial/blob/camp2/xtuner/llava/xtuner_llava.md)
+
+1xx. [LLaMA-Factory  llava1_5_lora_sft](https://github.com/hiyouga/LLaMA-Factory/blob/main/examples/train_lora/llava1_5_lora_sft.yaml) git
+
+1xx. [MPP-LLaVA](https://github.com/Coobiw/MPP-LLaVA) git
+[多模态大模型实战-MiniGPT4Qwen系列1：3090+2小时+通义千问=个人版双语多模态大模型](https://zhuanlan.zhihu.com/p/664612306)

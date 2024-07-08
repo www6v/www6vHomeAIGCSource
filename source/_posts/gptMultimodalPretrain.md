@@ -75,5 +75,4 @@ mask视觉， 输出对应文本
 # 参考
 1. [中科院刘静：多模态预训练的进展回顾与展望](https://www.bilibili.com/video/BV13P411q7tH/)  V
 
-1xx. [MiniGPT4Qwen](https://github.com/Coobiw/MiniGPT4Qwen) git
-[多模态大模型实战-MiniGPT4Qwen系列1：3090+2小时+通义千问=个人版双语多模态大模型](https://zhuanlan.zhihu.com/p/664612306)
+
