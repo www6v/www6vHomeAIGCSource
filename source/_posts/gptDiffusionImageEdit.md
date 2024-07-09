@@ -1,5 +1,5 @@
 ---
-title:  图像编辑 
+title:  (综述)图像编辑 
 date: 2023-07-06 19:10:10
 tags:
   - Diffusion
@@ -41,6 +41,7 @@ categories:
    [论文阅读：Diffusion Model-Based Image Editing: A Survey](https://blog.csdn.net/huzimu_/article/details/136547375)
    [基于扩散模型的图像编辑：首篇综述](https://mp.weixin.qq.com/s/MFbCt0XfOf9fV0YbdkmR6g)
    
+
 1xx.
 《A Survey of Multimodal-Guided Image Editing with Text-to-Image Diffusion Models》
 [A Survey of Multimodal-Guided Image Editing with Text-to-Image Diffusion Models](https://github.com/xinchengshuai/Awesome-Image-Editing)
