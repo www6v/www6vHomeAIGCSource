@@ -17,9 +17,9 @@ categories:
 
 # Framework[API]
 ### diffusers [10]
-  - controlnet
-  - dreambooth
-  - instruct_pix2pix
+  - controlnet 【controllable】
+  - dreambooth 【fine tuning】
+  - instruct_pix2pix 【image edit】
 
 # Framework[UI]
 ### stable-diffusion-webui

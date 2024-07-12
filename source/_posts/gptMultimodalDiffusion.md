@@ -73,28 +73,25 @@ SD模型的主体结构如下图所示，主要包括三个模型：
 
 # SD的其它特色应用[3]
 
-- **个性化生成** 英伟达的[Textual Inversion](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2208.01618)和谷歌的[DreamBooth](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2208.12242)
+- **个性化生成**  【fine-tuning】
+  英伟达的[Textual Inversion](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2208.01618)和谷歌的[DreamBooth](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2208.12242)
 
+- **风格化finetune模型** 【fine-tuning】
+  目前finetune SD模型的方法主要有两种：一种是直接finetune了UNet，但是容易过拟合，而且存储成本；另外一种低成本的方法是基于微软的[LoRA](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2106.09685)，LoRA本来是用于finetune语言模型的，但是现在已经可以用来finetune SD模型了，具体可以见博客[Using LoRA for Efficient Stable Diffusion Fine-Tuning](https://link.zhihu.com/?target=https%3A//huggingface.co/blog/lora)。
 
-- **风格化finetune模型** 目前finetune SD模型的方法主要有两种：一种是直接finetune了UNet，但是容易过拟合，而且存储成本；另外一种低成本的方法是基于微软的[LoRA](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2106.09685)，LoRA本来是用于finetune语言模型的，但是现在已经可以用来finetune SD模型了，具体可以见博客[Using LoRA for Efficient Stable Diffusion Fine-Tuning](https://link.zhihu.com/?target=https%3A//huggingface.co/blog/lora)。
+- **图像编辑** 【image edit】
+  谷歌的[prompt-to-prompt](https://link.zhihu.com/?target=https%3A//prompt-to-prompt.github.io/)和加州伯克利的[instruct-pix2pix](https://link.zhihu.com/?target=https%3A//www.timothybrooks.com/instruct-pix2pix)
 
-- **图像编辑** 谷歌的[prompt-to-prompt](https://link.zhihu.com/?target=https%3A//prompt-to-prompt.github.io/)和加州伯克利的[instruct-pix2pix](https://link.zhihu.com/?target=https%3A//www.timothybrooks.com/instruct-pix2pix)
-
-
-- **可控生成** 可控生成是SD最近比较火的应用，这主要归功于[ControlNet](https://link.zhihu.com/?target=https%3A//github.com/lllyasviel/ControlNet)，基于ControlNet可以实现对很多种类的可控生成，比如边缘，人体关键点，草图和深度图等等。
+- **可控生成** 【controllable】 
+  可控生成是SD最近比较火的应用，这主要归功于[ControlNet](https://link.zhihu.com/?target=https%3A//github.com/lllyasviel/ControlNet)，基于ControlNet可以实现对很多种类的可控生成，比如边缘，人体关键点，草图和深度图等等。
 
 # 参考
 1. [8.6 扩散模型——DDPM · PyTorch实用教程（第二版）](https://tingsongyu.github.io/PyTorch-Tutorial-2nd/chapter-8/8.6-diffusion-model.html)
 2. https://github.com/CompVis/stable-diffusion
 3. [文生图模型之Stable Diffusion](https://zhuanlan.zhihu.com/p/617134893)
 4. [38.(正课)Stable Diffusion、DALL-E、Imagen 背后_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Pg4y1M7Lr?p=3)
-   [course PPT](https://speech.ee.ntu.edu.tw/~hylee/ml/ml2023-course-data/StableDiffusion (v2).pdf)
+   [course PPT](https://speech.ee.ntu.edu.tw/~hylee/ml/ml2023-course-data/StableDiffusion%20(v2).pdf)
    
-### InstructPix2Pix
-[InstructPix2Pix：用指令给图像做修改](https://zhuanlan.zhihu.com/p/655135961)
-[Prompt-to-prompt：让生成的图像保持一致](https://zhuanlan.zhihu.com/p/655372592)
-[Repo](https://github.com/timothybrooks/instruct-pix2pix) git
-
 
 
 

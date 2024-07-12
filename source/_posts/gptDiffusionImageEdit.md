@@ -49,3 +49,8 @@ categories:
 1xx. 《LLMs Meet Multimodal Generation and Editing: A Survey》
 Image Generation， Image Editing
 [Repo](https://github.com/YingqingHe/Awesome-LLMs-meet-Multimodal-Generation)
+
+### InstructPix2Pix
+[InstructPix2Pix：用指令给图像做修改](https://zhuanlan.zhihu.com/p/655135961)
+[Prompt-to-prompt：让生成的图像保持一致](https://zhuanlan.zhihu.com/p/655372592)
+[Repo](https://github.com/timothybrooks/instruct-pix2pix) git
