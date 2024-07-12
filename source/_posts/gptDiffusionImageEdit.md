@@ -11,6 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 # 论文
 + 论文地址
  [《Diffusion Model-Based Image Editing: A Survey》](https://arxiv.org/abs/2402.17525) 
@@ -52,5 +55,9 @@ Image Generation， Image Editing
 
 ### InstructPix2Pix
 [InstructPix2Pix：用指令给图像做修改](https://zhuanlan.zhihu.com/p/655135961)
-[Prompt-to-prompt：让生成的图像保持一致](https://zhuanlan.zhihu.com/p/655372592)
+[InstructPix2Pix Learning to Follow Image Editing Instructions](https://www.timothybrooks.com/instruct-pix2pix)
 [Repo](https://github.com/timothybrooks/instruct-pix2pix) git
+
+### Prompt-to-prompt
+[Prompt-to-prompt：让生成的图像保持一致](https://zhuanlan.zhihu.com/p/655372592)
+[Prompt-to-Prompt Image Editing with Cross-Attention Control](https://prompt-to-prompt.github.io/)
