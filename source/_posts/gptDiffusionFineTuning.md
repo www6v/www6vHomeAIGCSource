@@ -61,11 +61,29 @@ accelerate launch train_dreambooth.py \
 1. [Stable Diffusion 微调及推理优化](https://cloud.tencent.com/developer/article/2302436)
 1xx. [【论文串读】Stable Diffusion模型微调方法串读](https://www.bilibili.com/video/BV19h4y1475y/) V
 
-### Dreambooth
+### 实战
+1xx. [Text Inversion](https://www.bilibili.com/video/BV1184y1g7pG/?p=4) V
+   【这个比较详细】
+1xx. [Dreambooth](https://www.bilibili.com/video/BV1184y1g7pG?p=5) V
+   【只训练unet】
+1xx. [lora Dreambooth](https://www.bilibili.com/video/BV1184y1g7pG?p=7) V
+   【冻结不训练unet，只训练lora】
+   【为unet模型添加注意力层，注意力层是要训练的参数】
+   【大部分代码和Dreambooth差不多】
+1xx. [control net](https://www.bilibili.com/video/BV1Go4y1M7cK?p=2) V
+1xx. [pix2pix](https://www.bilibili.com/video/BV1Go4y1M7cK?p=3) V
+[Code Repo](https://github.com/www6v/Diffusion_Training_Examples) git
+
+
+### Dreambooth 原理
+1xx. [DreamBooth 论文精读+通俗理解](https://blog.csdn.net/qq_45670134/article/details/133498728)
+1xx. [DreamBooth Repo](https://dreambooth.github.io/)
+
+### Dreambooth 实战
 10. [使用 Diffusers 通过 Dreambooth 技术来训练 Stable Diffusion](https://huggingface.co/blog/zh/dreambooth)
-      [Dreambooth Repo](https://github.com/huggingface/diffusers/tree/main/examples/dreambooth)
-    1xx. [DreamBooth 论文精读+通俗理解](https://blog.csdn.net/qq_45670134/article/details/133498728)
-    1xx. [DreamBooth Repo](https://dreambooth.github.io/)
+    [Dreambooth Repo](https://github.com/huggingface/diffusers/tree/main/examples/dreambooth)
+1xx. [手把手教你微调Stable Diffusion](https://juejin.cn/post/7282693176199987215)  
+   lora on DreamBooth
 
 
 ### ControlNet  
