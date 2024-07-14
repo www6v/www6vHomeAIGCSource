@@ -83,9 +83,7 @@ categories:
 
 1xx. [温故而知新:大模型RAG问答研发的7个失分点及MOE专家组合模型的若干浅析 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648407056&idx=1&sn=0a0ce93a9199a2eae36493a515e42181)
    《Seven Failure Points When Engineering a Retrieval Augmented Generation System》
-
-
-
+   [在构建检索增强型生成系统时的七大挑战 [译]](https://baoyu.io/translations/ai-paper/2401.05856v1-seven-failure-points-when-engineering-a-retrieval-augmented-generation-system)
 
 
 1xx. [大模型行业落地实践的一些总结和观点：大模型行业问答落地中的现实挑战以及潜在的缓解策略](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403693&idx=1&sn=e47f34cd58f103d37998dbbfd01c41ee)
@@ -97,7 +95,4 @@ categories:
 1xx. [再看RAG在真实金融文档问答场景的实践方案：SMP2023 金融大模型挑战赛的两种代表实现思路](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404651&idx=2&sn=335db95e104a5b09e33ac2245bae4fd2)
 
 
-### xxx
-1xx. [知识密集型自然语言处理任务的检索增强生成技术研究 [译]](https://baoyu.io/translations/ai-paper/2005.11401-retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks)
 1xx. [构建企业级 RAG 系统的高级指南 [译]](https://baoyu.io/translations/rag/mastering-rag-how-to-architect-an-enterprise-rag-system)
-1xx. [在构建检索增强型生成系统时的七大挑战 [译]](https://baoyu.io/translations/ai-paper/2401.05856v1-seven-failure-points-when-engineering-a-retrieval-augmented-generation-system)

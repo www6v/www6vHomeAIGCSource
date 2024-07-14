@@ -131,7 +131,3 @@ LlamaIndex和LangChain都支持查询路由器
 
 1xx. [大模型RAG问答技术架构及核心模块回顾：从Embedding、prompt-embedding到Reranker ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648406795&idx=1&sn=00ea4aab819eed3d622287fa1d32816f) ***
 
-1xx. CON
-   [引入COT缓解大模型RAG问答的上下文区分问题：兼看Langchain的表格检索思路及GPTBIAS评估框架 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648406194&idx=1&sn=aafe667fa5a73bd89a00272c5598c98e) CON
-   [Chain-Of-Note (CoN) Retrieval For LLMs](https://cobusgreyling.medium.com/chain-of-note-con-retrieval-for-llms-763ead1ae5c5)
-   [Cutting Through the Noise: Chain-of-Note’s (CoN) Robust Approach to super power your RAG pipelines](https://praveengovindaraj.com/cutting-through-the-noise-chain-of-notes-con-robust-approach-to-super-power-your-rag-pipelines-0df5f1ce7952)
