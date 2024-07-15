@@ -11,9 +11,21 @@ categories:
 <p></p>
 <!-- more -->
 
-# 教程[1,2]
 
+# PyTorch课程 [1]
++ 第一章：张量的计算和操作
+  + **常见张量计算**
+  + 张量的几何操作
+    【用的不多】
+  + 爱因斯坦求和 [11]
+  + **pytorch求导**
+  
++ 第三章：训练数据的处理
 
++ 第四章：深入理解pytorch的模型
+  - pytorch的**损失函数** [10]
+
+# 教程[2]
 
 # 参考
 ### 基础
@@ -27,3 +39,7 @@ categories:
 1xx. [33、完整讲解PyTorch多GPU分布式训练代码编写](https://www.bilibili.com/video/BV1xZ4y1S7dG/)   V 
     DP不建议使用,  DDP建议使用
     [PyTorch Distributed Overview](https://pytorch.org/tutorials/beginner/dist_overview.html)
+    
+### basic
+10. [损失函数｜交叉熵损失函数](https://www.zhihu.com/tardis/bd/art/35709485?source_id=1001)
+11. [看图学 AI：einsum 爱因斯坦求和约定到底是怎么回事？](https://zhuanlan.zhihu.com/p/672346603)
