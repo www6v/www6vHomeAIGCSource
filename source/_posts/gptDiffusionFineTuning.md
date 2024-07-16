@@ -11,6 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
+## 目录
+<!-- toc -->
+
 # 对比总结[1]
 
 | 训练方法             | 方法                                                         | 局限性                                                       |
@@ -19,6 +22,10 @@ categories:
 | Full FineTune        | **最朴素**的方式，使用图片+ 标注的数据集，进行迭代训练，数据集标注可以选择BLIP来生成。训练直接对原模型的所有权重进行调整。 | 容易过拟合，导致生成图片的多样性不够，结果难以控制。模型体积大，不便于传播。 |
 | Dreambooth           | 提供代表某个新概念（instance） 对应的一组图像，并使用**罕见字符（identifier） **进行概念Mapping，训练过程充分考虑**原有相关主题（class）生成**，避免过拟合。训练直接对**原模型的所有权重进行调整**。 | 训练过程只针对新概念 （instance），**多样性差**。如果需要多概念生成，需要多次训练。模型体积大，不便于传播。 |
 | LoRA（w Dreambooth） | 冻结预训练模型参数，在每个Transformer块插入**可训练层**，不需要完整调整 UNet 模型的全部参数。**训练结果只保留新增的网络层，模型体积小**。 | **训练效果不如Dreambooth**                                   |
+
+
+# 对比总结[2]
+{% asset_img  'fine-tuning.jpg' %}
 
 # Dreambooth实战[10]
 ### Dreambooth on  Diffusers
@@ -59,7 +66,7 @@ accelerate launch train_dreambooth.py \
 
 # 参考
 1. [Stable Diffusion 微调及推理优化](https://cloud.tencent.com/developer/article/2302436)
-1xx. [【论文串读】Stable Diffusion模型微调方法串读](https://www.bilibili.com/video/BV19h4y1475y/) V
+2. [【论文串读】Stable Diffusion模型微调方法串读](https://www.bilibili.com/video/BV19h4y1475y/) V
 
 ### 实战
 1xx. [Text Inversion](https://www.bilibili.com/video/BV1184y1g7pG/?p=4) V
@@ -82,8 +89,8 @@ accelerate launch train_dreambooth.py \
 ### Dreambooth 实战
 10. [使用 Diffusers 通过 Dreambooth 技术来训练 Stable Diffusion](https://huggingface.co/blog/zh/dreambooth)
     [Dreambooth Repo](https://github.com/huggingface/diffusers/tree/main/examples/dreambooth)
-1xx. [手把手教你微调Stable Diffusion](https://juejin.cn/post/7282693176199987215)  
-   lora on DreamBooth
+      1xx. [手把手教你微调Stable Diffusion](https://juejin.cn/post/7282693176199987215)  
+      lora on DreamBooth
 
 
 ### ControlNet  
