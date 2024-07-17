@@ -28,8 +28,6 @@ categories:
 {% asset_img  'fine-tuning.jpg' %}
 
 
-# ControlNet[20]
-
 # 参考
 1. [Stable Diffusion 微调及推理优化](https://cloud.tencent.com/developer/article/2302436)
 2. [【论文串读】Stable Diffusion模型微调方法串读](https://www.bilibili.com/video/BV19h4y1475y/) V
@@ -50,8 +48,6 @@ categories:
 
 
 
-### ControlNet  
-20. [ControlNet Repo](https://github.com/lllyasviel/ControlNet) git
 
 
 
