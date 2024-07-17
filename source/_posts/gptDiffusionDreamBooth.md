@@ -58,7 +58,37 @@ accelerate launch train_dreambooth.py \
 
 ```
 
+``` python
+# examples/dreambooth/train_dreambooth.py
+### 把prior loss加到instance loss上
+
+                if args.with_prior_preservation:
+                    # Add the prior loss to the instance loss.
+                    loss = loss + args.prior_loss_weight * prior_loss
+```
+
 ### dreambooth in Diffusers examples[11]
+``` python
+
+                if args.with_prior_preservation:
+                    # Chunk the noise and noise_pred into two parts and compute the loss on each part separately.
+                    noise_pred, noise_pred_prior = torch.chunk(noise_pred, 2, dim=0)
+                    target, target_prior = torch.chunk(target, 2, dim=0)
+
+                    # Compute instance loss
+                    loss = F.mse_loss(noise_pred.float(), target.float(), reduction="none").mean([1, 2, 3]).mean()
+
+                    # Compute prior loss
+                    prior_loss = F.mse_loss(noise_pred_prior.float(), target_prior.float(), reduction="mean")
+
+                    # Add the prior loss to the instance loss.
+                    loss = loss + args.prior_loss_weight * prior_loss
+                else:
+                    loss = F.mse_loss(noise_pred.float(), target.float(), reduction="mean")
+
+                accelerator.backward(loss)
+
+```
 
 # 参考
 ### Dreambooth 原理
@@ -73,11 +103,12 @@ accelerate launch train_dreambooth.py \
     [Dreambooth Repo](https://github.com/huggingface/diffusers/tree/main/examples/dreambooth)
 
 11. [dreambooth  Diffusers examples on Colab](https://colab.research.google.com/drive/1SJB5hGwmFyiYswT8VVPCfSkL-M1TY3t1)  运行过
-   Initial setup
-   Settings for teaching your new concept
-   Teach the model the new concept (fine-tuning with Dreambooth)
-   Run the code with your newly trained model
-     
+      Initial setup
+      Settings for teaching your new concept
+      Teach the model the new concept (fine-tuning with Dreambooth)
+      Run the code with your newly trained model
+    
+
 1xx. [手把手教你微调Stable Diffusion](https://juejin.cn/post/7282693176199987215)  
     lora on DreamBooth
 
