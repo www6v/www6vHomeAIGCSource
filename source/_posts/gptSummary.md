@@ -147,6 +147,7 @@ top:
   + {% post_link 'gptMultimodalDiffusionPractice' %}   
   + {% post_link 'gptDiffusionImageEdit' %}   
   + {% post_link 'gptDiffusionFineTuning' %}   
+  + {% post_link 'gptDiffusionDreamBooth' %}    
 + 端到端训练LLM 
     + {% post_link 'gptMultimodalBlip' %} 
     + {% post_link 'gptMultimodalLlava' %}  
