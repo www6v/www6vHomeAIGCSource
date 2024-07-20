@@ -85,17 +85,19 @@ SD模型的主体结构如下图所示，主要包括三个模型：
 - **可控生成** 【controllable】 
   可控生成是SD最近比较火的应用，这主要归功于[ControlNet](https://link.zhihu.com/?target=https%3A//github.com/lllyasviel/ControlNet)，基于ControlNet可以实现对很多种类的可控生成，比如边缘，人体关键点，草图和深度图等等。
 
+# Evolution [5]
+{% asset_img  'evolution-line.jpg' %}
+
+{% asset_img  'evolution.jpg' %}
+
+
 # 参考
 1. [8.6 扩散模型——DDPM · PyTorch实用教程（第二版）](https://tingsongyu.github.io/PyTorch-Tutorial-2nd/chapter-8/8.6-diffusion-model.html)
 2. https://github.com/CompVis/stable-diffusion
 3. [文生图模型之Stable Diffusion](https://zhuanlan.zhihu.com/p/617134893)
 4. [38.(正课)Stable Diffusion、DALL-E、Imagen 背后_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Pg4y1M7Lr?p=3)
    [course PPT](https://speech.ee.ntu.edu.tw/~hylee/ml/ml2023-course-data/StableDiffusion%20(v2).pdf)
-   
-
-
-
-
+5. [【扩散生成模型串讲】一个视频梳理Diffusion模型演化进程，16个扩散相关生成模型，20+篇相关论文串讲。_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV13J4m1K73z/) V
 
 
 
