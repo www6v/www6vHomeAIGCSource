@@ -1,5 +1,5 @@
 ---
-title: (原理|实战)多模态  LLaVa
+title: (原理|实战) LLaVa 演化
 date: 2023-03-14 23:02:17
 tags:
   - multimodal

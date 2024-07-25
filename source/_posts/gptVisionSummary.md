@@ -41,7 +41,7 @@ top:
 	+ VQVAE
   + Masked Modeling
 	+ MAE
-	    
+	
 + Segmentation   
 	  + {% post_link 'gptMultimodalSAM' %}  
 
@@ -57,7 +57,7 @@ top:
     + {% post_link 'gptDiffusionFineTuning' %}   
     + {% post_link 'gptDiffusionDreamBooth' %}    
   + {% post_link 'gptDiffusionDiT' %}   
-   
+
 ### 端到端训练LLM(LMM) 
 + {% post_link 'gptMultimodalBlip' %} 
 + {% post_link 'gptMultimodalLlava' %}  
@@ -70,11 +70,5 @@ top:
   + {% post_link 'gptAgentMultimodalApp' %}  
 
 # Vision
-+ Object Detection
-  - DETR 
-  - Grounding DINO
-+ Segmentation
-+ Retrieval
-+ Caption+VQA
-  
++ {% post_link 'gptVisionTask' %}  
 
