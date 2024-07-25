@@ -16,7 +16,10 @@ categories:
 
 # 论文
 + 论文地址
- 《Multimodal Foundation Models:From Specialists to General-Purpose Assistants》  microsoft
+ 《Multimodal Foundation Models:From Specialists to General-Purpose Assistants》 .Sep 2023   - microsoft
+ 
++ 开源地址
+  [Computer Vision in the Wild (CVinW)](https://github.com/Computer-Vision-in-the-Wild/CVinW_Readings) 
 
 # overview [0]
 {% asset_img  'overview.jpeg' %}
@@ -30,6 +33,18 @@ categories:
 
 # 视觉生成 [1]
 {% asset_img  'generation.png' %}
+
++ 四种alignment的方式
+  - controllable
+    Controlnet
+  - editing
+    instructPix2Pix
+  - text prompts following
+  - conception Customization
+    DreamBooth
+{% asset_img  'align.jpg' %}
+
+
 
 # 统一的视觉模型[2]
 
