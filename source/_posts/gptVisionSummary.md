@@ -53,6 +53,7 @@ top:
     + {% post_link 'gptDiffusionControlnet' %}
   + editing
     + {% post_link 'gptDiffusionImageEdit' %}   
+    + {% post_link 'gptDiffusionImageEditWork' %}   
   + concept customization [fine-tuning]
     + {% post_link 'gptDiffusionFineTuning' %}   
     + {% post_link 'gptDiffusionDreamBooth' %}    

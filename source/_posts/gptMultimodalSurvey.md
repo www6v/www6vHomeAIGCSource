@@ -32,23 +32,78 @@ categories:
 
 
 # 视觉生成 [1]
-### Human Alignments in Visual Generation
-+ 四种alignment的方式 [10]
-  - controllable
-    Controlnet
-  - editing
-    instructPix2Pix
-  - text prompts following
-  - conception Customization
-    DreamBooth
-    {% asset_img  'align.jpg' %}
-    {% asset_img  'generation.png' %}
+## Human Alignments in Visual Generation  [10]
+四种alignment的方式
+### spatial controllable T2I generation
 
-### Text-to-Image Generation  技术流派（4类）
+-  **结合位置分布的文字描述**（比较麻烦的用户交互，不仅需要文字，而且需要位置），常用于**对位置要求比较高的创意设计（海报等）**
+
+   - 直接讲原来clip那种image-level的text description升级为基于区域的text description
+
+     - **reco**
+     - gligen
+
+   - 将box描述变为spatial condition
+
+     - **controlnet**  
+
+   - 无需fintinue，直接变为inference-guide
+
+     - universal guidance for diffusion model
+
+
+
+###  text-based editing
+
+-  **给一张图和对应的修改文字，输出要求的图**，常用于ps等产品
+
+   - diffusion process manipulations
+
+     - **promot2promot**
+
+   - text instruction editing
+
+     - **InstructPix2Pix** 
+
+   - Editing with external pre-trained models
+
+
+
+### text promots following 
+
+- **直接给文字描述，生成对应的图**，这个是**目前常见文生图产品的交互方式**，常用于c端或者b端用户图像内容生成。但其对**更细节的控制存在一定的难度**
+  - Inference-time manipulation
+  - StructureDiffusion
+  - **Attend-and-Excite**
+  - Model tuning to follow text prompt
+  - ddpo
+
+
+
+### concept customization
+
+- 给一张图，提取图片中的关键内容，做**各种风格（背景/动作）变换**，更用于**不那么精细的广义产品**，比2的运用范围更加广义
+
+  - Concept Customization
+
+    - **Textual Inversion**
+    - **[DreamBooth]**
+  - Multi-concept customization
+
+    - Custom Diffusion
+
+  - Customization without test-time finetuning
+
+    - SuTI
+
+{% asset_img  'align.jpg' %}
+{% asset_img  'generation.png' %}
+
+## Text-to-Image Generation  技术流派（4类）
 + Generative adversarial networks (GAN)
 + Variational autoencoder (VAE)
 + Discrete image token prediction
-+ Diffusion model
++ **Diffusion model**
 
 # 统一的视觉模型[2]
 
@@ -77,7 +132,7 @@ categories:
 1xx.  对应第二章节 
   [《Alignments in Text-to-Image Generation》](https://datarelease.blob.core.windows.net/tutorial/vision_foundation_models_2023/slides/Zhengyuan_Tutorial_T2I2023.pdf)
    [[CVPR2023 Tutorial Talk] Alignments in Text-to-Image Generation](https://www.bilibili.com/video/BV14P411v7Un/) V
-   
+
 1xx. 对应第三章节 
 [《From Specialist to Generalist:
 Towards General Vision Understanding Interface》](https://datarelease.blob.core.windows.net/tutorial/vision_foundation_models_2023/slides/Jianwei_CVPR2023_Tutorial.pdf)
