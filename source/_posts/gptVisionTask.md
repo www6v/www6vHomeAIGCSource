@@ -20,7 +20,7 @@ categories:
 + Caption(image captioning) 
 
 + VQA(visual question answering)
- 
+
 ### region-level
 + Object Detection object detection
   - DETR -> DINO -> Grounding DINO
@@ -37,4 +37,7 @@ categories:
 # 参考
 1. [[CVPR Tutorial Talk\] Towards General Vision Understanding Interface](https://www.bilibili.com/video/BV1ds4y1k7pj/?vd_source=f6e8c1128f9f264c5ab8d9411a644036)
    [datarelease.blob.core.windows.net](https://datarelease.blob.core.windows.net/tutorial/vision_foundation_models_2023/slides/Jianwei_CVPR2023_Tutorial.pdf)
+
+
+
 

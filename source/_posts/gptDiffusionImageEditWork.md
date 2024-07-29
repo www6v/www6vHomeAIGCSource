@@ -22,6 +22,9 @@ categories:
 + 官网
   [Prompt-to-Prompt Image Editing with Cross-Attention Control](https://prompt-to-prompt.github.io/) 
 
+# 论文解析
+[论文解析](https://candied-skunk-1ca.notion.site/Prompt-to-Prompt-3ae01e342c6b4b41adc58c6ec5233020)
+
 ---
 
 # 论文
@@ -33,6 +36,10 @@ categories:
 
 + 官网
 [InstructPix2Pix Learning to Follow Image Editing Instructions](https://www.timothybrooks.com/instruct-pix2pix) 
+
+# 论文解析
+[论文解析](https://candied-skunk-1ca.notion.site/InstructPix2Pix-aedf2e9b6acd48fab6928f717065288c?pvs=4)
+
 
 ---
 
@@ -48,19 +55,10 @@ categories:
   [[ICLR'24] MGIE](https://mllm-ie.github.io/) 
 
 
-# 参考
-### Prompt-to-prompt
-[Prompt-to-prompt：让生成的图像保持一致](https://zhuanlan.zhihu.com/p/655372592)
+# 论文解析
+[MGIE](https://candied-skunk-1ca.notion.site/MGIE-d6bfedcc92ae42a48a64ac199ce2aa14?pvs=4)
 
 
-### InstructPix2Pix
-[InstructPix2Pix：用指令给图像做修改](https://zhuanlan.zhihu.com/p/655135961)
-
-
-###  MGIE
-[罕见！苹果开源图片编辑神器MGIE，要上iPhone? ](https://mp.weixin.qq.com/s/c87cUuyz4bUgfW2_ma5xpA)
-
-[【多模态MLLMs+图像编辑】MGIE：苹果开源基于指令和大语言模型的图片编辑神器（24.02.03开源）](https://blog.csdn.net/imwaters/article/details/136045973)
 
 
 
