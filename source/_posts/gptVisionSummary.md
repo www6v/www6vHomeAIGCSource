@@ -50,7 +50,8 @@ top:
   + {% post_link 'gptMultimodalDiffusion' %}   
   + {% post_link 'gptMultimodalDiffusionPractice' %}  
   + Controllable  
-    + {% post_link 'gptDiffusionControlnet' %}
+    + {% post_link 'gptDiffusionControllable' %} 
+    + {% post_link 'gptDiffusionControllableWork' %}
   + editing
     + {% post_link 'gptDiffusionImageEdit' %}   
     + {% post_link 'gptDiffusionImageEditWork' %}   

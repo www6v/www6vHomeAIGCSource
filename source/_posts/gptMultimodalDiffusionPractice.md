@@ -15,13 +15,20 @@ categories:
 <!-- toc -->
 
 
-# Framework[API]
-### diffusers [10]
+# API-based
+### diffusion-models-class [官方课程]
++ [Unit 1: An Introduction to Diffusion Models](https://candied-skunk-1ca.notion.site/Unit-1-An-Introduction-to-Diffusion-Models-f0ee4c8bc4914ef8961b48241064b2b7?pvs=4)
++ [Unit 2: Fine-Tuning, Guidance and Conditioning](https://candied-skunk-1ca.notion.site/Unit-2-Fine-Tuning-Guidance-and-Conditioning-27180b80a58e4bd2860019c4237a8532?pvs=4)
++ [Unit 3: Stable Diffusion](https://candied-skunk-1ca.notion.site/Unit-3-Stable-Diffusion-a8770ac5b0214c2f9cfce878812b5bf8?pvs=4)
++ [Unit 4: Going Further with Diffusion Models](https://candied-skunk-1ca.notion.site/Unit-4-Going-Further-with-Diffusion-Models-e997fe47d4e64069bba59ac81b7a4718?pvs=4)
+
+
+### diffusers 重点pipeline [10]
   - controlnet 【controllable】
   - dreambooth 【fine tuning】
   - instruct_pix2pix 【image edit】
 
-# Framework[UI]
+# UI-based
 ### stable-diffusion-webui
 + stable-diffusion-webui-colab[11]
   没试过，colab要充值
@@ -36,9 +43,11 @@ categories:
 
 
 # 参考
-### Framework
+###  API-based
 10. [Repo diffusers](https://github.com/huggingface/diffusers/tree/main/examples) git
 
+
+### UI-based
 11.  [可白嫖且很香—轻轻松松在colab上部署Stable Diffusion大模型！](https://www.bilibili.com/video/BV1QS421A7zF/) V
       [stable-diffusion-webui-colab Repo](https://github.com/camenduru/stable-diffusion-webui-colab) git
       [Install the WebUI Colab to Google Drive ](https://github.com/camenduru/stable-diffusion-webui-colab/tree/drive) git 运行这3个脚本
