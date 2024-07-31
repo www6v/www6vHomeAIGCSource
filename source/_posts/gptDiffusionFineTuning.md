@@ -1,5 +1,5 @@
 ---
-title: (实战) SD fine-tuning
+title: (work|实战) SD fine-tuning
 date: 2023-07-06 19:24:20
 tags:
   - Diffusion
@@ -41,11 +41,10 @@ categories:
    【冻结不训练unet，只训练lora】
    【为unet模型添加注意力层，注意力层是要训练的参数】
    【大部分代码和Dreambooth差不多】
-1xx. [control net](https://www.bilibili.com/video/BV1Go4y1M7cK?p=2) V
-1xx. [pix2pix](https://www.bilibili.com/video/BV1Go4y1M7cK?p=3) V
-[Code Repo](https://github.com/www6v/Diffusion_Training_Examples) git
 
 
+### 实战
+1xx. [dreambooth + textual_inversion](https://candied-skunk-1ca.notion.site/concept-customization-067033e842b044729d81aed1d96608fd?pvs=4)  diffusers
 
 
 

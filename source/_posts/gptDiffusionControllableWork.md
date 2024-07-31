@@ -1,5 +1,5 @@
 ---
-title: (Work)Controllable 
+title: (Work|实战)Controllable 
 date: 2023-07-17 15:31:39
 tags:
   - Diffusion
@@ -35,4 +35,8 @@ categories:
   [论文解析](https://candied-skunk-1ca.notion.site/T2I-Adapter-26eef5080f084dacb6e89d643d31e53d?pvs=4)
 
 
+---
+# 实战
++ [ControlNet + t2i_adapter + Custom Diffusion ](https://candied-skunk-1ca.notion.site/controllable-763edf3a43b94e03a1ff0faee9ac41c2?pvs=4)  diffusers
 
++ [control net](https://www.bilibili.com/video/BV1Go4y1M7cK?p=2) V

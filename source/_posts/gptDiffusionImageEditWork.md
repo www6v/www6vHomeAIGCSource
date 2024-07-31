@@ -1,5 +1,5 @@
 ---
-title:  (Work)Image Editing
+title:  (Work|实战)Image Editing
 date: 2023-07-27 09:29:58
 tags:
   - Diffusion
@@ -91,3 +91,10 @@ categories:
   
 + MGIE
   基于LMM  
+
+---
+# 实战
+1xx. [InstructPix2Pix](https://candied-skunk-1ca.notion.site/editing-5d04c1bbd0d34be4b3fb0087cb670efd?pvs=4)  diffusers
+1xx. [InstructPix2Pix](https://www.bilibili.com/video/BV1Go4y1M7cK?p=3) V
+[Code Repo](https://github.com/www6v/Diffusion_Training_Examples) git
+
