@@ -14,6 +14,8 @@ categories:
 ## 目录
 <!-- toc -->
 
+
+
 # LLaVa
 ### GPT-assisted Visual Instruction Data Generation [1]
 + detail
@@ -90,11 +92,3 @@ categories:
     [LLaVA-Interactive](https://llava-vl.github.io/llava-interactive/)
    【LLaVA + 交互】
 
-###  实战 - 微调llava 
-1xx. [XTuner 微调 LLM：1.8B、多模态、Agent (更新撰写中)](https://github.com/InternLM/Tutorial/blob/camp2/xtuner/readme.md)
-1xx. [XTuner多模态训练与测试](https://github.com/InternLM/Tutorial/blob/camp2/xtuner/llava/xtuner_llava.md)
-
-1xx. [LLaMA-Factory  llava1_5_lora_sft](https://github.com/hiyouga/LLaMA-Factory/blob/main/examples/train_lora/llava1_5_lora_sft.yaml) git
-
-1xx. [MPP-LLaVA](https://github.com/Coobiw/MPP-LLaVA) git
-[多模态大模型实战-MiniGPT4Qwen系列1：3090+2小时+通义千问=个人版双语多模态大模型](https://zhuanlan.zhihu.com/p/664612306)
