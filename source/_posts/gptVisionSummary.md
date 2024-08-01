@@ -49,9 +49,11 @@ top:
 ### 生成
   + {% post_link 'gptMultimodalDiffusion' %}   
   + {% post_link 'gptMultimodalDiffusionPractice' %}  
+  + {% post_link 'gptDiffusionXL' %}   
   + Controllable  
     + {% post_link 'gptDiffusionControllable' %} 
     + {% post_link 'gptDiffusionControllableWork' %}
+    + {% post_link 'gptDiffusionGuidance' %}
   + editing
     + {% post_link 'gptDiffusionImageEdit' %}   
     + {% post_link 'gptDiffusionImageEditWork' %}   

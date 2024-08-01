@@ -1,5 +1,5 @@
 ---
-title: (work|实战) SD fine-tuning
+title: (work|实战) fine-tuning
 date: 2023-07-06 19:24:20
 tags:
   - Diffusion
