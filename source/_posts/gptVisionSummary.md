@@ -29,18 +29,7 @@ top:
 
 
 ### 视觉理解
-+ Vision Encoder
-  + **multimodal learning**
-	+ {% post_link 'gptMultimodalCLIP' %}  
-	+ {% post_link 'gptMultimodalCLIPPractice' %}
-  + **Supervised Learning**
-	+ {% post_link 'gptMultimodalVit' %}
-  + **self-distillation**
-	+ DINO 
-  + **Auto-encoding**
-	+ VQVAE
-  + Masked Modeling
-	+ MAE
++ {% post_link 'gptMultimodalEncoder' %} 
 	
 + Segmentation   
 	  + {% post_link 'gptMultimodalSAM' %}  
