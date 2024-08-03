@@ -49,6 +49,8 @@ top:
   + concept customization [fine-tuning]
     + {% post_link 'gptDiffusionFineTuning' %}   
     + {% post_link 'gptDiffusionDreamBooth' %}    
+  + 人像生图
+    + {% post_link 'gptMultimodalIDCreate' %}     
   + {% post_link 'gptDiffusionDiT' %}   
 
 ### 端到端训练LLM(LMM) 
