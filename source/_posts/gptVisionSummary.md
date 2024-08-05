@@ -23,14 +23,10 @@ top:
 + {% post_link 'gptMultimodalSeries' %}  
 
 
-### Train  *
-+ {% post_link 'gptMultimodalPretrain' %}  
-+ {% post_link 'gptMultimodalInstructTuning' %}  
-
 
 ### 视觉理解
 + {% post_link 'gptMultimodalEncoder' %} 
-	
++ {% post_link 'gptMultimodalConnector' %}  	
 + Segmentation   
 	  + {% post_link 'gptMultimodalSAM' %}  
 
@@ -57,7 +53,9 @@ top:
 + {% post_link 'gptMultimodalBlip' %} 
 + {% post_link 'gptMultimodalLlava' %}  
 + {% post_link 'gptMultimodalMinigpt4' %}    
-
++ Train  *
+  + {% post_link 'gptMultimodalPretrain' %}  
+  + {% post_link 'gptMultimodalInstructTuning' %}  
 
 ### Multimodal Agent*
   + {% post_link 'gptAgentMultimodal' %}  
