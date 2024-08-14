@@ -1,5 +1,5 @@
 ---
-title: (综述)推理优化
+title: (总结)推理优化
 date: 2023-01-01 22:58:43
 tags:
   - Inference
@@ -34,51 +34,6 @@ categories:
 
 ### KV Cache
 
-# 推理 [10]
-### LLM Algorithmic/Eval Survey
-[Efficient Large Language Models: A Survey](https://github.com/AIoT-MLSys-Lab/Efficient-LLMs-Survey)
-
-
-### LLM Train/Inference Framework
-Megatron-LM
-vLLM ***
-TensorRT-LLM ***
-DeepSpeed-FastGen 2x vLLM?  ***
-PETALS
-
-### Continuous/In-flight Batching
-Continuous Batching
-In-flight Batching
-
-### Weight/Activation Quantize/Compress
-ZeroQuant
-GPTQ
-SmoothQuant
-AWQ
-SparQ
-
-### IO/FLOPs-Aware/Sparse Attention
-MQA
-FlashAttention ***
-GQA
-
-### KV Cache Scheduling/Quantize/Dropping
-PagedAttention *** 
-TensorRT-LLM KV Cache FP8
-
-### Prompt/Context Compression
-Selective-Context
-LLMLingua ***
-LongLLMLingua ***
-
-### Long Context Attention/KV Cache Optimization
-RingAttention
-KVQuant
-RAGCache
-KCache
-
-### Parallel Decoding/Sampling
-Speculative Sampling ***
 
 # 参考
 ### 综述
@@ -95,10 +50,5 @@ Speculative Sampling ***
 [无穹Paper | 如何加速大模型推理？一图读懂大语言模型高效推理技术](https://mp.weixin.qq.com/s/V1dXQquifP7uHGU7QxP-Lg) 
 
 
-### Awesome-LLM-Inference
 
-10. [Awesome-LLM-Inference Repo](https://github.com/DefTruth/Awesome-LLM-Inference) git
-1xx. [[Awesome-LLM-Inference]🔥第三期：30篇，LLM推理论文集-500页PDF](https://zhuanlan.zhihu.com/p/669777159)
-1xx. [[Awesome-LLM-Inference]🔥第二期: 20篇，LLM推理论文集-300页PDF](https://zhuanlan.zhihu.com/p/658091768)
-1xx. [[LLM推理优化]🔥100+篇: 大模型推理各方向新发展整理](https://zhuanlan.zhihu.com/p/693680304)
 

@@ -38,3 +38,8 @@ categories:
 
 + 解析
   [解析](https://candied-skunk-1ca.notion.site/PhotoMaker-f4b3e96a9ed046838b7255e026bd1abf?pvs=4)
+
+---
+# 总结
+【InstantID : ipAdaptor +controlnet,  image Contoll的思路】
+【photomaker: image  Edit 的思路】

@@ -74,12 +74,15 @@ top:
   + {% post_link 'gptInferRayPractice' %}   
 + 优化
   + {% post_link 'gptInference' %}
-  + {% post_link 'gptInferKVCache' %}  
-  + {% post_link 'gptFlashAttention' %}  
-  + 模型压缩
-    + {% post_link 'gptQuantization' %} 
-    + {% post_link 'gptQuantizationWeight' %} 
-    + {% post_link 'gptQuantizationPractice' %}  
+  + {% post_link 'gptInferenceSurvey' %}
+  + 系统层优化
+    + {% post_link 'gptInferKVCache' %}  
+    + {% post_link 'gptFlashAttention' %} 
+  + 模型层优化 
+    + 模型压缩
+      + {% post_link 'gptQuantization' %} 
+      + {% post_link 'gptQuantizationWeight' %} 
+      + {% post_link 'gptQuantizationPractice' %}  
 
 ## Data *
 + List
