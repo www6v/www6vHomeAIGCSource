@@ -57,12 +57,14 @@ top:
   + {% post_link 'gptLargeModelTrainingPractice' %} 
   + {% post_link 'gptContinualPretraining' %}  
   + {% post_link 'gptChineseLlama' %}   
-  + {% post_link 'gptPrecision' %} 
   + 分布式
     + {% post_link 'gptTrainParallelism' %}    
     + {% post_link 'gptTrainZeroDeepspeed' %}    
     + {% post_link 'gptTrainDeepspeedPractice' %} 
-
+  + 低精度
+    + {% post_link 'gptLowPrecision' %}    
+    + {% post_link 'gptPrecision' %}    
+   
 ## Inference
 + 框架
   + {% post_link 'gptInferFramework' %} 
