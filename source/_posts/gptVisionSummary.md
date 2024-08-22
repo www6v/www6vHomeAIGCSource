@@ -38,6 +38,10 @@ top:
   + Controllable  
     + {% post_link 'gptDiffusionControllable' %} 
     + {% post_link 'gptDiffusionControllableWork' %}
+      - {% post_link 'gptDiffusionControlNet' %} 
+      - {% post_link 'gptDiffusionT2IAdapter' %} 
+      - {% post_link 'gptDiffusionIPAdapter' %} 
+      - {% post_link 'gptDiffusionReferenceNet' %} 
     + {% post_link 'gptDiffusionGuidance' %}
   + editing
     + {% post_link 'gptDiffusionImageEdit' %}   
