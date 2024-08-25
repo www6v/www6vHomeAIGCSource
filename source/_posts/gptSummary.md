@@ -64,16 +64,18 @@ top:
   + 低精度
     + {% post_link 'gptLowPrecision' %}    
     + {% post_link 'gptPrecision' %}    
-   
+  
 ## Inference
 + 框架
   + {% post_link 'gptInferFramework' %} 
   + {% post_link 'gptInferFrameworkPractice' %} 
-  + {% post_link 'gptInfervLLM' %} 
-  + {% post_link 'gptInfervLLMPractice' %}  
-  + {% post_link 'gptInferTensorRT' %}  
-  + {% post_link 'gptInferRay' %}   
-  + {% post_link 'gptInferRayPractice' %}   
+  + vLLM
+    + {% post_link 'gptInfervLLM' %} 
+    + {% post_link 'gptInfervLLMPractice' %}  
+  + {% post_link 'gptInferTensorRT' %} 
+  + Ray
+    + {% post_link 'gptInferRay' %}   
+    + {% post_link 'gptInferRayPractice' %}   
 + 优化
   + {% post_link 'gptInference' %}
   + {% post_link 'gptInferenceSurvey' %}
