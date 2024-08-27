@@ -35,6 +35,7 @@ top:
   + {% post_link 'gptMultimodalDiffusion' %}   
   + {% post_link 'gptMultimodalDiffusionPractice' %}  
   + {% post_link 'gptDiffusionXL' %}   
+  + {% post_link 'gptDiffusionunCLIP' %} 
   + Controllable  
     + {% post_link 'gptDiffusionControllable' %} 
     + {% post_link 'gptDiffusionControllableWork' %}
