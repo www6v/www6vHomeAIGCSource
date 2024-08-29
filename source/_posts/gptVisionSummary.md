@@ -32,27 +32,40 @@ top:
 
 
 ### 生成
++ Diffusion
   + {% post_link 'gptMultimodalDiffusion' %}   
   + {% post_link 'gptMultimodalDiffusionPractice' %}  
   + {% post_link 'gptDiffusionXL' %}   
   + {% post_link 'gptDiffusionunCLIP' %} 
-  + Controllable  
-    + {% post_link 'gptDiffusionControllable' %} 
-    + {% post_link 'gptDiffusionControllableWork' %}
-      - {% post_link 'gptDiffusionControlNet' %} 
-      - {% post_link 'gptDiffusionT2IAdapter' %} 
+  + {% post_link 'gptDiffusionGuidance' %}   
++ Controllable  
+  + {% post_link 'gptDiffusionControllable' %} 
+  + {% post_link 'gptDiffusionControllableWork' %}
+  + Spatial Control
+    + Dense control
+      + single
+        - {% post_link 'gptDiffusionControlNet' %} 
+      + multi 
+        - {% post_link 'gptDiffusionT2IAdapter' %}
+    + layout/box
+      - GLIGEN
+      - Reco
+  + Style control
+    + subject-driven
+      + concept customization [fine-tuning]
+        + {% post_link 'gptDiffusionFineTuning' %}   
+        + {% post_link 'gptDiffusionDreamBooth' %}       
+    + image-driven
       - {% post_link 'gptDiffusionIPAdapter' %} 
+  + Sementic Control
+  + 其他
       - {% post_link 'gptDiffusionReferenceNet' %} 
-    + {% post_link 'gptDiffusionGuidance' %}
-  + editing
++ editing
     + {% post_link 'gptDiffusionImageEdit' %}   
-    + {% post_link 'gptDiffusionImageEditWork' %}   
-  + concept customization [fine-tuning]
-    + {% post_link 'gptDiffusionFineTuning' %}   
-    + {% post_link 'gptDiffusionDreamBooth' %}    
-  + 人像生图
+    + {% post_link 'gptDiffusionImageEditWork' %}    
++ 人像生图
     + {% post_link 'gptMultimodalIDCreate' %}     
-  + {% post_link 'gptDiffusionDiT' %}   
++ {% post_link 'gptDiffusionDiT' %}   
 
 ### 端到端训练LLM(LMM) 
 + {% post_link 'gptMultimodalBlip' %} 
