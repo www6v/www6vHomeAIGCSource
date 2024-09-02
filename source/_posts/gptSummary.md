@@ -32,7 +32,7 @@ top:
 + {% post_link 'gptDocSimilarity' %}  
 + {% post_link 'gptDialogue' %}  
 
-## Model
+## Model *
 + 基础
   + {% post_link 'gptLargeModelSurvey' %}
   + {% post_link 'gptLargeModel' %} 
@@ -51,7 +51,7 @@ top:
 + {% post_link 'gptHallucination' %}    
 + {% post_link 'gptEval' %}     
 
-## Training 
+## Training  *
 + 训练
   + {% post_link 'gptLargeModelTraining' %}
   + {% post_link 'gptLargeModelTrainingPractice' %} 
@@ -65,7 +65,7 @@ top:
     + {% post_link 'gptLowPrecision' %}    
     + {% post_link 'gptPrecision' %}    
   
-## Inference
+## Inference *
 + 框架
   + {% post_link 'gptInferFramework' %} 
   + {% post_link 'gptInferFrameworkPractice' %} 
@@ -80,7 +80,12 @@ top:
   + {% post_link 'gptInference' %}
   + {% post_link 'gptInferenceSurvey' %}
   + 系统层优化
-    + {% post_link 'gptInferKVCache' %}  
+    + KVCache
+      + {% post_link 'gptInferKVCache' %}  
+      + {% post_link 'gptInferKVCacheOptimize' %}
+      + Compress  
+        + {% post_link 'gptInferKVCacheStreamingLLM' %}   Window 
+        + {% post_link 'gptInferKVCacheQuantization' %} Quantization  
     + {% post_link 'gptFlashAttention' %} 
   + 模型层优化 
     + 模型压缩
@@ -88,7 +93,7 @@ top:
       + {% post_link 'gptQuantizationWeight' %} 
       + {% post_link 'gptQuantizationPractice' %}  
 
-## Data *
+## Data 
 + List
   + {% post_link 'gptDataSet' %} 
   + {% post_link 'gptDataSetPretrainList' %} 
@@ -118,7 +123,7 @@ top:
       + {% post_link 'gptDataSelection' %} 
 
 
-## FineTuning
+## FineTuning *
 + PEFT
   + {% post_link 'gptFineTuning' %} 
   + {% post_link 'gptFineTuningWhen' %}  
