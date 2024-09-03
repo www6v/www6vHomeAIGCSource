@@ -34,15 +34,18 @@ categories:
 
 ### 家族
 1. [LLaMA的解读与其微调：Alpaca-LoRA/Vicuna/BELLE/中文LLaMA/姜子牙/LLaMA 2](https://blog.csdn.net/v_JULY_v/article/details/129709105) ***
-   1xx. [我想学大模型，应该从哪个模型开始？LLaMA生态家谱整理和分析 ](https://mp.weixin.qq.com/s?__biz=MzUyOTA5OTcwMg==&mid=2247485019&idx=1&sn=e3417472c0c1f98aede498fbe905e1a0&)
-   1xx. [NLP（九）：LLaMA, Alpaca, ColossalChat 系列模型研究](https://zhuanlan.zhihu.com/p/618695885)
-   1xx. https://github.com/www6v/Llama2-Chinese
-   1xx.  [从0到1复现斯坦福羊驼（Stanford Alpaca 7B）](https://zhuanlan.zhihu.com/p/618321077) 
-    GPUs: 8 卡 A800 80GB GPUs
-   1xx. <<千帆增强版 Llama 2-提升大模型对话指令遵循能力>>    
+
+1xx. [我想学大模型，应该从哪个模型开始？LLaMA生态家谱整理和分析 ](https://mp.weixin.qq.com/s?__biz=MzUyOTA5OTcwMg==&mid=2247485019&idx=1&sn=e3417472c0c1f98aede498fbe905e1a0&)
+
+1xx. [NLP（九）：LLaMA, Alpaca, ColossalChat 系列模型研究](https://zhuanlan.zhihu.com/p/618695885)
    
-   1xx. [中文 LLaMA](https://github.com/www6v/Linly)
-      [掘力计划 23 期-Linly-Chinese-LLaMA2 中文开源大模型方案分享](https://www.bilibili.com/video/BV1Np4y1j783/)
-      
-   1xx. [近期大模型动态：LLaMA-2-7B-32K的训练数据组织情况及面向儿童心理健康领域的微调模型推介 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402185&idx=2&sn=55901b89381e27aedee56c69041f6af8)    llama-2-7b-32k -  LLaMA-2的上下文长度为4Ktoken。要将其扩展到32K上下文，该工作分成了三个部分：建模、数据和系统优化。
-       
+1xx. <<千帆增强版 Llama 2-提升大模型对话指令遵循能力>>  v
+
+1xx. [近期大模型动态：LLaMA-2-7B-32K的训练数据组织情况及面向儿童心理健康领域的微调模型推介 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402185&idx=2&sn=55901b89381e27aedee56c69041f6af8)    llama-2-7b-32k -  LLaMA-2的上下文长度为4Ktoken。要将其扩展到32K上下文，该工作分成了三个部分：建模、数据和系统优化。
+  
+### 实战
+1xx.  [从0到1复现斯坦福羊驼（Stanford Alpaca 7B）](https://zhuanlan.zhihu.com/p/618321077) 
+    GPUs: 8 卡 A800 80GB GPUs
+    
+### 汉化
+1xx.  [掘力计划 23 期-Linly-Chinese-LLaMA2 中文开源大模型方案分享](https://www.bilibili.com/video/BV1Np4y1j783/) v
