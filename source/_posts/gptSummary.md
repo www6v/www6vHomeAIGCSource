@@ -33,14 +33,14 @@ top:
 + {% post_link 'gptDialogue' %}  
 
 ## Model *
-+ 基础
-  + {% post_link 'gptLargeModelSurvey' %}
-  + {% post_link 'gptLargeModel' %} 
++ Backbone 
   + {% post_link 'gptTransformer' %} 
   + {% post_link 'gptTransformerCode' %}  
   + {% post_link 'gptEmbedding' %}   
   + {% post_link 'gptTemperature' %}  
-+ 基座模型
++ Foundation Models
+  + {% post_link 'gptLargeModelSurvey' %}
+  + {% post_link 'gptLargeModel' %} 
   + {% post_link 'gptFamily' %}  
   + {% post_link 'gptLlama' %}   
   + {% post_link 'gptLlamaFamily' %}   
