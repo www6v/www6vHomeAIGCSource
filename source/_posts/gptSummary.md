@@ -42,9 +42,11 @@ top:
   + {% post_link 'gptLargeModelSurvey' %}
   + {% post_link 'gptLargeModel' %} 
   + {% post_link 'gptFamily' %}  
-  + {% post_link 'gptLlama' %}   
-  + {% post_link 'gptLlamaFamily' %}   
-  + {% post_link 'gptChatGLM' %}   
+  + {% post_link 'gptChatGLM' %}    
+  + LLaMA
+  	+ {% post_link 'gptLlama' %}   
+  	+ {% post_link 'gptLlamaFamily' %}   
+  	+ {% post_link 'gptLlama3-1' %}  
   + {% post_link 'gptLeaderBoard' %}  
 + {% post_link 'gptImpossibleTriangle' %} 
 + {% post_link 'gptEmergent' %}   
