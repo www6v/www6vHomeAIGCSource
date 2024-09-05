@@ -25,51 +25,51 @@ top:
 
 
 ### 视觉理解
-+ {% post_link 'gptMultimodalEncoder' %} 
-+ {% post_link 'gptMultimodalConnector' %}  	
++ **{% post_link 'gptMultimodalEncoder' %}** 
++ **{% post_link 'gptMultimodalConnector' %}**  	
 + Segmentation   
 	  + {% post_link 'gptMultimodalSAM' %}  
 
 
 ### 生成
 + Diffusion
-  + {% post_link 'gptMultimodalDiffusion' %}   
+  + **{% post_link 'gptMultimodalDiffusion' %}**   
   + {% post_link 'gptMultimodalDiffusionPractice' %}  
-  + {% post_link 'gptDiffusionXL' %}   
-  + {% post_link 'gptDiffusionunCLIP' %} 
-  + {% post_link 'gptDiffusionGuidance' %}   
+  + **{% post_link 'gptDiffusionXL' %}**   
+  + **{% post_link 'gptDiffusionunCLIP' %}** 
+  + **{% post_link 'gptDiffusionGuidance' %}**   
 + Controllable  
-  + {% post_link 'gptDiffusionControllable' %} 
-  + {% post_link 'gptDiffusionControllableWork' %}
+  + **{% post_link 'gptDiffusionControllable' %}** 
+  + **{% post_link 'gptDiffusionControllableWork' %}**
   + Spatial Control
     + Dense control
       + single
-        - {% post_link 'gptDiffusionControlNet' %} 
+        - **{% post_link 'gptDiffusionControlNet' %}** 
       + multi 
-        - {% post_link 'gptDiffusionT2IAdapter' %}
+        - **{% post_link 'gptDiffusionT2IAdapter' %}**
     + layout/box
       - GLIGEN
       - Reco
   + Style control
     + subject-driven
       + concept customization [fine-tuning]
-        + {% post_link 'gptDiffusionFineTuning' %}   
-        + {% post_link 'gptDiffusionDreamBooth' %}       
+        + **{% post_link 'gptDiffusionFineTuning' %}**   
+        + **{% post_link 'gptDiffusionDreamBooth' %}**       
     + image-driven
-      - {% post_link 'gptDiffusionIPAdapter' %} 
+      - **{% post_link 'gptDiffusionIPAdapter' %}** 
   + Sementic Control
   + 其他
-      - {% post_link 'gptDiffusionReferenceNet' %} 
+      - **{% post_link 'gptDiffusionReferenceNet' %}** 
 + editing
     + {% post_link 'gptDiffusionImageEdit' %}   
-    + {% post_link 'gptDiffusionImageEditWork' %}    
+    + **{% post_link 'gptDiffusionImageEditWork' %}**    
 + 人像生图
-    + {% post_link 'gptMultimodalIDCreate' %}     
+    + **{% post_link 'gptMultimodalIDCreate' %}**     
 + {% post_link 'gptDiffusionDiT' %}   
 
 ### 端到端训练LLM(LMM) 
 + {% post_link 'gptMultimodalBlip' %} 
-+ {% post_link 'gptMultimodalLlava' %}  
++ **{% post_link 'gptMultimodalLlava' %}**  
 + {% post_link 'gptMultimodalMinigpt4' %}    
 + Train  *
   + {% post_link 'gptMultimodalPretrain' %}  

@@ -34,7 +34,7 @@ top:
 
 ## Model *
 + Backbone 
-  + {% post_link 'gptTransformer' %} 
+  + **{% post_link 'gptTransformer' %}** 
   + {% post_link 'gptTransformerCode' %}  
   + {% post_link 'gptEmbedding' %}   
   + {% post_link 'gptTemperature' %}  
@@ -44,9 +44,9 @@ top:
   + {% post_link 'gptFamily' %}  
   + {% post_link 'gptChatGLM' %}    
   + LLaMA
-  	+ {% post_link 'gptLlama' %}   
+  	+ **{% post_link 'gptLlama' %}**   
   	+ {% post_link 'gptLlamaFamily' %}   
-  	+ {% post_link 'gptLlama3-1' %}  
+  	+ **{% post_link 'gptLlama3-1' %}**  
   + {% post_link 'gptLeaderBoard' %}  
 + {% post_link 'gptImpossibleTriangle' %} 
 + {% post_link 'gptEmergent' %}   
@@ -61,10 +61,10 @@ top:
   + {% post_link 'gptChineseLlama' %}   
   + 分布式
     + {% post_link 'gptTrainParallelism' %}    
-    + {% post_link 'gptTrainZeroDeepspeed' %}    
+    + **{% post_link 'gptTrainZeroDeepspeed' %}**    
     + {% post_link 'gptTrainDeepspeedPractice' %} 
   + 低精度
-    + {% post_link 'gptLowPrecision' %}    
+    + **{% post_link 'gptLowPrecision' %}**    
     + {% post_link 'gptPrecision' %}    
   
 ## Inference *
@@ -72,8 +72,8 @@ top:
   + {% post_link 'gptInferFramework' %} 
   + {% post_link 'gptInferFrameworkPractice' %} 
   + vLLM
-    + {% post_link 'gptInfervLLM' %} 
-    + {% post_link 'gptInfervLLMPractice' %}  
+    + **{% post_link 'gptInfervLLM' %}** 
+    + **{% post_link 'gptInfervLLMPractice' %}**  
   + {% post_link 'gptInferTensorRT' %} 
   + Ray
     + {% post_link 'gptInferRay' %}   
@@ -83,17 +83,17 @@ top:
   + {% post_link 'gptInferenceSurvey' %}
   + 系统层优化
     + KVCache
-      + {% post_link 'gptInferKVCache' %}  
-      + {% post_link 'gptInferKVCacheOptimize' %}
+      + **{% post_link 'gptInferKVCache' %}**  
+      + **{% post_link 'gptInferKVCacheOptimize' %}**
       + Compress  
-        + {% post_link 'gptInferKVCacheStreamingLLM' %}   Window 
-        + {% post_link 'gptInferKVCacheQuantization' %} Quantization  
-    + {% post_link 'gptFlashAttention' %} 
+        + **{% post_link 'gptInferKVCacheStreamingLLM' %}**   Window 
+        + **{% post_link 'gptInferKVCacheQuantization' %}** Quantization  
+    + **{% post_link 'gptFlashAttention' %}** 
   + 模型层优化 
     + 模型压缩
-      + {% post_link 'gptQuantization' %} 
-      + {% post_link 'gptQuantizationWeight' %} 
-      + {% post_link 'gptQuantizationPractice' %}  
+      + **{% post_link 'gptQuantization' %}** 
+      + **{% post_link 'gptQuantizationWeight' %}** 
+      + **{% post_link 'gptQuantizationPractice' %}**  
 
 ## Data 
 + List
