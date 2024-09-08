@@ -60,9 +60,12 @@ top:
   + {% post_link 'gptContinualPretraining' %}  
   + {% post_link 'gptChineseLlama' %}   
   + 分布式
-    + {% post_link 'gptTrainParallelism' %}    
+    + **{% post_link 'gptTrainParallelism' %}**  
+    + **{% post_link 'gptTrainCommunication' %}**  
     + **{% post_link 'gptTrainZeroDeepspeed' %}**    
-    + {% post_link 'gptTrainDeepspeedPractice' %} 
+    + **{% post_link 'gptTrainPipelineParallelism' %}** 
+    + **{% post_link 'gptTrainTensorParallelism' %}**
+    + **{% post_link 'gptTrainDistributedPractice' %}**
   + 低精度
     + **{% post_link 'gptLowPrecision' %}**    
     + {% post_link 'gptPrecision' %}    
