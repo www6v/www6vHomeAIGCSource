@@ -68,7 +68,7 @@ top:
     + **{% post_link 'gptTrainDistributedPractice' %}**
   + 低精度
     + **{% post_link 'gptLowPrecision' %}**    
-    + {% post_link 'gptPrecision' %}    
+    + **{% post_link 'gptPrecision' %}**    
   
 ## Inference *
 + 框架
