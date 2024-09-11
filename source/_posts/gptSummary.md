@@ -83,7 +83,8 @@ top:
     + {% post_link 'gptInferRayPractice' %}   
 + 优化
   + {% post_link 'gptInference' %}
-  + {% post_link 'gptInferenceSurvey' %}
+  + **{% post_link 'gptInferenceSurvey' %}**
+  + **{% post_link 'gptInferenceSurvey1' %}** 
   + 系统层优化
     + KVCache
       + **{% post_link 'gptInferKVCache' %}**  
