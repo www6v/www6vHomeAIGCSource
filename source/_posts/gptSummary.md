@@ -150,10 +150,9 @@ top:
   + {% post_link 'gptInstructTuningSurvey' %}  
 + BERT
   + {% post_link 'gptFineTuningBert' %}    
-+ 平台
-  + {% post_link 'gptLLamaFactory' %} 
 
-
+## 平台 
+  + **{% post_link 'gptLLamaFactory' %}**
 
 ## Prompt
   + {% post_link 'gptPromptEngineering' %}
