@@ -61,11 +61,14 @@ top:
   + {% post_link 'gptChineseLlama' %}   
   + 分布式
     + **{% post_link 'gptTrainParallelism' %}**  
-    + **{% post_link 'gptTrainCommunication' %}**  
-    + **{% post_link 'gptTrainZeroDeepspeed' %}**    
+    + **{% post_link 'gptTrainCommunication' %}**     
     + **{% post_link 'gptTrainPipelineParallelism' %}** 
     + **{% post_link 'gptTrainTensorParallelism' %}**
     + **{% post_link 'gptTrainDistributedPractice' %}**
+    + DP
+      + **{% post_link 'gptTrainZeroDeepspeed' %}** 
+      + **{% post_link 'gptTrainDDP' %}** 
+      + **{% post_link 'gptTrainFSDP' %}**  
   + 低精度
     + **{% post_link 'gptLowPrecision' %}**    
     + **{% post_link 'gptPrecision' %}**    
