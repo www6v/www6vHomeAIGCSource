@@ -1,5 +1,5 @@
 ---
-title: (实战)分布式训练
+title: (实战)DeepSpeed Training 
 date: 2023-03-25 15:55:48
 tags:
   - Deepspeed
@@ -11,8 +11,8 @@ categories:
 <p></p>
 <!-- more -->
 
-# 分布式训练
-[分布式训练](https://candied-skunk-1ca.notion.site/98541b7f8be2493eb1deda3629677d26?pvs=4)
+# DeepSpeed Training 
+[DeepSpeed Training](https://candied-skunk-1ca.notion.site/98541b7f8be2493eb1deda3629677d26?pvs=4)
 
 
 
