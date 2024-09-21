@@ -18,9 +18,9 @@ top:
 
 ## RAG *
 + Overview
-  + {% post_link 'gptRAG' %}
-  + {% post_link 'gptRAGModularRAG' %} 
-  + {% post_link 'gptRAGPerformance' %}
+  + **{% post_link 'gptRAG' %}**
+  + **{% post_link 'gptRAGModularRAG' %}**
+  + **{% post_link 'gptRAGPerformance' %}**
   + {% post_link 'gptRAGEval' %} 
   + {% post_link 'gptRAGKG' %} 
 + 实战
@@ -37,7 +37,7 @@ top:
 + phase 
   + {% post_link 'gptQueryTransformation' %}  
   + {% post_link 'gptRAGRouting' %} 
-  + {% post_link 'gptRAGIndex' %}   
+  + **{% post_link 'gptRAGIndex' %}**   
   + {% post_link 'gptRAGRerank' %} 
   + Agentic RAG
     + {% post_link 'gptAgenticRAG' %}  

@@ -13,5 +13,5 @@ categories:
 
 
 # RAG Index
-[(原理|实战)RAG Index](https://g2k95vv35o.feishu.cn/docx/R6SHddYoToQLVQxZdHycU6q1nLp?from=from_copylink)
+[(原理|实战)RAG Index](https://candied-skunk-1ca.notion.site/RAG-Index-108bfe2110848011b8d3e9ac4fd9138a?pvs=4)
 

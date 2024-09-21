@@ -11,42 +11,6 @@ categories:
 <p></p>
 <!-- more -->
 
-## 目录
-<!-- toc -->
 
-# RAG Overview[2]
-{% asset_img 'rag-overview.jpg' %}
-
-
-# RAG vs FT [2]
-{% asset_img 'rag-vs-ft.jpg' %}
-todo:  有中文翻译的图片
-
-
-
-
-# 参考
-
-### 综述
-2. 《Retrieval-Augmented Generation for Large Language Models: A Survey》
-   [面向大语言模型的检索增强生成技术：综述 [译]](https://baoyu.io/translations/ai-paper/2312.10997-retrieval-augmented-generation-for-large-language-models-a-survey)  翻译
-   [LLM之RAG理论（二）| RAG综述论文详解](https://zhuanlan.zhihu.com/p/673910600)
-   [同济大学发布最新检索增强(RAG)的LLM生成技术综述](https://cloud.tencent.com/developer/article/2373340)
-   [面向大模型的检索增强生成（RAG）综述 ](https://mp.weixin.qq.com/s/JjcN6OoxNK7tddmIOpvr2g)     
-   [大语言模型的检索增强生成 (RAG) 方法](https://www.promptingguide.ai/zh/research/rag)
-   
-3. [NLP（廿一）：从 RAG 到 Self-RAG —— LLM 的知识增强](https://zhuanlan.zhihu.com/p/661465330?utm_id=0) *** 
-
-
-1xx. 《Retrieval-Augmented Generation for AI-Generated Content: A Survey》 
-[北大最新综述精读：RAG在AIGC中的前世今生，覆盖300篇论文！](https://mp.weixin.qq.com/s/FKv9glaGZD0qbLmB2zg6bg)
-   [最新RAG综述来了！北京大学发布AIGC的检索增强技术综述](https://mp.weixin.qq.com/s?__biz=MzkzODMxNTkzNg==&mid=2247484337&idx=1&sn=484db46f6a974cb26b7659096b31cdd8)
-
-1xx.  《A Survey on RAG Meets LLMs: Towards Retrieval-Augmented Large Language Models》 
-[百度最新大模型RAG综述 | RAG 与 LLM 的融合调查：面向检索增强型大型语言模型](https://mp.weixin.qq.com/s/AqBPzewJm8dKwjz5BBu-Ag)
-[一文看懂RAG的各种套路 | 综述：当RAG遇到大语言模型](https://mp.weixin.qq.com/s/h8z4eXsemPMeL2oI_8VnvQ)
-
-1xx. [行业大模型落地的一些有趣调研总结：兼看大模型RAG问答四大技术综述](https://mp.weixin.qq.com/s/jgyIOOzRWAgilcW4HfufNQ) 四大综述
-
-
-
+# RAG综述
+[(综述)RAG](https://candied-skunk-1ca.notion.site/RAG-108bfe21108480be9c7ee46ff02a1ad6?pvs=4)
