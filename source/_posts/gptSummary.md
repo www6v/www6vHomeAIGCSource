@@ -23,9 +23,8 @@ top:
 
 ## DeepLearning
 + {% post_link 'aiDeepLearning' %}
-+ {% post_link 'gptPytorch' %} 
-+ {% post_link 'gptGPU' %} 
-+ {% post_link 'gptGPUComputing' %} 
++ **{% post_link 'gptPytorch' %}** 
+
 
 ## NLP
 + {% post_link 'gptNLPTask' %}  
@@ -154,8 +153,11 @@ top:
 + BERT
   + {% post_link 'gptFineTuningBert' %}    
 
-## 平台 
-  + **{% post_link 'gptLLamaFactory' %}**
+## LLOps 
++ **{% post_link 'gptLLamaFactory' %}**
++ **{% post_link 'gptGPUComputing' %}** 
++ {% post_link 'gptGPU' %} 
+
 
 ## Prompt
   + {% post_link 'gptPromptEngineering' %}
