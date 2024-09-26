@@ -145,7 +145,7 @@ top:
   + {% post_link 'gptPEFTPtuningPractice' %}  
   + {% post_link 'gptPromptTuningPractice' %}   
 + Lora
-  + {% post_link 'gptPEFTLora' %} 
+  + **{% post_link 'gptPEFTLora' %}** 
   + {% post_link 'gptPEFTQLora' %} 
 + Instruct Tuning *
   + {% post_link 'gptInstructTuning' %}  
@@ -153,10 +153,18 @@ top:
 + BERT
   + {% post_link 'gptFineTuningBert' %}    
 
+
+# 垂类模型
++ {% post_link 'gptDomain' %} 
++ {% post_link 'gptDomainFinance' %}   
++ {% post_link 'gptDomainMed' %}   
++ {% post_link 'gptDomainLaw' %}    
+
 ## LLOps 
 + **{% post_link 'gptLLamaFactory' %}**
 + **{% post_link 'gptGPUComputing' %}** 
 + {% post_link 'gptGPU' %} 
++ {% post_link 'gptLLMOps' %} 
 
 
 ## Prompt

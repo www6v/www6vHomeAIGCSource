@@ -19,7 +19,7 @@ categories:
 
 
 + **文本摘要** text summarization
-+ 信息提取 information extraction
++ **信息提取** information extraction
 + **问答** question answering
 + **文本分类** text classification
 + 对话 conversation
@@ -40,7 +40,7 @@ categories:
 + 概述
 从自然语言构成的**非结构化文本**中抽取指定类型的实体、关系、事件等信息，进而形成**结构化数据**。
 
-+ 命名实体识别（Named Entity Recognition， NER）
++ 命名实体识别（Named Entity Recognition，** NER**）
 + 关系抽取（Relation Extraction，RE）
 + 事件抽取（Event Extraction）
 
@@ -75,10 +75,9 @@ categories:
 # 参考
 1.《Large Language Models Meet NLP: A Survey》 
   [有趣的两个RAG大模型问答新优化思路：兼看大模型与NLP的结合范式 ](https://mp.weixin.qq.com/s/dRlkv24vTCeUiVvRGmDdQg)
-大模型时代的NLP的一些结合方式
+  大模型时代的NLP的一些结合方式
 
 2. [NLPlanet | Natural Language Processing Community](https://www.nlplanet.org/)
-
 
 3. [自然语言处理导论](https://intro-nlp.github.io/)
    第一章 绪论
