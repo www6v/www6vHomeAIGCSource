@@ -136,7 +136,7 @@ top:
 
 ## FineTuning *
 + PEFT
-  + {% post_link 'gptFineTuning' %} 
+  + **{% post_link 'gptFineTuning' %}** 
   + {% post_link 'gptFineTuningWhen' %}  
   + {% post_link 'gptFineTuningPEFT' %}  
 + Soft Prompt
