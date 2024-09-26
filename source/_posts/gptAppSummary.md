@@ -49,19 +49,21 @@ top:
 
 ## Agent *
 + Overview
-  + {% post_link 'gptAgent' %}
+  + **{% post_link 'gptAgent' %}**
   + {% post_link 'gptAgentCategory' %}
-  + {% post_link 'gptAgentList' %}  
   + {% post_link 'gptAgentPractice' %} 
-  + {% post_link 'gptAgentChallenge' %} 
-  + {% post_link 'gptAgentMemory' %}  
+  + {% post_link 'gptAgentChallenge' %}  
++ Project&Product
+  + {% post_link 'gptAgentList' %}  
 + Reflection
   + {% post_link 'gptAgentReflection' %}  
 + Planning
   + {% post_link 'gptAgentPlanning' %}     
   + {% post_link 'gptAgentPlanAndExecute' %}
++ Memory
+  + {% post_link 'gptAgentMemory' %}  
 + Multi-agent collaboration
-  + {% post_link 'gptMultiAgents' %}  
+  + **{% post_link 'gptMultiAgents' %}**  
   + {% post_link 'gptMultiAgentsPractice' %}   
   + {% post_link 'gptAgentAutogen' %}   
 + Tool use  *
