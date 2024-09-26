@@ -163,8 +163,10 @@ top:
 ## LLOps 
 + **{% post_link 'gptLLamaFactory' %}**
 + **{% post_link 'gptGPUComputing' %}** 
++ **{% post_link 'gptLLMOpsPaaS' %}**  
 + {% post_link 'gptGPU' %} 
 + {% post_link 'gptLLMOps' %} 
+
 
 
 ## Prompt
