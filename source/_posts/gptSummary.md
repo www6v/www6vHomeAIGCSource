@@ -125,7 +125,7 @@ top:
         - Instruction Quality
           + {% post_link 'gptDataSFTQuality' %} 
         - Instruction Diversity
-          + {% post_link 'gptSelfInstruct' %} 
+          + **{% post_link 'gptSelfInstruct' %}** 
         - Instruction Complexity  
           + {% post_link 'gptDataWizard' %} 
       - Task composition
