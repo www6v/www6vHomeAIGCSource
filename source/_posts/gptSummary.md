@@ -27,7 +27,7 @@ top:
 
 
 ## NLP
-+ {% post_link 'gptNLPTask' %}  
++ **{% post_link 'gptNLPTask' %}**  
 + {% post_link 'gptDocSimilarity' %}  
 + {% post_link 'gptDialogue' %}  
 
@@ -154,7 +154,7 @@ top:
   + {% post_link 'gptFineTuningBert' %}    
 
 
-# 垂类模型
+## 垂类模型
 + {% post_link 'gptDomain' %} 
 + {% post_link 'gptDomainFinance' %}   
 + {% post_link 'gptDomainMed' %}   
