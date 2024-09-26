@@ -22,7 +22,7 @@ top:
 + {% post_link 'aiMachineLearning' %}
 
 ## DeepLearning
-+ {% post_link 'aiDeepLearning' %}
++ **{% post_link 'aiDeepLearning' %}**
 + **{% post_link 'gptPytorch' %}** 
 
 
