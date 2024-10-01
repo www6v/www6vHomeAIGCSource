@@ -59,8 +59,7 @@ top:
   + {% post_link 'gptContinualPretraining' %}  
   + {% post_link 'gptChineseLlama' %}   
   + 分布式 
-    + **{% post_link 'gptTrainParallelism' %}** 
-    + **{% post_link 'gptTrainCommunication' %}**     
+    + **{% post_link 'gptTrainParallelism' %}**     
     + **{% post_link 'gptTrainPipelineParallelism' %}** 
     + **{% post_link 'gptTrainTensorParallelism' %}**
     + DP
@@ -169,12 +168,16 @@ top:
 + {% post_link 'gptLLMOps' %} 
 
 
+## MLSys
++ **{% post_link 'gptTrainCommunication' %}** 
++ **{% post_link 'gptParameterServer' %}**  
+
 
 ## Prompt
-  + {% post_link 'gptPromptEngineering' %}
-  + {% post_link 'gptCOT' %} 
-  + {% post_link 'gptPromptCode' %}
-  + {% post_link 'gptPrompt' %}
++ {% post_link 'gptPromptEngineering' %}
++ {% post_link 'gptCOT' %} 
++ {% post_link 'gptPromptCode' %}
++ {% post_link 'gptPrompt' %}
 
 ## Langchain
 + {% post_link 'gptLangchain' %}
