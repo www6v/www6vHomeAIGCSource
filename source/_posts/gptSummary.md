@@ -55,7 +55,7 @@ top:
 ## Training  *
 + 训练
   + {% post_link 'gptLargeModelTraining' %}
-  + {% post_link 'gptLargeModelTrainingPractice' %} 
+  + **{% post_link 'gptLargeModelTrainingPractice' %}** 
   + {% post_link 'gptContinualPretraining' %}  
   + {% post_link 'gptChineseLlama' %}   
   + 分布式 
