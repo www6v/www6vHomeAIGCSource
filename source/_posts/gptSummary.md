@@ -189,7 +189,7 @@ top:
 + {% post_link 'aiStudyResouce' %} 
 
 ## Research
-+ {% post_link 'gptPaperTools' %} 
++ **{% post_link 'gptPaperTools' %}** 
 + {% post_link 'gptStudyPaper' %}
 + {% post_link 'gptSurveyList' %} 
 + {% post_link 'gptAgentPaper' %}  
