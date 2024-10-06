@@ -93,12 +93,15 @@ top:
       + Compress  
         + **{% post_link 'gptInferKVCacheStreamingLLM' %}**   Window 
         + **{% post_link 'gptInferKVCacheQuantization' %}** Quantization  
-    + **{% post_link 'gptFlashAttention' %}** 
+    + FlashAttention    
+    	+ **{% post_link 'gptFlashAttention' %}** 
+    	+ **{% post_link 'gptInferFlashDecoding' %}** 
     + 调度
       + **{% post_link 'gptInferContinuousBatching' %}** 
       + **{% post_link 'gptInferChunkedPrefill' %}** 
     + PD 分离
       + **{% post_link 'gptInferDistServe' %}** 
+    + **{% post_link 'gptInferSpeculativeDecoding' %}** 
   + 模型层优化 
     + 模型压缩
       + **{% post_link 'gptQuantization' %}** 
