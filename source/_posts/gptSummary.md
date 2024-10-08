@@ -36,7 +36,6 @@ top:
   + **{% post_link 'gptTransformer' %}** 
   + {% post_link 'gptTransformerCode' %}  
   + {% post_link 'gptEmbedding' %}   
-  + {% post_link 'gptTemperature' %}  
 + Foundation Models
   + {% post_link 'gptLargeModelSurvey' %}
   + {% post_link 'gptLargeModel' %} 
@@ -107,6 +106,8 @@ top:
       + **{% post_link 'gptQuantization' %}** 
       + **{% post_link 'gptQuantizationWeight' %}** 
       + **{% post_link 'gptQuantizationPractice' %}**  
++ 其他
+  + **{% post_link 'gptTemperature' %}**  
 
 ## Data 
 + List
