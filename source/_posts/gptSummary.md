@@ -77,7 +77,7 @@ top:
   + vLLM
     + **{% post_link 'gptInfervLLM' %}** 
     + **{% post_link 'gptInfervLLMPractice' %}**  
-  + {% post_link 'gptInferTensorRT' %} 
+  + **{% post_link 'gptInferTensorRT' %}** 
   + Ray
     + {% post_link 'gptInferRay' %}   
     + {% post_link 'gptInferRayPractice' %}   
