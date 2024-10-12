@@ -90,7 +90,6 @@ top:
       + **{% post_link 'gptInferKVCache' %}**  
       + **{% post_link 'gptInferKVCacheOptimize' %}**
       + Compress  
-        + **{% post_link 'gptInferKVCacheStreamingLLM' %}**   Window 
         + **{% post_link 'gptInferKVCacheQuantization' %}** Quantization  
     + FlashAttention    
     	+ **{% post_link 'gptFlashAttention' %}** 
@@ -105,7 +104,9 @@ top:
     + 模型压缩
       + **{% post_link 'gptQuantization' %}** 
       + **{% post_link 'gptQuantizationWeight' %}** 
-      + **{% post_link 'gptQuantizationPractice' %}**  
+      + **{% post_link 'gptQuantizationPractice' %}** 
+    + Sparse Attention
+      + **{% post_link 'gptInferKVCacheStreamingLLM' %}**  
 + 其他
   + **{% post_link 'gptTemperature' %}**  
 
