@@ -103,7 +103,11 @@ top:
   + 模型层优化 
     + 模型压缩
       + **{% post_link 'gptQuantization' %}** 
-      + **{% post_link 'gptQuantizationWeight' %}** 
+      + PTQ
+          + **{% post_link 'gptQuantizationWeight' %}** 
+          + **{% post_link 'gptQuantizationInt8' %}**
+          + **{% post_link 'gptQuantizationGPTQ' %}**
+          + **{% post_link 'gptQuantizationAWQ' %}**
       + **{% post_link 'gptQuantizationPractice' %}** 
     + Sparse Attention
       + **{% post_link 'gptInferKVCacheStreamingLLM' %}**  
