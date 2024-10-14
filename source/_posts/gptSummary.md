@@ -108,6 +108,8 @@ top:
           + **{% post_link 'gptQuantizationInt8' %}**
           + **{% post_link 'gptQuantizationGPTQ' %}**
           + **{% post_link 'gptQuantizationAWQ' %}**
+          + **{% post_link 'gptQuantizationSmoothQuant' %}** 
+          + **{% post_link 'gptQuantizationFP8' %}** 
       + **{% post_link 'gptQuantizationPractice' %}** 
     + Sparse Attention
       + **{% post_link 'gptInferKVCacheStreamingLLM' %}**  
