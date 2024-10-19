@@ -99,6 +99,7 @@ top:
       + **{% post_link 'gptInferChunkedPrefill' %}** 
     + PD 分离
       + **{% post_link 'gptInferDistServe' %}** 
+      + **{% post_link 'gptInferMooncake' %}**  
     + **{% post_link 'gptInferSpeculativeDecoding' %}** 
   + 模型层优化 
     + 模型压缩
