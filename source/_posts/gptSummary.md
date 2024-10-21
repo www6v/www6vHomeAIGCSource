@@ -105,6 +105,7 @@ top:
       + **{% post_link 'gptInferSpeculativeDecodingSurvey' %}**  
   + 模型层优化 
     + 模型压缩
+      + **{% post_link 'gptQuantizationSurvey' %}**   
       + **{% post_link 'gptQuantization' %}** 
       + PTQ
           + **{% post_link 'gptQuantizationWeight' %}** 
