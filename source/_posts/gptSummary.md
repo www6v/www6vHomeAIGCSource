@@ -100,7 +100,9 @@ top:
     + PD 分离
       + **{% post_link 'gptInferDistServe' %}** 
       + **{% post_link 'gptInferMooncake' %}**  
-    + **{% post_link 'gptInferSpeculativeDecoding' %}** 
+    + SpeculativeDecoding
+      + **{% post_link 'gptInferSpeculativeDecoding' %}** 
+      + **{% post_link 'gptInferSpeculativeDecodingSurvey' %}**  
   + 模型层优化 
     + 模型压缩
       + **{% post_link 'gptQuantization' %}** 
