@@ -1,0 +1,87 @@
+---
+title: LLM 推理 汇总
+date: 2023-12-11 11:13:42
+tags:
+  - AIGC
+categories: 
+  - AIGC
+  - 汇总  
+top:
+  true
+---
+
+<p></p>
+<!-- more -->
+
+
+
+## Inference *
++ 框架
+  + {% post_link 'gptInferFramework' %} 
+  + {% post_link 'gptInferFrameworkPractice' %} 
+  + vLLM
+    + **{% post_link 'gptInfervLLM' %}** 
+    + **{% post_link 'gptInfervLLMPractice' %}**  
+  + **{% post_link 'gptInferTensorRT' %}** 
+  + Ray
+    + {% post_link 'gptInferRay' %}   
+    + {% post_link 'gptInferRayPractice' %}   
++ 优化
+  + {% post_link 'gptInference' %}
+  + **{% post_link 'gptInferenceSurvey' %}**
+  + **{% post_link 'gptInferenceSurvey1' %}** 
+  + 系统层优化
+    + Attention Opt.
+        + FlashAttention    
+            + **{% post_link 'gptFlashAttention' %}** 
+            + **{% post_link 'gptInferFlashDecoding' %}** 
+    + SpeculativeDecoding
+      + **{% post_link 'gptInferSpeculativeDecoding' %}** 
+      + **{% post_link 'gptInferSpeculativeDecodingSurvey' %}**  
+    + Memory Management
+        + KVCache
+          + **{% post_link 'gptInferKVCache' %}**  
+          + **{% post_link 'gptInferKVCacheOptimize' %}**
+          + Compress  
+            + **{% post_link 'gptInferKVCacheQuantization' %}** Quantization  
+  + 系统层优化
+    + Batch
+      + **{% post_link 'gptInferContinuousBatching' %}** 
+      + **{% post_link 'gptInferChunkedPrefill' %}** 
+    + PD 分离
+      + **{% post_link 'gptInferDistServe' %}** 
+      + **{% post_link 'gptInferMooncake' %}**  
+
+  + 模型层优化 
+    + 模型压缩
+      + **{% post_link 'gptQuantizationSurvey' %}**   
+      + **{% post_link 'gptQuantization' %}** 
+      + PTQ
+          + **{% post_link 'gptQuantizationWeight' %}** 
+          + **{% post_link 'gptQuantizationInt8' %}**
+          + **{% post_link 'gptQuantizationGPTQ' %}**
+          + **{% post_link 'gptQuantizationAWQ' %}**
+          + **{% post_link 'gptQuantizationSmoothQuant' %}** 
+          + **{% post_link 'gptQuantizationFP8' %}** 
+      + **{% post_link 'gptQuantizationPractice' %}** 
+    + Sparse Attention
+      + **{% post_link 'gptInferKVCacheStreamingLLM' %}**  
++ 其他
+  + **{% post_link 'gptTemperature' %}**  
+
+
+
+## LLOps 
++ **{% post_link 'gptLLamaFactory' %}**
++ **{% post_link 'gptGPUComputing' %}** 
++ **{% post_link 'gptLLMOpsPaaS' %}**  
++ {% post_link 'gptGPU' %} 
++ {% post_link 'gptLLMOps' %} 
+
+
+## MLSys
++ **{% post_link 'gptTrainCommunication' %}** 
++ **{% post_link 'gptParameterServer' %}**  
+
+
+
