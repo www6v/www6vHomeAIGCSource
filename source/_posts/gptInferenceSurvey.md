@@ -14,8 +14,10 @@ categories:
 
 
 # 论文
-[A Survey on Efficient Inference for Large Language Models](https://candied-skunk-1ca.notion.site/A-Survey-on-Efficient-Inference-for-Large-Language-Models-22145473188e437881bf566241492bea?pvs=4)
-  
-  
+[A Survey on Efficient Inference for Large Language Models](https://candied-skunk-1ca.notion.site/A-Survey-on-Efficient-Inference-for-Large-Language-Models-22145473188e437881bf566241492bea?pvs=4) 翻译
+
+[A Survey on Efficient Inference for Large Language Models](https://candied-skunk-1ca.notion.site/A-Survey-on-Efficient-Inference-for-Large-Language-Models-135bfe2110848034bf45ea8e5d1d2fdb?pvs=4) 总结
+
+
 # Inference Papers
 [Inference Papers](https://candied-skunk-1ca.notion.site/Inference-Papers-bd22ef1d8c274d6f9951c394a95ff427?pvs=4)
