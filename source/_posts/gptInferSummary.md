@@ -37,7 +37,10 @@ top:
             + **{% post_link 'gptInferFlashDecoding' %}** 
     + SpeculativeDecoding
       + **{% post_link 'gptInferSpeculativeDecoding' %}** 
-      + **{% post_link 'gptInferSpeculativeDecodingSurvey' %}**  
+      + **{% post_link 'gptInferSpeculativeDecodingSurvey' %}** 
+      + **{% post_link 'gptInferMedusa' %}**   
+      + **{% post_link 'gptInferEagle' %}** 
+      + **{% post_link 'gptInferSpecInfer' %}**    
     + Memory Management
         + KVCache
           + **{% post_link 'gptInferKVCache' %}**  
