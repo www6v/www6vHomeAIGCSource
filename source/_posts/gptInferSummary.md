@@ -34,6 +34,7 @@ top:
     + Attention Opt.
         + FlashAttention    
             + **{% post_link 'gptFlashAttention' %}** 
+            + **{% post_link 'gptInferFlashAttention2' %}**  
             + **{% post_link 'gptInferFlashDecoding' %}** 
     + SpeculativeDecoding
       + **{% post_link 'gptInferSpeculativeDecoding' %}** 
@@ -45,6 +46,7 @@ top:
         + KVCache
           + **{% post_link 'gptInferKVCache' %}**  
           + **{% post_link 'gptInferKVCacheOptimize' %}**
+          + **{% post_link 'gptInferKVCacheRadixAttention' %}** 
           + Compress  
             + **{% post_link 'gptInferKVCacheQuantization' %}** Quantization  
   + 系统层优化
@@ -54,19 +56,22 @@ top:
     + PD 分离
       + **{% post_link 'gptInferDistServe' %}** 
       + **{% post_link 'gptInferMooncake' %}**  
-
+  
   + 模型层优化 
     + 模型压缩
-      + **{% post_link 'gptQuantizationSurvey' %}**   
-      + **{% post_link 'gptQuantization' %}** 
-      + PTQ
-          + **{% post_link 'gptQuantizationWeight' %}** 
-          + **{% post_link 'gptQuantizationInt8' %}**
-          + **{% post_link 'gptQuantizationGPTQ' %}**
-          + **{% post_link 'gptQuantizationAWQ' %}**
-          + **{% post_link 'gptQuantizationSmoothQuant' %}** 
-          + **{% post_link 'gptQuantizationFP8' %}** 
-      + **{% post_link 'gptQuantizationPractice' %}** 
+      + 量化
+          + **{% post_link 'gptQuantizationSurvey' %}**   
+          + **{% post_link 'gptQuantization' %}** 
+          + PTQ
+              + **{% post_link 'gptQuantizationWeight' %}** 
+              + Weight Only 
+              	+ **{% post_link 'gptQuantizationInt8' %}**
+              	+ **{% post_link 'gptQuantizationGPTQ' %}**
+              	+ **{% post_link 'gptQuantizationAWQ' %}**
+              + Weight&Activation
+              	+ **{% post_link 'gptQuantizationSmoothQuant' %}** 
+              + **{% post_link 'gptQuantizationFP8' %}** 
+          + **{% post_link 'gptQuantizationPractice' %}** 
     + Sparse Attention
       + **{% post_link 'gptInferKVCacheStreamingLLM' %}**  
 + 其他
