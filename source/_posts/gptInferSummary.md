@@ -41,7 +41,8 @@ top:
       + **{% post_link 'gptInferSpeculativeDecodingSurvey' %}** 
       + **{% post_link 'gptInferMedusa' %}**   
       + **{% post_link 'gptInferEagle' %}** 
-      + **{% post_link 'gptInferSpecInfer' %}**    
+      + **{% post_link 'gptInferSpecInfer' %}**   
+      + **{% post_link 'gptInferSpeculativeDecodingvLLM' %}**    
     + Memory Management
         + KVCache
           + **{% post_link 'gptInferKVCache' %}**  
@@ -65,10 +66,10 @@ top:
           + PTQ
               + **{% post_link 'gptQuantizationWeight' %}** 
               + Weight Only 
-              	+ **{% post_link 'gptQuantizationInt8' %}**
               	+ **{% post_link 'gptQuantizationGPTQ' %}**
               	+ **{% post_link 'gptQuantizationAWQ' %}**
               + Weight&Activation
+              	+ **{% post_link 'gptQuantizationInt8' %}**              
               	+ **{% post_link 'gptQuantizationSmoothQuant' %}** 
               + **{% post_link 'gptQuantizationFP8' %}** 
           + **{% post_link 'gptQuantizationPractice' %}** 
