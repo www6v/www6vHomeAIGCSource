@@ -34,6 +34,8 @@ top:
 ## Model *
 + Backbone 
   + **{% post_link 'gptTransformer' %}** 
+  + **{% post_link 'gptSelfAttention' %}** 
+  + **{% post_link 'gptModelGQA' %}**   
   + {% post_link 'gptTransformerCode' %}  
   + {% post_link 'gptEmbedding' %}   
 + Foundation Models
