@@ -1,5 +1,5 @@
 ---
-title: LLM 推理 汇总
+title: MLSys  汇总
 date: 2023-12-11 11:13:42
 tags:
   - AIGC
@@ -80,6 +80,22 @@ top:
 
 
 
+## Training  *
++ 分布式 
+    + **{% post_link 'gptTrainParallelism' %}**     
+    + **{% post_link 'gptTrainPipelineParallelism' %}** 
+    + **{% post_link 'gptTrainTensorParallelism' %}**
+    + DP
+      + **{% post_link 'gptTrainZeroDeepspeed' %}** 
+      + **{% post_link 'gptTrainDistributedPractice' %}**
+      + **{% post_link 'gptTrainDDP' %}** 
+      + **{% post_link 'gptTrainFSDP' %}**  
++ 低精度
+    + **{% post_link 'gptLowPrecision' %}**    
+    + **{% post_link 'gptPrecision' %}**    
+
+
+
 ## LLOps 
 + **{% post_link 'gptLLamaFactory' %}**
 + **{% post_link 'gptGPUComputing' %}** 
@@ -92,7 +108,6 @@ top:
 + **{% post_link 'gptMLSysCUDA' %}** 
 + **{% post_link 'gptTrainCommunication' %}** 
 + **{% post_link 'gptParameterServer' %}**  
-
 
 
 

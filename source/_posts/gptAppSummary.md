@@ -73,10 +73,18 @@ top:
   + {% post_link 'gptAgentTuning' %}   
   + {% post_link 'gptAgentToolformer' %}  
 
+## Prompt
++ {% post_link 'gptPromptEngineering' %}
++ {% post_link 'gptCOT' %} 
++ {% post_link 'gptPromptCode' %}
++ {% post_link 'gptPrompt' %}
+
+## Langchain
++ {% post_link 'gptLangchain' %}
++ {% post_link 'gptRetrievers' %} 
++ {% post_link 'gptLangchainAgent' %} 
+
 ## Application
 + {% post_link 'gpt' %}
 + {% post_link 'gptVectorStore' %}
 + {% post_link 'gptNL2SQL' %} 
-
-
-

@@ -53,26 +53,6 @@ top:
 + {% post_link 'gptHallucination' %}    
 + {% post_link 'gptEval' %}     
 
-## Training  *
-+ 训练
-  + {% post_link 'gptLargeModelTraining' %}
-  + **{% post_link 'gptLargeModelTrainingPractice' %}** 
-  + {% post_link 'gptContinualPretraining' %}  
-  + {% post_link 'gptChineseLlama' %}   
-  + 分布式 
-    + **{% post_link 'gptTrainParallelism' %}**     
-    + **{% post_link 'gptTrainPipelineParallelism' %}** 
-    + **{% post_link 'gptTrainTensorParallelism' %}**
-    + DP
-      + **{% post_link 'gptTrainZeroDeepspeed' %}** 
-      + **{% post_link 'gptTrainDistributedPractice' %}**
-      + **{% post_link 'gptTrainDDP' %}** 
-      + **{% post_link 'gptTrainFSDP' %}**  
-  + 低精度
-    + **{% post_link 'gptLowPrecision' %}**    
-    + **{% post_link 'gptPrecision' %}**    
-  
-
 ## Data 
 + List
   + {% post_link 'gptDataSet' %} 
@@ -104,6 +84,13 @@ top:
       + {% post_link 'gptDataSelection' %} 
 
 
+## Training  *
++ 训练
+  + {% post_link 'gptLargeModelTraining' %}
+  + **{% post_link 'gptLargeModelTrainingPractice' %}** 
+  + {% post_link 'gptContinualPretraining' %}  
+  + {% post_link 'gptChineseLlama' %}   
+
 ## FineTuning *
 + PEFT
   + **{% post_link 'gptFineTuning' %}** 
@@ -129,17 +116,6 @@ top:
 + {% post_link 'gptDomainFinance' %}   
 + {% post_link 'gptDomainMed' %}   
 + {% post_link 'gptDomainLaw' %}    
-
-## Prompt
-+ {% post_link 'gptPromptEngineering' %}
-+ {% post_link 'gptCOT' %} 
-+ {% post_link 'gptPromptCode' %}
-+ {% post_link 'gptPrompt' %}
-
-## Langchain
-+ {% post_link 'gptLangchain' %}
-+ {% post_link 'gptRetrievers' %} 
-+ {% post_link 'gptLangchainAgent' %} 
 
 ## Study
 + {% post_link 'gptStudy' %}
