@@ -92,7 +92,9 @@ top:
     	+ **{% post_link 'gptTrainTensorParallelism' %}**      
     + PP     
     	+ **{% post_link 'gptTrainPipelineParallelism' %}**
-    + **{% post_link 'gptTrainMegatron' %}**   
+    + 混合并行
+    	+ **{% post_link 'gptTrainMegatron' %}**  
+    	+ **{% post_link 'gptTrainHybridParallel' %}**   
 + 低精度
     + **{% post_link 'gptLowPrecision' %}**    
     + **{% post_link 'gptPrecision' %}**    
