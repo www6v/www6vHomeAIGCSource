@@ -82,18 +82,20 @@ top:
 
 ## Training  *
 + 分布式 
-    + **{% post_link 'gptTrainParallelism' %}**     
-    + **{% post_link 'gptTrainPipelineParallelism' %}** 
-    + **{% post_link 'gptTrainTensorParallelism' %}**
+    + **{% post_link 'gptTrainParallelism' %}**
     + DP
       + **{% post_link 'gptTrainZeroDeepspeed' %}** 
       + **{% post_link 'gptTrainDistributedPractice' %}**
       + **{% post_link 'gptTrainDDP' %}** 
-      + **{% post_link 'gptTrainFSDP' %}**  
+      + **{% post_link 'gptTrainFSDP' %}**
+    + TP 
+    	+ **{% post_link 'gptTrainTensorParallelism' %}**      
+    + PP     
+    	+ **{% post_link 'gptTrainPipelineParallelism' %}**
+    + **{% post_link 'gptTrainMegatron' %}**   
 + 低精度
     + **{% post_link 'gptLowPrecision' %}**    
     + **{% post_link 'gptPrecision' %}**    
-
 
 
 ## LLOps 
