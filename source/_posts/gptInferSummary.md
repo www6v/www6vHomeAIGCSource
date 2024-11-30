@@ -57,7 +57,7 @@ top:
     + PD 分离
       + **{% post_link 'gptInferDistServe' %}** 
       + **{% post_link 'gptInferMooncake' %}**  
-  
+      + **{% post_link 'gptInferLlumnix' %}**     
   + 模型层优化 
     + 模型压缩
       + 量化
@@ -71,7 +71,7 @@ top:
               + Weight&Activation
               	+ **{% post_link 'gptQuantizationInt8' %}**              
               	+ **{% post_link 'gptQuantizationSmoothQuant' %}** 
-              + **{% post_link 'gptQuantizationFP8' %}** 
+              	+ **{% post_link 'gptQuantizationFP8' %}** 
           + **{% post_link 'gptQuantizationPractice' %}** 
     + Sparse Attention
       + **{% post_link 'gptInferKVCacheStreamingLLM' %}**  
