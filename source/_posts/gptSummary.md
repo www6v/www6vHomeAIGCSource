@@ -48,9 +48,10 @@ top:
   	+ {% post_link 'gptLlamaFamily' %}   
   	+ **{% post_link 'gptLlama3-1' %}**  
   + {% post_link 'gptLeaderBoard' %}  
-+ {% post_link 'gptImpossibleTriangle' %} 
++ {% post_link 'gptScalingLaw' %} * 
 + {% post_link 'gptEmergent' %}   
-+ {% post_link 'gptHallucination' %}    
++ {% post_link 'gptHallucination' %} * 
++ {% post_link 'gptImpossibleTriangle' %}    
 + {% post_link 'gptEval' %}     
 
 ## Data 
