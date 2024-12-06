@@ -104,7 +104,7 @@ top:
   + {% post_link 'gptPromptTuningPractice' %}   
 + Lora
   + **{% post_link 'gptPEFTLora' %}** 
-  + {% post_link 'gptPEFTQLora' %} 
+  + **{% post_link 'gptPEFTQLora' %}** 
 + Instruct Tuning *
   + {% post_link 'gptInstructTuning' %}  
   + {% post_link 'gptInstructTuningSurvey' %}  
