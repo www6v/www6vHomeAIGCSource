@@ -32,21 +32,24 @@ top:
       + {% post_link 'gptRAGchatchat' %}   
       + {% post_link 'gptRAGQanything' %}   
       + {% post_link 'gptRAGRAGflow' %}   
-+ 案例 
-  + {% post_link 'gptRAGOpenAI' %} 
-  + {% post_link 'gptRAGBaichuan' %}   
++ Pattern
+  + **{% post_link 'gptRAGPattern' %}**  
+  + Agentic RAG
+    + {% post_link 'gptAgenticRAG' %}  
+    + {% post_link 'gptRAGSelfReflective' %} 
+  + Multimodal RAG  *
+    + {% post_link 'gptRAGMultimodal' %}  
+    + {% post_link 'gptRAGMultimodalPractice' %}   
+    + {% post_link 'gptDocumentAI' %}    
 + phase 
   + {% post_link 'gptQueryTransformation' %}  
   + {% post_link 'gptRAGRouting' %} 
   + **{% post_link 'gptRAGIndex' %}**   
   + {% post_link 'gptRAGRerank' %} 
-  + Agentic RAG
-    + {% post_link 'gptAgenticRAG' %}  
-    + {% post_link 'gptRAGSelfReflective' %} 
-+ Multimodal RAG  *
-  + {% post_link 'gptRAGMultimodal' %}  
-  + {% post_link 'gptRAGMultimodalPractice' %}   
-  + {% post_link 'gptDocumentAI' %}   
++ 案例 
+  + {% post_link 'gptRAGOpenAI' %} 
+  + {% post_link 'gptRAGBaichuan' %} 
+
 
 ## Agent *
 + Overview
