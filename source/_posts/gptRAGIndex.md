@@ -1,5 +1,5 @@
 ---
-title: (原理|实战)RAG Index
+title:  (原理|实战) Index&Chunk
 date: 2023-05-21 17:09:42
 tags:
   - RAG
@@ -12,6 +12,6 @@ categories:
 <!-- more -->
 
 
-# RAG Index
-[(原理|实战)RAG Index](https://candied-skunk-1ca.notion.site/RAG-Index-108bfe2110848011b8d3e9ac4fd9138a?pvs=4)
+#  Index&Chunk
+[ (原理|实战) Index&Chunk](https://candied-skunk-1ca.notion.site/Index-Chunk-109bfe21108480558752d5f4e9a72dd6?pvs=4)
 
