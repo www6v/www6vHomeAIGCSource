@@ -24,6 +24,7 @@ top:
   + {% post_link 'gptRAGEval' %} 
   + {% post_link 'gptRAGKG' %} 
 + 实战
+  + **{% post_link 'gptRAGBestPractice' %}** 
   + {% post_link 'gptRAGPractice' %}
   + {% post_link 'gptRAGOptimize' %}
   + framework
