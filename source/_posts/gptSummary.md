@@ -93,25 +93,25 @@ top:
   + {% post_link 'gptChineseLlama' %}   
 
 ## FineTuning *
-+ PEFT
-  + **{% post_link 'gptFineTuning' %}** 
-  + {% post_link 'gptFineTuningWhen' %}  
-  + {% post_link 'gptFineTuningPEFT' %}  
-+ Soft Prompt
-  + {% post_link 'gptPromptTuning' %} 
-  + {% post_link 'gptPEFTPtuning' %}  
-  + {% post_link 'gptPEFTPtuningPractice' %}  
-  + {% post_link 'gptPromptTuningPractice' %}   
-+ Lora
-  + **{% post_link 'gptPEFTLora' %}** 
-  + **{% post_link 'gptPEFTQLora' %}** 
 + Instruct Tuning *
   + {% post_link 'gptInstructTuning' %}  
-  + {% post_link 'gptInstructTuningSurvey' %}  
-+ BERT
-  + {% post_link 'gptFineTuningBert' %}    
-
-
+  + {% post_link 'gptInstructTuningSurvey' %} 
++ 实践
+  + **{% post_link 'gptFineTuningBestPractice' %}** 
+  + {% post_link 'gptFineTuningWhen' %}  
+  + {% post_link 'gptFineTuningBert' %} 
++ PEFT
+  + **{% post_link 'gptFineTuning' %}** 
+  + {% post_link 'gptFineTuningPEFT' %}  
+  + Soft Prompt
+    + {% post_link 'gptPromptTuning' %} 
+    + {% post_link 'gptPEFTPtuning' %}  
+    + {% post_link 'gptPEFTPtuningPractice' %}  
+    + {% post_link 'gptPromptTuningPractice' %}   
+  + Lora
+    + **{% post_link 'gptPEFTLora' %}** 
+    + **{% post_link 'gptPEFTQLora' %}** 
+   
 ## 垂类模型
 + **{% post_link 'gptDomain' %}** 
 + {% post_link 'gptDomainFinance' %}   
