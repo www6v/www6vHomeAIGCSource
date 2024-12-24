@@ -17,12 +17,8 @@ top:
 <!-- toc -->
 
 ## RAG *
-+ Overview
-  + **{% post_link 'gptRAG' %}**
-  + **{% post_link 'gptRAGModularRAG' %}**
-  + **{% post_link 'gptRAGPerformance' %}**
-  + {% post_link 'gptRAGEval' %} 
-  + {% post_link 'gptRAGKG' %} 
+
+---
 + 实战
   + **{% post_link 'gptRAGBestPractice' %}** 
   + {% post_link 'gptRAGPractice' %}
@@ -31,7 +27,9 @@ top:
       + {% post_link 'gptRAGFramework' %} 
       + {% post_link 'gptRAGchatchat' %}   
       + {% post_link 'gptRAGQanything' %}   
-      + {% post_link 'gptRAGRAGflow' %}   
+      + {% post_link 'gptRAGRAGflow' %}  
+---
+
 + Pattern
   + **{% post_link 'gptRAGPattern' %}**  
   + Agentic RAG
