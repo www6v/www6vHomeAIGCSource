@@ -16,39 +16,6 @@ top:
 ## 目录
 <!-- toc -->
 
-## RAG *
-
----
-+ 实战
-  + **{% post_link 'gptRAGBestPractice' %}** 
-  + {% post_link 'gptRAGPractice' %}
-  + {% post_link 'gptRAGOptimize' %}
-  + framework
-      + {% post_link 'gptRAGFramework' %} 
-      + {% post_link 'gptRAGchatchat' %}   
-      + {% post_link 'gptRAGQanything' %}   
-      + {% post_link 'gptRAGRAGflow' %}  
----
-
-+ Pattern
-  + **{% post_link 'gptRAGPattern' %}**  
-  + Agentic RAG
-    + {% post_link 'gptAgenticRAG' %}  
-    + {% post_link 'gptRAGSelfReflective' %} 
-  + Multimodal RAG  *
-    + {% post_link 'gptRAGMultimodal' %}  
-    + {% post_link 'gptRAGMultimodalPractice' %}   
-    + {% post_link 'gptDocumentAI' %}    
-+ phase 
-  + {% post_link 'gptQueryTransformation' %}  
-  + {% post_link 'gptRAGRouting' %} 
-  + **{% post_link 'gptRAGIndex' %}**   
-  + {% post_link 'gptRAGRerank' %} 
-+ 案例 
-  + {% post_link 'gptRAGOpenAI' %} 
-  + {% post_link 'gptRAGBaichuan' %} 
-
-
 ## Agent *
 + Overview
   + **{% post_link 'gptAgent' %}**
