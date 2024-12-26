@@ -42,12 +42,6 @@ top:
   + {% post_link 'gptAgentTuning' %}   
   + {% post_link 'gptAgentToolformer' %}  
 
-## Prompt
-+ {% post_link 'gptPromptEngineering' %}
-+ {% post_link 'gptCOT' %} 
-+ {% post_link 'gptPromptCode' %}
-+ {% post_link 'gptPrompt' %}
-
 ## Application
 + {% post_link 'gpt' %}
 + {% post_link 'gptVectorStore' %}
