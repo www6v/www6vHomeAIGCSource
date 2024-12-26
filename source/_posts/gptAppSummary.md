@@ -41,8 +41,3 @@ top:
   + {% post_link 'gptAgentToolGorilla' %}   
   + {% post_link 'gptAgentTuning' %}   
   + {% post_link 'gptAgentToolformer' %}  
-
-## Application
-+ {% post_link 'gpt' %}
-+ {% post_link 'gptVectorStore' %}
-+ {% post_link 'gptNL2SQL' %} 
