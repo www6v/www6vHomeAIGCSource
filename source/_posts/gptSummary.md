@@ -61,25 +61,7 @@ top:
   + {% post_link 'gptContinualPretraining' %}  
   + {% post_link 'gptChineseLlama' %}   
 
-## FineTuning *
-+ Instruct Tuning *
-  + {% post_link 'gptInstructTuning' %}  
-  + {% post_link 'gptInstructTuningSurvey' %} 
-+ 实践
-  + **{% post_link 'gptFineTuningBestPractice' %}** 
-  + {% post_link 'gptFineTuningWhen' %}  
-  + {% post_link 'gptFineTuningBert' %} 
-+ PEFT
-  + **{% post_link 'gptFineTuning' %}** 
-  + {% post_link 'gptFineTuningPEFT' %}  
-  + Soft Prompt
-    + {% post_link 'gptPromptTuning' %} 
-    + {% post_link 'gptPEFTPtuning' %}  
-    + {% post_link 'gptPEFTPtuningPractice' %}  
-    + {% post_link 'gptPromptTuningPractice' %}   
-  + Lora
-    + **{% post_link 'gptPEFTLora' %}** 
-    + **{% post_link 'gptPEFTQLora' %}** 
+
 
 ## Data 
 + List
