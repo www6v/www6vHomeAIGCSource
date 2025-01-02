@@ -60,6 +60,5 @@ categories:
 1. [预训练模型的下一步？突破Impossible Triangle](https://zhuanlan.zhihu.com/p/501381510)
 2. [Impossible Triangle: What’s Next for Pre-trained Language Models?](https://arxiv.org/pdf/2204.06130.pdf)
 3. [微软朱晨光：预训练模型下一步怎么走？突破PLM的「不可能三角」](https://blog.csdn.net/zandaoguang/article/details/124395479)
-4. {% post_link 'gptPromptTuning' %} self
-
+4. [Go to Page](gptPromptTuning.md)  self
 

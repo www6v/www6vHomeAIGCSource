@@ -62,7 +62,7 @@ categories:
 
 1xx. [合成数据(Synthetic data)微调大语言模型实战指南：背景、方案、案例、代码、评估 ](https://mp.weixin.qq.com/s?__biz=Mzg5NTc2OTcyOQ==&mid=2247488088&idx=1&sn=f401a5a12e7b3727a15abbcff1a0ec51)
 
-50. {% post_link 'gptInstructTuning' %} self
+50.  [Go to Page](gptInstructTuning.md)   self
 
 
 ### 数据增强
