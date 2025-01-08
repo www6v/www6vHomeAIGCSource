@@ -23,6 +23,12 @@ top:
 
 ## DeepLearning
 + **{% post_link 'aiDeepLearning' %}**
++ 正则化
+  - **{% post_link 'gptDeeplearningWeightDecay' %}** 
+  - **{% post_link 'gptDeeplearningDropout' %}**  
++ 网络优化
+  - **{% post_link 'gptDeeplearningLearningRate' %}**  
+  - **{% post_link 'gptDeeplearningNorm' %}**  
 + **{% post_link 'gptPytorch' %}** 
 
 
