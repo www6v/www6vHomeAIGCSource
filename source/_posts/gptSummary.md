@@ -23,6 +23,7 @@ top:
 
 ## DeepLearning
 + **{% post_link 'aiDeepLearning' %}**
++ **{% post_link 'gptDeeplearningForwardBackward' %}**
 + 正则化
   - **{% post_link 'gptDeeplearningWeightDecay' %}** 
   - **{% post_link 'gptDeeplearningDropout' %}**  
