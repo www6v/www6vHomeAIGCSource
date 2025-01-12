@@ -2,10 +2,10 @@
 title: LLaMA
 date: 2023-01-01 19:35:09
 tags:
-  - LLaMA
+  - model
 categories:
   - AIGC  
-  - LLaMA
+  - model
 ---
 
 <p></p>

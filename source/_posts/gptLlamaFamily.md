@@ -2,10 +2,10 @@
 title: LLaMA 家族
 date: 2023-02-24 22:14:52
 tags:
-  - LLaMA
+  - model
 categories:
   - AIGC  
-  - LLaMA
+  - model
 ---
 
 <p></p>
@@ -38,11 +38,11 @@ categories:
 1xx. [我想学大模型，应该从哪个模型开始？LLaMA生态家谱整理和分析 ](https://mp.weixin.qq.com/s?__biz=MzUyOTA5OTcwMg==&mid=2247485019&idx=1&sn=e3417472c0c1f98aede498fbe905e1a0&)
 
 1xx. [NLP（九）：LLaMA, Alpaca, ColossalChat 系列模型研究](https://zhuanlan.zhihu.com/p/618695885)
-   
+
 1xx. <<千帆增强版 Llama 2-提升大模型对话指令遵循能力>>  v
 
 1xx. [近期大模型动态：LLaMA-2-7B-32K的训练数据组织情况及面向儿童心理健康领域的微调模型推介 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648402185&idx=2&sn=55901b89381e27aedee56c69041f6af8)    llama-2-7b-32k -  LLaMA-2的上下文长度为4Ktoken。要将其扩展到32K上下文，该工作分成了三个部分：建模、数据和系统优化。
-  
+
 ### 实战
 1xx.  [从0到1复现斯坦福羊驼（Stanford Alpaca 7B）](https://zhuanlan.zhihu.com/p/618321077) 
     GPUs: 8 卡 A800 80GB GPUs

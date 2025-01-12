@@ -49,11 +49,14 @@ top:
 + Foundation Models
   + {% post_link 'gptLargeModelSurvey' %}
   + {% post_link 'gptLargeModel' %} 
-  + {% post_link 'gptFamily' %}    
-  + LLaMA
-  	+ **{% post_link 'gptLlama' %}**   
-  	+ {% post_link 'gptLlamaFamily' %}   
-  	+ **{% post_link 'gptLlama3-1' %}**  
+  + decode-only
+  	+ {% post_link 'gptFamily' %}    
+  	+ LLaMA
+  		+ **{% post_link 'gptLlama' %}**   
+  		+ {% post_link 'gptLlamaFamily' %}   
+  		+ **{% post_link 'gptLlama3-1' %}** 
+  + encode-only
+    + **{% post_link 'gptBERT' %}**  
   + {% post_link 'gptLeaderBoard' %}  
 + {% post_link 'gptScalingLaw' %} * 
 + {% post_link 'gptEmergent' %}   

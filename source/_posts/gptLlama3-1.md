@@ -2,10 +2,10 @@
 title: Llama3.1
 date: 2024-09-04 12:24:07
 tags:
-  - LLaMA
+  - model
 categories:
   - AIGC  
-  - LLaMA
+  - model
 ---
 
 <p></p>
