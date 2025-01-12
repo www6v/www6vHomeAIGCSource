@@ -24,6 +24,7 @@ top:
 ## DeepLearning
 + **{% post_link 'aiDeepLearning' %}**
 + **{% post_link 'gptDeeplearningForwardBackward' %}**
++ **{% post_link 'gptDeeplearningLoss' %}**
 + 正则化
   - **{% post_link 'gptDeeplearningWeightDecay' %}** 
   - **{% post_link 'gptDeeplearningDropout' %}**  
@@ -48,8 +49,7 @@ top:
 + Foundation Models
   + {% post_link 'gptLargeModelSurvey' %}
   + {% post_link 'gptLargeModel' %} 
-  + {% post_link 'gptFamily' %}  
-  + {% post_link 'gptChatGLM' %}    
+  + {% post_link 'gptFamily' %}    
   + LLaMA
   	+ **{% post_link 'gptLlama' %}**   
   	+ {% post_link 'gptLlamaFamily' %}   
