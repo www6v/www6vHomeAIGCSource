@@ -31,6 +31,13 @@ top:
 + 网络优化
   - **{% post_link 'gptDeeplearningLearningRate' %}**  
   - **{% post_link 'gptDeeplearningNorm' %}**  
++ Transformer
+  + **{% post_link 'gptTransformer' %}** 
+  + **{% post_link 'gptSelfAttention' %}** 
+  + **{% post_link 'gptModelGQA' %}**   
+  + {% post_link 'gptTransformerCode' %}  
+  + {% post_link 'gptEmbedding' %}   
+  + {% post_link 'gptTrainTokenizer' %} 
 + **{% post_link 'gptPytorch' %}** 
 
 
@@ -40,12 +47,6 @@ top:
 + {% post_link 'gptDialogue' %}  
 
 ## Model *
-+ Backbone 
-  + **{% post_link 'gptTransformer' %}** 
-  + **{% post_link 'gptSelfAttention' %}** 
-  + **{% post_link 'gptModelGQA' %}**   
-  + {% post_link 'gptTransformerCode' %}  
-  + {% post_link 'gptEmbedding' %}   
 + Foundation Models
   + {% post_link 'gptLargeModelSurvey' %}
   + {% post_link 'gptLargeModel' %} 
@@ -71,14 +72,15 @@ top:
   + {% post_link 'gptContinualPretraining' %}  
   + {% post_link 'gptChineseLlama' %}   
 
-
++ Data
+  + {% post_link 'gptDataSetPretrainList' %} 
+  + Pretrain  
+    + {% post_link 'gptDataRefinedWeb' %}   
 
 ## Data 
 + List
   + {% post_link 'gptDataSet' %} 
-  + {% post_link 'gptDataSetPretrainList' %} 
-  + {% post_link 'gptDatasetSFTList' %}  
-  + {% post_link 'gptDatasetMulitmodal' %}   
+  + {% post_link 'gptDatasetSFTList' %}   
 + DataProcess
   + {% post_link 'gptDatasetSurvey' %} 
   + {% post_link 'gptDataProcess' %}  
@@ -86,9 +88,6 @@ top:
   + {% post_link 'gptDataProcessAnnotation' %}
 + Data Management
     + {% post_link 'gptDataManagement' %}  
-    + Pretrain  
-      + {% post_link 'gptDataRefinedWeb' %}  
-      + {% post_link 'gptTrainTokenizer' %}  
     + SFT 
       - Data Quality
         - Instruction Quality

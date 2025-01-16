@@ -80,6 +80,9 @@ top:
   + {% post_link 'gptAgentWeb' %}  
   + {% post_link 'gptAgentMultimodalApp' %}  
 
+### Data
+  + {% post_link 'gptDatasetMulitmodal' %}  
+
 # Vision
 + {% post_link 'gptVisionTask' %}  
 
