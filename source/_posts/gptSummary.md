@@ -29,8 +29,9 @@ top:
   - **{% post_link 'gptDeeplearningWeightDecay' %}** 
   - **{% post_link 'gptDeeplearningDropout' %}**  
 + 网络优化
-  - **{% post_link 'gptDeeplearningLearningRate' %}**  
-  - **{% post_link 'gptDeeplearningNorm' %}**  
+  - **{% post_link 'gptDeeplearningLearningRate' %}**   
+  - **{% post_link 'gptDeeplearningBatchsize' %}**
+  - **{% post_link 'gptDeeplearningNorm' %}** 
 + Transformer
   + **{% post_link 'gptTransformer' %}** 
   + **{% post_link 'gptSelfAttention' %}** 
@@ -88,19 +89,6 @@ top:
   + {% post_link 'gptDataProcessAnnotation' %}
 + Data Management
     + {% post_link 'gptDataManagement' %}  
-    + SFT 
-      - Data Quality
-        - Instruction Quality
-          + {% post_link 'gptDataSFTQuality' %} 
-        - Instruction Diversity
-          + **{% post_link 'gptSelfInstruct' %}** 
-          + **{% post_link 'gptDataSelfQA' %}**  
-        - Instruction Complexity  
-          + {% post_link 'gptDataWizard' %} 
-      - Task composition
-        + **{% post_link 'gptDatasetSFT' %}**   
-      + **{% post_link 'gptDataSFTScaling' %}**  
-      + {% post_link 'gptDataSelection' %} 
 
 ## 垂类模型
 + **{% post_link 'gptDomain' %}** 
