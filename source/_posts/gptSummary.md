@@ -80,8 +80,7 @@ top:
 
 ## Data 
 + List
-  + {% post_link 'gptDataSet' %} 
-  + {% post_link 'gptDatasetSFTList' %}   
+  + {% post_link 'gptDataSet' %}  
 + DataProcess
   + {% post_link 'gptDatasetSurvey' %} 
   + {% post_link 'gptDataProcess' %}  
