@@ -1,5 +1,5 @@
 ---
-title:   (实战)Diffusion 
+title:   (实战)Stable Diffusion 
 date: 2023-07-09 15:45:26
 tags:
   - multimodal

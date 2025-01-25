@@ -12,10 +12,9 @@ categories:
 <!-- more -->
 
 
-
-
 # 实战
-+ [ControlNet + t2i_adapter + Custom Diffusion ](https://candied-skunk-1ca.notion.site/controllable-763edf3a43b94e03a1ff0faee9ac41c2?pvs=4)  diffusers
++ [ControlNet + t2i_adapter ](https://candied-skunk-1ca.notion.site/controllable-763edf3a43b94e03a1ff0faee9ac41c2?pvs=4)  diffusers
++ [Custom Diffusion](https://candied-skunk-1ca.notion.site/concept-customization-067033e842b044729d81aed1d96608fd?pvs=4)  diffusers
 
 
 # 总结[metaso]

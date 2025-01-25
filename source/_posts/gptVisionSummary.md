@@ -22,10 +22,21 @@ top:
 + {% post_link 'gptMultimodalSurvey' %}
 + {% post_link 'gptMultimodalSeries' %}  
 
-
-
 ### 视觉理解
-+ **{% post_link 'gptMultimodalEncoder' %}** 
++ Vision Encoder
+  - multimodal learning
+  	+ {% post_link 'gptMultimodalCLIP' %}  
+    + {% post_link 'gptMultimodalCLIPPractice' %}
+  - Supervised Learning
+    + {% post_link 'gptMultimodalVit' %}
+  - self-distillation
+    +  **[DINO](https://candied-skunk-1ca.notion.site/DINO-ac5b90014a01494ea1311f4d24af38dd?pvs=4)** 
+    +  **[DINOv2](https://candied-skunk-1ca.notion.site/DINOv2-b3d258bbb20f42bbac0ef6ca6f093f9d?pvs=4)**
+  - Auto-encoding
+    + **[VQVAE](https://candied-skunk-1ca.notion.site/VQ-VAE-e56af23289844662b653be10667bf239?pvs=4)**
+  - Masked Modeling
+    + MAE
+
 + **{% post_link 'gptMultimodalConnector' %}**  	
 + Segmentation   
 	  + {% post_link 'gptMultimodalSAM' %}  
@@ -33,11 +44,12 @@ top:
 
 ### 生成
 + Diffusion
-  + **{% post_link 'gptMultimodalDiffusion' %}**   
-  + {% post_link 'gptMultimodalDiffusionPractice' %}  
-  + **{% post_link 'gptDiffusionXL' %}**   
   + **{% post_link 'gptDiffusionunCLIP' %}** 
   + **{% post_link 'gptDiffusionGuidance' %}**   
+  + Stable Diffusion
+    + **{% post_link 'gptMultimodalDiffusion' %}**   
+    + **{% post_link 'gptMultimodalDiffusionPractice' %}**  
+    + **{% post_link 'gptDiffusionXL' %}**   
 + Controllable  
   + **{% post_link 'gptDiffusionControllable' %}** 
   + **{% post_link 'gptDiffusionControllableWork' %}**
