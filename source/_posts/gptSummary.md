@@ -60,6 +60,9 @@ top:
   + encode-only
     + **{% post_link 'gptBERT' %}**  
   + {% post_link 'gptLeaderBoard' %}  
+  + MOE
+    + **{% post_link 'gptDeepSeek' %}** 
+    + **{% post_link 'gptDeepSeekR1' %}** 
 + {% post_link 'gptScalingLaw' %} * 
 + {% post_link 'gptEmergent' %}   
 + {% post_link 'gptHallucination' %} * 
