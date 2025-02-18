@@ -63,6 +63,9 @@ top:
   + MOE
     + **{% post_link 'gptDeepSeek' %}** 
     + **{% post_link 'gptDeepSeekR1' %}** 
+    + **{% post_link 'gptReasoningLLM' %}** 
+    + **{% post_link 'gptDeepSeekExplain1' %}**   
+    + **{% post_link 'gptDeepSeekExplain2' %}**  
 + {% post_link 'gptScalingLaw' %} * 
 + {% post_link 'gptEmergent' %}   
 + {% post_link 'gptHallucination' %} * 
