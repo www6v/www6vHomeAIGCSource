@@ -67,6 +67,7 @@ top:
     + **{% post_link 'gptDeepSeekExplain1' %}**   
     + **{% post_link 'gptDeepSeekExplain2' %}** 
     + **{% post_link 'gptDeepseekSFT' %}**   
+    + **{% post_link 'gptDeepseekDistill' %}**    
 + {% post_link 'gptScalingLaw' %} * 
 + {% post_link 'gptEmergent' %}   
 + {% post_link 'gptHallucination' %} * 
