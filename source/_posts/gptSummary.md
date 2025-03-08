@@ -59,16 +59,7 @@ top:
   		+ **{% post_link 'gptLlama3-1' %}** 
   + encode-only
     + **{% post_link 'gptBERT' %}**  
-  + {% post_link 'gptLeaderBoard' %}  
-  + Reasoning
-    + **{% post_link 'gptDeepSeek' %}** 
-    + **{% post_link 'gptDeepSeekR1' %}** 
-    + **{% post_link 'gptReasoningLLM' %}** 
-    + **{% post_link 'gptDeepSeekExplain1' %}**   
-    + **{% post_link 'gptDeepSeekExplain2' %}** 
-    + **{% post_link 'gptDeepseekSFT' %}**   
-    + **{% post_link 'gptDeepseekDistill' %}** 
-    + **{% post_link 'gptDeepseekGRPO' %}**     
+  + {% post_link 'gptLeaderBoard' %}       
 + {% post_link 'gptScalingLaw' %} * 
 + {% post_link 'gptEmergent' %}   
 + {% post_link 'gptHallucination' %} * 
