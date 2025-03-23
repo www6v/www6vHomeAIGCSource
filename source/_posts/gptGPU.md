@@ -1,5 +1,5 @@
 ---
-title: GPU 算力
+title: GPU 算力平台
 date: 2023-05-23 11:49:49
 tags:
   - GPU

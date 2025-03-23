@@ -1,10 +1,10 @@
 ---
-title:  AIGC 汇总
+title:  LLM 汇总
 date: 2023-11-16 15:02:55
 tags:
-  - AIGC
+  - LLM
 categories: 
-  - AIGC
+  - LLM
   - 汇总  
 top:
   true
@@ -15,32 +15,6 @@ top:
 
 ## 目录
 <!-- toc -->
-
-## Basic
-+ {% post_link 'ai' %} 
-+ {% post_link 'aiOverview' %}
-+ {% post_link 'aiMachineLearning' %}
-
-## DeepLearning
-+ **{% post_link 'aiDeepLearning' %}**
-+ **{% post_link 'gptDeeplearningForwardBackward' %}**
-+ **{% post_link 'gptDeeplearningLoss' %}**
-+ 正则化
-  - **{% post_link 'gptDeeplearningWeightDecay' %}** 
-  - **{% post_link 'gptDeeplearningDropout' %}**  
-+ 网络优化
-  - **{% post_link 'gptDeeplearningLearningRate' %}**   
-  - **{% post_link 'gptDeeplearningBatchsize' %}**
-  - **{% post_link 'gptDeeplearningNorm' %}** 
-+ Transformer
-  + **{% post_link 'gptTransformer' %}** 
-  + **{% post_link 'gptSelfAttention' %}** 
-  + **{% post_link 'gptModelGQA' %}**   
-  + {% post_link 'gptTransformerCode' %}  
-  + {% post_link 'gptEmbedding' %}   
-  + {% post_link 'gptTrainTokenizer' %} 
-+ **{% post_link 'gptPytorch' %}** 
-
 
 ## NLP
 + **{% post_link 'gptNLPTask' %}**  

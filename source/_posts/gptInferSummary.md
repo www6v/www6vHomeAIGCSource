@@ -104,10 +104,12 @@ top:
 ## LLOps 
 + **{% post_link 'gptLLamaFactory' %}**
 + **{% post_link 'gptGPUComputing' %}** 
-+ **{% post_link 'gptGPUMetrics' %}**  
 + **{% post_link 'gptLLMOpsPaaS' %}**  
-+ {% post_link 'gptGPU' %} 
 + {% post_link 'gptLLMOps' %} 
++ GPU
+  + **{% post_link 'gptGPUk8s' %}** 
+  + **{% post_link 'gptGPUMetrics' %}** 
+  + {% post_link 'gptGPU' %}  
 
 
 ## MLSys
