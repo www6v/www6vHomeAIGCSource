@@ -19,16 +19,19 @@ top:
 
 
 
-# Reasoning
+# DeepSeek
 + **{% post_link 'gptDeepSeek' %}** 
 + **{% post_link 'gptDeepSeekR1' %}** 
 + **{% post_link 'gptReasoningLLM' %}** 
 + **{% post_link 'gptDeepSeekExplain1' %}**   
 + **{% post_link 'gptDeepSeekExplain2' %}** 
-+ **{% post_link 'gptDeepseekSFT' %}**   
-+ **{% post_link 'gptDeepseekDistill' %}** 
-+ **{% post_link 'gptDeepseekGRPO' %}**
++ 实战
+  + **{% post_link 'gptDeepseekSFT' %}**   
+  + **{% post_link 'gptDeepseekDistill' %}** 
+  + **{% post_link 'gptDeepseekGRPO' %}**
 
+# DeepResearch
+**{% post_link 'gptReasonDeepResearch' %}** 
 
 # MOE
 + **{% post_link 'gptModelMOE' %}** 
