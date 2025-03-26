@@ -47,11 +47,11 @@ top:
   + **{% post_link 'gptDiffusionGuidance' %}**   
   + Stable Diffusion
     + **{% post_link 'gptMultimodalDiffusion' %}**   
-    + **{% post_link 'gptMultimodalDiffusionPractice' %}**  
+    + {% post_link 'gptMultimodalDiffusionPractice' %}  
     + **{% post_link 'gptDiffusionXL' %}**   
 + Controllable  
-  + **{% post_link 'gptDiffusionControllable' %}** 
-  + **{% post_link 'gptDiffusionControllableWork' %}**
+  + {% post_link 'gptDiffusionControllable' %} 
+  + {% post_link 'gptDiffusionControllableWork' %}
   + Spatial Control
     + Dense control
       + single
@@ -65,7 +65,7 @@ top:
     + subject-driven
       + concept customization [fine-tuning]
         + **{% post_link 'gptDiffusionFineTuning' %}**   
-        + **{% post_link 'gptDiffusionDreamBooth' %}**       
+        + {% post_link 'gptDiffusionDreamBooth' %}       
     + image-driven
       - **{% post_link 'gptDiffusionIPAdapter' %}** 
   + Sementic Control
