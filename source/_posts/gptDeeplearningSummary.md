@@ -33,6 +33,7 @@ top:
   - **{% post_link 'gptDeeplearningLearningRate' %}**   
   - **{% post_link 'gptDeeplearningBatchsize' %}**
   - **{% post_link 'gptDeeplearningNorm' %}** 
+  - **{% post_link 'gptDeeplearningGradOpt' %}** 
 + Transformer
   + **{% post_link 'gptTransformer' %}** 
   + **{% post_link 'gptSelfAttention' %}** 
