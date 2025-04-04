@@ -36,7 +36,7 @@ top:
   - Masked Modeling
     + MAE
 
-+ **{% post_link 'gptMultimodalConnector' %}**  	
++ {% post_link 'gptMultimodalConnector' %}  	
 + Segmentation   
 	  + {% post_link 'gptMultimodalSAM' %}  
 
@@ -67,7 +67,7 @@ top:
         + **{% post_link 'gptDiffusionFineTuning' %}**   
         + {% post_link 'gptDiffusionDreamBooth' %}       
     + image-driven
-      - **{% post_link 'gptDiffusionIPAdapter' %}** 
+      - {% post_link 'gptDiffusionIPAdapter' %} 
   + Sementic Control
   + 其他
       - **{% post_link 'gptDiffusionReferenceNet' %}** 
