@@ -25,6 +25,8 @@ top:
 + **{% post_link 'gptReasoningLLM' %}** 
 + **{% post_link 'gptDeepSeekExplain1' %}**   
 + **{% post_link 'gptDeepSeekExplain2' %}** 
++ **{% post_link 'gptReasoningGRPO' %}**  
++ **{% post_link 'gptReasoningPostTraining' %}** 
 + 实战
   + **{% post_link 'gptDeepseekSFT' %}**   
   + **{% post_link 'gptDeepseekDistill' %}** 
