@@ -34,6 +34,7 @@ top:
 
 # DeepResearch
 **{% post_link 'gptReasonDeepResearch' %}** 
+**{% post_link 'gptReasonDeepResearchJina' %}** 
 
 # MOE
 + **{% post_link 'gptModelMOE' %}** 

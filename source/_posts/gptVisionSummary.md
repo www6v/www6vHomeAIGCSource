@@ -73,7 +73,11 @@ top:
       - **{% post_link 'gptDiffusionReferenceNet' %}** 
 + editing
     + {% post_link 'gptDiffusionImageEdit' %}   
-    + **{% post_link 'gptDiffusionImageEditWork' %}**    
+    + **{% post_link 'gptDiffusionImageEditWork' %}** 
+      + {% post_link 'gptDiffusionEditPrompt' %}  
+      + {% post_link 'gptDiffusionEditInstruct' %} 
+      + {% post_link 'gptDiffusionEditMGIE' %} 
+      + {% post_link 'gptDiffusionEditPix2pix' %}   
 + 人像生图
     + **{% post_link 'gptMultimodalIDCreate' %}**     
 + {% post_link 'gptDiffusionDiT' %}   

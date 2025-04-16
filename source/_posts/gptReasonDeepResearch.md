@@ -12,5 +12,7 @@ categories:
 <!-- more -->
 
 
-# (原理&实战)Deep Research
-<iframe src="https://candied-skunk-1ca.notion.site/ebd/1c2bfe21108480ab8b80f0638d4ec2af" width="100%" height="1000" frameborder="0" allowfullscreen />
+# Deep Research
+[(原理&实战)Deep Research](https://candied-skunk-1ca.notion.site/ebd/1c2bfe21108480ab8b80f0638d4ec2af)
+
+
