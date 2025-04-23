@@ -11,5 +11,9 @@ categories:
 <p></p>
 <!-- more -->
 
-# 解读 DeepSeek
-[解读 DeepSeek[刘知远]](https://candied-skunk-1ca.notion.site/DeepSeek-196bfe211084803394aac487c52ad5d3?pvs=4)
+
+{% asset_img  '1ffwdizy.bmp' %}
+
+
+[硬核解读 DeepSeek：大模型强化学习技术原理与大模型技术发展研判](https://mp.weixin.qq.com/s/AdTUawqCe3vQhwJM50lvfQ?poc_token=HNe_qmejZWeCnYf7RHdgbu8e8ckbXP2i1uyxxI4O)
+

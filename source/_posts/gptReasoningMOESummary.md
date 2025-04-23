@@ -23,8 +23,8 @@ top:
 + **{% post_link 'gptDeepSeek' %}** 
 + **{% post_link 'gptDeepSeekR1' %}** 
 + **{% post_link 'gptReasoningLLM' %}** 
-+ **{% post_link 'gptDeepSeekExplain1' %}**   
-+ **{% post_link 'gptDeepSeekExplain2' %}** 
++ {% post_link 'gptDeepSeekExplain1' %}   
++ {% post_link 'gptDeepSeekExplain2' %} 
 + **{% post_link 'gptReasoningGRPO' %}**  
 + **{% post_link 'gptReasoningPostTraining' %}** 
 + 实战
