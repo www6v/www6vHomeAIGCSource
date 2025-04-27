@@ -57,14 +57,14 @@ top:
       + single
         - **{% post_link 'gptDiffusionControlNet' %}** 
       + multi 
-        - **{% post_link 'gptDiffusionT2IAdapter' %}**
+        - {% post_link 'gptDiffusionT2IAdapter' %}
     + layout/box
       - GLIGEN
       - Reco
   + Style control
     + subject-driven
       + concept customization [fine-tuning]
-        + **{% post_link 'gptDiffusionFineTuning' %}**   
+        + {% post_link 'gptDiffusionFineTuning' %}   
         + {% post_link 'gptDiffusionDreamBooth' %}       
     + image-driven
       - {% post_link 'gptDiffusionIPAdapter' %} 
@@ -73,7 +73,7 @@ top:
       - **{% post_link 'gptDiffusionReferenceNet' %}** 
 + editing
     + {% post_link 'gptDiffusionImageEdit' %}   
-    + **{% post_link 'gptDiffusionImageEditWork' %}** 
+    + {% post_link 'gptDiffusionImageEditWork' %} 
       + {% post_link 'gptDiffusionEditPrompt' %}  
       + {% post_link 'gptDiffusionEditInstruct' %} 
       + {% post_link 'gptDiffusionEditMGIE' %} 
