@@ -38,4 +38,5 @@ top:
 
 # MOE
 + **{% post_link 'gptModelMOE' %}** 
++ {% post_link 'gptModelMOECode' %} 
 
