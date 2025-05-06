@@ -1,5 +1,5 @@
 ---
-title: (原理|实战)GPTQ
+title: (原理|实战|实现)GPTQ
 date: 2023-10-12 14:33:48
 tags:
   - 量化
@@ -12,4 +12,4 @@ categories:
 <!-- more -->
 
 # GPTQ
-[(原理|实战)GPTQ](https://candied-skunk-1ca.notion.site/GPTQ-11dbfe21108480cb8510ed7d85a64371?pvs=4)
+[(原理|实战|实现)GPTQ](https://candied-skunk-1ca.notion.site/GPTQ-11dbfe21108480cb8510ed7d85a64371?pvs=4)

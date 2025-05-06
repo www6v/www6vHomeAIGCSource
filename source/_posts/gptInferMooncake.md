@@ -1,5 +1,5 @@
 ---
-title: (原理)Mooncake
+title: (原理|实现)Mooncake
 date: 2023-10-19 12:02:53
 tags:
   - Inference
