@@ -20,20 +20,22 @@ top:
 
 
 # DeepSeek
-+ **{% post_link 'gptDeepSeek' %}** 
-+ **{% post_link 'gptDeepSeekR1' %}** 
-+ **{% post_link 'gptReasoningLLM' %}** 
-+ {% post_link 'gptDeepSeekExplain1' %}   
-+ {% post_link 'gptDeepSeekExplain2' %} 
-+ **{% post_link 'gptReasoningGRPO' %}**  
++ V3
+  + **{% post_link 'gptDeepSeek' %}** 
 
-+ 实战
-  + **{% post_link 'gptDeepseekSFT' %}**   
-  + **{% post_link 'gptDeepseekDistill' %}** 
++ R1-zero
+  + **{% post_link 'gptReasoningGRPO' %}**  
   + **{% post_link 'gptDeepseekGRPO' %}**
 
-# Post-training
-+ **{% post_link 'gptReasoningPostTraining' %}** 
++  R1
+    + **{% post_link 'gptDeepSeekR1' %}** 
+    + **{% post_link 'gptReasoningLLM' %}** 
+    + {% post_link 'gptDeepSeekExplain1' %}   
+    + {% post_link 'gptDeepSeekExplain2' %} 
+    + Post-training
+        + **{% post_link 'gptReasoningPostTraining' %}** 
+        + **{% post_link 'gptDeepseekSFT' %}**   
+        + **{% post_link 'gptDeepseekDistill' %}** 
 
 # DeepResearch
 **{% post_link 'gptReasonDeepResearch' %}** 

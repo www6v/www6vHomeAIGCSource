@@ -22,7 +22,12 @@ top:
   + vLLM
     + **{% post_link 'gptInfervLLM' %}** 
     + **{% post_link 'gptInfervLLMPractice' %}** 
-    + **{% post_link 'gptInfervLLMCode' %}**   
+    + **{% post_link 'gptInfervLLMCode' %}**  
+    
+    + **{% post_link 'gptInfervLLMDist' %}** 
+    + **{% post_link 'gptInfervLLMPD' %}** 
+    + **{% post_link 'gptInfervLLMSpeculativeDecode' %}** 
+    + **{% post_link 'gptInfervLLMPrefixCaching' %}** 
   + **{% post_link 'gptInferTensorRT' %}** 
   + Ray
     + {% post_link 'gptInferRay' %}   
