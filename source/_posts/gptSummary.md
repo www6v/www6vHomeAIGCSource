@@ -64,7 +64,7 @@ top:
     + {% post_link 'gptDataManagement' %}  
 
 ## 垂类模型
-+ **{% post_link 'gptDomain' %}** 
++ {% post_link 'gptDomain' %} 
 + {% post_link 'gptDomainFinance' %}   
 + {% post_link 'gptDomainMed' %}   
 + {% post_link 'gptDomainLaw' %}    

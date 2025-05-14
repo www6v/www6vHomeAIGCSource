@@ -25,10 +25,10 @@ top:
 ### 视觉理解
 + Vision Encoder
   - multimodal learning
-  	+ {% post_link 'gptMultimodalCLIP' %}  
-    + {% post_link 'gptMultimodalCLIPPractice' %}
+  	+ {% post_link 'gptMultimodalCLIP' %} * 
+    + {% post_link 'gptMultimodalCLIPPractice' %} *
   - Supervised Learning
-    + {% post_link 'gptMultimodalVit' %}
+    + {% post_link 'gptMultimodalVit' %} *
   - self-distillation
     + {% post_link 'gptMultimodalDINO' %}  
   - Auto-encoding
@@ -55,7 +55,7 @@ top:
   + Spatial Control
     + Dense control
       + single
-        - **{% post_link 'gptDiffusionControlNet' %}** 
+        - {% post_link 'gptDiffusionControlNet' %} * 
       + multi 
         - {% post_link 'gptDiffusionT2IAdapter' %}
     + layout/box
@@ -64,7 +64,7 @@ top:
   + Style control
     + subject-driven
       + concept customization [fine-tuning]
-        + {% post_link 'gptDiffusionFineTuning' %}   
+        + {% post_link 'gptDiffusionFineTuning' %}  * 
         + {% post_link 'gptDiffusionDreamBooth' %}       
     + image-driven
       - {% post_link 'gptDiffusionIPAdapter' %} 
