@@ -1,5 +1,5 @@
 ---
-title: (原理) KV Cache
+title: (原理|实现) KV Cache
 date: 2023-06-01 11:09:57
 tags:
   - Inference
@@ -12,4 +12,4 @@ categories:
 <!-- more -->
 
 # KV Cache
-[(原理) KV Cache](https://candied-skunk-1ca.notion.site/KV-Cache-52168038d1874bce9d5cf68c5930f5c1?pvs=4)
+[(原理|实现) KV Cache](https://candied-skunk-1ca.notion.site/KV-Cache-52168038d1874bce9d5cf68c5930f5c1?pvs=4)

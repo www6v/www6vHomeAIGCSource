@@ -1,5 +1,5 @@
 ---
-title: (vLLM)Speculative Decoding
+title: (实战)[vLLM]投机解码
 date: 2023-11-18 16:28:40
 tags:
   - infer
@@ -12,5 +12,5 @@ categories:
 <!-- more -->
 
 
-# (vLLM) Speculative Decoding
-[(vLLM) Speculative Decoding](https://candied-skunk-1ca.notion.site/vLLM-Speculative-Decoding-81c9a87ab53947c19c7ba22bcaee5125?pvs=4)
+# (实战)[vLLM]投机解码
+[(实战)[vLLM]投机解码](https://candied-skunk-1ca.notion.site/vLLM-Speculative-Decoding-81c9a87ab53947c19c7ba22bcaee5125?pvs=4)
