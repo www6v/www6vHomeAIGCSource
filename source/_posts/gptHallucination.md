@@ -11,6 +11,21 @@ categories:
 <p></p>
 <!-- more -->
 
+# Survey
+### 论文
++ 论文地址
+[A Survey of Hallucination in Large Foundation Models](https://arxiv.org/abs/2309.05922) Paper 
+ 
+1xx. [大模型前沿热点最新综述：大模型微调遗忘、Agent智能体、幻觉及RAG检索增强模型推介](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403602&idx=1&sn=f2365b05630094f8d0de7ff784abe233) 大模型微调遗忘   幻觉
+
+### 论文
++ 论文地址
+[Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models](https://arxiv.org/abs/2309.01219) Paper
+1xx. [人工智能海洋中的塞壬之歌：大型语言模型LLM中的幻觉研究综述（一） ](https://mp.weixin.qq.com/s?__biz=MzU5NDg2MjgxMg==&mid=2247485189&idx=1&sn=95d6eb333dde007f262a2955b90bc7ec) 
+1xx.  [大型语言模型的幻觉研究｜减轻及避免大模型LLM幻觉（二）](https://mp.weixin.qq.com/s/eGMwNz0F1dQsNDnsLNYr8Q)
+
+1xx. [值得一读的大模型生成幻觉研究综述：大模型幻觉的起因、评估以及减轻策略总结 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403341&idx=1&sn=86cdaaf2c3a73439d2591a2f3dd0b9e0)   
+
 # 幻觉 vs 事实性[1]
 **幻觉**主要是指LLM生成毫无根据或毫无根据的内容，幻觉可以理解为模型倾向于"生成与某些来源相关的无意义或不真实的内容"。这与**事实性问题**不同，后者强调模型学习、获取和利用事实性知识的能力。
 
@@ -24,25 +39,41 @@ categories:
 
 此外，值得注意的是，**幻觉有时会产生一些内容，虽然与原始输入内容有偏差，但在事实方面仍然是准确的**。
 
+
+# 解决方案[2]
++ Prompt 工程 *
+  - Few-shot
+  
++ 外部知识 *
+  - RAG
+  
++ 后处理 * 
+  - 实事检查 *  
+  - 人工检查  * 
+
++ 提升数据质量
+  - Pretraining的数据质量
+  - SFT的数据质量
+
++ 模型能力提升 *
+  - 微调
+
 # 参考
 1. [再看大模型事实性的界定、错误的起因、评估及前沿缓解方案：Survey on Factuality in LLMS](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648404394&idx=1&sn=d7cfcf2cd9aa6756d3cbff938f5f4cf2)
+
+2. [降低大模型幻觉的5种方案](https://www.bilibili.com/video/BV1VXYxegErf/) v  
+   [减少大模型幻觉，你必须要掌握的 6 个方法！](https://www.bilibili.com/video/BV1QUx9eFENq/) v  
 
 1xx. [再看大模型幻觉问题如何缓解 ：Chain-of-Verification-一种基于链式验证思想的自我修正工作解读 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403998&idx=1&sn=400cc902434bc04df508a55e192d2455)
 
 1xx. [也看缓解大模型幻觉的多阶段RAG框架：加入混合检索、过程理由生成与验证的方案 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648405983&idx=2&sn=95dc9c7a12bed99b63c775d4b90519d8)
 
-1xx. [大模型幻觉综述](https://arxiv.org/abs/2309.01219)
-   [大模型幻觉综述](https://arxiv.org/abs/2309.05922)
+
+### survey
+1xx. [大模型的幻觉问题调研: LLM Hallucination Survey](https://zhuanlan.zhihu.com/p/642648601)
+
 
 1xx. [网络安全领域微调模型SecGPT：兼看大模型幻觉的度量方式、评估benchmark及RAG增强不同方式 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648405791&idx=2&sn=d7dada69e6d5ab5fba1333d234b947ef) 大模型幻觉综述
 
-1xx. [大模型前沿热点最新综述：大模型微调遗忘、Agent智能体、幻觉及RAG检索增强模型推介](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403602&idx=1&sn=f2365b05630094f8d0de7ff784abe233) 大模型微调遗忘
 
-1xx. [值得一读的大模型生成幻觉研究综述：大模型幻觉的起因、评估以及减轻策略总结 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403341&idx=1&sn=86cdaaf2c3a73439d2591a2f3dd0b9e0)
-
-1xx. [大模型的幻觉问题调研: LLM Hallucination Survey](https://zhuanlan.zhihu.com/p/642648601)
-   [人工智能海洋中的塞壬之歌：大型语言模型LLM中的幻觉研究综述（一） ](https://mp.weixin.qq.com/s?__biz=MzU5NDg2MjgxMg==&mid=2247485189&idx=1&sn=95d6eb333dde007f262a2955b90bc7ec)
-   [大型语言模型的幻觉研究｜减轻及避免大模型LLM幻觉（二）](https://mp.weixin.qq.com/s/eGMwNz0F1dQsNDnsLNYr8Q)
-   
-   
 1xx. [LLM之幻觉（一）：大语言模型幻觉解决方案综述](https://mp.weixin.qq.com/s/N7NOsLHr8HYCMp5XGCBDjg)
