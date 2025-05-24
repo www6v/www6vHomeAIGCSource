@@ -17,24 +17,10 @@ top:
 
 ## Inference *
 + 框架
-  + {% post_link 'gptInferFramework' %} 
-  + {% post_link 'gptInferFrameworkPractice' %} 
-  + **{% post_link 'gptInferTensorRT' %}** 
-  + Ray
-    + {% post_link 'gptInferRay' %}   
-    + {% post_link 'gptInferRayPractice' %}   
+  【5】
 + 框架vLLM
   + vLLM
-    + **{% post_link 'gptInfervLLM' %}** 
-    + **{% post_link 'gptInfervLLMPractice' %}** 
-    + **{% post_link 'gptInferSpeculativeDecodingvLLM' %}** 
-    + **{% post_link 'gptInferKVCacheRadixAttention' %}**  
-    + 实现
-      + **{% post_link 'gptInfervLLMCode' %}**
-      + **{% post_link 'gptInfervLLMDist' %}** 
-      + **{% post_link 'gptInfervLLMPD' %}** 
-      + **{% post_link 'gptInfervLLMSpeculativeDecode' %}** 
-      + **{% post_link 'gptInfervLLMPrefixCaching' %}**    
+  【9】
 + 优化
   + {% post_link 'gptInference' %}
   + **{% post_link 'gptInferenceSurvey' %}**
