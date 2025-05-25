@@ -22,21 +22,13 @@ top:
   + vLLM
   【9】
 + 优化
-  + {% post_link 'gptInference' %}
-  + **{% post_link 'gptInferenceSurvey' %}**
-  + **{% post_link 'gptInferenceSurvey1' %}** 
+  【3】
   + 系统层优化
     + Attention Opt.
         + FlashAttention    
-            + **{% post_link 'gptFlashAttention' %}** 
-            + **{% post_link 'gptInferFlashAttention2' %}**  
-            + **{% post_link 'gptInferFlashDecoding' %}** 
+            【3】
     + SpeculativeDecoding
-      + **{% post_link 'gptInferSpeculativeDecoding' %}** 
-      + **{% post_link 'gptInferSpeculativeDecodingSurvey' %}** 
-      + **{% post_link 'gptInferMedusa' %}**   
-      + **{% post_link 'gptInferEagle' %}** 
-      + **{% post_link 'gptInferSpecInfer' %}**    
+      【5】   
     + Memory Management
         + KVCache
           + **{% post_link 'gptInferKVCache' %}**  
