@@ -31,37 +31,27 @@ top:
       【5】   
     + Memory Management
         + KVCache
-          + **{% post_link 'gptInferKVCache' %}**  
-          + **{% post_link 'gptInferKVCacheOptimize' %}**
-          + Compress  
-            + **{% post_link 'gptInferKVCacheQuantization' %}** Quantization  
+          【3】
   + 系统层优化
     + Batch
-      + **{% post_link 'gptInferContinuousBatching' %}** 
-      + **{% post_link 'gptInferChunkedPrefill' %}** 
+      【2】
     + PD 分离
-      + **{% post_link 'gptInferDistServe' %}** 
-      + **{% post_link 'gptInferMooncake' %}**  
-      + **{% post_link 'gptInferLlumnix' %}**     
+      【3】    
   + 模型层优化 
     + 模型压缩
       + 量化
-          + **{% post_link 'gptQuantizationSurvey' %}**   
-          + **{% post_link 'gptQuantization' %}** 
+          【2】
           + PTQ
-              + **{% post_link 'gptQuantizationWeight' %}** 
+              【1】 
               + Weight Only 
-              	+ **{% post_link 'gptQuantizationGPTQ' %}**
-              	+ **{% post_link 'gptQuantizationAWQ' %}**
+                【2】
               + Weight&Activation
-              	+ **{% post_link 'gptQuantizationInt8' %}**              
-              	+ **{% post_link 'gptQuantizationSmoothQuant' %}** 
-              	+ **{% post_link 'gptQuantizationFP8' %}** 
-          + **{% post_link 'gptQuantizationPractice' %}** 
+                【3】
+                【1】
     + Sparse Attention
-      + **{% post_link 'gptInferKVCacheStreamingLLM' %}**  
+      【1】
 + 其他
-  + **{% post_link 'gptTemperature' %}**  
+  【1】
 
 
 
