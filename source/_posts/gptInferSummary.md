@@ -71,15 +71,12 @@ top:
 
 ## LLOps 
 + MaaS
-	+ **{% post_link 'gptMaaSMonitor' %}**
-	+ **{% post_link 'gptLLMOpsPaaS' %}** 
-+ **{% post_link 'gptLLamaFactory' %}**
-+ **{% post_link 'gptGPUComputing' %}** 
-+ {% post_link 'gptLLMOps' %} 
+	  [2]
+	
+	  [3]
+	
 + GPU
-  + **{% post_link 'gptGPUk8s' %}** 
-  + **{% post_link 'gptGPUMetrics' %}** 
-  + {% post_link 'gptGPU' %}  
+   [3]
 
 
 ## MLSys
