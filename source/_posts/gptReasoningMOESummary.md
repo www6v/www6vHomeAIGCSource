@@ -1,5 +1,5 @@
 ---
-title: Reasoning & MOE
+title: Reasoning & RL
 date: 2024-03-08 22:37:32
 tags:
   - Reasoning
@@ -22,11 +22,8 @@ top:
 # DeepSeek
 + V3
   + **{% post_link 'gptDeepSeek' %}** 
-
 + R1-zero
   + **{% post_link 'gptReasoningGRPO' %}**  
-  + **{% post_link 'gptDeepseekGRPO' %}**
-
 +  R1
     + **{% post_link 'gptDeepSeekR1' %}** 
     + **{% post_link 'gptReasoningLLM' %}** 
@@ -41,7 +38,11 @@ top:
 **{% post_link 'gptReasonDeepResearch' %}** 
 **{% post_link 'gptReasonDeepResearchJina' %}** 
 
-# MOE
-+ **{% post_link 'gptModelMOE' %}** 
-+ {% post_link 'gptModelMOECode' %} 
+
+
+# RL
+
++ **{% post_link 'gptDeepseekGRPO' %}**
++ **{% post_link 'gptRLPPO' %}** 
++ **{% post_link 'gptRLRewardModel' %}** 
 

@@ -34,13 +34,28 @@ top:
   + encode-only
     + **{% post_link 'gptBERT' %}**  
   + {% post_link 'gptLeaderBoard' %}       
+  
+  
+
++ MOE
+
+  + **{% post_link 'gptModelMOE' %}** 
+
+  + {% post_link 'gptModelMOECode' %} 
+
+
+# Core
+
 + {% post_link 'gptScalingLaw' %} * 
 + {% post_link 'gptEmergent' %}   
 + {% post_link 'gptHallucination' %} * 
 + {% post_link 'gptImpossibleTriangle' %}    
 + {% post_link 'gptEval' %}     
 
+
+
 ## Training  *
+
 + 训练
   + {% post_link 'gptLargeModelTraining' %}
   + **{% post_link 'gptLargeModelTrainingPractice' %}** 
