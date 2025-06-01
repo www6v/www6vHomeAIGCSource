@@ -52,9 +52,7 @@ top:
 + {% post_link 'gptImpossibleTriangle' %}    
 + {% post_link 'gptEval' %}     
 
-
-
-## Training  *
+# Training  *
 
 + 训练
   + {% post_link 'gptLargeModelTraining' %}
@@ -67,7 +65,8 @@ top:
   + Pretrain  
     + {% post_link 'gptDataRefinedWeb' %}   
 
-## Data 
+# Data
+
 + List
   + {% post_link 'gptDataSet' %}  
 + DataProcess
@@ -78,13 +77,21 @@ top:
 + Data Management
     + {% post_link 'gptDataManagement' %}  
 
-## 垂类模型
+
+
+# 垂类模型
+
 + {% post_link 'gptDomain' %} 
 + {% post_link 'gptDomainFinance' %}   
 + {% post_link 'gptDomainMed' %}   
 + {% post_link 'gptDomainLaw' %}    
 
+
+
+# 其他
+
 ## Study
+
 + {% post_link 'gptStudy' %}
 + {% post_link 'aiStudyResouce' %} 
 
