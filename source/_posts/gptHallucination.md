@@ -114,6 +114,8 @@ todo
 
 3. [Extrinsic Hallucinations in LLMs](https://lilianweng.github.io/posts/2024-07-07-hallucination/) *** 
 
+   [【译】LLM中的外部幻觉](https://minddev.io/blog/2024-07-07-hallucination)
+
 ### Work
 
 10. [再看大模型幻觉问题如何缓解 ：Chain-of-Verification-一种基于链式验证思想的自我修正工作解读 ](https://mp.weixin.qq.com/s?__biz=MzAxMjc3MjkyMg==&mid=2648403998&idx=1&sn=400cc902434bc04df508a55e192d2455)
