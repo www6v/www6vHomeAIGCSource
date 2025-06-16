@@ -45,8 +45,7 @@ categories:
 
 [大模型技术实战课 ](https://appze9inzwc2314.pc.xiaoe-tech.com/p/t_pc/goods_pc_detail/goods_detail/p_64467371e4b0cf39e6c0c026?fromH5=true&entry_type=2002&share_type=5&type=3&entry=2)
 
-# 工业界
-[rocketmq-learning 社区](https://rocketmq-learning.com/)
+
 
 
 
