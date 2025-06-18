@@ -1,5 +1,5 @@
 ---
-title: 深度学习 汇总
+title: 深度学习|机器学习 汇总
 date: 2022-03-23 12:53:56
 tags:
   - Deeplearning
@@ -42,3 +42,12 @@ top:
   + {% post_link 'gptEmbedding' %}   
   + {% post_link 'gptTrainTokenizer' %} 
 + **{% post_link 'gptPytorch' %}** 
+
+
+
+# 机器学习
+
++ **{% post_link 'gptMLData' %}** 
+
++ **{% post_link 'gptMLModel' %}** 
+
