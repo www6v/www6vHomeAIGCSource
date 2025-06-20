@@ -24,16 +24,23 @@ top:
 
 ## DeepLearning
 + **{% post_link 'aiDeepLearning' %}**
+
 + **{% post_link 'gptDeeplearningForwardBackward' %}**
+
 + **{% post_link 'gptDeeplearningLoss' %}**
+
++ **{% post_link 'gptDeeplearningOverfitting' %}**   
+
 + 正则化
   - **{% post_link 'gptDeeplearningWeightDecay' %}** 
   - **{% post_link 'gptDeeplearningDropout' %}**  
+  
 + 网络优化
   - **{% post_link 'gptDeeplearningLearningRate' %}**   
   - **{% post_link 'gptDeeplearningBatchsize' %}**
   - **{% post_link 'gptDeeplearningNorm' %}** 
   - {% post_link 'gptDeeplearningGradOpt' %} 
+  
 + Transformer
   + **{% post_link 'gptTransformer' %}** 
   + **{% post_link 'gptSelfAttention' %}** 
@@ -41,7 +48,10 @@ top:
   + {% post_link 'gptTransformerCode' %}  
   + {% post_link 'gptEmbedding' %}   
   + {% post_link 'gptTrainTokenizer' %} 
+  
 + **{% post_link 'gptPytorch' %}** 
+
+  
 
 
 
