@@ -37,8 +37,8 @@ top:
   
 + 网络优化
   - **{% post_link 'gptDeeplearningLearningRate' %}**   
-  - **{% post_link 'gptDeeplearningBatchsize' %}**
-  - **{% post_link 'gptDeeplearningNorm' %}** 
+  - {% post_link 'gptDeeplearningBatchsize' %}
+  - {% post_link 'gptDeeplearningNorm' %} 
   - {% post_link 'gptDeeplearningGradOpt' %} 
   
 + Transformer
