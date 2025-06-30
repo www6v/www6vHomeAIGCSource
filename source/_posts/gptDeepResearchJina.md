@@ -1,11 +1,11 @@
 ---
-title: (原理|实现)Deep Research(Jina)
+title: (原理|实现){Jina}Deep Research
 date: 2024-04-16 17:17:32
 tags:
-  - reason
+  - Deepresearch
 categories:
   - AIGC  
-  - reason
+  - Deepresearch
 ---
 
 <p></p>

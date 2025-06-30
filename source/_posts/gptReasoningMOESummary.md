@@ -35,8 +35,14 @@ top:
         + **{% post_link 'gptDeepseekDistill' %}** 
 
 # DeepResearch
-**{% post_link 'gptReasonDeepResearch' %}** 
-**{% post_link 'gptReasonDeepResearchJina' %}** 
+**{% post_link 'gptDeepResearch' %}** 
+**{% post_link 'gptDeepResearchJina' %}** 
+
+**{% post_link 'gptDeepresearchGoogle' %}** 
+
+**{% post_link 'gptDeepresearchLanggraph' %}** 
+
+
 
 
 
