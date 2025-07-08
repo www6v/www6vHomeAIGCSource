@@ -2,7 +2,14 @@
 title: (原理)PPO
 date: 2024-06-01 22:12:32
 tags:
+  - RL
+categories:
+  - AIGC  
+  - RL
 ---
+
+<p></p>
+<!-- more -->
 
 
 

@@ -51,4 +51,5 @@ top:
 + **{% post_link 'gptDeepseekGRPO' %}**
 + **{% post_link 'gptRLPPO' %}** 
 + **{% post_link 'gptRLRewardModel' %}** 
++ **{% post_link 'gptRLdpo' %}**  
 
