@@ -17,6 +17,8 @@ top:
 <!-- toc -->
 
 
+# Reasoning
++ **{% post_link 'gptReasoningPostTraining' %}** 
 
 
 # DeepSeek
@@ -24,30 +26,18 @@ top:
   + **{% post_link 'gptDeepSeek' %}** 
 + R1-zero
   + **{% post_link 'gptReasoningGRPO' %}**  
-+  R1
++ R1
     + **{% post_link 'gptDeepSeekR1' %}** 
     + **{% post_link 'gptReasoningLLM' %}** 
     + {% post_link 'gptDeepSeekExplain1' %}   
     + {% post_link 'gptDeepSeekExplain2' %} 
     + Post-training
-        + **{% post_link 'gptReasoningPostTraining' %}** 
         + **{% post_link 'gptDeepseekSFT' %}**   
         + **{% post_link 'gptDeepseekDistill' %}** 
-
-# DeepResearch
-**{% post_link 'gptDeepResearch' %}** 
-**{% post_link 'gptDeepResearchJina' %}** 
-
-**{% post_link 'gptDeepresearchGoogle' %}** 
-
-**{% post_link 'gptDeepresearchLanggraph' %}** 
-
-
 
 
 
 # RL
-
 + **{% post_link 'gptDeepseekGRPO' %}**
 + **{% post_link 'gptRLPPO' %}** 
 + **{% post_link 'gptRLRewardModel' %}** 
