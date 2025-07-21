@@ -19,6 +19,7 @@ top:
 
 # Reasoning
 + **{% post_link 'gptReasoningPostTraining' %}** 
++ **{% post_link 'gptReasoningTTS' %}**  
 
 
 # DeepSeek
