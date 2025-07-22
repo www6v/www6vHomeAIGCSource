@@ -43,4 +43,5 @@ top:
 + **{% post_link 'gptRLPPO' %}** 
 + **{% post_link 'gptRLRewardModel' %}** 
 + **{% post_link 'gptRLdpo' %}**  
++ **{% post_link 'gptRLverlConfig' %}**   
 
