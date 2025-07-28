@@ -37,11 +37,5 @@ top:
         + **{% post_link 'gptDeepseekDistill' %}** 
 
 
-
-# RL
-+ **{% post_link 'gptDeepseekGRPO' %}**
-+ **{% post_link 'gptRLPPO' %}** 
-+ **{% post_link 'gptRLRewardModel' %}** 
-+ **{% post_link 'gptRLdpo' %}**  
-+ **{% post_link 'gptRLverlConfig' %}**   
+ 
 
