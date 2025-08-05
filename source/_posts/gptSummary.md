@@ -23,25 +23,8 @@ top:
 
 ## Model *
 + Foundation Models
-  + {% post_link 'gptLargeModelSurvey' %}
-  + {% post_link 'gptLargeModel' %} 
-  + decode-only
-  	+ {% post_link 'gptFamily' %}    
-  	+ LLaMA
-  		+ **{% post_link 'gptLlama' %}**   
-  		+ {% post_link 'gptLlamaFamily' %}   
-  		+ **{% post_link 'gptLlama3-1' %}** 
-  + encode-only
-    + **{% post_link 'gptBERT' %}**  
-  + {% post_link 'gptLeaderBoard' %}       
-  
-  
-
+   
 + MOE
-
-  + **{% post_link 'gptModelMOE' %}** 
-
-  + {% post_link 'gptModelMOECode' %} 
 
 
 # Core

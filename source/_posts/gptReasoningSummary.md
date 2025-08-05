@@ -1,5 +1,5 @@
 ---
-title: Reasoning & RL
+title: Reasoning
 date: 2024-03-08 22:37:32
 tags:
   - Reasoning
