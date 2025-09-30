@@ -1,6 +1,6 @@
 ---
-title: Reasoning
-date: 2024-03-08 22:37:32
+title: Reasoning(archived)
+date: 2000-03-08 22:37:32
 tags:
   - Reasoning
 categories: 
@@ -18,23 +18,16 @@ top:
 
 
 # Reasoning
-+ **{% post_link 'gptReasoningPostTraining' %}** 
-+ **{% post_link 'gptReasoningTTS' %}**  
+
 
 
 # DeepSeek
 + V3
-  + **{% post_link 'gptDeepSeek' %}** 
+
 + R1-zero
-  + **{% post_link 'gptReasoningGRPO' %}**  
+ 
 + R1
-    + **{% post_link 'gptDeepSeekR1' %}** 
-    + **{% post_link 'gptReasoningLLM' %}** 
-    + {% post_link 'gptDeepSeekExplain1' %}   
-    + {% post_link 'gptDeepSeekExplain2' %} 
     + Post-training
-        + **{% post_link 'gptDeepseekSFT' %}**   
-        + **{% post_link 'gptDeepseekDistill' %}** 
 
 
  
