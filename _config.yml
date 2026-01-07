@@ -87,7 +87,7 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/www6v/www6vHomeAIGC.git
+  repo: git@github.com:www6v/www6vHomeAIGC.git
   branch: master
 
 # hexo-tag-details plugin

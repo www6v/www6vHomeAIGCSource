@@ -25,62 +25,53 @@ top:
 ### 视觉理解
 + Vision Encoder
   - multimodal learning
-  	+ {% post_link 'gptMultimodalCLIP' %} * 
-    + {% post_link 'gptMultimodalCLIPPractice' %} *
   - Supervised Learning
-    + {% post_link 'gptMultimodalVit' %} *
   - self-distillation
-    + {% post_link 'gptMultimodalDINO' %}  
-  - Auto-encoding
-    + {% post_link 'gptMultimodalVQVAE' %}   
+  - Auto-encoding 
   - Masked Modeling
     + MAE
 
-+ {% post_link 'gptMultimodalConnector' %}  	
++ Connector
+
 + Segmentation   
-	  + {% post_link 'gptMultimodalSAM' %}  
+ 
 
 
 ### 生成
 + Diffusion
-  + **{% post_link 'gptDiffusionunCLIP' %}** 
-  + **{% post_link 'gptDiffusionGuidance' %}**   
+
+  
   + Stable Diffusion
-    + **{% post_link 'gptMultimodalDiffusion' %}**   
-    + {% post_link 'gptMultimodalDiffusionPractice' %}  
-    + **{% post_link 'gptDiffusionXL' %}**   
+  
+
+
 + Controllable  
-  + {% post_link 'gptDiffusionControllable' %} 
-  + {% post_link 'gptDiffusionControllableWork' %}
+
+
   + Spatial Control
     + Dense control
       + single
-        - {% post_link 'gptDiffusionControlNet' %} * 
+
       + multi 
-        - {% post_link 'gptDiffusionT2IAdapter' %}
+
     + layout/box
       - GLIGEN
       - Reco
   + Style control
     + subject-driven
       + concept customization [fine-tuning]
-        + {% post_link 'gptDiffusionFineTuning' %}  * 
-        + {% post_link 'gptDiffusionDreamBooth' %}       
+
+     
     + image-driven
-      - {% post_link 'gptDiffusionIPAdapter' %} 
+
   + Sementic Control
   + 其他
-      - **{% post_link 'gptDiffusionReferenceNet' %}** 
-+ editing
-    + {% post_link 'gptDiffusionImageEdit' %}   
-    + {% post_link 'gptDiffusionImageEditWork' %} 
-      + {% post_link 'gptDiffusionEditPrompt' %}  
-      + {% post_link 'gptDiffusionEditInstruct' %} 
-      + {% post_link 'gptDiffusionEditMGIE' %} 
-      + {% post_link 'gptDiffusionEditPix2pix' %}   
+
++ editing 
+
 + 人像生图
-    + **{% post_link 'gptMultimodalIDCreate' %}**     
-+ {% post_link 'gptDiffusionDiT' %}   
+ 
++ DiT
 
 ### 端到端训练LLM(LMM) 
 + {% post_link 'gptMultimodalBlip' %} 
