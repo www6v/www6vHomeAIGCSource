@@ -1,5 +1,5 @@
 ---
-title: Vision 汇总
+title: Vision 汇总(archived)
 date: 2023-07-23 19:14:33
 tags:
   - AIGC
@@ -18,9 +18,8 @@ top:
 
 # Multimodal *
 ### Survey
-+ {% post_link 'gptMultimodal' %} 
-+ {% post_link 'gptMultimodalSurvey' %}
-+ {% post_link 'gptMultimodalSeries' %}  
+
+
 
 ### 视觉理解
 + Vision Encoder
@@ -74,21 +73,17 @@ top:
 + DiT
 
 ### 端到端训练LLM(LMM) 
-+ {% post_link 'gptMultimodalBlip' %} 
-+ **{% post_link 'gptMultimodalLlava' %}**  
-+ {% post_link 'gptMultimodalMinigpt4' %}    
-+ Train  *
-  + {% post_link 'gptMultimodalPretrain' %}  
-  + {% post_link 'gptMultimodalInstructTuning' %}  
+
+  
++ Train  * 
 
 ### Multimodal Agent*
-  + {% post_link 'gptAgentMultimodal' %}  
-  + {% post_link 'gptAgentWeb' %}  
-  + {% post_link 'gptAgentMultimodalApp' %}  
+
+
 
 ### Data
-  + {% post_link 'gptDatasetMulitmodal' %}  
+
 
 # Vision
-+ {% post_link 'gptVisionTask' %}  
+ 
 
